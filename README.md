@@ -1,4 +1,4 @@
 codemeta
 ========
 
-Minimal metadata schems for science software and code, in JSON and XML.
+Minimal metadata schemas for science software and code, in JSON and XML.
