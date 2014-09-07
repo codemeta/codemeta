@@ -1,0 +1,25 @@
+{
+    "@context": "http://schema.org",
+    "@type": "Code",
+    "author": [
+        {
+            "@id": "http://orcid.org/0000-0002-3957-2474",
+            "@type": "Person",
+            "email": "arfon@github.com",
+            "name": "Arfon Smith"
+        },
+        {
+            "@id": "http://orcid.org/0000-0002-7217-4494",
+            "@type": "Person",
+            "email": "kaitlin@mozillafoundation.org",
+            "name": "Kaitlin Thaney"
+        }
+    ],
+    "citation": "http://dx.doi.org/10.6084/m9.figshare.828487",
+    "codeRepository": "https://github.com/arfon/fidgit",
+    "dateCreated": "2013-10-19",
+    "description": "An ungodly union of GitHub and Figshare http://fidgit.arfon.org",
+    "keywords": "publishing, DOI, credit for code",
+    "license": "http://opensource.org/licenses/MIT",
+    "name": "Fidgit"
+}
