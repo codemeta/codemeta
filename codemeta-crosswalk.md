@@ -62,7 +62,7 @@ Table 1: Mapping of fields in use by various software metadata efforts
 | - ZippedCode           | X        | X      |             | X        |
 | - FileSet              | X        |        |             |          |
 
- 
+Note: The codemeta column is an expected mapping based on anticipated fields for the codemeta schema, and may end up implemented differently.
 
 - Other things to add:
     -  Annotations
