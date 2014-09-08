@@ -1,0 +1,25 @@
+{
+    "@context": "http://github.com/mbjones/codemeta.json",
+    "author": [
+        {
+            "@id": "http://orcid.org/0000-0003-0077-4738",
+            "@type": "Person",
+            "email": "jones@nceas.ucsb.edu",
+            "name": "Matt Jones"
+        },
+        {
+            "@id": "http://orcid.org/0000-0002-3957-2474",
+            "@type": "Person",
+            "email": "arfon@github.com",
+            "name": "Arfon Smith"
+        }
+    ],
+    "identifier": "http://dx.doi.org/10.6084/m9.figshare.828487",
+    "codeRepository": "https://github.com/mbjones/codemeta",
+    "dateCreated": "2014-09-06",
+    "description": "Codemeta is a metadata content standard for software.  It includes
+                    schemas in JSON-LD and XML Schema for providing semantics and validation.",
+    "keywords": "publishing, DOI, credit for code",
+    "license": "http://opensource.org/licenses/Apache2",
+    "title": "CodeMeta",
+}
