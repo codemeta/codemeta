@@ -9,7 +9,7 @@
 	  {
           "@id": "schemaorg:author",
           "@type": "@id"
-	  }
+	  },
 	  "identifier":
       {
          "@id": "dcterms:identifier",
@@ -19,7 +19,7 @@
       {
          "@id": "schemaorg:codeRepository",
          "@type": "@id"
-      }
+      },
       "dateCreated": "schemaorg:dateCreated",
 	  "dateModified": "schemaorg:dateModified",
       "datePublished": "schemaorg:datePublished",
