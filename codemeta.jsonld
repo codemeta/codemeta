@@ -1,6 +1,6 @@
 {
     "@context": {
-        "Code": "http://schema.org/Person",
+        "Code": "http://schema.org/Code",
         "Person": "http://schema.org/Person",
         "author": {
             "@id": "http://schema.org/author",
