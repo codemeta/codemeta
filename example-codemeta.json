@@ -1,5 +1,6 @@
 {
     "@context": "https://raw.githubusercontent.com/mbjones/codemeta/master/codemeta.jsonld",
+    "@type": "Code",
     "author": [
         {
             "@id": "http://orcid.org/0000-0003-0077-4738",
