@@ -1,33 +1,25 @@
 {
-   "@context":
-   {
-      "schemaorg": "http://schema.org/",
-	  "dcterms": "http://purl.org/dc/terms/",
-      "xsd": "http://www.w3.org/2001/XMLSchema#",
-      "Code": "schemaorg:Code",
-	  "Person": "schemaorg:Person",
-      "author":
-	  {
-          "@id": "schemaorg:author",
-          "@type": "@id"
-	  },
-	  "identifier":
-      {
-         "@id": "dcterms:identifier",
-         "@type": "@id"
-      },
-	  "codeRepository":
-      {
-         "@id": "schemaorg:codeRepository",
-         "@type": "@id"
-      },
-      "dateCreated": "schemaorg:dateCreated",
-	  "dateModified": "schemaorg:dateModified",
-      "datePublished": "schemaorg:datePublished",
-      "description": "schemaorg:description",
-      "keywords": "schemaorg:keywords",
-      "license": "schemaorg:license",
-      "title": "dcterms:title"
-   }
+    "@context": {
+        "Code": "http://schema.org/Person",
+        "Person": "http://schema.org/Person",
+        "author": {
+            "@id": "http://schema.org/author",
+            "@type": "@id"
+        },
+        "codeRepository": {
+            "@id": "http://schema.org/codeRepository",
+            "@type": "@id"
+        },
+        "dateCreated": "http://schema.org/dateCreated",
+        "dateModified": "http://schema.org/dateModified",
+        "datePublished": "http://schema.org/datePublished",
+        "description": "http://schema.org/description",
+        "identifier": {
+            "@id": "http://schema.org/url",
+            "@type": "@id"
+        },
+        "keywords": "http://schema.org/keywords",
+        "license": "http://schema.org/license",
+        "title": "http://schema.org/name"
+    }
 }
-
