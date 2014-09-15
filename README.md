@@ -8,6 +8,7 @@ This is an extention of the work done by [@arfon](http://github.com/arfon/), [@h
 In codemeta, we want to formalize the schema used to map between the different services (Github, figshare, Zenodo) to help others plug in to this existing system. Having a standard schema will help other data archivers and libraries join in. This will help keep the science on the web shareable and interoperable.
 
 JSON-LD schema: https://github.com/mbjones/codemeta/blob/master/codemeta.jsonld
+
 Comparison of current APIs in this space: https://github.com/mbjones/codemeta/blob/master/codemeta-crosswalk.md
 
 
