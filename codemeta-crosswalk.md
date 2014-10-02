@@ -7,6 +7,8 @@ At the [Open Science Codefest](http://nceas.github.io/open-science-codefest/), w
 - Carly Strasser / @carlystrasser
 - Corinna Gries / @CorinnaGries
 
+Work was recorded on [this etherpad](https://etherpad.mozilla.org/oscodefest-softwaremetadata).
+
 The discussion centered around metadata for software to enable software discovery, software reuse and interpretation, and software citation. A number of existing software metadata efforts exist and have been in use for varying lengths of time.  These include:
 
 - [eml-software](http://knb.ecoinformatics.org/sofwtare/eml)
@@ -18,56 +20,12 @@ The discussion centered around metadata for software to enable software discover
 - [Winning model documentation](https://www.kaggle.com/wiki/WinningModelDocumentationTemplate)
 - [MyExperiment workflow repository](http://www.myexperiment.org/)
 
-
-Table 1: Mapping of fields in use by various software metadata efforts
-
-| Field                  | Figshare | Zenodo | code.jsonld | codemeta |
-| ---------------------- | -------- | ------ | ----------- | -------- |
-| Title                  | X        | X      | X           | X        |
-| Identifier             | X        | X      | X           | X        |
-| Author(s)              | X        | X      | X           | X        |
-| - AuthorName           | X        | X      | X           | X        |
-| - AuthorIdentifier     |          |        | X           | X        |
-| - AuthorEmail          |          |        | X           | X        |
-| - AuthorAffiliation    |          | X      |             | X        |
-| UploadedBy             |          | X      |             | X        |
-| ControlledTerm         |          |        |             | X        |
-| - Category             | X        |        |             |          |
-| - Collection           |          | X      |             |          |
-| - Community            |          | X      |             |          |
-| - ObjectType           | X        | X      |             | X        |
-| Tag/Keyword            | X        | X      | X           | X        |
-| Description            | X        | X      | X           | X        |
-| RelatedLink            | X        | X      |             | X        |
-| - CodeRepository       |          |        | X           | X        |
-| - Readme               |          |        |             | X        |
-| - BuildInstructions    |          |        |             | X        |
-| - ContIntegration      |          |        |             | X        |
-| - IssueTracker         |          |        |             | X        |
-| AccessList             |          |        |             | X        |
-| - PublicPrivate        | X        |        |             |          |
-| - PublicEmbargoPrivate |          | X      |             |          |
-| License                | X        | X      | X           | X        |
-| PubDate                |          | X      |             | X        |
-| - DateRetrieved        | X        |        |             |          |
-| - DateCreated          |          |        | X           |          |
-| Inputs                 |          |        |             | X        |
-| Outputs                |          |        |             | X        |
-| Function               |          |        |             | X        |
-| Dependency             |          |        |             | X        |
-| TestCoverage           |          |        |             | X        |
-| DocsCoverage           |          |        |             | X        |
-| IsAuthomatedBuild      |          |        |             | X        |
-| Package                |          |        |             | X        |
-| - ZippedCode           | X        | X      |             | X        |
-| - FileSet              | X        |        |             |          |
-
-Note: The codemeta column is an expected mapping based on anticipated fields for the codemeta schema, and may end up implemented differently.
+The crosswalk table has been moved to [crosswalk.csv](./crosswalk.csv)
 
 - Other things to add:
     -  Annotations
         - attribute selected fields to someone
-    	- Zenodo, Figshare allow users to comment 
+    	- Zenodo, Figshare allow users to comment
 
 
 

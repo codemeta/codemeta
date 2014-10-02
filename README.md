@@ -21,7 +21,7 @@ How you can help
 We need help formalizing a schema and creating mappings between existing APIs and the proposed schema.
 
 * Send us a pull request if you have any updates to our [schema](https://github.com/mbjones/codemeta/blob/master/codemeta.jsonld) or [mappings](https://github.com/mbjones/codemeta/blob/master/codemeta-crosswalk.md)!
-* Take a look at [issue tracker](https://github.com/mbjones/codemeta/issues)
+* Take a look at the [issue tracker](https://github.com/mbjones/codemeta/issues)
 * Join the discussion!
     * [(JSON-LD) Metadata for software discovery](https://github.com/mozillascience/code-research-object/issues/15)
     * [How should software be cited?](https://github.com/mozillascience/code-research-object/issues/12)
