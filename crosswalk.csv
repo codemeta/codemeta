@@ -11,7 +11,7 @@ ControlledTerm,communities,category,
 ObjectType,upload_type,file_type,
 Tags,keywords,tags,
 Description,description/notes,Description,
-RelatedLink,related_identifiers,links
+RelatedLink,related_identifiers,links,
 -CodeRepository,-,-,
 -Readme,-,-,
 -BuildInstructions,-,-,
