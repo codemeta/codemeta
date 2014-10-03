@@ -11,7 +11,7 @@ JSON-LD schema: https://github.com/mbjones/codemeta/blob/master/codemeta.jsonld
 
 Example instance: https://github.com/mbjones/codemeta/blob/master/example-codemeta.json
 
-Comparison of current APIs in this space: https://github.com/mbjones/codemeta/blob/master/codemeta-crosswalk.md
+Comparison of current APIs in this space: https://github.com/mbjones/codemeta/blob/master/crosswalk.csv
 
 
 
