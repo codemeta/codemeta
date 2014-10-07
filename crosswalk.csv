@@ -3,7 +3,7 @@ Title,title,Title,name,Software title
 Identifier,id,?,citation,Persistent identifier
 Author(s),creators,Authors(s),author,Author names and affiliations
 AuthorName,name,Name,name,-
-AuthorIdentifier,-,id(internal id/OCRID),id(OCRID),-
+AuthorIdentifier,-,id(internal id/ORCID),id(ORCID),-
 AuthorEmail,-,-,email,-
 AuthorAffiliation,affiliation,-,-,-
 UploadedBy,?,-,-,-
