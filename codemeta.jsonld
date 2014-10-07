@@ -2,27 +2,27 @@
    "@context":
    {
       "schemaorg": "http://schema.org/",
-	  "dcterms": "http://purl.org/dc/terms/",
+      "dcterms": "http://purl.org/dc/terms/",
       "xsd": "http://www.w3.org/2001/XMLSchema#",
       "Code": "schemaorg:Code",
-	  "Person": "schemaorg:Person",
+      "Person": "schemaorg:Person",
       "author":
-	  {
+      {
           "@id": "schemaorg:author",
           "@type": "@id"
-	  },
-	  "identifier":
+      },
+      "identifier":
       {
          "@id": "dcterms:identifier",
          "@type": "@id"
       },
-	  "codeRepository":
+      "codeRepository":
       {
          "@id": "schemaorg:codeRepository",
          "@type": "@id"
       },
       "dateCreated": "schemaorg:dateCreated",
-	  "dateModified": "schemaorg:dateModified",
+      "dateModified": "schemaorg:dateModified",
       "datePublished": "schemaorg:datePublished",
       "description": "schemaorg:description",
       "keywords": "schemaorg:keywords",
