@@ -1,36 +1,36 @@
-CodeMeta Field,Zenodo,Figshare,code.jsonld,Software Discovery Index
-Title,title,Title,name,Software title
-Identifier,id,?,citation,Persistent identifier
-Author(s),creators,Authors(s),author,Author names and affiliations
-AuthorName,name,Name,name,-
-AuthorIdentifier,-,id(internal id/ORCID),id(ORCID),-
-AuthorEmail,-,-,email,-
-AuthorAffiliation,affiliation,-,-,-
-UploadedBy,?,-,-,-
-ControlledTerm,communities,category,,-
-ObjectType,upload_type,file_type,type,-
-Tags,keywords,tags,keywords,-
-Description,description/notes,Description,description,Human-readable synopsis
-RelatedLink,related_identifiers,links,codeRepository,-
-CodeRepository,-,-,codeRepository,Links to code repository
-Readme,-,-,-,-
-BuildInstructions,-,-,-,-
-ContIntegration,-,-,-,-
-IssueTracker,-,-,-,-
-AccessList,access_right(public/embargo/private),access(private/public),-,-
-License,license,License,license,Software license
-datePublished,publication_date,date_retrieved,-,-
-dateCreated,-,-,dateCreated,-
-dateModified,-,-,-,-
-EmbargoDate,embargo_date,-,-,-
-Inputs,-,-,-,Formats for data inputs and outputs
-Outputs,-,-,-,Formats for data inputs and outputs
-Function,-,-,-,Terms to describe software objectives or functions
-Dependency,-,-,-,"Platform, environment, and dependencies"
-TestCoverage,-,-,-,-
-DocsCoverage,-,-,-,-
-IsAuthomatedBuild,-,-,-,-
-Package,filename,-,-,-
-ZippedCode,-,file,-,-
--,-,-,-,Software version
--,-,-,-,Associated grants and publications
+Concept,CodeMeta Field,Zenodo,Figshare,code.jsonld,Software Discovery Index
+SoftwareTitle,title,title,Title,name,Software title
+SoftwareIdentifier,identifier,id,?,citation,Persistent identifier
+SoftwareAuthor,author,creators,Authors(s),author,Author names and affiliations
+AuthorName, name,name,Name,name,-
+AuthorId,id,-,id(internal id/ORCID),id(ORCID),-
+AuthorEmail,email,-,-,email,-
+AuthorAffiliation,affiliation,affiliation,-,-,-
+UploadedBy,UploadedBy,?,-,-,-
+ControlledTerm,ControlledTerm,communities,category,,-
+ObjectType,ObjectType,upload_type,file_type,type,-
+Tags,Tags,keywords,tags,keywords,-
+Description,Description,description/notes,Description,description,Human-readable synopsis
+RelatedLink,RelatedLink,related_identifiers,links,codeRepository,-
+CodeRepositoryLink,CodeRepository,-,-,codeRepository,Links to code repository
+ReadmeLink,Readme,-,-,-,-
+BuildLink,BuildInstructions,-,-,-,-
+CILink,ContIntegration,-,-,-,-
+IssueLink,IssueTracker,-,-,-,-
+AccessList,AccessList,access_right(public/embargo/private),access(private/public),-,-
+License,License,license,License,license,Software license
+datePublished,datePublished,publication_date,date_retrieved,-,-
+dateCreated,dateCreated,-,-,dateCreated,-
+dateModified,dateModified,-,-,-,-
+EmbargoDate,EmbargoDate,embargo_date,-,-,-
+Inputs,Inputs,-,-,-,Formats for data inputs and outputs
+Outputs,Outputs,-,-,-,Formats for data inputs and outputs
+Function,Function,-,-,-,Terms to describe software objectives or functions
+Dependency,Dependency,-,-,-,"Platform, environment, and dependencies"
+TestCoverage,TestCoverage,-,-,-,-
+DocsCoverage,DocsCoverage,-,-,-,-
+IsAutomated,IsAutomatedBuild,-,-,-,-
+Package,Package,filename,-,-,-
+ZippedCodeLink,ZippedCode,-,file,-,-
+Version,-,-,-,-,Software version
+GrantsAndPubsLink,-,-,-,-,Associated grants and publications
