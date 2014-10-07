@@ -27,7 +27,9 @@
       "description": "schemaorg:description",
       "keywords": "schemaorg:keywords",
       "license": "schemaorg:license",
-      "title": "dcterms:title"
+      "title": "dcterms:title",
+      "version": "schemaorg:version",
+      "uploadedBy": "schemaorg:Person"
    }
 }
 
