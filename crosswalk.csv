@@ -19,7 +19,9 @@ ContIntegration,-,-,-,-
 IssueTracker,-,-,-,-
 AccessList,access_right(public/embargo/private),access(private/public),-,-
 License,license,License,license,Software license
-PubDate,publication_date,date_retrieved,dateCreated,-
+datePublished,publication_date,date_retrieved,-,-
+dateCreated,-,-,dateCreated,-
+dateModified,-,-,-,-
 EmbargoDate,embargo_date,-,-,-
 Inputs,-,-,-,Formats for data inputs and outputs
 Outputs,-,-,-,Formats for data inputs and outputs
