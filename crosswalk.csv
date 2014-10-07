@@ -1,32 +1,34 @@
-CodeMeta Field,Zenodo,Figshare,code.jsonld
-Title,title,Title,name
-Identifier,id,?,citation
-Author(s),creators,Authors(s),author
--AuthorName,name,Name,name
--AuthorIdentifier,-,id(internal id/OCRID),id(OCRID)
--AuthorEmail,-,-,email
--AuthorAffiliation,affiliation,-,-
-UploadedBy,?,-,-
-ControlledTerm,communities,category,
-ObjectType,upload_type,file_type,type
-Tags,keywords,tags,keywords
-Description,description/notes,Description,description
-RelatedLink,related_identifiers,links,codeRepository
--CodeRepository,-,-,codeRepository
--Readme,-,-,-
--BuildInstructions,-,-,-
--ContIntegration,-,-,-
--IssueTracker,-,-,-
-AccessList,access_right(public/embargo/private),access(private/public),-
-License,license,License,license
-PubDate,publication_date,date_retrieved,dateCreated
--EmbargoDate,embargo_date,-,-
-Inputs,-,-,-
-Outputs,-,-,-
-Function,-,-,-
-Dependency,-,-,-
-TestCoverage,-,-,-
-DocsCoverage,-,-,-
-IsAuthomatedBuild,-,-,-
-Package,filename,-,-
--ZippedCode,-,file,-
+CodeMeta Field,Zenodo,Figshare,code.jsonld,Software Discovery Index
+Title,title,Title,name,Software title
+Identifier,id,?,citation,Persistent identifier
+Author(s),creators,Authors(s),author,Author names and affiliations
+AuthorName,name,Name,name,-
+AuthorIdentifier,-,id(internal id/OCRID),id(OCRID),-
+AuthorEmail,-,-,email,-
+AuthorAffiliation,affiliation,-,-,-
+UploadedBy,?,-,-,-
+ControlledTerm,communities,category,,-
+ObjectType,upload_type,file_type,type,-
+Tags,keywords,tags,keywords,-
+Description,description/notes,Description,description,Human-readable synopsis
+RelatedLink,related_identifiers,links,codeRepository,-
+CodeRepository,-,-,codeRepository,Links to code repository
+Readme,-,-,-,-
+BuildInstructions,-,-,-,-
+ContIntegration,-,-,-,-
+IssueTracker,-,-,-,-
+AccessList,access_right(public/embargo/private),access(private/public),-,-
+License,license,License,license,Software license
+PubDate,publication_date,date_retrieved,dateCreated,-
+EmbargoDate,embargo_date,-,-,-
+Inputs,-,-,-,Formats for data inputs and outputs
+Outputs,-,-,-,Formats for data inputs and outputs
+Function,-,-,-,Terms to describe software objectives or functions
+Dependency,-,-,-,"Platform, environment, and dependencies"
+TestCoverage,-,-,-,-
+DocsCoverage,-,-,-,-
+IsAuthomatedBuild,-,-,-,-
+Package,filename,-,-,-
+ZippedCode,-,file,-,-
+-,-,-,-,Software version
+-,-,-,-,Associated grants and publications
