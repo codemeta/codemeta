@@ -14,7 +14,6 @@ Example instance: https://github.com/mbjones/codemeta/blob/master/example-codeme
 Comparison of current APIs in this space: https://github.com/mbjones/codemeta/blob/master/crosswalk.csv
 
 
-
 How you can help
 ================
 
@@ -28,6 +27,13 @@ We need help formalizing a schema and creating mappings between existing APIs an
     * [What information is needed to reuse code?](https://github.com/mozillascience/code-research-object/issues/2)
 
 
+Organizers
+==========
+
+* Matt Jones
+* Arfon Smith
+* Abby Cabunoc Mayes
+* Carl Boettiger
 
 Links
 =====
