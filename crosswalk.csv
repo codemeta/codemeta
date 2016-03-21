@@ -2,13 +2,14 @@ Concept,CodeMeta Field,Zenodo,Figshare,code.jsonld,Software Discovery Index,Soft
 SoftwareTitle,title,title,Title,name,Software title,,Title,Title,title
 SoftwareIdentifier,identifier,id,?,citation,Persistent identifier,,Identifier,Identifier,identifier
 SoftwareAuthor,author,creators,Authors(s),author,Author names and affiliations,,Creator,Creator,creator
+SoftwareContributor,,,,,,,,Contributor,
 AuthorName, name,name,Name,name,-,,creatorName,,-
 AuthorId,id,-,id(internal id/ORCID),id(ORCID),-,,nameIdentifier,,-
 AuthorEmail,email,-,-,email,-,,-,,-
 AuthorAffiliation,affiliation,affiliation,-,-,-,,affiliation,,-
 UploadedBy,UploadedBy,?,-,-,-,,-,,-
 ControlledTerm,ControlledTerm,communities,category,,-,,-,,-
-ObjectType,ObjectType,upload_type,file_type,type,-,,ResourceType,ResourceType,type
+ObjectType,ObjectType,upload_type,file_type,type,-,,ResourceType,ResourceType(resourceTypeGeneral=Software),type
 Tags,Tags,keywords,tags,keywords,-,,Subject,Subject,subject
 Description,Description,description/notes,Description,description,Human-readable synopsis,,Description,Description,description
 RelatedLink,RelatedLink,related_identifiers,links,codeRepository,-,,RelatedIdentifier,,relation
@@ -18,7 +19,8 @@ BuildLink,BuildInstructions,-,-,-,-,,-,,-
 CILink,ContIntegration,-,-,-,-,,-,,-
 IssueLink,IssueTracker,-,-,-,-,,-,,-
 AccessList,AccessList,access_right(public/embargo/private),access(private/public),-,-,,-,,-
-License,License,license,License,license,Software license,,Rights,,license
+License,License,license,License,license,Software license,,Rights,Rights,license
+Publisher,,,,,,,,Publisher,
 datePublished,datePublished,publication_date,date_retrieved,-,-,,PublicationYear,PublicationYear,date
 dateCreated,dateCreated,-,-,dateCreated,-,,Date(dateType = Created),,created
 dateModified,dateModified,-,-,-,-,,Date(dateType = Updated),Date (dateType = Issued),modified
@@ -27,10 +29,13 @@ Inputs,Inputs,-,-,-,Formats for data inputs and outputs,,-,,-
 Outputs,Outputs,-,-,-,Formats for data inputs and outputs,,-,,-
 Function,Function,-,-,-,Terms to describe software objectives or functions,,-,,-
 Dependency,Dependency,-,-,-,"Platform, environment, and dependencies",,-,,requires
-TestCoverage,TestCoverage,-,-,-,-,,-,,-
+Relationship,,,,,,,,"RelatedIdentifier(relationType=isPartOf), RelatedIdentifier(relationType=isVariantFormOf), RelatedIdentifier(relationType=isPreviousVersionOf), RelatedIdentifier(relationType=isNextVersionOf)",
+TestCoverage,TestCoverage,-,-,-,-,,-,-,-
 DocsCoverage,DocsCoverage,-,-,-,-,,-,,-
 IsAutomated,IsAutomatedBuild,-,-,-,-,,-,,-
 Package,Package,filename,-,-,-,,-,,-
 ZippedCodeLink,ZippedCode,-,file,-,-,,-,,-
 Version,version,-,-,-,Software version,,Version,Version,-
 GrantsAndPubsLink,-,-,-,-,Associated grants and publications,,-,,-
+InteractionMethod,,,,,,,,"ResourceType(resourceTypeGeneral=InteractiveResource),ResourceType(resourceTypeGeneral=Service)",
+ProgrammingLanguage,,,,,,,,Format,
