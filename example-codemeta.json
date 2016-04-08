@@ -19,11 +19,11 @@
     ],
     "contributor": [
         {
-            "@id": "orcid.org/0000-0002-2192-403X",
+            "@id": "http://orcid.org/0000-0002-2192-403X",
             "@type": "Person",
             "email": "slaughter@nceas.ucsb.edu",
             "name": "Peter Slaughter",
-            "affiliation": "GitHub"
+            "affiliation": "NCEAS"
         }
     ],
     "identifier": "http://dx.doi.org/10.6084/m9.figshare.828487",
