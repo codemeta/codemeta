@@ -11,6 +11,11 @@
           "@id": "schemaorg:author",
           "@type": "@id"
       },
+      "contributor":
+      {
+          "@id": "schemaorg:contributor",
+          "@type": "@id"
+      },
       "identifier":
       {
          "@id": "dcterms:identifier",
