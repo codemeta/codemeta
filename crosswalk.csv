@@ -2,7 +2,7 @@ Concept,CodeMeta Field,Zenodo,Figshare,code.jsonld,Software Discovery Index,Soft
 SoftwareTitle,title,title,Title,title,Software title,software,Title,Title,title,Title,,Title of the software
 SoftwareIdentifier,identifier,id,?,identifier,Persistent identifier,-,Identifier,Identifier,identifier,Package,Package,A unique identifier associated with the software
 SoftwareAuthor,author,creators,Authors(s),author,Author names and affiliations,software developer organization,Creator,Creator,creator,Authors@R,Maintainer,The software author
-SoftwareContributor,,,,,,-,,Contributor,,-,-,Contributors to the software other than the author
+SoftwareContributor,contributor,,,contributor,,-,,Contributor,,-,-,Contributors to the software other than the author
 AuthorName, name,name,Name,name,-,-,creatorName,,-,-,-,The name of the author
 AuthorId,id,-,id(internal id/ORCID),id(ORCID),-,-,nameIdentifier,,-,-,-,A unique identifier associated with the software author
 AuthorEmail,email,-,-,email,-,-,-,,-,-,-,The author’s email address
