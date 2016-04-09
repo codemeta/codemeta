@@ -26,6 +26,7 @@
          "@id": "schemaorg:codeRepository",
          "@type": "@id"
       },
+      "dependency" : "schemaorg:requirements",
       "dateCreated": "schemaorg:dateCreated",
       "dateModified": "schemaorg:dateModified",
       "datePublished": "schemaorg:datePublished",

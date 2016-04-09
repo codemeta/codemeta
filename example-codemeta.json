@@ -26,6 +26,16 @@
             "affiliation": "NCEAS"
         }
     ],
+    "requirements" : [
+        {
+          "@value" : "https://dx.doi.org/10.6084/m9.figshare.1164194.v13",
+          "@type" : "@id"
+        },
+        {
+          "@value" : "python version 2.7.10 or higher",
+          "@type" : "Text"
+        }
+    ],
     "identifier": "http://dx.doi.org/10.6084/m9.figshare.828487",
     "codeRepository": "https://github.com/codemeta/codemeta",
     "datePublished": "2014-09-06",
