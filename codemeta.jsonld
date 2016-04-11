@@ -6,6 +6,8 @@
       "xsd": "http://www.w3.org/2001/XMLSchema#",
       "Code": "schemaorg:Code",
       "Person": "schemaorg:Person",
+      "URL" : "schemaorg:URL",
+      "Text" : "schemaorg:Text",
       "author":
       {
           "@id": "schemaorg:author",
