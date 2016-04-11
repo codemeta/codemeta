@@ -20,7 +20,7 @@ CILink,ContIntegration,-,-,-,-,-,-,,-,-,-,A URL for the continuous integration s
 IssueLink,IssueTracker,-,-,-,-,-,-,,-,BugReports,-,A URL for the issue tracking system used for the software
 AccessList,AccessList,access_right(public/embargo/private),access(private/public),-,-,-,-,,-,-,-,The access policy governing access to the software
 License,License,license,License,license,Software license,software license,Rights,Rights,license,License,-,The name of the license agreement governing the use and redistribution of the software
-Publisher,,,,,,software publisher organization,,Publisher,,-,-,The publisher of the software
+Publisher,Publisher,,,publisher,,software publisher organization,,Publisher,,-,-,The publisher of the software
 datePublished,datePublished,publication_date,date_retrieved,datePublished,-,-,PublicationYear,PublicationYear,date,Date,-,The date the software was distributed by the publisher
 dateCreated,dateCreated,-,-,dateCreated,-,-,Date(dateType = Created),,created,-,Date,The creation date of the software
 dateModified,dateModified,-,-,dateModified,-,-,Date(dateType = Updated),Date (dateType = Issued),modified,-,-,The latest modification date of the software
