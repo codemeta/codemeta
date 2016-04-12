@@ -2,11 +2,11 @@ Concept,CodeMeta Field,Zenodo,Figshare,code.jsonld,Software Discovery Index,Soft
 SoftwareTitle,title,title,Title,title,Software title,software,Title,Title,title,Title,,Title of the software
 SoftwareIdentifier,identifier,id,?,identifier,Persistent identifier,-,Identifier,Identifier,identifier,Package,Package,A unique identifier associated with the software
 SoftwareAuthor,author,creators,Authors(s),author,Author names and affiliations,software developer organization,Creator,Creator,creator,Authors@R,Maintainer,The software author
-SoftwareContributor,contributor,,,contributor,,contributor,,Contributor,,-,-,Contributors to the software other than the author
 AuthorName,name,name,Name,name,-,-,creatorName,,-,-,-,The name of the author
 AuthorId,id,-,id(internal id/ORCID),id(ORCID),-,-,nameIdentifier,,-,-,-,A unique identifier associated with the software author
 AuthorEmail,email,-,-,email,-,-,-,,-,-,-,The author’s email address
 AuthorAffiliation,affiliation,affiliation,-,affiliation,-,-,affiliation,,-,-,-,The organization the author is affiliated with
+SoftwareContributor,contributor,,,contributor,,contributor,,Contributor,,-,-,Contributors to the software other than the author
 UploadedBy,uploadedBy,?,-,uploadedBy,-,-,-,,-,-,-,The user identity that uploaded the software to an online repository
 ControlledTerm,controlledTerm,communities,category,,-,-,-,,-,-,-,Keywords associated with the software
 ObjectType,objectType,upload_type,file_type,type,-,-,ResourceType,ResourceType(resourceTypeGeneral=Software),type,Type,Package-Type,A category that the software belongs to
