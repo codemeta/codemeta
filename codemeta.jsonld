@@ -33,8 +33,10 @@
       "dateModified": "schemaorg:dateModified",
       "datePublished": "schemaorg:datePublished",
       "description": "schemaorg:description",
-      "keywords": "schemaorg:keywords",
+      "tags": "schemaorg:keywords",
+      "publisher": "schemaorg:publisher",
       "license": "schemaorg:license",
+      "objectType": "dcterms:type",
       "title": "dcterms:title",
       "version": "schemaorg:version",
       "uploadedBy": "schemaorg:Person"
