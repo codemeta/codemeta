@@ -7,11 +7,11 @@ This is an extention of the work done by [@arfon](http://github.com/arfon/), [@h
 
 With codemeta, we want to formalize the schema used to map between the different services (Github, figshare, Zenodo) to help others plug into existing systems. Having a standard schema will allow other data archivers and libraries join in. This will help keep science on the web shareable and interoperable!
 
-JSON-LD schema: https://github.com/mbjones/codemeta/blob/master/codemeta.jsonld
+JSON-LD schema: https://github.com/codemeta/codemeta/blob/master/codemeta.jsonld
 
-Example instance: https://github.com/mbjones/codemeta/blob/master/example-codemeta.json
+Example instance: https://github.com/codemeta/codemeta/blob/master/example-codemeta.json
 
-Comparison of current APIs in this space: https://github.com/mbjones/codemeta/blob/master/crosswalk.csv
+Comparison of current APIs in this space: https://github.com/codemeta/codemeta/blob/master/crosswalk.csv
 
 
 How you can help
@@ -19,8 +19,8 @@ How you can help
 
 We need help formalizing a schema and creating mappings between existing APIs and the proposed schema.
 
-* Send us a pull request if you have any updates to our [schema](https://github.com/mbjones/codemeta/blob/master/codemeta.jsonld) or [mappings](https://github.com/mbjones/codemeta/blob/master/codemeta-crosswalk.md)!
-* Take a look at the [issue tracker](https://github.com/mbjones/codemeta/issues)
+* Send us a pull request if you have any updates to our [schema](https://github.com/codemeta/codemeta/blob/master/codemeta.jsonld) or [mappings](https://github.com/codemeta/codemeta/blob/master/codemeta-crosswalk.md)!
+* Take a look at the [issue tracker](https://github.com/codemeta/codemeta/issues)
 * Join the discussion!
     * [(JSON-LD) Metadata for software discovery](https://github.com/mozillascience/code-research-object/issues/15)
     * [How should software be cited?](https://github.com/mozillascience/code-research-object/issues/12)
