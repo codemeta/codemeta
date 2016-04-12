@@ -39,3 +39,9 @@ Version,version,-,-,-,Software version,version name,Version,Version,-,Version,Ve
 GrantsAndPubsLink,-,-,-,-,Associated grants and publications,-,-,,-,-,-,-
 InteractionMethod,,,,,,-,,"ResourceType(resourceTypeGeneral=InteractiveResource),ResourceType(resourceTypeGeneral=Service)",,-,-,-
 ProgrammingLanguage,,,,,,-,,Format,,-,-,The computer programming language that the software is written in
+SoftwareCitation,softwareCitation,,,,,,,,,,,
+SoftwarePaperCitation,softwarePaperCitation,,,,,,,,,,,
+DownloadCount,downloadCount,,,,,,,,,,,
+CitationCount,citationCount,,,,,,,,,,,
+Funding,funding,,,,,,,,,,,
+RelatedPublications,relatedPublications,,,,,,,,,,,
