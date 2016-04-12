@@ -1,4 +1,4 @@
-Concept,CodeMeta Field,Zenodo,Figshare,code.jsonld,Software Discovery Index,Software Ontology,DataCite,Software Entities Model (DataCite),Dublin Core,R Package Description,Debian Package Metadata,Concept Definition
+Concept,CodeMeta Field,Zenodo,Figshare,code.jsonld,Software Discovery Index,Software Ontology,DataCite,Software Entities Model (DataCitei/JISC),Dublin Core,R Package Description,Debian Package Metadata,Concept Definition
 SoftwareTitle,title,title,Title,title,Software title,software,Title,Title,title,Title,,Title of the software
 SoftwareIdentifier,identifier,id,?,identifier,Persistent identifier,-,Identifier,Identifier,identifier,Package,Package,A unique identifier associated with the software
 SoftwareAuthor,author,creators,Authors(s),author,Author names and affiliations,software developer organization,Creator,Creator,creator,Authors@R,Maintainer,The software author
