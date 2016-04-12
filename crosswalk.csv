@@ -36,12 +36,12 @@ IsAutomated,isAutomatedBuild,-,-,-,-,-,-,,-,-,-,-
 Package,package,filename,-,-,-,-,-,,-,-,-,-
 ZippedCodeLink,zippedCode,-,file,-,-,-,-,,-,-,-,-
 Version,version,-,-,-,Software version,Version,Version,Version,-,Version,Version,The version of the software
-GrantsAndPubsLink,-,-,-,-,Associated grants and publications,-,-,,-,-,-,-
 InteractionMethod,,,,,,-,,"ResourceType(resourceTypeGeneral=InteractiveResource),ResourceType(resourceTypeGeneral=Service)",,-,-,-
 ProgrammingLanguage,,,,,,programming language,,Format,,-,-,The computer programming language that the software is written in
 SoftwareCitation,softwareCitation,,,,,,,,,,,
 SoftwarePaperCitation,softwarePaperCitation,,,,,Citation,,,,,,
 DownloadCount,downloadCount,,,,,,,,,,,
 CitationCount,citationCount,,,,,,,,,,,
-Funding,funding,,,,,,,,,,,
-RelatedPublications,relatedPublications,,,,,,,,,,,
+Funding,funding,,,,Associated grants and publications,,,,,,,
+RelatedPublications,relatedPublications,,,,Associated grants and publications,,,,,,,
+,,,,,,,,,,,,
