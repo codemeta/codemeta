@@ -43,6 +43,6 @@ SoftwareCitation,softwareCitation,,,,,,,,,,,,The citation of the software itself
 SoftwarePaperCitation,softwarePaperCitation,,,,,Citation,,,,,,,The citation of the paper that describes the research that the software was associated with
 DownloadCount,downloadCount,,,,,,,,,,,,A metric indicating the number of times that the software has been downloaded
 CitationCount,citationCount,,,,,,,,,,,,A metric indicating the number of times that the software has been cited
-Funding,funding,,,,Associated grants and publications,,,,,,,,The software funding source
-RelatedPublications,relatedPublications,,,,Associated grants and publications,,,,,,,,Publications related to the software
+Funding,funding,,,,Associated grants,,,,,,,,The software funding source
+RelatedPublications,relatedPublications,,,,Associated publications,,,,,,,,Publications related to the software
 ,,,,,,,,,,,,,
