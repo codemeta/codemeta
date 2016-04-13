@@ -3,7 +3,7 @@ SoftwareTitle,title,title,Title,title,Software title,software,Title,Title,title,
 SoftwareIdentifier,identifier,id,?,identifier,Persistent identifier,-,Identifier,Identifier,identifier,Package,Package,A unique identifier associated with the software
 SoftwareAuthor,author,creators,Authors(s),author,Author names and affiliations,software developer organization,Creator,Creator,creator,Authors@R person(role=“aut”),Maintainer,The software author
 AuthorName,name,name,Name,name,-,-,creatorName,,-,"Authors@R person(given, family)",-,The name of the author
-AuthorId,id,-,id(internal id/ORCID),id(ORCID),-,-,nameIdentifier,,-,-,-,A unique identifier associated with the software author
+AuthorId,id,-,id(internal id/ORCID),id(ORCID),-,-,nameIdentifier,,-,-,-,"A unique identifier associated with the software author, for example an https://orcid.org "
 AuthorEmail,email,-,-,email,-,-,-,,-,Authors@R person(email),-,The author’s email address
 AuthorAffiliation,affiliation,affiliation,-,affiliation,-,-,affiliation,,-,-,-,The organization the author is affiliated with
 SoftwareContributor,contributor,,,contributor,,contributor,,Contributor,,Authors@R person(role=“ctb”),-,Contributors to the software other than the author
@@ -21,7 +21,7 @@ IssueLink,issueTracker,-,-,-,-,-,-,,-,BugReports,-,A URL for the issue tracking 
 AccessList,accessList,access_right(public/embargo/private),access(private/public),-,-,-,-,,-,-,-,The access policy governing access to the software
 License,license,license,License,license,Software license,software license,Rights,Rights,license,License,-,The name of the license agreement governing the use and redistribution of the software
 Publisher,publisher,,,publisher,,software publisher organization,,Publisher,,-,-,The publisher of the software
-datePublished,datePublished,publication_date,date_retrieved,datePublished,-,-,PublicationYear,PublicationYear,date,Date,-,The date the software was distributed by the publisher
+datePublished,datePublished,publication_date,date_retrieved,datePublished,-,-,PublicationYear,PublicationYear,date,Date,-,The date the software was first made available for download by the publisher
 dateCreated,dateCreated,-,-,dateCreated,-,-,Date(dateType = Created),,created,-,Date,The creation date of the software
 dateModified,dateModified,-,-,dateModified,-,-,Date(dateType = Updated),Date (dateType = Issued),modified,-,-,The latest modification date of the software
 EmbargoDate,embargoDate,embargo_date,-,-,-,-,Date(dateType = Available),Date(dateType = Available),available,-,-,A calendar date specifying the end of a restricted access period
@@ -35,14 +35,14 @@ TestCoverage,testCoverage,-,-,-,-,-,-,-,-,-,-,-
 DocsCoverage,docsCoverage,-,-,-,-,-,-,,-,-,-,-
 IsAutomated,isAutomatedBuild,-,-,-,-,-,-,,-,-,-,-
 Package,package,filename,-,-,-,-,-,,-,-,-,-
-ZippedCodeLink,zippedCode,-,file,-,-,-,-,,-,-,-,-
+ZippedCodeLink,zippedCode,-,file,-,-,-,-,,-,-,-,A URL for the software distribution in compressed form.
 Version,version,-,-,-,Software version,Version,Version,Version,-,Version,Version,The version of the software
 InteractionMethod,,,,,,-,,"ResourceType(resourceTypeGeneral=InteractiveResource),ResourceType(resourceTypeGeneral=Service)",,-,-,-
 ProgrammingLanguage,,,,,,programming language,,Format,,-,-,The computer programming language that the software is written in
-SoftwareCitation,softwareCitation,,,,,,,,,,,
-SoftwarePaperCitation,softwarePaperCitation,,,,,Citation,,,,,,
-DownloadCount,downloadCount,,,,,,,,,,,
-CitationCount,citationCount,,,,,,,,,,,
-Funding,funding,,,,Associated grants and publications,,,,,,,
-RelatedPublications,relatedPublications,,,,Associated grants and publications,,,,,,,
+SoftwareCitation,softwareCitation,,,,,,,,,,,The citation of the software itself
+SoftwarePaperCitation,softwarePaperCitation,,,,,Citation,,,,,,The citation of the paper that describes the research that the software was associated with
+DownloadCount,downloadCount,,,,,,,,,,,A metric indicating the number of times that the software has been downloaded
+CitationCount,citationCount,,,,,,,,,,,A metric indicating the number of times that the software has been cited
+Funding,funding,,,,Associated grants and publications,,,,,,,The software funding source
+RelatedPublications,relatedPublications,,,,Associated grants and publications,,,,,,,Publications related to the software
 ,,,,,,,,,,,,
