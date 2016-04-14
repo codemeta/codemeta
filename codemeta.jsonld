@@ -8,16 +8,20 @@
       "Person": "schemaorg:Person",
       "URL" : "schemaorg:URL",
       "Text" : "schemaorg:Text",
+      "accessList": "dcterms:accessRights", 
       "author":
       {
           "@id": "schemaorg:author",
           "@type": "@id"
       },
+      "buildInstructions": "schemaorg:URL",
+      "citationCount": "schemaorg:integer",
       "contributor":
       {
           "@id": "schemaorg:contributor",
           "@type": "@id"
       },
+      "contIntegration": "schemaorg:URL" ,
       "identifier":
       {
          "@id": "dcterms:identifier",
@@ -28,18 +32,38 @@
          "@id": "schemaorg:codeRepository",
          "@type": "@id"
       },
-      "dependency" : "schemaorg:requirements",
       "dateCreated": "schemaorg:dateCreated",
       "dateModified": "schemaorg:dateModified",
       "datePublished": "schemaorg:datePublished",
+      "dependency" : "schemaorg:requirements",
       "description": "schemaorg:description",
+      "docsCoverage": "schemarg:integer",
+      "downloadCount": "schemarg:integer",
+      "embargoDate": "schemaor:date",
+      "isAutomatedBuild": "schemaorg:Text",
       "tags": "schemaorg:keywords",
+      "package": "schemaorg:Text",
       "publisher": "schemaorg:publisher",
       "license": "schemaorg:license",
+      "interactionMethod": "schemaor:Text",
+      "inputs": "schemaorg:Text",
+      "outputs": "schemaorg:Text",
+      "function": "schemaorg:Text",
+      "funding": "schemaorg:Text",
       "objectType": "dcterms:type",
+      "programmingLanguage": "schemaorg:Text",
+      "readme": "schemaorg:URL",
+      "issueTracker": "schemaorg:URL",
+      "relatedLink": "schemaorg:URL",
+      "relatedPublications": "schemaorg:URL",
+      "relationship": "schemaorg:Text",
+      "softwareCitation": "schemaorg:citation",
+      "suggests": "schemaorg:requirement",
+      "softwarePaperCitation": "schemaorg:citation",
+      "testCoverage": "schemaorg:integer",
       "title": "dcterms:title",
       "version": "schemaorg:version",
-      "uploadedBy": "schemaorg:Person"
+      "uploadedBy": "schemaorg:Person",
+      "zippedCode": "schemaorg:URL"
    }
 }
-
