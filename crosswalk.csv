@@ -1,16 +1,16 @@
 Concept,CodeMeta Field,Zenodo,Figshare,code.jsonld,Software Discovery Index,Software Ontology,OntoSoft,DataCite,Software Entities Model (DataCitei/JISC),Dublin Core,R Package Description,Debian Package Metadata,github,Concept Definition
-SoftwareTitle,title,title,Title,title,Software title,software,title,Title,Title,title,Title,,name,Title of the software
-SoftwareIdentifier,identifier,id,?,identifier,Persistent identifier,-,Identifier,Identifier,Identifier,identifier,Package,Package,id,A unique identifier associated with the software
+SoftwareTitle,title,title,Title,title,Software title,software,hasName -> TextEntity,Title,Title,title,Title,,name,Title of the software
+SoftwareIdentifier,identifier,id,?,identifier,Persistent identifier,-,hasUniqueId -> Identifier,Identifier,Identifier,identifier,Package,Package,id,A unique identifier associated with the software
 SoftwareAuthor,author,creators,Authors(s),author,Author names and affiliations,software developer organization,,Creator,Creator,creator,Authors@R person(role=“aut”),Maintainer,owner,The software author
 AuthorName,name,name,Name,name,-,-,,creatorName,,-,"Authors@R person(given, family)",-,,The name of the author
 AuthorId,id,-,id(internal id/ORCID),id(ORCID),-,-,,nameIdentifier,,-,-,-,,"A unique identifier associated with the software author, for example an https://orcid.org "
 AuthorEmail,email,-,-,email,-,-,,-,,-,Authors@R person(email),-,,The author’s email address
 AuthorAffiliation,affiliation,affiliation,-,affiliation,-,-,,affiliation,,-,-,-,,The organization the author is affiliated with
-SoftwareContributor,contributor,,,contributor,,contributor,contributor,,Contributor,,Authors@R person(role=“ctb”),-,contributors_url,Contributors to the software other than the author
+SoftwareContributor,contributor,,,contributor,,contributor,hasMajorContributor -> contributor,,Contributor,,Authors@R person(role=“ctb”),-,contributors_url,Contributors to the software other than the author
 UploadedBy,uploadedBy,?,-,uploadedBy,-,-,,-,,-,-,-,,The user identity that uploaded the software to an online repository
 ControlledTerm,controlledTerm,communities,category,,-,-,,-,,-,-,-,,Keywords associated with the software
 ObjectType,objectType,upload_type,file_type,type,-,-,,ResourceType,ResourceType(resourceTypeGeneral=Software),type,Type,Package-Type,,A category that the software belongs to
-Tags,tags,keywords,tags,keywords,-,,Keywords,Subject,Subject,subject,-,-,,Terms used to describe the software and to facilitate search and discovery
+Tags,tags,keywords,tags,keywords,-,,hasSoftwareCategory -> SoftwareCategory,Subject,Subject,subject,-,-,,Terms used to describe the software and to facilitate search and discovery
 Description,description,description/notes,Description,description,Human-readable synopsis,software,Software Description,Description,Description,description,Description,Description,description,A description of the software
 RelatedLink,relatedLink,related_identifiers,links,codeRepository,-,-,,RelatedIdentifier,,relation,-,-,,A URL that provides additional information or resources related to the software
 CodeRepositoryLink,codeRepository,-,-,codeRepository,Links to code repository,-,hasCodeLocation -> Location,-,,-,URL,HomePage,git_url,The repository containing the software source
