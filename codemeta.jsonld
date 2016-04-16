@@ -12,20 +12,14 @@
       "author":
       {
           "@id": "schemaorg:author",
-          "@type": "@id",
-          "email": "schemaorg:email",
-          "name": "schemaorg:name",
-          "affiliation": "schemaorg:affiliation"
+          "@type": "@id"
       },
       "buildInstructions": "schemaorg:URL",
       "citationCount": "schemaorg:integer",
       "contributor":
       {
           "@id": "schemaorg:contributor",
-          "@type": "@id",
-          "email": "schemaorg:email",
-          "name": "schemaorg:name",
-          "affiliation": "schemaorg:affiliation"
+          "@type": "@id"
       },
       "contIntegration": "schemaorg:URL" ,
       "identifier":
@@ -38,6 +32,9 @@
          "@id": "schemaorg:codeRepository",
          "@type": "@id"
       },
+      "email": "schemaorg:email",
+      "name": "schemaorg:name",
+      "affiliation": "schemaorg:affiliation"
       "dateCreated": "schemaorg:dateCreated",
       "dateModified": "schemaorg:dateModified",
       "datePublished": "schemaorg:datePublished",
