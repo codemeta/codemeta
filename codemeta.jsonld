@@ -12,14 +12,20 @@
       "author":
       {
           "@id": "schemaorg:author",
-          "@type": "@id"
+          "@type": "@id",
+          "email": "schemaorg:email",
+          "name": "schemaorg:name",
+          "affiliation": "schemaorg:affiliation"
       },
       "buildInstructions": "schemaorg:URL",
       "citationCount": "schemaorg:integer",
       "contributor":
       {
           "@id": "schemaorg:contributor",
-          "@type": "@id"
+          "@type": "@id",
+          "email": "schemaorg:email",
+          "name": "schemaorg:name",
+          "affiliation": "schemaorg:affiliation"
       },
       "contIntegration": "schemaorg:URL" ,
       "identifier":
