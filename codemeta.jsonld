@@ -9,13 +9,22 @@
       "URL" : "schema:URL",
       "Text" : "schema:Text",
       "accessList": "dcterms:accessRights", 
-      "author":
+      "agent":
       {
           "@id": "schema:author",
           "@type": "@id"
       },
       "email": "schema:email",
       "affiliation": "schema:affiliation",
+      "isCitable": "schema:Boolean",
+      "isMaintainer": "schema:Boolean",
+      "isRightsHolder: :schema:Boolean",
+      "hasRole": 
+      {
+        "@id": "schema:role",
+        "@type": "@id",
+      }
+      "roleCode": "schema:Text",
       "buildInstructions": "schema:URL",
       "citationCount": "schema:integer",
       "contributor":
