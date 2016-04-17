@@ -32,6 +32,9 @@
          "@id": "schemaorg:codeRepository",
          "@type": "@id"
       },
+      "email": "schemaorg:email",
+      "name": "schemaorg:name",
+      "affiliation": "schemaorg:affiliation",
       "dateCreated": "schemaorg:dateCreated",
       "dateModified": "schemaorg:dateModified",
       "datePublished": "schemaorg:datePublished",
