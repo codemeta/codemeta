@@ -1,6 +1,6 @@
 language: ruby
 bundler_args: --without debug
-script: "bundle exec test/validate.rb"
+script: "bundle exec ruby minitest/test_example_codemeta.rb"
 env:
   - CI=true
 rvm:
