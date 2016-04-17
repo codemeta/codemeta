@@ -1,0 +1,9 @@
+language: ruby
+bundler_args: --without debug
+script: "bundle exec ruby minitest/test_example_codemeta.rb"
+env:
+  - CI=true
+rvm:
+  - 2.3.0
+cache: bundler
+sudo: false
