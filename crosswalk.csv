@@ -5,7 +5,7 @@ SoftwareAuthor,The software author,Creator,hasCreator,creators,owner,Authors(s),
 AuthorFirstName,-,-,-,creators.givennames,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 AuthorLastName,-,-,-,creators.familyname,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 AuthorId,"A unique identifier associated with the software author, for example an https://orcid.org",-,hasCreator,creators.orcid,-,id(internal id/ORCID),-,id(ORCID),-,-,-,-,-,-,-,-,-,-,-,id,"3, 4, 5","3, 4, 5, 6, 8, 9","3,4,5,6"
-AuthorEmail,The author’s email address,-,hasCreator,-,-,-,-,email,-,-,Authors@R person(email),-,author_email,-,author:email-address,author.email,-,"DESCRIPTION/Author, DESCRIPTION/Maintainer",email,email,"3, 4, 5",-,-
+AuthorEmail,The author's email address,-,hasCreator,-,-,-,-,email,-,-,Authors@R person(email),-,author_email,-,author:email-address,author.email,-,"DESCRIPTION/Author, DESCRIPTION/Maintainer",email,email,"3, 4, 5",-,-
 AuthorAffiliation,The organization the author is affiliated with,-,hasCreator,creators.affiliation,-,-,-,affiliation,-,-,-,-,-,-,-,-,-,-,-,affiliation,"3, 4, 5",-,"4,5,6"
 SoftwareContributor,Contributors to the software other than the author,Contributor,hasMajorContributor,contributors,contributors_url,-,contributor,contributor,-,-,Authors@R person(role=“ctb”),-,-,-,-,contributors,contributors,-,-,contributor,"3, 4, 5","3, 4, 5, 8,","3,4,5,6"
 UploadedBy,The user identity that uploaded the software to an online repository,-,hasPublisher,owners (?),-,-,-,uploadedBy,-,-,"*Three letter code can specify other roles like author above: http://www.loc.gov/marc/relators/relaterm.html, https://journal.r-project.org/archive/2012-1/RJournal_2012-1_Hornik~et~al.pdf",-,-,-,-,-,-,-,-,uploadedBy,"3, 4, 5","9, 11",-
