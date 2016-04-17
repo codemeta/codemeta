@@ -1,101 +1,101 @@
-Concept,Zenodo,Software Ontology,GitHub,Use Cases.x,Use Cases.y,CodeMeta Field,Figshare,code.jsonld,Software Discovery Index,Software Entities Model (DataCitei/JISC),Dublin Core,R Package Description,Debian Package Metadata,Python Distutils (PyPI),Trove Software Map,Perl Module Description (CPAN::Meta),JavaScript package descption (npm),Java (Maven),Octave,Ruby Gem,Use Cases,DataCite,OntoSoft,Concept Definition
-SoftwareTitle,title,software,name,"1, 3, 5a-d","3,5,6",title,Title,title,Software title,Title,title,Title,-,name,Title,name,name,name,DESCRIPTION/Name,name,"1, 3, 4, 5",Title,hasName,Title of the software
-SoftwareIdentifier,id,-,id or full_name?,"2, 3, 4, 5, 6, 8, 9,","3,5,6,12",identifier,?,identifier,Persistent identifier,Identifier,identifier,Package,Package,-,-,-,name,groupId,-,-,1-12,Identifier,hasUniqueId,A unique identifier associated with the software
-SoftwareAuthor,creators,software developer organization,owner,"3, 4, 5, 8,","3,4,5,6",author,Authors(s),author,Author names and affiliations,Creator,creator,Authors@R person(role=“aut”),Maintainer,author,Maintainers,author,author,developers,"DESCRIPTION/Author, DESCRIPTION/Maintainer",author/authors,"3, 4, 5",Creator,hasCreator,The software author
-AuthorFirstName,creators.givennames,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-AuthorLastName,creators.familyname,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-AuthorId,creators.orcid,-,-,"3, 4, 5, 6, 8, 9","3,4,5,6",id,id(internal id/ORCID),id(ORCID),-,-,-,-,-,-,-,-,-,-,-,-,"3, 4, 5",-,hasCreator,"A unique identifier associated with the software author, for example an https://orcid.org"
-AuthorEmail,-,-,-,-,-,email,-,email,-,-,-,Authors@R person(email),-,author_email,-,author:email-address,author.email,-,"DESCRIPTION/Author, DESCRIPTION/Maintainer",email,"3, 4, 5",-,hasCreator,The author’s email address
-AuthorAffiliation,creators.affiliation,-,-,-,"4,5,6",affiliation,-,affiliation,-,-,-,-,-,-,-,-,-,-,-,-,"3, 4, 5",-,hasCreator,The organization the author is affiliated with
-SoftwareContributor,contributors,contributor,contributors_url,"3, 4, 5, 8,","3,4,5,6",contributor,-,contributor,-,Contributor,-,Authors@R person(role=“ctb”),-,-,-,-,contributors,contributors,-,-,"3, 4, 5",Contributor,hasMajorContributor,Contributors to the software other than the author
-UploadedBy,owners (?),-,-,"9, 11",-,uploadedBy,-,uploadedBy,-,-,-,"*Three letter code can specify other roles like author above: http://www.loc.gov/marc/relators/relaterm.html, https://journal.r-project.org/archive/2012-1/RJournal_2012-1_Hornik~et~al.pdf",-,-,-,-,-,-,-,-,"3, 4, 5",-,hasPublisher,The user identity that uploaded the software to an online repository
-ControlledTerm,communities,-,-,"1, 3","1,3",controlledTerm,category,-,-,-,-,-,-,classifiers['Topic'],Topic,CATEGORIES,-,-,DESCRIPTION/Categories,-,"1, 3",-,hasSoftwareCategory hasDomainKeywords,Keywords associated with the software (i.e. Fixed vocabulary by which to describe category or community of software)
-ObjectType,upload_type,-,-,-,5,objectType,file_type,type,-,ResourceType(resourceTypeGeneral=Software),type,Type,Package-Type,-,-,-,-,type,-,-,1-12,ResourceType(resourceTypeGeneral=Software),---,"A category of the object (controlled list, such as software, paper, data, image...)"
-Tags,keywords,-,-,"1, 3","1,3",tags,tags,keywords,-,Subject,subject,-,-,keywords,-,keywords,keywords,-,-,-,"1, 3",Subject,hasSoftwareCategory hasDomainKeywords,Terms used to describe the software and to facilitate search and discovery
-Description,description/notes,software,description,"1, 2, 3, 4, 7, 9, 11","1,3",description,Description,description,Human-readable synopsis,Description,description,Description,Description,"description, long_description",description,"abstract, description",description,description,"DESCRIPTION/Title, DESCRIPTION/Description","summary, description","(1), 3, (4), (9)",Description,hasShortDescription hasUsesAndAssumptions hasUseLimitations,A description of the software
-RelatedLink,related_identifiers,-,homepage,"1, 3",-,relatedLink,links,codeRepository,-,-,relation,-,-,-,homepage,resources,homepage,-,DESCRIPTION/Url,homepage,"1-9, 11-12",-,hasProjectWebSite,A URL that provides additional information or resources related to the software
-CodeRepositoryLink,r_i.relation,-,git_url,"1, 2, 6, 7, 13","3,4,5,6,9,11",codeRepository,-,codeRepository,Links to code repository,-,-,URL,HomePage,url,-,resources.repository,repository,repositories,-,homepage,"1, 2, 3, 7, 9, (11), (12)",-,os:hasCodeLocation os:hasExecutableLocation,The repository containing the software source
-ReadmeLink,r_i.relation,-,-,13,-,readme,-,-,-,-,-,-,-,-,-,README,files,-,-,-,"1, 2, 3",-,hasDocumentation hasInstallationInstructions,A URL for the software README file
-BuildLink,r_i.relation,-,-,13,"2,8,9,11",buildInstructions,-,-,-,-,-,-,-,-,-,-,-,-,-,-,"2,3,4",-,-,A URL for the software build instructions
-CILink,r_i.relation,-,-,13,"9,11",contIntegration,-,-,-,-,-,-,-,-,-,-,-,ciManagement,-,-,"2, 3, 9",-,-,A URL for the continuous integration system used to build the software
-IssueLink,r_i.relation,-,issues_url,13,11,issueTracker,-,-,-,-,-,BugReports,-,-,-,resources.bugtracker,bugs,issuesManagement,-,-,"1, 2,  3, 7, 8, 11",-,sort of os:hasSoftwarefSupport (see Software Support below),A URL for the issue tracking system used for the software
-AccessList,access_right(public/embargo/private),-,-,"3, 10","4,10",accessList,access(private/public),-,-,-,-,-,-,-,-,-,private,-,-,-,3,-,-,The access policy governing access to the software
-License,license,software license,license (https://developer.github.com/v3/licenses/#get-a-repositorys-license),"4, 7, 10","4,7,10",license,License,license,Software license,Rights,license,License,-,"license, classifiers['License']",License,license,license,license,DESCRIPTION/License,license/licenses,"3, 10",Rights,License,The name of the license agreement governing the use and redistribution of the software
-Publisher,-,software publisher organization,-,"3, 4, 5, 6, 11",5,publisher,-,publisher,-,Publisher,-,-,-,-,-,-,-,-,-,-,3,Publisher,os:hasPublisher means metadata author,The publisher of the software
-datePublished,date_published,-,-,"2, 3, 5, 11","4,5",datePublished,date_retrieved,datePublished,-,PublicationYear,date,Date,-,-,-,-,-,-,DESCRIPTION/Date,-,"3,5,6",PublicationYear,-,The date the software was first made available for download by the publisher
-dateCreated,-,-,created_at,"3, 4, 11",-,dateCreated,-,dateCreated,-,-,created,-,Date,-,-,-,-,-,-,-,3,-,-,The creation date of the software
-dateModified,-,-,updated_at,"3, 4, 11",10,dateModified,-,dateModified,-,Date (dateType = Issued),modified,-,-,-,last-updated,-,-,-,-,-,3,Date (dateType = Issued),-,The latest modification date of the software
-EmbargoDate,embargo_date,-,-,"3, 10,","4,12",embargoDate,embargo_date,-,-,Date(dateType = Available),available,-,-,-,-,-,-,-,-,-,3,Date(dateType = Available),-,A calendar date specifying the end of a restricted access period
-Inputs,-,data,-,"1, 2, 3, 7, 8, 9","1,3,7",inputs,-,-,Formats for data inputs and outputs,-,-,-,-,-,-,-,-,-,-,-,3,-,hasInputs hasParameters,Objects used by the software
-Outputs,-,data,-,"1, 2, 3, 7, 8, 9","1,3,7",outputs,-,-,Formats for data inputs and outputs,-,-,-,-,-,-,-,-,-,-,-,3,-,hasOutputs,Objects generated by the software
-Function,-,Topic,-,"1, 3, 7","1,3",function,-,-,Terms to describe software objectives or functions,-,-,-,-,-,-,-,-,-,-,-,"1, 3",-,hasUsesAndAssumptions hasUseLimitations hasBenchmarkInformation,The role or objective that the software has
-Dependency,-,-,-,"1, 2, 3, 6, 7, 8, 9","2,3,7,8,9",dependency,-,dependency,"Platform, environment, and dependencies",-,requires,"Depends; Imports; ‘Enhances’, ‘LinkingTo’ and ‘Additional_repositories’",-,install_requires,Database Environment,prereqs,dependencies / devDependencies / peerDependencies / bundledDependencies / optionalDependencies / cpu / engines,prerequisites,"DESCRIPTION/Depends, DESCRIPTION/SystemRequirements, DESCRIPTION/BuildRequires","requirements, add_development_dependency, add_runtime_dependency","1, 2, 3, 4, 7, 8, 9",-,hasDependency -> Software,The computer hardware and software needed to run the software
-Suggests,related_identifiers,-,-,"1, 2, 3, 7","2,7",suggests,-,-,-,-,-,Suggests,-,-,-,optional_features,-,-,-,-,"1, 2",-,hasSimilarSoftware hasInteroperableSoftware hasCompositionDescription,An external software component that could enhance the software package but is not strictly required
-Relationship,-,-,-,-,"7,8",relationship,-,-,-,"RelatedIdentifier(relationType=isPartOf), RelatedIdentifier(relationType=isVariantFormOf), RelatedIdentifier(relationType=isPreviousVersionOf), RelatedIdentifier(relationType=isNextVersionOf)",-,-,-,-,-,-,-,-,-,-,-,"RelatedIdentifier(relationType=isPartOf), RelatedIdentifier(relationType=isVariantFormOf), RelatedIdentifier(relationType=isPreviousVersionOf), RelatedIdentifier(relationType=isNextVersionOf)",hasRelevantDataSources,Relationship to other related resources
-TestCoverage,-,-,-,"1, but missing use case to understand software quality/standing",11,testCoverage,-,-,-,-,-,-,-,-,-,-,-,-,-,-,3,-,hasTestData has TestInstructions,-
-DocsCoverage,-,-,-,"13, 1, 2, 3, 7, 8",11,docsCoverage,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,?,-
-IsAutomated,-,-,-,13,2,isAutomatedBuild,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,?,-
-Package,filename/?,-,-,-,-,package,-,-,-,-,-,-,-,packages,-,-,-,packaging,-,files,?,-,?,"Ask Zenodo what this is; may be the same as ""DownloadLink"" below"
-ZippedCodeLink,filename,-,archive_url,-,"5,9",zippedCode,file,-,-,-,-,-,-,download_url,-,-,-,-,-,-,-,-,?,A URL for the software distribution in compressed form.
-Version,-,Version,-,"2, 3, 4, 5, 6, 7, 8, 9, 11, 13","5,8,9",version,-,-,Software version,Version,-,Version; numeric_version,Version,version,-,version,version,version,DESCRIPTION/Version,version,"2, 3, 5, 7, 8, 9",Version,hasSoftwareVersion hasVersionReleaseDate supersedes supersededBy,The version of the software
-InteractionMethod,-,-,-,-,"3,7",interactionMethod,-,-,-,"ResourceType(resourceTypeGeneral=InteractiveResource),ResourceType(resourceTypeGeneral=Service)",-,-,-,entry_points?,User Interface,-,-,-,-,-,-,"ResourceType(resourceTypeGeneral=InteractiveResource),ResourceType(resourceTypeGeneral=Service)",-,"Command-line v. GUI v. Excel...., Entry points"
-ProgrammingLanguage,-,programming language,languages_url,"1, 2, 3, 7, 8, 9","2,7",programmingLanguage,-,-,-,Format,-,-,-,classifiers['Programming Language'],Programming Language,-,-,-,-,-,"1, 2, 3, 7, 8, 9",Format,hasProgrammingLanguage,The computer programming language that the software is written in
-SoftwareCitation,notes ?,-,-,"3, 4, 5, 6","3,4,12",softwareCitation,-,-,-,-,-,-,-,-,-,-,-,-,-,-,"3, 4, 5, 6",-,hasPreferredCitation,The citation of the software itself
-SoftwarePaperCitation,notes ?,Citation,-,"3, 4, 5, 6","3,4,12",softwarePaperCitation,-,-,-,-,-,-,-,-,-,-,-,-,-,-,"3, 4, 5, 6",-,-,The citation of the paper that describes the research that the software was associated with
-DownloadCount,-,-,-,"6, 4, 3",4,downloadCount,-,-,-,-,-,-,-,-,download-stats,-,-,-,-,-,3,-,hasUseStatistics (see new row: UseInformation),A metric indicating the number of times that the software has been downloaded
-CitationCount,-,-,-,"6, 4, 3","4,6,12",citationCount,-,-,-,-,-,-,-,-,-,-,-,-,-,-,3,-,hasUseStatistics (see new row: UseInformation),A metric indicating the number of times that the software has been cited
-Funding,contributors.Funder,-,-,"3, 4",4,funding,-,-,Associated grants,-,-,-,-,-,-,-,-,-,-,-,3,-,hasFundingSource,The software funding source
-RelatedPublications,related_identifiers,-,-,"3, 4, 6",3,relatedPublications,-,-,Associated publications,-,-,-,-,-,-,-,-,-,-,-,3,-,-,Publications related to the software
-AuthorName,-,-,-,-,"3,4,5,6",name,Name,name,-,-,-,"Authors@R person(given, family)",-,-,-,author:contact-name,author.name,-,-,-,"3, 4, 5",-,hasCreator,The name of the author
-OperatingSystem,-,-,-,-,"2,3,7,8",-,-,-,-,-,-,-,-,classifiers['Operating System'],Operating System,OSNAMES,os,-,-,-,-,-,-,The operating system supported by the software
-L10n,-,-,-,-,"3,5",-,-,-,-,-,-,-,-,classifiers['Natural Language'],Translations,-,-,-,-,-,-,-,-,Software is available in these languages
-UserInterface,-,-,-,-,3,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,The user interface the software supports
-DevelopmentStatus,-,-,-,-,11,-,-,-,-,-,-,-,-,classifiers['Development Status'],Development Status,release_status,-,-,-,-,-,-,-,The development status of the software
-IntendedAudience,-,-,-,-,1,-,-,-,-,-,-,-,-,classifiers['Intended Audience'],Intended Audience,-,-,-,-,-,-,-,-,The category of users for the software
-dynamic_config,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,dynamic_config,-,-,-,-,-,-,-,[Perl] A boolean flag indicating whether a Build.PL or Makefile.PL (or similar) must be executed to determine prerequisites.
-generated_by,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,generated_by,-,-,-,-,-,-,-,-
-meta_spec,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,meta_spec,-,-,-,-,-,-,-,[Perl] This field indicates the version of the CPAN Meta Spec that should be used to interpret the metadata
-directories.doc,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,[JavaScript] Markdown files directory for various documentation
-no_index,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,no_index,-,-,-,-,-,-,-,"[Perl] This Map describes any files, directories, packages, and namespaces that are private to the packaging or implementation of the distribution and should be ignored by indexing or search tools."
-provides,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,[Perl]This describes all packages provided by this distribution
-Problems,-,-,-,-,11,-,-,-,-,-,-,-,-,-,-,-,-,-,DESCRIPTION/Problems,-,-,-,-,[Octave] This describes known issues with the code
-IdentiferNamespace,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1-12,-,-,-
-DownloadLink,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-SystemRequirements,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-ViewsCount,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-notes,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-topic_id,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-bibcode,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-alias,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-described_in,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-used_in,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-see_also,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-century,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-time_updated,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-time_added,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-Metadata author(s),-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,os:hasPublisher means metadata author,-
--,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-hasSoftwareCategory,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-hasUsesAndAssumptions,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-hasUseLimitations,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-hasBenchmarkInformation,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-Usage Information,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,os:hasUseInformation,-
-Use Statistics,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,os:hasUseStatistics,-
-VersionReleaseDate,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,os:hasVersionReleaseDate,-
-"supersedes, supersededBy",-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,"os:supersedes, os:supersededBy",-
-SimilarSoftware,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,os:hasSimilarSoftware,-
-InteroperableSoftware,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,os:hasInteroperableSoftware,-
-CompositionDescription,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,os:hasCompositionDescription,-
-Active Development,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,os:activeDevelopment,-
-EmailContact,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-RequiresAverageMemory,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,os:requiresAverageMemory,-
-Average Run Time,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,os:AverageRunTime,-
-supports operating system,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,os:SupportsOperatingSystem,-
-SoftwarefSupport,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,os:hasSoftwarefSupport,-
-Ratings,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,os:hasRatings,-
-"PrideOfAuthorship, ""as is"" code",-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,os:isAncillaryCode,-
-GeneratedBy,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,This field indicates the thing that created this metadata record (could be person or tool?)
-IdentifierNamespace,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,"Authority using this identifier: e.g. doi.org, or cran.r-project.org"
-recordDatePublished,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Date this metadata record was published
-recordDateCreated,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Date this metadata record was created
-recordDateModified,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Date this metadata record was last modified
+Concept,Concept Definition,DataCite,OntoSoft,Zenodo,GitHub,Figshare,Software Ontology,code.jsonld,Software Discovery Index,Dublin Core,R Package Description,Debian Package Metadata,Python Distutils (PyPI),Trove Software Map,Perl Module Description (CPAN::Meta),JavaScript package descption (npm),Java (Maven),Octave,Ruby Gem,CodeMeta Field,Use Cases,Use Cases.x,Use Cases.y
+SoftwareTitle,Title of the software,Title,hasName,title,name,Title,software,title,Software title,title,Title,-,name,Title,name,name,name,DESCRIPTION/Name,name,title,"1, 3, 4, 5","1, 3, 5a-d","3,5,6"
+SoftwareIdentifier,A unique identifier associated with the software,Identifier,hasUniqueId,id,id or full_name?,?,-,identifier,Persistent identifier,identifier,Package,Package,-,-,-,name,groupId,-,-,identifier,1-12,"2, 3, 4, 5, 6, 8, 9,","3,5,6,12"
+SoftwareAuthor,The software author,Creator,hasCreator,creators,owner,Authors(s),software developer organization,author,Author names and affiliations,creator,Authors@R person(role=“aut”),Maintainer,author,Maintainers,author,author,developers,"DESCRIPTION/Author, DESCRIPTION/Maintainer",author/authors,author,"3, 4, 5","3, 4, 5, 8,","3,4,5,6"
+AuthorFirstName,-,-,-,creators.givennames,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+AuthorLastName,-,-,-,creators.familyname,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+AuthorId,"A unique identifier associated with the software author, for example an https://orcid.org",-,hasCreator,creators.orcid,-,id(internal id/ORCID),-,id(ORCID),-,-,-,-,-,-,-,-,-,-,-,id,"3, 4, 5","3, 4, 5, 6, 8, 9","3,4,5,6"
+AuthorEmail,The author’s email address,-,hasCreator,-,-,-,-,email,-,-,Authors@R person(email),-,author_email,-,author:email-address,author.email,-,"DESCRIPTION/Author, DESCRIPTION/Maintainer",email,email,"3, 4, 5",-,-
+AuthorAffiliation,The organization the author is affiliated with,-,hasCreator,creators.affiliation,-,-,-,affiliation,-,-,-,-,-,-,-,-,-,-,-,affiliation,"3, 4, 5",-,"4,5,6"
+SoftwareContributor,Contributors to the software other than the author,Contributor,hasMajorContributor,contributors,contributors_url,-,contributor,contributor,-,-,Authors@R person(role=“ctb”),-,-,-,-,contributors,contributors,-,-,contributor,"3, 4, 5","3, 4, 5, 8,","3,4,5,6"
+UploadedBy,The user identity that uploaded the software to an online repository,-,hasPublisher,owners (?),-,-,-,uploadedBy,-,-,"*Three letter code can specify other roles like author above: http://www.loc.gov/marc/relators/relaterm.html, https://journal.r-project.org/archive/2012-1/RJournal_2012-1_Hornik~et~al.pdf",-,-,-,-,-,-,-,-,uploadedBy,"3, 4, 5","9, 11",-
+ControlledTerm,Keywords associated with the software (i.e. Fixed vocabulary by which to describe category or community of software),-,hasSoftwareCategory hasDomainKeywords,communities,-,category,-,-,-,-,-,-,classifiers['Topic'],Topic,CATEGORIES,-,-,DESCRIPTION/Categories,-,controlledTerm,"1, 3","1, 3","1,3"
+ObjectType,"A category of the object (controlled list, such as software, paper, data, image...)",ResourceType(resourceTypeGeneral=Software),---,upload_type,-,file_type,-,type,-,type,Type,Package-Type,-,-,-,-,type,-,-,objectType,1-12,-,5
+Tags,Terms used to describe the software and to facilitate search and discovery,Subject,hasSoftwareCategory hasDomainKeywords,keywords,-,tags,-,keywords,-,subject,-,-,keywords,-,keywords,keywords,-,-,-,tags,"1, 3","1, 3","1,3"
+Description,A description of the software,Description,hasShortDescription hasUsesAndAssumptions hasUseLimitations,description/notes,description,Description,software,description,Human-readable synopsis,description,Description,Description,"description, long_description",description,"abstract, description",description,description,"DESCRIPTION/Title, DESCRIPTION/Description","summary, description",description,"(1), 3, (4), (9)","1, 2, 3, 4, 7, 9, 11","1,3"
+RelatedLink,A URL that provides additional information or resources related to the software,-,hasProjectWebSite,related_identifiers,homepage,links,-,codeRepository,-,relation,-,-,-,homepage,resources,homepage,-,DESCRIPTION/Url,homepage,relatedLink,"1-9, 11-12","1, 3",-
+CodeRepositoryLink,The repository containing the software source,-,os:hasCodeLocation os:hasExecutableLocation,r_i.relation,git_url,-,-,codeRepository,Links to code repository,-,URL,HomePage,url,-,resources.repository,repository,repositories,-,homepage,codeRepository,"1, 2, 3, 7, 9, (11), (12)","1, 2, 6, 7, 13","3,4,5,6,9,11"
+ReadmeLink,A URL for the software README file,-,hasDocumentation hasInstallationInstructions,r_i.relation,-,-,-,-,-,-,-,-,-,-,README,files,-,-,-,readme,"1, 2, 3",13,-
+BuildLink,A URL for the software build instructions,-,-,r_i.relation,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,buildInstructions,"2,3,4",13,"2,8,9,11"
+CILink,A URL for the continuous integration system used to build the software,-,-,r_i.relation,-,-,-,-,-,-,-,-,-,-,-,-,ciManagement,-,-,contIntegration,"2, 3, 9",13,"9,11"
+IssueLink,A URL for the issue tracking system used for the software,-,sort of os:hasSoftwarefSupport (see Software Support below),r_i.relation,issues_url,-,-,-,-,-,BugReports,-,-,-,resources.bugtracker,bugs,issuesManagement,-,-,issueTracker,"1, 2,  3, 7, 8, 11",13,11
+AccessList,The access policy governing access to the software,-,-,access_right(public/embargo/private),-,access(private/public),-,-,-,-,-,-,-,-,-,private,-,-,-,accessList,3,"3, 10","4,10"
+License,The name of the license agreement governing the use and redistribution of the software,Rights,License,license,license (https://developer.github.com/v3/licenses/#get-a-repositorys-license),License,software license,license,Software license,license,License,-,"license, classifiers['License']",License,license,license,license,DESCRIPTION/License,license/licenses,license,"3, 10","4, 7, 10","4,7,10"
+Publisher,The publisher of the software,Publisher,os:hasPublisher means metadata author,-,-,-,software publisher organization,publisher,-,-,-,-,-,-,-,-,-,-,-,publisher,3,"3, 4, 5, 6, 11",5
+datePublished,The date the software was first made available for download by the publisher,PublicationYear,-,date_published,-,date_retrieved,-,datePublished,-,date,Date,-,-,-,-,-,-,DESCRIPTION/Date,-,datePublished,"3,5,6","2, 3, 5, 11","4,5"
+dateCreated,The creation date of the software,-,-,-,created_at,-,-,dateCreated,-,created,-,Date,-,-,-,-,-,-,-,dateCreated,3,"3, 4, 11",-
+dateModified,The latest modification date of the software,Date (dateType = Issued),-,-,updated_at,-,-,dateModified,-,modified,-,-,-,last-updated,-,-,-,-,-,dateModified,3,"3, 4, 11",10
+EmbargoDate,A calendar date specifying the end of a restricted access period,Date(dateType = Available),-,embargo_date,-,embargo_date,-,-,-,available,-,-,-,-,-,-,-,-,-,embargoDate,3,"3, 10,","4,12"
+Inputs,Objects used by the software,-,hasInputs hasParameters,-,-,-,data,-,Formats for data inputs and outputs,-,-,-,-,-,-,-,-,-,-,inputs,3,"1, 2, 3, 7, 8, 9","1,3,7"
+Outputs,Objects generated by the software,-,hasOutputs,-,-,-,data,-,Formats for data inputs and outputs,-,-,-,-,-,-,-,-,-,-,outputs,3,"1, 2, 3, 7, 8, 9","1,3,7"
+Function,The role or objective that the software has,-,hasUsesAndAssumptions hasUseLimitations hasBenchmarkInformation,-,-,-,Topic,-,Terms to describe software objectives or functions,-,-,-,-,-,-,-,-,-,-,function,"1, 3","1, 3, 7","1,3"
+Dependency,The computer hardware and software needed to run the software,-,hasDependency -> Software,-,-,-,-,dependency,"Platform, environment, and dependencies",requires,"Depends; Imports; ‘Enhances’, ‘LinkingTo’ and ‘Additional_repositories’",-,install_requires,Database Environment,prereqs,dependencies / devDependencies / peerDependencies / bundledDependencies / optionalDependencies / cpu / engines,prerequisites,"DESCRIPTION/Depends, DESCRIPTION/SystemRequirements, DESCRIPTION/BuildRequires","requirements, add_development_dependency, add_runtime_dependency",dependency,"1, 2, 3, 4, 7, 8, 9","1, 2, 3, 6, 7, 8, 9","2,3,7,8,9"
+Suggests,An external software component that could enhance the software package but is not strictly required,-,hasSimilarSoftware hasInteroperableSoftware hasCompositionDescription,related_identifiers,-,-,-,-,-,-,Suggests,-,-,-,optional_features,-,-,-,-,suggests,"1, 2","1, 2, 3, 7","2,7"
+Relationship,Relationship to other related resources,"RelatedIdentifier(relationType=isPartOf), RelatedIdentifier(relationType=isVariantFormOf), RelatedIdentifier(relationType=isPreviousVersionOf), RelatedIdentifier(relationType=isNextVersionOf)",hasRelevantDataSources,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,relationship,-,-,"7,8"
+TestCoverage,-,-,hasTestData has TestInstructions,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,testCoverage,3,"1, but missing use case to understand software quality/standing",11
+DocsCoverage,-,-,?,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,docsCoverage,-,"13, 1, 2, 3, 7, 8",11
+IsAutomated,-,-,?,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,isAutomatedBuild,-,13,2
+Package,"Ask Zenodo what this is; may be the same as ""DownloadLink"" below",-,?,filename/?,-,-,-,-,-,-,-,-,packages,-,-,-,packaging,-,files,package,?,-,-
+ZippedCodeLink,A URL for the software distribution in compressed form.,-,?,filename,archive_url,file,-,-,-,-,-,-,download_url,-,-,-,-,-,-,zippedCode,-,-,"5,9"
+Version,The version of the software,Version,hasSoftwareVersion hasVersionReleaseDate supersedes supersededBy,-,-,-,Version,-,Software version,-,Version; numeric_version,Version,version,-,version,version,version,DESCRIPTION/Version,version,version,"2, 3, 5, 7, 8, 9","2, 3, 4, 5, 6, 7, 8, 9, 11, 13","5,8,9"
+InteractionMethod,"Command-line v. GUI v. Excel...., Entry points","ResourceType(resourceTypeGeneral=InteractiveResource),ResourceType(resourceTypeGeneral=Service)",-,-,-,-,-,-,-,-,-,-,entry_points?,User Interface,-,-,-,-,-,interactionMethod,-,-,"3,7"
+ProgrammingLanguage,The computer programming language that the software is written in,Format,hasProgrammingLanguage,-,languages_url,-,programming language,-,-,-,-,-,classifiers['Programming Language'],Programming Language,-,-,-,-,-,programmingLanguage,"1, 2, 3, 7, 8, 9","1, 2, 3, 7, 8, 9","2,7"
+SoftwareCitation,The citation of the software itself,-,hasPreferredCitation,notes ?,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,softwareCitation,"3, 4, 5, 6","3, 4, 5, 6","3,4,12"
+SoftwarePaperCitation,The citation of the paper that describes the research that the software was associated with,-,-,notes ?,-,-,Citation,-,-,-,-,-,-,-,-,-,-,-,-,softwarePaperCitation,"3, 4, 5, 6","3, 4, 5, 6","3,4,12"
+DownloadCount,A metric indicating the number of times that the software has been downloaded,-,hasUseStatistics (see new row: UseInformation),-,-,-,-,-,-,-,-,-,-,download-stats,-,-,-,-,-,downloadCount,3,"6, 4, 3",4
+CitationCount,A metric indicating the number of times that the software has been cited,-,hasUseStatistics (see new row: UseInformation),-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,citationCount,3,"6, 4, 3","4,6,12"
+Funding,The software funding source,-,hasFundingSource,contributors.Funder,-,-,-,-,Associated grants,-,-,-,-,-,-,-,-,-,-,funding,3,"3, 4",4
+RelatedPublications,Publications related to the software,-,-,related_identifiers,-,-,-,-,Associated publications,-,-,-,-,-,-,-,-,-,-,relatedPublications,3,"3, 4, 6",3
+AuthorName,The name of the author,-,hasCreator,-,-,Name,-,name,-,-,"Authors@R person(given, family)",-,-,-,author:contact-name,author.name,-,-,-,name,"3, 4, 5",-,"3,4,5,6"
+OperatingSystem,The operating system supported by the software,-,-,-,-,-,-,-,-,-,-,-,classifiers['Operating System'],Operating System,OSNAMES,os,-,-,-,-,-,-,"2,3,7,8"
+L10n,Software is available in these languages,-,-,-,-,-,-,-,-,-,-,-,classifiers['Natural Language'],Translations,-,-,-,-,-,-,-,-,"3,5"
+UserInterface,The user interface the software supports,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,3
+DevelopmentStatus,The development status of the software,-,-,-,-,-,-,-,-,-,-,-,classifiers['Development Status'],Development Status,release_status,-,-,-,-,-,-,-,11
+IntendedAudience,The category of users for the software,-,-,-,-,-,-,-,-,-,-,-,classifiers['Intended Audience'],Intended Audience,-,-,-,-,-,-,-,-,1
+dynamic_config,[Perl] A boolean flag indicating whether a Build.PL or Makefile.PL (or similar) must be executed to determine prerequisites.,-,-,-,-,-,-,-,-,-,-,-,-,-,dynamic_config,-,-,-,-,-,-,-,-
+generated_by,-,-,-,-,-,-,-,-,-,-,-,-,-,-,generated_by,-,-,-,-,-,-,-,-
+meta_spec,[Perl] This field indicates the version of the CPAN Meta Spec that should be used to interpret the metadata,-,-,-,-,-,-,-,-,-,-,-,-,-,meta_spec,-,-,-,-,-,-,-,-
+directories.doc,[JavaScript] Markdown files directory for various documentation,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+no_index,"[Perl] This Map describes any files, directories, packages, and namespaces that are private to the packaging or implementation of the distribution and should be ignored by indexing or search tools.",-,-,-,-,-,-,-,-,-,-,-,-,-,no_index,-,-,-,-,-,-,-,-
+provides,[Perl]This describes all packages provided by this distribution,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+Problems,[Octave] This describes known issues with the code,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,DESCRIPTION/Problems,-,-,-,-,11
+IdentiferNamespace,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1-12,-,-
+DownloadLink,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+SystemRequirements,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+ViewsCount,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+notes,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+topic_id,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+bibcode,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+alias,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+described_in,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+used_in,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+see_also,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+century,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+time_updated,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+time_added,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+Metadata author(s),-,-,os:hasPublisher means metadata author,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+hasSoftwareCategory,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+hasUsesAndAssumptions,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+hasUseLimitations,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+hasBenchmarkInformation,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+Usage Information,-,-,os:hasUseInformation,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+Use Statistics,-,-,os:hasUseStatistics,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+VersionReleaseDate,-,-,os:hasVersionReleaseDate,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+"supersedes, supersededBy",-,-,"os:supersedes, os:supersededBy",-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+SimilarSoftware,-,-,os:hasSimilarSoftware,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+InteroperableSoftware,-,-,os:hasInteroperableSoftware,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+CompositionDescription,-,-,os:hasCompositionDescription,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+Active Development,-,-,os:activeDevelopment,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+EmailContact,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+RequiresAverageMemory,-,-,os:requiresAverageMemory,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+Average Run Time,-,-,os:AverageRunTime,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+supports operating system,-,-,os:SupportsOperatingSystem,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+SoftwarefSupport,-,-,os:hasSoftwarefSupport,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+Ratings,-,-,os:hasRatings,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+"PrideOfAuthorship, ""as is"" code",-,-,os:isAncillaryCode,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+GeneratedBy,This field indicates the thing that created this metadata record (could be person or tool?),-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+IdentifierNamespace,"Authority using this identifier: e.g. doi.org, or cran.r-project.org",-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+recordDatePublished,Date this metadata record was published,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+recordDateCreated,Date this metadata record was created,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+recordDateModified,Date this metadata record was last modified,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
