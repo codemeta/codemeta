@@ -1,0 +1,7 @@
+language: ruby
+bundler_args: --without debug
+script: "bundle exec test/validate.rb"
+env:
+  - CI=true
+cache: bundler
+sudo: false
