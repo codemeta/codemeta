@@ -47,7 +47,6 @@ RelatedPublications,Publications related to the software,-,hasSimilarSoftware,re
 AuthorName,The name of the author,-,hasCreator,-,-,Name,-,name,-,-,"Authors@R person(given, family)",-,-,-,author:contact-name,author.name,-,-,-,name,3/4/2005,-,"3,4,5,6",
 OperatingSystem,The operating system supported by the software,-,SupportsOperatingSystem,-,-,-,-,-,-,-,-,-,classifiers['Operating System'],Operating System,OSNAMES,os,-,-,-,-,-,-,"2,3,7,8",
 L10n,Software is available in these languages,-,-,-,-,-,-,-,-,-,-,-,classifiers['Natural Language'],Translations,-,-,-,-,-,-,-,-,"3,5",
-UserInterface,The user interface the software supports,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,3,
 DevelopmentStatus,The development status of the software,-,activeDevelopment,-,-,-,-,-,-,-,-,-,classifiers['Development Status'],Development Status,release_status,-,-,-,-,-,-,-,11,
 IntendedAudience,The category of users for the software,-,-,-,-,-,-,-,-,-,-,-,classifiers['Intended Audience'],Intended Audience,-,-,-,-,-,-,-,-,1,
 IdentiferNamespace,"Authority using this identifier: e.g. doi.org, or cran.r-project.org",-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1/12/2016,-,-,
