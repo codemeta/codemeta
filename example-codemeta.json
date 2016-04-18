@@ -1,30 +1,29 @@
 {
     "@context": "https://raw.githubusercontent.com/codemeta/codemeta/master/codemeta.jsonld",
     "@type": "Code",
-    "author": [
-        {
-            "@id": "http://orcid.org/0000-0003-0077-4738",
-            "@type": "Person",
-            "email": "jones@nceas.ucsb.edu",
-            "name": "Matt Jones",
-            "affiliation": "NCEAS"
-        },
-        {
-            "@id": "http://orcid.org/0000-0002-3957-2474",
-            "@type": "Person",
-            "email": "arfon@github.com",
-            "name": "Arfon Smith",
-            "affiliation": "GitHub"
-        }
-    ],
-    "contributor": [
-        {
-            "@id": "http://orcid.org/0000-0002-2192-403X",
-            "@type": "Person",
-            "email": "slaughter@nceas.ucsb.edu",
-            "name": "Peter Slaughter",
-            "affiliation": "NCEAS"
-        }
+    "agent": [{
+                "@id": "http://orcid.org/0000-0003-0077-4738",
+                "@type": "Person",
+                "email": "jones@nceas.ucsb.edu",
+                "name": "Matt Jones",
+                "affiliation": "NCEAS",
+                "isCitable": true,
+                "isMaintainer": false,
+                "isRightsHolder": true,
+                "hasRole": [{
+                    "namespace": "http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode",
+                    "roleCode": "originator"
+                }]
+            }, {
+                "@id": "http://orcid.org/0000-0002-3957-2474",
+                "@type": "Organization",
+                "email": "info@ucop.edu",
+                "name": "University of California, Santa Barbara",
+                "hasRole": [{
+                    "namespace": "http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode",
+                    "roleCode": "copyrightHolder"
+                }]
+            }
     ],
     "dependency" : [
         {
