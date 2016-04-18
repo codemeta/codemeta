@@ -18,7 +18,7 @@
       "affiliation": "schema:affiliation",
       "isCitable": "schema:Boolean",
       "isMaintainer": "schema:Boolean",
-      "isRightsHolder: :schema:Boolean",
+      "isRightsHolder: "schema:Boolean",
       "hasRole": 
       {
         "@id": "schema:role",
@@ -80,4 +80,4 @@
       "uploadedBy": "schema:Person",
       "zippedCode": "schema:URL"
    }
-}
+},
