@@ -1,7 +1,5 @@
-#!/usr/bin/env ruby
-require 'minitest/autorun'
-
 require 'json/ld'
+require 'minitest/autorun'
 
 describe 'example-codemeta.json' do
   before do
@@ -20,4 +18,3 @@ describe 'example-codemeta.json' do
     refute emails.empty?
   end
 end
-
