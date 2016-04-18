@@ -4,9 +4,20 @@ require 'minitest/autorun'
 require 'json/ld'
 
 describe 'example-codemeta.json' do
+  before do
+    @input = JSON.parse(File.read('example-codemeta.json'))
+    @graph = RDF::Graph.new << JSON::LD::API.toRdf(@input)
+  end
+
   it 'parses to a non-empty graph' do
-    input = JSON.parse(File.read('example-codemeta.json'))
-    refute JSON::LD::API.toRdf(input).empty?
+    refute @graph.empty?
+  end
+
+  it 'has an email' do
+    emails =  @graph.query(subject:   nil, 
+                           predicate: RDF::URI('http://schema.org/email'), 
+                           object:    nil)
+    refute emails.empty?
   end
 end
 
