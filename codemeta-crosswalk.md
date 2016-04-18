@@ -24,6 +24,7 @@ Additional software metadata standards that have not yet been cross-walked:
 - [DataONE Software registry](https://www.dataone.org/software-tools)
 - [Winning model documentation](https://www.kaggle.com/wiki/WinningModelDocumentationTemplate)
 - [MyExperiment workflow repository](http://www.myexperiment.org/)
+- [Description of a Project (DOAP)](https://github.com/edumbill/doap/wiki)
 - Language/System specific package frameworks
     - Debian packages
     - CRAN R packages
