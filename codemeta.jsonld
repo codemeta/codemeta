@@ -18,12 +18,12 @@
       "affiliation": "schema:affiliation",
       "isCitable": "schema:Boolean",
       "isMaintainer": "schema:Boolean",
-      "isRightsHolder: "schema:Boolean",
+      "isRightsHolder": "schema:Boolean",
       "hasRole": 
       {
         "@id": "schema:role",
-        "@type": "@id",
-      }
+        "@type": "@id"
+      },
       "roleCode": "schema:Text",
       "buildInstructions": "schema:URL",
       "citationCount": "schema:integer",
@@ -80,4 +80,4 @@
       "uploadedBy": "schema:Person",
       "zippedCode": "schema:URL"
    }
-},
+}
