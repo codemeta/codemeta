@@ -13,9 +13,9 @@
       },
       "email": "schema:email",
       "affiliation": "schema:affiliation",
-      "isCitable": "schema:isCitable",
-      "isMaintainer": "schema:ismaintainer",
-      "isRightsHolder": "schema:isRightsHolder",
+      "isCitable": "xsd:boolean",
+      "isMaintainer": "xsd:boolean",
+      "isRightsHolder": "xsd:boolean",
       "namespace": "schema:namespace",
       "hasRole": 
       {
