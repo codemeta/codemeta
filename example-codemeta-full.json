@@ -1,5 +1,5 @@
 {
-   "@context":"https://raw.githubusercontent.com/gothub/sbpcssndbox/master/codemeta.jsonld",
+   "@context":"https://raw.githubusercontent.com/codemeta/codemeta/master/codemeta.jsonld",
    "@type":"Code",
    "agent":[
       {
