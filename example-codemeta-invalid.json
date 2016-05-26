@@ -1,0 +1,5 @@
+{
+   "@context":"https://raw.githubusercontent.com/codemeta/codemeta/master/codemeta.jsonld",
+   "_not_in_schema": "This invalid JSON name should cause an error when using JSON-LD expand/compact",
+   "_description": "This JSON file is used in the Travis CI tests to ensure invalid JSON names are detected during JSON-LD expand / compact operations"
+}
