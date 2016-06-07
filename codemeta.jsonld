@@ -154,7 +154,7 @@
       },
       "uploadedBy":{
          "@id":"schema:Person",
-         "@type":"xsd:string"
+         "@type":"@id"
       },
       "zippedCode":{
          "@id":"codemeta:zippedCode",
