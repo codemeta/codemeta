@@ -57,6 +57,7 @@
    "contIntegration":"https://github.com/codemeta/codemeta/minitest",
    "docsCoverage":"50.00",
    "downloadCount":"1123",
+   "downloadLink": "https://github.com/codemeta/codemeta/releases/codemeta_2.1.0-rc.2.tar.gz",
    "embargoDate":"2016-06-01",
    "isAutomatedBuild":true,
    "publisher":"https://figshare.com",

@@ -51,6 +51,11 @@
          "@id":"codemeta:buildInstructions",
          "@type":"xsd:anyURI"
       },
+      "downloadLink": 
+      {
+         "@id":"schema:downloadUrl",
+         "@type": "@id"
+      },
       "contIntegration":{
          "@id":"codemeta:contIntegration",
          "@type":"xsd:anyURI"
