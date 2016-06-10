@@ -62,21 +62,13 @@
    "downloadCount":"1123",
    "downloadLink": "https://github.com/codemeta/codemeta/releases/codemeta_2.1.0-rc.2.tar.gz",
    "interactionMethod":"don't know what this field means",
-   "inputs":[
-      {
-         "@value":"A file describing attributes of the software, with MIME type text/csv",
-         "@type":"xsd:string"
-      },
-      {
-         "@value":"A file containing ambient air temperature values, with mime type application/netcdf",
-         "@type":"xsd:string"
-      }
-   ],
-   "outputs":
-   {
-         "@value":"A file containing a scatter plot illustrating software quality affecting quality of life, with mime type image/png",
-         "@type":"xsd:string"
+   "inputs":{
+      "@list": [
+         "A file describing attributes of the software, with MIME type text/csv",
+         "A file containing ambient air temperature values, with mime type application/netcdf"
+      ]
    },
+   "outputs": "A file containing a scatter plot illustrating software quality affecting quality of life, with mime type image/png",
    "function":"Provides description of software for interoperability",
    "funding":"National Science Foundation grant #012345678",
    "objectType":"software",
