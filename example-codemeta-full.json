@@ -59,12 +59,8 @@
    },
    "buildInstructions":"https://github.com/codemeta/codemeta/buildInstructions",
    "contIntegration":"https://github.com/codemeta/codemeta/minitest",
-   "docsCoverage":"50.00",
    "downloadCount":"1123",
    "downloadLink": "https://github.com/codemeta/codemeta/releases/codemeta_2.1.0-rc.2.tar.gz",
-   "embargoDate":"2016-06-01",
-   "isAutomatedBuild":true,
-   "publisher":"https://figshare.com",
    "interactionMethod":"don't know what this field means",
    "inputs":[
       {
@@ -72,19 +68,19 @@
          "@type":"xsd:string"
       },
       {
-         "@value":"A file containing ambient air temperature values, with mime type application/netcdf"
+         "@value":"A file containing ambient air temperature values, with mime type application/netcdf",
          "@type":"xsd:string"
       }
    ],
    "outputs":
    {
-         "@value":"A file containing a scatter plot illustrating software quality affecting quality of life, with mime type image/png" 
+         "@value":"A file containing a scatter plot illustrating software quality affecting quality of life, with mime type image/png",
          "@type":"xsd:string"
    },
    "function":"Provides description of software for interoperability",
    "funding":"National Science Foundation grant #012345678",
    "objectType":"software",
-   "programmingLanguage":{
+   "programmingLanguage": {
       "name":"ruby",
       "version":"2.3.1",
       "URL":"https://www.ruby-lang.org/en/"

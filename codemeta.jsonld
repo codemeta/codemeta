@@ -121,11 +121,11 @@
       },
       "inputs": {
           "@id": "codemeta:inputs",
-          "@type": "xsd:string"
+          "@type": "@id"
       },
       "outputs": {
           "@id": "codemeta:outputs",
-          "@type": "xsd:string"
+          "@type": "@id"
       },
       "function": {
           "@id": "codemeta:function",
@@ -141,7 +141,7 @@
       },
       "programmingLanguage": {
           "@id": "schema:programmingLanguage",
-          "@type": "xsd:string"
+          "@type": "@id"
       },
       "readme":{
          "@id":"codemeta:readme",
