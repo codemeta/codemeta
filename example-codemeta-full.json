@@ -43,6 +43,10 @@
    "dateModified":"2014-08-15",
    "dateCreated":"2014-08-06",
    "description":"Codemeta is a metadata content standard for software.  It includes schemas in JSON-LD and XML Schema for providing semantics and validation.",
+   "docsCoverage": "50",
+   "embargoDate": "2014-08-06T10:00:01Z",
+   "isAutomatedBuild": false,
+   "publisher":"figshare",
    "tags": ["publishing", "DOI", "credit for code"],
    "license":"http://opensource.org/licenses/Apache2",
    "title":"CodeMeta, a minimal convention for software metadata",
@@ -64,24 +68,19 @@
    "interactionMethod":"don't know what this field means",
    "inputs":[
       {
-         "@value":"https://dx.doi.org/10.6084/m9.figshare.1164194.v13",
-         "@type":"URL"
+         "@value":"A file describing attributes of the software, with MIME type text/csv",
+         "@type":"xsd:string"
       },
       {
-         "@value":"python version 2.7.10 or higher",
-         "@type":"Text"
+         "@value":"A file containing ambient air temperature values, with mime type application/netcdf"
+         "@type":"xsd:string"
       }
    ],
-   "outputs":[
-      {
-         "@value":"https://dx.doi.org/10.6084/m9.figshare.1164194.v13",
-         "@type":"URL"
-      },
-      {
-         "@value":"python version 2.7.10 or higher",
-         "@type":"Text"
-      }
-   ],
+   "outputs":
+   {
+         "@value":"A file containing a scatter plot illustrating software quality affecting quality of life, with mime type image/png" 
+         "@type":"xsd:string"
+   },
    "function":"Provides description of software for interoperability",
    "funding":"National Science Foundation grant #012345678",
    "objectType":"software",
