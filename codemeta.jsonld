@@ -9,11 +9,11 @@
          "@id":"schema:agent",
          "@type":"@id"
       },
-      "Person":{
+      "person":{
          "@id":"schema:Person",
          "@type":"@id"
       },
-      "Organization":{
+      "organization":{
          "@id":"schema:Organization",
          "@type":"@id"
       },
