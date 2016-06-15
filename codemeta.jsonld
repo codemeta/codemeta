@@ -198,6 +198,7 @@
          "@id":"codemeta:zippedCode",
          "@type":"xsd:anyURI"
       },
-      "URL":"schema:URL"
+      "URL":"schema:URL",
+      "Text":"schema:Text"
    }
 }
