@@ -42,7 +42,7 @@
          "@type":"xsd:boolean"
       },
       "namespace":"codemeta:namespace",
-      "hasRole":{
+      "role":{
          "@id":"codemeta:Role",
          "@type":"@id"
       },
