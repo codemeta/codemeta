@@ -112,6 +112,10 @@
          "@id":"schema:keywords",
          "@type":"xsd:string"
       },
+      "objectType":{
+          "@id":"dc:type",
+          "@type":"xsd:string:"
+      },
       "publisher":{
           "@id": "schema:publisher",
           "@type": "@id"
@@ -140,10 +144,6 @@
       },
       "funding": {
           "@id": "codemeta:funding",
-          "@type": "xsd:string"
-      },
-      "objectType": {
-          "@id": "dcterms:type",
           "@type": "xsd:string"
       },
       "programmingLanguage": {
