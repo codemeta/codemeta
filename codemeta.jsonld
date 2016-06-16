@@ -9,6 +9,10 @@
          "@id":"schema:agent",
          "@type":"@id"
       },
+      "controlledTerm": {
+          "@id":"codemeta:controlledTerm",
+          "@type":"xsd:string"
+      },
       "person":{
          "@id":"schema:Person",
          "@type":"@id"
