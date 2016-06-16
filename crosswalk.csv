@@ -57,5 +57,5 @@ GeneratedBy,This field indicates the thing that created this metadata record (co
 recordDatePublished,Date this metadata record was published,,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,
 recordDateCreated,Date this metadata record was created,,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,time_added
 recordDateModified,Date this metadata record was last modified,,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,time_updated
-,,,,,,,,,,,,,,,,,,,,,,,,,
+DownloadLink,The URL to obtain the software from,y,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,
