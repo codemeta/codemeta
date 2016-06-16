@@ -21,7 +21,7 @@
          "@type":"Organization",
          "email":"info@ucop.edu",
          "name":"University of California, Santa Barbara",
-         "hasRole":{
+         "role":{
                "namespace":"http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode",
                "roleCode":"copyrightHolder"
          }
