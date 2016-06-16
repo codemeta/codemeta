@@ -85,7 +85,7 @@
          "@type":"xsd:dateTime"
       },
       "dependency": {
-          "@id": "schema:requirements"
+          "@id":"schema:requirements"
       },
       "description":{
          "@id":"schema:description",
