@@ -33,12 +33,11 @@ describe 'example-codemeta-full.json' do
     # to aid in the diff process.
     input.delete('@context')
     @removed, @added = input.easy_diff @compacted
-    #puts @removed
+    puts @removed
   end
 
   it 'json-ld expand and compact does not lose data' do
-    #assert_empty @removed, 'JSON terms are in input document that were not transformed by JSON-LD expand / conpact operations'
-    assert 1, 'JSON terms are in input document that were not transformed by JSON-LD expand / conpact operations'
+    assert_empty @removed, 'JSON terms are in input document that were not transformed by JSON-LD expand / conpact operations'
   end
 end
 
