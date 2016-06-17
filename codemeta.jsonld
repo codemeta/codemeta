@@ -7,7 +7,6 @@
       "Code":"schema:Code",
       "agent":{
          "@id":"schema:agent",
-         "@type":"@id"
       },
       "controlledTerm": {
           "@id":"codemeta:controlledTerm",
@@ -15,11 +14,9 @@
       },
       "person":{
          "@id":"schema:Person",
-         "@type":"@id"
       },
       "organization":{
          "@id":"schema:Organization",
-         "@type":"@id"
       },
       "email":{
          "@id":"schema:email",
@@ -48,7 +45,7 @@
       "namespace":"codemeta:namespace",
       "role":{
          "@id":"codemeta:Role",
-         "@type":"@id"
+         "@type":"xsd:anyURI"
       },
       "roleCode":"codemeta:roleCode",
       "buildInstructions":{
@@ -58,7 +55,7 @@
       "downloadLink": 
       {
          "@id":"schema:downloadUrl",
-         "@type": "@id"
+         "@type": "xsd:anyURI"
       },
       "contIntegration":{
          "@id":"codemeta:contIntegration",
@@ -66,7 +63,7 @@
       },
       "identifier":{
          "@id":"dcterms:identifier",
-         "@type":"@id"
+         "@type":"xsd:anyURI"
       },
       "codeRepository":{
          "@id":"schema:codeRepository",
@@ -117,7 +114,7 @@
       },
       "publisher":{
           "@id": "schema:publisher",
-          "@type": "@id"
+          "@type": "xsd:string"
       },
       "license":
       {
@@ -131,11 +128,11 @@
       },
       "inputs": {
           "@id": "codemeta:inputs",
-          "@type": "@id"
+          "@type": "xsd:string"
       },
       "outputs": {
           "@id": "codemeta:outputs",
-          "@type": "@id"
+          "@type": "xsd:string"
       },
       "function": {
           "@id": "codemeta:function",
@@ -147,7 +144,7 @@
       },
       "programmingLanguage": {
           "@id": "schema:programmingLanguage",
-          "@type": "@id"
+          "@type": "xsd:string"
       },
       "readme":{
          "@id":"codemeta:readme",
@@ -195,7 +192,7 @@
       },
       "uploadedBy":{
          "@id":"codemeta:uploadedBy",
-         "@type":"@id"
+         "@type":"xsd:string"
       },
       "zippedCode":{
          "@id":"codemeta:zippedCode",
