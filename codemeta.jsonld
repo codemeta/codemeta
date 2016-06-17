@@ -6,17 +6,17 @@
       "codemeta": "https://codemeta.github.io/terms/",
       "Code":"schema:Code",
       "agent":{
-         "@id":"schema:agent",
+         "@id":"schema:agent"
       },
       "controlledTerm": {
           "@id":"codemeta:controlledTerm",
           "@type":"xsd:string"
       },
       "person":{
-         "@id":"schema:Person",
+         "@id":"schema:Person"
       },
       "organization":{
-         "@id":"schema:Organization",
+         "@id":"schema:Organization"
       },
       "email":{
          "@id":"schema:email",
