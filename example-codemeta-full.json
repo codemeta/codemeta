@@ -27,8 +27,7 @@
          }
       }
    ],
-  "dependency": {
-    "@list": [
+  "dependency": [
       {
         "@type": "URL",
         "@value": "https://dx.doi.org/10.6084/m9.figshare.1164194.v13"
@@ -37,8 +36,7 @@
         "@type": "Text",
         "@value": "ruby version 2.3.1 or higher"
       }
-    ]
-   },
+    ],
    "identifier":"http://dx.doi.org/10.6084/m9.figshare.828487",
    "codeRepository":"https://github.com/codemeta/codemeta",
    "datePublished":"2014-09-06",
@@ -64,12 +62,10 @@
    "downloadCount":"1123",
    "downloadLink": "https://github.com/codemeta/codemeta/releases/codemeta_2.1.0-rc.2.tar.gz",
    "interactionMethod":"don't know what this field means",
-   "inputs":{
-      "@list": [
+   "inputs": [
          "A file describing attributes of the software, with MIME type text/csv",
          "A file containing ambient air temperature values, with mime type application/netcdf"
-      ]
-   },
+   ],
    "outputs": "A file containing a scatter plot illustrating software quality affecting quality of life, with mime type image/png",
    "function":"Provides description of software for interoperability",
    "funding":"National Science Foundation grant #012345678",
