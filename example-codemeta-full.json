@@ -4,7 +4,7 @@
    "agent":[
       {
          "@id":"http://orcid.org/0000-0002-2192-403X",
-         "@type":"Person",
+         "@type":"person",
          "email":"slaughter@nceas.ucsb.edu",
          "name":"Peter Slaughter",
          "affiliation":"NCEAS",
@@ -18,7 +18,7 @@
       },
       {
          "@id":"http://orcid.org/0000-0002-3957-2474",
-         "@type":"Organization",
+         "@type":"organization",
          "email":"info@ucop.edu",
          "name":"University of California, Santa Barbara",
          "role":{
