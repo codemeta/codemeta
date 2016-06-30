@@ -11,9 +11,9 @@
          "isCitable":true,
          "isMaintainer":false,
          "isRightsHolder":false,
-         "role": {
-               "namespace":"http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode",
-               "roleCode":"contributor"
+         "role":{
+            "namespace":"http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode",
+            "roleCode":"contributor"
          }
       },
       {
@@ -22,32 +22,36 @@
          "email":"info@ucop.edu",
          "name":"University of California, Santa Barbara",
          "role":{
-               "namespace":"http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode",
-               "roleCode":"copyrightHolder"
+            "namespace":"http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode",
+            "roleCode":"copyrightHolder"
          }
       }
    ],
-  "dependency": [
+   "dependency":[
       {
-        "@type": "URL",
-        "@value": "https://dx.doi.org/10.6084/m9.figshare.1164194.v13"
+         "@type":"URL",
+         "@value":"https://dx.doi.org/10.6084/m9.figshare.1164194.v13"
       },
       {
-        "@type": "Text",
-        "@value": "ruby version 2.3.1 or higher"
+         "@type":"Text",
+         "@value":"ruby version 2.3.1 or higher"
       }
-    ],
+   ],
    "identifier":"http://dx.doi.org/10.6084/m9.figshare.828487",
    "codeRepository":"https://github.com/codemeta/codemeta",
    "datePublished":"2014-09-06",
    "dateModified":"2014-08-15",
    "dateCreated":"2014-08-06",
    "description":"Codemeta is a metadata content standard for software.  It includes schemas in JSON-LD and XML Schema for providing semantics and validation.",
-   "docsCoverage": "50",
-   "embargoDate": "2014-08-06T10:00:01Z",
-   "isAutomatedBuild": false,
+   "docsCoverage":"50",
+   "embargoDate":"2014-08-06T10:00:01Z",
+   "isAutomatedBuild":false,
    "publisher":"figshare",
-   "tags": ["publishing", "DOI", "credit for code"],
+   "tags":[
+      "publishing",
+      "DOI",
+      "credit for code"
+   ],
    "license":"http://opensource.org/licenses/Apache2",
    "title":"CodeMeta, a minimal convention for software metadata",
    "version":"2.1.0-rc.2",
@@ -60,17 +64,17 @@
    "buildInstructions":"https://github.com/codemeta/codemeta/buildInstructions",
    "contIntegration":"https://github.com/codemeta/codemeta/minitest",
    "downloadCount":"1123",
-   "downloadLink": "https://github.com/codemeta/codemeta/releases/codemeta_2.1.0-rc.2.tar.gz",
+   "downloadLink":"https://github.com/codemeta/codemeta/releases/codemeta_2.1.0-rc.2.tar.gz",
    "interactionMethod":"don't know what this field means",
-   "inputs": [
-         "A file describing attributes of the software, with MIME type text/csv",
-         "A file containing ambient air temperature values, with mime type application/netcdf"
+   "inputs":[
+      "A file describing attributes of the software, with MIME type text/csv",
+      "A file containing ambient air temperature values, with mime type application/netcdf"
    ],
-   "outputs": "A file containing a scatter plot illustrating software quality affecting quality of life, with mime type image/png",
+   "outputs":"A file containing a scatter plot illustrating software quality affecting quality of life, with mime type image/png",
    "function":"Provides description of software for interoperability",
    "funding":"National Science Foundation grant #012345678",
    "objectType":"software",
-   "programmingLanguage": {
+   "programmingLanguage":{
       "name":"ruby",
       "version":"2.3.1",
       "URL":"https://www.ruby-lang.org/en/"
@@ -81,7 +85,7 @@
    "relatedPublications":"ISBN:0201703726",
    "relationship":"don't know what this field is",
    "softwareCitation":"Meyer, Alexander, Kempfert, Jörg, Falk, Volkmar, riskscorer: v0.1.1 (2016), , doi:10.5281/zenodo.1234.",
-   "suggests": "No other software is suggested",
+   "suggests":"No other software is suggested",
    "softwarePaperCitation":"Meyer, Alexander, Kempfert, Jörg, Falk, Volkmar, riskscorer: v0.1.1 (2016), , doi:10.5281/zenodo.5678.",
    "testCoverage":"30.00",
    "zippedCode":"https://github.com/codemeta/codemeta/releases"
