@@ -92,10 +92,6 @@
          "@id":"codemeta:docsCoverage",
          "@type":"xsd:string"
       },
-      "downloadCount":{
-         "@id":"codemeta:downloadCount",
-         "@type":"xsd:integer"
-      },
       "embargoDate":{
          "@id":"codemeta:embargoDate",
          "@type":"xsd:dataTime"
