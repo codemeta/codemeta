@@ -97,7 +97,7 @@
          "@type":"xsd:dataTime"
       },
       "isAutomatedBuild":{
-         "@id":"codemeta:isAutomateBuild",
+         "@id":"codemeta:isAutomatedBuild",
          "@type":"xsd:boolean"
       },
       "tags":{
