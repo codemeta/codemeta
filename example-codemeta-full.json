@@ -63,7 +63,6 @@
    },
    "buildInstructions":"https://github.com/codemeta/codemeta/buildInstructions",
    "contIntegration":"https://github.com/codemeta/codemeta/minitest",
-   "downloadCount":"1123",
    "downloadLink":"https://github.com/codemeta/codemeta/releases/codemeta_2.1.0-rc.2.tar.gz",
    "interactionMethod":"don't know what this field means",
    "inputs":[
