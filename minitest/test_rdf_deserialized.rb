@@ -5,7 +5,7 @@ require 'sparql'
 require 'rdf/nquads'
 require 'minitest/autorun'
 
-describe 'example-rdf-deserialized.json' do
+describe 'example-codemeta-full deserialized to RDF' do
   before do
     @input = JSON.parse(File.read('example-codemeta-full.json'))
     @graph = RDF::Graph.new << JSON::LD::API.toRdf(@input)
@@ -21,10 +21,10 @@ describe 'example-rdf-deserialized.json' do
                         PREFIX orcid: <http://orcid.org/>
                         SELECT * WHERE { orcid:0000-0002-2192-403X ?p ?o  }")
     resultSet = @graph.query(sse)
-    resultSet.each do |result|
-      puts result.inspect
-      puts "predicate=#{result.p} object=#{result.o}"
-    end
+    #resultSet.each do |result|
+      #puts result.inspect
+      #puts "predicate=#{result.p} object=#{result.o}"
+    #end
     refute resultSet.empty?
   end
 
@@ -34,9 +34,9 @@ describe 'example-rdf-deserialized.json' do
                       PREFIX orcid: <http://orcid.org/>
                       SELECT * WHERE { ?s <http://schema.org/agent> ?o  }")
     resultSet = @graph.query(sse)
-    resultSet.each do |result|
-      puts result.inspect
-    end
+    #resultSet.each do |result|
+    #  puts result.inspect
+    #end
     refute resultSet.empty?
   end
 
@@ -51,20 +51,20 @@ describe 'example-rdf-deserialized.json' do
                  "programmingLanguage", "publisher", "requirements", "suggests",
                  "version", "URL", "name"]
      predicates.each do |thisPredicate|
-       it 'has codeRepository' do
+       it 'has schema.org predicates' do
          thisQueryStr = queryStr.gsub("JSONTerm", thisPredicate)
          sse = SPARQL.parse(thisQueryStr)
          resultSet = @graph.query(sse)
-         resultSet.each do |result|
-           puts result.inspect
-         end
+         #resultSet.each do |result|
+           #puts result.inspect
+         #nd
          refute resultSet.empty?
        end
      end
 
    end
 
-   describe "when checking codemeta predicates" do
+   describe "when checking codemeta schema" do
      queryStr = "PREFIX so: <http://schema.org/>
                  PREFIX cm: <https://codemeta.github.io/terms/>
                  PREFIX orcid: <http://orcid.org/>
@@ -76,13 +76,13 @@ describe 'example-rdf-deserialized.json' do
        "relatedPublications", "relationship", "softwareCitation", "softwarePaperCitation",
        "testCoverage", "uploadedBy", "zippedCode"]
      predicates.each do |thisPredicate|
-       it 'has codeRepository' do
+       it 'has codemeta predicates' do
          thisQueryStr = queryStr.gsub("JSONTerm", thisPredicate)
          sse = SPARQL.parse(thisQueryStr)
          resultSet = @graph.query(sse)
-         resultSet.each do |result|
-           puts result.inspect
-         end
+         #resultSet.each do |result|
+          # puts result.inspect
+         #end
          refute resultSet.empty?
        end
      end
