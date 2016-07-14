@@ -5,7 +5,7 @@ require 'sparql'
 require 'rdf/nquads'
 require 'minitest/autorun'
 
-describe 'example-codemeta-full deserialized to RDF' do
+describe 'example-codemeta-full.json deserialized to RDF' do
   before do
     @input = JSON.parse(File.read('example-codemeta-full.json'))
     @graph = RDF::Graph.new << JSON::LD::API.toRdf(@input)
