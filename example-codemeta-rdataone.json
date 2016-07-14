@@ -1,0 +1,88 @@
+{
+   "@context":"https://raw.githubusercontent.com/codemeta/codemeta/master/codemeta.jsonld",
+   "@type":"Code",
+   "agent":[
+      {
+         "@id":"http://orcid.org/0000-0003-0077-4738",
+         "@type":"person",
+         "email":"jones@nceas.ucsb.edu",
+         "name":"Matt Jones",
+         "affiliation":"NCEAS",
+         "isCitable":true,
+         "isMaintainer":true,
+         "isRightsHolder":true,
+         "role":{
+               "namespace":"http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode",
+               "roleCode":[
+                  "originator",
+                  "resourceProvider"
+               ]
+            }
+      },
+      {
+         "@id":"http://orcid.org/0000-0002-2192-403X",
+         "@type":"person",
+         "email":"slaughter@nceas.ucsb.edu",
+         "name":"Peter Slaughter",
+         "affiliation":"NCEAS",
+         "isCitable":true,
+         "isMaintainer":false,
+         "isRightsHolder":false,
+         "role":{
+            "namespace":"http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode",
+            "roleCode":"contributor"
+         }
+      },
+      {
+         "@id":"http://orcid.org/0000-0002-3957-2474",
+         "@type":"organization",
+         "email":"info@ucop.edu",
+         "name":"University of California, Santa Barbara",
+         "role":{
+            "namespace":"http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode",
+            "roleCode":"copyrightHolder"
+         }
+      }
+   ],
+   "dependency":
+      {
+         "@type":"URL",
+         "@value":"https://github.com/ropensci/datapack"
+  },
+   "identifier":"http://dx.doi.org/10.5063/F1M61H5X",
+   "codeRepository":"https://github.com/DataONEorg/rdataone",
+   "controlledTem": "software",
+   "datePublished":"2016-05-27",
+   "dateModified":"2016-05-27",
+   "dateCreated":"2016-05-27",
+   "description":"Provides read and write access to data and metadata from the DataONE network of data repositories.  Each DataONE repository implements a consistent repository application programming interface. Users call methods in R to access these remote repository functions, such as methods to query the metadata catalog, get access to metadata for particular data packages, and read the data objects from the data repository. Users can also insert and update data objects on repositories that support these methods.",
+   "downloadLink":"https://cran.r-project.org/src/contrib/dataone_2.0.0.tar.gz",
+   "function":"Provides an R Interface to the DataONE REST API",
+   "funding":"National Science Foundation grant #012345678",
+   "isAutomatedBuild":false,
+   "issueTracker":"https://github.com/DataONEorg/rdataone/issues",
+   "license":"http://opensource.org/licenses/Apache2",
+   "publisher":"https://cran.r-project.org",
+   "tags":[
+      "data sharing",
+      "data repository",
+      "DataONE"
+   ],
+   "title":"R Interface to the DataONE REST API",
+   "version":"2.0.0",
+   "uploadedBy":{
+      "@id":"http://orcid.org/0000-0003-0077-4738",
+      "@type":"person",
+      "email":"mbjones@nceas.ucsb.edu",
+      "name":"Matt Jones"
+   },
+   "objectType":"software",
+   "programmingLanguage":{
+      "name":"R",
+      "version":"> 3.1.1",
+      "URL":"https://www.r-project.org"
+   },
+   "readme":"https://github.com/DataONEorg/rdataone/README.md",
+   "softwareCitation":"Jones M, Slaughter P, Nahf R, Jones C, Boettiger C, Walker L, Hallett L, Chamberlain S, Hart E and Read J (2016). _redland: R Interface to the DataONE REST API_. doi: 10.5063/F1M61H5X (URL: http://doi.org/10.5063/F1M61H5X), R package version 2.0.0, <URL: http://github.com/DataONEorg/rdataone>.",
+   "zippedCode":"https://cran.r-project.org/src/contrib/dataone_2.0.0.tar.gz"
+}
