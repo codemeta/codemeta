@@ -1,0 +1,60 @@
+<http://orcid.org/0000-0002-2192-403X> <http://schema.org/affiliation> "NCEAS" .
+<http://orcid.org/0000-0002-2192-403X> <http://schema.org/email> "slaughter@nceas.ucsb.edu" .
+<http://orcid.org/0000-0002-2192-403X> <http://schema.org/name> "Peter Slaughter" .
+<http://orcid.org/0000-0002-2192-403X> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
+<http://orcid.org/0000-0002-2192-403X> <https://codemeta.github.io/terms/Role> _:b2 .
+<http://orcid.org/0000-0002-2192-403X> <https://codemeta.github.io/terms/isCitable> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://orcid.org/0000-0002-2192-403X> <https://codemeta.github.io/terms/isMaintainer> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://orcid.org/0000-0002-2192-403X> <https://codemeta.github.io/terms/isRightsHolder> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://orcid.org/0000-0002-3957-2474> <http://schema.org/email> "info@ucop.edu" .
+<http://orcid.org/0000-0002-3957-2474> <http://schema.org/name> "University of California, Santa Barbara" .
+<http://orcid.org/0000-0002-3957-2474> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<http://orcid.org/0000-0002-3957-2474> <https://codemeta.github.io/terms/Role> _:b3 .
+<http://orcid.org/0000-0003-0077-4738> <http://schema.org/affiliation> "NCEAS" .
+<http://orcid.org/0000-0003-0077-4738> <http://schema.org/email> "jones@nceas.ucsb.edu" .
+<http://orcid.org/0000-0003-0077-4738> <http://schema.org/email> "mbjones@nceas.ucsb.edu" .
+<http://orcid.org/0000-0003-0077-4738> <http://schema.org/name> "Matt Jones" .
+<http://orcid.org/0000-0003-0077-4738> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
+<http://orcid.org/0000-0003-0077-4738> <https://codemeta.github.io/terms/Role> _:b1 .
+<http://orcid.org/0000-0003-0077-4738> <https://codemeta.github.io/terms/isCitable> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://orcid.org/0000-0003-0077-4738> <https://codemeta.github.io/terms/isMaintainer> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://orcid.org/0000-0003-0077-4738> <https://codemeta.github.io/terms/isRightsHolder> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:b0 <dc:type> "software"^^<http://www.w3.org/2001/XMLSchema#string:> .
+_:b0 <http://purl.org/dc/terms/identifier> "http://dx.doi.org/10.5063/F1M61H5X"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+_:b0 <http://purl.org/dc/terms/title> "R Interface to the DataONE REST API" .
+_:b0 <http://schema.org/agent> <http://orcid.org/0000-0002-2192-403X> .
+_:b0 <http://schema.org/agent> <http://orcid.org/0000-0002-3957-2474> .
+_:b0 <http://schema.org/agent> <http://orcid.org/0000-0003-0077-4738> .
+_:b0 <http://schema.org/codeRepository> "https://github.com/DataONEorg/rdataone"^^<http://schema.org/URL> .
+_:b0 <http://schema.org/dateCreated> "2016-05-27"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:b0 <http://schema.org/dateModified> "2016-05-27"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:b0 <http://schema.org/datePublished> "2016-05-27"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:b0 <http://schema.org/description> "Provides read and write access to data and metadata from the DataONE network of data repositories.  Each DataONE repository implements a consistent repository application programming interface. Users call methods in R to access these remote repository functions, such as methods to query the metadata catalog, get access to metadata for particular data packages, and read the data objects from the data repository. Users can also insert and update data objects on repositories that support these methods." .
+_:b0 <http://schema.org/downloadUrl> "https://cran.r-project.org/src/contrib/dataone_2.0.0.tar.gz"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+_:b0 <http://schema.org/keywords> "DataONE" .
+_:b0 <http://schema.org/keywords> "data repository" .
+_:b0 <http://schema.org/keywords> "data sharing" .
+_:b0 <http://schema.org/license> "http://opensource.org/licenses/Apache2" .
+_:b0 <http://schema.org/programmingLanguage> _:b4 .
+_:b0 <http://schema.org/publisher> "https://cran.r-project.org" .
+_:b0 <http://schema.org/requirements> "https://github.com/ropensci/datapack"^^<http://schema.org/URL> .
+_:b0 <http://schema.org/version> "2.0.0" .
+_:b0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Code> .
+_:b0 <https://codemeta.github.io/terms/function> "Provides an R Interface to the DataONE REST API" .
+_:b0 <https://codemeta.github.io/terms/funding> "National Science Foundation grant #012345678" .
+_:b0 <https://codemeta.github.io/terms/isAutomatedBuild> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:b0 <https://codemeta.github.io/terms/issueTracker> "https://github.com/DataONEorg/rdataone/issues"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+_:b0 <https://codemeta.github.io/terms/readme> "https://github.com/DataONEorg/rdataone/README.md"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+_:b0 <https://codemeta.github.io/terms/softwareCitation> "Jones M, Slaughter P, Nahf R, Jones C, Boettiger C, Walker L, Hallett L, Chamberlain S, Hart E and Read J (2016). _redland: R Interface to the DataONE REST API_. doi: 10.5063/F1M61H5X (URL: http://doi.org/10.5063/F1M61H5X), R package version 2.0.0, <URL: http://github.com/DataONEorg/rdataone>." .
+_:b0 <https://codemeta.github.io/terms/uploadedBy> <http://orcid.org/0000-0003-0077-4738> .
+_:b0 <https://codemeta.github.io/terms/zippedCode> "https://cran.r-project.org/src/contrib/dataone_2.0.0.tar.gz"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+_:b1 <https://codemeta.github.io/terms/namespace> "http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode" .
+_:b1 <https://codemeta.github.io/terms/roleCode> "originator" .
+_:b1 <https://codemeta.github.io/terms/roleCode> "resourceProvider" .
+_:b2 <https://codemeta.github.io/terms/namespace> "http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode" .
+_:b2 <https://codemeta.github.io/terms/roleCode> "contributor" .
+_:b3 <https://codemeta.github.io/terms/namespace> "http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode" .
+_:b3 <https://codemeta.github.io/terms/roleCode> "copyrightHolder" .
+_:b4 <http://schema.org/URL> "https://www.r-project.org" .
+_:b4 <http://schema.org/name> "R" .
+_:b4 <http://schema.org/version> "> 3.1.1" .
