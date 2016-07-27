@@ -191,15 +191,15 @@ Subproperties: None
 Keywords associated with the software (i.e. Fixed vocabulary by which to describe category or community of software)
 
 ### dateCreated
-Context IRI: schema:dateCreated
-Type: xsd:dateTime
+Context IRI: schema:dateCreated  
+Type: xsd:dateTime  
 Subproperties: None  
 
 The date that a published version of the software was created by the SoftwareAuthor.
 
 ### dateModified
-Context IRI: schema:dateCreated
-Type: xsd:dateTime
+Context IRI: schema:dateCreated  
+Type: xsd:dateTime  
 Subproperties: None  
 
 The date that a published version of the software was updated by the SoftwareAuthor.
@@ -209,189 +209,189 @@ Context IRI: schema:dateCreated
 Type: xsd:dateTime  
 Subproperties: None  
 
-DatePublished   The date the software was first made available  publicly by the publisher.
+The date the software was first made available  publicly by the publisher.
 
 ### dependency
-Context IRI: schema:requirements
-Type: Not assigned
+Context IRI: schema:requirements  
+Type: Not assigned  
 Subproperties: None
 
 The computer hardware and software required to run the software.
 
 ### description
-Context IRI: chema:description
-Type: xsd:string
+Context IRI: chema:description  
+Type: xsd:string  
 Subproperties: None
 
 A text representation conveying the purpose and scope of the software.
 
 ### docsCoverage
-Context IRI: codemeta:docsCoverage
-Type: xsd:string
+Context IRI: codemeta:docsCoverage  
+Type: xsd:string  
 Subproperties: None
 
 An indication of the completeness of documentation that describes the installation, operation and intended usage of the software. This value is expressed as a percentage.DownloadCount   An integer value indicating the number of times that the software has been downloaded.
 
 ### downloadLink
-Context IRI: schema:downloadUrl
-Type: xsd:anyURI
+Context IRI: schema:downloadUrl  
+Type: xsd:anyURI  
 Subproperties:
 
 The URL to obtain the distribution of the software from.
 
 ### email
-Context IRI: schema:email
-Type: xsd:string
+Context IRI: schema:email  
+Type: xsd:string  
 Subproperties:
 
 The email address associated with the creator of the software.
 
 ### embargoDate
-Context IRI: codemeta:embargoDate
-Type: xsd:dataTime
+Context IRI: codemeta:embargoDate  
+Type: xsd:dataTime  
 Subproperties: None
 
 A calendar date specifying the end of a restricted access period, i.e. the date that the software may be made publicly available.
 
 ### function
-Context IRI: codemeta:function
-Type: xsd:string
+Context IRI: codemeta:function  
+Type: xsd:string  
 Subproperties: None
 
 The role or objective associated with the software.
 
 ### funding
-Context IRI: codemeta:funding
-Type: xsd:string
+Context IRI: codemeta:funding  
+Type: xsd:string  
 Subproperties: None
 
 Funding An institution, organization or other entity that has provided monetary resources needed to develop, test, distribute and support the software.
 
 ### inputs
-Context IRI: codemeta:inputs
-Type: xsd:string
+Context IRI: codemeta:inputs  
+Type: xsd:string  
 Subproperties: None
 
 Data, configuration or other types of objects used by the software.
 
 ### interactionMethod
-Context IRI: codemeta:interactionMethod
-Type: xsd:string
+Context IRI: codemeta:interactionMethod  
+Type: xsd:string  
 Subproperties: None
 
 How a user or software system uses the software, for example:  Command-line, GUI, Excel..
 
 ### isAutomatedBuild
-Context IRI: codemeta:isAutomatedBuild
-Type: xsd:boolean
+Context IRI: codemeta:isAutomatedBuild  
+Type: xsd:boolean  
 Subproperties: None
 
 A logical value (true/false) indicating whether an update to the CodeRepository will trigger a new executable version of the software to be generated.
 
 ### isCitable
-Context IRI: codemeta:isCitable
-Type: xsd:boolean
+Context IRI: codemeta:isCitable  
+Type: xsd:boolean  
 Subproperties: None
 
 A logical value (true/false) indicating whether an agent (SoftwareAuthor, SoftwareContributor, etc) can be included in a citation of the software.isMaintainer    A logical value (true/false) indicating whether an agent (SoftwareAuthor, SoftwareContributor, etc.) is the active maintainer of the software
 
 ### isMaintainer
-Context IRI: codemeta:isMaintainer
-Type: xsd:boolean
+Context IRI: codemeta:isMaintainer  
+Type: xsd:boolean  
 Subproperties: None
 
 ### isRightsHolder
-Context IRI: codemeta:isRightsHolder
-Type: xsd:boolean
+Context IRI: codemeta:isRightsHolder  
+Type: xsd:boolean  
 Subproperties: None
 
 A logical value (true/false) indicating whether an agent Is the current agent the rights holder of the software
 
 ### issueTracker
-Context IRI: codemeta:issueTracker
-Type: xsd:anyURI
+Context IRI: codemeta:issueTracker  
+Type: xsd:anyURI  
 Subproperties: None
 
 A URL for the issue tracking system used to report problems and request features, etc., for the software.
 
 ### license
-Context IRI: schema:license
-Type: xsd:string
+Context IRI: schema:license  
+Type: xsd:string  
 Subproperties: None
 
 License The name of the license agreement governing the use and redistribution of the software. e.g. “Apache 2”, “GPL”, “LGPL”
 
 ### name
-Context IRI: schema:name
-Type: xsd:string
+Context IRI: schema:name  
+Type: xsd:string  
 Subproperties: None
 
 The name of the institution, organization, individuals or other entities that created the software.
 
 ### objectType
-Context IRI: dc:type
-Type: xsd:string
+Context IRI: dc:type  
+Type: xsd:string  
 Subproperties: None
 
 The category of the resource (controlled list, such as software, paper, data, image…) that is associated with the software.
 
 ### outputs
-Context IRI: codemeta:outputs
-Type: xsd:string
+Context IRI: codemeta:outputs  
+Type: xsd:string  
 Subproperties: None
 
 Data, graphics and other objects generated by usage of the software.
 
 ### programmingLanguage
-Context IRI: schema:programmingLanguage
-Type: Not assigned
+Context IRI: schema:programmingLanguage  
+Type: Not assigned  
 Subproperties: name, version, URL
 
 The computer language that the software is implemented with.
 
 ### publisher
-Context IRI: schema:publisher
-Type: xsd:string
+Context IRI: schema:publisher  
+Type: xsd:string  
 Subproperties: None
 
 The institution, organization or other entity that makes a distributable version of the software publicly available.
 
 ### readme
-Context IRI: codemeta:readme
-Type: xsd:anyURI
+Context IRI: codemeta:readme  
+Type: xsd:anyURI  
 Subproperties: None
 
 A URL for the file that provides general information about the software.
 
 ### relatedLink
-Context IRI: codemeta:relatedLink
-Type: xsd:anyURI
+Context IRI: codemeta:relatedLink  
+Type: xsd:anyURI  
 Subproperties: None
 
 A URL that provides additional information or resources related to the software.
 
 ### relatedPublications
-Context IRI: codemeta:relatedPublications
-Type: xsd:string
+Context IRI: codemeta:relatedPublications  
+Type: xsd:string  
 Subproperties: None
 
 Publications related to the software.
 
 ### relationship
-Context IRI: codemeta:relationship
-Type: xsd:string
+Context IRI: codemeta:relationship  
+Type: xsd:string  
 Subproperties: None
 
 Relationship of the software to other related resources
 
 ### role
-Context IRI: codemeta:relationship
-Type: @id
+Context IRI: codemeta:relationship  
+Type: @id  
 Subproperties: roleCode
 
 ### roleCode
-Context IRI: codemeta:roldCode
-Type: xsd:string
+Context IRI: codemeta:roldCode  
+Type: xsd:string  
 Subproperties: None
 
 Example:
@@ -403,70 +403,70 @@ Example:
 ```
 
 ### softwareCitation
-Context IRI: codemeta:softwarePaperCitation
-Type: xsd:string
+Context IRI: codemeta:softwarePaperCitation  
+Type: xsd:string  
 Subproperties: None
 
 A text string that can be used to authoritatively cite the software from a published work, such as a research paper or conference proceedings, etc.
 
 ### identifier
-Context IRI: dcterms:identifier
-Type: xsd:anyURI
+Context IRI: dcterms:identifier  
+Type: xsd:anyURI  
 Subproperties: None
 
 A universally unique character string associated with the software.
 
 ### softwarePaperCitation
-Context IRI: codemeta:softwarePaperCitation
-Type: xsd:string
+Context IRI: codemeta:softwarePaperCitation  
+Type: xsd:string  
 Subproperties: None
 
 A text string that can be used to authoritatively cite a research paper, conference proceedings or other scholarly work that describes the design, development, usage, significance or other aspect of the software.
 
 ### title
-Context IRI: dcterms:title
-Type: xsd:string
+Context IRI: dcterms:title  
+Type: xsd:string  
 Subproperties: None
 
 The distinguishing name associated with the software.
 
 ### suggests
-Context IRI: schema:suggests
-Type: xsd:string
+Context IRI: schema:suggests  
+Type: xsd:string  
 Subproperties: None
 
 External software components that could enhance operation of or enable advanced functionality of the software package but is not strictly required.
 
 ### tags
-Context IRI: schema:keywords
-Type: xsd:string
+Context IRI: schema:keywords  
+Type: xsd:string  
 Subproperties: None
 
 Terms used to describe the software that facilitate discovery of the software.
 
 ### testCoverage
-Context IRI: codemeta:testCoverage
-Type: xsd:integer
+Context IRI: codemeta:testCoverage  
+Type: xsd:integer  
 Subproperties: None
 
 An indication of the completeness of testing methods (scripts, data, etc.) that verify the correct operation of the software. This value is expressed as a percentage.
 
 ### uploadedBy
-Context IRI: codemeta:uploadedBy
-Type: Not specified
+Context IRI: codemeta:uploadedBy  
+Type: Not specified  
 Subproperties: @id, email, name
 The user identity that uploaded the software to an online repository.
 
 ### version
-Context IRI: schema:version
-Type: xsd:string
+Context IRI: schema:version  
+Type: xsd:string  
 Subproperties: None
 
 A unique string indicating a specific state of the software, i.e. an initial public release, an update or bug fix release, etc. No version format or schema is enforced for this value.
 
 ### zippedCode
-Context IRI: codemeta:zippedCode
-Type: xsd:anyURI
+Context IRI: codemeta:zippedCode  
+Type: xsd:anyURI  
 Subproperties: None
 
 ZippedCodeLink  A URL for the software distribution in compressed form.
