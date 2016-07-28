@@ -9,31 +9,37 @@ The CodeMeta project strives to promote the citation and reuse of software autho
 
 The mechanism to package and transfer software descriptions that the CodeMeta project has adopted uses [JSON-LD](http://json-ld.org/),
 which is a W3C standard that enables JSON based documents to be universally understandable and processable
-by adhering to principles outlined for [linked data](https://en.wikipedia.org/wiki/Linked_data):
+by adhering to principles outlined for linked data](https://en.wikipedia.org/wiki/Linked_data):
 
 - Use URIs to name (identify) resources so that they can be located and retrieved.
 - Provide useful information about what a name identifies when it's looked up, using open standards.
 - Refer to other things using their HTTP URI-based names when publishing them on the Web.
 
+The JSON-LD [Best Practices guide](http://json-ld.org/spec/latest/json-ld-api-best-practices/) describes linked data as:
+
+> Linked Data is a way to create a network of standards-based machine interpretable data
+> across different documents and Web sites. It allows an application to start at one piece of Linked
+> Data, and follow embedded links to other pieces of Linked Data that are hosted on different
+> sites across the Web."
+
 JSON-LD is a W3C standard, specified at https://www.w3.org/TR/json-ld/
 
 ## CodeMeta Metadata Usage
 
-JSON-LD uses a *context file* to associate JSON names with an IRI (Internationalized Resource Identifier).  The JSON names then serve as abbreviated, local names for the IRIs that are universally unique identifiers for concepts from widely used schemas such as [schema.org](http://schema.org) and [Dublin Core Metadata Element Set](http://dublincore.org/documents/dces/).
+JSON-LD uses a *context file* to associate JSON names with IRIs (Internationalized Resource Identifier).  The JSON names then serve as abbreviated, local names for the IRIs that are universally unique identifiers for concepts from widely used schemas such as [schema.org](http://schema.org) and [Dublin Core Metadata Element Set](http://dublincore.org/documents/dces/).
 
 The context file [*codemeta.jsonld*](https://raw.githubusercontent.com/codemeta/codemeta/master/codemeta.jsonld) contains the complete set of JSON properties adopted by the CodeMeta project.
 
-A CodeMeta software description, or *instance file*, references the context file by using the JSON names contained in the context file. The JSON names are more compact and easier to process than IRIs. These files can be used to transfer metadata between software authors, repositories, and others, for the purposes of archiving, sharing, indexing, citing and discovering software.
+A CodeMeta software description, or *instance file*, uses the JSON names contained in the context file. The JSON names are more compact and easier to process than IRIs. The instance files can be used to transfer metadata between software authors, repositories, and others, for the purposes of archiving, sharing, indexing, citing and discovering software.
 
 Because the instance file refers to the context file, the mapping between the local JSON names and the
 IRIs is always known, thereby giving the local names universal context.
 
-An example usage of the CodeMeta instance file is for the author of research software package to generate an instance file when the software package is published to a repository. The instance file can be used to aid in any repository ingest processing. The instance file can be made available with the software package as it may contain additional metadata that was not used by the repository. In addition the instance file may be
-used in other transactions involving the software package, for example.
+An example usage of the CodeMeta instance file is for the author of research software package to generate an instance file when the software package is published to a repository. The instance file can be used to aid in any repository ingest processing. The instance file can be made available in the repository with the software package as it may contain additional metadata that was not used by the repository. In addition this file may be used in other transactions involving the software package after the package has been downloaded from the repository.
 
-The producer of an instance file, i.e. the creators of the software, must use the JSON names from the CodeMeta context file. The consumer of the instance file can use the JSON names from the instance file for any necessary processing tasks.
+The producer of an instance file, i.e. the creators of the software, must use the JSON names from the CodeMeta context file. The consumer of the instance file can use these same JSON names from the instance file for any necessary processing tasks.
 
-As an alternative to using the producer supplied JSON names, the consumer can use the JSON-LD API to translate the JSON names to their own local JSON names that may be in use by their local processing scripts. This is done by first using the JSON-LD *expand* function that replaces each JSON name with it's corresponding IRI from the CodeMeta context file. For example, the producer's instance file may contain the following line:
+As an alternative to using the producer supplied JSON names, the consumer can use the [JSON-LD API](https://www.w3.org/TR/json-ld-api/) to translate the JSON names to their own local JSON names that may be in use by their local processing scripts. This is done by first using the JSON-LD *expand* function that replaces each JSON name in the instance file with it's corresponding IRI from the CodeMeta context file. For example, the producer's instance file may contain the following line:
 
       "codeRepository":"https://github.com/DataONEorg/rdataone"
 
@@ -54,9 +60,7 @@ Note that this expansion and compaction process assumes that both the producer a
 To facilitate automated ingest of research software into repositories such as [figshare](https://figshare.com/), [Zenodo](https://zenodo.org/), the [Knowledge Network for Biocomplexity](https://knb.ecoinformatics.org/) and others, these repositories will update
 their submission processes to use CodeMeta instance files which will provide the metadata necessary for the submission and indexing of the software.
 
-Tools will be created that assist in the generate of instance files.
-
-For example, a tool written in the R language would generate a CodeMeta instance file from an R package that was authored to support a research project, automatically collecting available metadata, and possibly prompting the user for any additional required metadata. The instance file would then be used to assist in publishing the software to a repository. An example instance file is shown in Appendix C.
+Tools will be created that assist in the generation of instance files. For example, a tool written in the R language would generate a CodeMeta instance file from an R package that was authored to support a research project, automatically collecting available metadata and possibly prompting the user for any additional required metadata. The instance file would then be used to assist in publishing the software to a repository. An example instance file is shown in Appendix C.
 
 When creating an instance file, note that they contain JSON name, value pairs where the values can be simple values, arrays or JSON objects. A simple value is a number, string, or one the literal values *false*, *null* *true*, for example:
 
@@ -82,19 +86,80 @@ A JSON object is surrounded by curly braces and can contain other JSON values or
 
 The "uploadedBy" JSON object illustrates the use of the JSON-LD keyword "@id", which is used to associate an IRI with the JSON object.
 
-Appendix B provides a list of the JSON names that are used in a CodeMeta instance file.
+The JSON "@type" keyword associates a JSON value or object with a well known type, for example, the
+statement `"@type":"person"` associates the `uploadedBy` object with `http://schema.org/`.
+
+For a list of the JSON names that can be used in a CodeMeta instance file, see Appendix B.
+
+## Minimal Instance File
+
+ [ TBD ]
 
 ## Testing An Instance file
 
+ [ TBD ]
+
 ## Appendix A JSON-LD Relationship to RDF
 
-The intent of JSON-LD is to provide a mechanism to represent linked data using JSON syntax, yet JSON-LD was developed as a W3C Standard by the RDF Working Group. Even though JSON-LD can be effectively used without converting a JSON-LD document to RDF, it is useful to consider the relationship of JSON-LD to RDF in order to fully understanding JSON-LD.
+The intent of JSON-LD is to provide a mechanism to represent linked data using standard JSON syntax, yet JSON-LD was developed as a W3C Standard by the RDF Working Group. Even though JSON-LD can be effectively used without converting a JSON-LD document to RDF, it is useful to consider the relationship of JSON-LD to RDF in order to fully understanding JSON-LD.
 
-(Because this technology is RDF-centric, the process of converting a JSON-LD file to RDF is termed "deserializing JSON-LD to RDF", as explained in the JSON-LD 1.0 [Processing Algorithms and API](JSON-LD 1.0 Processing Algorithms and API).)
+For example, in the instance file, the JSON-LD "@id" keyword is used to associate an IRI with a JSON object. When the JSON-LD instance file is serialized to RDF, this becomes the graph node identifier, or the subject of the resulting RDF triple. If an @id is not specified for a JSON object, then a blank node identifier is assigned to the resulting graph node for the output RDF graph. The JSON object `role` from the example
+instance file:
 
-For example, in the instance file, the JSON-LD "@id" keyword is used to associate an IRI with a JSON object. When the JSON-LD instance file is deserialized to RDF, this becomes the graph node identifier, or the subject of the resulting RDF triple. If an @id is not specified for a JSON object, then a blank node identifier is assigned to the resulting graph node for the output RDF graph.
+```
+      "roleCode":[
+         "originator",
+         ...
+      ]
+```
+
+is serialized to RDF as:
+
+```
+_:b1 <https://codemeta.github.io/terms/roleCode> "originator" .
+```
+
+When the JSON-LD "@type" keyword is applied to a simple JSON type, the serialized RDF will have that type appended to the object, for example, the following entry from the example instance file:
+
+```
+"dateCreated":"2016-05-27"
+```
+
+is serialized to the following RDF ([N-Triples format](https://www.w3.org/TR/n-triples/)):
+
+```
+_:b0 <http://schema.org/dateCreated> "2016-05-27"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+```
+
+In this case, the "@type" was specified in the context file.
+
+When the JSON-LD "@type" is applied to a JSON object, the type information is serialized to RDF with
+an RDF type statement, for example, this JSON object from the sample instance file:
+
+```
+"agent":[
+  {
+     "@id":"http://orcid.org/0000-0002-3957-2474",
+     "@type":"organization",
+    ...
+
+  }
+]
+```
+
+is serialized to RDF as:
+
+```
+<http://orcid.org/0000-0002-3957-2474> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+
+```
+
+This example shows the "@type" keyword being used in the instance file. Because `agent` can be one
+of multiple possible types ("person", "organization") the type must be defined for each instance.
 
 ## Appendix B - CodeMeta Properties
+
+[ Need to include examples for any term where appropriate ]
 
 The following set of JSON-LD properties have been selected and vetted by the CodeMeta project for use in creating Codemeta instance files.
 
@@ -107,10 +172,10 @@ Note that the following namespace abbreviations are used in the CodeMeta context
 
 ### affiliation
 Context IRI: schema:affiliation  
-Type: xsd:string
+Type: xsd:string  
 Subproperties: None
 
-An *affliation* is the institution, organization or other group that the software creator is associated with.
+An *affliation* is the institution, organization or other group that the software agent is associated with.
 
 ### agent
 Context IRI: schema:agent  
@@ -163,8 +228,8 @@ An array of values can be assigned to the property *agent*, but each should have
 The JSON-LD keyword "@id" is used to associate a JSON object with an IRI.
 
 ### buildInstructions
-Context IRI: codemeta:buildInstructions
-Type: xsd:anyURI
+Context IRI: codemeta:buildInstructions  
+Type: xsd:anyURI  
 Subproperties: @id, @type, email, name, affiliation, isCitable, isMaintainer, isRightsHolder, role
 
 A URL for the instructions to create an executable version of the software from source code.
@@ -195,21 +260,21 @@ Context IRI: schema:dateCreated
 Type: xsd:dateTime  
 Subproperties: None  
 
-The date that a published version of the software was created by the SoftwareAuthor.
+The date that a published version of the software was created by the software author.
 
 ### dateModified
 Context IRI: schema:dateCreated  
 Type: xsd:dateTime  
 Subproperties: None  
 
-The date that a published version of the software was updated by the SoftwareAuthor.
+The date that a published version of the software was updated by the software author.
 
 ### datePublished
 Context IRI: schema:dateCreated  
 Type: xsd:dateTime  
 Subproperties: None  
 
-The date the software was first made available  publicly by the publisher.
+The date the software was first made publicly available.
 
 ### dependency
 Context IRI: schema:requirements  
@@ -230,7 +295,7 @@ Context IRI: codemeta:docsCoverage
 Type: xsd:string  
 Subproperties: None
 
-An indication of the completeness of documentation that describes the installation, operation and intended usage of the software. This value is expressed as a percentage.DownloadCount   An integer value indicating the number of times that the software has been downloaded.
+An indication of the completeness of documentation that describes the installation, operation and intended usage of the software. This value is expressed as a percentage.
 
 ### downloadLink
 Context IRI: schema:downloadUrl  
@@ -244,7 +309,7 @@ Context IRI: schema:email
 Type: xsd:string  
 Subproperties:
 
-The email address associated with the creator of the software.
+The email address associated with a software agent.
 
 ### embargoDate
 Context IRI: codemeta:embargoDate  
@@ -265,14 +330,14 @@ Context IRI: codemeta:funding
 Type: xsd:string  
 Subproperties: None
 
-Funding An institution, organization or other entity that has provided monetary resources needed to develop, test, distribute and support the software.
+An institution, organization or other entity that has provided the resources needed to develop, test, distribute and support the software.
 
 ### inputs
 Context IRI: codemeta:inputs  
 Type: xsd:string  
 Subproperties: None
 
-Data, configuration or other types of objects used by the software.
+Data, configurations or other types of objects used by the software.
 
 ### interactionMethod
 Context IRI: codemeta:interactionMethod  
@@ -293,19 +358,21 @@ Context IRI: codemeta:isCitable
 Type: xsd:boolean  
 Subproperties: None
 
-A logical value (true/false) indicating whether an agent (SoftwareAuthor, SoftwareContributor, etc) can be included in a citation of the software.isMaintainer    A logical value (true/false) indicating whether an agent (SoftwareAuthor, SoftwareContributor, etc.) is the active maintainer of the software
+A logical value (true/false) indicating whether an agent (author, contributor, etc) can be included in a citation of the software.
 
 ### isMaintainer
 Context IRI: codemeta:isMaintainer  
 Type: xsd:boolean  
 Subproperties: None
 
+A logical value (true/false) indicating whether an agent (SoftwareAuthor, SoftwareContributor, etc.) is the active maintainer of the software
+
 ### isRightsHolder
 Context IRI: codemeta:isRightsHolder  
 Type: xsd:boolean  
 Subproperties: None
 
-A logical value (true/false) indicating whether an agent Is the current agent the rights holder of the software
+A logical value (true/false) indicating whether an agent is the current rights holder of the software
 
 ### issueTracker
 Context IRI: codemeta:issueTracker  
@@ -319,21 +386,21 @@ Context IRI: schema:license
 Type: xsd:string  
 Subproperties: None
 
-License The name of the license agreement governing the use and redistribution of the software. e.g. “Apache 2”, “GPL”, “LGPL”
+The name of the license agreement governing the use and redistribution of the software. e.g. “Apache 2”, “GPL”, “LGPL”
 
 ### name
 Context IRI: schema:name  
 Type: xsd:string  
 Subproperties: None
 
-The name of the institution, organization, individuals or other entities that created the software.
+The name of the institution, organization, individuals or other entities that had a role in the creation of the software.
 
 ### objectType
 Context IRI: dc:type  
 Type: xsd:string  
 Subproperties: None
 
-The category of the resource (controlled list, such as software, paper, data, image…) that is associated with the software.
+The category of the resource (controlled list, such as software, paper, data, image) that is associated with the software.
 
 ### outputs
 Context IRI: codemeta:outputs  
@@ -375,7 +442,7 @@ Context IRI: codemeta:relatedPublications
 Type: xsd:string  
 Subproperties: None
 
-Publications related to the software.
+Publications that cite the software or describe some aspect of it.
 
 ### relationship
 Context IRI: codemeta:relationship  
@@ -389,10 +456,14 @@ Context IRI: codemeta:relationship
 Type: @id  
 Subproperties: roleCode
 
+A function or part performed by an agent.
+
 ### roleCode
 Context IRI: codemeta:roldCode  
 Type: xsd:string  
 Subproperties: None
+
+The identifier that defines a specific role.
 
 Example:
 ```
@@ -455,6 +526,7 @@ An indication of the completeness of testing methods (scripts, data, etc.) that 
 Context IRI: codemeta:uploadedBy  
 Type: Not specified  
 Subproperties: @id, email, name
+
 The user identity that uploaded the software to an online repository.
 
 ### version
@@ -577,12 +649,3 @@ package version 2.0.0, <URL: http://github.com/DataONEorg/rdataone>.",
    "zippedCode":"https://cran.r-project.org/src/contrib/dataone_2.0.0.tar.gz"
 }
 ```
-
-
-## Glossary
-
-### CodeMeta
-### context file
-### Instance file
-### IRI
-### JSON object
