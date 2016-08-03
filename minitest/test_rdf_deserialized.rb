@@ -6,7 +6,7 @@ require 'rdf/nquads'
 require 'minitest/autorun'
 
 describe 'example-codemeta-full.json deserialized to RDF' do
-  before do
+  before (:all) do
     @input = JSON.parse(File.read('example-codemeta-full.json'))
     @graph = RDF::Graph.new << JSON::LD::API.toRdf(@input)
   end
@@ -40,7 +40,7 @@ describe 'example-codemeta-full.json deserialized to RDF' do
     refute resultSet.empty?
   end
 
-   describe "when checking schema.org predicates" do
+  it 'has schema.org predicates' do
      queryStr = "PREFIX so: <http://schema.org/>
                  PREFIX cm: <https://codemeta.github.io/terms/>
                  PREFIX orcid: <http://orcid.org/>
@@ -48,10 +48,9 @@ describe 'example-codemeta-full.json deserialized to RDF' do
      # Check statements with schema.org based predicate
      predicates = ["codeRepository", "dateCreated", "dateModified", "datePublished",
                   "description", "downloadUrl", "keywords", "license",
-                 "programmingLanguage", "publisher", "requirements", "suggests",
+                 "programmingLanguage", "publisher", "suggests",
                  "version", "URL", "name"]
      predicates.each do |thisPredicate|
-       it 'has schema.org predicates' do
          thisQueryStr = queryStr.gsub("JSONTerm", thisPredicate)
          sse = SPARQL.parse(thisQueryStr)
          resultSet = @graph.query(sse)
@@ -59,12 +58,10 @@ describe 'example-codemeta-full.json deserialized to RDF' do
            #puts result.inspect
          #nd
          refute resultSet.empty?
-       end
      end
-
    end
 
-   describe "when checking codemeta schema" do
+  it 'has codemeta predicates' do
      queryStr = "PREFIX so: <http://schema.org/>
                  PREFIX cm: <https://codemeta.github.io/terms/>
                  PREFIX orcid: <http://orcid.org/>
@@ -83,7 +80,6 @@ describe 'example-codemeta-full.json deserialized to RDF' do
           # puts result.inspect
          #end
          refute resultSet.empty?
-       end
      end
    end
 end
