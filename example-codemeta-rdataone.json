@@ -79,14 +79,13 @@
    "version":"2.0.0",
    "uploadedBy":{
       "@id":"http://orcid.org/0000-0003-0077-4738",
-      "@type":"person",
       "email":"mbjones@nceas.ucsb.edu",
       "name":"Matt Jones"
    },
    "objectType":"software",
    "programmingLanguage":{
       "name":"R",
-      "version":"> 3.1.1",
+      "version":"3.1.1",
       "URL":"https://www.r-project.org"
    },
    "readme":"https://github.com/DataONEorg/rdataone/README.md",
