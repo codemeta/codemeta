@@ -10,7 +10,7 @@ require 'minitest/autorun'
 # 'test_example_codemeta_full.rb' test, so if the current 'fail'
 # test passes, it helps to validate the 'full' test.
 
-describe 'example-codemeta-full.json' do
+describe 'example-codemeta-invalid.json' do
   before do
     input = JSON.parse(File.read('example-codemeta-invalid.json'))
     # Transform the test document with the json-ld expand operation.
