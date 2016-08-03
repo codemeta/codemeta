@@ -33,7 +33,6 @@ describe 'example-codemeta-full.json' do
     # to aid in the diff process.
     input.delete('@context')
     @removed, @added = input.easy_diff @compacted
-    puts @removed
   end
 
   it 'json-ld expand and compact does not lose data' do
