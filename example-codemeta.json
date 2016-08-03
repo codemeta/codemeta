@@ -7,7 +7,7 @@
                 "email": "jones@nceas.ucsb.edu",
                 "name": "Matt Jones",
                 "affiliation": "NCEAS",
-                "isCitable": true,
+                "mustBeCited": true,
                 "isMaintainer": false,
                 "isRightsHolder": true,
                 "hasRole": [{

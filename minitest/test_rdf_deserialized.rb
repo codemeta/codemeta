@@ -72,11 +72,10 @@ describe 'example-codemeta-full.json deserialized to RDF' do
      # Check statements with codemeta namespaced predicate
      predicates = ["buildInstructions", "contIntegration", "docsCoverage",
        "embargoDate", "function", "funding", "inputs", "interactionMethod",
-       "isAutomatedBuild", "issueTracker", "outputs", "readme", "relatedLink",
-       "relatedPublications", "relationship", "softwareCitation", "softwarePaperCitation",
+       "isAutomatedBuild", "issueTracker", "mustBeCited", "outputs", "readme", "relatedLink",
+       "relatedPublications", "relationship", "requirement", "softwareCitation", "softwarePaperCitation",
        "testCoverage", "uploadedBy", "zippedCode"]
      predicates.each do |thisPredicate|
-       it 'has codemeta predicates' do
          thisQueryStr = queryStr.gsub("JSONTerm", thisPredicate)
          sse = SPARQL.parse(thisQueryStr)
          resultSet = @graph.query(sse)

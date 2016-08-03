@@ -30,8 +30,8 @@
          "@id":"schema:affiliation",
          "@type":"xsd:string"
       },
-      "isCitable":{
-         "@id":"codemeta:isCitable",
+      "mustBeCited":{
+         "@id":"codemeta:mustBeCited",
          "@type":"xsd:boolean"
       },
       "isMaintainer":{
