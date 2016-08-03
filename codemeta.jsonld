@@ -47,12 +47,15 @@
          "@id":"codemeta:Role",
          "@type":"@id"
       },
-      "roleCode":"codemeta:roleCode",
+      "roleCode":{
+        "@id": "codemeta:roleCode",
+        "@type":"xsd:string"
+      },
       "buildInstructions":{
          "@id":"codemeta:buildInstructions",
          "@type":"xsd:anyURI"
       },
-      "downloadLink": 
+      "downloadLink":
       {
          "@id":"schema:downloadUrl",
          "@type": "xsd:anyURI"
