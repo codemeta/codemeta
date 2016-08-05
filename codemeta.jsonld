@@ -87,6 +87,10 @@
       "dependency": {
           "@id":"codemeta:requirement"
       },
+      "developmentStatus": {
+          "@id":"codemeta:developmentStatus",
+          "@type":"xsd:string"
+      },
       "description":{
          "@id":"schema:description",
          "@type":"xsd:string"
