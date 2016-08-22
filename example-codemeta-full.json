@@ -29,17 +29,19 @@
    ],
    "dependency":[
       {
-         "packageId":"export_fig 1.99",
-         "packageSystem":"http://www.mathworks.com",
-         "operatingSystem":"Windows, OS X"
+         "packageId":"export_fig",
+         "version":"1.99",
+         "packageSystem":"http://www.mathworks.com"
       },
       {
-         "packageId":"npplus 0.9.4",
+         "packageId":"npplus",
+         "version":"0.9.4",
          "packageSystem":"https://pypi.python.org",
          "operatingSystem":"MacOS, Linux"
       },
       {
          "packageId":"popbio",
+         "version":"1.3.4",
          "packageSystem":"http://cran.r-project.org",
          "operatingSystem":"Windows, OS X Mavericks"
       }
@@ -50,7 +52,6 @@
    "dateModified":"2014-08-15",
    "dateCreated":"2014-08-06",
    "description":"Codemeta is a metadata content standard for software.  It includes schemas in JSON-LD and XML Schema for providing semantics and validation.",
-   "docsCoverage":"50",
    "embargoDate":"2014-08-06T10:00:01Z",
    "isAutomatedBuild":false,
    "publisher":"figshare",
