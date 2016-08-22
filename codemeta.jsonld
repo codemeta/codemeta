@@ -95,10 +95,6 @@
          "@id":"schema:description",
          "@type":"xsd:string"
       },
-      "docsCoverage":{
-         "@id":"codemeta:docsCoverage",
-         "@type":"xsd:string"
-      },
       "embargoDate":{
          "@id":"codemeta:embargoDate",
          "@type":"xsd:dataTime"
