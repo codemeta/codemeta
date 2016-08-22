@@ -1,12 +1,11 @@
 The CodeMeta project has adopted a set of terms that represent concepts used to describe software. These concepts are common among the schemas used by prominent software source code and research data repositories,
-citation services such as GitHub, figshare, Zenodo, and DataCite. These terms are not used to define a software metadata standard or ontology, but rather as a means to transfer software descriptions between users, repositories, software indexes, citation services and others. This provides a c
-to established schema metadata is not lost as it
-is exported from one schema and imported by another. The following is the list of concepts used by
-CodeMeta.
+citation services such as GitHub, figshare, Zenodo, and DataCite. These terms are not used to define a software metadata standard or ontology, but rather as a means to transfer software descriptions between users, repositories, software indexes, citation services and others.
 
-Note: Each concept has a corresponding entry in the CodeMeta JSON-LD context file codemeta.jsonld, which is
+The following is the list of concepts used by CodeMeta.
+
+(Note: Each concept has a corresponding entry in the CodeMeta JSON-LD context file *codemeta.jsonld*, which is
 used in the serialization of a software description to a CodeMeta instance file. The CodeMeta usage
-of JSON-LD is described in more detail in the CodeMeta Developer Guide.
+of JSON-LD is described in more detail in the CodeMeta Developer Guide.)
 
 ### ~~AccessList~~
 The set of rules that specifying the user identities and their level of access (e.g. read, write, update) to the software.
@@ -15,18 +14,16 @@ Usage of this term has been discontinued because access control will have a repo
 implementation and may not be transferrable to other repositories.
 
 ### Agent
-A person or organization that has a role in designing, authoring, funding, maintaining or licensing the software.
+A person or organization that has a role in designing, authoring, funding, maintaining or licensing the software. The type of agent is specified using a "Role".
 
 Example agent types are "creator", "contributor", "funder".
 
 JSON-LD context name: *agent*
 
 ### AgentId
-A universally unique character string that is associated with the software agent, for example: “http://orcid.org/0000-0002-2192-403X”.
+A universally unique character string that is associated with the software agent.
 
 JSON-LD context name: @id
-
-The *AgentId* is specified using the JSON-LD keyword *@id*.
 
 ### AgentAffiliation
 The institution, organization or other group that the agent is associated with.
@@ -39,19 +36,19 @@ The email address associated with the agent of the software.
 JSON-LD context name: *email*
 
 ### AgentName
-The name of the institution, organization, individuals or other entity that created the software.
+The name of the institution, organization, individuals or other entities that had a role in the creation of the software.
 
 JSON-LD context name: *name*
 
 ### BuildLink
 A URL for the instructions to create an executable version of the software from source code.
 
-JSON-LD context name: buildInstructions
+JSON-LD context name: *buildInstructions*
 
 ### CILink
 A URL for the continuous integration system used to build the software automatically after updates to the source code repository.
 
-JSON-LD context name: contIntegration
+JSON-LD context name: *contIntegration*
 
 ### ~~CitationCount~~
 An integer value indicating the number of times that the software has been cited.
@@ -62,20 +59,20 @@ become meaningless the moment it is serialized to a CodeMeta instance file.
 ### CodeRepositoryLink
 A URL for the source code repository that contains the software source files.
 
-JSON-LD context name: codeRepository
+JSON-LD context name: *codeRepository*
 
 ### ControlledTerm
-Keywords associated with the software (i.e. Fixed vocabulary by which to describe category or community of software)
+Keywords associated with the software (i.e. fixed vocabulary by which to describe a category or community of software)
 
 JSON-LD context name: *controlledTerm*
 
 ### DateCreated
-The date that a published version of the software was created by the SoftwareAuthor.
+The date that a published version of the software was created by the software author.
 
 JSON-LD context name: *dateCreated*
 
 ### DateModified
-The date that a published version of the software was updated by the SoftwareAuthor.
+The date that a published version of the software was updated by the software author.
 
 JSON-LD context name: *dateModified*
 
@@ -85,9 +82,14 @@ The date the software was first made available  publicly by the publisher.
 JSON-LD context name: *datePublished*
 
 ### Dependency
-The computer hardware and software required to run the software. ### Description,A text representation conveying the purpose and scope of the software.
+The computer hardware and software required to run the software.
 
 JSON-LD context name: *dependency*
+
+### Description
+A character string conveying the purpose and scope of the software.
+
+JSON-LD context name: *description*
 
 ### DevelopmentStatus
 A designation of the current state of the software in the development lifecycle, e.g. (“active”, “inactive”) or (“beta”, “candidate release”, “release”), etc.
@@ -119,10 +121,10 @@ JSON-LD context name: *embargoDate*
 ### Function
 The role or objective associated with the software.
 
-JSON-LD context name:
+JSON-LD context name: *function*
 
 ### Funding
-An institution, organization or other entity that has provided monetary resources needed to develop, test, distribute and support the software.
+An institution, organization or other entity that has provided monetary resources needed to develop, test, distribute or support the software.
 
 JSON-LD context name: *funding*
 
@@ -133,7 +135,7 @@ Usage of this term has been discontinued as there is no clear mapping to any sch
 CodeMeta crosswalk.
 
 ### ~~IdentifierNamespace~~
-The authority from which the SoftwareIdentifier was created,  e.g. doi.org, or cran.r-project.org"
+The authority from which the software identifier was created,  e.g. doi.org, or cran.r-project.org"
 
 Usage of this term has been discontinued because it does not appear in any of the schemas in the
 CodeMeta crosswalk.
@@ -158,14 +160,14 @@ JSON-LD context name: *interactionMethod*
 ### IsAutomated
 A logical value (true/false) indicating whether an update to the *CodeRepository* will trigger a new executable version of the software to be generated.
 
-JSON-LD context name: *isAutomatedBuild*
+JSON-LD context name: *isAutomated*
 
-### isMaintainer
+### IsMaintainer
 A logical value (true/false) indicating whether an agent (SoftwareAuthor, SoftwareContributor, etc.) is the active maintainer of the software.
 
 JSON-LD context name: *isMaintainer*
 
-### isRightsHolder
+### IsRightsHolder
 A logical value (true/false) indicating whether an agent is the current agent that is the rights holder of the software, for example, does the user own the account related to the software in a source code repository, etc.
 
 JSON-LD context name: *isRightsHolder*
@@ -175,7 +177,7 @@ A URL for the issue tracking system used to report problems and request features
 
 JSON-LD context name: *issueTracker*
 
-### L10n
+### ~~L10n~~
 A list of the specific counties or regions that the software has been adapted to, e.g. “en-GB,en-US,zh-CN,,zh-TW” (if using the ISO 639-1 standard codes).
 
 Usage of this term has been discontinued because it does not appear in any of the schemas in the
@@ -206,7 +208,7 @@ Data, graphics and other objects generated by usage of the software.
 
 JSON-LD context name: *outputs*
 
-### Package
+### ~~Package~~
 Usage of this term has been discontinued as there is no clear mapping to any schema in the
 CodeMeta crosswalk
 
@@ -225,19 +227,19 @@ A URL for the file that provides general information about the software.
 
 JSON-LD context name: *readme*
 
-### RecordDateCreated
+### ~~RecordDateCreated~~
 The date that this metadata record describing the software was created
 
 Usage of this term has been discontinued because it does not appear in any of the schemas in the
 CodeMeta crosswalk.
 
-### RecordDateModified
+### ~~RecordDateModified~~
 The date that this metadata record describing the software was last modified
 
 Usage of this term has been discontinued because it does not appear in any of the schemas in the
 CodeMeta crosswalk.
 
-### RecordDatePublished
+### ~~RecordDatePublished~~
 The date that the metadata record describing the software was published
 
 Usage of this term has been discontinued because it does not appear in any of the schemas in the
@@ -249,7 +251,7 @@ A URL that provides additional information or resources related to the software.
 JSON-LD context name: *relatedLink*
 
 ### RelatedPublications
-Publications that provide supplementary information about the software package.
+Publications that cite the software or describe some related aspect of it.
 
 JSON-LD context name: *relatedPublications*
 
@@ -258,17 +260,22 @@ Relationship of the software to other related resources
 
 JSON-LD context name: *relationship*
 
-### SoftwareAuthor
+### Role
+The function assumed or part played by a person or organization in relation to creation of the software.
+
+JSON-LD context name: *role*
+
+### ~~SoftwareAuthor~~
 The agent (person or organization) that created the software.
 
-This term has been superceded by *Agent*
+This term has been superceded by *Agent*.
 
 ### SoftwareCitation
-A text string that can be used to authoritatively cite the software from a published work, such as a research paper or  conference proceedings, etc."
+A text string that can be used to authoritatively cite the software from a published work, such as a research paper or  conference proceedings, etc.
 
 JSON-LD context name: *softwareCitation*
 
-### SoftwareContributor
+### ~~SoftwareContributor~~
 The institutions, organizations, other groups or individuals, other that the author, that assisted in authoring, designing, testing etc., of the software."
 
 This term has been superceded by *Agent*
@@ -289,7 +296,7 @@ The distinguishing name associated with the software.
 JSON-LD context name: *title*
 
 ### Suggests
-External software components that could enhance operation of or enable advanced functionality of the software package but is not strictly required.
+External software components that could enhance operation of or enable advanced functionality of the software package but are not strictly required.
 
 JSON-LD context name: *suggests*
 
@@ -298,7 +305,7 @@ Terms used to describe the software that facilitate discovery of the software.
 
 JSON-LD context name: *tags*
 
-### TestCoverage
+### ~~TestCoverage~~
 An indication of the completeness of testing methods (scripts, data, etc.) that verify the correct operation of the software. This value is expressed as a percentage.
 
 Usage of this term has been discontinued because it does not appear in any of the schemas in the
