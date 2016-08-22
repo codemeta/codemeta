@@ -1,5 +1,13 @@
 
-# CodeMeta Software Metadata
+# CodeMeta Developer Guide
+
+This guide is intended for software developers who require detailed information about the CodeMeta project's
+usage of JavaScript Object Notation for Linked Data ([JSON-LD](http://json-ld.org/)) for defining a
+methodology for creating software package descriptions. For example, this guide may be helpful for developers that are
+designing software to generate or read CodeMeta JSON software descriptions.
+
+Users that only require instructions for manually creating CodeMeta software descriptions may wish to
+review the [CodeMeta Tutorial](https://github.com/codemeta/codemeta/blob/master/tutorial.md).
 
 ## CodeMeta Overview
 
