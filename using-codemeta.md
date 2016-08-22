@@ -159,9 +159,10 @@ of multiple possible types ("person", "organization") the type must be defined f
 
 ## Appendix B - CodeMeta Properties
 
-[ Need to include examples for any term where appropriate ]
-
 The following set of JSON-LD properties have been selected and vetted by the CodeMeta project for use in creating Codemeta instance files.
+
+The related document *codemeta-concepts.md* contains definitions for the concepts that these
+JSON properties are associated with.
 
 Note that the following namespace abbreviations are used in the CodeMeta context file, and referenced in this section:
 
@@ -174,17 +175,19 @@ Note that the following namespace abbreviations are used in the CodeMeta context
 Context IRI: schema:affiliation  
 Type: xsd:string  
 Subproperties: None
+Associated CodeMeta Concept: *AgentAffiliation*
 
 An *affliation* is the institution, organization or other group that the software agent is associated with.
 
 ### agent
 Context IRI: schema:agent  
 Type: schema:Organization, schema:Person  
-Subproperties: @id, @type, email, name, affiliation, isCitable, isMaintainer, isRightsHolder, role
+Subproperties: @id, @type, email, name, affiliation, mustBeCited, isMaintainer, isRightsHolder, role
+Associated CodeMeta Concept: *Agent*
 
 An *agent* is an organization or person that is in some way related to the creation of the software. An *agent* can be assigned a @type of *schema:Organization* or *schema:Person*.
 
-Note that the names *person* and *organization* are defined in the CodeMeta context file and can be used as abbreviated forms for the schema.org types.
+Each instance of an *agent* must be qualified with an appropriate *role* property.
 
 An array of values can be assigned to the property *agent*, but each should have an "@id" and "@type" assigned.
 
@@ -196,7 +199,7 @@ An array of values can be assigned to the property *agent*, but each should have
          "email":"jones@nceas.ucsb.edu",
          "name":"Matt Jones",
          "affiliation":"NCEAS",
-         "isCitable":true,
+         "mustBeCited":true,
          "isMaintainer":false,
          "isRightsHolder":true,
          "role":[
@@ -224,90 +227,75 @@ An array of values can be assigned to the property *agent*, but each should have
 ```
 
 ### @id
+Associated CodeMeta concept: *AgentId*
 
 The JSON-LD keyword "@id" is used to associate a JSON object with an IRI.
 
 ### buildInstructions
 Context IRI: codemeta:buildInstructions  
 Type: xsd:anyURI  
-Subproperties: @id, @type, email, name, affiliation, isCitable, isMaintainer, isRightsHolder, role
-
-A URL for the instructions to create an executable version of the software from source code.
+Subproperties: @id, @type, email, name, affiliation, mustBeCited, isMaintainer, isRightsHolder, role
+Associated CodeMeta Concept: *BuildLink*
 
 ### contIntegration  
 Context IRI: codemeta:contIntegration  
 Type: xsd:anyURI  
 Subproperties: None
-
-A URL for the continuous integration system used to build the software automatically after updates to the source code repository.
+Associated CodeMeta Concept: *CILink*
 
 ### codeRepository
 Context IRI: schema:codeRepository  
 Type: schema:URL  
 Subproperties: None
-
-A URL for the repository containing the software source files.
+Associated CodeMeta Concept: *CodeRepositoryLink*
 
 ### controlledTerm
 Context IRI: codemeta:controlledTerm  
 Type: xsd:string  
 Subproperties: None
-
-Keywords associated with the software (i.e. Fixed vocabulary by which to describe category or community of software)
+Associated CodeMeta Concept: *ControlledTerm*
 
 ### dateCreated
 Context IRI: schema:dateCreated  
 Type: xsd:dateTime  
 Subproperties: None  
-
-The date that a published version of the software was created by the software author.
+Associated CodeMeta Concept: *DateCreated*
 
 ### dateModified
 Context IRI: schema:dateCreated  
 Type: xsd:dateTime  
 Subproperties: None  
-
-The date that a published version of the software was updated by the software author.
+Associated CodeMeta Concept: *DateModified*
 
 ### datePublished
 Context IRI: schema:dateCreated  
 Type: xsd:dateTime  
 Subproperties: None  
-
-The date the software was first made publicly available.
+Associated CodeMeta Concept: *DateModified*
 
 ### dependency
 Context IRI: schema:requirements  
 Type: Not assigned  
-Subproperties: None
-
-The computer hardware and software required to run the software.
+Subproperties: *packageId*, *packageSystem*, *version*, *operatingSystem*
+Associated CodeMeta Concept: *Dependency*
 
 ### description
-Context IRI: chema:description  
+Context IRI: schema:description  
 Type: xsd:string  
 Subproperties: None
-
-A text representation conveying the purpose and scope of the software.
-
-### docsCoverage
-Context IRI: codemeta:docsCoverage  
-Type: xsd:string  
-Subproperties: None
-
-An indication of the completeness of documentation that describes the installation, operation and intended usage of the software. This value is expressed as a percentage.
+Associated CodeMeta Concept: *Description*
 
 ### downloadLink
 Context IRI: schema:downloadUrl  
 Type: xsd:anyURI  
-Subproperties:
-
-The URL to obtain the distribution of the software from.
+Subproperties: None
+Associated CodeMeta Concept: *DownloadLink*
 
 ### email
 Context IRI: schema:email  
 Type: xsd:string  
-Subproperties:
+Subproperties: None
+Associated CodeMeta Concept: *AgentEmail*
 
 The email address associated with a software agent.
 
@@ -315,155 +303,150 @@ The email address associated with a software agent.
 Context IRI: codemeta:embargoDate  
 Type: xsd:dataTime  
 Subproperties: None
-
-A calendar date specifying the end of a restricted access period, i.e. the date that the software may be made publicly available.
+Associated CodeMeta Concept: *EmbargoDate*
 
 ### function
 Context IRI: codemeta:function  
 Type: xsd:string  
 Subproperties: None
-
-The role or objective associated with the software.
+Associated CodeMeta Concept: *Function*
 
 ### funding
 Context IRI: codemeta:funding  
 Type: xsd:string  
 Subproperties: None
-
-An institution, organization or other entity that has provided the resources needed to develop, test, distribute and support the software.
+Associated CodeMeta Concept: *Funding*
 
 ### inputs
 Context IRI: codemeta:inputs  
 Type: xsd:string  
 Subproperties: None
-
-Data, configurations or other types of objects used by the software.
+Associated CodeMeta Concept: *Inputs*
 
 ### interactionMethod
 Context IRI: codemeta:interactionMethod  
 Type: xsd:string  
 Subproperties: None
-
-How a user or software system uses the software, for example:  Command-line, GUI, Excel..
+Associated CodeMeta Concept: *InteractionMethod*
 
 ### isAutomatedBuild
 Context IRI: codemeta:isAutomatedBuild  
 Type: xsd:boolean  
 Subproperties: None
+Associated CodeMeta Concept: *IsAutomated*
 
-A logical value (true/false) indicating whether an update to the CodeRepository will trigger a new executable version of the software to be generated.
-
-### isCitable
-Context IRI: codemeta:isCitable  
+### mustBeCited
+Context IRI: codemeta:mustBeCited  
 Type: xsd:boolean  
 Subproperties: None
-
-A logical value (true/false) indicating whether an agent (author, contributor, etc) can be included in a citation of the software.
+Associated CodeMeta Concept: *MustBeCited*
 
 ### isMaintainer
 Context IRI: codemeta:isMaintainer  
 Type: xsd:boolean  
 Subproperties: None
-
-A logical value (true/false) indicating whether an agent (SoftwareAuthor, SoftwareContributor, etc.) is the active maintainer of the software
+Associated CodeMeta Concept: *isMaintainer*
 
 ### isRightsHolder
 Context IRI: codemeta:isRightsHolder  
 Type: xsd:boolean  
 Subproperties: None
-
-A logical value (true/false) indicating whether an agent is the current rights holder of the software
+Associated CodeMeta Concept: *isRightsHolder*
 
 ### issueTracker
 Context IRI: codemeta:issueTracker  
 Type: xsd:anyURI  
 Subproperties: None
-
-A URL for the issue tracking system used to report problems and request features, etc., for the software.
+Associated CodeMeta Concept: *IssueLink*
 
 ### license
 Context IRI: schema:license  
 Type: xsd:string  
 Subproperties: None
-
-The name of the license agreement governing the use and redistribution of the software. e.g. “Apache 2”, “GPL”, “LGPL”
+Associated CodeMeta Concept: *License*
 
 ### name
 Context IRI: schema:name  
 Type: xsd:string  
 Subproperties: None
-
-The name of the institution, organization, individuals or other entities that had a role in the creation of the software.
+Associated CodeMeta Concept: *AgentName*
 
 ### objectType
 Context IRI: dc:type  
 Type: xsd:string  
 Subproperties: None
-
-The category of the resource (controlled list, such as software, paper, data, image) that is associated with the software.
+Associated CodeMeta Concept: *ObjectType*
 
 ### outputs
 Context IRI: codemeta:outputs  
 Type: xsd:string  
 Subproperties: None
-
-Data, graphics and other objects generated by usage of the software.
+Associated CodeMeta Concept: *Outputs*
 
 ### programmingLanguage
 Context IRI: schema:programmingLanguage  
 Type: Not assigned  
 Subproperties: name, version, URL
-
-The computer language that the software is implemented with.
+Associated CodeMeta Concept: *ProgrammingLanguage*
 
 ### publisher
 Context IRI: schema:publisher  
 Type: xsd:string  
 Subproperties: None
-
-The institution, organization or other entity that makes a distributable version of the software publicly available.
+Associated CodeMeta Concept: *Publisher*
 
 ### readme
 Context IRI: codemeta:readme  
 Type: xsd:anyURI  
 Subproperties: None
-
-A URL for the file that provides general information about the software.
+Associated CodeMeta Concept: *ReadmeLink*
 
 ### relatedLink
 Context IRI: codemeta:relatedLink  
 Type: xsd:anyURI  
 Subproperties: None
-
-A URL that provides additional information or resources related to the software.
+Associated CodeMeta Concept: *RelatedLink*
 
 ### relatedPublications
 Context IRI: codemeta:relatedPublications  
 Type: xsd:string  
 Subproperties: None
-
-Publications that cite the software or describe some aspect of it.
+Associated CodeMeta Concept: *RelatedPublications*
 
 ### relationship
 Context IRI: codemeta:relationship  
 Type: xsd:string  
 Subproperties: None
-
-Relationship of the software to other related resources
+Associated CodeMeta Concept: *Relationship*
 
 ### role
-Context IRI: codemeta:relationship  
+Context IRI: codemeta:role   
 Type: @id  
-Subproperties: roleCode
+Subproperties: *namespace*, *roleCode*  
+Associated CodeMeta Concept: *Role*
 
 A function or part performed by an agent.
+
+Example:
+```
+"role":[
+   {
+      "namespace":"http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode",
+      "roleCode":[
+         "originator",
+         "resourceProvider"
+      ]
+   }
+]
+```
 
 ### roleCode
 Context IRI: codemeta:roldCode  
 Type: xsd:string  
 Subproperties: None
+Associated CodeMeta Concept: *roleCode*
 
-The identifier that defines a specific role.
+The identifier that defines a specific function or part performed by a person or institution.
 
 Example:
 ```
@@ -477,72 +460,61 @@ Example:
 Context IRI: codemeta:softwarePaperCitation  
 Type: xsd:string  
 Subproperties: None
-
-A text string that can be used to authoritatively cite the software from a published work, such as a research paper or conference proceedings, etc.
+Associated CodeMeta Concept: *SoftwareCitation*
 
 ### identifier
 Context IRI: dcterms:identifier  
 Type: xsd:anyURI  
 Subproperties: None
-
-A universally unique character string associated with the software.
+Associated CodeMeta Concept: *SoftwareIdentifier*
 
 ### softwarePaperCitation
 Context IRI: codemeta:softwarePaperCitation  
 Type: xsd:string  
 Subproperties: None
-
-A text string that can be used to authoritatively cite a research paper, conference proceedings or other scholarly work that describes the design, development, usage, significance or other aspect of the software.
+Associated CodeMeta Concept: *SoftwarePaperCitation*
 
 ### title
 Context IRI: dcterms:title  
 Type: xsd:string  
 Subproperties: None
-
-The distinguishing name associated with the software.
+Associated CodeMeta Concept: *SoftwareTitle*
 
 ### suggests
 Context IRI: schema:suggests  
 Type: xsd:string  
 Subproperties: None
-
-External software components that could enhance operation of or enable advanced functionality of the software package but is not strictly required.
+Associated CodeMeta Concept: *Suggests*
 
 ### tags
 Context IRI: schema:keywords  
 Type: xsd:string  
 Subproperties: None
-
-Terms used to describe the software that facilitate discovery of the software.
+Associated CodeMeta Concept: *Tags*
 
 ### testCoverage
 Context IRI: codemeta:testCoverage  
 Type: xsd:integer  
 Subproperties: None
-
-An indication of the completeness of testing methods (scripts, data, etc.) that verify the correct operation of the software. This value is expressed as a percentage.
+Associated CodeMeta Concept: *TestCoverage*
 
 ### uploadedBy
 Context IRI: codemeta:uploadedBy  
 Type: Not specified  
 Subproperties: @id, email, name
-
-The user identity that uploaded the software to an online repository.
+Associated CodeMeta Concept: *UploadedBy*
 
 ### version
 Context IRI: schema:version  
 Type: xsd:string  
 Subproperties: None
-
-A unique string indicating a specific state of the software, i.e. an initial public release, an update or bug fix release, etc. No version format or schema is enforced for this value.
+Associated CodeMeta Concept: *Version*
 
 ### zippedCode
 Context IRI: codemeta:zippedCode  
 Type: xsd:anyURI  
 Subproperties: None
-
-ZippedCodeLink  A URL for the software distribution in compressed form.
-
+Associated CodeMeta Concept: *ZippedCodeLink*
 
 ## Appendix C Example Description File
 
@@ -559,7 +531,7 @@ The following JSON-LD document was created to describe the [*dataone* R package]
          "email":"jones@nceas.ucsb.edu",
          "name":"Matt Jones",
          "affiliation":"NCEAS",
-         "isCitable":true,
+         "mustBeCited":true,
          "isMaintainer":true,
          "isRightsHolder":true,
          "role":[
@@ -578,7 +550,7 @@ The following JSON-LD document was created to describe the [*dataone* R package]
          "email":"slaughter@nceas.ucsb.edu",
          "name":"Peter Slaughter",
          "affiliation":"NCEAS",
-         "isCitable":true,
+         "mustBeCited":true,
          "isMaintainer":false,
          "isRightsHolder":false,
          "role":{
