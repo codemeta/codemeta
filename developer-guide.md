@@ -95,9 +95,25 @@ A JSON object is surrounded by curly braces and can contain other JSON values or
 The "uploadedBy" JSON object illustrates the use of the JSON-LD keyword "@id", which is used to associate an IRI with the JSON object.
 
 The JSON "@type" keyword associates a JSON value or object with a well known type, for example, the
-statement `"@type":"person"` associates the `uploadedBy` object with `http://schema.org/`.
+statement `"@type":"person"` associates the `uploadedBy` object with `http://schema.org/Person`.
 
 For a list of the JSON names that can be used in a CodeMeta instance file, see Appendix B.
+
+Every CodeMeta instance file must refer to the context file *codemeta.jsonld*, for example via a URL.
+The context file may be modified and updated in the future, if new JSON properties are added or existing ones modified.
+The CodeMeta github repository defines tags to allow specific versions of a file to be referenced, so that an
+instance file that is making the reference will continue to be valid, even if the most current ("HEAD") version of
+the file in the repository changes.
+
+It is therefor recommended that a Github tag be used to specify a specific, non-changing version of the context file.
+For example, for the "0.1-tag", the following URL could be included in an instance file:
+```
+    "@context":"https://raw.githubusercontent.com/codemeta/codemeta/0.1-alpha/codemeta.jsonld"
+```
+
+The tags defined for the CodeMeta github repository can be listed by viewing the web page:
+
+    https://github.com/codemeta/codemeta/tags
 
 ## Minimal Instance File
 
