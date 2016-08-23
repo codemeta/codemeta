@@ -67,7 +67,7 @@ describe 'example-codemeta-full.json deserialized to RDF' do
                  PREFIX orcid: <http://orcid.org/>
                  SELECT * WHERE { ?s <https://codemeta.github.io/terms/JSONTerm> ?o  }"
      # Check statements with codemeta namespaced predicate
-     predicates = ["buildInstructions", "contIntegration", "docsCoverage",
+     predicates = ["buildInstructions", "contIntegration", 
        "embargoDate", "function", "funding", "inputs", "interactionMethod",
        "isAutomatedBuild", "issueTracker", "mustBeCited", "outputs", "readme", "relatedLink",
        "relatedPublications", "relationship", "requirement", "softwareCitation", "softwarePaperCitation",
