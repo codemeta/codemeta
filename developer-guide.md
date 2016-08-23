@@ -383,11 +383,15 @@ Type: xsd:anyURI
 Subproperties: None
 Associated CodeMeta Concept: *IssueLink*
 
-### license
+### licenseId
 Context IRI: schema:license  
 Type: xsd:string  
 Subproperties: None
 Associated CodeMeta Concept: *License*
+
+It is recommended that values for this property are selected from the Software Package Data Exchange
+[list of licenses](http://spdx.org/licenses/), specifying the "license identfier", for example
+"Apache-2.0".
 
 ### name
 Context IRI: schema:name  
@@ -617,7 +621,7 @@ The following JSON-LD document was created to describe the [*dataone* R package]
    "funding":"National Science Foundation grant #012345678",
    "isAutomatedBuild":false,
    "issueTracker":"https://github.com/DataONEorg/rdataone/issues",
-   "license":"http://opensource.org/licenses/Apache2",
+   "licenseId":"Apache-2.0",
    "publisher":"https://cran.r-project.org"
    "tags":[
       "data sharing",

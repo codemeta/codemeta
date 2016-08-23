@@ -184,9 +184,9 @@ Usage of this term has been discontinued because it does not appear in any of th
 CodeMeta crosswalk.
 
 ### License
-The name of the license agreement governing the use and redistribution of the software. e.g. “Apache 2”, “GPL”, “LGPL”"
+The name of the license agreement governing the use and redistribution of the software. e.g. “Apache-2.0”, “GPL-3.0”, “LGPL-3.0”
 
-JSON-LD context name: *license*
+JSON-LD context name: *licenseId*
 
 ### MustBeCited
 A logical value (true/false) indicating that an agent must be included in a citation of the software.

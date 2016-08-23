@@ -47,7 +47,7 @@ describe 'example-codemeta-full.json deserialized to RDF' do
                  SELECT * WHERE { ?s <http://schema.org/JSONTerm> ?o  }"
      # Check statements with schema.org based predicate
      predicates = ["codeRepository", "dateCreated", "dateModified", "datePublished",
-                  "description", "downloadUrl", "keywords", "license",
+                  "description", "downloadUrl", "keywords", "licenseId",
                  "programmingLanguage", "publisher", "suggests",
                  "version", "URL", "name"]
      predicates.each do |thisPredicate|

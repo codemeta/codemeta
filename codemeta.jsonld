@@ -115,12 +115,12 @@
           "@id": "schema:publisher",
           "@type": "xsd:string"
       },
-      "license":
+      "licenseId":
       {
           "@id": "schema:license",
           "@type": "xsd:string"
       },
-      "interactionMethod": 
+      "interactionMethod":
       {
           "@id": "codemeta:interactionMethod",
           "@type": "xsd:string"

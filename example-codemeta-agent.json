@@ -60,7 +60,7 @@
          "dateCreated":"2014-08-06",
          "description":"Codemeta is a metadata content standard for software.  It includes schemas in JSON-LD and XML Schema for providing semantics and validation.",
          "keywords":"publishing, DOI, credit for code",
-         "license":"http://opensource.org/licenses/Apache2",
+         "licenseId":"Apache-2.0",
          "title":"CodeMeta, a minimal convention for software metadata",
          "version":"2.1.0-rc.2",
          "uploadedBy":{

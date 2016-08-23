@@ -60,7 +60,7 @@
       "DOI",
       "credit for code"
    ],
-   "license":"http://opensource.org/licenses/Apache2",
+   "licenseId":"Apache-2.0",
    "title":"CodeMeta, a minimal convention for software metadata",
    "version":"2.1.0-rc.2",
    "uploadedBy":{

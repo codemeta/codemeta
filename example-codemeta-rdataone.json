@@ -68,7 +68,7 @@
    "funding":"National Science Foundation grant #012345678",
    "isAutomatedBuild":false,
    "issueTracker":"https://github.com/DataONEorg/rdataone/issues",
-   "license":"http://opensource.org/licenses/Apache2",
+   "licenseId":"Apache-2.0",
    "publisher":"https://cran.r-project.org",
    "tags":[
       "data sharing",
