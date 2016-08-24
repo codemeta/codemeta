@@ -46,8 +46,8 @@ describe 'example-codemeta-full.json deserialized to RDF' do
                  PREFIX orcid: <http://orcid.org/>
                  SELECT * WHERE { ?s <http://schema.org/JSONTerm> ?o  }"
      # Check statements with schema.org based predicate
-     predicates = ["codeRepository", "dateCreated", "dateModified", "datePublished",
-                  "description", "downloadUrl", "keywords", "license",
+     predicates = ["affiliation", "codeRepository", "dateCreated", "dateModified", "datePublished",
+                  "description", "downloadUrl", "email", "keywords", "license",
                  "programmingLanguage", "publisher", "suggests",
                  "version", "URL", "name"]
      predicates.each do |thisPredicate|
@@ -67,11 +67,30 @@ describe 'example-codemeta-full.json deserialized to RDF' do
                  PREFIX orcid: <http://orcid.org/>
                  SELECT * WHERE { ?s <https://codemeta.github.io/terms/JSONTerm> ?o  }"
      # Check statements with codemeta namespaced predicate
-     predicates = ["buildInstructions", "contIntegration", 
+     predicates = ["buildInstructions", "contIntegration",
        "embargoDate", "function", "funding", "inputs", "interactionMethod",
-       "isAutomatedBuild", "issueTracker", "mustBeCited", "outputs", "readme", "relatedLink",
-       "relatedPublications", "relationship", "requirement", "softwareCitation", "softwarePaperCitation",
+       "isAutomatedBuild", "isMaintainer", "isRightsHolder", "issueTracker", "mustBeCited", "namespace", "outputs",
+       "packageId", "packageSystem", "readme", "relatedLink",
+       "relatedPublications", "relationship", "requirement", "Role", "roleCode", "softwareCitation", "softwarePaperCitation",
        "testCoverage", "uploadedBy", "zippedCode"]
+     predicates.each do |thisPredicate|
+         thisQueryStr = queryStr.gsub("JSONTerm", thisPredicate)
+         sse = SPARQL.parse(thisQueryStr)
+         resultSet = @graph.query(sse)
+         #resultSet.each do |result|
+          # puts result.inspect
+         #end
+         refute resultSet.empty?
+     end
+  end
+
+  it 'has dcterms' do
+     queryStr = "PREFIX so: <http://schema.org/>
+                 PREFIX cm: <https://codemeta.github.io/terms/>
+                 PREFIX orcid: <http://orcid.org/>
+                 SELECT * WHERE { ?s <http://purl.org/dc/terms/JSONTerm> ?o  }"
+     # Check statements with codemeta namespaced predicate
+     predicates = ["identifier", "title"]
      predicates.each do |thisPredicate|
          thisQueryStr = queryStr.gsub("JSONTerm", thisPredicate)
          sse = SPARQL.parse(thisQueryStr)
