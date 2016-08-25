@@ -71,14 +71,15 @@ describe 'example-codemeta-full.json deserialized to RDF' do
        "embargoDate", "function", "funding", "inputs", "interactionMethod",
        "isAutomatedBuild", "isMaintainer", "isRightsHolder", "issueTracker", "mustBeCited", "namespace", "outputs",
        "packageId", "packageSystem", "readme", "relatedLink",
-       "relatedPublications", "relationship", "requirement", "Role", "roleCode", "softwareCitation", "softwarePaperCitation",
+       "relatedPublications", "relationship", "relationshipType", "relatedIdentifier", "relatedIdentifierType",
+       "requirement", "Role", "roleCode", "softwareCitation", "softwarePaperCitation",
        "testCoverage", "uploadedBy", "zippedCode"]
      predicates.each do |thisPredicate|
          thisQueryStr = queryStr.gsub("JSONTerm", thisPredicate)
          sse = SPARQL.parse(thisQueryStr)
          resultSet = @graph.query(sse)
          #resultSet.each do |result|
-          # puts result.inspect
+         # puts result.inspect
          #end
          refute resultSet.empty?
      end

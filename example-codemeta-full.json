@@ -88,9 +88,13 @@
    },
    "readme":"https://github.com/codemeta/codemeta/README.md",
    "issueTracker":"https://github.com/codemeta/codemeta/issues",
-   "relatedLink":"https://github.com/codemeta/codemeta.github.io",
+   "relatedLink":"https://github.com/codemeta/codemeta-paper",
    "relatedPublications":"ISBN:0201703726",
-   "relationship":"don't know what this field is",
+   "relationship":{
+       "relationshipType":"isPartOf",
+       "relatedIdentifier":"urn:uuid:F1A0A7AF-ECF3-4C7D-B675-7C6949963995",
+       "relatedIdentifierType":"UUID"
+   },
    "softwareCitation":"Meyer, Alexander, Kempfert, Jörg, Falk, Volkmar, riskscorer: v0.1.1 (2016), , doi:10.5281/zenodo.1234.",
    "suggests":"No other software is suggested",
    "softwarePaperCitation":"Meyer, Alexander, Kempfert, Jörg, Falk, Volkmar, riskscorer: v0.1.1 (2016), , doi:10.5281/zenodo.5678.",
