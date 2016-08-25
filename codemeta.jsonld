@@ -161,6 +161,14 @@
          "@id":"codemeta:issueTracker",
          "@type":"xsd:anyURI"
       },
+      "relatedIdentifier":{
+         "@id":"codemeta:relatedIdentifier",
+         "@type":"xsd:string"
+      },
+      "relatedIdentifierType":{
+         "@id":"codemeta:relatedIdentifierType",
+         "@type":"xsd:string"
+      },
       "relatedLink":{
          "@id":"codemeta:relatedLink",
          "@type":"xsd:anyURI"
@@ -171,6 +179,10 @@
       },
       "relationship":{
          "@id":"codemeta:relationship",
+         "@type":"xsd:string"
+      },
+      "relationshipType":{
+         "@id":"codemeta:relationshipType",
          "@type":"xsd:string"
       },
       "softwareCitation":{
