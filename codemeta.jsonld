@@ -178,8 +178,7 @@
          "@type":"xsd:string"
       },
       "relationship":{
-         "@id":"codemeta:relationship",
-         "@type":"xsd:string"
+         "@id":"codemeta:relationship"
       },
       "relationshipType":{
          "@id":"codemeta:relationshipType",
