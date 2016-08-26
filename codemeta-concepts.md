@@ -3,9 +3,9 @@ citation services such as GitHub, figshare, Zenodo, and DataCite. These terms ar
 
 The following is the list of concepts used by CodeMeta.
 
-(Note: Each concept has a corresponding entry in the CodeMeta JSON-LD context file *codemeta.jsonld*, which is
+Each concept has a corresponding entry in the CodeMeta JSON-LD context file *codemeta.jsonld*, which is
 used in the serialization of a software description to a CodeMeta instance file. The CodeMeta usage
-of JSON-LD is described in more detail in the CodeMeta Developer Guide.)
+of JSON-LD is described in more detail in the [CodeMeta Developer Guide](https://github.com/codemeta/codemeta/blob/master/developer-guide.md).
 
 ### ~~AccessList~~
 The set of rules that specifying the user identities and their level of access (e.g. read, write, update) to the software.
