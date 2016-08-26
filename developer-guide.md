@@ -643,9 +643,16 @@ The following JSON-LD document was created to describe the [*dataone* R package]
       "URL":"https://www.r-project.org"
    },
    "readme":"https://github.com/DataONEorg/rdataone/README.md",
-   "softwareCitation":"Jones M, Slaughter P, Nahf R, Jones C, Boettiger C, Walker L, Hallett L, Chamberlain S, Hart E and Read J (2016).
-_redland: R Interface to the DataONE REST API_. doi: 10.5063/F1M61H5X (URL: http://doi.org/10.5063/F1M61H5X), R
-package version 2.0.0, <URL: http://github.com/DataONEorg/rdataone>.",
+   "issueTracker":"https://github.com/codemeta/codemeta/issues"
+   "relatedPublications":"ISBN:0201703726",
+   "relationship":{
+       "relationshipType":"isPartOf",
+       "relatedIdentifier":"urn:uuid:F1A0A7AF-ECF3-4C7D-B675-7C6949963995",
+       "relatedIdentifierType":"UUID"
+   },
+   "softwareCitation":"Jones M, Slaughter P, Nahf R, Jones C, Boettiger C, Walker L, Hallett L, Chamberlain S, Hart E and Read J (2016). _redland: R Interface to the DataONE REST API_. doi: 10.5063/F1M61H5X (URL: http://doi.org/10.5063/F1M61H5X), R package version 2.0.0, <URL: http://github.com/DataONEorg/rdataone>.",
+   "suggests":"No other software is suggested",
+   "softwarePaperCitation":"Meyer, Alexander, Kempfert, Jörg, Falk, Volkmar, riskscorer: v0.1.1 (2016), , doi:10.5281/zenodo.5678.", "testCoverage":"30.00",
    "zippedCode":"https://cran.r-project.org/src/contrib/dataone_2.0.0.tar.gz"
 }
 ```
