@@ -206,7 +206,7 @@ An *affliation* is the institution, organization or other group that the softwar
 ### agent
 Context IRI: schema:agent  
 Type: schema:Organization, schema:Person  
-Subproperties: @id, @type, email, name, affiliation, mustBeCited, isMaintainer, isRightsHolder, role
+Subproperties: @id, @type, email, name, affiliation, mustBeCited, isMaintainer, isRightsHolder, role  
 Associated CodeMeta Concept: *Agent*
 
 An *agent* is an organization or person that is in some way related to the creation of the software. An *agent* can be assigned a @type of *schema:Organization* or *schema:Person*.
@@ -258,25 +258,25 @@ The JSON-LD keyword "@id" is used to associate a JSON object with an IRI.
 ### buildInstructions
 Context IRI: codemeta:buildInstructions  
 Type: xsd:anyURI  
-Subproperties: @id, @type, email, name, affiliation, mustBeCited, isMaintainer, isRightsHolder, role
+Subproperties: @id, @type, email, name, affiliation, mustBeCited, isMaintainer, isRightsHolder, role  
 Associated CodeMeta Concept: *BuildLink*
 
 ### contIntegration  
 Context IRI: codemeta:contIntegration  
 Type: xsd:anyURI  
-Subproperties: None
+Subproperties: None  
 Associated CodeMeta Concept: *CILink*
 
 ### codeRepository
 Context IRI: schema:codeRepository  
 Type: schema:URL  
-Subproperties: None
+Subproperties: None  
 Associated CodeMeta Concept: *CodeRepositoryLink*
 
 ### controlledTerm
 Context IRI: codemeta:controlledTerm  
 Type: xsd:string  
-Subproperties: None
+Subproperties: None  
 Associated CodeMeta Concept: *ControlledTerm*
 
 ### dateCreated
@@ -300,25 +300,25 @@ Associated CodeMeta Concept: *DateModified*
 ### dependency
 Context IRI: schema:requirements  
 Type: Not assigned  
-Subproperties: *packageId*, *packageSystem*, *version*, *operatingSystem*
+Subproperties: *packageId*, *packageSystem*, *version*, *operatingSystem*  
 Associated CodeMeta Concept: *Dependency*
 
 ### description
 Context IRI: schema:description  
 Type: xsd:string  
-Subproperties: None
+Subproperties: None  
 Associated CodeMeta Concept: *Description*
 
 ### downloadLink
 Context IRI: schema:downloadUrl  
 Type: xsd:anyURI  
-Subproperties: None
+Subproperties: None  
 Associated CodeMeta Concept: *DownloadLink*
 
 ### email
 Context IRI: schema:email  
 Type: xsd:string  
-Subproperties: None
+Subproperties: None  
 Associated CodeMeta Concept: *AgentEmail*
 
 The email address associated with a software agent.
@@ -326,67 +326,67 @@ The email address associated with a software agent.
 ### embargoDate
 Context IRI: codemeta:embargoDate  
 Type: xsd:dataTime  
-Subproperties: None
+Subproperties: None  
 Associated CodeMeta Concept: *EmbargoDate*
 
 ### function
 Context IRI: codemeta:function  
 Type: xsd:string  
-Subproperties: None
+Subproperties: None  
 Associated CodeMeta Concept: *Function*
 
 ### funding
 Context IRI: codemeta:funding  
 Type: xsd:string  
-Subproperties: None
+Subproperties: None  
 Associated CodeMeta Concept: *Funding*
 
 ### inputs
 Context IRI: codemeta:inputs  
 Type: xsd:string  
-Subproperties: None
+Subproperties: None  
 Associated CodeMeta Concept: *Inputs*
 
 ### interactionMethod
 Context IRI: codemeta:interactionMethod  
 Type: xsd:string  
-Subproperties: None
+Subproperties: None  
 Associated CodeMeta Concept: *InteractionMethod*
 
 ### isAutomatedBuild
 Context IRI: codemeta:isAutomatedBuild  
 Type: xsd:boolean  
-Subproperties: None
+Subproperties: None  
 Associated CodeMeta Concept: *IsAutomated*
 
 ### mustBeCited
 Context IRI: codemeta:mustBeCited  
 Type: xsd:boolean  
-Subproperties: None
+Subproperties: None  
 Associated CodeMeta Concept: *MustBeCited*
 
 ### isMaintainer
 Context IRI: codemeta:isMaintainer  
 Type: xsd:boolean  
-Subproperties: None
+Subproperties: None  
 Associated CodeMeta Concept: *isMaintainer*
 
 ### isRightsHolder
 Context IRI: codemeta:isRightsHolder  
 Type: xsd:boolean  
-Subproperties: None
+Subproperties: None  
 Associated CodeMeta Concept: *isRightsHolder*
 
 ### issueTracker
 Context IRI: codemeta:issueTracker  
 Type: xsd:anyURI  
-Subproperties: None
+Subproperties: None  
 Associated CodeMeta Concept: *IssueLink*
 
 ### licenseId
 Context IRI: schema:license  
 Type: xsd:string  
-Subproperties: None
+Subproperties: None  
 Associated CodeMeta Concept: *License*
 
 It is recommended that values for this property are selected from the Software Package Data Exchange
@@ -396,56 +396,108 @@ It is recommended that values for this property are selected from the Software P
 ### name
 Context IRI: schema:name  
 Type: xsd:string  
-Subproperties: None
+Subproperties: None  
 Associated CodeMeta Concept: *AgentName*
 
 ### objectType
 Context IRI: dc:type  
 Type: xsd:string  
-Subproperties: None
+Subproperties: None  
 Associated CodeMeta Concept: *ObjectType*
 
 ### outputs
 Context IRI: codemeta:outputs  
 Type: xsd:string  
-Subproperties: None
+Subproperties: None  
 Associated CodeMeta Concept: *Outputs*
 
 ### programmingLanguage
 Context IRI: schema:programmingLanguage  
 Type: Not assigned  
-Subproperties: name, version, URL
+Subproperties: name, version, URL  
 Associated CodeMeta Concept: *ProgrammingLanguage*
 
 ### publisher
 Context IRI: schema:publisher  
 Type: xsd:string  
-Subproperties: None
+Subproperties: None  
 Associated CodeMeta Concept: *Publisher*
 
 ### readme
 Context IRI: codemeta:readme  
 Type: xsd:anyURI  
-Subproperties: None
+Subproperties: None  
 Associated CodeMeta Concept: *ReadmeLink*
+
+### relatedIdentifier
+Context IRI: codemeta:relatedIdentifier  
+Type: xsd:string
+Subproperties: None  
+Parent property: *relationship*
+
+### relatedIdentifierType
+Context IRI: codemeta:relatedLink  
+Type: xsd:string  
+Subproperties: None  
+Parent property: *relationship*
 
 ### relatedLink
 Context IRI: codemeta:relatedLink  
 Type: xsd:anyURI  
-Subproperties: None
+Subproperties: None  
 Associated CodeMeta Concept: *RelatedLink*
 
 ### relatedPublications
 Context IRI: codemeta:relatedPublications  
 Type: xsd:string  
-Subproperties: None
+Subproperties: None  
 Associated CodeMeta Concept: *RelatedPublications*
 
 ### relationship
 Context IRI: codemeta:relationship  
 Type: xsd:string  
-Subproperties: None
+Subproperties: *relationshipType*, *relatedIdentifier*, *relatedIdentifierType*  
 Associated CodeMeta Concept: *Relationship*
+
+
+The *relationship* property can be used to document a relationship between the software package
+and another resource. The CodeMeta project recommends, but does not require, the use of the
+controlled lists of values from the [DataCite Metadata Schema](http://schema.datacite.org/meta/kernel-3/doc/DataCite-MetadataKernel_v3.1.pdf) for
+properties *relationshipType* and *relatedIdentifierType*. Version 3.1 of the schema
+enumerates these values for *relationshipType*:
+
+```
+IsCitedBy, Cites, IsSupplementTo, IsSupplementedBy, IsContinuedBy, Continues, HasMetadata,
+IsMetadataFor, IsNewVersionOf, IsPreviousVersionOf, IsPartOf, HasPart, IsReferencedBy,
+References, IsDocumentedBy, Documents, IsCompiledBy, Compiles, IsVariantFormOf,
+IsOriginalFormOf, IsIdenticalTo, IsReviewedBy, Reviews, IsDerivedFrom, IsSourceOf
+```
+
+and these values for *relatedIdentifierType*:
+
+```
+ARK, arXiv, bibcode, DOI, EAN13, EISSN, ISBN, ISSN, ISTC, LISSN, LSID, PMID,
+PURL, UPC, URL, URN
+```
+
+The following example instance file fragment indicates that the software package being
+described has a component that has the Digital Object Identifier *doi:10.5063/F1VM496BXYZ*.
+```
+...
+"relationship":{
+    "relationshipType":"hasPart",
+    "relatedIdentifier":"doi:10.5063/F1VM496BXYZ"
+    "relatedIdentifierType":"DOI"
+},
+...
+```
+Note: The example above is for demonstration purposes only and does not reference a valud DOI.
+
+### relationshipType
+Context IRI: codemeta:relationship  
+Type: xsd:string  
+Subproperties: None  
+Parent property: *relationship*
 
 ### role
 Context IRI: codemeta:role   
@@ -471,8 +523,8 @@ Example:
 ### roleCode
 Context IRI: codemeta:roldCode  
 Type: xsd:string  
-Subproperties: None
-Associated CodeMeta Concept: *roleCode*
+Subproperties: None  
+Associated CodeMeta Concept: *roleCode*  
 
 The identifier that defines a specific function or part performed by a person or institution.
 
@@ -487,61 +539,61 @@ Example:
 ### softwareCitation
 Context IRI: codemeta:softwarePaperCitation  
 Type: xsd:string  
-Subproperties: None
+Subproperties: None  
 Associated CodeMeta Concept: *SoftwareCitation*
 
 ### identifier
 Context IRI: dcterms:identifier  
 Type: xsd:anyURI  
-Subproperties: None
+Subproperties: None  
 Associated CodeMeta Concept: *SoftwareIdentifier*
 
 ### softwarePaperCitation
 Context IRI: codemeta:softwarePaperCitation  
 Type: xsd:string  
-Subproperties: None
+Subproperties: None  
 Associated CodeMeta Concept: *SoftwarePaperCitation*
 
 ### title
 Context IRI: dcterms:title  
 Type: xsd:string  
-Subproperties: None
+Subproperties: None  
 Associated CodeMeta Concept: *SoftwareTitle*
 
 ### suggests
 Context IRI: schema:suggests  
 Type: xsd:string  
-Subproperties: None
+Subproperties: None  
 Associated CodeMeta Concept: *Suggests*
 
 ### tags
 Context IRI: schema:keywords  
 Type: xsd:string  
-Subproperties: None
+Subproperties: None  
 Associated CodeMeta Concept: *Tags*
 
 ### testCoverage
 Context IRI: codemeta:testCoverage  
 Type: xsd:integer  
-Subproperties: None
+Subproperties: None  
 Associated CodeMeta Concept: *TestCoverage*
 
 ### uploadedBy
 Context IRI: codemeta:uploadedBy  
 Type: Not specified  
-Subproperties: @id, email, name
+Subproperties: *@id*, *email*, *name*  
 Associated CodeMeta Concept: *UploadedBy*
 
 ### version
 Context IRI: schema:version  
 Type: xsd:string  
-Subproperties: None
+Subproperties: None  
 Associated CodeMeta Concept: *Version*
 
 ### zippedCode
 Context IRI: codemeta:zippedCode  
 Type: xsd:anyURI  
-Subproperties: None
+Subproperties: None  
 Associated CodeMeta Concept: *ZippedCodeLink*
 
 ## Appendix C Example Description File
