@@ -256,7 +256,10 @@ Publications that cite the software or describe some related aspect of it.
 JSON-LD context name: *relatedPublications*
 
 ### Relationship
-Relationship of the software to other related resources
+Relationship of the software to other related resources. For example, this relationship
+might be how one software package relates to a larger suite, or how a software package
+version supercedes a previous version. The CodeMeta Developer Guide provides further information on the
+types of relationships that are recommended, but not required, by the CodeMeta project.
 
 JSON-LD context name: *relationship*
 
