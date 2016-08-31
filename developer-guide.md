@@ -303,6 +303,33 @@ Type: Not assigned
 Subproperties: *packageId*, *packageSystem*, *version*, *operatingSystem*  
 Associated CodeMeta Concept: *Dependency*
 
+The *dependency* property is used to describe software packages required by the main package in order
+to run. The properties *packageId*, *packageSystem*, *version* and *operatingSystem* can be specified
+for a *dependency*, for example, the following instance file fragment describes two required
+software packages:
+
+```
+   ...
+   "dependency":[
+     {
+       "packageId":"export_fig",
+       "version":"1.99",
+       "packageSystem":"http://www.mathworks.com"
+     },
+     {
+       "packageId":"npplus",
+       "version":"0.9.4",
+       "packageSystem":"https://pypi.python.org",
+       "operatingSystem":"MacOS, Linux"
+     }
+     ...
+```
+
+The property *packageId* contains a character string that uniquely identifies a software
+package for the specified *packageSystem*. The *version* specifies the software
+revision that is required. The *operatingSystem* specifies the platform types that
+the software is supported on, and is optional.
+
 ### description
 Context IRI: schema:description  
 Type: xsd:string  
@@ -390,8 +417,8 @@ Subproperties: None
 Associated CodeMeta Concept: *License*
 
 It is recommended that values for this property are selected from the Software Package Data Exchange
-[list of licenses](http://spdx.org/licenses/), specifying the "license identfier", for example
-"Apache-2.0".
+[list of licenses](http://spdx.org/licenses/), specifying a value listed in the "license identifier"
+column, for example "Apache-2.0".
 
 ### name
 Context IRI: schema:name  
@@ -411,11 +438,34 @@ Type: xsd:string
 Subproperties: None  
 Associated CodeMeta Concept: *Outputs*
 
+### packageId  
+Context IRI: schema:packageId
+Type: xsd:string
+Subproperties: None
+Parent property: dependency
+
+### packageSystem   
+Context IRI: schema:packageSystem
+Type: xsd:string
+Subproperties: None
+Parent property: dependency
+
 ### programmingLanguage
 Context IRI: schema:programmingLanguage  
 Type: Not assigned  
 Subproperties: name, version, URL  
 Associated CodeMeta Concept: *ProgrammingLanguage*
+
+Example:
+```
+    ...
+    "programmingLanguage":{
+      "name":"ruby",
+      "version":"2.3.1",
+      "URL":"https://www.ruby-lang.org/en/"
+    }
+    ...
+```
 
 ### publisher
 Context IRI: schema:publisher  
