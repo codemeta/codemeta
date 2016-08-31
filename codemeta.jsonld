@@ -42,7 +42,10 @@
          "@id":"codemeta:isRightsHolder",
          "@type":"xsd:boolean"
       },
-      "namespace":"codemeta:namespace",
+      "namespace":{
+        "@id":"codemeta:namespace",
+        "@type":"xsd:string"
+      },
       "role":{
          "@id":"codemeta:Role",
          "@type":"@id"
@@ -142,13 +145,16 @@
           "@type": "xsd:string"
       },
       "operatingSystem":{
-          "@id": "schema:operatingSystem"
+          "@id": "schema:operatingSystem",
+          "@type": "xsd:string"
       },
       "packageId":{
-          "@id": "codemeta:packageId"
+          "@id": "codemeta:packageId",
+          "@type": "xsd:string"
       },
       "packageSystem":{
-          "@id": "codemeta:packageSystem"
+          "@id": "codemeta:packageSystem",
+          "@type": "xsd:string"
       },
       "programmingLanguage": {
           "@id": "schema:programmingLanguage"
