@@ -135,13 +135,13 @@ Usage of this term has been discontinued as there is no clear mapping to any sch
 CodeMeta crosswalk.
 
 ### ~~IdentifierNamespace~~
-The authority from which the software identifier was created,  e.g. doi.org, or cran.r-project.org"
+The authority from which the software identifier was created,  e.g. doi.org, or cran.r-project.org
 
 Usage of this term has been discontinued because it does not appear in any of the schemas in the
 CodeMeta crosswalk.
 
 ### Inputs
-Data, configuration or other types of objects used by the software."
+Data, configuration or other types of objects used by the software.
 
 JSON-LD context name: *inputs*
 
@@ -160,7 +160,7 @@ JSON-LD context name: *interactionMethod*
 ### IsAutomated
 A logical value (true/false) indicating whether an update to the *CodeRepository* will trigger a new executable version of the software to be generated.
 
-JSON-LD context name: *isAutomated*
+JSON-LD context name: *isAutomatedBuild*
 
 ### IsMaintainer
 A logical value (true/false) indicating whether an agent (SoftwareAuthor, SoftwareContributor, etc.) is the active maintainer of the software.
