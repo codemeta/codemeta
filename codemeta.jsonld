@@ -202,10 +202,6 @@
          "@id":"codemeta:softwarePaperCitation",
          "@type":"xsd:string"
       },
-      "testCoverage":{
-         "@id":"codemeta:testCoverage",
-         "@type":"xsd:integer"
-      },
       "title":{
          "@id":"dcterms:title",
          "@type":"xsd:string"
