@@ -79,7 +79,10 @@
       "A file describing attributes of the software, with MIME type text/csv",
       "A file containing ambient air temperature values, with mime type application/netcdf"
    ],
-   "outputs":"A file containing a scatter plot illustrating software quality affecting quality of life, with mime type image/png",
+   "outputs":[
+     "A file containing a line drawing plot",
+     "A file containing a scatter plot illustrating software quality affecting quality of life, with mime type image/png"
+   ],
    "funding":"National Science Foundation grant #012345678",
    "function":"Enable sharing, publishing, indexing of metadata that describes software",
    "objectType":"software",
