@@ -55,8 +55,7 @@
          "packageSystem":"https://cran.r-project.org/",
          "operatingSystem":"Windows, OS X, Linux"
       }
-    ]
-  },
+    ],
    "identifier":"http://dx.doi.org/10.5063/F1M61H5X",
    "codeRepository":"https://github.com/DataONEorg/rdataone",
    "controlledTem": "software",
