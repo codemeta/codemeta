@@ -4,7 +4,7 @@
       "dcterms":"http://purl.org/dc/terms/",
       "xsd":"http://www.w3.org/2001/XMLSchema#",
       "codemeta": "https://codemeta.github.io/terms/",
-      "Code":"schema:Code",
+      "Code":"schema:SoftwareSourceCode",
       "agent":{
          "@id":"schema:agent"
       },
