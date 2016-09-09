@@ -3,7 +3,7 @@ require 'json/ld'
 
 describe 'example-codemeta-agent.json' do
   before do
-    @input = JSON.parse(File.read('example-codemeta-agent.json'))
+    @input = JSON.parse(File.read('examples/example-codemeta-agent.json'))
     @graph = JSON::LD::API.toRdf(@input)
   end
   

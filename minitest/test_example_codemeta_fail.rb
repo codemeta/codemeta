@@ -12,7 +12,7 @@ require 'minitest/autorun'
 
 describe 'example-codemeta-invalid.json' do
   before do
-    input = JSON.parse(File.read('example-codemeta-invalid.json'))
+    input = JSON.parse(File.read('examples/example-codemeta-invalid.json'))
     # Transform the test document with the json-ld expand operation.
     # Any JSON terms that are not in the @context will be discarded
     # silently, as they are not 'linked' to any schema.

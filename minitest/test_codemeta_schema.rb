@@ -13,7 +13,7 @@ require 'json-schema'
 
 describe 'example-codemeta-schema' do
   before do
-    input = JSON.parse(File.read('example-codemeta-full.json'))
+    input = JSON.parse(File.read('examples/example-codemeta-full.json'))
     schema = JSON.parse(File.read('codemeta-json-schema.json'))
     @errorMsgs = JSON::Validator.fully_validate(schema, input)
   end

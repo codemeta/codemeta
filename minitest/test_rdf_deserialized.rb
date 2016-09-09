@@ -7,7 +7,7 @@ require 'minitest/autorun'
 
 describe 'example-codemeta-full.json deserialized to RDF' do
   before (:all) do
-    @input = JSON.parse(File.read('example-codemeta-full.json'))
+    @input = JSON.parse(File.read('examples/example-codemeta-full.json'))
     @graph = RDF::Graph.new << JSON::LD::API.toRdf(@input)
   end
 

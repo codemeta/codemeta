@@ -3,7 +3,7 @@ require 'minitest/autorun'
 
 describe 'example-codemeta.json' do
   before do
-    @input = JSON.parse(File.read('example-codemeta.json'))
+    @input = JSON.parse(File.read('examples/example-codemeta.json'))
     @graph = RDF::Graph.new << JSON::LD::API.toRdf(@input)
   end
 
