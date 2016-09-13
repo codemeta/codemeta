@@ -11,7 +11,7 @@ With codemeta, we want to formalize the schema used to map between the different
 
 JSON-LD schema: https://github.com/codemeta/codemeta/blob/master/codemeta.jsonld
 
-Example instance: https://github.com/codemeta/codemeta/blob/master/example-codemeta.json
+Example instance: https://github.com/codemeta/codemeta/blob/master/examples/example-codemeta-full.json
 
 Comparison of current APIs in this space: https://github.com/codemeta/codemeta/blob/master/crosswalk.csv
 
