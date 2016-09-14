@@ -1,12 +1,19 @@
 # CodeMeta FAQ
 
 [What CodeMeta IS](#what-code-meta-is)
+
 [What CodeMeta ISN'T](#what-code-meta-isnt)
+
 [Rationale: Why CodeMeta?](#rationale-why-codemeta)
+
 [Does CodeMeta have a format?](#does-codemeta-have-a-format)
+
 [How to contribute](#how-to-contribute)
+
 [CodeMeta for developers](#codemeta-for-developers)
+
 [CodeMeta for repository managers](#codemeta-for-repository-managers)
+
 [Contributors, funders, acknowledgments, etc.](#contributors-funders-acknowledgments-etc)
 
 
