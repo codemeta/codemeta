@@ -19,7 +19,7 @@
 
 ## What CodeMeta IS
 
-CodeMeta is a "[Rosetta Stone](https://en.wikipedia.org/wiki/Rosetta_Stone)", i.e., a translation medium, for software metadata.
+CodeMeta is a "[Rosetta Stone](https://en.wikipedia.org/wiki/Rosetta_Stone)", i.e., a translation medium, for software metadata. It provides a [schema crosswalk](https://en.wikipedia.org/wiki/Schema_crosswalk) across different existing software metadata schemas. 
 
 ## What CodeMeta ISN'T
 
