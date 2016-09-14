@@ -7,7 +7,8 @@ methodology for creating software package descriptions. For example, this guide 
 designing software to generate or read CodeMeta JSON software descriptions.
 
 Users that only require instructions for manually creating CodeMeta software descriptions may wish to
-review the [CodeMeta Tutorial](https://github.com/codemeta/codemeta/blob/master/tutorial.md).
+review the upcoming [CodeMeta Tutorial](https://github.com/codemeta/codemeta/blob/master/tutorial.md). THis document
+will be posted to the git repository as soon as it is available.
 
 ## CodeMeta Overview
 
