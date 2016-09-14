@@ -70,8 +70,12 @@
         "type": ["array", "object"],
         "description": "The computer hardware and software required to run the software.",
         "properties": {
-            "packageId": {
-                "description":"Identifier of a required software package.",
+            "identifier": {
+                "description":"A text string uniquely identifying the required software package.",
+                "type":"string"
+            },
+            "name": {
+                "description":"The text string identifying a software package within a packageSystem.",
                 "type":"string"
             },
             "version": {
