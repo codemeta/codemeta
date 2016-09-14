@@ -30,7 +30,7 @@
         "version": "1.99",
         "packageSystem": "http://www.mathworks.com"
     }, {
-        "identifer": "89766228838383883",
+        "identifer": "https://pypi.python.org/pypi/npplus/0.9",
         "name": "npplus",
         "version": "0.9.4",
         "packageSystem": "https://pypi.python.org",
