@@ -12,7 +12,7 @@
 
 [CodeMeta for developers](#codemeta-for-developers)
 
-[CodeMeta for repository managers](#codemeta-for-repository-managers)
+[CodeMeta for repository managers, publishers, information science](#codemeta-for-repository-managers-publishers-information-science)
 
 [Contributors, funders, acknowledgments, etc.](#contributors-funders-acknowledgments-etc)
 
@@ -70,9 +70,9 @@ You can build tools for, e.g., indexing software via their metadata. CodeMeta he
 Please contact us if you want a new format to be added to CodeMeta.
 
 
-# CodeMeta for repository managers
+# CodeMeta for repository managers, publishers, information science
 
-You can make use of CodeMeta's Rosetta Stone quality to figure out suitable standards for your own metadata schema.
+You can make use of CodeMeta's Rosetta Stone quality to figure out suitable standards for your own metadata schema, and make it work with other schemas.
 
 # Contributers, funders, acknowledgments, etc.
 
