@@ -2,10 +2,8 @@
 
 [What CodeMeta IS](#what-code-meta-is)
 [What CodeMeta ISN'T](#what-code-meta-isnt)
-[Getting started](#getting-started)
 [Rationale: Why CodeMeta?](#rationale-why-codemeta)
 [Does CodeMeta have a format?](#does-codemeta-have-a-format)
-[What does "CodeMeta-compatible" mean?](#what-does-codemeta-compatible-mean)
 [How to contribute](#how-to-contribute)
 [CodeMeta for developers](#codemeta-for-developers)
 [CodeMeta for repository managers](#codemeta-for-repository-managers)
@@ -33,13 +31,13 @@ CodeMeta exists to
 
 - There is a [JSON-LD representation](../../blob/master/codemeta.jsonld) for CodeMeta.
 
-## What can I do with the CodeMeta format?
+### What can I do with the CodeMeta format?
 
 - **[Discoverability]** Build a searchable index or repository of [CodeMeta-compatible projects](#what-does-"codemeta-compatible"-mean?)
 - **[Discovery]** Easily track and compare dependencies and licenses of [CodeMeta-compatible projects](#what-does-"codemeta-compatible"-mean?)
 - **Add your idea here!** 
 
-## What does "CodeMeta-compatible" mean?
+### What does "CodeMeta-compatible" mean?
 
 ???
 
