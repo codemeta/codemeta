@@ -93,6 +93,10 @@
           "description":"A universally unique character string associated with the software.",
           "type":"string"
       },
+      "name": {
+          "description":"A universally unique character string associated with the software.",
+          "type": "string"
+      },
       "codeRepository": {
           "description":"A URL for the source code repository that contains the software source files.",
           "type":"string"
