@@ -30,13 +30,13 @@
         "version": "1.99",
         "packageSystem": "http://www.mathworks.com"
     }, {
-        "identifer": "https://pypi.python.org/pypi/npplus/0.9",
+        "identifier": "89766228838383883",
         "name": "npplus",
         "version": "0.9.4",
         "packageSystem": "https://pypi.python.org",
         "operatingSystem": ["MacOS", "Linux"]
     }, {
-        "identifer": "7777575757757-389349843-90898",
+        "identifier": "7777575757757-389349843-90898",
         "name": "popbio",
         "version": "1.3.4",
         "packageSystem": "http://cran.r-project.org",
