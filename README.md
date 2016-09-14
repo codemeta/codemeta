@@ -15,7 +15,7 @@ Example instance: https://github.com/codemeta/codemeta/blob/master/examples/exam
 
 Comparison of current APIs in this space: https://github.com/codemeta/codemeta/blob/master/crosswalk.csv
 
-[FAQ](../blob/master/docs/faq.md)
+[FAQ](./docs/faq.md)
 
 
 How you can help
