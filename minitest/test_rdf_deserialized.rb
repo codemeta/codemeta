@@ -70,7 +70,7 @@ describe 'example-codemeta-full.json deserialized to RDF' do
      predicates = ["buildInstructions", "contIntegration",
        "embargoDate", "function", "funding", "inputs", "interactionMethod",
        "isAutomatedBuild", "isMaintainer", "isRightsHolder", "issueTracker", "mustBeCited", "namespace", "outputs",
-       "packageId", "packageSystem", "readme", "relatedLink",
+       "packageSystem", "readme", "relatedLink",
        "relatedPublications", "relationship", "relationshipType", "relatedIdentifier", "relatedIdentifierType",
        "requirement", "Role", "roleCode", "softwareCitation", "softwarePaperCitation",
        "uploadedBy", "zippedCode"]
