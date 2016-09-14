@@ -145,8 +145,7 @@
           "@type": "xsd:string"
       },
       "operatingSystem":{
-          "@id": "schema:operatingSystem",
-          "@type": "xsd:string"
+          "@id": "schema:operatingSystem"
       },
       "packageId":{
           "@id": "codemeta:packageId",
