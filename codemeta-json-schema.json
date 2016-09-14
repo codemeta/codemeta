@@ -245,7 +245,7 @@
       },
       "relatedPublications":{
           "description":"Publications that cite the software or describe some related aspect of it.",
-          "type":"string"
+          "type":["string", "array"]
       },
       "relationship":{
         "type": "object",
