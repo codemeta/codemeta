@@ -72,7 +72,7 @@ Please contact us if you want a new format to be added to CodeMeta.
 
 # CodeMeta for repository managers, publishers, information science
 
-You can make use of CodeMeta's Rosetta Stone quality to figure out suitable standards for your own metadata schema, and make it work with other schemas.
+You can make use of CodeMeta's Rosetta Stone quality to figure out suitable standards for your own metadata schema, and integrate with other schemas and platforms.
 
 # Contributers, funders, acknowledgments, etc.
 
