@@ -69,7 +69,7 @@
       },
       "identifier":{
          "@id":"dcterms:identifier",
-         "@type":"xsd:anyURI"
+         "@type":"xsd:string"
       },
       "codeRepository":{
          "@id":"schema:codeRepository",
