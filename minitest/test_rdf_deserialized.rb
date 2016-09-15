@@ -72,7 +72,7 @@ describe 'example-codemeta-full.json deserialized to RDF' do
        "isAutomatedBuild", "isMaintainer", "isRightsHolder", "issueTracker", "mustBeCited", "namespace",
        "packageSystem", "readme", "relatedLink",
        "relatedPublications", "relationships", "relationshipType", "relatedIdentifier", "relatedIdentifierType",
-       "requirement", "Role", "roleCode", "softwareCitation",
+       "requirements", "Role", "roleCode", "softwareCitation",
        "uploadedBy", "zippedCode"]
      predicates.each do |thisPredicate|
          thisQueryStr = queryStr.gsub("JSONTerm", thisPredicate)

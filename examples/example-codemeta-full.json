@@ -34,13 +34,13 @@
         "name": "npplus",
         "version": "0.9.4",
         "packageSystem": "https://pypi.python.org",
-        "operatingSystem": ["MacOS", "Linux"]
+        "operatingSystems": ["MacOS", "Linux"]
     }, {
         "identifier": "7777575757757-389349843-90898",
         "name": "popbio",
         "version": "1.3.4",
         "packageSystem": "http://cran.r-project.org",
-        "operatingSystem": ["Windows", "OS X Mavericks"]
+        "operatingSystems": ["Windows", "OS X Mavericks"]
     }],
     "identifier": "http://dx.doi.org/10.6084/m9.figshare.828487",
     "name": "codemeta",
@@ -90,9 +90,7 @@
         "relatedIdentifierType": "UUID"
     },
     "softwareCitation": "Meyer, Alexander, Kempfert, Jörg, Falk, Volkmar, riskscorer: v0.1.1 (2016), , doi:10.5281/zenodo.1234.",
-    "softwarePaperCitationIdentifiers":[
-        "http://doi.org/0000/0000"
-    ],
+    "softwarePaperCitationIdentifiers": "http://doi.org/0000/0000",
     "suggests": "No other software is suggested",
     "zippedCode": "https://github.com/codemeta/codemeta/releases"
 }

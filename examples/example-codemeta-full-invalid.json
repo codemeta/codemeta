@@ -27,7 +27,7 @@
          }
       }
    ],
-   "dependency":[
+   "dependencies":[
       {
          "packageId":"export_fig",
          "version":"1.99",
@@ -85,7 +85,7 @@
      "ISBN:0201703726",
      "http://doi.org/10.5334/jors.an"
    ],
-   "relationship":{
+   "relationships":{
        "relationshipType":"isPartOf",
        "relatedIdentifier":"urn:uuid:F1A0A7AF-ECF3-4C7D-B675-7C6949963995",
        "relatedIdentifierType":"UUID"
