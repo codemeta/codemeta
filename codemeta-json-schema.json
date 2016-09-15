@@ -257,9 +257,9 @@
           "description":"External software components that could enhance operation of or enable advanced functionality of the software package but are not strictly required.",
           "type":"string"
       },
-      "softwarePaperCitation":{
+      "softwarePaperCitationIdentifiers":{
           "description":"A text string that can be used to authoritatively cite a research paper, conference proceedings or other scholarly work that describes the design, development, usage, significance or other aspect of the software.",
-          "type":"string"
+          "type":["string", "array"]
       },
       "zippedCode":{
           "description":"A URL for the software distribution in compressed form.",

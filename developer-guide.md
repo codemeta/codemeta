@@ -736,7 +736,9 @@ The following JSON-LD document was created to describe the [*dataone* R package]
    },
    "softwareCitation":"Jones M, Slaughter P, Nahf R, Jones C, Boettiger C, Walker L, Hallett L, Chamberlain S, Hart E and Read J (2016). _redland: R Interface to the DataONE REST API_. doi: 10.5063/F1M61H5X (URL: http://doi.org/10.5063/F1M61H5X), R package version 2.0.0, <URL: http://github.com/DataONEorg/rdataone>.",
    "suggests":"No other software is suggested",
-   "softwarePaperCitation":"Meyer, Alexander, Kempfert, Jörg, Falk, Volkmar, riskscorer: v0.1.1 (2016), , doi:10.5281/zenodo.5678.", "testCoverage":"30.00",
+   "softwarePaperCitationIdentifiers":[
+     "http://doi.org/0000/0000"
+   ],
    "zippedCode":"https://cran.r-project.org/src/contrib/dataone_2.0.0.tar.gz"
 }
 ```

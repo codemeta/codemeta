@@ -90,7 +90,9 @@
         "relatedIdentifierType": "UUID"
     },
     "softwareCitation": "Meyer, Alexander, Kempfert, Jörg, Falk, Volkmar, riskscorer: v0.1.1 (2016), , doi:10.5281/zenodo.1234.",
+    "softwarePaperCitationIdentifiers":[
+        "http://doi.org/0000/0000"
+    ],
     "suggests": "No other software is suggested",
-    "softwarePaperCitation": "Meyer, Alexander, Kempfert, Jörg, Falk, Volkmar, riskscorer: v0.1.1 (2016), , doi:10.5281/zenodo.5678.",
     "zippedCode": "https://github.com/codemeta/codemeta/releases"
 }

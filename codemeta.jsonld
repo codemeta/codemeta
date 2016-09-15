@@ -175,9 +175,8 @@
          "@id":"schema:suggests",
          "@type":"xsd:string"
       },
-      "softwarePaperCitation":{
-         "@id":"codemeta:softwarePaperCitation",
-         "@type":"xsd:string"
+      "softwarePaperCitationIdentifiers":{
+         "@id":"codemeta:softwarePaperCitationIdentifiers"
       },
       "title":{
          "@id":"dcterms:title",
