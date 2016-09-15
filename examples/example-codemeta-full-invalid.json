@@ -83,7 +83,7 @@
    "relatedLink":"https://github.com/codemeta/codemeta-paper",
    "relatedPublications":[
      "ISBN:0201703726",
-     "http://doi.org:10.5334/jors.an"
+     "http://doi.org/10.5334/jors.an"
    ],
    "relationship":{
        "relationshipType":"isPartOf",
