@@ -1,7 +1,7 @@
 {
     "@context": "https://raw.githubusercontent.com/codemeta/codemeta/master/codemeta.jsonld",
     "@type": "SoftwareSourceCode",
-    "agent": [{
+    "agents": [{
         "@id": "http://orcid.org/0000-0002-2192-403X",
         "@type": "person",
         "email": "slaughter@nceas.ucsb.edu",
@@ -24,7 +24,7 @@
             "roleCode": "copyrightHolder"
         }
     }],
-    "dependency": [{
+    "dependencies": [{
         "identifier": "http://doi.org/10.xxxx/A324566",
         "name": "export_fig",
         "version": "1.99",
@@ -45,7 +45,7 @@
     "identifier": "http://dx.doi.org/10.6084/m9.figshare.828487",
     "name": "codemeta",
     "codeRepository": "https://github.com/codemeta/codemeta",
-    "controlledTerm": "http://purl.org/dc/dcmitype/Software",
+    "controlledTerms": "http://purl.org/dc/dcmitype/Software",
     "datePublished": "2014-09-06",
     "dateModified": "2014-08-15",
     "dateCreated": "2014-08-06",
@@ -84,7 +84,7 @@
       "DOI:10.1177/0165551504045850",
       "DOI:10.1145/2815833.2816955"
     ],
-    "relationship": {
+    "relationships": {
         "relationshipType": "isPartOf",
         "relatedIdentifier": "urn:uuid:F1A0A7AF-ECF3-4C7D-B675-7C6949963995",
         "relatedIdentifierType": "UUID"

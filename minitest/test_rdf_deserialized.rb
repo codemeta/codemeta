@@ -71,7 +71,7 @@ describe 'example-codemeta-full.json deserialized to RDF' do
        "embargoDate", "funding",
        "isAutomatedBuild", "isMaintainer", "isRightsHolder", "issueTracker", "mustBeCited", "namespace",
        "packageSystem", "readme", "relatedLink",
-       "relatedPublications", "relationship", "relationshipType", "relatedIdentifier", "relatedIdentifierType",
+       "relatedPublications", "relationships", "relationshipType", "relatedIdentifier", "relatedIdentifierType",
        "requirement", "Role", "roleCode", "softwareCitation",
        "uploadedBy", "zippedCode"]
      predicates.each do |thisPredicate|

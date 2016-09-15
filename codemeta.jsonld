@@ -5,12 +5,11 @@
       "xsd":"http://www.w3.org/2001/XMLSchema#",
       "codemeta": "https://codemeta.github.io/terms/",
       "Code":"schema:SoftwareSourceCode",
-      "agent":{
+      "agents":{
          "@id":"schema:agent"
       },
-      "controlledTerm": {
-          "@id":"codemeta:controlledTerm",
-          "@type":"xsd:string"
+      "controlledTerms": {
+          "@id":"codemeta:controlledTerms"
       },
       "person":{
          "@id":"schema:Person"
@@ -87,8 +86,8 @@
          "@id":"schema:datePublished",
          "@type":"xsd:dateTime"
       },
-      "dependency": {
-          "@id":"codemeta:requirement"
+      "dependencies": {
+          "@id":"codemeta:requirements"
       },
       "developmentStatus": {
           "@id":"codemeta:developmentStatus",
@@ -123,12 +122,8 @@
           "@id": "codemeta:funding",
           "@type": "xsd:string"
       },
-      "operatingSystem":{
+      "operatingSystems":{
           "@id": "schema:operatingSystem"
-      },
-      "packageId":{
-          "@id": "codemeta:packageId",
-          "@type": "xsd:string"
       },
       "packageSystem":{
           "@id": "codemeta:packageSystem",
@@ -160,8 +155,8 @@
       "relatedPublications":{
          "@id":"codemeta:relatedPublications"
       },
-      "relationship":{
-         "@id":"codemeta:relationship"
+      "relationships":{
+         "@id":"codemeta:relationships"
       },
       "relationshipType":{
          "@id":"codemeta:relationshipType",

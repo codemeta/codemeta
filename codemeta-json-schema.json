@@ -12,7 +12,7 @@
          "description":"The catagory of this JSON object, must be 'SoftwareSourceCode'",
          "type":"string"
       },
-      "agent":{
+      "agents":{
          "type":["array", "object"],
          "description": "A person or organization that has a role in designing, authoring, funding, maintaining or licensing the software.",
          "properties":{
@@ -66,7 +66,7 @@
          },
          "required": ["@id", "role"]
       },
-      "dependency":{
+      "dependencies":{
         "type": ["array", "object"],
         "description": "The computer hardware and software required to run the software.",
         "properties": {
@@ -105,9 +105,9 @@
           "description":"A URL for the source code repository that contains the software source files.",
           "type":"string"
       },
-      "controlledTerm": {
+      "controlledTerms": {
           "description":"Keywords associated with the software (i.e. fixed vocabulary by which to describe a category or community of softwarecontrolled terms",
-          "type":"string"
+          "type":["string", "array"]
       },
       "datePublished": {
           "description":"he date the software was first made available  publicly by the publisher.",
@@ -231,7 +231,7 @@
           "description":"Publications that cite the software or describe some related aspect of it.",
           "type":["string", "array"]
       },
-      "relationship":{
+      "relationships":{
         "type": "object",
         "description": "Relationship of the software to other related resources. For example, this relationship might be how one software package relates to a larger suite, or how a software package version supercedes a previous version.",
         "properties": {
@@ -266,6 +266,6 @@
           "type":"string"
       }
    },
-   "required": ["identifier", "title", "description", "agent", "@type"],
+   "required": ["identifier", "title", "description", "agents", "@type"],
    "additionalProperties": false
 }

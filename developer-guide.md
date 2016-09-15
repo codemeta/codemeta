@@ -162,7 +162,7 @@ When the JSON-LD "@type" is applied to a JSON object, the type information is se
 an RDF type statement, for example, this JSON object from the sample instance file:
 
 ```
-"agent":[
+"agents":[
   {
      "@id":"http://orcid.org/0000-0002-3957-2474",
      "@type":"organization",
@@ -179,7 +179,7 @@ is serialized to RDF as:
 
 ```
 
-This example shows the "@type" keyword being used in the instance file. Because `agent` can be one
+This example shows the "@type" keyword being used in the instance file. Because each entry in `agents` can be one
 of multiple possible types ("person", "organization") the type must be defined for each instance.
 
 ## Appendix B - CodeMeta Properties
@@ -204,7 +204,7 @@ Associated CodeMeta Concept: *AgentAffiliation*
 
 An *affliation* is the institution, organization or other group that the software agent is associated with.
 
-### agent
+### agents
 Context IRI: schema:agent  
 Type: schema:Organization, schema:Person  
 Subproperties: @id, @type, email, name, affiliation, mustBeCited, isMaintainer, isRightsHolder, role  
@@ -217,7 +217,7 @@ Each instance of an *agent* must be qualified with an appropriate *role* propert
 An array of values can be assigned to the property *agent*, but each should have an "@id" and "@type" assigned.
 
 ```
- "agent":[
+ "agents":[
       {
          "@id":"http://orcid.org/0000-0003-0077-4738",
          "@type":"Person",
@@ -274,11 +274,11 @@ Type: schema:URL
 Subproperties: None  
 Associated CodeMeta Concept: *CodeRepositoryLink*
 
-### controlledTerm
-Context IRI: codemeta:controlledTerm  
+### controlledTermss
+Context IRI: codemeta:controlledTerms
 Type: xsd:string  
 Subproperties: None  
-Associated CodeMeta Concept: *ControlledTerm*
+Associated CodeMeta Concept: *ControlledTerms*
 
 ### dateCreated
 Context IRI: schema:dateCreated  
@@ -298,31 +298,31 @@ Type: xsd:dateTime
 Subproperties: None  
 Associated CodeMeta Concept: *DateModified*
 
-### dependency
-Context IRI: schema:requirements  
+### dependencies
+Context IRI: schema:requirements
 Type: Not assigned  
-Subproperties: *packageId*, *packageSystem*, *version*, *operatingSystem*  
+Subproperties: *identifier*, *name*, *packageSystem*, *version*, *operatingSystem*  
 Associated CodeMeta Concept: *Dependency*
 
-The *dependency* property is used to describe software packages required by the main package in order
-to run. The properties *packageId*, *packageSystem*, *version* and *operatingSystem* can be specified
-for a *dependency*, for example, the following instance file fragment describes two required
+The *dependencies* property is used to describe software packages required by the main package in order
+to run. The properties *identifier*, *name*, *packageSystem*, *version* and *operatingSystem* can be specified
+for *dependencies*, for example, the following instance file fragment describes two required
 software packages:
 
 ```
    ...
-   "dependency":[
-     {
-       "packageId":"export_fig",
-       "version":"1.99",
-       "packageSystem":"http://www.mathworks.com"
-     },
-     {
-       "packageId":"npplus",
-       "version":"0.9.4",
-       "packageSystem":"https://pypi.python.org",
-       "operatingSystem":"MacOS, Linux"
-     }
+   "dependencies": [{
+       "identifier": "http://doi.org/10.xxxx/A324566",
+       "name": "export_fig",
+       "version": "1.99",
+       "packageSystem": "http://www.mathworks.com"
+   }, {
+       "identifier": "89766228838383883",
+       "name": "npplus",
+       "version": "0.9.4",
+       "packageSystem": "https://pypi.python.org",
+       "operatingSystem": ["MacOS", "Linux"]
+   }],
      ...
 ```
 
@@ -368,6 +368,12 @@ Context IRI: codemeta:funding
 Type: xsd:string  
 Subproperties: None  
 Associated CodeMeta Concept: *Funding*
+
+### identifier  
+Context IRI: dcterms:identifier  
+Type: xsd:string  
+Subproperties: None
+Parent propertes: *dependencies*, can also be at top (root) level
 
 ### isAutomatedBuild
 Context IRI: codemeta:isAutomatedBuild  
@@ -415,18 +421,11 @@ Type: xsd:string
 Subproperties: None  
 Associated CodeMeta Concept: *AgentName*
 
-
-### packageId  
-Context IRI: schema:packageId
-Type: xsd:string
-Subproperties: None
-Parent property: dependency
-
 ### packageSystem   
 Context IRI: schema:packageSystem
 Type: xsd:string
 Subproperties: None
-Parent property: dependency
+Parent property: dependencies
 
 ### programmingLanguage
 Context IRI: schema:programmingLanguage  
@@ -638,7 +637,7 @@ The following JSON-LD document was created to describe the [*dataone* R package]
 {
    "@context":"https://raw.githubusercontent.com/codemeta/codemeta/master/codemeta.jsonld",
    "@type":"SoftwareSourceCode",
-   "agent":[
+   "agents":[
       {
          "@id":"http://orcid.org/0000-0003-0077-4738",
          "@type":"person",
@@ -683,7 +682,7 @@ The following JSON-LD document was created to describe the [*dataone* R package]
          }
       }
    ],
-   "dependency":
+   "dependencies":
       {
          "@type":"URL",
          "@value":"https://github.com/ropensci/datapack"

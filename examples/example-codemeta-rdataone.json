@@ -1,7 +1,7 @@
 {
    "@context":"https://raw.githubusercontent.com/codemeta/codemeta/master/codemeta.jsonld",
    "@type":"Code",
-   "agent":[
+   "agents":[
       {
          "@id":"http://orcid.org/0000-0003-0077-4738",
          "@type":"person",
@@ -44,21 +44,25 @@
          }
       }
    ],
-   "dependency":[
+   "dependencies":[
       {
-         "packageId":"redland 1.0.17-8",
+         "identifier":"http://doi.org/10.5063/F1VM496B",
+         "name":"redland",
+         "version":"1.0.17-8",
          "packageSystem":"https://cran.r-project.org/",
-         "operatingSystem":"Windows, OS X, Linux"
+         "operatingSystem":["Windows", "OS X", "Linux"]
       },
       {
-         "packageId":"datapack 1.0.1",
+         "identifier":"http://doi.org/10.5063/F1QV3JGM",
+         "name":"datapack 1.0.1",
+         "version":" 1.0.1",
          "packageSystem":"https://cran.r-project.org/",
-         "operatingSystem":"Windows, OS X, Linux"
+         "operatingSystem":["Windows", "OS X", "Linux"]
       }
     ],
    "identifier":"http://dx.doi.org/10.5063/F1M61H5X",
    "codeRepository":"https://github.com/DataONEorg/rdataone",
-   "controlledTem": "software",
+   "controlledTerms": "software",
    "datePublished":"2016-05-27",
    "dateModified":"2016-05-27",
    "dateCreated":"2016-05-27",

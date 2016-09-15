@@ -1,7 +1,7 @@
 {
    "@context":"https://raw.githubusercontent.com/codemeta/codemeta/master/codemeta.jsonld",
    "@type":"SoftwareSourceCode",
-   "agent":[
+   "agents":[
       {
          "@id":"http://orcid.org/0000-0002-2192-403X",
          "@type":"person",
@@ -47,7 +47,7 @@
       }
    ],
    "codeRepository":"https://github.com/codemeta/codemeta",
-   "controlledTerm":"http://purl.org/dc/dcmitype/Software",
+   "controlledTerms":"http://purl.org/dc/dcmitype/Software",
    "datePublished":"2014-09-06",
    "dateModified":"2014-08-15",
    "dateCreated":"2014-08-06",

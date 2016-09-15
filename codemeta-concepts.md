@@ -18,7 +18,7 @@ A person or organization that has a role in designing, authoring, funding, maint
 
 Example agent types are "creator", "contributor", "funder".
 
-JSON-LD context name: *agent*
+JSON-LD context name: *agents*
 
 ### AgentId
 A universally unique character string that is associated with the software agent.
@@ -64,7 +64,7 @@ JSON-LD context name: *codeRepository*
 ### ControlledTerm
 Keywords associated with the software (i.e. fixed vocabulary by which to describe a category or community of software)
 
-JSON-LD context name: *controlledTerm*
+JSON-LD context name: *controlledTerms*
 
 ### DateCreated
 The date that a published version of the software was created by the software author.
