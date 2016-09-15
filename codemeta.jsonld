@@ -158,8 +158,7 @@
          "@type":"xsd:anyURI"
       },
       "relatedPublications":{
-         "@id":"codemeta:relatedPublications",
-         "@type":"xsd:string"
+         "@id":"codemeta:relatedPublications"
       },
       "relationship":{
          "@id":"codemeta:relationship"

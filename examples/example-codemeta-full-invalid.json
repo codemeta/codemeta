@@ -81,7 +81,10 @@
    "readme":"https://github.com/codemeta/codemeta/README.md",
    "issueTracker":"https://github.com/codemeta/codemeta/issues",
    "relatedLink":"https://github.com/codemeta/codemeta-paper",
-   "relatedPublications":"ISBN:0201703726",
+   "relatedPublications":[
+     "ISBN:0201703726",
+     "http://doi.org:10.5334/jors.an"
+   ],
    "relationship":{
        "relationshipType":"isPartOf",
        "relatedIdentifier":"urn:uuid:F1A0A7AF-ECF3-4C7D-B675-7C6949963995",
