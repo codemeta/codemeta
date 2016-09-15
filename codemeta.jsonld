@@ -110,10 +110,6 @@
          "@id":"schema:keywords",
          "@type":"xsd:string"
       },
-      "objectType":{
-          "@id":"dc:type",
-          "@type":"xsd:string:"
-      },
       "publisher":{
           "@id": "schema:publisher",
           "@type": "xsd:string"
@@ -121,23 +117,6 @@
       "licenseId":
       {
           "@id": "schema:license",
-          "@type": "xsd:string"
-      },
-      "interactionMethod":
-      {
-          "@id": "codemeta:interactionMethod",
-          "@type": "xsd:string"
-      },
-      "inputs": {
-          "@id": "codemeta:inputs",
-          "@type": "xsd:string"
-      },
-      "outputs": {
-          "@id": "codemeta:outputs",
-          "@type": "xsd:string"
-      },
-      "function": {
-          "@id": "codemeta:function",
           "@type": "xsd:string"
       },
       "funding": {

@@ -68,8 +68,8 @@ describe 'example-codemeta-full.json deserialized to RDF' do
                  SELECT * WHERE { ?s <https://codemeta.github.io/terms/JSONTerm> ?o  }"
      # Check statements with codemeta namespaced predicate
      predicates = ["buildInstructions", "contIntegration",
-       "embargoDate", "function", "funding", "inputs", "interactionMethod",
-       "isAutomatedBuild", "isMaintainer", "isRightsHolder", "issueTracker", "mustBeCited", "namespace", "outputs",
+       "embargoDate", "funding",
+       "isAutomatedBuild", "isMaintainer", "isRightsHolder", "issueTracker", "mustBeCited", "namespace",
        "packageSystem", "readme", "relatedLink",
        "relatedPublications", "relationship", "relationshipType", "relatedIdentifier", "relatedIdentifierType",
        "requirement", "Role", "roleCode", "softwareCitation", "softwarePaperCitation",

@@ -369,18 +369,6 @@ Type: xsd:string
 Subproperties: None  
 Associated CodeMeta Concept: *Funding*
 
-### inputs
-Context IRI: codemeta:inputs  
-Type: xsd:string  
-Subproperties: None  
-Associated CodeMeta Concept: *Inputs*
-
-### interactionMethod
-Context IRI: codemeta:interactionMethod  
-Type: xsd:string  
-Subproperties: None  
-Associated CodeMeta Concept: *InteractionMethod*
-
 ### isAutomatedBuild
 Context IRI: codemeta:isAutomatedBuild  
 Type: xsd:boolean  
@@ -427,17 +415,6 @@ Type: xsd:string
 Subproperties: None  
 Associated CodeMeta Concept: *AgentName*
 
-### objectType
-Context IRI: dc:type  
-Type: xsd:string  
-Subproperties: None  
-Associated CodeMeta Concept: *ObjectType*
-
-### outputs
-Context IRI: codemeta:outputs  
-Type: xsd:string  
-Subproperties: None  
-Associated CodeMeta Concept: *Outputs*
 
 ### packageId  
 Context IRI: schema:packageId
@@ -611,6 +588,12 @@ Type: xsd:string
 Subproperties: None  
 Associated CodeMeta Concept: *SoftwareTitle*
 
+### @type
+Context IRI: dc:type  
+Type: xsd:string  
+Subproperties: None  
+Associated CodeMeta Concept: *ObjectType*
+
 ### suggests
 Context IRI: schema:suggests  
 Type: xsd:string  
@@ -654,7 +637,7 @@ The following JSON-LD document was created to describe the [*dataone* R package]
 ```
 {
    "@context":"https://raw.githubusercontent.com/codemeta/codemeta/master/codemeta.jsonld",
-   "@type":"Code",
+   "@type":"SoftwareSourceCode",
    "agent":[
       {
          "@id":"http://orcid.org/0000-0003-0077-4738",
@@ -720,7 +703,6 @@ The following JSON-LD document was created to describe the [*dataone* R package]
     the data repository. Users can also insert and update data objects on
     repositories that support these methods.",
    "downloadLink":"https://cran.r-project.org/src/contrib/dataone_2.0.0.tar.gz",
-   "function":"Provides an R Interface to the DataONE REST API",
    "funding":"National Science Foundation grant #012345678",
    "isAutomatedBuild":false,
    "issueTracker":"https://github.com/DataONEorg/rdataone/issues",
@@ -739,7 +721,6 @@ The following JSON-LD document was created to describe the [*dataone* R package]
       "email":"mbjones@nceas.ucsb.edu",
       "name":"Matt Jones"
    },
-   "objectType":"software",
    "programmingLanguage":{
       "name":"R",
       "version":"> 3.1.1",

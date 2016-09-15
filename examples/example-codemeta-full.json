@@ -71,18 +71,7 @@
     "buildInstructions": "https://github.com/codemeta/codemeta/buildInstructions",
     "contIntegration": "https://github.com/codemeta/codemeta/minitest",
     "downloadLink": "https://github.com/codemeta/codemeta/releases/codemeta_2.1.0-rc.2.tar.gz",
-    "interactionMethod": "Application Programming Interface, see jsonld.org",
-    "inputs": [
-        "A file describing attributes of the software, with MIME type text/csv",
-        "A file containing ambient air temperature values, with mime type application/netcdf"
-    ],
-    "outputs": [
-        "A file containing a line drawing plot",
-        "A file containing a scatter plot illustrating software quality affecting quality of life, with mime type image/png"
-    ],
     "funding": "National Science Foundation grant #012345678",
-    "function": "Enable sharing, publishing, indexing of metadata that describes software",
-    "objectType": "software",
     "programmingLanguage": {
         "name": "ruby",
         "version": "2.3.1",
