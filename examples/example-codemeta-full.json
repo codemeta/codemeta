@@ -45,7 +45,7 @@
     "identifier": "http://dx.doi.org/10.6084/m9.figshare.828487",
     "name": "codemeta",
     "codeRepository": "https://github.com/codemeta/codemeta",
-    "controlledTerms": "http://purl.org/dc/dcmitype/Software",
+    "controlledTerms": ["software", "metadata"],
     "datePublished": "2014-09-06",
     "dateModified": "2014-08-15",
     "dateCreated": "2014-08-06",
