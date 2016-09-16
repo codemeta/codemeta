@@ -46,9 +46,7 @@
    ],
    "dependencies":[
       {
-         "identifier":"http://doi.org/10.5063/F1VM496B",
-         "name":"redland",
-         "version":"1.0.17-8",
+         "name":"jsonlite",
          "packageSystem":"https://cran.r-project.org/",
          "operatingSystem":["Windows", "OS X", "Linux"]
       },
@@ -60,6 +58,32 @@
          "operatingSystem":["Windows", "OS X", "Linux"]
       }
     ],
+    "suggests": [{
+        "name":"knitr",
+        "packageSystem":"https://cran.r-project.org/",
+        "operatingSystem":["Windows", "OS X", "Linux"]
+    },
+    {
+        "name":"rmarkdown",
+        "packageSystem":"https://cran.r-project.org/",
+        "operatingSystem":["Windows", "OS X", "Linux"]
+    },
+    {
+        "name":"testthat",
+        "packageSystem":"https://cran.r-project.org/",
+        "operatingSystem":["Windows", "OS X", "Linux"]
+    },
+    {
+        "name":"digest",
+        "packageSystem":"https://cran.r-project.org/",
+        "operatingSystem":["Windows", "OS X", "Linux"]
+    },
+    {
+        "name":"openssl",
+        "version":"0.9.3",
+        "packageSystem":"https://cran.r-project.org/",
+        "operatingSystem":["Windows", "OS X", "Linux"]
+    }],
    "identifier":"http://dx.doi.org/10.5063/F1M61H5X",
    "codeRepository":"https://github.com/DataONEorg/rdataone",
    "controlledTerms": "software",

@@ -255,7 +255,30 @@
       },
       "suggests":{
           "description":"External software components that could enhance operation of or enable advanced functionality of the software package but are not strictly required.",
-          "type":"string"
+          "type":["array", "object"],
+          "properties": {
+              "identifier": {
+                  "description":"A text string uniquely identifying the required software package.",
+                  "type":"string"
+              },
+              "name": {
+                  "description":"The text string identifying a software package within a packageSystem.",
+                  "type":"string"
+              },
+              "version": {
+                  "description":"A text string indicating the development stage of the software package",
+                  "type":"string"
+              },
+              "packageSystem": {
+                  "description":"The repository system that contains a software package.",
+                  "type":"string"
+              },
+              "operatingSystem": {
+                  "description":"The computer system types that the software successfully operates on, i.e. 'Mac OS X 10.5', 'Windows 7'.",
+                  "type":"string"
+              }
+           },
+           "required": ["name", "packageSystem"]
       },
       "softwarePaperCitationIdentifiers":{
           "description":"A text string that can be used to authoritatively cite a research paper, conference proceedings or other scholarly work that describes the design, development, usage, significance or other aspect of the software.",
