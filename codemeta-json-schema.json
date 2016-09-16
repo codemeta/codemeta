@@ -90,8 +90,7 @@
                 "description":"The computer system types that the software successfully operates on, i.e. 'Mac OS X 10.5', 'Windows 7'.",
                 "type":"string"
             }
-         },
-         "required": ["packageId"]
+         }
       },
       "identifier": {
           "description":"A universally unique character string associated with the software.",
@@ -277,8 +276,7 @@
                   "description":"The computer system types that the software successfully operates on, i.e. 'Mac OS X 10.5', 'Windows 7'.",
                   "type":"string"
               }
-           },
-           "required": ["name", "packageSystem"]
+           }
       },
       "softwarePaperCitationIdentifiers":{
           "description":"A text string that can be used to authoritatively cite a research paper, conference proceedings or other scholarly work that describes the design, development, usage, significance or other aspect of the software.",
