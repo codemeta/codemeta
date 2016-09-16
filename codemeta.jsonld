@@ -169,8 +169,7 @@
          "@type":"xsd:string"
       },
       "suggests":{
-         "@id":"schema:suggests",
-         "@type":"xsd:string"
+         "@id":"schema:suggests"
       },
       "softwarePaperCitationIdentifiers":{
          "@id":"codemeta:softwarePaperCitationIdentifiers",
