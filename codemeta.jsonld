@@ -173,7 +173,8 @@
          "@type":"xsd:string"
       },
       "softwarePaperCitationIdentifiers":{
-         "@id":"codemeta:softwarePaperCitationIdentifiers"
+         "@id":"codemeta:softwarePaperCitationIdentifiers",
+         "@type":"xsd:string"
       },
       "title":{
          "@id":"dcterms:title",
