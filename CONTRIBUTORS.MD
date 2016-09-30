@@ -18,7 +18,7 @@ The following individuals have contributed significantly to the CodeMeta crosswa
 | Alice Allen | | ASCL | |
 | Mercè Crosas | | Harvard IQSS | |
 | Ashley Sands | | UCLA | |
-| Neil Chue Hong SSI | |
+| Neil Chue Hong | | SSI | |
 | Patricia Cruse | | DataCite | |
 | Dan Katz | | NCSA | |
 | Carole Goble | | | |
