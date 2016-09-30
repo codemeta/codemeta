@@ -369,6 +369,21 @@ Type: xsd:string
 Subproperties: None  
 Associated CodeMeta Concept: *Funding*
 
+The property *funding* contains a list of character strings containing funding sources for the software package. This property can
+can be a single character string:
+
+```
+"funding": "National Science Foundation grant #abc",
+
+```
+or a list of multiple character strings:
+```
+"funding": [
+    "National Science Foundation grant #abc",
+    "National Science Foundation grant #def",
+]
+```
+
 ### identifier  
 Context IRI: dcterms:identifier  
 Type: xsd:string  
@@ -414,6 +429,9 @@ Associated CodeMeta Concept: *License*
 It is recommended that values for this property are selected from the Software Package Data Exchange
 [list of licenses](http://spdx.org/licenses/), specifying a value listed in the "license identifier"
 column, for example "Apache-2.0".
+
+A copy of the SPDX v2.5 license list has been copied to the CodeMeta git repository, and exported from the source
+Microsoft Excel file to Commma Separated Values as [spdx_licenselist_v2.5.csv](https://raw.githubusercontent.com/codemeta/codemeta/master/spdx_licenselist_v2.5.csv).
 
 ### name
 Context IRI: schema:name  
