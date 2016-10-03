@@ -6,7 +6,7 @@ The following individuals have contributed significantly to the CodeMeta crosswa
 | Matthew B. Jones | jones@nceas.ucsb.edu | NCEAS, UC Santa Barbara | [mbjones](http://github.com/mbjones) |
 | Carl Boettiger   | | UC Berkeley | [cboettig](http://github.com/cboettig) |
 | Abby Cabunoc Mayes | | Mozilla Science Lab | [acabunoc](http://github.com/acabunoc) |
-| Arfon Smith | | Github | [arfon](http://github.com/arfon) |
+| Arfon Smith | | GitHub | [arfon](http://github.com/arfon) |
 | Peter Slaughter | slaughter@nceas.ucsb.edu | NCEAS, UC Santa Barbara | [gothub](http://github.com/gothub) |
 | Kyle Niemeyer   | | | [kyleniemeyer](http://github.com/kyleniemeyer) |
 | Yolanda Gil | | USC ISI | |
