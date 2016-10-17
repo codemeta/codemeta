@@ -506,19 +506,39 @@ Associated CodeMeta Concept: *Relationship*
 
 
 The *relationship* property can be used to document a relationship between the software package
-and another resource. The CodeMeta project recommends, but does not require, the use of the
-controlled lists of values from the [DataCite Metadata Schema](http://schema.datacite.org/meta/kernel-3/doc/DataCite-MetadataKernel_v3.1.pdf) for
-properties *relationshipType* and *relatedIdentifierType*. Version 3.1 of the schema
-enumerates these values for *relationshipType*:
+and another resource. The CodeMeta project recommends, but does not require, that the World Wide Web Consortium (W3C)
+[PROV Data Model](http://www.w3.org/TR/prov-primer/) be used for expressing these relationships, when possible.
 
+Some possible relationships from the PROV model include:
+- [wasRevisionOf](http://www.w3.org/TR/prov-o/#wasRevisionOf)
+- [hadMember](http://www.w3.org/TR/prov-o/#hadMember)
+- [specializationOf](http://www.w3.org/TR/prov-o/#specializationOf)
+- [wasInvalidatedBy](http://www.w3.org/TR/prov-o/#wasInvalidatedBy)
+
+See [PROV Entity](http://www.w3.org/TR/prov-o/#Entity) for additional relationship types and examples.
+
+This example shows the usage of the PROV [wasRevisionOf](http://www.w3.org/TR/prov-o/#wasRevisionOf) relationship,
+which asserts that the software being described is a revised version of the software identifier by `relatedIdentifier`,
+for example, the current software is a newer revision of the previous software:
 ```
-IsCitedBy, Cites, IsSupplementTo, IsSupplementedBy, IsContinuedBy, Continues, HasMetadata,
-IsMetadataFor, IsNewVersionOf, IsPreviousVersionOf, IsPartOf, HasPart, IsReferencedBy,
-References, IsDocumentedBy, Documents, IsCompiledBy, Compiles, IsVariantFormOf,
-IsOriginalFormOf, IsIdenticalTo, IsReviewedBy, Reviews, IsDerivedFrom, IsSourceOf
+...
+"relationships": {
+        "relationshipType": "wasRevisionOf",
+        "namespace": "http://www.w3.org/ns/prov#",
+        "relatedIdentifier": "urn:uuid:F1A0A7AF-ECF3-4C7D-B675-7C6949963995",
+        "relatedIdentifierType": "UUID"
+}
+...
 ```
 
-and these values for *relatedIdentifierType*:
+### relationshipType
+Context IRI: codemeta:relationship  
+Type: xsd:string  
+Subproperties: None  
+Parent property: *relationship*
+
+
+some possible values for *relatedIdentifierType*:
 
 ```
 ARK, arXiv, bibcode, DOI, EAN13, EISSN, ISBN, ISSN, ISTC, LISSN, LSID, PMID,
@@ -528,21 +548,6 @@ PURL, UPC, URL, URN
 The following example instance file fragment indicates that the software package being
 described has a component that has the Digital Object Identifier *doi:10.5063/F1VM496BXYZ*.
 ```
-...
-"relationship":{
-    "relationshipType":"hasPart",
-    "relatedIdentifier":"doi:10.5063/F1VM496BXYZ"
-    "relatedIdentifierType":"DOI"
-},
-...
-```
-Note: The example above is for demonstration purposes only and does not reference a valud DOI.
-
-### relationshipType
-Context IRI: codemeta:relationship  
-Type: xsd:string  
-Subproperties: None  
-Parent property: *relationship*
 
 ### role
 Context IRI: codemeta:role   
