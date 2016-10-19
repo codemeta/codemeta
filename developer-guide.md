@@ -616,8 +616,8 @@ Type: xsd:string
 Subproperties: None  
 Associated CodeMeta Concept: *ObjectType*
 
-### suggests
-Context IRI: schema:suggests  
+### suggestions   
+Context IRI: schema:suggestions  
 Type: xsd:string  
 Subproperties: None  
 Associated CodeMeta Concept: *Suggests*
@@ -757,7 +757,6 @@ The following JSON-LD document was created to describe the [*dataone* R package]
        "relatedIdentifierType":"UUID"
    },
    "softwareCitation":"Jones M, Slaughter P, Nahf R, Jones C, Boettiger C, Walker L, Hallett L, Chamberlain S, Hart E and Read J (2016). _redland: R Interface to the DataONE REST API_. doi: 10.5063/F1M61H5X (URL: http://doi.org/10.5063/F1M61H5X), R package version 2.0.0, <URL: http://github.com/DataONEorg/rdataone>.",
-   "suggests":"No other software is suggested",
    "softwarePaperCitationIdentifiers":[
      "http://doi.org/0000/0000"
    ],

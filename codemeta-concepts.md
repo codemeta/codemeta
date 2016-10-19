@@ -300,10 +300,10 @@ The distinguishing name associated with the software.
 
 JSON-LD context name: *title*
 
-### Suggests
+### Suggestions
 External software components that could enhance operation of or enable advanced functionality of the software package but are not strictly required.
 
-JSON-LD context name: *suggests*
+JSON-LD context name: *suggestions*
 
 ### Tags
 Terms used to describe the software that facilitate discovery of the software.

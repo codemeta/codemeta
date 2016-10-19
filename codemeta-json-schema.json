@@ -252,7 +252,7 @@
           "description":"A text string that can be used to authoritatively cite the software from a published work, such as a research paper or  conference proceedings, etc.",
           "type":"string"
       },
-      "suggests":{
+      "suggestions":{
           "description":"External software components that could enhance operation of or enable advanced functionality of the software package but are not strictly required.",
           "type":["array", "object"],
           "properties": {

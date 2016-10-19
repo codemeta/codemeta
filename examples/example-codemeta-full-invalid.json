@@ -91,7 +91,7 @@
        "relatedIdentifierType":"UUID"
    },
    "softwareCitation":"Meyer, Alexander, Kempfert, Jörg, Falk, Volkmar, riskscorer: v0.1.1 (2016), , doi:10.5281/zenodo.1234.",
-   "suggests":{
+   "suggestions":{
        "identifier": "123456",
        "name": "tokenizertools",
        "version": "1.0",

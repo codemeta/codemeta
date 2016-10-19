@@ -48,7 +48,7 @@ describe 'example-codemeta-full.json deserialized to RDF' do
      # Check statements with schema.org based predicate
      predicates = ["affiliation", "codeRepository", "dateCreated", "dateModified", "datePublished",
                   "description", "downloadUrl", "email", "keywords", "license",
-                 "programmingLanguage", "publisher", "suggests",
+                 "programmingLanguage", "publisher", "suggestions",
                  "version", "URL", "name"]
      predicates.each do |thisPredicate|
          thisQueryStr = queryStr.gsub("JSONTerm", thisPredicate)

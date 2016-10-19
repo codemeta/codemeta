@@ -91,7 +91,7 @@
     },
     "softwareCitation": "Boettiger C. et al. (2016). 'Codemeta: A Rosetta Stone for Metadata in Scientific Software.', codemeta 0.1.0, Zenodo, http://doi.org/00.0000/zenodo.0000",
     "softwarePaperCitationIdentifiers": "http://doi.org/0000/0000",
-    "suggests": {
+    "suggestions": {
         "name": "tokenizertools",
         "version": "1.0",
         "packageSystem": "https://pypi.python.org",

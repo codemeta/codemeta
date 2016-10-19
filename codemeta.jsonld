@@ -168,8 +168,8 @@
          "@id":"codemeta:softwareCitation",
          "@type":"xsd:string"
       },
-      "suggests":{
-         "@id":"schema:suggests"
+      "suggestions":{
+         "@id":"schema:suggestions"
       },
       "softwarePaperCitationIdentifiers":{
          "@id":"codemeta:softwarePaperCitationIdentifiers",
