@@ -169,7 +169,7 @@
          "@type":"xsd:string"
       },
       "suggestions":{
-         "@id":"schema:suggestions"
+         "@id":"codemeta:suggestions"
       },
       "softwarePaperCitationIdentifiers":{
          "@id":"codemeta:softwarePaperCitationIdentifiers",
