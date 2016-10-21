@@ -48,7 +48,7 @@ describe 'example-codemeta-full.json deserialized to RDF' do
      # Check statements with schema.org based predicate
      predicates = ["affiliation", "codeRepository", "dateCreated", "dateModified", "datePublished",
                   "description", "downloadUrl", "email", "keywords", "license",
-                 "programmingLanguage", "publisher", "suggestions",
+                 "programmingLanguage", "publisher",
                  "version", "URL", "name"]
      predicates.each do |thisPredicate|
          thisQueryStr = queryStr.gsub("JSONTerm", thisPredicate)
@@ -72,7 +72,7 @@ describe 'example-codemeta-full.json deserialized to RDF' do
        "isAutomatedBuild", "isMaintainer", "isRightsHolder", "issueTracker", "mustBeCited", "namespace",
        "packageSystem", "readme", "relatedLink",
        "relatedPublications", "relationships", "relationshipType", "relatedIdentifier", "relatedIdentifierType",
-       "requirements", "Role", "roleCode", "softwareCitation",
+       "requirements", "Role", "roleCode", "softwareCitation", "suggestions",
        "uploadedBy", "zippedCode"]
      predicates.each do |thisPredicate|
          thisQueryStr = queryStr.gsub("JSONTerm", thisPredicate)
