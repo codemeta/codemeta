@@ -586,12 +586,6 @@ Example:
 ]
 ```
 
-### softwareCitation
-Context IRI: codemeta:softwarePaperCitation  
-Type: xsd:string  
-Subproperties: None  
-Associated CodeMeta Concept: *SoftwareCitation*
-
 ### identifier
 Context IRI: dcterms:identifier  
 Type: xsd:anyURI  
@@ -756,10 +750,8 @@ The following JSON-LD document was created to describe the [*dataone* R package]
        "relatedIdentifier":"urn:uuid:F1A0A7AF-ECF3-4C7D-B675-7C6949963995",
        "relatedIdentifierType":"UUID"
    },
-   "softwareCitation":"Jones M, Slaughter P, Nahf R, Jones C, Boettiger C, Walker L, Hallett L, Chamberlain S, Hart E and Read J (2016). _redland: R Interface to the DataONE REST API_. doi: 10.5063/F1M61H5X (URL: http://doi.org/10.5063/F1M61H5X), R package version 2.0.0, <URL: http://github.com/DataONEorg/rdataone>.",
-   "softwarePaperCitationIdentifiers":[
-     "http://doi.org/0000/0000"
-   ],
+   "softwarePaperCitationIdentifiers": "http://doi.org/0000/0000",
+   ,
    "zippedCode":"https://cran.r-project.org/src/contrib/dataone_2.0.0.tar.gz"
 }
 ```

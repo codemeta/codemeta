@@ -49,7 +49,7 @@ RelatedPublications,y,relatedPublications,-,hasSimilarSoftware,related_identifie
 Relationship,y,relationships,"RelatedIdentifier(relationType=isPartOf), RelatedIdentifier(relationType=isVariantFormOf), RelatedIdentifier(relationType=isPreviousVersionOf), RelatedIdentifier(relationType=isNextVersionOf)",hasRelevantDataSources,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,"7,8",
 Role,y,role,,,,,,,,,,,,,,,,,,,,,,
 SoftwareAuthor,n - replaced by agent / role,-,Creator,hasCreator,creators (creators.givennames creators.familyname),owner,Authors(s),software developer organization,author,Author names and affiliations,creator,Authors@R,Maintainer,author,Maintainers,author,author,developers,"DESCRIPTION/Author, DESCRIPTION/Maintainer",author/authors,"3, 4, 5","3, 4, 5, 8,","3,4,5,6",credit
-SoftwareCitation,y,softwareCitation,-,hasPreferredCitation,notes ?,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,"3, 4, 5, 6","3, 4, 5, 6","3,4,12",citation_method
+SoftwareCitation,"n - cannot support multiple formats, use component fields to compose a citation", ,-,hasPreferredCitation,notes ?,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,"3, 4, 5, 6","3, 4, 5, 6","3,4,12",citation_method
 SoftwareContributor,n - replaced by agent / role,-,Contributor,hasMajorContributor,contributors,contributors_url,-,contributor,contributor,-,-,Authors@R,-,-,-,-,contributors,contributors,-,-,"3, 4, 5","3, 4, 5, 8,","3,4,5,6",
 SoftwareIdentifier,y,identifier,Identifier,hasUniqueId,id,id,?,-,identifier,Persistent identifier,identifier,Package,Package,-,-,-,name,groupId,-,-,1-12,"2, 3, 4, 5, 6, 8, 9,","3,5,6,12",ascl_id 
 SoftwarePaperCitation,y,softwarePaperCitationIdentifiers,-,-,notes ?,-,-,Citation,-,-,-,-,-,-,-,-,-,-,-,-,"3, 4, 5, 6","3, 4, 5, 6","3,4,12",described_in

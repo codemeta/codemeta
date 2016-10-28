@@ -7,6 +7,9 @@ Each concept has a corresponding entry in the CodeMeta JSON-LD context file *cod
 used in the serialization of a software description to a CodeMeta instance file. The CodeMeta usage
 of JSON-LD is described in more detail in the [CodeMeta Developer Guide](https://github.com/codemeta/codemeta/blob/master/developer-guide.md).
 
+Note: Terms marked with ~~strikethough~~ were once considered by the CodeMeta team but have since been deemed
+unneeded or inappropriate for CodeMeta software descriptions.
+
 ### ~~AccessList~~
 The set of rules that specifying the user identities and their level of access (e.g. read, write, update) to the software.
 
@@ -275,10 +278,12 @@ The agent (person or organization) that created the software.
 
 This term has been superceded by *Agent*.
 
-### SoftwareCitation
+### ~~SoftwareCitation~~
 A text string that can be used to authoritatively cite the software from a published work, such as a research paper or  conference proceedings, etc.
 
-JSON-LD context name: *softwareCitation*
+Usage of this term has been discontinued because many different citation formats would need to be included. Instead, the fields that
+are the components of a citation can be used to compose a citation from a CodeMeta document. See the [CodeMeta Tutorial](https://raw.githubusercontent.com/codemeta/codemeta/master/tutorial.md)
+for examples of creating citations from a CodeMeta document.
 
 ### ~~SoftwareContributor~~
 The institutions, organizations, other groups or individuals, other that the author, that assisted in authoring, designing, testing etc., of the software."

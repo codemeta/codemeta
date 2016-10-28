@@ -89,7 +89,6 @@
         "relatedIdentifier": "urn:uuid:F1A0A7AF-ECF3-4C7D-B675-7C6949963995",
         "relatedIdentifierType": "UUID"
     },
-    "softwareCitation": "Boettiger C. et al. (2016). 'Codemeta: A Rosetta Stone for Metadata in Scientific Software.', codemeta 0.1.0, Zenodo, http://doi.org/00.0000/zenodo.0000",
     "softwarePaperCitationIdentifiers": "http://doi.org/0000/0000",
     "suggestions": {
         "name": "tokenizertools",

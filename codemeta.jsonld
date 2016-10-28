@@ -164,10 +164,6 @@
          "@id":"codemeta:relationshipType",
          "@type":"xsd:string"
       },
-      "softwareCitation":{
-         "@id":"codemeta:softwareCitation",
-         "@type":"xsd:string"
-      },
       "suggestions":{
          "@id":"codemeta:suggestions"
       },
