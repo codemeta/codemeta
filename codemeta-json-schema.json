@@ -158,7 +158,7 @@
       },
       "uploadedBy": {
          "description": "The user identity that uploaded the software to an online repository.",
-         "type": ["object"],
+         "type": "object",
          "properties": {
              "@id": {
                 "description":"A universally unique string identifying the agent that uploaded the software to a repository.",
@@ -224,14 +224,14 @@
       },
       "relatedLink":{
           "description":"A URL that provides additional information or resources related to the software.",
-          "type":"string"
+          "type":["array", "string"]
       },
       "relatedPublications":{
           "description":"Publications that cite the software or describe some related aspect of it.",
           "type":["string", "array"]
       },
       "relationships":{
-        "type": "object",
+        "type": ["array", "object"],
         "description": "Relationship of the software to other related resources. For example, this relationship might be how one software package relates to a larger suite, or how a software package version supercedes a previous version.",
         "properties": {
           "relationshipType":{
@@ -270,7 +270,7 @@
               },
               "operatingSystem": {
                   "description":"The computer system types that the software successfully operates on, i.e. 'Mac OS X 10.5', 'Windows 7'.",
-                  "type":"string"
+                  "type":["array", "string"]
               }
            }
       },
