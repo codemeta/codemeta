@@ -1,5 +1,5 @@
 {
-    "@context": "https://raw.githubusercontent.com/codemeta/codemeta/master/codemeta.jsonld",
+    "@context":"https://raw.githubusercontent.com/codemeta/codemeta/master/codemeta.jsonld",
     "@type": "SoftwareSourceCode",
     "agents": [{
         "@id": "http://orcid.org/0000-0002-2192-403X",
@@ -24,7 +24,7 @@
             "roleCode": "copyrightHolder"
         }
     }],
-    "dependencies": [{
+    "depends": [{
         "identifier": "http://doi.org/10.xxxx/A324566",
         "name": "export_fig",
         "version": "1.99",
@@ -90,7 +90,7 @@
         "relatedIdentifierType": "UUID"
     },
     "softwarePaperCitationIdentifiers": "http://doi.org/0000/0000",
-    "suggestions": {
+    "suggests": {
         "name": "tokenizertools",
         "version": "1.0",
         "packageSystem": "https://pypi.python.org",

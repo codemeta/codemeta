@@ -87,7 +87,7 @@ JSON-LD context name: *datePublished*
 ### Dependency
 The computer hardware and software required to run the software.
 
-JSON-LD context name: *dependency*
+JSON-LD context name: *depends*
 
 ### Description
 A character string conveying the purpose and scope of the software.
@@ -250,6 +250,11 @@ The date that the metadata record describing the software was published
 Usage of this term has been discontinued because it does not appear in any of the schemas in the
 CodeMeta crosswalk.
 
+### RelatedIdentifier
+The identifier of an object that has some relationship to the software.
+
+JSON-LD context name: *relatedIdentifier*
+
 ### RelatedLink
 A URL that provides additional information or resources related to the software.
 
@@ -305,10 +310,10 @@ The distinguishing name associated with the software.
 
 JSON-LD context name: *title*
 
-### Suggestions
+### Suggests
 External software components that could enhance operation of or enable advanced functionality of the software package but are not strictly required.
 
-JSON-LD context name: *suggestions*
+JSON-LD context name: *suggests*
 
 ### Tags
 Terms used to describe the software that facilitate discovery of the software.

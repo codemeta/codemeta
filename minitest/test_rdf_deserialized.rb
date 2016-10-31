@@ -49,7 +49,7 @@ describe 'example-codemeta-full.json deserialized to RDF' do
      predicates = ["affiliation", "codeRepository", "dateCreated", "dateModified", "datePublished",
                   "description", "downloadUrl", "email", "keywords", "license",
                  "programmingLanguage", "publisher",
-                 "version", "URL", "name"]
+                 "version", "URL", "name", "requirements"]
      predicates.each do |thisPredicate|
          thisQueryStr = queryStr.gsub("JSONTerm", thisPredicate)
          sse = SPARQL.parse(thisQueryStr)
@@ -72,7 +72,7 @@ describe 'example-codemeta-full.json deserialized to RDF' do
        "isAutomatedBuild", "isMaintainer", "isRightsHolder", "issueTracker", "mustBeCited", "namespace",
        "packageSystem", "readme", "relatedLink",
        "relatedPublications", "relationships", "relationshipType", "relatedIdentifier", "relatedIdentifierType",
-       "requirements", "Role", "roleCode", "suggestions",
+       "Role", "roleCode", "suggests",
        "uploadedBy", "zippedCode"]
      predicates.each do |thisPredicate|
          thisQueryStr = queryStr.gsub("JSONTerm", thisPredicate)

@@ -27,7 +27,7 @@
          }
       }
    ],
-   "dependencies":[
+   "depends":[
       {
          "packageId":"export_fig",
          "version":"1.99",
@@ -90,7 +90,7 @@
        "relatedIdentifier":"urn:uuid:F1A0A7AF-ECF3-4C7D-B675-7C6949963995",
        "relatedIdentifierType":"UUID"
    },
-   "suggestions":{
+   "suggests":{
        "identifier": "123456",
        "name": "tokenizertools",
        "version": "1.0",

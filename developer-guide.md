@@ -298,20 +298,20 @@ Type: xsd:dateTime
 Subproperties: None  
 Associated CodeMeta Concept: *DateModified*
 
-### dependencies
+### depends  
 Context IRI: schema:requirements
 Type: Not assigned  
 Subproperties: *identifier*, *name*, *packageSystem*, *version*, *operatingSystem*  
 Associated CodeMeta Concept: *Dependency*
 
-The *dependencies* property is used to describe software packages required by the main package in order
+The *depends* property is used to describe software packages required by the main package in order
 to run. The properties *identifier*, *name*, *packageSystem*, *version* and *operatingSystem* can be specified
-for *dependencies*, for example, the following instance file fragment describes two required
+for *depends*, for example, the following CodeMeta document fragment describes two required
 software packages:
 
 ```
    ...
-   "dependencies": [{
+   "depends": [{
        "identifier": "http://doi.org/10.xxxx/A324566",
        "name": "export_fig",
        "version": "1.99",
@@ -388,7 +388,7 @@ or a list of multiple character strings:
 Context IRI: dcterms:identifier  
 Type: xsd:string  
 Subproperties: None
-Parent propertes: *dependencies*, can also be at top (root) level
+Parent propertes: *depends*, can also be at top (root) level
 
 ### isAutomatedBuild
 Context IRI: codemeta:isAutomatedBuild  
@@ -443,7 +443,7 @@ Associated CodeMeta Concept: *AgentName*
 Context IRI: schema:packageSystem
 Type: xsd:string
 Subproperties: None
-Parent property: dependencies
+Parent property: depends
 
 ### programmingLanguage
 Context IRI: schema:programmingLanguage  
@@ -610,8 +610,8 @@ Type: xsd:string
 Subproperties: None  
 Associated CodeMeta Concept: *ObjectType*
 
-### suggestions   
-Context IRI: schema:suggestions  
+### Suggests   
+Context IRI: schema:suggests  
 Type: xsd:string  
 Subproperties: None  
 Associated CodeMeta Concept: *Suggests*
@@ -699,7 +699,7 @@ The following JSON-LD document was created to describe the [*dataone* R package]
          }
       }
    ],
-   "dependencies":
+   "depends":
       {
          "@type":"URL",
          "@value":"https://github.com/ropensci/datapack"

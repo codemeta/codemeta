@@ -87,8 +87,8 @@
          "@id":"schema:datePublished",
          "@type":"xsd:dateTime"
       },
-      "dependencies": {
-          "@id":"codemeta:requirements"
+      "depends": {
+          "@id":"schema:requirements"
       },
       "developmentStatus": {
           "@id":"codemeta:developmentStatus",
@@ -164,8 +164,8 @@
          "@id":"codemeta:relationshipType",
          "@type":"xsd:string"
       },
-      "suggestions":{
-         "@id":"codemeta:suggestions"
+      "suggests":{
+         "@id":"codemeta:suggests"
       },
       "softwarePaperCitationIdentifiers":{
          "@id":"codemeta:softwarePaperCitationIdentifiers",

@@ -30,11 +30,11 @@ such as for 'title'. Other CodeMeta properties will require new fields to be add
 | dateCreated | | | | |
 | dateModified | | | | |
 | datePublished | dataUploaded |Y|N| Is this the correct usage for datePublished? |
-| dependencies/identifier| | | | |
-| dependencies/name | | | | |
-| dependencies/operatingSystem | | | | |
-| dependencies/packageSystem | | | | |
-| dependencies/version| | | | |
+| depends/identifier| | | | |
+| depends/name | | | | |
+| depends/operatingSystem | | | | |
+| depends/packageSystem | | | | |
+| depends/version| | | | |
 | description | abstract |Y| | |
 | developmentStatus | | | | |
 | downloadLink | | | | |
@@ -56,11 +56,11 @@ such as for 'title'. Other CodeMeta properties will require new fields to be add
 | relationships/relationshipType | | | | |
 | relatedLink | | | | |
 | relatedPublications | | | | |
-| suggestions/identifier | | | | |
-| suggestions/name | | | | |
-| suggestions/operatingSystem | | | | |
-| suggestions/packageSystem | | | | |
-| suggestions/version | | | | |
+| suggests/identifier | | | | |
+| suggests/name | | | | |
+| suggests/operatingSystem | | | | |
+| suggests/packageSystem | | | | |
+| suggests/version | | | | |
 | softwarePaperCitationIdentifiers | | | | |
 | tags | topic or term |Y|N| which index field should be used?|
 | title | title |Y|N| |
