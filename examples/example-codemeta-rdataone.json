@@ -58,7 +58,7 @@
          "operatingSystem":["Windows", "OS X", "Linux"]
       }
     ],
-    "suggestions": [{
+    "suggests": [{
         "name":"knitr",
         "packageSystem":"https://cran.r-project.org/",
         "operatingSystem":["Windows", "OS X", "Linux"]

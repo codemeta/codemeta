@@ -66,7 +66,7 @@
          },
          "required": ["@id", "role"]
       },
-      "dependencies":{
+      "depends":{
         "type": ["array", "object"],
         "description": "The computer hardware and software required to run the software.",
         "properties": {
@@ -248,7 +248,7 @@
           }
         }
       },
-      "suggestions":{
+      "suggests":{
           "description":"External software components that could enhance operation of or enable advanced functionality of the software package but are not strictly required.",
           "type":["array", "object"],
           "properties": {
