@@ -9,8 +9,13 @@ body {
   color: #333333;
   background: #fafbfc;
   font: 400 15px/20px "Source Sans Pro", "Helvetica Nueue", "Helvetica", "sans serif";
-  min-height: 100%;
-  position: relative;
+  width: 960px;
+  height: 100px;
+}
+
+.header {
+  height: 50px;
+  padding: 10px;
 }
 
 h1,
@@ -56,9 +61,21 @@ h3 {
 
 #validate_button {
   padding: 5px;
-  margin-top: 10px;
+  margin: 10px 5px 10px 0;
   float: left;
   clear: left;
+}
+
+#clear_button {
+  padding: 5px;
+  margin: 10px 5px 10px 5px;
+  float: left;
+}
+
+#copy_button {
+  padding: 5px;
+  margin: 10px 5px 10px 5px;
+  float: left;
 }
 
 .results {
@@ -68,7 +85,6 @@ h3 {
    border: 1px;
    margin: 10px;
    float: left;
-   clear: left;
 }
 
 #check_result {
@@ -76,8 +92,26 @@ h3 {
    height: 100%;
    padding: 5px;
    float: left;
-   clear: left;
 }
+
+clearfix:before,
+clearfix:after {
+    content:"";
+    display:table;
+}
+clearfix:after {
+    clear:both;
+}
+</style>
+
+<!--[if lt IE 8]>
+<style>
+/* For IE < 8 (trigger hasLayout) */
+.clearfix {
+    zoom:1;
+}
+</style>
+<![endif]-->
 
 /*
 input[type="button"] {

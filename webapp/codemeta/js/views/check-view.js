@@ -19,9 +19,12 @@ var app = app || {};
    },
    events: {
        //"click input[type=button]": "doValidate"
-       "click button": "doValidate"
+       "click #validate_button": "doValidate",
+       "click #clear_button": "doClear",
+       //"click #copy_button": "doCopy"
    },
    doValidate: function( event ) {
+		 console.log("doValidate")
 		 var valid;
 			 $("#results_container").css('visibility', 'visible')
 			 try {
@@ -62,7 +65,19 @@ var app = app || {};
 					};
        });
 			 */
-   }
+   },
+
+	 doClear: function( event ) {
+		 console.log("doClear")
+		 $("#codemeta_document").val("");
+		 $("#check_result").html("");
+		 //$("#results_container").css('visibility', 'hidden')
+	 },
+
+	 doCopy: function( event ) {
+		 alert("copy");
+	 }
+
 	 //isValidJson: function(json) {
     // try {
     //    JSON.parse(json);

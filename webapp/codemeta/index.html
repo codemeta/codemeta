@@ -8,14 +8,15 @@
 	</head>
 		<body>
 			<div class="top_container">
-			<h1 align="left">CodeMeta Validator</h1>
-			<div class="input_document" id="search_container">
-				<!-- <label>Enter CodeMeta Document</label> -->
-				<!-- <input type="text" id="search_input" placeholder="Enter search terms."/> -->
+				<div class="header">
+			    <h1 align="left">CodeMeta Validator</h1>
+		  </div>
+			<div class="input_document" id="search_container" style="clearfix" >
 				<label for="codemeta_document">CodeMeta JSON document</label>
 				<textarea id="codemeta_document" placeholder="Paste a CodeMeta document here and click 'Validate'"></textarea>
-				<button type="button" id="validate_button" class="btn btn-primary">Validate</button>
-				<!-- <input type="button" class="btn btn-link" id="search_button" value="Validate"></input> -->
+				<button type="button" id="validate_button" class="btn">Validate</button>
+				<button type="button" id="clear_button" class="btn">Clear</button>
+				<!-- <button type="button" id="copy_button" class="btn">Copy</button> -->
 			</div>
 			<div class="results" id="results_container" style="visibility: hidden">
 				<label for="check_result">Validation results</label>
