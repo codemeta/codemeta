@@ -283,6 +283,6 @@
           "type":"string"
       }
    },
-   "required": ["identifier", "title", "description", "agents", "@type"],
+   "required": ["identifier", "title", "description", "@context"],
    "additionalProperties": false
 }
