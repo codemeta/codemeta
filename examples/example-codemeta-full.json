@@ -1,4 +1,8 @@
 {
+    "title": "CodeMeta, a minimal convention for software metadata",
+    "description": "Codemeta is a metadata content standard for software.  It includes schemas in JSON-LD and XML Schema for providing semantics and validation.",
+    "identifier": "http://dx.doi.org/10.6084/m9.figshare.828487",
+    "name": "codemeta",
     "@context":"https://raw.githubusercontent.com/codemeta/codemeta/master/codemeta.jsonld",
     "@type": "SoftwareSourceCode",
     "agents": [{
@@ -42,14 +46,11 @@
         "packageSystem": "http://cran.r-project.org",
         "operatingSystems": ["Windows", "OS X Mavericks"]
     }],
-    "identifier": "http://dx.doi.org/10.6084/m9.figshare.828487",
-    "name": "codemeta",
     "codeRepository": "https://github.com/codemeta/codemeta",
     "controlledTerms": ["software", "metadata"],
     "datePublished": "2014-09-06",
     "dateModified": "2014-08-15",
     "dateCreated": "2014-08-06",
-    "description": "Codemeta is a metadata content standard for software.  It includes schemas in JSON-LD and XML Schema for providing semantics and validation.",
     "developmentStatus": "active",
     "embargoDate": "2014-08-06T10:00:01Z",
     "isAutomatedBuild": false,
@@ -60,7 +61,6 @@
         "credit for code"
     ],
     "licenseId": "Apache-2.0",
-    "title": "CodeMeta, a minimal convention for software metadata",
     "version": "2.1.0-rc.2",
     "uploadedBy": {
         "@id": "http://orcid.org/0000-0002-2192-403X",
