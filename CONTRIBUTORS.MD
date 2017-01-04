@@ -14,7 +14,6 @@ The following individuals have contributed significantly to the CodeMeta crosswa
 | Krzysztof Nowak | | Zenodo | |
 | Mark Hahnel | | figshare | |
 | Luke Coy | | RIT & MSL | |
-| Kyle Niemeyer | | Oregon State | |
 | Alice Allen | | ASCL | |
 | Mercè Crosas | | Harvard IQSS | |
 | Ashley Sands | | UCLA | |
