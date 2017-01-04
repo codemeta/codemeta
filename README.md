@@ -3,10 +3,18 @@ CodeMeta
 [![Join the chat at https://gitter.im/codemeta/codemeta](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/codemeta/codemeta?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.org/codemeta/codemeta.svg?branch=master)](https://travis-ci.org/codemeta/codemeta)
 
+> *Matthew B. Jones, Carl Boettiger, Abby Cabunoc Mayes, Arfon Smith, Peter Slaughter, Kyle Niemeyer, Yolanda Gil, Martin Fenner, Krzysztof Nowak, Mark Hahnel, Luke Coy, Alice Allen, Mercè Crosas, Ashley Sands, Neil Chue Hong, Patricia Cruse, Dan Katz, Carole Goble.* 2016. __CodeMeta: an exchange schema for software metadata.__ KNB Data Repository. [doi:10.5063/schema/codemeta-1.0](https://doi.org/doi:10.5063/schema/codemeta-1.0)
+
 [CodeMeta](https://codemeta.github.io) [contributors](CONTRIBUTORS.MD) are creating a minimal metadata schema for science software and code, in JSON and XML. The goal of CodeMeta is to create a concept vocabulary that can be used to standardize the exchange of software metadata across repositories and organizations. CodeMeta started by comparing the software metadata used across multiple repositories, which resulted in the [CodeMeta Metadata Crosswalk](https://github.com/codemeta/codemeta/blob/master/crosswalk.csv).  That crosswalk was then used to generate a set of software metadata concepts, which were arranged into a JSON-LD context for serialization (see [codemeta.jsonld](https://github.com/codemeta/codemeta/blob/master/codemeta.jsonld), or an [example CodeMeta document](https://github.com/codemeta/codemeta/blob/master/examples/example-codemeta-full.json)).
 
+## CodeMeta Schema
+The schema for released versions of CodeMeta are:
+
+- CodeMeta-1.0: [https://doi.org/doi:10.5063/schema/codemeta-1.0](https://doi.org/doi:10.5063/schema/codemeta-1.0)
+
 ## Contributors
-CodeMeta is a community project with many contributors spanning research, education, and engineering domains.    - See our [list of Contributors](CONTRIBUTORS.MD)
+CodeMeta is a community project with many contributors spanning research, education, and engineering domains.    - See our [list of Contributors](CONTRIBUTORS.MD). You can cite the CodeMeta schema and project as:
+
 
 ## How you can help
 Join us!  We welcome help formalizing a schema and creating mappings between existing software metadata schemas and the proposed schema. And writing documentation. And evangelizing. And other stuff, however you might be able to contribute.
