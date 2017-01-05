@@ -17,22 +17,22 @@ JSON-LD context name: *agents*
 ### AgentId
 A universally unique character string that is associated with the software agent.
 
-JSON-LD context name: @id
+JSON-LD context name: *agents.@id*
 
 ### AgentAffiliation
 The institution, organization or other group that the agent is associated with.
 
-JSON-LD context name: *affiliation*
+JSON-LD context name: *agents.affiliation*
 
 ### AgentEmail
 The email address associated with the agent of the software.
 
-JSON-LD context name: *email*
+JSON-LD context name: *agents.email*
 
 ### AgentName
 The name of the institution, organization, individuals or other entities that had a role in the creation of the software.
 
-JSON-LD context name: *name*
+JSON-LD context name: *agents.name*
 
 ### BuildLink
 A URL for the instructions to create an executable version of the software from source code.
@@ -127,12 +127,13 @@ JSON-LD context name: *licenseId*
 ### MustBeCited
 A logical value (true/false) indicating that an agent must be included in a citation of the software.
 
-JSON-LD context name: *mustbeCited*
+JSON-LD context name: *agents.mustbeCited*
 
-### ~~ObjectType~~
+### ObjectType
 The category of the resource (controlled list, such as software, paper, data, image) that the software can be included in.
+However, for CodeMeta documents, the *@type* will always have the value "Software".
 
-JSON-LD context name: *@type*
+JSON-LD context name: *@type* and *agents.@type*
 
 ### OperatingSystem
 The computer system types that the software successfully operates on, i.e. “Mac OS X 10.5”, “Windows 7”"
