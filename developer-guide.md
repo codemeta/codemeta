@@ -39,16 +39,16 @@ JSON-LD uses a *context file* to associate JSON names with IRIs (Internationaliz
 
 The context file [*codemeta.jsonld*](https://raw.githubusercontent.com/codemeta/codemeta/master/codemeta.jsonld) contains the complete set of JSON properties adopted by the CodeMeta project.
 
-A CodeMeta software description, or *instance file*, uses the JSON names contained in the context file. The JSON names are more compact and easier to process than IRIs. The instance files can be used to transfer metadata between software authors, repositories, and others, for the purposes of archiving, sharing, indexing, citing and discovering software.
+A CodeMeta software description, or *CodeMeta document*, uses the JSON names contained in the context file. The JSON names are more compact and easier to process than IRIs. The CodeMeta document can be used to transfer metadata between software authors, repositories, and others, for the purposes of archiving, sharing, indexing, citing and discovering software.
 
-Because the instance file refers to the context file, the mapping between the local JSON names and the
+Because the CodeMeta document refers to the context file, the mapping between the local JSON names and the
 IRIs is always known, thereby giving the local names universal context.
 
-An example usage of the CodeMeta instance file is for the author of research software package to generate an instance file when the software package is published to a repository. The instance file can be used to aid in any repository ingest processing. The instance file can be made available in the repository with the software package as it may contain additional metadata that was not used by the repository. In addition this file may be used in other transactions involving the software package after the package has been downloaded from the repository.
+An example usage of the CodeMeta document is for the author of research software package to generate a CodeMeta Document when the software package is published to a repository. The  CodeMeta Document can be used to aid in any repository ingest processing. The  CodeMeta Document can be made available in the repository with the software package as it may contain additional metadata that was not used by the repository. In addition this file may be used in other transactions involving the software package after the package has been downloaded from the repository.
 
-The producer of an instance file, i.e. the creators of the software, must use the JSON names from the CodeMeta context file. The consumer of the instance file can use these same JSON names from the instance file for any necessary processing tasks.
+The producer of an  CodeMeta Document, i.e. the creators of the software, must use the JSON names from the CodeMeta context file. The consumer of the  CodeMeta Document can use these same JSON names from the  CodeMeta Document for any necessary processing tasks.
 
-As an alternative to using the producer supplied JSON names, the consumer can use the [JSON-LD API](https://www.w3.org/TR/json-ld-api/) to translate the JSON names to their own local JSON names that may be in use by their local processing scripts. This is done by first using the JSON-LD *expand* function that replaces each JSON name in the instance file with it's corresponding IRI from the CodeMeta context file. For example, the producer's instance file may contain the following line:
+As an alternative to using the producer supplied JSON names, the consumer can use the [JSON-LD API](https://www.w3.org/TR/json-ld-api/) to translate the JSON names to their own local JSON names that may be in use by their local processing scripts. This is done by first using the JSON-LD *expand* function that replaces each JSON name in the  CodeMeta Document with it's corresponding IRI from the CodeMeta context file. For example, the producer's  CodeMeta Document may contain the following line:
 
       "codeRepository":"https://github.com/DataONEorg/rdataone"
 
@@ -56,22 +56,22 @@ Using the JSON-LD API *expand* function, this is converted to:
 
      "http://schema.org/repository":"https://github.com/DataONEorg/rdataone
 
-Next, the consumer can use their own context file that maps from each IRI to their own local JSON names. For example, the consumer may have a context file that maps the local JSON name 'softwareRepo' to "http://schema.org/repository", so using the JSON API *compact* function would result in a new instance file with the entry:
+Next, the consumer can use their own context file that maps from each IRI to their own local JSON names. For example, the consumer may have a context file that maps the local JSON name 'softwareRepo' to "http://schema.org/repository", so using the JSON API *compact* function would result in a new  CodeMeta Document with the entry:
 
      "softwareRepo":"https://github.com/DataONEorg/rdataone"
 
-When the instance file has been compacted, it can then be used by the consumer for any necessary processing, using the local JSON names.
+When the  CodeMeta Document has been compacted, it can then be used by the consumer for any necessary processing, using the local JSON names.
 
 Note that this expansion and compaction process assumes that both the producer and consumer JSON-LD context files share overlapping sets of IRIs.
 
 ## Creating A CodeMeta Instance File
 
 To facilitate automated ingest of research software into repositories such as [figshare](https://figshare.com/), [Zenodo](https://zenodo.org/), the [Knowledge Network for Biocomplexity](https://knb.ecoinformatics.org/) and others, these repositories will update
-their submission processes to use CodeMeta instance files which will provide the metadata necessary for the submission and indexing of the software.
+their submission processes to use CodeMeta Document which will provide the metadata necessary for the submission and indexing of the software.
 
-Tools will be created that assist in the generation of instance files. For example, a tool written in the R language would generate a CodeMeta instance file from an R package that was authored to support a research project, automatically collecting available metadata and possibly prompting the user for any additional required metadata. The instance file would then be used to assist in publishing the software to a repository. An example instance file is shown in Appendix C.
+Tools will be created that assist in the generation of Codemeta documents. For example, a tool written in the R language would generate a CodeMeta document from an R package that was authored to support a research project, automatically collecting available metadata and possibly prompting the user for any additional required metadata. The CodeMeta document would then be used to assist in publishing the software to a repository. An example CodeMeta document is shown in Appendix C.
 
-When creating an instance file, note that they contain JSON name, value pairs where the values can be simple values, arrays or JSON objects. A simple value is a number, string, or one the literal values *false*, *null* *true*, for example:
+When creating a odeMeta document, note that they contain JSON name, value pairs where the values can be simple values, arrays or JSON objects. A simple value is a number, string, or one the literal values *false*, *null* *true*, for example:
 
 ```
     "title" : "R Interface to the DataONE REST API"
@@ -98,16 +98,16 @@ The "uploadedBy" JSON object illustrates the use of the JSON-LD keyword "@id", w
 The JSON "@type" keyword associates a JSON value or object with a well known type, for example, the
 statement `"@type":"person"` associates the `uploadedBy` object with `http://schema.org/Person`.
 
-For a list of the JSON names that can be used in a CodeMeta instance file, see Appendix B.
+For a list of the JSON names that can be used in a CodeMeta document, see Appendix B.
 
-Every CodeMeta instance file must refer to the context file *codemeta.jsonld*, for example via a URL.
+Every CodeMeta document must refer to the context file *codemeta.jsonld*, for example via a URL.
 The context file may be modified and updated in the future, if new JSON properties are added or existing ones modified.
 The CodeMeta github repository defines tags to allow specific versions of a file to be referenced, so that an
-instance file that is making the reference will continue to be valid, even if the most current ("HEAD") version of
+CodeMeta document that is making the reference will continue to be valid, even if the most current ("HEAD") version of
 the file in the repository changes.
 
 It is therefor recommended that a Github tag be used to specify a specific, non-changing version of the context file.
-For example, for the "0.1-tag", the following URL could be included in an instance file:
+For example, for the "0.1-tag", the following URL could be included in a CodeMeta document:
 ```
     "@context":"https://raw.githubusercontent.com/codemeta/codemeta/0.1-alpha/codemeta.jsonld"
 ```
@@ -124,12 +124,14 @@ The tags defined for the CodeMeta github repository can be listed by viewing the
 
  [ TBD ]
 
+## Generating Citations from a CodeMeta document
+
 ## Appendix A JSON-LD Relationship to RDF
 
 The intent of JSON-LD is to provide a mechanism to represent linked data using standard JSON syntax, yet JSON-LD was developed as a W3C Standard by the RDF Working Group. Even though JSON-LD can be effectively used without converting a JSON-LD document to RDF, it is useful to consider the relationship of JSON-LD to RDF in order to fully understanding JSON-LD.
 
-For example, in the instance file, the JSON-LD "@id" keyword is used to associate an IRI with a JSON object. When the JSON-LD instance file is serialized to RDF, this becomes the graph node identifier, or the subject of the resulting RDF triple. If an @id is not specified for a JSON object, then a blank node identifier is assigned to the resulting graph node for the output RDF graph. The JSON object `role` from the example
-instance file:
+For example, in the CodeMeta document, the JSON-LD "@id" keyword is used to associate an IRI with a JSON object. When the JSON-LD CodeMeta document is serialized to RDF, this becomes the graph node identifier, or the subject of the resulting RDF triple. If an @id is not specified for a JSON object, then a blank node identifier is assigned to the resulting graph node for the output RDF graph. The JSON object `role` from the example
+CodeMeta document:
 
 ```
       "roleCode":[
@@ -144,7 +146,7 @@ is serialized to RDF as:
 _:b1 <https://codemeta.github.io/terms/roleCode> "originator" .
 ```
 
-When the JSON-LD "@type" keyword is applied to a simple JSON type, the serialized RDF will have that type appended to the object, for example, the following entry from the example instance file:
+When the JSON-LD "@type" keyword is applied to a simple JSON type, the serialized RDF will have that type appended to the object, for example, the following entry from the example CodeMeta document:
 
 ```
 "dateCreated":"2016-05-27"
@@ -159,7 +161,7 @@ _:b0 <http://schema.org/dateCreated> "2016-05-27"^^<http://www.w3.org/2001/XMLSc
 In this case, the "@type" was specified in the context file.
 
 When the JSON-LD "@type" is applied to a JSON object, the type information is serialized to RDF with
-an RDF type statement, for example, this JSON object from the sample instance file:
+an RDF type statement, for example, this JSON object from the sample CodeMeta document:
 
 ```
 "agents":[
@@ -179,12 +181,12 @@ is serialized to RDF as:
 
 ```
 
-This example shows the "@type" keyword being used in the instance file. Because each entry in `agents` can be one
+This example shows the "@type" keyword being used in the CodeMeta document. Because each entry in `agents` can be one
 of multiple possible types ("person", "organization") the type must be defined for each instance.
 
 ## Appendix B - CodeMeta Properties
 
-The following set of JSON-LD properties have been selected and vetted by the CodeMeta project for use in creating Codemeta instance files.
+The following set of JSON-LD properties have been selected and vetted by the CodeMeta project for use in creating Codemeta document.
 
 The related document *codemeta-concepts.md* contains definitions for the concepts that these
 JSON properties are associated with.
@@ -321,7 +323,7 @@ software packages:
        "name": "npplus",
        "version": "0.9.4",
        "packageSystem": "https://pypi.python.org",
-       "operatingSystem": ["MacOS", "Linux"]
+       "operatingSystem": ["Mac OS X", "Linux"]
    }],
      ...
 ```
@@ -504,7 +506,6 @@ Type: xsd:string
 Subproperties: *relationshipType*, *relatedIdentifier*, *relatedIdentifierType*  
 Associated CodeMeta Concept: *Relationship*
 
-
 The *relationship* property can be used to document a relationship between the software package
 and another resource. The CodeMeta project recommends, but does not require, that the World Wide Web Consortium (W3C)
 [PROV Data Model](http://www.w3.org/TR/prov-primer/) be used for expressing these relationships, when possible.
@@ -545,7 +546,7 @@ ARK, arXiv, bibcode, DOI, EAN13, EISSN, ISBN, ISSN, ISTC, LISSN, LSID, PMID,
 PURL, UPC, URL, URN
 ```
 
-The following example instance file fragment indicates that the software package being
+The following example CodeMeta document fragment indicates that the software package being
 described has a component that has the Digital Object Identifier *doi:10.5063/F1VM496BXYZ*.
 ```
 
