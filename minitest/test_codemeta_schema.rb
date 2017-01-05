@@ -14,19 +14,19 @@ require 'json-schema'
 describe 'example-codemeta-schema' do
   before do
     input = JSON.parse(File.read('examples/example-codemeta-full.json'))
-    schema = JSON.parse(File.read('codemeta-json-schema.json'))
+    schema = JSON.parse(File.read('data/codemeta-json-schema.json'))
     @errorMsgs = JSON::Validator.fully_validate(schema, input)
   end
 
   it 'CodeMeta example file validates with CodeMeta JSON schema' do
-    assert_empty @errorMsgs, 'example-codemeta-full.json does not validate against CodeMeta JSON schema'
+    assert_empty @errorMsgs, './data/example-codemeta-full.json does not validate against CodeMeta JSON schema'
   end
 end
 
 describe 'example-codemeta-agent' do
   before do
     input = JSON.parse(File.read('examples/example-codemeta-agent.json'))
-    schema = JSON.parse(File.read('codemeta-json-schema.json'))
+    schema = JSON.parse(File.read('./data/codemeta-json-schema.json'))
     @errorMsgs = JSON::Validator.fully_validate(schema, input)
   end
 
@@ -38,7 +38,7 @@ end
 describe 'example-codemeta-rdataone' do
   before do
     input = JSON.parse(File.read('examples/example-codemeta-rdataone.json'))
-    schema = JSON.parse(File.read('codemeta-json-schema.json'))
+    schema = JSON.parse(File.read('./data/codemeta-json-schema.json'))
     @errorMsgs = JSON::Validator.fully_validate(schema, input)
   end
 
@@ -50,7 +50,7 @@ end
 describe 'example-codemeta-full-invalid' do
   before do
     input = JSON.parse(File.read('examples/example-codemeta-full-invalid.json'))
-    schema = JSON.parse(File.read('codemeta-json-schema.json'))
+    schema = JSON.parse(File.read('./data/codemeta-json-schema.json'))
     @errorMsgs = JSON::Validator.fully_validate(schema, input)
   end
 

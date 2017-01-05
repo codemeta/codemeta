@@ -14,7 +14,7 @@ require 'json-schema'
 describe 'example-codemeta-schema' do
   before do
     input = JSON.parse(File.read('examples/example-codemeta-full-invalid.json'))
-    schema = JSON.parse(File.read('codemeta-json-schema.json'))
+    schema = JSON.parse(File.read('./data/codemeta-json-schema.json'))
     @errorMsgs = JSON::Validator.fully_validate(schema, input, :errors_as_objects => true)
   end
 
