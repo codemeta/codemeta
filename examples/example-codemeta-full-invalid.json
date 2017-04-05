@@ -1,6 +1,6 @@
 {
    "@context":"https://raw.githubusercontent.com/codemeta/codemeta/master/codemeta.jsonld",
-   "@type":"SoftwareSourceCode",
+   "@type":"Code",
    "agents":[
       {
          "@id":"http://orcid.org/0000-0002-2192-403X",
@@ -65,7 +65,7 @@
    "version":"2.1.0-rc.2",
    "uploadedBy":{
       "@id":"http://orcid.org/0000-0002-2192-403X",
-      "@type":"Person",
+      "@type":"person",
       "email":"slaughter@nceas.ucsb.edu",
       "name":"Peter Slaughter"
    },

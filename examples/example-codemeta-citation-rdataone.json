@@ -1,6 +1,6 @@
 {
    "@context":"https://raw.githubusercontent.com/codemeta/codemeta/master/codemeta.jsonld",
-   "@type":"SoftwareSourceCode",
+   "@type":"Code",
    "identifier":"http://dx.doi.org/10.5063/F1M61H5X",
    "datePublished":"2016-05-27",
    "title":"dataone: R Interface to the DataONE REST API",

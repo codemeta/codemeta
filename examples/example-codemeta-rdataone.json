@@ -1,9 +1,9 @@
 {
+   "@context":"https://raw.githubusercontent.com/codemeta/codemeta/master/codemeta.jsonld",
    "title":"dataone: R Interface to the DataONE REST API",
    "description":"Provides read and write access to data and metadata from the DataONE network of data repositories.  Each DataONE repository implements a consistent repository application programming interface. Users call methods in R to access these remote repository functions, such as methods to query the metadata catalog, get access to metadata for particular data packages, and read the data objects from the data repository. Users can also insert and update data objects on repositories that support these methods.",
    "identifier":"http://dx.doi.org/10.5063/F1M61H5X",
-   "@context":"https://raw.githubusercontent.com/codemeta/codemeta/master/codemeta.jsonld",
-   "@type":"SoftwareSourceCode",
+   "@type":"Code",
    "agents":[
       {
          "@id":"http://orcid.org/0000-0003-0077-4738",
