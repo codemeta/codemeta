@@ -1,6 +1,6 @@
 {
     "@context":{
-      "@vocab": "https://schema.org"
+      "@vocab": "https://schema.org/"
     },
     "title": "Generate CodeMeta Metadata for R Packages",
     "description": "Codemeta defines a 'JSON-LD' format for describing software metadata. This package provides utilities to generate, parse, and modify codemeta.jsonld files automatically for R packages.",
