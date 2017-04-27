@@ -108,7 +108,7 @@
          "@type":"schema:Text"
       },
       
-      "TERMS_TO_BE_ADDED": "ARE LISTED BELOW HERE"
+      "TERMS_TO_BE_ADDED": "ARE LISTED BELOW HERE",
 
       "author": "schema:author"      
       "copyrightHolder": "schema:copyrightHolder",      

@@ -1,5 +1,5 @@
 {
-    "@context": "https://schema.org",
+    "@context": "https://raw.githubusercontent.com/codemeta/codemeta/master/codemeta-v2.jsonld",
     "title": "Generate CodeMeta Metadata for R Packages",
     "description": "Codemeta defines a 'JSON-LD' format for describing software metadata. This package provides utilities to generate, parse, and modify codemeta.jsonld files automatically for R packages.",
     "identifier": "http://dx.doi.org/10.5281/zenodo.XXXX",
@@ -35,7 +35,7 @@
         "name": "University of California, Santa Barbara"
     },
     "creator": {
-      "@id": "http://orcid.org/0000-0002-1642-628X"
+     "@id": "http://orcid.org/0000-0002-1642-628X"
     },
     "codeRepository": "https://github.com/codemeta/codemetar",
     "datePublished": "2014-09-06",
@@ -55,5 +55,36 @@
         "URL": "https://www.r-project.org"
     },
     "downloadUrl": "https://github.com/codemeta/codemetar/releases/",
-    "softwareRequirements": [ "https://cran.r-project.org/package=jsonlite" ]
+
+    "softwareRequirements": [{
+      "@id": "https://cran.r-project.org/package=jsonlite"
+    }],
+
+
+
+    "maintainer": {
+      "@id": "http://orcid.org/0000-0002-1642-628X"
+    },
+    "developmentStatus": "active",
+    "embargoDate": "2014-08-06T10:00:01Z",
+    "contIntegration": "https://travis.org/codemeta/codemetar",
+    "funding": "National Science Foundation grant #012345678",
+    "readme": "https://github.com/codemeta/codemeta/README.md",
+    "issueTracker": "https://github.com/codemetar/codemetar/issues",
+    "relatedLink": "https://github.com/codemeta/codemeta-paper",
+    "relatedPublications": [
+      "http://doi.org/10.1177/0165551504045850",
+      "http://doi.org/10.1145/2815833.2816955"
+    ],
+    "relationships": {
+        "relationshipType": "isPartOf",
+        "relatedIdentifier": "urn:uuid:F1A0A7AF-ECF3-4C7D-B675-7C6949963995",
+        "relatedIdentifierType": "UUID"
+    },
+    "softwarePaperCitationIdentifiers": "http://doi.org/0000/0000",
+    "suggests": [
+      {"@id": "https://cran.r-project.org/package=jsonld"},
+      {"@id": "https://cran.r-project.org/package=testthat"},
+      {"@id": "https://cran.r-project.org/package=rmarkdown"},
+    ]
 }
