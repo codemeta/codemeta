@@ -7,7 +7,7 @@
     "@type": "SoftwareSourceCode",
     "author": [{
         "@id": "http://orcid.org/0000-0002-2192-403X",
-        "@type": "person",
+        "@type": "Person",
         "email": "slaughter@nceas.ucsb.edu",
         "givenName": "Peter",
         "familyName":  "Slaughter",
@@ -15,14 +15,14 @@
     },
     {
         "@id": "http://orcid.org/0000-0003-0077-4738",
-        "@type": "person",
+        "@type": "Person",
         "givenName": "Matthew",
         "familyName": "Jones",
         "affiliation": "NCEAS"
     },
     {
         "@id": "http://orcid.org/0000-0002-1642-628X",
-        "@type": "person",
+        "@type": "Person",
         "givenName": "Carl",
         "familyName": "Boettiger",
         "email": "cobettig@gmail.com",
@@ -30,13 +30,11 @@
     }
     ],
     "copyrightHolder": {
-        "@type": "organization",
+        "@type": "Organization",
         "email": "info@ucop.edu",
         "name": "University of California, Santa Barbara"
     },
-    "creator": {
-     "@id": "http://orcid.org/0000-0002-1642-628X"
-    },
+
     "codeRepository": "https://github.com/codemeta/codemetar",
     "datePublished": "2014-09-06",
     "dateModified": "2014-08-15",
@@ -83,8 +81,11 @@
     },
     "softwarePaperCitationIdentifiers": "http://doi.org/0000/0000",
     "suggests": [
-      {"@id": "https://cran.r-project.org/package=jsonld"},
-      {"@id": "https://cran.r-project.org/package=testthat"},
-      {"@id": "https://cran.r-project.org/package=rmarkdown"}
+      { "@id": "https://cran.r-project.org/package=jsonld"},
+      { "@id": "https://cran.r-project.org/package=testthat"},
+      {
+        "@id": "https://cran.r-project.org/package=rmarkdown",
+        "@type": "Code"
+      }
     ]
 }
