@@ -14,7 +14,7 @@
       "affiliation": "schema:affiliation",
       "title": "schema:title",
       "description": "schema:description",
-      "version": "schema:version"
+      "version": "schema:version",
       "identifier": "schema:identifier",
       "dateCreated": "schema:dateCreated",
       "dateModified": "schema:dateModified",
@@ -23,7 +23,7 @@
       "publisher": "schema:publisher",
       "downloadUrl": "schema:downloadUrl",
       "codeRepository": "schema:codeRepository",
-      "operatingSystems": "schema:operatingSystems"
+      "operatingSystems": "schema:operatingSystems",
       "relatedLink": "schema:relatedLink",
       "license": {
           "@id": "schema:license",
@@ -36,12 +36,12 @@
       
       "depends": {
           "@id":"schema:softwareRequirements",
-          "@type": "Code"
+        "@type": "schema:SoftwareSourceCode"
       },
       
       "suggests": {
          "@id":"codemeta:suggests",
-         "@type": "Code"
+         "@type": "schema:SoftwareSourceCode"
       },
       
       
@@ -82,8 +82,8 @@
          "@type":"schema:URL"
       },
       "relatedPublications": {
-         "@id": "codemeta:relatedPublications",
-         "@type:" "schema:scholarlyArticle"
+        "@id": "codemeta:relatedPublications",
+        "@type": "schema:scholarlyArticle"
       },
       "softwarePaperCitationIdentifiers": {
          "@id":"codemeta:softwarePaperCitationIdentifiers",
@@ -92,7 +92,7 @@
 
       
       "relationships": {
-         "@id": "codemeta:relationships"
+         "@id": "codemeta:relationships",
          "@type": "codemeta:Relationship"
       },
       "relationshipType": {
@@ -110,13 +110,13 @@
       
       "TERMS_TO_BE_ADDED": "ARE LISTED BELOW HERE",
 
-      "author": "schema:author"      
+      "author": "schema:author",
       "copyrightHolder": "schema:copyrightHolder",      
-      "contributor": "schema:contributor"
+      "contributor": "schema:contributor",
       "maintainer": {
         "@id": "codemeta:maintainer",
         "@type": "schema:Person"
-      }
+      },
       
       
       "TERMS_TO_BE_REMOVED": "ARE LISTED BELOW HERE",
@@ -129,7 +129,7 @@
       
       "uploadedBy": {
          "@id":"codemeta:uploadedBy",
-         "@type": "["schema:Person", "schema:Organization"]
+         "@type": ["schema:Person", "schema:Organization"]
       },
       
       
