@@ -1,5 +1,5 @@
 {
-   "@context": {
+  "@context": {
       "schema":"http://schema.org/",
       "codemeta": "https://codemeta.github.io/terms/",
       
@@ -59,7 +59,7 @@
       },
       "embargoDate": {
          "@id":"codemeta:embargoDate",
-         "@type":["schema:Date","schema:DateTime"]
+         "@type":"schema:Date"
       },
       "isAutomatedBuild": {
          "@id":"codemeta:isAutomatedBuild",
@@ -107,61 +107,13 @@
          "@id":"codemeta:relatedIdentifierType",
          "@type":"schema:Text"
       },
-      
-      "TERMS_TO_BE_ADDED": "ARE LISTED BELOW HERE",
-
+ 
       "author": "schema:author",
       "copyrightHolder": "schema:copyrightHolder",      
       "contributor": "schema:contributor",
       "maintainer": {
         "@id": "codemeta:maintainer",
         "@type": "schema:Person"
-      },
-      
-      
-      "TERMS_TO_BE_REMOVED": "ARE LISTED BELOW HERE",
-
-      "controlledTerms": {
-          "@id":"codemeta:controlledTerms",
-          "@type":"schema:Text"
-      },
-      
-      
-      "uploadedBy": {
-         "@id":"codemeta:uploadedBy",
-         "@type": ["schema:Person", "schema:Organization"]
-      },
-      
-      
-      
-      "agents": {
-         "@id":"schema:agent"
-      },
-      "role": {
-         "@id":"codemeta:Role",
-         "@type":"@id"
-      },
-      "roleCode": {
-        "@id": "codemeta:roleCode",
-        "@type":"schema:Text"
-      },
-      "namespace": {
-        "@id":"codemeta:namespace",
-        "@type":"schema:Text"
-      },
-      "mustBeCited": {
-         "@id":"codemeta:mustBeCited",
-         "@type":"schema:Boolean"
-      },
-      "isMaintainer": {
-         "@id":"codemeta:isMaintainer",
-         "@type":"schema:Boolean"
-      },
-      "isRightsHolder": {
-         "@id":"codemeta:isRightsHolder",
-         "@type":"schema:Boolean"
       }
-
-      
-   }
+  }
 }
