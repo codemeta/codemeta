@@ -85,6 +85,6 @@
     "suggests": [
       {"@id": "https://cran.r-project.org/package=jsonld"},
       {"@id": "https://cran.r-project.org/package=testthat"},
-      {"@id": "https://cran.r-project.org/package=rmarkdown"},
+      {"@id": "https://cran.r-project.org/package=rmarkdown"}
     ]
 }
