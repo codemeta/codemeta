@@ -1,0 +1,167 @@
+{
+   "@context": {
+      "schema":"http://schema.org/",
+      "codemeta": "https://codemeta.github.io/terms/",
+      
+      "Code":"schema:SoftwareSourceCode",
+      "URL":"schema:URL",
+      "Text":"schema:Text",
+    
+      "Person": "schema:Person",
+      "Organization": "schema:Organization",
+      "email": "schema:email",
+      "name": "schema:name",
+      "affiliation": "schema:affiliation",
+      "title": "schema:title",
+      "description": "schema:description",
+      "version": "schema:version"
+      "identifier": "schema:identifier",
+      "dateCreated": "schema:dateCreated",
+      "dateModified": "schema:dateModified",
+      "datePublished": "schema:datePublished",
+      "keywords": "schema:keywords",
+      "publisher": "schema:publisher",
+      "downloadUrl": "schema:downloadUrl",
+      "codeRepository": "schema:codeRepository",
+      "operatingSystems": "schema:operatingSystems"
+      "relatedLink": "schema:relatedLink",
+      "license": {
+          "@id": "schema:license",
+          "@type": "schema:URL"
+      },
+      "programmingLanguage": {
+          "@id": "schema:programmingLanguage",
+          "@type": "schema:ComputerLanguage"
+      },
+      
+      "depends": {
+          "@id":"schema:softwareRequirements",
+          "@type": "Code"
+      },
+      
+      "suggests": {
+         "@id":"codemeta:suggests",
+         "@type": "Code"
+      },
+      
+      
+      "contIntegration": {
+         "@id":"codemeta:contIntegration",
+         "@type":"schema:URL"
+      },
+      "buildInstructions": {
+         "@id":"codemeta:buildInstructions",
+         "@type":"schema:URL"
+      },
+      "developmentStatus": {
+          "@id":"codemeta:developmentStatus",
+          "@type":"schema:Text"
+      },
+      "embargoDate": {
+         "@id":"codemeta:embargoDate",
+         "@type":["schema:Date","schema:DateTime"]
+      },
+      "isAutomatedBuild": {
+         "@id":"codemeta:isAutomatedBuild",
+         "@type":"schema:Boolean"
+      },
+      "funding": {
+          "@id": "codemeta:funding",
+          "@type": "schema:Text"
+      },
+      "packageSystem": {
+          "@id": "codemeta:packageSystem",
+          "@type": "schema:Text"
+      },
+      "readme": {
+         "@id":"codemeta:readme",
+         "@type":"schema:URL"
+      },
+      "issueTracker": {
+         "@id":"codemeta:issueTracker",
+         "@type":"schema:URL"
+      },
+      "relatedPublications": {
+         "@id": "codemeta:relatedPublications",
+         "@type:" "schema:scholarlyArticle"
+      },
+      "softwarePaperCitationIdentifiers": {
+         "@id":"codemeta:softwarePaperCitationIdentifiers",
+         "@type":"schema:Text"
+      },
+
+      
+      "relationships": {
+         "@id": "codemeta:relationships"
+         "@type": "codemeta:Relationship"
+      },
+      "relationshipType": {
+         "@id":"codemeta:relationshipType",
+         "@type":"schema:Text"
+      },
+      "relatedIdentifier": {
+         "@id":"codemeta:relatedIdentifier",
+         "@type":"schema:Text"
+      },
+      "relatedIdentifierType": {
+         "@id":"codemeta:relatedIdentifierType",
+         "@type":"schema:Text"
+      },
+      
+      "TERMS_TO_BE_ADDED": "ARE LISTED BELOW HERE"
+
+      "author": "schema:author"      
+      "copyrightHolder": "schema:copyrightHolder",      
+      "contributor": "schema:contributor"
+      "maintainer": {
+        "@id": "codemeta:maintainer",
+        "@type": "schema:Person"
+      }
+      
+      
+      "TERMS_TO_BE_REMOVED": "ARE LISTED BELOW HERE",
+
+      "controlledTerms": {
+          "@id":"codemeta:controlledTerms",
+          "@type":"schema:Text"
+      },
+      
+      
+      "uploadedBy": {
+         "@id":"codemeta:uploadedBy",
+         "@type": "["schema:Person", "schema:Organization"]
+      },
+      
+      
+      
+      "agents": {
+         "@id":"schema:agent"
+      },
+      "role": {
+         "@id":"codemeta:Role",
+         "@type":"@id"
+      },
+      "roleCode": {
+        "@id": "codemeta:roleCode",
+        "@type":"schema:Text"
+      },
+      "namespace": {
+        "@id":"codemeta:namespace",
+        "@type":"schema:Text"
+      },
+      "mustBeCited": {
+         "@id":"codemeta:mustBeCited",
+         "@type":"schema:Boolean"
+      },
+      "isMaintainer": {
+         "@id":"codemeta:isMaintainer",
+         "@type":"schema:Boolean"
+      },
+      "isRightsHolder": {
+         "@id":"codemeta:isRightsHolder",
+         "@type":"schema:Boolean"
+      }
+
+      
+   }
+}
