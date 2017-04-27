@@ -100,7 +100,7 @@
       },
       "embargoDate":{
          "@id":"codemeta:embargoDate",
-         "@type":"xsd:dataTime"
+         "@type":"xsd:dateTime"
       },
       "isAutomatedBuild":{
          "@id":"codemeta:isAutomatedBuild",
