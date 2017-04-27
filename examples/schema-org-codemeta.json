@@ -1,0 +1,61 @@
+{
+    "@context":{
+      "@vocab": "https://schema.org"
+    },
+    "title": "Generate CodeMeta Metadata for R Packages",
+    "description": "Codemeta defines a 'JSON-LD' format for describing software metadata. This package provides utilities to generate, parse, and modify codemeta.jsonld files automatically for R packages.",
+    "identifier": "http://dx.doi.org/10.5281/zenodo.XXXX",
+    "name": "codemeta",
+    "@type": "SoftwareSourceCode",
+    "author": [{
+        "@id": "http://orcid.org/0000-0002-2192-403X",
+        "@type": "person",
+        "email": "slaughter@nceas.ucsb.edu",
+        "givenName": "Peter",
+        "familyName":  "Slaughter",
+        "affiliation": "NCEAS"
+    },
+    {
+        "@id": "http://orcid.org/0000-0003-0077-4738",
+        "@type": "person",
+        "givenName": "Matthew",
+        "familyName": "Jones",
+        "affiliation": "NCEAS"
+    },
+    {
+        "@id": "http://orcid.org/0000-0002-1642-628X",
+        "@type": "person",
+        "givenName": "Carl",
+        "familyName": "Boettiger",
+        "email": "cobettig@gmail.com",
+        "affiliation": "UC Berkeley"
+    }
+    ],
+    "copyrightHolder": {
+        "@type": "organization",
+        "email": "info@ucop.edu",
+        "name": "University of California, Santa Barbara"
+    },
+    "creator": {
+     " @id": "http://orcid.org/0000-0002-1642-628X"
+    },
+    "codeRepository": "https://github.com/codemeta/codemetar",
+    "datePublished": "2014-09-06",
+    "dateModified": "2014-08-15",
+    "dateCreated": "2014-08-06",
+    "publisher": "zenodo",
+    "keywords": [
+        "publishing",
+        "DOI",
+        "credit for code"
+    ],
+    "license": "https://opensource.org/licenses/BSD-2-Clause",
+    "version": "0.1.0",
+
+    "programmingLanguage": {
+        "name": "R",
+        "URL": "https://www.r-project.org"
+    },
+    "downloadUrl": "https://github.com/codemeta/codemetar/releases/",
+    "softwareRequirements": [ "https://cran.r-project.org/package=jsonlite" ]
+}

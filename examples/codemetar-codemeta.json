@@ -1,0 +1,71 @@
+{
+  "identifier": "codemetar",
+  "@context": "https://raw.githubusercontent.com/codemeta/codemeta/master/codemeta.jsonld",
+  "@type": "SoftwareSourceCode",
+  "title": "Generate CodeMeta Metadata for R Packages",
+  "description": "Codemeta defines a 'JSON-LD' format for describing software metadata.\n    This package provides utilities to generate, parse, and modify codemeta.jsonld\n    files automatically for R packages.",
+  "name": "codemetar",
+  "licenseId": "FreeBSD",
+  "version": "0.1.0",
+  "programmingLanguage": {
+    "name": "R",
+    "version": "3.3.3",
+    "URL": "https://r-project.org"
+  },
+  "agents": [
+    {
+      "@id": {},
+      "@type": "person",
+      "name": "Carl Boettiger",
+      "email": "cboettig@gmail.com",
+      "isMaintainer": true,
+      "role": ["aut", "cre"]
+    }
+  ],
+  "suggests": [
+    {
+      "identifier": {},
+      "name": "testthat",
+      "version": null,
+      "packageSystem": "http://cran.r-project.org"
+    },
+    {
+      "identifier": {},
+      "name": "    jsonvalidate",
+      "version": null,
+      "packageSystem": "http://cran.r-project.org"
+    },
+    {
+      "identifier": {},
+      "name": "    jsonld",
+      "version": null,
+      "packageSystem": "http://cran.r-project.org"
+    },
+    {
+      "identifier": {},
+      "name": "    covr",
+      "version": null,
+      "packageSystem": "http://cran.r-project.org"
+    },
+    {
+      "identifier": {},
+      "name": "    knitr",
+      "version": null,
+      "packageSystem": "http://cran.r-project.org"
+    },
+    {
+      "identifier": {},
+      "name": "    rmarkdown",
+      "version": null,
+      "packageSystem": "http://cran.r-project.org"
+    }
+  ],
+  "depends": [
+    {
+      "identifier": {},
+      "name": "jsonlite",
+      "version": "1.3",
+      "packageSystem": "http://cran.r-project.org"
+    }
+  ]
+}
