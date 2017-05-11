@@ -2,13 +2,15 @@
   "@context": {
       "schema":"http://schema.org/",
       "codemeta": "https://codemeta.github.io/terms/",
-      
-      "Code":"schema:SoftwareSourceCode",
+
+      "SoftwareSourceCode":"schema:SoftwareSourceCode",
       "URL":"schema:URL",
       "Text":"schema:Text",
-    
       "Person": "schema:Person",
       "Organization": "schema:Organization",
+
+      "url": "schema:url",
+      "name": "schema:name",
       "email": "schema:email",
       "givenName": "schema:givenName",
       "familyName": "schema:familyName",
@@ -22,6 +24,7 @@
       "datePublished": "schema:datePublished",
       "keywords": "schema:keywords",
       "publisher": "schema:publisher",
+      "provider": "schema:provider",
       "downloadUrl": "schema:downloadUrl",
       "codeRepository": "schema:codeRepository",
       "operatingSystems": "schema:operatingSystems",
@@ -29,23 +32,32 @@
       "license": {
           "@id": "schema:license",
           "@type": "schema:URL"
+      }
+      "licenseId": {
+          "@id": "schema:license",
+          "@type": "schema:Text"
       },
       "programmingLanguage": {
           "@id": "schema:programmingLanguage",
           "@type": "schema:ComputerLanguage"
       },
-      
+      "funder": {
+        "@id": "schema:funder",
+        "@type": "schema:Organization"
+
+      },
       "depends": {
-          "@id":"schema:softwareRequirements",
+        "@id":"schema:softwareRequirements",
         "@type": "schema:SoftwareSourceCode"
       },
-      
+
+
       "suggests": {
          "@id":"codemeta:suggests",
          "@type": "schema:SoftwareSourceCode"
       },
-      
-      
+
+
       "contIntegration": {
          "@id":"codemeta:contIntegration",
          "@type":"schema:URL"
@@ -70,9 +82,10 @@
           "@id": "codemeta:funding",
           "@type": "schema:Text"
       },
+
       "packageSystem": {
           "@id": "codemeta:packageSystem",
-          "@type": "schema:Text"
+          "@type": "schema:Organization"
       },
       "readme": {
          "@id":"codemeta:readme",
@@ -84,14 +97,14 @@
       },
       "relatedPublications": {
         "@id": "codemeta:relatedPublications",
-        "@type": "schema:scholarlyArticle"
+        "@type": "schema:ScholarlyArticle"
       },
       "softwarePaperCitationIdentifiers": {
          "@id":"codemeta:softwarePaperCitationIdentifiers",
          "@type":"schema:Text"
       },
 
-      
+
       "relationships": {
          "@id": "codemeta:relationships",
          "@type": "codemeta:Relationship"
@@ -108,9 +121,9 @@
          "@id":"codemeta:relatedIdentifierType",
          "@type":"schema:Text"
       },
- 
+
       "author": "schema:author",
-      "copyrightHolder": "schema:copyrightHolder",      
+      "copyrightHolder": "schema:copyrightHolder",
       "contributor": "schema:contributor",
       "maintainer": {
         "@id": "codemeta:maintainer",
