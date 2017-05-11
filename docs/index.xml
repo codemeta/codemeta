@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The CodeMeta Project</title>
+    <link>/</link>
+    <description>Recent content on The CodeMeta Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Agenda</title>
+      <link>/agenda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/agenda/</guid>
+      <description>CodeMeta Workshop Venue and logistics  Portlant Paramount Hotel, Friday &amp;amp; Saturday  Coffee at 8am, Lewis Room  Sunday Force16 Workshop  OHSU Collaborative Life Science Building, Rooms TBD   Background materials and links  CodeMeta Web Site NIH Software Discovery report CodeMeta Github repo Software Metadata Crosswalk Guidelines for Persistently Identifying Software Using DataCite  Goals  Consensus cross walk table JSON-LD draft schema Consensus on software metadata  Outline of journal article   April 15 Portland Paramount Hotel, Lewis Room</description>
+    </item>
+    
+    <item>
+      <title>Codemeta Terms</title>
+      <link>/terms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/terms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Codemeta Workshop</title>
+      <link>/workshop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/workshop/</guid>
+      <description>April 15 - 17 2016 Portland, Oregon The Future of Software Metadata Agenda 
+ The CodeMeta Project Workshop The CodeMeta project does not seek to create yet another standard. Rather, we&amp;rsquo;re aiming to create a crosswalk table between standards already in use &amp;ndash; think of this as a Rosetta stone of software metadata. Beginning in an Open Science Code-fest discussion lead by Abby Mayes and now thanks to a generous NSF EAGER Grant to Carl Boettiger (UC Berkeley) &amp;amp; Matt Jones (NCEAS &amp;amp; UC Santa Barbara), we will bring together leaders of software and data repositories with academic researchers to develop this crosswalk table for software metadata.</description>
+    </item>
+    
+    <item>
+      <title>Crosswalk</title>
+      <link>/crosswalk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/crosswalk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Codemeta JSON-LD Representation</title>
+      <link>/jsonld/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/jsonld/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
