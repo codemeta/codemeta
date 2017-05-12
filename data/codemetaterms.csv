@@ -1,0 +1,15 @@
+Property,Type,Description
+depends,SoftwareSourceCode,Required software dependencies
+suggests,SoftwareSourceCode,"Optional dependencies , e.g. for optional features, code development, etc"
+maintainer,Person,Individual responsible for maintaining the software (usually includes an email contact address)
+contIntegration,URL,link to continuous integration service
+licenseId,Text,"Abbreviation for an open source license, ideally an SPDX code. (Compare to schema:license which is @type URL or CreativeWork)"
+buildInstructions,URL,link to installation instructions/documentation
+developmentStatus,Text,"Description of development status, e.g. Active, inactive, supsended. See repostatus.org"
+embargoDate,Date,"Software may be embargoed from public access until a specified date (e.g. pending publication, 1 year from publication)"
+funding,Text,Funding source (e.g. specific grant)
+packageSystem,Organization or URL,"package distribution system, such as CRAN url, Node registry, etc.  Consider using schema:provider instead?"
+issueTracker,URL,link to software bug reporting or issue tracking system
+relatedPublications,ScholarlyArticle,An academic publication related to the software. 
+readme,URL,link to software Readme file
+relationships,codemeta:Relationship,"A DataCite relationship triple of relationshipType, relatedIdentifier, and relatedIdentifierType"

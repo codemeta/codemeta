@@ -99,12 +99,6 @@
         "@id": "codemeta:relatedPublications",
         "@type": "schema:ScholarlyArticle"
       },
-      "softwarePaperCitationIdentifiers": {
-         "@id":"codemeta:softwarePaperCitationIdentifiers",
-         "@type":"schema:Text"
-      },
-
-
       "relationships": {
          "@id": "codemeta:relationships",
          "@type": "codemeta:Relationship"

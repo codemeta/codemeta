@@ -1,42 +1,163 @@
-Concept,Keep Concept?,CodeMeta Field,Schema.org,DataCite,OntoSoft,Zenodo,GitHub,Figshare,Software Ontology,code.jsonld,Software Discovery Index,Dublin Core,R Package Description,Debian Package Metadata,Python Distutils (PyPI),Trove Software Map,Perl Module Description (CPAN::Meta),JavaScript package descption (npm),Java (Maven),Octave,Ruby Gem,ASCL,Use Cases
-Agent,y,agents,agent,Creator,hasCreator,creators,owner,,,author,,creator,Authors@R,,,,,,,,,,
-AuthorAffiliation,y,affiliation,affiliation,affilliation,hasCreator,creators.affiliation,-,-,-,affiliation,-,-,-,-,-,-,-,-,-,-,-,,"3, 4, 5"
-AuthorEmail,y,email,email,-,hasCreator,-,-,-,-,email,-,-,Authors@R person(email),-,author_email,-,author:email-address,author.email,-,"DESCRIPTION/Author, DESCRIPTION/Maintainer",email,email,"3, 4, 5"
-AuthorId,y,@id,"identifier, @id",nameIdentifier,hasCreator,creators.orcid,-,id(internal id/ORCID),-,id(ORCID),-,-,-,-,-,-,-,-,-,-,-,,"3, 4, 5"
-AuthorName,y,name,"name, givenName, FamilyName",-,hasCreator,-,-,Name,-,name,-,-,"Authors@R person(given, family)",-,-,-,author:contact-name,author.name,-,-,-,,"3,4,5"
-BuildLink,y,buildInstructions,-,-,-,r_i.relation,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,"2,3,4"
-CILink,y,contIntegration,-,-,-,r_i.relation,-,-,-,-,-,-,-,-,-,-,-,-,ciManagement,-,-,,"2, 3, 9"
-CodeRepositoryLink,y,codeRepository,codeRepository,-,os:hasCodeLocation os:hasExecutableLocation,r_i.relation,git_url,-,-,codeRepository,Links to code repository,-,URL,HomePage,url,-,resources.repository,repository,repositories,-,homepage,site_list,"1, 2, 3, 7, 9, (11), (12)"
-ControlledTerms,y,controlledTerms,keywords,-,hasSoftwareCategory hasDomainKeywords,communities,-,category,-,-,-,-,-,-,classifiers['Topic'],Topic,CATEGORIES,-,-,DESCRIPTION/Categories,-,,"1,3"
-DateCreated,y,dateCreated,dateCreated,Date (dateType = Created),-,-,created_at,-,-,dateCreated,-,created,-,Date,-,-,-,-,-,-,-,,3
-DateModified,y,dateModified,dateModified,Date (dateType = Issued),-,-,updated_at,-,-,dateModified,-,modified,-,-,-,last-updated,-,-,-,-,-,,3
-DatePublished,y,datePublished,datePublished,PublicationYear,-,date_published,-,date_retrieved,-,datePublished,-,date,Date,-,-,-,-,-,-,DESCRIPTION/Date,-,,"3,5,6"
-Dependency,y,depends,softwareRequirements,-,hasDependency -> Software,-,-,-,-,dependency,"Platform, environment, and dependencies",requires,Depends; Imports; Enhances; LinkingTo; Additional_repositories,-,install_requires,Database Environment,prereqs,dependencies / devDependencies / peerDependencies / bundledDependencies / optionalDependencies / cpu / engines,prerequisites,"DESCRIPTION/Depends, DESCRIPTION/SystemRequirements, DESCRIPTION/BuildRequires","requirements, add_development_dependency, add_runtime_dependency",,"1, 2, 3, 4, 7, 8, 9"
-Description,y,description,description,Description,hasShortDescription hasUsesAndAssumptions hasUseLimitations,description/notes,description,Description,software,description,Human-readable synopsis,description,Description,Description,"description, long_description",description,"abstract, description",description,description,"DESCRIPTION/Title, DESCRIPTION/Description","summary, description",abstract,"(1), 3, (4), (9)"
-DownloadLink,y,downloadLink,downloadUrl,,,,,,,,,,,,,,,,,,,,
-EmbargoDate,y,embargoDate,-,Date (dateType = Available),-,embargo_date,-,embargo_date,-,-,-,available,-,-,-,-,-,-,-,-,-,,3
-Funding,y,funding,-,-,hasFundingSource,contributors.Funder,-,-,-,-,Associated grants,-,-,-,-,-,-,-,-,-,-,,3
-MustBeCited,y,mustBeCited,-,,,,,,,,,,,,,,,,,,,,
-isMaintainer,y,isMaintainer,-,,,,,,,,,,,,,,,,,,,,
-isRightsHolder,y,isRightsHolder,-,,,,,,,,,,,,,,,,,,,,
-IssueLink,y,issueTracker,-,-,sort of os:hasSoftwarefSupport (see Software Support below),r_i.relation,issues_url,-,-,-,-,-,BugReports,-,-,-,resources.bugtracker,bugs,issuesManagement,DESCRIPTION/Problems,-,,"1, 2,  3, 7, 8, 11"
-License,y,licenseId,license,Rights,License,license,license (https://developer.github.com/v3/licenses/#get-a-repositorys-license),License,software license,license,Software license,license,License,-,"license, classifiers['License']",License,license,license,license,DESCRIPTION/License,license/licenses,,"3, 10"
-ObjectType,y,@type,@type,ResourceType(resourceTypeGeneral=Software),---,upload_type,-,file_type,-,type,-,type,Type,Package-Type,-,-,-,-,type,-,-,,1-12
-OperatingSystem,y,operatingSystems,operatingSystems,-,SupportsOperatingSystem,-,-,-,-,-,-,-,-,-,classifiers['Operating System'],Operating System,OSNAMES,os,-,-,-,,-
-ProgrammingLanguage,y,programmingLanguage,programmingLanguage,Format,hasProgrammingLanguage,-,languages_url,-,programming language,-,-,-,-,-,classifiers['Programming Language'],Programming Language,-,-,-,-,-,,"1, 2, 3, 7, 8, 9"
-Publisher,y,publisher,publisher,Publisher,os:hasPublisher means metadata author,-,-,-,software publisher organization,publisher,-,-,-,-,-,-,-,-,-,-,-,,3
-ReadmeLink,y,readme,releaseNotes,-,hasDocumentation hasInstallationInstructions,r_i.relation,-,-,-,-,-,-,-,-,-,-,README,files,-,-,-,,"1, 2, 3"
-RelatedLink,y,relatedLink,-,-,hasProjectWebSite,related_identifiers,homepage,links,-,codeRepository,-,relation,-,-,-,homepage,resources,homepage,-,DESCRIPTION/Url,homepage,,"1-9, 11-12"
-RelatedPublications,y,relatedPublications,-,-,hasSimilarSoftware,related_identifiers,-,-,-,-,Associated publications,-,-,-,-,-,-,-,-,-,-,used_in,3
-Relationship,y,relationships,-,"RelatedIdentifier(relationType=isPartOf), RelatedIdentifier(relationType=isVariantFormOf), RelatedIdentifier(relationType=isPreviousVersionOf), RelatedIdentifier(relationType=isNextVersionOf)",hasRelevantDataSources,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,-
-Role,y,role,-,,,,,,,,,,,,,,,,,,,,
-SoftwareIdentifier,y,identifier,"identifier, @id",Identifier,hasUniqueId,id,id,?,-,identifier,Persistent identifier,identifier,Package,Package,-,-,-,name,groupId,-,-,ascl_id,1-12
-SoftwarePaperCitation,y,softwarePaperCitationIdentifiers,,-,-,notes ?,-,-,Citation,-,-,-,-,-,-,-,-,-,-,-,-,described_in,"3, 4, 5, 6"
-SoftwareTitle,y,title,title,Title,hasName,title,full_name,Title,software,title,Software title,title,Title,-,name,Title,name,name,name,DESCRIPTION/Name,name,title,"1, 3, 4, 5"
-Suggests,y,suggests,,-,hasSimilarSoftware hasInteroperableSoftware hasCompositionDescription,related_identifiers,-,-,-,-,-,-,Suggests,-,-,-,optional_features,-,-,-,-,,"1, 2"
-Tags,y,tags,keywords,Subject,hasSoftwareCategory hasDomainKeywords,keywords,-,tags,-,keywords,-,subject,-,-,keywords,-,keywords,keywords,-,-,-,,"1, 3"
-UploadedBy,y,uploadedBy,-,-,hasPublisher,owners (?),-,-,-,uploadedBy,-,-,"*Three letter code can specify other roles like author above: http://www.loc.gov/marc/relators/relaterm.html, https://journal.r-project.org/archive/2012-1/RJournal_2012-1_Hornik~et~al.pdf",-,-,-,-,-,-,-,-,added_by,"3, 4, 5"
-Version,y,version,version,Version,hasSoftwareVersion hasVersionReleaseDate supersedes supersededBy,-,-,-,Version,-,Software version,-,Version, numeric_version,Version,version,-,version,version,version,DESCRIPTION/Version,"5,8,9",version
-ZippedCodeLink,y,zippedCode,-,-,-,filename,archive_url,file,-,-,-,-,-,-,download_url,-,-,-,-,-,-,,-
-DevelopmentStatus,y,developmentStatus,-,-,activeDevelopment,-,-,-,-,-,-,-,-,-,classifiers['Development Status'],Development Status,release_status,-,-,-,-,,-
-TestCoverage,? - only in ontosoft,-,-,-,hasTestData has TestInstructions,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,3
+Property,Type,Description
+codeRepository,URL ,"Link to the repository where the un-compiled, human readable code and related code is located (SVN, github, CodePlex)."
+codeSampleType,Text ,"What type of code sample: full (compile ready) solution, code snippet, inline code, scripts, template. Supersedes sampleType."
+programmingLanguage,ComputerLanguage  or ,The computer programming language.
+,Text ,
+runtimePlatform,Text ,"Runtime platform or script interpreter dependencies (Example - Java v1, Python2.3, .Net Framework 3.0). Supersedes runtime."
+targetProduct,SoftwareApplication ,"Target Operating System / Product to which the code applies. If applies to several versions, just the product name can be used."
+applicationCategory,Text  or ,"Type of software application, e.g. 'Game, Multimedia'."
+,URL ,
+applicationSubCategory,Text  or ,"Subcategory of the application, e.g. 'Arcade Game'."
+,URL ,
+applicationSuite,Text ,The name of the application suite to which the application belongs (e.g. Excel belongs to Office).
+availableOnDevice,Text ,Device required to run the application. Used in cases where a specific make/model is required to run the application. Supersedes device.
+countriesNotSupported,Text ,Countries for which the application is not supported. You can also provide the two-letter ISO 3166-1 alpha-2 country code.
+countriesSupported,Text ,Countries for which the application is supported. You can also provide the two-letter ISO 3166-1 alpha-2 country code.
+downloadUrl,URL ,"If the file can be downloaded, URL to download the binary."
+featureList,Text  or ,Features or modules provided by this application (and possibly required by other applications).
+,URL ,
+fileSize,Text ,"Size of the application / package (e.g. 18MB). In the absence of a unit (MB, KB etc.), KB will be assumed."
+installUrl,URL ,"URL at which the app may be installed, if different from the URL of the item."
+memoryRequirements,Text  or ,Minimum memory requirements.
+,URL ,
+operatingSystem,Text ,"Operating systems supported (Windows 7, OSX 10.6, Android 1.6)."
+permissions,Text ,"Permission(s) required to run the app (for example, a mobile app may require full internet access or may run only on wifi)."
+processorRequirements,Text ,Processor architecture required to run the application (e.g. IA64).
+releaseNotes,Text  or ,Description of what changed in this version.
+,URL ,
+screenshot,ImageObject  or ,A link to a screenshot image of the app.
+,URL ,
+softwareAddOn,SoftwareApplication ,Additional content for a software application.
+softwareHelp,CreativeWork ,Software application help.
+softwareRequirements,Text  or ,"Component dependency requirements for application. This includes runtime environments and shared libraries that are not included in the application distribution package, but required to run the application (Examples: DirectX, Java or .NET runtime). Supersedes requirements."
+,URL ,
+softwareVersion,Text ,Version of the software instance.
+storageRequirements,Text  or ,Storage requirements (free space required).
+,URL ,
+supportingData,DataFeed ,Supporting data for a SoftwareApplication.
+Properties from CreativeWork,,
+about,Thing ,The subject matter of the content.
+accessMode,Text ,"The human sensory perceptual system or cognitive faculty through which a person may process or perceive information. Expected values include: auditory, tactile, textual, visual, colorDependent, chartOnVisual, chemOnVisual, diagramOnVisual, mathOnVisual, musicOnVisual, textOnVisual."
+accessModeSufficient,Text ,"A list of single or combined accessModes that are sufficient to understand all the intellectual content of a resource. Expected values include: auditory, tactile, textual, visual."
+accessibilityAPI,Text ,Indicates that the resource is compatible with the referenced accessibility API (WebSchemas wiki lists possible values).
+accessibilityControl,Text ,Identifies input methods that are sufficient to fully control the described resource (WebSchemas wiki lists possible values).
+accessibilityFeature,Text ,"Content features of the resource, such as accessible media, alternatives and supported enhancements for accessibility (WebSchemas wiki lists possible values)."
+accessibilityHazard,Text ,A characteristic of the described resource that is physiologically dangerous to some users. Related to WCAG 2.0 guideline 2.3 (WebSchemas wiki lists possible values).
+accessibilitySummary,Text ,"A human-readable summary of specific accessibility features or deficiencies, consistent with the other accessibility metadata but expressing subtleties such as ""short descriptions are present but long descriptions will be needed for non-visual users"" or ""short descriptions are present and no long descriptions are needed."""
+accountablePerson,Person ,Specifies the Person that is legally accountable for the CreativeWork.
+aggregateRating,AggregateRating ,"The overall rating, based on a collection of reviews or ratings, of the item."
+alternativeHeadline,Text ,A secondary title of the CreativeWork.
+associatedMedia,MediaObject ,A media object that encodes this CreativeWork. This property is a synonym for encoding.
+audience,Audience ,"An intended audience, i.e. a group for whom something was created. Supersedes serviceAudience."
+audio,AudioObject ,An embedded audio object.
+author,Organization  or ,The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangeably.
+,Person ,
+award,Text ,An award won by or for this item. Supersedes awards.
+character,Person ,Fictional person connected with a creative work.
+citation,CreativeWork  or ,"A citation or reference to another creative work, such as another publication, web page, scholarly article, etc."
+,Text ,
+comment,Comment ,"Comments, typically from users."
+commentCount,Integer ,"The number of comments this CreativeWork (e.g. Article, Question or Answer) has received. This is most applicable to works published in Web sites with commenting system; additional comments may exist elsewhere."
+contentLocation,Place ,"The location depicted or described in the content. For example, the location in a photograph or painting."
+contentRating,Text ,"Official rating of a piece of content—for example,'MPAA PG-13'."
+contributor,Organization  or ,A secondary contributor to the CreativeWork or Event.
+,Person ,
+copyrightHolder,Organization  or ,The party holding the legal copyright to the CreativeWork.
+,Person ,
+copyrightYear,Number ,The year during which the claimed copyright for the CreativeWork was first asserted.
+creator,Organization  or ,The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork.
+,Person ,
+dateCreated,Date  or ,The date on which the CreativeWork was created or the item was added to a DataFeed.
+,DateTime ,
+dateModified,Date  or ,The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed.
+,DateTime ,
+datePublished,Date ,Date of first broadcast/publication.
+discussionUrl,URL ,A link to the page containing the comments of the CreativeWork.
+editor,Person ,Specifies the Person who edited the CreativeWork.
+educationalAlignment,AlignmentObject ,An alignment to an established educational framework.
+educationalUse,Text ,"The purpose of a work in the context of education; for example, 'assignment', 'group work'."
+encoding,MediaObject ,A media object that encodes this CreativeWork. This property is a synonym for associatedMedia. Supersedes encodings.
+exampleOfWork,CreativeWork ,A creative work that this work is an example/instance/realization/derivation of.
+,,Inverse property: workExample.
+fileFormat,Text  or ,"Media type, typically MIME format (see IANA site) of the content e.g. application/zip of a SoftwareApplication binary. In cases where a CreativeWork has several media type representations, 'encoding' can be used to indicate each MediaObject alongside particular fileFormat information. Unregistered or niche file formats can be indicated instead via the most appropriate URL, e.g. defining Web page or a Wikipedia entry."
+,URL ,
+funder,Organization  or ,A person or organization that supports (sponsors) something through some kind of financial contribution.
+,Person ,
+genre,Text  or ,"Genre of the creative work, broadcast channel or group."
+,URL ,
+hasPart,CreativeWork ,Indicates a CreativeWork that is (in some sense) a part of this CreativeWork.
+,,Inverse property: isPartOf.
+headline,Text ,Headline of the article.
+inLanguage,Language  or ,The language of the content or performance or used in an action. Please use one of the language codes from the IETF BCP 47 standard. See also availableLanguage. Supersedes language.
+,Text ,
+interactionStatistic,InteractionCounter ,The number of interactions for the CreativeWork using the WebSite or SoftwareApplication. The most specific child type of InteractionCounter should be used. Supersedes interactionCount.
+interactivityType,Text ,"The predominant mode of learning supported by the learning resource. Acceptable values are 'active', 'expositive', or 'mixed'."
+isAccessibleForFree,Boolean ,A flag to signal that the publication is accessible for free. Supersedes free.
+isBasedOn,CreativeWork  or ,"A resource that was used in the creation of this resource. This term can be repeated for multiple sources. For example, http://example.com/great-multiplication-intro.html. Supersedes isBasedOnUrl."
+,Product  or ,
+,URL ,
+isFamilyFriendly,Boolean ,Indicates whether this content is family friendly.
+isPartOf,CreativeWork ,Indicates a CreativeWork that this CreativeWork is (in some sense) part of.
+,,Inverse property: hasPart.
+keywords,Text ,Keywords or tags used to describe this content. Multiple entries in a keywords list are typically delimited by commas.
+learningResourceType,Text ,"The predominant type or kind characterizing the learning resource. For example, 'presentation', 'handout'."
+license,CreativeWork  or ,"A license document that applies to this content, typically indicated by URL."
+,URL ,
+locationCreated,Place ,"The location where the CreativeWork was created, which may not be the same as the location depicted in the CreativeWork."
+mainEntity,Thing ,Indicates the primary entity described in some page or other CreativeWork.
+,,Inverse property: mainEntityOfPage.
+material,Product  or ,"A material that something is made from, e.g. leather, wool, cotton, paper."
+,Text  or ,
+,URL ,
+mentions,Thing ,"Indicates that the CreativeWork contains a reference to, but is not necessarily about a concept."
+offers,Offer ,"An offer to provide this item—for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event."
+position,Integer  or ,The position of an item in a series or sequence of items.
+,Text ,
+producer,Organization  or ,"The person or organization who produced the work (e.g. music album, movie, tv/radio series etc.)."
+,Person ,
+provider,Organization  or ,"The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller. Supersedes carrier."
+,Person ,
+publication,PublicationEvent ,A publication event associated with the item.
+publisher,Organization  or ,The publisher of the creative work.
+,Person ,
+publishingPrinciples,URL ,Link to page describing the editorial principles of the organization primarily responsible for the creation of the CreativeWork.
+recordedAt,Event ,The Event where the CreativeWork was recorded. The CreativeWork may capture all or part of the event.
+,,Inverse property: recordedIn.
+releasedEvent,PublicationEvent ,"The place and time the release was issued, expressed as a PublicationEvent."
+review,Review ,A review of the item. Supersedes reviews.
+schemaVersion,Text  or ,"Indicates (by URL or string) a particular version of a schema used in some CreativeWork. For example, a document could declare a schemaVersion using an URL such as http://schema.org/version/2.0/ if precise indication of schema version was required by some application."
+,URL ,
+sourceOrganization,Organization ,The Organization on whose behalf the creator was working.
+spatialCoverage,Place ,"The spatialCoverage of a CreativeWork indicates the place(s) which are the focus of the content. It is a subproperty of contentLocation intended primarily for more technical and detailed materials. For example with a Dataset, it indicates areas that the dataset describes: a dataset of New York weather would have spatialCoverage which was the place: the state of New York. Supersedes spatial."
+sponsor,Organization  or ,"A person or organization that supports a thing through a pledge, promise, or financial contribution. e.g. a sponsor of a Medical Study or a corporate sponsor of an event."
+,Person ,
+temporalCoverage,DateTime  or ,"The temporalCoverage of a CreativeWork indicates the period that the content applies to, i.e. that it describes, either as a DateTime or as a textual string indicating a time period in ISO 8601 time interval format. In the case of a Dataset it will typically indicate the relevant time period in a precise notation (e.g. for a 2011 census dataset, the year 2011 would be written ""2011/2012""). Other forms of content e.g. ScholarlyArticle, Book, TVSeries or TVEpisode may indicate their temporalCoverage in broader terms - textually or via well-known URL. Written works such as books may sometimes have precise temporal coverage too, e.g. a work set in 1939 - 1945 can be indicated in ISO 8601 interval format format via ""1939/1945"". Supersedes datasetTimeInterval, temporal."
+,Text  or ,
+,URL ,
+text,Text ,The textual content of this CreativeWork.
+thumbnailUrl,URL ,A thumbnail image relevant to the Thing.
+timeRequired,Duration ,"Approximate or typical time it takes to work with or through this learning resource for the typical intended target audience, e.g. 'P30M', 'P1H25M'."
+translator,Organization  or ,"Organization or person who adapts a creative work to different languages, regional differences and technical requirements of a target market, or that translates during some event."
+,Person ,
+typicalAgeRange,Text ,"The typical expected age range, e.g. '7-9', '11-'."
+version,Number  or ,The version of the CreativeWork embodied by a specified resource.
+,Text ,
+video,VideoObject ,An embedded video object.
+workExample,CreativeWork ,"Example/instance/realization/derivation of the concept of this creative work. eg. The paperback edition, first edition, or eBook."
+,,Inverse property: exampleOfWork.
+Properties from Thing,,
+additionalType,URL ,"An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. In RDFa syntax, it is better to use the native RDFa syntax - the 'typeof' attribute - for multiple types. Schema.org tools may have only weaker understanding of extra types, in particular those defined externally."
+alternateName,Text ,An alias for the item.
+description,Text ,A description of the item.
+disambiguatingDescription,Text ,"A sub property of description. A short description of the item used to disambiguate from other, similar items. Information from other properties (in particular, name) may be necessary for the description to be useful for disambiguation."
+identifier,PropertyValue  or ,"The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See background notes for more details."
+,Text  or ,
+,URL ,
+image,ImageObject  or ,An image of the item. This can be a URL or a fully described ImageObject.
+,URL ,
+mainEntityOfPage,CreativeWork  or ,Indicates a page (or other CreativeWork) for which this thing is the main entity being described. See background notes for details.
+,URL ,Inverse property: mainEntity.
+name,Text ,The name of the item.
+potentialAction,Action ,"Indicates a potential Action, which describes an idealized action in which this thing would play an 'object' role."
+sameAs,URL ,"URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website."
+url,URL ,URL of the item.
