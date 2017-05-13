@@ -1,0 +1,42 @@
+Concept,Keep Concept?,CodeMeta Field,Schema.org,DataCite,OntoSoft,Zenodo,GitHub,Figshare,Software Ontology,code.jsonld,Software Discovery Index,Dublin Core,R Package Description,Debian Package Metadata,Python Distutils (PyPI),Trove Software Map,Perl Module Description (CPAN::Meta),JavaScript package descption (npm),Java (Maven),Octave,Ruby Gem,ASCL,Use Cases
+Agent,y,agents,agent,Creator,hasCreator,creators,owner,,,author,,creator,Authors@R,,,,,,,,,,
+AuthorAffiliation,y,affiliation,affiliation,affilliation,hasCreator,creators.affiliation,-,-,-,affiliation,-,-,-,-,-,-,-,-,-,-,-,,"3, 4, 5"
+AuthorEmail,y,email,email,-,hasCreator,-,-,-,-,email,-,-,Authors@R person(email),-,author_email,-,author:email-address,author.email,-,"DESCRIPTION/Author, DESCRIPTION/Maintainer",email,email,"3, 4, 5"
+AuthorId,y,@id,"identifier, @id",nameIdentifier,hasCreator,creators.orcid,-,id(internal id/ORCID),-,id(ORCID),-,-,-,-,-,-,-,-,-,-,-,,"3, 4, 5"
+AuthorName,y,name,"name, givenName, FamilyName",-,hasCreator,-,-,Name,-,name,-,-,"Authors@R person(given, family)",-,-,-,author:contact-name,author.name,-,-,-,,"3,4,5"
+BuildLink,y,buildInstructions,-,-,-,r_i.relation,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,"2,3,4"
+CILink,y,contIntegration,-,-,-,r_i.relation,-,-,-,-,-,-,-,-,-,-,-,-,ciManagement,-,-,,"2, 3, 9"
+CodeRepositoryLink,y,codeRepository,codeRepository,-,os:hasCodeLocation os:hasExecutableLocation,r_i.relation,git_url,-,-,codeRepository,Links to code repository,-,URL,HomePage,url,-,resources.repository,repository,repositories,-,homepage,site_list,"1, 2, 3, 7, 9, (11), (12)"
+ControlledTerms,y,controlledTerms,keywords,-,hasSoftwareCategory hasDomainKeywords,communities,-,category,-,-,-,-,-,-,classifiers['Topic'],Topic,CATEGORIES,-,-,DESCRIPTION/Categories,-,,"1,3"
+DateCreated,y,dateCreated,dateCreated,Date (dateType = Created),-,-,created_at,-,-,dateCreated,-,created,-,Date,-,-,-,-,-,-,-,,3
+DateModified,y,dateModified,dateModified,Date (dateType = Issued),-,-,updated_at,-,-,dateModified,-,modified,-,-,-,last-updated,-,-,-,-,-,,3
+DatePublished,y,datePublished,datePublished,PublicationYear,-,date_published,-,date_retrieved,-,datePublished,-,date,Date,-,-,-,-,-,-,DESCRIPTION/Date,-,,"3,5,6"
+Dependency,y,depends,softwareRequirements,-,hasDependency -> Software,-,-,-,-,dependency,"Platform, environment, and dependencies",requires,Depends; Imports; Enhances; LinkingTo; Additional_repositories,-,install_requires,Database Environment,prereqs,dependencies / devDependencies / peerDependencies / bundledDependencies / optionalDependencies / cpu / engines,prerequisites,"DESCRIPTION/Depends, DESCRIPTION/SystemRequirements, DESCRIPTION/BuildRequires","requirements, add_development_dependency, add_runtime_dependency",,"1, 2, 3, 4, 7, 8, 9"
+Description,y,description,description,Description,hasShortDescription hasUsesAndAssumptions hasUseLimitations,description/notes,description,Description,software,description,Human-readable synopsis,description,Description,Description,"description, long_description",description,"abstract, description",description,description,"DESCRIPTION/Title, DESCRIPTION/Description","summary, description",abstract,"(1), 3, (4), (9)"
+DownloadLink,y,downloadLink,downloadUrl,,,,,,,,,,,,,,,,,,,,
+EmbargoDate,y,embargoDate,-,Date (dateType = Available),-,embargo_date,-,embargo_date,-,-,-,available,-,-,-,-,-,-,-,-,-,,3
+Funding,y,funding,-,-,hasFundingSource,contributors.Funder,-,-,-,-,Associated grants,-,-,-,-,-,-,-,-,-,-,,3
+MustBeCited,y,mustBeCited,-,,,,,,,,,,,,,,,,,,,,
+isMaintainer,y,isMaintainer,-,,,,,,,,,,,,,,,,,,,,
+isRightsHolder,y,isRightsHolder,-,,,,,,,,,,,,,,,,,,,,
+IssueLink,y,issueTracker,-,-,sort of os:hasSoftwarefSupport (see Software Support below),r_i.relation,issues_url,-,-,-,-,-,BugReports,-,-,-,resources.bugtracker,bugs,issuesManagement,DESCRIPTION/Problems,-,,"1, 2,  3, 7, 8, 11"
+License,y,licenseId,license,Rights,License,license,license (https://developer.github.com/v3/licenses/#get-a-repositorys-license),License,software license,license,Software license,license,License,-,"license, classifiers['License']",License,license,license,license,DESCRIPTION/License,license/licenses,,"3, 10"
+ObjectType,y,@type,@type,ResourceType(resourceTypeGeneral=Software),---,upload_type,-,file_type,-,type,-,type,Type,Package-Type,-,-,-,-,type,-,-,,1-12
+OperatingSystem,y,operatingSystems,operatingSystems,-,SupportsOperatingSystem,-,-,-,-,-,-,-,-,-,classifiers['Operating System'],Operating System,OSNAMES,os,-,-,-,,-
+ProgrammingLanguage,y,programmingLanguage,programmingLanguage,Format,hasProgrammingLanguage,-,languages_url,-,programming language,-,-,-,-,-,classifiers['Programming Language'],Programming Language,-,-,-,-,-,,"1, 2, 3, 7, 8, 9"
+Publisher,y,publisher,publisher,Publisher,os:hasPublisher means metadata author,-,-,-,software publisher organization,publisher,-,-,-,-,-,-,-,-,-,-,-,,3
+ReadmeLink,y,readme,releaseNotes,-,hasDocumentation hasInstallationInstructions,r_i.relation,-,-,-,-,-,-,-,-,-,-,README,files,-,-,-,,"1, 2, 3"
+RelatedLink,y,relatedLink,-,-,hasProjectWebSite,related_identifiers,homepage,links,-,codeRepository,-,relation,-,-,-,homepage,resources,homepage,-,DESCRIPTION/Url,homepage,,"1-9, 11-12"
+RelatedPublications,y,relatedPublications,-,-,hasSimilarSoftware,related_identifiers,-,-,-,-,Associated publications,-,-,-,-,-,-,-,-,-,-,used_in,3
+Relationship,y,relationships,-,"RelatedIdentifier(relationType=isPartOf), RelatedIdentifier(relationType=isVariantFormOf), RelatedIdentifier(relationType=isPreviousVersionOf), RelatedIdentifier(relationType=isNextVersionOf)",hasRelevantDataSources,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,-
+Role,y,role,-,,,,,,,,,,,,,,,,,,,,
+SoftwareIdentifier,y,identifier,"identifier, @id",Identifier,hasUniqueId,id,id,?,-,identifier,Persistent identifier,identifier,Package,Package,-,-,-,name,groupId,-,-,ascl_id,1-12
+SoftwarePaperCitation,y,softwarePaperCitationIdentifiers,,-,-,notes ?,-,-,Citation,-,-,-,-,-,-,-,-,-,-,-,-,described_in,"3, 4, 5, 6"
+SoftwareTitle,y,title,title,Title,hasName,title,full_name,Title,software,title,Software title,title,Title,-,name,Title,name,name,name,DESCRIPTION/Name,name,title,"1, 3, 4, 5"
+Suggests,y,suggests,,-,hasSimilarSoftware hasInteroperableSoftware hasCompositionDescription,related_identifiers,-,-,-,-,-,-,Suggests,-,-,-,optional_features,-,-,-,-,,"1, 2"
+Tags,y,tags,keywords,Subject,hasSoftwareCategory hasDomainKeywords,keywords,-,tags,-,keywords,-,subject,-,-,keywords,-,keywords,keywords,-,-,-,,"1, 3"
+UploadedBy,y,uploadedBy,-,-,hasPublisher,owners (?),-,-,-,uploadedBy,-,-,"*Three letter code can specify other roles like author above: http://www.loc.gov/marc/relators/relaterm.html, https://journal.r-project.org/archive/2012-1/RJournal_2012-1_Hornik~et~al.pdf",-,-,-,-,-,-,-,-,added_by,"3, 4, 5"
+Version,y,version,version,Version,hasSoftwareVersion hasVersionReleaseDate supersedes supersededBy,-,-,-,Version,-,Software version,-,Version, numeric_version,Version,version,-,version,version,version,DESCRIPTION/Version,"5,8,9",version
+ZippedCodeLink,y,zippedCode,-,-,-,filename,archive_url,file,-,-,-,-,-,-,download_url,-,-,-,-,-,-,,-
+DevelopmentStatus,y,developmentStatus,-,-,activeDevelopment,-,-,-,-,-,-,-,-,-,classifiers['Development Status'],Development Status,release_status,-,-,-,-,,-
+TestCoverage,? - only in ontosoft,-,-,-,hasTestData has TestInstructions,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,,3
