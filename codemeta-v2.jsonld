@@ -4,60 +4,69 @@
       "codemeta": "https://codemeta.github.io/terms/",
 
       "SoftwareSourceCode":"schema:SoftwareSourceCode",
+      "SoftwareApplication":"schema:SoftwareApplication",
       "URL":"schema:URL",
       "Text":"schema:Text",
       "Person": "schema:Person",
       "Organization": "schema:Organization",
 
-      "url": "schema:url",
-      "name": "schema:name",
-      "email": "schema:email",
-      "givenName": "schema:givenName",
-      "familyName": "schema:familyName",
-      "affiliation": "schema:affiliation",
-      "title": "schema:title",
-      "description": "schema:description",
-      "version": "schema:version",
-      "identifier": "schema:identifier",
+      "codeRepository": "schema:codeRepository",
+      "programmingLanguage": "schema:programmingLanguage",
+      "runtimePlatform": "schema:runtimePlatform",
+      "targetProduct": "schema:targetProduct",
+      "applicationCategory": "schema:applicationCategory",
+      "applicationSubCategory": "schema:applicationSubCategory",
+      "downloadUrl": "schema:downloadUrl",
+      "fileSize": "schema:fileSize",
+      "installUrl": "schema:installUrl",
+      "memoryRequirements": "schema:memoryRequirements",
+      "operatingSystem": "schema:operatingSystem",
+      "permissions": "schema:permissions",
+      "processorRequirements": "schema:processorRequirements",
+      "releaseNotes": "schema:releaseNotes",
+      "softwareHelp": "schema:softwareHelp",
+      "softwareRequirements": "schema:softwareRequirements",
+      "softwareVersion": "schema:softwareVersion",
+      "storageRequirements": "schema:storageRequirements",
+      "supportingData": "schema:supportingData",
+      "author": "schema:author",
+      "citation": "schema:citation",
+      "contributor": "schema:contributor",
+      "copyrightHolder": "schema:copyrightHolder",
+      "copyrightYear": "schema:copyrightYear",
+      "creator": "schema:creator",
       "dateCreated": "schema:dateCreated",
       "dateModified": "schema:dateModified",
       "datePublished": "schema:datePublished",
+      "editor": "schema:editor",
+      "encoding": "schema:encoding",
+      "fileFormat": "schema:fileFormat",
+      "funder": "schema:funder",
       "keywords": "schema:keywords",
-      "publisher": "schema:publisher",
+      "license": "schema:license",
+      "producer": "schema:producer",
       "provider": "schema:provider",
-      "downloadUrl": "schema:downloadUrl",
-      "codeRepository": "schema:codeRepository",
-      "operatingSystems": "schema:operatingSystems",
-      "relatedLink": "schema:relatedLink",
-      "license": {
-          "@id": "schema:license",
-          "@type": "schema:URL"
-      }
-      "licenseId": {
-          "@id": "schema:license",
-          "@type": "schema:Text"
-      },
-      "programmingLanguage": {
-          "@id": "schema:programmingLanguage",
-          "@type": "schema:ComputerLanguage"
-      },
-      "funder": {
-        "@id": "schema:funder",
-        "@type": "schema:Organization"
-
-      },
+      "publisher": "schema:publisher",
+      "sponsor": "schema:sponsor",
+      "version": "schema:version",
+      "description": "schema:description",
+      "identifier": "schema:identifier",
+      "name": "schema:name",
+      "sameAs": "schema:sameAs",
+      "url": "schema:url",
+      "givenName": "schema:givenName",
+      "familyName": "schema:familyName",
+      "email": "schema:email",
+      "affiliation": "schema:affiliation",
+      
       "depends": {
         "@id":"schema:softwareRequirements",
         "@type": "schema:SoftwareSourceCode"
       },
-
-
       "suggests": {
          "@id":"codemeta:suggests",
          "@type": "schema:SoftwareSourceCode"
       },
-
-
       "contIntegration": {
          "@id":"codemeta:contIntegration",
          "@type":"schema:URL"
@@ -74,15 +83,10 @@
          "@id":"codemeta:embargoDate",
          "@type":"schema:Date"
       },
-      "isAutomatedBuild": {
-         "@id":"codemeta:isAutomatedBuild",
-         "@type":"schema:Boolean"
-      },
       "funding": {
           "@id": "codemeta:funding",
           "@type": "schema:Text"
       },
-
       "packageSystem": {
           "@id": "codemeta:packageSystem",
           "@type": "schema:Organization"
@@ -116,9 +120,6 @@
          "@type":"schema:Text"
       },
 
-      "author": "schema:author",
-      "copyrightHolder": "schema:copyrightHolder",
-      "contributor": "schema:contributor",
       "maintainer": {
         "@id": "codemeta:maintainer",
         "@type": "schema:Person"
