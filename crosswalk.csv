@@ -55,7 +55,7 @@ funding,Text,Funding source (e.g. specific grant),,,,,,,,,,,,,,,,,,,,,
 packageSystem,Organization or URL,"package distribution system, such as CRAN url, Node registry, etc.  Consider using schema:provider instead?",,,,,,,,,,,,,,,,,,,,,
 issueTracker,URL,link to software bug reporting or issue tracking system,,,,issues_url,,,,,BugReports,,,,resources.bugtracker,bugs,issuesManagement,Problems,,,bug-database,bug tracking system,P1401
 relatedPublications,ScholarlyArticle,An academic publication related to the software.,,,,,,,,,,,,,,,,,,,blog,,
-readme,URL,link to software Readme file,,,,,,,,,,,,,,,,,,,
+readme,URL,link to software Readme file,,,,,,,,,,,,,,,,,,,,,
 relationships,codemeta:Relationship,"A DataCite relationship triple of relationshipType, relatedIdentifier, and relatedIdentifierType","RelatedIdentifier(relationType=isPartOf), RelatedIdentifier(relationType=isVariantFormOf), RelatedIdentifier(relationType=isPreviousVersionOf), RelatedIdentifier(relationType=isNextVersionOf)",,,,,,,,,,,,,,,,,,,,
 givenName,Text,"Given name. In the U.S., the first name of a Person. This can be used along with familyName instead of the name property",,,,,,,,,givenName,,,,,,,,,,,,
 familyName,Text,"Family name. In the U.S., the last name of an Person. This can be used along with givenName instead of the name property.",,,,,,,,,familyName,,,,,,,,,,,,
