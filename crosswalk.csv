@@ -18,7 +18,7 @@ softwareRequirements,Text  or URL,"Component dependency requirements for applica
 softwareVersion,Text,Version of the software instance.,,,,,,,,,,,,,,,,,,,release,software version,P348 
 storageRequirements,Text  or URL,Storage requirements (free space required).,,,,,,,,,,,,,,,,,,,,,
 supportingData,DataFeed,Supporting data for a SoftwareApplication.,,,,,,,,,,,,,,,,,,,,,
-author,Organization  or Person,The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangeably.,,,,login,,,,,[aut] in Author,,,,,author,,,author,,developer
+author,Organization  or Person,The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangeably.,,,,login,,,,,[aut] in Author,,,,,author,,,author,,developer,,
 citation,CreativeWork  or URL,"A citation or reference to another creative work, such as another publication, web page, scholarly article, etc.",,,,,,,,,,,,,,,,,,,,,
 contributor,Organization  or Person,A secondary contributor to the CreativeWork or Event.,,,,,,,,,[ctb] in Author,,,,,contributor,,,,,developer,,
 copyrightHolder,Organization  or Person,The party holding the legal copyright to the CreativeWork.,,,,,,,,,,,,,,,,,,,,,
