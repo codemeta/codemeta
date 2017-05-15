@@ -47,7 +47,7 @@ depends,SoftwareSourceCode,Required software dependencies,,hasDependency->Softwa
 suggests,SoftwareSourceCode,"Optional dependencies , e.g. for optional features, code development, etc",,,,,,,,,Suggests,,,,,devDependencies / optionalDependencies,,BuildDepends,add_development_dependency,,,,
 maintainer,Person,Individual responsible for maintaining the software (usually includes an email contact address),,,,,,,,,Maintainer,,,,,,,,,,maintainer,,
 contIntegration,URL,link to continuous integration service,,,,,,,,,,,,,,,ciManagement,,,,,,
-licenseId,Text,"Abbreviation for an open source license, ideally an SPDX code. (Compare to schema:license which is @type URL or CreativeWork)",Rights,License,license,license,License,software license,Software license,license,License,,license,license,license,license,licesnse,License,license/licenses,,
+licenseId,Text,"Abbreviation for an open source license, ideally an SPDX code. (Compare to schema:license which is @type URL or CreativeWork)",Rights,License,license,license,License,software license,Software license,license,License,,license,license,license,license,licesnse,License,license/licenses,,,,
 buildInstructions,URL,link to installation instructions/documentation,,,,,,,,,,,,,,,,,,,,,
 developmentStatus,Text,"Description of development status, e.g. Active, inactive, supsended. See repostatus.org",,activeDevelopment,,,,,,,,,classifiers['Development Status'],Development Status,release_status,,,,,,,,
 embargoDate,Date,"Software may be embargoed from public access until a specified date (e.g. pending publication, 1 year from publication)",,,,,embargo_date,,,,,,,,,,,,,,,,
