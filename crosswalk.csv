@@ -14,7 +14,7 @@ permissions,Text,"Permission(s) required to run the app (for example, a mobile a
 processorRequirements,Text,Processor architecture required to run the application (e.g. IA64).,,,,,,,,,,,,,,cpu / engines,,,,,,,
 releaseNotes,Text  or URL,Description of what changed in this version.,,,,,,,,,,,,,,,,,,,,,
 softwareHelp,CreativeWork,Software application help.,,,,,,,,,,,,,,,,,,,,,
-softwareRequirements,Text  or URL,"Component dependency requirements for application. This includes runtime environments and shared libraries that are not included in the application distribution package, but required to run the application (Examples: DirectX, Java or .NET runtime). Supersedes requirements.",,,,,,,,,,,,,,,,,,,
+softwareRequirements,Text  or URL,"Component dependency requirements for application. This includes runtime environments and shared libraries that are not included in the application distribution package, but required to run the application (Examples: DirectX, Java or .NET runtime). Supersedes requirements.",,,,,,,,,,,,,,,,,,,,,
 softwareVersion,Text,Version of the software instance.,,,,,,,,,,,,,,,,,,,release,software version,P348 
 storageRequirements,Text  or URL,Storage requirements (free space required).,,,,,,,,,,,,,,,,,,,,,
 supportingData,DataFeed,Supporting data for a SoftwareApplication.,,,,,,,,,,,,,,,,,,,,,
