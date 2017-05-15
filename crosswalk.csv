@@ -43,7 +43,7 @@ identifier,PropertyValue  or URL,"The identifier property represents any kind of
 name,Text,The name of the item.,,hasName,title,full_name,Title,SoftwareTitle,Software title,title,Title,,name,Title,name,name,name,name,name,title,,,
 sameAs,URL,"URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.",,,,,,,,,,,,,,,,,,,,,
 url,URL,URL of the item.,,,,,,,,,URL,,,,,,,URL,,,homepage,official website,P856
-depends,SoftwareSourceCode,Required software dependencies,,hasDependency->Software,,,,,"""Platform, environment, and dependencies""",,"Depends, SystemRequirements",,install_requires,Database Environment,prereqs,dependencies / bundledDependencies / peerDependencies,prerequisites,"Depends, SystemRequirements","requirements, add_runtime_dependency",,depends on software,P1547
+depends,SoftwareSourceCode,Required software dependencies,,hasDependency->Software,,,,,"""Platform, environment, and dependencies""",,"Depends, SystemRequirements",,install_requires,Database Environment,prereqs,dependencies / bundledDependencies / peerDependencies,prerequisites,"Depends, SystemRequirements","requirements, add_runtime_dependency",,,depends on software,P1547
 suggests,SoftwareSourceCode,"Optional dependencies , e.g. for optional features, code development, etc",,,,,,,,,Suggests,,,,,devDependencies / optionalDependencies,,BuildDepends,add_development_dependency,,,,
 maintainer,Person,Individual responsible for maintaining the software (usually includes an email contact address),,,,,,,,,Maintainer,,,,,,,,,,maintainer,,
 contIntegration,URL,link to continuous integration service,,,,,,,,,,,,,,,ciManagement,,,,
