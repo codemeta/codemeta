@@ -1,6 +1,6 @@
 {
   "@context": {
-      "schema":"http://schema.org/",
+      "schema":"https://schema.org/",
       "codemeta": "https://codemeta.github.io/terms/",
 
       "SoftwareSourceCode":"schema:SoftwareSourceCode",
@@ -58,9 +58,9 @@
       "familyName": "schema:familyName",
       "email": "schema:email",
       "affiliation": "schema:affiliation",
-      
+
       "depends": {
-        "@id":"schema:softwareRequirements",
+        "@id":"codemeta:depends",
         "@type": "schema:SoftwareSourceCode"
       },
       "suggests": {

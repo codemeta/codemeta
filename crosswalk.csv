@@ -9,7 +9,7 @@ schema:SoftwareApplication,downloadUrl,URL,"If the file can be downloaded, URL t
 schema:SoftwareApplication,fileSize,Text,"Size of the application / package (e.g. 18MB). In the absence of a unit (MB, KB etc.), KB will be assumed.",,,,,,,,,,,,,,,,,,,,,
 schema:SoftwareApplication,installUrl,URL,"URL at which the app may be installed, if different from the URL of the item.",,,,,,,,,,,,,,,,,,,,download-mirror,
 schema:SoftwareApplication,memoryRequirements,Text  or URL,Minimum memory requirements.,,,,,,,,,,,,,,,,,,,,,
-schema:SoftwareApplication,operatingSystem,Text,"Operating systems supported (Windows 7, OSX 10.6, Android 1.6).",,,SupportsOperatingSystem,,,,,,,,,classifiers['Operating System'],Operating System,OSNAMES,os,,,,,os,operating system
+schema:SoftwareApplication,operatingSystem,Text,"Operating systems supported (Windows 7, OSX 10.6, Android 1.6).",operatingSystems,,SupportsOperatingSystem,,,,,,,,,classifiers['Operating System'],Operating System,OSNAMES,os,,,,,os,operating system
 schema:SoftwareApplication,permissions,Text,"Permission(s) required to run the app (for example, a mobile app may require full internet access or may run only on wifi).",,,,,,,,,,,,,,,,,,,,,
 schema:SoftwareApplication,processorRequirements,Text,Processor architecture required to run the application (e.g. IA64).,,,,,,,,,,,,,,,cpu / engines,,,,,,
 schema:SoftwareApplication,releaseNotes,Text  or URL,Description of what changed in this version.,,,,,,,,,,,,,,,,,,,,,
@@ -23,7 +23,7 @@ schema:CreativeWork,citation,CreativeWork  or URL,"A citation or reference to an
 schema:CreativeWork,contributor,Organization  or Person,A secondary contributor to the CreativeWork or Event.,,,,,,,,,,[ctb] in Author,,,,,contributor,,,,,developer,
 schema:CreativeWork,copyrightHolder,Organization  or Person,The party holding the legal copyright to the CreativeWork.,agents [role=copyrightHolder],,,,,,,,,,,,,,,,,,,,
 schema:CreativeWork,copyrightYear,Number,The year during which the claimed copyright for the CreativeWork was first asserted.,,,,,,,,,,,,,,,,,,,,,
-schema:CreativeWork,creator,Organization  or Person,The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork.,,,,,,,,,creator,[cre] in Author,,,,,author,,,,,,
+schema:CreativeWork,creator,Organization  or Person,The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork.,agent,,,,,,,,creator,[cre] in Author,,,,,author,,,,,,
 schema:CreativeWork,dateCreated,Date  or DateTime,The date on which the CreativeWork was created or the item was added to a DataFeed.,dateCrated,Date (dateType=Created),,,created_at,,,,created,,Date,,,,,,,,,,
 schema:CreativeWork,dateModified,Date  or DateTime,The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed.,dateModified,DaTe (dateType=Issued),,,updated_at,,,,,,,,last-updated,,,,,,,,
 schema:CreativeWork,datePublished,Date,Date of first broadcast/publication.,datePublished,PublicationYear,,date_published,,date_retrieved,,,date,Date,,,,,,,Date,,,,publication date
@@ -55,7 +55,7 @@ schema:Person,"""@id""",URL,"URL identifer, ideally an ORCID ID for individuals,
 schema:Person,name,Text,"The name of an Organization, or if separate given and family names cannot be resolved for a Person",,,,,,name,,,,,,,,author:contact-name,author.name,,,,,,
 codemeta:SoftwareSourceCode,depends,SoftwareSourceCode,Required software dependencies,depends,,hasDependency->Software,,,,,"""Platform, environment, and dependencies""",,"Depends, SystemRequirements",,install_requires,Database Environment,prereqs,dependencies / bundledDependencies / peerDependencies,prerequisites,"Depends, SystemRequirements","requirements, add_runtime_dependency",,,depends on software
 codemeta:SoftwareSourceCode,suggests,SoftwareSourceCode,"Optional dependencies , e.g. for optional features, code development, etc",suggests,,,,,,,,,Suggests,,,,,devDependencies / optionalDependencies,,BuildDepends,add_development_dependency,,,
-codemeta:SoftwareSourceCode,maintainer,Person,Individual responsible for maintaining the software (usually includes an email contact address),agents [role=maintainer],,,,,,,,,Maintainer,,,,,,,,,,maintainer,
+codemeta:SoftwareSourceCode,maintainer,Person,Individual responsible for maintaining the software (usually includes an email contact address),uploadedBy,,,,,,,,,Maintainer,,,,,,,,,,maintainer,
 codemeta:SoftwareSourceCode,contIntegration,URL,link to continuous integration service,contIntegration,,,,,,,,,,,,,,,ciManagement,,,,,
 codemeta:SoftwareSourceCode,licenseId,Text,"Abbreviation for an open source license, ideally an SPDX code. (Compare to schema:license which is @type URL or CreativeWork)",licenseId,Rights,License,license,license,License,software license,Software license,license,License,,license,license,license,license,licesnse,License,license/licenses,,,
 codemeta:SoftwareSourceCode,buildInstructions,URL,link to installation instructions/documentation,buildInstructions,,,,,,,,,,,,,,,,,,,,
@@ -74,4 +74,3 @@ codemeta:Relationship,relationshipType,Text,"controlled vocabullary term definin
 ,,,,role,,,,,,,,,,,,,,,,,,,,
 ,,,,roleCode,,,,,,,,,,,,,,,,,,,,
 ,,,,softwarePaperCitationIdenifiers,,,,,,,,,,,,,,,,,,,,
-,,,,uploadedBy,,,,,,,,,,,,,,,,,,,,
