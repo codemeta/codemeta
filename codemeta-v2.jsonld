@@ -25,7 +25,7 @@
       "processorRequirements": "schema:processorRequirements",
       "releaseNotes": "schema:releaseNotes",
       "softwareHelp": "schema:softwareHelp",
-      "softwareRequirements": "schema:softwareRequirements",
+      "softwareRequirements": {"@id": "schema:softwareRequirements", "@type": "schema:SoftwareApplication" },
       "softwareVersion": "schema:softwareVersion",
       "storageRequirements": "schema:storageRequirements",
       "supportingData": "schema:supportingData",
@@ -59,10 +59,6 @@
       "email": "schema:email",
       "affiliation": "schema:affiliation",
 
-      "depends": {
-        "@id":"codemeta:depends",
-        "@type": "schema:SoftwareSourceCode"
-      },
       "suggests": {
          "@id":"codemeta:suggests",
          "@type": "schema:SoftwareSourceCode"
@@ -87,10 +83,6 @@
           "@id": "codemeta:funding",
           "@type": "schema:Text"
       },
-      "packageSystem": {
-          "@id": "codemeta:packageSystem",
-          "@type": "schema:Organization"
-      },
       "readme": {
          "@id":"codemeta:readme",
          "@type":"schema:URL"
@@ -99,27 +91,10 @@
          "@id":"codemeta:issueTracker",
          "@type":"schema:URL"
       },
-      "relatedPublications": {
-        "@id": "codemeta:relatedPublications",
+      "referencePublication": {
+        "@id": "codemeta:referencePublication",
         "@type": "schema:ScholarlyArticle"
       },
-      "relationships": {
-         "@id": "codemeta:relationships",
-         "@type": "codemeta:Relationship"
-      },
-      "relationshipType": {
-         "@id":"codemeta:relationshipType",
-         "@type":"schema:Text"
-      },
-      "relatedIdentifier": {
-         "@id":"codemeta:relatedIdentifier",
-         "@type":"schema:Text"
-      },
-      "relatedIdentifierType": {
-         "@id":"codemeta:relatedIdentifierType",
-         "@type":"schema:Text"
-      },
-
       "maintainer": {
         "@id": "codemeta:maintainer",
         "@type": "schema:Person"
