@@ -1,6 +1,6 @@
 {
   "@context": {
-      "schema":"https://schema.org/",
+      "schema":"http://schema.org/",
       "codemeta": "https://codemeta.github.io/terms/",
 
       "SoftwareSourceCode":"schema:SoftwareSourceCode",
