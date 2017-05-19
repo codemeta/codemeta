@@ -59,7 +59,7 @@
       "email": "schema:email",
       "affiliation": "schema:affiliation",
 
-      "suggests": {
+      "softwareSuggestions": {
          "@id":"codemeta:softwareSuggestions",
          "@type": "schema:SoftwareSourceCode"
       },
