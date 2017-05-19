@@ -53,7 +53,7 @@ schema:Person,email,Text,Email address,email,,,,,,,,,email,,author_email,,email-
 schema:Person,affiliation,Text,"An organization that this person is affiliated with. For example, a school/university",affiliation,affiliation,,affiliation,,,,,,,,,,,,,,,,,
 schema:Person,identifier,URL,"URL identifer, ideally an ORCID ID for individuals, a FundRef ID for funders",identifier,nameIdentifier,,ORCID,,ORCID,,,,,,,,,,,,,,,
 schema:Person,name,Text,"The name of an Organization, or if separate given and family names cannot be resolved for a Person",,,,name,,name,,,,,,,,author:contact-name,author.name,,,,,,
-codemeta:SoftwareSourceCode,suggests,SoftwareSourceCode,"Optional dependencies , e.g. for optional features, code development, etc",suggests,,,,,,,,,Suggests,,,,,devDependencies / optionalDependencies,,BuildDepends,add_development_dependency,,,
+codemeta:SoftwareSourceCode,softwareSuggestions,SoftwareSourceCode,"Optional dependencies , e.g. for optional features, code development, etc",suggests,,,,,,,,,Suggests,,,,,devDependencies / optionalDependencies,,BuildDepends,add_development_dependency,,,
 codemeta:SoftwareSourceCode,maintainer,Person,Individual responsible for maintaining the software (usually includes an email contact address),uploadedBy,,,,,,,,,Maintainer,,,,,,,,,,maintainer,
 codemeta:SoftwareSourceCode,contIntegration,URL,link to continuous integration service,contIntegration,,,,,,,,,,,,,,,ciManagement,,,,,
 codemeta:SoftwareSourceCode,buildInstructions,URL,link to installation instructions/documentation,buildInstructions,,,,,,,,,,,,,,,,,,,,

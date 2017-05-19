@@ -60,7 +60,7 @@
       "affiliation": "schema:affiliation",
 
       "suggests": {
-         "@id":"codemeta:suggests",
+         "@id":"codemeta:softwareSuggestions",
          "@type": "schema:SoftwareSourceCode"
       },
       "contIntegration": {
