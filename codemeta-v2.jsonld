@@ -61,7 +61,7 @@
 
       "softwareSuggestions": {
          "@id":"codemeta:softwareSuggestions",
-         "@type": @id"
+         "@type": "@id"
       },
       "contIntegration": {
          "@id":"codemeta:contIntegration",
