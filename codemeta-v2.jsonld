@@ -25,7 +25,7 @@
       "processorRequirements": "schema:processorRequirements",
       "releaseNotes": "schema:releaseNotes",
       "softwareHelp": "schema:softwareHelp",
-      "softwareRequirements": {"@id": "schema:softwareRequirements", "@type": "schema:SoftwareApplication" },
+      "softwareRequirements": {"@id": "schema:softwareRequirements", "@type": "@id" },
       "softwareVersion": "schema:softwareVersion",
       "storageRequirements": "schema:storageRequirements",
       "supportingData": "schema:supportingData",
@@ -61,7 +61,7 @@
 
       "softwareSuggestions": {
          "@id":"codemeta:softwareSuggestions",
-         "@type": "schema:SoftwareSourceCode"
+         "@type": @id"
       },
       "contIntegration": {
          "@id":"codemeta:contIntegration",
@@ -93,11 +93,11 @@
       },
       "referencePublication": {
         "@id": "codemeta:referencePublication",
-        "@type": "schema:ScholarlyArticle"
+        "@type": "@id"
       },
       "maintainer": {
         "@id": "codemeta:maintainer",
-        "@type": "schema:Person"
+        "@type": "@id"
       }
   }
 }
