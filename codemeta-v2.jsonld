@@ -58,7 +58,7 @@
       "familyName": "schema:familyName",
       "email": "schema:email",
       "affiliation": "schema:affiliation",
-      "address": "schema:address"
+      "address": "schema:address",
 
       "softwareSuggestions": {
          "@id":"codemeta:softwareSuggestions",
