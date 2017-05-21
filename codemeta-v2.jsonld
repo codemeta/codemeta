@@ -59,6 +59,7 @@
       "email": "schema:email",
       "affiliation": "schema:affiliation",
       "address": "schema:address",
+      "position": "schema:position",
 
       "softwareSuggestions": {
          "@id":"codemeta:softwareSuggestions",
