@@ -1,192 +1,107 @@
 {
-   "@context":{
+  "@context": {
       "schema":"http://schema.org/",
-      "dcterms":"http://purl.org/dc/terms/",
-      "xsd":"http://www.w3.org/2001/XMLSchema#",
       "codemeta": "https://codemeta.github.io/terms/",
-      "Code":"schema:SoftwareSourceCode",
-      "agents":{
-         "@id":"schema:agent"
+
+      "SoftwareSourceCode":"schema:SoftwareSourceCode",
+      "SoftwareApplication":"schema:SoftwareApplication",
+      "URL":"schema:URL",
+      "Text":"schema:Text",
+      "Person": "schema:Person",
+      "Organization": "schema:Organization",
+
+      "codeRepository": "schema:codeRepository",
+      "programmingLanguage": "schema:programmingLanguage",
+      "runtimePlatform": "schema:runtimePlatform",
+      "targetProduct": "schema:targetProduct",
+      "applicationCategory": "schema:applicationCategory",
+      "applicationSubCategory": "schema:applicationSubCategory",
+      "downloadUrl": "schema:downloadUrl",
+      "fileSize": "schema:fileSize",
+      "installUrl": "schema:installUrl",
+      "memoryRequirements": "schema:memoryRequirements",
+      "operatingSystem": "schema:operatingSystem",
+      "permissions": "schema:permissions",
+      "processorRequirements": "schema:processorRequirements",
+      "releaseNotes": "schema:releaseNotes",
+      "softwareHelp": "schema:softwareHelp",
+      "softwareRequirements": {"@id": "schema:softwareRequirements", "@type": "@id" },
+      "softwareVersion": "schema:softwareVersion",
+      "storageRequirements": "schema:storageRequirements",
+      "supportingData": "schema:supportingData",
+      "citation": "schema:citation",
+      "contributor": "schema:contributor",
+      "copyrightHolder": "schema:copyrightHolder",
+      "copyrightYear": "schema:copyrightYear",
+      "creator": "schema:creator",
+      "dateCreated": "schema:dateCreated",
+      "dateModified": "schema:dateModified",
+      "datePublished": "schema:datePublished",
+      "editor": "schema:editor",
+      "encoding": "schema:encoding",
+      "fileFormat": "schema:fileFormat",
+      "funder": "schema:funder",
+      "keywords": "schema:keywords",
+      "license": "schema:license",
+      "producer": "schema:producer",
+      "provider": "schema:provider",
+      "publisher": "schema:publisher",
+      "sponsor": "schema:sponsor",
+      "version": "schema:version",
+      "description": "schema:description",
+      "identifier": "schema:identifier",
+      "name": "schema:name",
+      "sameAs": "schema:sameAs",
+      "url": "schema:url",
+      "givenName": "schema:givenName",
+      "familyName": "schema:familyName",
+      "email": "schema:email",
+      "affiliation": "schema:affiliation",
+      "address": "schema:address",
+      "position": "schema:position",
+      "author": {
+        "@id": "schema:author",
+        "@container": "@list"
       },
-      "controlledTerms": {
-          "@id":"codemeta:controlledTerms",
-          "@type":"xsd:string"
+      "softwareSuggestions": {
+         "@id":"codemeta:softwareSuggestions",
+         "@type": "@id"
       },
-      "person":{
-         "@id":"schema:Person"
-      },
-      "organization":{
-         "@id":"schema:Organization"
-      },
-      "email":{
-         "@id":"schema:email",
-         "@type":"xsd:string"
-      },
-      "name":{
-         "@id":"schema:name",
-         "@type":"xsd:string"
-      },
-      "affiliation":{
-         "@id":"schema:affiliation",
-         "@type":"xsd:string"
-      },
-      "mustBeCited":{
-         "@id":"codemeta:mustBeCited",
-         "@type":"xsd:boolean"
-      },
-      "isMaintainer":{
-         "@id":"codemeta:isMaintainer",
-         "@type":"xsd:boolean"
-      },
-      "isRightsHolder":{
-         "@id":"codemeta:isRightsHolder",
-         "@type":"xsd:boolean"
-      },
-      "namespace":{
-        "@id":"codemeta:namespace",
-        "@type":"xsd:string"
-      },
-      "role":{
-         "@id":"codemeta:Role",
-         "@type":"@id"
-      },
-      "roleCode":{
-        "@id": "codemeta:roleCode",
-        "@type":"xsd:string"
-      },
-      "buildInstructions":{
-         "@id":"codemeta:buildInstructions",
-         "@type":"xsd:anyURI"
-      },
-      "downloadLink":
-      {
-         "@id":"schema:downloadUrl",
-         "@type": "xsd:anyURI"
-      },
-      "contIntegration":{
+      "contIntegration": {
          "@id":"codemeta:contIntegration",
-         "@type":"xsd:anyURI"
-      },
-      "identifier":{
-         "@id":"dcterms:identifier",
-         "@type":"xsd:string"
-      },
-      "codeRepository":{
-         "@id":"schema:codeRepository",
          "@type":"schema:URL"
       },
-      "dateCreated":{
-         "@id":"schema:dateCreated",
-         "@type":"xsd:dateTime"
-      },
-      "dateModified":{
-         "@id":"schema:dateModified",
-         "@type":"xsd:dateTime"
-      },
-      "datePublished":{
-         "@id":"schema:datePublished",
-         "@type":"xsd:dateTime"
-      },
-      "depends": {
-          "@id":"schema:requirements"
+      "buildInstructions": {
+         "@id":"codemeta:buildInstructions",
+         "@type":"schema:URL"
       },
       "developmentStatus": {
           "@id":"codemeta:developmentStatus",
-          "@type":"xsd:string"
+          "@type":"schema:Text"
       },
-      "description":{
-         "@id":"schema:description",
-         "@type":"xsd:string"
-      },
-      "embargoDate":{
+      "embargoDate": {
          "@id":"codemeta:embargoDate",
-         "@type":"xsd:dateTime"
-      },
-      "isAutomatedBuild":{
-         "@id":"codemeta:isAutomatedBuild",
-         "@type":"xsd:boolean"
-      },
-      "tags":{
-         "@id":"schema:keywords",
-         "@type":"xsd:string"
-      },
-      "publisher":{
-          "@id": "schema:publisher",
-          "@type": "xsd:string"
-      },
-      "licenseId":
-      {
-          "@id": "schema:license",
-          "@type": "xsd:string"
+         "@type":"schema:Date"
       },
       "funding": {
           "@id": "codemeta:funding",
-          "@type": "xsd:string"
+          "@type": "schema:Text"
       },
-      "operatingSystems":{
-          "@id": "schema:operatingSystems",
-          "@type":"xsd:string"
-      },
-      "packageSystem":{
-          "@id": "codemeta:packageSystem",
-          "@type": "xsd:string"
-      },
-      "programmingLanguage": {
-          "@id": "schema:programmingLanguage"
-      },
-      "readme":{
+      "readme": {
          "@id":"codemeta:readme",
-         "@type":"xsd:anyURI"
+         "@type":"schema:URL"
       },
-      "issueTracker":{
+      "issueTracker": {
          "@id":"codemeta:issueTracker",
-         "@type":"xsd:anyURI"
+         "@type":"schema:URL"
       },
-      "relatedIdentifier":{
-         "@id":"codemeta:relatedIdentifier",
-         "@type":"xsd:string"
+      "referencePublication": {
+        "@id": "codemeta:referencePublication",
+        "@type": "@id"
       },
-      "relatedIdentifierType":{
-         "@id":"codemeta:relatedIdentifierType",
-         "@type":"xsd:string"
-      },
-      "relatedLink":{
-         "@id":"codemeta:relatedLink",
-         "@type":"xsd:anyURI"
-      },
-      "relatedPublications":{
-         "@id":"codemeta:relatedPublications"
-      },
-      "relationships":{
-         "@id":"codemeta:relationships"
-      },
-      "relationshipType":{
-         "@id":"codemeta:relationshipType",
-         "@type":"xsd:string"
-      },
-      "suggests":{
-         "@id":"codemeta:suggests"
-      },
-      "softwarePaperCitationIdentifiers":{
-         "@id":"codemeta:softwarePaperCitationIdentifiers",
-         "@type":"xsd:string"
-      },
-      "title":{
-         "@id":"dcterms:title",
-         "@type":"xsd:string"
-      },
-      "version":{
-         "@id":"schema:version",
-         "@type":"xsd:string"
-      },
-      "uploadedBy":{
-         "@id":"codemeta:uploadedBy"
-      },
-      "zippedCode":{
-         "@id":"codemeta:zippedCode",
-         "@type":"xsd:anyURI"
-      },
-      "URL":"schema:URL",
-      "Text":"schema:Text"
-   }
+      "maintainer": {
+        "@id": "codemeta:maintainer",
+        "@type": "@id"
+      }
+  }
 }
