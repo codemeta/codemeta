@@ -29,7 +29,6 @@
       "softwareVersion": "schema:softwareVersion",
       "storageRequirements": "schema:storageRequirements",
       "supportingData": "schema:supportingData",
-      "author": "schema:author",
       "citation": "schema:citation",
       "contributor": "schema:contributor",
       "copyrightHolder": "schema:copyrightHolder",
@@ -60,7 +59,10 @@
       "affiliation": "schema:affiliation",
       "address": "schema:address",
       "position": "schema:position",
-
+      "author": {
+        "@id": "schema:author",
+        "@container": "@list"
+      },
       "softwareSuggestions": {
          "@id":"codemeta:softwareSuggestions",
          "@type": "@id"
