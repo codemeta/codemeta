@@ -6,6 +6,9 @@ cache: packages
 apt_packages:
     - libv8-dev
 
+before_install:
+  - cd tests
+
 script:
-  - R -e "devtools::install('tests/')"
-  - R -f tests/test.R
+  - R -e "devtools::install()"
+  - R -f test.R

@@ -45,13 +45,13 @@ validate <- function(example){
   
 }
 
-expect_true(validate("examples/codemeta.json"))
-expect_true(validate("examples/schema-org-codemeta.json"))
+expect_true(validate("../examples/codemeta.json"))
+expect_true(validate("../examples/schema-org-codemeta.json"))
 
-expect_false(validate("examples/example-codemeta-invalid.json"))
+expect_false(validate("../examples/example-codemeta-invalid.json"))
 
 ## author isn't a list type, so doesn't compact
-expect_false(validate("examples/example-code-jsonld.json"))             
+expect_false(validate("../examples/example-code-jsonld.json"))             
 
 
 ## Verify we have subset the schema.org correctly, e.g we have the same behavior as a context of [codemeta.json, http://schema.org]
