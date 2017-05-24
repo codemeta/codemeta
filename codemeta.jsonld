@@ -37,9 +37,9 @@
       "copyrightHolder": "schema:copyrightHolder",
       "copyrightYear": "schema:copyrightYear",
       "creator": "schema:creator",
-      "dateCreated": "schema:dateCreated",
-      "dateModified": "schema:dateModified",
-      "datePublished": "schema:datePublished",
+      "dateCreated": {"@id": "schema:dateCreated", "@type": "schema:Date" },
+      "dateModified":  {"@id": "schema:dateModified", "@type": "schema:Date" },
+      "datePublished":  {"@id": "schema:datePublished", "@type": "schema:Date" },
       "editor": "schema:editor",
       "encoding": "schema:encoding",
       "fileFormat": "schema:fileFormat",
@@ -71,33 +71,27 @@
          "@type": "@id"
       },
       "contIntegration": {
-         "@id":"codemeta:contIntegration",
-         "@type":"schema:URL"
+         "@id":"codemeta:contIntegration"
       },
       "buildInstructions": {
-         "@id":"codemeta:buildInstructions",
-         "@type":"schema:URL"
+         "@id":"codemeta:buildInstructions"
       },
       "developmentStatus": {
-          "@id":"codemeta:developmentStatus",
-          "@type":"schema:Text"
+          "@id":"codemeta:developmentStatus"
       },
       "embargoDate": {
          "@id":"codemeta:embargoDate",
-         "@type":"schema:Date"
+         "@type": "schema:Date"
       },
       "funding": {
-          "@id": "codemeta:funding",
-          "@type": "schema:Text"
+          "@id": "codemeta:funding"
       },
       "readme": {
-         "@id":"codemeta:readme",
-         "@type":"schema:URL"
+         "@id":"codemeta:readme"
       },
       "issueTracker": {
-         "@id":"codemeta:issueTracker",
-         "@type":"schema:URL"
-      },
+         "@id":"codemeta:issueTracker"
+         },
       "referencePublication": {
         "@id": "codemeta:referencePublication",
         "@type": "@id"
