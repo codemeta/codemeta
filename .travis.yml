@@ -1,9 +1,11 @@
-language: ruby
-bundler_args: --without debug
-script: "bundle exec rake test"
-env:
-  - CI=true
-rvm:
-  - 2.3.0
-cache: bundler
+# R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
+
+language: R
 sudo: false
+cache: packages
+apt_packages:
+    - libv8-dev
+
+script:
+  - R -e "devtools::install('tests/')"
+  - R -f tests/test.R

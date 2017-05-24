@@ -1,0 +1,4 @@
+Type: Compendium
+Package: compendium
+Version: 0.1.0
+Depends: jsonld, jsonlite, jsonvalidate, magrittr, testthat 

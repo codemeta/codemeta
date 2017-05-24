@@ -1,13 +1,12 @@
 {
-    "@context": "https://schema.org",
-    "title": "Generate CodeMeta Metadata for R Packages",
+    "@context": ["http://schema.org", {"author": {"@id": "schema:author", "@container": "@list"} } ] ,
+    "name": "Generate CodeMeta Metadata for R Packages",
     "description": "Codemeta defines a 'JSON-LD' format for describing software metadata. This package provides utilities to generate, parse, and modify codemeta.jsonld files automatically for R packages.",
     "identifier": "http://dx.doi.org/10.5281/zenodo.XXXX",
-    "name": "codemeta",
     "@type": "SoftwareSourceCode",
     "author": [{
         "@id": "http://orcid.org/0000-0002-2192-403X",
-        "@type": "person",
+        "@type": "Person",
         "email": "slaughter@nceas.ucsb.edu",
         "givenName": "Peter",
         "familyName":  "Slaughter",
@@ -15,14 +14,14 @@
     },
     {
         "@id": "http://orcid.org/0000-0003-0077-4738",
-        "@type": "person",
+        "@type": "Person",
         "givenName": "Matthew",
         "familyName": "Jones",
         "affiliation": "NCEAS"
     },
     {
         "@id": "http://orcid.org/0000-0002-1642-628X",
-        "@type": "person",
+        "@type": "Person",
         "givenName": "Carl",
         "familyName": "Boettiger",
         "email": "cobettig@gmail.com",
@@ -30,7 +29,7 @@
     }
     ],
     "copyrightHolder": {
-        "@type": "organization",
+        "@type": "Organization",
         "email": "info@ucop.edu",
         "name": "University of California, Santa Barbara"
     },

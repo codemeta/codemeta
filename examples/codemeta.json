@@ -6,7 +6,7 @@
   "name": "codemetar: Generate CodeMeta Metadata for R Packages",
   "codeRepository": "https://github.com/codemeta/codemetar",
   "issueTracker": "https://github.com/codemeta/codemetar/issues",
-  "licenseId": "MIT + file LICENSE",
+  "license": "https://spdx.org/licenses/MIT",
   "version": "0.1.0",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
@@ -40,7 +40,7 @@
     "email": "cboettig@gmail.com",
     "@id": "http://orcid.org/0000-0002-1642-628X"
   },
-  "suggests": [
+  "softwareSuggestions": [
     {
       "@type": "SoftwareApplication",
       "name": "testthat",
@@ -100,9 +100,49 @@
         "name": "Central R Archive Network (CRAN)",
         "url": "https://cran.r-project.org"
       }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "httr",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Central R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "magrittr",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Central R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "readr",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Central R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "xml2",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Central R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      }
     }
   ],
-  "depends": [
+  "softwareRequirements": [
     {
       "@type": "SoftwareApplication",
       "name": "jsonlite",
@@ -121,6 +161,15 @@
     {
       "@type": "SoftwareApplication",
       "name": "methods"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "stats"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "R",
+      "version": "3.0.0"
     }
   ],
   "contIntegration": "https://travis-ci.org/codemeta/codemetar",
