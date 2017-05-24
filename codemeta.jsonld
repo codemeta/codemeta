@@ -10,6 +10,9 @@
       "Person": "schema:Person",
       "Organization": "schema:Organization",
 
+      "id": "@id",
+      "type": "@type",
+      
       "codeRepository": "schema:codeRepository",
       "programmingLanguage": "schema:programmingLanguage",
       "runtimePlatform": "schema:runtimePlatform",
