@@ -33,8 +33,11 @@
       "fileSize": { "@id": "schema:fileSize"},
       "funder": { "@id": "schema:funder"},
       "givenName": { "@id": "schema:givenName"},
+      "hasPart": { "@id": "schema:hasPart" },
       "identifier": { "@id": "schema:identifier", "@type": "@id"},
       "installUrl": { "@id": "schema:installUrl", "@type": "@id"},
+      "isAccessibleForFree": { "@id": "schema:isAccessibleForFree"},
+      "isPartOf":  { "@id": "schema:isPartOf"},
       "keywords": { "@id": "schema:keywords"},
       "license": { "@id": "schema:license", "@type": "@id"},
       "memoryRequirements": { "@id": "schema:memoryRequirements", "@type": "@id"},
@@ -47,6 +50,7 @@
       "programmingLanguage": { "@id": "schema:programmingLanguage"},
       "provider": { "@id": "schema:provider"},
       "publisher": { "@id": "schema:publisher"},
+      "relatedLink": { "@id": "schema:relatedLink", "@type": "@id"},
       "releaseNotes": { "@id": "schema:releaseNotes", "@type": "@id"},
       "runtimePlatform": { "@id": "schema:runtimePlatform"},
       "sameAs": { "@id": "schema:sameAs", "@type": "@id"},
@@ -61,6 +65,7 @@
       "version": { "@id": "schema:version"},
         
       "author": { "@id": "schema:author", "@container": "@list" },
+      
       "softwareSuggestions": { "@id": "codemeta:softwareSuggestions", "@type": "@id"},
       "contIntegration": { "@id": "codemeta:contIntegration", "@type": "@id"},
       "buildInstructions": { "@id": "codemeta:buildInstructions", "@type": "@id"},
