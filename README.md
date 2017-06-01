@@ -15,6 +15,8 @@ The schema for released versions of CodeMeta are:
 ## Contributors
 CodeMeta is a community project with many contributors spanning research, education, and engineering domains.    - See our [list of Contributors](CONTRIBUTORS.MD). You can cite the CodeMeta schema and project as:
 
+[FAQ](./docs/faq.md)
+
 
 ## How you can help
 Join us!  We welcome help formalizing a schema and creating mappings between existing software metadata schemas and the proposed schema. And writing documentation. And evangelizing. And other stuff, however you might be able to contribute.
