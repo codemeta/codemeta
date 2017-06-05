@@ -2,6 +2,8 @@ CodeMeta
 ========
 [![Join the chat at https://gitter.im/codemeta/codemeta](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/codemeta/codemeta?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.org/codemeta/codemeta.svg?branch=master)](https://travis-ci.org/codemeta/codemeta)
+[![DOI](https://img.shields.io/badge/doi%3A-10.5063%2FSCHEMA%2FCODEMETA--1.0-blue.svg)](https://doi.org/doi:10.5063/schema/codemeta-1.0)
+
 
 > *Matthew B. Jones, Carl Boettiger, Abby Cabunoc Mayes, Arfon Smith, Peter Slaughter, Kyle Niemeyer, Yolanda Gil, Martin Fenner, Krzysztof Nowak, Mark Hahnel, Luke Coy, Alice Allen, Mercè Crosas, Ashley Sands, Neil Chue Hong, Patricia Cruse, Dan Katz, Carole Goble.* 2016. __CodeMeta: an exchange schema for software metadata.__ KNB Data Repository. [doi:10.5063/schema/codemeta-1.0](https://doi.org/doi:10.5063/schema/codemeta-1.0)
 
