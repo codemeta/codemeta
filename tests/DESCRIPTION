@@ -1,0 +1,3 @@
+Package: codemeta 
+Version: 0.1.0
+Depends: jsonld, jsonlite, jsonvalidate, magrittr, testthat 
