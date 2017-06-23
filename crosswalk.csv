@@ -14,7 +14,7 @@ schema:SoftwareApplication,permissions,Text,"Permission(s) required to run the a
 schema:SoftwareApplication,processorRequirements,Text,Processor architecture required to run the application (e.g. IA64).,,,,,,,,,,,,,,,cpu / engines,,,,,,
 schema:SoftwareApplication,releaseNotes,Text  or URL,Description of what changed in this version.,,,,,,,,,,,,,,,,,,,,,
 schema:SoftwareApplication,softwareHelp,CreativeWork,Software application help.,,,,,,,,,,,,,,,,,,,,,
-schema:SoftwareApplication,softwareRequirements,SoftwareSourceCode,Required software dependencies,depends,,hasDependency->Software,,,,,"""Platform, environment, and dependencies""",,"Depends, SystemRequirements",,install_requires,Database Environment,prereqs,dependencies / bundledDependencies / peerDependencies,prerequisites,"Depends, SystemRequirements","requirements, add_runtime_dependency",,,depends on software
+schema:SoftwareApplication,softwareRequirements,SoftwareSourceCode,Required software dependencies,depends,,hasDependency->Software,,,,,"""Platform, environment, and dependencies""",,"Depends, SystemRequirements",,install_requires,Database Environment,prereqs,dependencies / bundledDependencies / bundleDependencies / peerDependencies,prerequisites,"Depends, SystemRequirements","requirements, add_runtime_dependency",,,depends on software
 schema:SoftwareApplication,softwareVersion,Text,Version of the software instance.,,,,,,,,,,,,,,,,,,,,release,software version
 schema:SoftwareApplication,storageRequirements,Text  or URL,Storage requirements (free space required).,,,,,,,,,,,,,,,,,,,,,
 schema:SoftwareApplication,supportingData,DataFeed,Supporting data for a SoftwareApplication.,,,,,,,,,,,,,,,,,,,,,
@@ -46,7 +46,7 @@ schema:Thing,description,Text,A description of the item.,description,description
 schema:Thing,identifier,PropertyValue  or URL,"The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See background notes for more details.",identifier,identifier,hasUniqueId,id,id,,,Persistent Identifier,identifier,Package,Package,,,,name,groupId,,,ascl_id,,
 schema:Thing,name,Text,"The name of the item (software, Organization)",name,,hasName,title,full_name,Title,SoftwareTitle,Software title,title,Title,,name,Title,name,name,name,name,name,title,,
 schema:Thing,sameAs,URL,"URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.",,,,,,,,,,,,,,,,,,,,,
-schema:Thing,url,URL,URL of the item.,URL,,,,,,,,,URL,,,,,,,URL,,,homepage,official website
+schema:Thing,url,URL,URL of the item.,URL,,,,,,,,,URL,,,,,homepage,,URL,,,homepage,official website
 schema:Thing,relatedLink,URL,"A link related to this object, e.g. related web pages",,RelateIdentifier,,,,,,,,,,,,,,,,,,,
 schema:Person,givenName,Text,"Given name. In the U.S., the first name of a Person. This can be used along with familyName instead of the name property",,givenName,,,,,,,,givenName,,,,,,,,,,,
 schema:Person,familyName,Text,"Family name. In the U.S., the last name of an Person. This can be used along with givenName instead of the name property.",,familyName,,,,,,,,familyName,,,,,,,,,,,
