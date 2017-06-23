@@ -14,7 +14,7 @@ schema:SoftwareApplication,permissions,Text,"Permission(s) required to run the a
 schema:SoftwareApplication,processorRequirements,Text,Processor architecture required to run the application (e.g. IA64).,,,,,,,,,,,,,,,cpu / engines,,,,,,
 schema:SoftwareApplication,releaseNotes,Text  or URL,Description of what changed in this version.,,,,,,,,,,,,,,,,,,,,,
 schema:SoftwareApplication,softwareHelp,CreativeWork,Software application help.,,,,,,,,,,,,,,,,,,,,,
-schema:SoftwareApplication,softwareRequirements,SoftwareSourceCode,Required software dependencies,depends,,hasDependency->Software,,,,,"""Platform, environment, and dependencies""",,"Depends, SystemRequirements",,install_requires,Database Environment,prereqs,dependencies / bundledDependencies / peerDependencies,prerequisites,"Depends, SystemRequirements","requirements, add_runtime_dependency",,,depends on software
+schema:SoftwareApplication,softwareRequirements,SoftwareSourceCode,Required software dependencies,depends,,hasDependency->Software,,,,,"""Platform, environment, and dependencies""",,"Depends, SystemRequirements",,install_requires,Database Environment,prereqs,dependencies / bundledDependencies / bundleDependencies / peerDependencies,prerequisites,"Depends, SystemRequirements","requirements, add_runtime_dependency",,,depends on software
 schema:SoftwareApplication,softwareVersion,Text,Version of the software instance.,,,,,,,,,,,,,,,,,,,,release,software version
 schema:SoftwareApplication,storageRequirements,Text  or URL,Storage requirements (free space required).,,,,,,,,,,,,,,,,,,,,,
 schema:SoftwareApplication,supportingData,DataFeed,Supporting data for a SoftwareApplication.,,,,,,,,,,,,,,,,,,,,,
