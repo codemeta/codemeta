@@ -1,7 +1,7 @@
 # Contributors
 The following individuals have contributed significantly to the CodeMeta crosswalk and specification, and should be cited as the authors of the specification. We welcome pull requests from people to add to this list if we missed anybody.
 
-| Name             | Email                | Instition               | GitHub  |
+| Name             | Email                | Institution               | GitHub  |
 |------------------|----------------------|-------------------------| --------|
 | Matthew B. Jones | jones@nceas.ucsb.edu | NCEAS, UC Santa Barbara | [mbjones](http://github.com/mbjones) |
 | Carl Boettiger   | | UC Berkeley | [cboettig](http://github.com/cboettig) |
