@@ -14,13 +14,13 @@ schema:SoftwareApplication,permissions,Text,"Permission(s) required to run the a
 schema:SoftwareApplication,processorRequirements,Text,Processor architecture required to run the application (e.g. IA64).,,,,,,,,,,,,,,,cpu / engines,,,,,,
 schema:SoftwareApplication,releaseNotes,Text  or URL,Description of what changed in this version.,,,,,,,,,,,,,,,,,,,,,
 schema:SoftwareApplication,softwareHelp,CreativeWork,Software application help.,,,,,,,,,,,,,,,,,,,,,
-schema:SoftwareApplication,softwareRequirements,SoftwareSourceCode,Required software dependencies,depends,,hasDependency->Software,,,,,"""Platform, environment, and dependencies""",,"Depends, SystemRequirements",,install_requires,Database Environment,prereqs,dependencies / bundledDependencies / bundleDependencies / peerDependencies,prerequisites,"Depends, SystemRequirements","requirements, add_runtime_dependency",,,depends on software
-schema:SoftwareApplication,softwareVersion,Text,Version of the software instance.,,,,,,,,,,,,,,,,,,,,release,software version
+schema:SoftwareApplication,softwareRequirements,SoftwareSourceCode,Required software dependencies,depends,Requires,hasDependency->Software,,,,,"""Platform, environment, and dependencies""",,"Depends, SystemRequirements",,install_requires,Database Environment,prereqs,dependencies / bundledDependencies / bundleDependencies / peerDependencies,prerequisites,"Depends, SystemRequirements","requirements, add_runtime_dependency",,,depends on software
+schema:SoftwareApplication,softwareVersion,Text,Version of the software instance.,,HasVersion,,,,,,,,,,,,,,,,,,release,software version
 schema:SoftwareApplication,storageRequirements,Text  or URL,Storage requirements (free space required).,,,,,,,,,,,,,,,,,,,,,
 schema:SoftwareApplication,supportingData,DataFeed,Supporting data for a SoftwareApplication.,,,,,,,,,,,,,,,,,,,,,
 schema:CreativeWork,author,Organization  or Person,The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangeably.,agents,creators,,creators,login,,,,,[aut] in Author,,,,,author,,,author,,developer,
 schema:CreativeWork,citation,CreativeWork  or URL,"A citation or reference to another creative work, such as another publication, web page, scholarly article, etc.",relatedLink,,,,,,,,,,,,,,,,,,,,
-schema:CreativeWork,contributor,Organization  or Person,A secondary contributor to the CreativeWork or Event.,,,,,,,,,,[ctb] in Author,,,,,contributor,,,,,developer,
+schema:CreativeWork,contributor,Organization  or Person,A secondary contributor to the CreativeWork or Event.,,Contributor,,,,,,,,[ctb] in Author,,,,,contributor,,,,,developer,
 schema:CreativeWork,copyrightHolder,Organization  or Person,The party holding the legal copyright to the CreativeWork.,agents [role=copyrightHolder],,,,,,,,,,,,,,,,,,,,
 schema:CreativeWork,copyrightYear,Number,The year during which the claimed copyright for the CreativeWork was first asserted.,,,,,,,,,,,,,,,,,,,,,
 schema:CreativeWork,creator,Organization  or Person,The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork.,agent,,,,,,,,creator,[cre] in Author,,,,,author,,,,,,
@@ -55,7 +55,7 @@ schema:Person,affiliation,Text,"An organization that this person is affiliated w
 schema:Person,identifier,URL,"URL identifer, ideally an ORCID ID for individuals, a FundRef ID for funders",identifier,nameIdentifier,,ORCID,,ORCID,,,,,,,,,,,,,,,
 schema:Person,name,Text,"The name of an Organization, or if separate given and family names cannot be resolved for a Person",,,,name,,name,,,,,,,,author:contact-name,author.name,,,,,,
 schema:Person,address,PostalAddress or Text,Physical address of the item.,,,,,,,,,,,,,,,,,,,,,
-schema,type,Object Type (from context or URI),"The object type (e.g. ""Person"", ""Organization"", ""ScientificArticle"", ""SoftwareApplication"", etc).",,,,,,,,,,,,,,,,,,,,,
+schema,type,Object Type (from context or URI),"The object type (e.g. ""Person"", ""Organization"", ""ScientificArticle"", ""SoftwareApplication"", etc).",,resourceTypeGeneral,,,,,,,,,,,,,,,,,,,
 schema,id,URL,Primary identifier for an object. Must be a resolvable URL or a string used to refer to this node elsewhere in the same document,,,,,,,,,,,,,,,,,,,,,
 codemeta:SoftwareSourceCode,softwareSuggestions,SoftwareSourceCode,"Optional dependencies , e.g. for optional features, code development, etc",suggests,,,,,,,,,Suggests,,,,,devDependencies / optionalDependencies,,BuildDepends,add_development_dependency,,,
 codemeta:SoftwareSourceCode,maintainer,Person,Individual responsible for maintaining the software (usually includes an email contact address),uploadedBy,,,,,,,,,Maintainer,,,,,,,,,,maintainer,
@@ -65,8 +65,8 @@ codemeta:SoftwareSourceCode,developmentStatus,Text,"Description of development s
 codemeta:SoftwareSourceCode,embargoDate,Date,"Software may be embargoed from public access until a specified date (e.g. pending publication, 1 year from publication)",embargoDate,,,,,embargo_date,,,,,,,,,,,,,,,
 codemeta:SoftwareSourceCode,funding,Text,Funding source (e.g. specific grant),funding,,,,,,,,,,,,,,,,,,,,
 codemeta:SoftwareSourceCode,issueTracker,URL,link to software bug reporting or issue tracking system,issueTracker,,,,issues_url,,,,,BugReports,,,,resources.bugtracker,bugs,issuesManagement,Problems,,,bug-database,bug tracking system
-codemeta:SoftwareSourceCode,referencePublication,ScholarlyArticle,An academic publication related to the software.,relatedPublications,,,,,,,,,,,,,,,,,,,blog,
-codemeta:SoftwareSourceCode,readme,URL,link to software Readme file,readme,,,,,,,,,,,,,,,,,,,,
+codemeta:SoftwareSourceCode,referencePublication,ScholarlyArticle,An academic publication related to the software.,relatedPublications,IsDescribedBy,,,,,,,,,,,,,,,,,,blog,
+codemeta:SoftwareSourceCode,readme,URL,link to software Readme file,readme,IsDescribedBy,,,,,,,,,,,,,,,,,,,
 ,,,,relatedIdentifer,,,,,,,,,,,,,,,,,,,,
 ,,,,relatedIdentiferType,,,,,,,,,,,,,,,,,,,,
 ,,,,relationshipType,,,,,,,,,,,,,,,,,,,,
