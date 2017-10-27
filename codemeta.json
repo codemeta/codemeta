@@ -134,6 +134,13 @@
       "familyName": "Boettiger",
       "email": "cboettig@gmail.com",
       "@id": "http://orcid.org/0000-0002-1642-628X"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Stephan",
+      "familyName": "Druskat",
+      "email": "mail@sdruskat.net",
+      "@id": "http://orcid.org/0000-0003-4925-7248"
     }
   ],
   "maintainer": {
