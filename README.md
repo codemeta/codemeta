@@ -12,14 +12,14 @@ See <https://codemeta.github.io> for a visualization of the [crosswalk table](ht
 The schema for released versions of CodeMeta are:
 
 - CodeMeta-2.0: [https://doi.org/10.5063/schema/codemeta-2.0](https://doi.org/10.5063/schema/codemeta-2.0)
-    - *Matthew B. Jones, Carl Boettiger, Abby Cabunoc Mayes, Arfon Smith, Peter Slaughter, Kyle Niemeyer, Yolanda Gil, Martin Fenner, Krzysztof Nowak, Mark Hahnel, Luke Coy, Alice Allen, Mercè Crosas, Ashley Sands, Neil Chue Hong, Patricia Cruse, Dan Katz, Carole Goble.* 2017. __CodeMeta: an exchange schema for software metadata. Version 2.0.__ KNB Data Repository. [doi:10.5063/schema/codemeta-2.0](https://doi.org/10.5063/schema/codemeta-2.0)
+    - *Matthew B. Jones, Carl Boettiger, Abby Cabunoc Mayes, Arfon Smith, Peter Slaughter, Kyle Niemeyer, Yolanda Gil, Martin Fenner, Krzysztof Nowak, Mark Hahnel, Luke Coy, Alice Allen, Mercè Crosas, Ashley Sands, Neil Chue Hong, Patricia Cruse, Daniel S. Katz, Carole Goble.* 2017. __CodeMeta: an exchange schema for software metadata. Version 2.0.__ KNB Data Repository. [doi:10.5063/schema/codemeta-2.0](https://doi.org/10.5063/schema/codemeta-2.0)
 - CodeMeta-1.0: [https://doi.org/10.5063/schema/codemeta-1.0](https://doi.org/10.5063/schema/codemeta-1.0)
-    - *Matthew B. Jones, Carl Boettiger, Abby Cabunoc Mayes, Arfon Smith, Peter Slaughter, Kyle Niemeyer, Yolanda Gil, Martin Fenner, Krzysztof Nowak, Mark Hahnel, Luke Coy, Alice Allen, Mercè Crosas, Ashley Sands, Neil Chue Hong, Patricia Cruse, Dan Katz, Carole Goble.* 2016. __CodeMeta: an exchange schema for software metadata.__ KNB Data Repository. [doi:10.5063/schema/codemeta-1.0](https://doi.org/10.5063/schema/codemeta-1.0)
+    - *Matthew B. Jones, Carl Boettiger, Abby Cabunoc Mayes, Arfon Smith, Peter Slaughter, Kyle Niemeyer, Yolanda Gil, Martin Fenner, Krzysztof Nowak, Mark Hahnel, Luke Coy, Alice Allen, Mercè Crosas, Ashley Sands, Neil Chue Hong, Patricia Cruse, Daniel S. Katz, Carole Goble.* 2016. __CodeMeta: an exchange schema for software metadata.__ KNB Data Repository. [doi:10.5063/schema/codemeta-1.0](https://doi.org/10.5063/schema/codemeta-1.0)
 
 ## Contributors
 CodeMeta is a community project with many contributors spanning research, education, and engineering domains.    - See our [list of Contributors](CONTRIBUTORS.MD). You can cite the CodeMeta schema and project as:
 
-> *Matthew B. Jones, Carl Boettiger, Abby Cabunoc Mayes, Arfon Smith, Peter Slaughter, Kyle Niemeyer, Yolanda Gil, Martin Fenner, Krzysztof Nowak, Mark Hahnel, Luke Coy, Alice Allen, Mercè Crosas, Ashley Sands, Neil Chue Hong, Patricia Cruse, Dan Katz, Carole Goble.* 2017. __CodeMeta: an exchange schema for software metadata. Version 2.0.__ KNB Data Repository. [doi:10.5063/schema/codemeta-2.0](https://doi.org/10.5063/schema/codemeta-2.0)
+> *Matthew B. Jones, Carl Boettiger, Abby Cabunoc Mayes, Arfon Smith, Peter Slaughter, Kyle Niemeyer, Yolanda Gil, Martin Fenner, Krzysztof Nowak, Mark Hahnel, Luke Coy, Alice Allen, Mercè Crosas, Ashley Sands, Neil Chue Hong, Patricia Cruse, Daniel S. Katz, Carole Goble.* 2017. __CodeMeta: an exchange schema for software metadata. Version 2.0.__ KNB Data Repository. [doi:10.5063/schema/codemeta-2.0](https://doi.org/10.5063/schema/codemeta-2.0)
 
 ## How you can help
 Join us!  We welcome help formalizing a schema and creating mappings between existing software metadata schemas and the proposed schema. And writing documentation. And evangelizing. And other stuff, however you might be able to contribute.
