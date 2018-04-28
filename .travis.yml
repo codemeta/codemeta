@@ -3,6 +3,8 @@
 language: R
 sudo: true
 cache: packages
+r_packages:
+    - devtools
 apt_packages:
     - libv8-dev
 
