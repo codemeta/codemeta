@@ -24,7 +24,7 @@ schema:CreativeWork,contributor,Organization  or Person,A secondary contributor 
 schema:CreativeWork,copyrightHolder,Organization  or Person,The party holding the legal copyright to the CreativeWork.,agents [role=copyrightHolder],,,,,,,,,,,,,,,,,,,,,
 schema:CreativeWork,copyrightYear,Number,The year during which the claimed copyright for the CreativeWork was first asserted.,,,,,,,,,,,,,,,,,,,,,,
 schema:CreativeWork,creator,Organization  or Person,The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork.,agent,,,,,,,,creator,[cre] in Author,,,,,author,,,,,,,
-schema:CreativeWork,dateCreated,Date  or DateTime,The date on which the CreativeWork was created or the item was added to a DataFeed.,dateCrated,date,,,created_at,,,,created,,Date,,,,,,,,,,,
+schema:CreativeWork,dateCreated,Date  or DateTime,The date on which the CreativeWork was created or the item was added to a DataFeed.,dateCreated,date,,,created_at,,,,created,,Date,,,,,,,,,,,
 schema:CreativeWork,dateModified,Date  or DateTime,The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed.,dateModified,date,,,updated_at,,,,,,,,last-updated,,,,,,,,,
 schema:CreativeWork,datePublished,Date,Date of first broadcast/publication.,datePublished,publicationYear,,date_published,,date_retrieved,,,date,Date,,,,,,,Date,,,,publication date,date-released
 schema:CreativeWork,editor,Person,Specifies the Person who edited the CreativeWork.,,,,,,,,,,,,,,,,,,,,,editor,
