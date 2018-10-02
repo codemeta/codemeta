@@ -57,6 +57,7 @@ schema:Person,name,Text,"The name of an Organization, or if separate given and f
 schema:Person,address,PostalAddress or Text,Physical address of the item.,,,,,,,,,,,,,,,,,,,,,,person.address + person.city + person.region + person.post-code + person.country / entity.address + entity.city + entity.region + entity.post-code + entity.country
 schema,type,Object Type (from context or URI),"The object type (e.g. ""Person"", ""Organization"", ""ScientificArticle"", ""SoftwareApplication"", etc).",,,,,,,,,,,,,,,,,,,,,,reference.type
 schema,id,URL,Primary identifier for an object. Must be a resolvable URL or a string used to refer to this node elsewhere in the same document,,,,,,,,,,,,,,,,,,,,,,
+codemeta:SoftwareSourceCode,networkRequirements,SoftwareSourceCode,"Optional description of the network stack (IPv4, IPv6, dualstack)",networkRequirements,,,,,,,,,,,,,,,,,,,,,
 codemeta:SoftwareSourceCode,softwareSuggestions,SoftwareSourceCode,"Optional dependencies , e.g. for optional features, code development, etc",suggests,,,,,,,,,Suggests,,,,,devDependencies / optionalDependencies,,BuildDepends,add_development_dependency,,,,
 codemeta:SoftwareSourceCode,maintainer,Person,Individual responsible for maintaining the software (usually includes an email contact address),uploadedBy,,,,,,,,,Maintainer,,,,,,,,,,maintainer,,
 codemeta:SoftwareSourceCode,contIntegration,URL,link to continuous integration service,contIntegration,,,,,,,,,,,,,,,ciManagement,,,,,,
