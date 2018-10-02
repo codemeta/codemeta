@@ -66,6 +66,7 @@
         
       "author": { "@id": "schema:author", "@container": "@list" },
       
+      "networkRequirements": { "@id": "codemeta:networkRequirements", "@type": "@id"},
       "softwareSuggestions": { "@id": "codemeta:softwareSuggestions", "@type": "@id"},
       "contIntegration": { "@id": "codemeta:contIntegration", "@type": "@id"},
       "buildInstructions": { "@id": "codemeta:buildInstructions", "@type": "@id"},
