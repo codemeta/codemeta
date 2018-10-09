@@ -153,7 +153,8 @@
   "contIntegration": "https://travis-ci.org/codemeta/codemeta",
   "developmentStatus": "active",
   "downloadUrl": "https://github.com/codemeta/codemeta/archive/2.0.zip",
-  "funding":"National Science Foundation Award #1549758; Codemeta: A Rosetta Stone for Metadata in Scientific Software",
+  "funder": "National Science Foundation",
+  "funding":"1549758; Codemeta: A Rosetta Stone for Metadata in Scientific Software",
   "keywords": [
     "metadata",
     "software"
