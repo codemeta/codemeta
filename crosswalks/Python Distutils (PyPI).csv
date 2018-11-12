@@ -1,0 +1,77 @@
+Property,Python Distutils (PyPI)
+codeRepository,
+programmingLanguage,classifiers['Programming Language']
+runtimePlatform,
+targetProduct,
+applicationCategory,classifiers['Topic']
+applicationSubCategory,
+downloadUrl,download_url
+fileSize,
+installUrl,
+memoryRequirements,
+operatingSystem,classifiers['Operating System']
+permissions,
+processorRequirements,
+releaseNotes,
+softwareHelp,
+softwareRequirements,install_requires
+softwareVersion,
+storageRequirements,
+supportingData,
+author,author
+citation,
+contributor,
+copyrightHolder,
+copyrightYear,
+creator,
+dateCreated,
+dateModified,
+datePublished,
+editor,
+encoding,
+fileFormat,
+funder,
+keywords,keywords
+license,license
+producer,
+provider,
+publisher,
+sponsor,
+version,Version
+isAccessibleForFree,
+isPartOf,
+hasPart,
+position,
+description,"description, long_description"
+identifier,
+name,name
+sameAs,
+url,url
+relatedLink,
+givenName,
+familyName,
+email,author_email
+affiliation,
+identifier,
+name,
+address,
+type,
+id,
+softwareSuggestions,
+maintainer,maintainer / maintainer_email
+contIntegration,
+buildInstructions,
+developmentStatus,classifiers['Development Status']
+embargoDate,
+funding,
+issueTracker,
+referencePublication,
+readme,
+,
+,
+,
+,
+,
+,
+,
+,
