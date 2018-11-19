@@ -1,222 +1,80 @@
 {
-   "@context":{
+  "@context": {
+      "type": "@type",
+      "id": "@id",
       "schema":"http://schema.org/",
-      "dcterms":"http://purl.org/dc/terms/",
-      "xsd":"http://www.w3.org/2001/XMLSchema#",
       "codemeta": "https://codemeta.github.io/terms/",
-      "Code":"schema:SoftwareSourceCode",
-      "agent":{
-         "@id":"schema:agent"
-      },
-      "controlledTerm": {
-          "@id":"codemeta:controlledTerm",
-          "@type":"xsd:string"
-      },
-      "person":{
-         "@id":"schema:Person"
-      },
-      "organization":{
-         "@id":"schema:Organization"
-      },
-      "email":{
-         "@id":"schema:email",
-         "@type":"xsd:string"
-      },
-      "name":{
-         "@id":"schema:name",
-         "@type":"xsd:string"
-      },
-      "affiliation":{
-         "@id":"schema:affiliation",
-         "@type":"xsd:string"
-      },
-      "mustBeCited":{
-         "@id":"codemeta:mustBeCited",
-         "@type":"xsd:boolean"
-      },
-      "isMaintainer":{
-         "@id":"codemeta:isMaintainer",
-         "@type":"xsd:boolean"
-      },
-      "isRightsHolder":{
-         "@id":"codemeta:isRightsHolder",
-         "@type":"xsd:boolean"
-      },
-      "namespace":{
-        "@id":"codemeta:namespace",
-        "@type":"xsd:string"
-      },
-      "role":{
-         "@id":"codemeta:Role",
-         "@type":"@id"
-      },
-      "roleCode":{
-        "@id": "codemeta:roleCode",
-        "@type":"xsd:string"
-      },
-      "buildInstructions":{
-         "@id":"codemeta:buildInstructions",
-         "@type":"xsd:anyURI"
-      },
-      "downloadLink":
-      {
-         "@id":"schema:downloadUrl",
-         "@type": "xsd:anyURI"
-      },
-      "contIntegration":{
-         "@id":"codemeta:contIntegration",
-         "@type":"xsd:anyURI"
-      },
-      "identifier":{
-         "@id":"dcterms:identifier",
-         "@type":"xsd:string"
-      },
-      "codeRepository":{
-         "@id":"schema:codeRepository",
-         "@type":"schema:URL"
-      },
-      "dateCreated":{
-         "@id":"schema:dateCreated",
-         "@type":"xsd:dateTime"
-      },
-      "dateModified":{
-         "@id":"schema:dateModified",
-         "@type":"xsd:dateTime"
-      },
-      "datePublished":{
-         "@id":"schema:datePublished",
-         "@type":"xsd:dateTime"
-      },
-      "dependency": {
-          "@id":"codemeta:requirement"
-      },
-      "developmentStatus": {
-          "@id":"codemeta:developmentStatus",
-          "@type":"xsd:string"
-      },
-      "description":{
-         "@id":"schema:description",
-         "@type":"xsd:string"
-      },
-      "embargoDate":{
-         "@id":"codemeta:embargoDate",
-         "@type":"xsd:dataTime"
-      },
-      "isAutomatedBuild":{
-         "@id":"codemeta:isAutomatedBuild",
-         "@type":"xsd:boolean"
-      },
-      "tags":{
-         "@id":"schema:keywords",
-         "@type":"xsd:string"
-      },
-      "objectType":{
-          "@id":"dc:type",
-          "@type":"xsd:string:"
-      },
-      "publisher":{
-          "@id": "schema:publisher",
-          "@type": "xsd:string"
-      },
-      "licenseId":
-      {
-          "@id": "schema:license",
-          "@type": "xsd:string"
-      },
-      "interactionMethod":
-      {
-          "@id": "codemeta:interactionMethod",
-          "@type": "xsd:string"
-      },
-      "inputs": {
-          "@id": "codemeta:inputs",
-          "@type": "xsd:string"
-      },
-      "outputs": {
-          "@id": "codemeta:outputs",
-          "@type": "xsd:string"
-      },
-      "function": {
-          "@id": "codemeta:function",
-          "@type": "xsd:string"
-      },
-      "funding": {
-          "@id": "codemeta:funding",
-          "@type": "xsd:string"
-      },
-      "operatingSystem":{
-          "@id": "schema:operatingSystem"
-      },
-      "packageId":{
-          "@id": "codemeta:packageId",
-          "@type": "xsd:string"
-      },
-      "packageSystem":{
-          "@id": "codemeta:packageSystem",
-          "@type": "xsd:string"
-      },
-      "programmingLanguage": {
-          "@id": "schema:programmingLanguage"
-      },
-      "readme":{
-         "@id":"codemeta:readme",
-         "@type":"xsd:anyURI"
-      },
-      "issueTracker":{
-         "@id":"codemeta:issueTracker",
-         "@type":"xsd:anyURI"
-      },
-      "relatedIdentifier":{
-         "@id":"codemeta:relatedIdentifier",
-         "@type":"xsd:string"
-      },
-      "relatedIdentifierType":{
-         "@id":"codemeta:relatedIdentifierType",
-         "@type":"xsd:string"
-      },
-      "relatedLink":{
-         "@id":"codemeta:relatedLink",
-         "@type":"xsd:anyURI"
-      },
-      "relatedPublications":{
-         "@id":"codemeta:relatedPublications",
-         "@type":"xsd:string"
-      },
-      "relationship":{
-         "@id":"codemeta:relationship"
-      },
-      "relationshipType":{
-         "@id":"codemeta:relationshipType",
-         "@type":"xsd:string"
-      },
-      "softwareCitation":{
-         "@id":"codemeta:softwareCitation",
-         "@type":"xsd:string"
-      },
-      "suggests":{
-         "@id":"schema:suggests",
-         "@type":"xsd:string"
-      },
-      "softwarePaperCitation":{
-         "@id":"codemeta:softwarePaperCitation",
-         "@type":"xsd:string"
-      },
-      "title":{
-         "@id":"dcterms:title",
-         "@type":"xsd:string"
-      },
-      "version":{
-         "@id":"schema:version",
-         "@type":"xsd:string"
-      },
-      "uploadedBy":{
-         "@id":"codemeta:uploadedBy"
-      },
-      "zippedCode":{
-         "@id":"codemeta:zippedCode",
-         "@type":"xsd:anyURI"
-      },
-      "URL":"schema:URL",
-      "Text":"schema:Text"
-   }
+      "Organization": {"@id": "schema:Organization"},
+      "Person": {"@id": "schema:Person"},
+      "SoftwareSourceCode": {"@id": "schema:SoftwareSourceCode"},
+      "SoftwareApplication": {"@id": "schema:SoftwareApplication"},
+      "Text": {"@id": "schema:Text"},
+      "URL": {"@id": "schema:URL"},
+      "address": { "@id": "schema:address"},
+      "affiliation": { "@id": "schema:affiliation"},
+      "applicationCategory": { "@id": "schema:applicationCategory", "@type": "@id"},
+      "applicationSubCategory": { "@id": "schema:applicationSubCategory", "@type": "@id"},
+      "citation": { "@id": "schema:citation"},
+      "codeRepository": { "@id": "schema:codeRepository", "@type": "@id"},
+      "contributor": { "@id": "schema:contributor"},
+      "copyrightHolder": { "@id": "schema:copyrightHolder"},
+      "copyrightYear": { "@id": "schema:copyrightYear"},
+      "creator": { "@id": "schema:creator"},
+      "dateCreated": {"@id": "schema:dateCreated", "@type": "schema:Date" },
+      "dateModified":  {"@id": "schema:dateModified", "@type": "schema:Date" },
+      "datePublished":  {"@id": "schema:datePublished", "@type": "schema:Date" },
+      "description": { "@id": "schema:description"},
+      "downloadUrl": { "@id": "schema:downloadUrl", "@type": "@id"},
+      "email": { "@id": "schema:email"},
+      "editor": { "@id": "schema:editor"},
+      "encoding": { "@id": "schema:encoding"},
+      "familyName": { "@id": "schema:familyName"},
+      "fileFormat": { "@id": "schema:fileFormat", "@type": "@id"},
+      "fileSize": { "@id": "schema:fileSize"},
+      "funder": { "@id": "schema:funder"},
+      "givenName": { "@id": "schema:givenName"},
+      "hasPart": { "@id": "schema:hasPart" },
+      "identifier": { "@id": "schema:identifier", "@type": "@id"},
+      "installUrl": { "@id": "schema:installUrl", "@type": "@id"},
+      "isAccessibleForFree": { "@id": "schema:isAccessibleForFree"},
+      "isPartOf":  { "@id": "schema:isPartOf"},
+      "keywords": { "@id": "schema:keywords"},
+      "license": { "@id": "schema:license", "@type": "@id"},
+      "memoryRequirements": { "@id": "schema:memoryRequirements", "@type": "@id"},
+      "name": { "@id": "schema:name"},
+      "operatingSystem": { "@id": "schema:operatingSystem"},
+      "permissions": { "@id": "schema:permissions"},
+      "position": { "@id": "schema:position"},
+      "processorRequirements": { "@id": "schema:processorRequirements"},
+      "producer": { "@id": "schema:producer"},
+      "programmingLanguage": { "@id": "schema:programmingLanguage"},
+      "provider": { "@id": "schema:provider"},
+      "publisher": { "@id": "schema:publisher"},
+      "relatedLink": { "@id": "schema:relatedLink", "@type": "@id"},
+      "releaseNotes": { "@id": "schema:releaseNotes", "@type": "@id"},
+      "runtimePlatform": { "@id": "schema:runtimePlatform"},
+      "sameAs": { "@id": "schema:sameAs", "@type": "@id"},
+      "softwareHelp": { "@id": "schema:softwareHelp"},
+      "softwareRequirements": { "@id": "schema:softwareRequirements", "@type": "@id"},
+      "softwareVersion": { "@id": "schema:softwareVersion"},
+      "sponsor": { "@id": "schema:sponsor"},
+      "storageRequirements": { "@id": "schema:storageRequirements", "@type": "@id"},
+      "supportingData": { "@id": "schema:supportingData"},
+      "targetProduct": { "@id": "schema:targetProduct"},
+      "url": { "@id": "schema:url", "@type": "@id"},
+      "version": { "@id": "schema:version"},
+        
+      "author": { "@id": "schema:author", "@container": "@list" },
+      
+      "softwareSuggestions": { "@id": "codemeta:softwareSuggestions", "@type": "@id"},
+      "contIntegration": { "@id": "codemeta:contIntegration", "@type": "@id"},
+      "buildInstructions": { "@id": "codemeta:buildInstructions", "@type": "@id"},
+      "developmentStatus": { "@id": "codemeta:developmentStatus", "@type": "@id"},
+      "embargoDate": { "@id":"codemeta:embargoDate", "@type": "schema:Date" },
+      "funding": { "@id": "codemeta:funding" },
+      "readme": { "@id":"codemeta:readme", "@type": "@id" },
+      "issueTracker": { "@id":"codemeta:issueTracker", "@type": "@id" },
+      "referencePublication": { "@id": "codemeta:referencePublication", "@type": "@id"},
+      "maintainer": { "@id": "codemeta:maintainer" }
+  }
 }

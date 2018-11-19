@@ -1,0 +1,170 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "identifier": "CodeMeta",
+  "description": "CodeMeta is a concept vocabulary that can be used to standardize the exchange of software metadata across repositories and organizations.",
+  "name": "CodeMeta: Minimal metadata schemas for science software and code, in JSON-LD",
+  "codeRepository": "https://github.com/codemeta/codemeta",
+  "issueTracker": "https://github.com/codemeta/codemeta/issues",
+  "license": "https://spdx.org/licenses/Apache-2.0",
+  "version": "2.0",
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Carl",
+      "familyName": "Boettiger",
+      "email": "cboettig@gmail.com",
+      "@id": "http://orcid.org/0000-0002-1642-628X"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Matthew B.",
+      "familyName": "Jones",
+      "email": "jones@nceas.ucsb.edu",
+      "@id": "http://orcid.org/0000-0003-0077-4738"
+    }
+  ],
+  "contributor": [
+    {
+      "@type": "Person",
+      "givenName": "Abby Cabunoc",
+      "familyName": "Mayes",
+      "email": "abbycabs@gmail.com"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Arfon",
+      "familyName": "Smith",
+      "email": "arfon.smith@gmail.com",
+      "@id": "http://orcid.org/0000-0002-3957-2474"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Peter",
+      "familyName": "Slaughter",
+      "email": "slaughter@nceas.ucsb.edu",
+      "@id": "http://orcid.org/0000-0002-2192-403X"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Kyle",
+      "familyName": "Niemeyer",
+      "email": "Kyle.Niemeyer@oregonstate.edu",
+      "@id": "http://orcid.org/0000-0003-4425-7097"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Yolanda",
+      "familyName": "Gil",
+      "email": "GIL@ISI.EDU",
+      "@id": "http://orcid.org/0000-0001-8465-8341"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Krzysztof",
+      "familyName": "Nowak"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Martin",
+      "familyName": "Fenner",
+      "@id": "http://orcid.org/0000-0003-1419-2405"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Mark",
+      "familyName": "Hahnel",
+      "@id": "http://orcid.org/0000-0003-4741-0309"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Luke",
+      "familyName": "Coy",
+      "email": "luke.coy@rit.edu"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Alice",
+      "familyName": "Allen",
+      "email": "aallen@ascl.net",
+      "@id": "http://orcid.org/0000-0003-3477-2845"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Mercè",
+      "familyName": "Crosas",
+      "@id": "http://orcid.org/0000-0003-1304-1939"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Ashley",
+      "familyName": "Sands",
+      "@id": "http://orcid.org/0000-0001-5636-0433"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Neil",
+      "familyName": "Chue Hong",
+      "email": "n.chuehong@epcc.ed.ac.uk",
+      "@id": "http://orcid.org/0000-0002-8876-7606"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Patricia",
+      "familyName": "Cruse",
+      "@id": "http://orcid.org/0000-0002-9300-5278"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Dan",
+      "familyName": "Katz",
+      "email": "dskatz@illinois.edu",
+      "@id": "http://orcid.org/0000-0003-2720-0339"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Carole",
+      "familyName": "Goble",
+      "email": "carole.goble@manchester.ac.uk",
+      "@id": "http://orcid.org/0000-0003-1219-2137"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Carl",
+      "familyName": "Boettiger",
+      "email": "cboettig@gmail.com",
+      "@id": "http://orcid.org/0000-0002-1642-628X"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Stephan",
+      "familyName": "Druskat",
+      "email": "mail@sdruskat.net",
+      "@id": "http://orcid.org/0000-0003-4925-7248"
+    }
+  ],
+  "maintainer": {
+    "@type": "Person",
+    "givenName": "Carl",
+    "familyName": "Boettiger",
+    "email": "cboettig@gmail.com",
+    "@id": "http://orcid.org/0000-0002-1642-628X"
+  },
+  "contIntegration": "https://travis-ci.org/codemeta/codemeta",
+  "developmentStatus": "active",
+  "downloadUrl": "https://github.com/codemeta/codemeta/archive/2.0.zip",
+  "funder": { 
+          "@id": "https://doi.org/10.13039/100000001",
+          "@type": "Organization",
+          "name": "National Science Foundation"
+  },
+  "funding":"1549758; Codemeta: A Rosetta Stone for Metadata in Scientific Software",
+  "keywords": [
+    "metadata",
+    "software"
+  ],
+  "version":"2.0",
+  "dateCreated":"2017-06-05",
+  "datePublished":"2017-06-05",
+  "programmingLanguage": "JSON-LD"
+}
