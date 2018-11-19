@@ -24,7 +24,7 @@ CodeMeta is a community project with many contributors spanning research, educat
 ## How you can help
 Join us!  We welcome help formalizing a schema and creating mappings between existing software metadata schemas and the proposed schema. And writing documentation. And evangelizing. And other stuff, however you might be able to contribute.
 
-* Send us a pull request if you have any updates to our [schema](https://github.com/codemeta/codemeta/blob/master/codemeta.jsonld) or [mappings](https://github.com/codemeta/codemeta/blob/master/crosswalk.csv)!
+* Send us a pull request if you have any updates to our [schema](https://github.com/codemeta/codemeta/blob/master/codemeta.jsonld) or [mappings](https://github.com/codemeta/codemeta/tree/master/crosswalks/)! See the [contribution guide](https://github.com/codemeta/codemeta/blob/master/CONTRIBUTING.md).
 * Take a look at the [issue tracker](https://github.com/codemeta/codemeta/issues)
 * Join the discussion!
     - [Join the CodeMeta chat gitter.im](https://gitter.im/codemeta/codemeta) (May not always be active, best to ping us directly in the GitHub issues if you don't get a response).
