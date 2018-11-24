@@ -1,0 +1,77 @@
+Parent Type,Property,Type,Description,codemeta-V1,DataCite,OntoSoft,Zenodo,GitHub,Figshare,Software Ontology,Software Discovery Index,Dublin Core,R Package Description,Debian Package,Python Distutils (PyPI),Python PKG-INFO,Trove Software Map,Perl Module Description (CPAN::Meta),NodeJS,Java (Maven),Octave,Ruby Gem,ASCL,DOAP,Wikidata,Citation File Format Core (CFF-Core) 1.0.2
+schema:SoftwareSourceCode,codeRepository,URL,"Link to the repository where the un-compiled, human readable code and related code is located (SVN, github, CodePlex).",codeRepository,,,relatedLink,html_url,relatedLink,,,,URL,HomePage,,,,resources.repository,repository,repositories,,homepage,site_list,repository,source code repository,repository-code
+schema:SoftwareSourceCode,programmingLanguage,ComputerLanguage  or Text,The computer programming language.,programmingLanguage,Format,hasProgrammingLanguage,,languages_url,,programming language,,,,,classifiers['Programming Language'],,Programming Language,,,,,,,programming-language,programming language,
+schema:SoftwareSourceCode,runtimePlatform,Text,"Runtime platform or script interpreter dependencies (Example - Java v1, Python2.3, .Net Framework 3.0). Supersedes runtime.",,,,,,,,,,,,,,,,,,,platform,,platform,,
+schema:SoftwareSourceCode,targetProduct,SoftwareApplication,"Target Operating System / Product to which the code applies. If applies to several versions, just the product name can be used.",,,,,,,,,,,,,,,,,,,,,,,
+schema:SoftwareApplication,applicationCategory,Text  or URL,"Type of software application, e.g. 'Game, Multimedia'.",,,hasSoftwareCategory,communities,,categories,,,,,,classifiers['Topic'],,Topic,Categories,,,Categories,,,,,
+schema:SoftwareApplication,applicationSubCategory,Text  or URL,"Subcategory of the application, e.g. 'Arcade Game'.",,,,,,,,,,,,,,,,,,,,,,,
+schema:SoftwareApplication,downloadUrl,URL,"If the file can be downloaded, URL to download the binary.",downloadLink,,,,archive_url,,,,,,,download_url,Download-URL,,,,,,,,download-page,,repository-artifact
+schema:SoftwareApplication,fileSize,Text,"Size of the application / package (e.g. 18MB). In the absence of a unit (MB, KB etc.), KB will be assumed.",,,,,,,,,,,,,,,,,,,,,,,
+schema:SoftwareApplication,installUrl,URL,"URL at which the app may be installed, if different from the URL of the item.",,,,,,,,,,,,,,,,,,,,,download-mirror,,
+schema:SoftwareApplication,memoryRequirements,Text  or URL,Minimum memory requirements.,,,,,,,,,,,,,,,,,,,,,,,
+schema:SoftwareApplication,operatingSystem,Text,"Operating systems supported (Windows 7, OSX 10.6, Android 1.6).",operatingSystems,,SupportsOperatingSystem,,,,,,,,,classifiers['Operating System'],,Operating System,OSNAMES,os,,,,,os,operating system,
+schema:SoftwareApplication,permissions,Text,"Permission(s) required to run the app (for example, a mobile app may require full internet access or may run only on wifi).",,,,,,,,,,,,,,,,,,,,,,,
+schema:SoftwareApplication,processorRequirements,Text,Processor architecture required to run the application (e.g. IA64).,,,,,,,,,,,,,,,,cpu / engines,,,,,,,
+schema:SoftwareApplication,releaseNotes,Text  or URL,Description of what changed in this version.,,,,,,,,,,,,,,,,,,,,,,,
+schema:SoftwareApplication,softwareHelp,CreativeWork,Software application help.,,,,,,,,,,,,,,,,,,,,,,,
+schema:SoftwareApplication,softwareRequirements,SoftwareSourceCode,Required software dependencies,depends,,hasDependency->Software,,,,,"""Platform, environment, and dependencies""",,"Depends, SystemRequirements",,install_requires,Requires,Database Environment,prereqs,dependencies / bundledDependencies / bundleDependencies / peerDependencies,prerequisites,"Depends, SystemRequirements","requirements, add_runtime_dependency",,,depends on software,
+schema:SoftwareApplication,softwareVersion,Text,Version of the software instance.,,,,,,,,,,,,,,,,,,,,,release,software version,
+schema:SoftwareApplication,storageRequirements,Text  or URL,Storage requirements (free space required).,,,,,,,,,,,,,,,,,,,,,,,
+schema:SoftwareApplication,supportingData,DataFeed,Supporting data for a SoftwareApplication.,,,,,,,,,,,,,,,,,,,,,,,
+schema:CreativeWork,author,Organization  or Person,The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangeably.,agents,creators,,creators,login,,,,,[aut] in Author,,author,Author,,,author,,,author,,developer,,authors
+schema:CreativeWork,citation,CreativeWork  or URL,"A citation or reference to another creative work, such as another publication, web page, scholarly article, etc.",relatedLink,,,,,,,,,,,,,,,,,,,,,,
+schema:CreativeWork,contributor,Organization  or Person,A secondary contributor to the CreativeWork or Event.,,,,,,,,,,[ctb] in Author,,,,,,contributor,,,,,developer,,
+schema:CreativeWork,copyrightHolder,Organization  or Person,The party holding the legal copyright to the CreativeWork.,agents [role=copyrightHolder],,,,,,,,,,,,,,,,,,,,,,
+schema:CreativeWork,copyrightYear,Number,The year during which the claimed copyright for the CreativeWork was first asserted.,,,,,,,,,,,,,,,,,,,,,,,
+schema:CreativeWork,creator,Organization  or Person,The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork.,agent,,,,,,,,creator,[cre] in Author,,,,,,author,,,,,,,
+schema:CreativeWork,dateCreated,Date  or DateTime,The date on which the CreativeWork was created or the item was added to a DataFeed.,dateCreated,date,,,created_at,,,,created,,Date,,,,,,,,,,,,
+schema:CreativeWork,dateModified,Date  or DateTime,The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed.,dateModified,date,,,updated_at,,,,,,,,,last-updated,,,,,,,,,
+schema:CreativeWork,datePublished,Date,Date of first broadcast/publication.,datePublished,publicationYear,,date_published,,date_retrieved,,,date,Date,,,,,,,,Date,,,,publication date,date-released
+schema:CreativeWork,editor,Person,Specifies the Person who edited the CreativeWork.,,,,,,,,,,,,,,,,,,,,,,editor,
+schema:CreativeWork,encoding,MediaObject,A media object that encodes this CreativeWork. This property is a synonym for associatedMedia. Supersedes encodings.,,,,,,,,,,,,,,,,,,,,,,,
+schema:CreativeWork,fileFormat,Text  or URL,"Media type, typically MIME format (see IANA site) of the content e.g. application/zip of a SoftwareApplication binary. In cases where a CreativeWork has several media type representations, 'encoding' can be used to indicate each MediaObject alongside particular fileFormat information. Unregistered or niche file formats can be indicated instead via the most appropriate URL, e.g. defining Web page or a Wikipedia entry.",,Format,,,,,,,,,,,,,,,,,,,,,
+schema:CreativeWork,funder,Organization or Person,A person or organization that supports (sponsors) something through some kind of financial contribution.,fundingReference.funderName,,,contributors.Funder,,,,,,,,,,,,,,,,,,,
+schema:CreativeWork,keywords,Text,Keywords or tags used to describe this content. Multiple entries in a keywords list are typically delimited by commas.,controlledTerms,subject,hasDomainKeywords,keywords,,tags,,,,,,keywords,Keywords,,keywords,keywords,,,,,category,,keywords
+schema:CreativeWork,license,CreativeWork  or URL,"A license document that applies to this content, typically indicated by URL.",licenseId,rights,License,license,license,License,software license,Software license,license,License,,license,License,license,license,license,license,License,license/licenses,,license,license,license/license-url
+schema:CreativeWork,producer,Organization  or Person,"The person or organization who produced the work (e.g. music album, movie, tv/radio series etc.).",,,,,,,,,,,,,,,,,,,,,,,
+schema:CreativeWork,provider,Organization  or Person,"The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller. Supersedes carrier.",,,,,,,,,,,,,,,,,,,,,,,
+schema:CreativeWork,publisher,Organization  or Person,The publisher of the creative work.,publisher,publisher,os:hasPublisher,,,,software publisher organization,,publisher,,,,,,,,,,,,vendor,,
+schema:CreativeWork,sponsor,Organization  or Person,"A person or organization that supports a thing through a pledge, promise, or financial contribution. e.g. a sponsor of a Medical Study or a corporate sponsor of an event.",,,,,,,,,,,,,,,,,,,,,,,
+schema:CreativeWork,version,Number  or Text,The version of the CreativeWork embodied by a specified resource.,version,version,hasSoftwareVersion,,,,Version,Software version,dcterms:hasVersion,,numeric_version,Version,Version,version,,version,version,version,version,,,,version
+schema:CreativeWork,isAccessibleForFree,Boolean,A flag to signal that the publication is accessible for free.,,,,,,,,,,,,,,,,,,,,,,,
+schema:CreativeWork,isPartOf,CreativeWork,Indicates a CreativeWork that this CreativeWork is (in some sense) part of. Reverse property hasPart,,,,,,,,,,,,,,,,,,,,,,,references
+schema:CreativeWork,hasPart,CreativeWork,Indicates a CreativeWork that is (in some sense) a part of this CreativeWork. Reverse property isPartOf,,,,,,,,,,,,,,,,,,,,,,,
+schema:CreativeWork,position,Integer or Text,"The position of an item in a series or sequence of items. (While schema.org considers this a property of CreativeWork, it is also the way to indicate ordering in any list (e.g. the Authors list).  By default arrays are unordered in JSON-LD",,,,,,,,,,,,,,,,,,,,,,,
+schema:Thing,description,Text,A description of the item.,description,description,hasShortDescription,description/notes,description,Description,software,,description,Description,Description,"description, long_description",Summary / Description,description,"abstract, description",description,description,Description,"summary, description",abstract,,,abstract
+schema:Thing,identifier,PropertyValue  or URL,"The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See background notes for more details.",identifier,identifier,hasUniqueId,id,id,,,Persistent Identifier,identifier,Package,Package,,,,,name,groupId,,,ascl_id,,,doi
+schema:Thing,name,Text,"The name of the item (software, Organization)",name,,hasName,title,full_name,Title,SoftwareTitle,Software title,title,Title,,name,Name,Title,name,name,name,name,name,title,,,title
+schema:Thing,sameAs,URL,"URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.",,,,,,,,,,,,,,,,,,,,,,,
+schema:Thing,url,URL,URL of the item.,URL,,,,,,,,,URL,,url,Home-Page,,,homepage,,URL,,,homepage,official website,url
+schema:Thing,relatedLink,URL,"A link related to this object, e.g. related web pages",,RelateIdentifier,,,,,,,,,,,,,,,,,,,,,
+schema:Person,givenName,Text,"Given name. In the U.S., the first name of a Person. This can be used along with familyName instead of the name property",,givenName,,,,,,,,givenName,,,,,,,,,,,,,person.given-names
+schema:Person,familyName,Text,"Family name. In the U.S., the last name of an Person. This can be used along with givenName instead of the name property.",,familyName,,,,,,,,familyName,,,,,,,,,,,,,person.name-particle + person.family-names + person.name-suffix
+schema:Person,email,Text,Email address,email,,,,,,,,,email,,author_email,Author-email,,email-address,author.email,,,email,email,,,person.email/entity.email
+schema:Person,affiliation,Text,"An organization that this person is affiliated with. For example, a school/university",affiliation,affiliation,,affiliation,,,,,,,,,,,,,,,,,,,person.affiliation
+schema:Person,identifier,URL,"URL identifer, ideally an ORCID ID for individuals, a FundRef ID for funders",identifier,nameIdentifier,,ORCID,,ORCID,,,,,,,,,,,,,,,,,person.orcid / entity.orcid
+schema:Person,name,Text,"The name of an Organization, or if separate given and family names cannot be resolved for a Person",,,,name,,name,,,,,,,,,author:contact-name,author.name,,,,,,,entity.name
+schema:Person,address,PostalAddress or Text,Physical address of the item.,,,,,,,,,,,,,,,,,,,,,,,person.address + person.city + person.region + person.post-code + person.country / entity.address + entity.city + entity.region + entity.post-code + entity.country
+schema,type,Object Type (from context or URI),"The object type (e.g. ""Person"", ""Organization"", ""ScientificArticle"", ""SoftwareApplication"", etc).",,,,,,,,,,,,,,,,,,,,,,,reference.type
+schema,id,URL,Primary identifier for an object. Must be a resolvable URL or a string used to refer to this node elsewhere in the same document,,,,,,,,,,,,,,,,,,,,,,,
+codemeta:SoftwareSourceCode,softwareSuggestions,SoftwareSourceCode,"Optional dependencies , e.g. for optional features, code development, etc",suggests,,,,,,,,,Suggests,,,,,,devDependencies / optionalDependencies,,BuildDepends,add_development_dependency,,,,
+codemeta:SoftwareSourceCode,maintainer,Person,Individual responsible for maintaining the software (usually includes an email contact address),uploadedBy,,,,,,,,,Maintainer,,maintainer / maintainer_email,,,,,,,,,maintainer,,
+codemeta:SoftwareSourceCode,contIntegration,URL,link to continuous integration service,contIntegration,,,,,,,,,,,,,,,,ciManagement,,,,,,
+codemeta:SoftwareSourceCode,buildInstructions,URL,link to installation instructions/documentation,buildInstructions,,,,,,,,,,,,,,,,,,,,,,
+codemeta:SoftwareSourceCode,developmentStatus,Text,"Description of development status, e.g. Active, inactive, supsended. See repostatus.org",developmentStatus,,activeDevelopment,,,,,,,,,classifiers['Development Status'],,Development Status,release_status,,,,,,,,
+codemeta:SoftwareSourceCode,embargoDate,Date,"Software may be embargoed from public access until a specified date (e.g. pending publication, 1 year from publication)",embargoDate,,,,,embargo_date,,,,,,,,,,,,,,,,,
+codemeta:SoftwareSourceCode,funding,Text,Funding source (e.g. specific grant),funding,,fundingReference.awardTitle or fundingReference.awardNumber,,,,,,,,,,,,,,,,,,,,
+codemeta:SoftwareSourceCode,issueTracker,URL,link to software bug reporting or issue tracking system,issueTracker,,,,issues_url,,,,,BugReports,,,,,resources.bugtracker,bugs,issuesManagement,Problems,,,bug-database,bug tracking system,repository
+codemeta:SoftwareSourceCode,referencePublication,ScholarlyArticle,An academic publication related to the software.,relatedPublications,,,,,,,,,,,,,,,,,,,,blog,,references
+codemeta:SoftwareSourceCode,readme,URL,link to software Readme file,readme,,,,,,,,,,,,,,,,,,,,,,
+,,,,relatedIdentifer,,,,,,,,,,,,,,,,,,,,,,
+,,,,relatedIdentiferType,,,,,,,,,,,,,,,,,,,,,,
+,,,,relationshipType,,,,,,,,,,,,,,,,,,,,,,
+,,,,title,,,,,,,,,,,,,,,,,,,,,,
+,,,,namespace,,,,,,,,,,,,,,,,,,,,,,
+,,,,role,,,,,,,,,,,,,,,,,,,,,,
+,,,,roleCode,,,,,,,,,,,,,,,,,,,,,,
+,,,,softwarePaperCitationIdenifiers,,,,,,,,,,,,,,,,,,,,,,
