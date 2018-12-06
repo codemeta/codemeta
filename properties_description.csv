@@ -1,0 +1,77 @@
+Parent Type,Property,Type,Description
+schema:SoftwareSourceCode,codeRepository,URL,"Link to the repository where the un-compiled, human readable code and related code is located (SVN, github, CodePlex)."
+schema:SoftwareSourceCode,programmingLanguage,ComputerLanguage  or Text,The computer programming language.
+schema:SoftwareSourceCode,runtimePlatform,Text,"Runtime platform or script interpreter dependencies (Example - Java v1, Python2.3, .Net Framework 3.0). Supersedes runtime."
+schema:SoftwareSourceCode,targetProduct,SoftwareApplication,"Target Operating System / Product to which the code applies. If applies to several versions, just the product name can be used."
+schema:SoftwareApplication,applicationCategory,Text  or URL,"Type of software application, e.g. 'Game, Multimedia'."
+schema:SoftwareApplication,applicationSubCategory,Text  or URL,"Subcategory of the application, e.g. 'Arcade Game'."
+schema:SoftwareApplication,downloadUrl,URL,"If the file can be downloaded, URL to download the binary."
+schema:SoftwareApplication,fileSize,Text,"Size of the application / package (e.g. 18MB). In the absence of a unit (MB, KB etc.), KB will be assumed."
+schema:SoftwareApplication,installUrl,URL,"URL at which the app may be installed, if different from the URL of the item."
+schema:SoftwareApplication,memoryRequirements,Text  or URL,Minimum memory requirements.
+schema:SoftwareApplication,operatingSystem,Text,"Operating systems supported (Windows 7, OSX 10.6, Android 1.6)."
+schema:SoftwareApplication,permissions,Text,"Permission(s) required to run the app (for example, a mobile app may require full internet access or may run only on wifi)."
+schema:SoftwareApplication,processorRequirements,Text,Processor architecture required to run the application (e.g. IA64).
+schema:SoftwareApplication,releaseNotes,Text  or URL,Description of what changed in this version.
+schema:SoftwareApplication,softwareHelp,CreativeWork,Software application help.
+schema:SoftwareApplication,softwareRequirements,SoftwareSourceCode,Required software dependencies
+schema:SoftwareApplication,softwareVersion,Text,Version of the software instance.
+schema:SoftwareApplication,storageRequirements,Text  or URL,Storage requirements (free space required).
+schema:SoftwareApplication,supportingData,DataFeed,Supporting data for a SoftwareApplication.
+schema:CreativeWork,author,Organization  or Person,The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangeably.
+schema:CreativeWork,citation,CreativeWork  or URL,"A citation or reference to another creative work, such as another publication, web page, scholarly article, etc."
+schema:CreativeWork,contributor,Organization  or Person,A secondary contributor to the CreativeWork or Event.
+schema:CreativeWork,copyrightHolder,Organization  or Person,The party holding the legal copyright to the CreativeWork.
+schema:CreativeWork,copyrightYear,Number,The year during which the claimed copyright for the CreativeWork was first asserted.
+schema:CreativeWork,creator,Organization  or Person,The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork.
+schema:CreativeWork,dateCreated,Date  or DateTime,The date on which the CreativeWork was created or the item was added to a DataFeed.
+schema:CreativeWork,dateModified,Date  or DateTime,The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed.
+schema:CreativeWork,datePublished,Date,Date of first broadcast/publication.
+schema:CreativeWork,editor,Person,Specifies the Person who edited the CreativeWork.
+schema:CreativeWork,encoding,MediaObject,A media object that encodes this CreativeWork. This property is a synonym for associatedMedia. Supersedes encodings.
+schema:CreativeWork,fileFormat,Text  or URL,"Media type, typically MIME format (see IANA site) of the content e.g. application/zip of a SoftwareApplication binary. In cases where a CreativeWork has several media type representations, 'encoding' can be used to indicate each MediaObject alongside particular fileFormat information. Unregistered or niche file formats can be indicated instead via the most appropriate URL, e.g. defining Web page or a Wikipedia entry."
+schema:CreativeWork,funder,Organization or Person,A person or organization that supports (sponsors) something through some kind of financial contribution.
+schema:CreativeWork,keywords,Text,Keywords or tags used to describe this content. Multiple entries in a keywords list are typically delimited by commas.
+schema:CreativeWork,license,CreativeWork  or URL,"A license document that applies to this content, typically indicated by URL."
+schema:CreativeWork,producer,Organization  or Person,"The person or organization who produced the work (e.g. music album, movie, tv/radio series etc.)."
+schema:CreativeWork,provider,Organization  or Person,"The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller. Supersedes carrier."
+schema:CreativeWork,publisher,Organization  or Person,The publisher of the creative work.
+schema:CreativeWork,sponsor,Organization  or Person,"A person or organization that supports a thing through a pledge, promise, or financial contribution. e.g. a sponsor of a Medical Study or a corporate sponsor of an event."
+schema:CreativeWork,version,Number  or Text,The version of the CreativeWork embodied by a specified resource.
+schema:CreativeWork,isAccessibleForFree,Boolean,A flag to signal that the publication is accessible for free.
+schema:CreativeWork,isPartOf,CreativeWork,Indicates a CreativeWork that this CreativeWork is (in some sense) part of. Reverse property hasPart
+schema:CreativeWork,hasPart,CreativeWork,Indicates a CreativeWork that is (in some sense) a part of this CreativeWork. Reverse property isPartOf
+schema:CreativeWork,position,Integer or Text,"The position of an item in a series or sequence of items. (While schema.org considers this a property of CreativeWork, it is also the way to indicate ordering in any list (e.g. the Authors list).  By default arrays are unordered in JSON-LD"
+schema:Thing,description,Text,A description of the item.
+schema:Thing,identifier,PropertyValue  or URL,"The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See background notes for more details."
+schema:Thing,name,Text,"The name of the item (software, Organization)"
+schema:Thing,sameAs,URL,"URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website."
+schema:Thing,url,URL,URL of the item.
+schema:Thing,relatedLink,URL,"A link related to this object, e.g. related web pages"
+schema:Person,givenName,Text,"Given name. In the U.S., the first name of a Person. This can be used along with familyName instead of the name property"
+schema:Person,familyName,Text,"Family name. In the U.S., the last name of an Person. This can be used along with givenName instead of the name property."
+schema:Person,email,Text,Email address
+schema:Person,affiliation,Text,"An organization that this person is affiliated with. For example, a school/university"
+schema:Person,identifier,URL,"URL identifer, ideally an ORCID ID for individuals, a FundRef ID for funders"
+schema:Person,name,Text,"The name of an Organization, or if separate given and family names cannot be resolved for a Person"
+schema:Person,address,PostalAddress or Text,Physical address of the item.
+schema,type,Object Type (from context or URI),"The object type (e.g. ""Person"", ""Organization"", ""ScientificArticle"", ""SoftwareApplication"", etc)."
+schema,id,URL,Primary identifier for an object. Must be a resolvable URL or a string used to refer to this node elsewhere in the same document
+codemeta:SoftwareSourceCode,softwareSuggestions,SoftwareSourceCode,"Optional dependencies , e.g. for optional features, code development, etc"
+codemeta:SoftwareSourceCode,maintainer,Person,Individual responsible for maintaining the software (usually includes an email contact address)
+codemeta:SoftwareSourceCode,contIntegration,URL,link to continuous integration service
+codemeta:SoftwareSourceCode,buildInstructions,URL,link to installation instructions/documentation
+codemeta:SoftwareSourceCode,developmentStatus,Text,"Description of development status, e.g. Active, inactive, supsended. See repostatus.org"
+codemeta:SoftwareSourceCode,embargoDate,Date,"Software may be embargoed from public access until a specified date (e.g. pending publication, 1 year from publication)"
+codemeta:SoftwareSourceCode,funding,Text,Funding source (e.g. specific grant)
+codemeta:SoftwareSourceCode,issueTracker,URL,link to software bug reporting or issue tracking system
+codemeta:SoftwareSourceCode,referencePublication,ScholarlyArticle,An academic publication related to the software.
+codemeta:SoftwareSourceCode,readme,URL,link to software Readme file
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,

@@ -7,6 +7,7 @@ r_packages:
     - devtools
 apt_packages:
     - libv8-dev
+    - python3
 
 before_install:
   - cd tests
@@ -14,3 +15,4 @@ before_install:
 script:
   - R -e "devtools::install()"
   - R -f test.R
+  - python3 ../scripts/aggregate.py # This will fail if there is a column name mismatch.
