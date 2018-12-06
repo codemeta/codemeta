@@ -21,3 +21,4 @@ The following individuals have contributed significantly to the CodeMeta crosswa
 | Patricia Cruse | | DataCite | |
 | Dan Katz | | NCSA | |
 | Carole Goble | | | |
+| Ted Habermann | ted.habermann@gmail.com |  | [tedhabermann](https://github.com/tedhabermann) |

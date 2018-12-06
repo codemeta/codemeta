@@ -1,0 +1,67 @@
+﻿Property,ISO 19115-1 (* multiple mappings)
+address,party.contactInfo.address.deliveryPoint
+affiliation,party.name*
+email,party.contactInfo.address. electronicMailAddress
+familyName,party.name*
+givenName,party.name*
+identifier,party.partyIdentifier.code
+name,party.name*
+description,identificationInfo.abstract
+identifier,identificationInfo.citation.identifier.code
+name,identificationInfo.citation.title
+relatedLink,identificationInfo.citation.onlineResource [function='information']*
+sameAs,identificationInfo.citation.onlineResource [function='information']*
+url,identificationInfo.citation.onlineResource [function='download']*
+author,identificationInfo.citation. citedResponsibleParty[role='author'].party.name or identificationInfo.citation. citedResponsibleParty[role='originator'].party.name
+citation, identificationInfo.associatedResource.name*
+contributor, identificationInfo.citation.citedResponsibleParty [not(role='author' or role='principalInvestigator' or role='originator')].party.name*
+copyright Holder,identificationInfo.resourceConstraints.reference. citedResponsibleParty
+copyright Year,identificationInfo.resourceConstraints.reference. date[dateType='publication'].date
+creator,identificationInfo.citation.citedResponsibleParty [role='author'].party.name or identificationInfo.citation.citedResponsibleParty[role='originator'].party.name*
+date Created,identificationInfo.citation.date[dateType='creation']. date*
+date Modified,identificationInfo.citation.date[dateType='revision']. date*
+date Published,identificationInfo.citation.date[dateType='publication'].date*
+editor,identificationInfo.citation.citedResponsibleParty [role='editor'].party.name*
+encoding,
+fileFormat,identificationInfo.resourceFormat. formatSpecificationCitation
+funder,identificationInfo.citation.citedResponsibleParty [role='funder'].party.name*
+hasPart,identificationInfo.associatedResource [associationType='isComposedOf'].name*
+isAccessibleForFree,distributionInfo.distributionFormat.formatDistributor. distributionOrderProcess.fees
+isPartOf,identificationInfo.associatedResource [associationType='LargerWorkCitation'].name*
+keywords,identificationInfo.descriptiveKeywords[type='theme']. Keyword*
+license,identificationInfo.resourceConstraints.reference
+position,
+producer,identificationInfo.citation.citedResponsibleParty [role='creator'].party.name*
+provider,identificationInfo.pointOfContact [role=’pointOfContact’].party.name*
+publisher,identificationInfo.citation.citedResponsibleParty [role='publisher'].party.name*
+sponsor,identificationInfo.citation.citedResponsibleParty [role='sponsor'].party.name*
+version,identificationInfo.citation.edition
+Code Repository,distributionInfo.distributor.distributorTransferOptions.onLine[function='download'].linkage or distributionInfo.distributor.distributorTransferOptions.onLine[function='information'].linkage or distributionInfo.transferOptions.onLine [function='download'].linkage or distributionInfo.transferOptions.onLine [function='information'].linkage or identificationInfo.citation.onlineResource [function='download'].linkage  or identificationInfo.citation.onlineResource [function='information'].linkage*
+ProgrammingLanguage,identificationInfo.descriptiveKeywords[type='theme']. keyword*
+Runtime Platform,identificationInfo.environmentDescription*
+Target Product,identificationInfo.associatedResource.name*
+build Instructions,identificationInfo.additionalDocumentation*
+cont Integration,identificationInfo.additionalDocumentation*
+developmentStatus,identificationInfo.status
+embargo Date,identificationInfo.citation.date[dateType='released']. date*
+funding,identificationInfo.associatedResource*
+issueTracker,identificationInfo.resourceSpecificUsage. identifiedIssues.onlineResource.linkage
+maintainer,identificationInfo.pointOfContact
+readme,identificationInfo.additionalDocumentation*
+reference Publication,identificationInfo.additionalDocumentation*
+software Suggestions,identificationInfo.additionalDocumentation*
+application Category,identificationInfo.descriptiveKeywords[type='theme'].keyword*
+application SubCategory,identificationInfo.descriptiveKeywords[type='theme'].keyword*
+download Url,distributionInfo.distributor.distributorTransferOptions.onLine[function='download'] or distributionInfo.transferOptions.onLine[function='download'].linkage or identificationInfo.citation.onlineResource[function='download'].linkage
+fileSize,distributionInfo.transferOptions.transferSize or distributionInfo.distributionFormat.formatDistributor.distributorTransferOptions.transferSize or  distributionInfo.distributor.distributorTransferOptions.transferSize
+installUrl,distributionInfo.distributor.distributorTransferOptions.onLine[function='download'].linkage or distributionInfo.transferOptions.onLine[function='download'].linkage or identificationInfo.citation.onlineResource[function='download'].linkage
+memory Requirements,identificationInfo.environmentDescription*
+operating System,identificationInfo.environmentDescription*
+permissions,identificationInfo.resourceConstraints or identificationInfo.resourceConstraints.reference.onlineResource.linkage
+processor Requirements,identificationInfo.environmentDescription*
+release Notes,identificationInfo.additionalDocumentation*
+software Help,identificationInfo.additionalDocumentation*
+software Requirements,identificationInfo.additionalDocumentation*
+software Version,identificationInfo.citation.edition
+storage Requirements,identificationInfo.environmentDescription*
+supporting Data,identificationInfo.associatedResource.name*
