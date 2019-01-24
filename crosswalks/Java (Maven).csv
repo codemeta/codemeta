@@ -1,5 +1,5 @@
 Property,Java (Maven)
-codeRepository,repositories
+codeRepository,scm / repositories
 programmingLanguage,
 runtimePlatform,
 targetProduct,
