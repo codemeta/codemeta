@@ -1,7 +1,7 @@
 Property,NodeJS
 codeRepository,repository
 programmingLanguage,
-runtimePlatform,
+runtimePlatform,engines
 targetProduct,
 applicationCategory,
 applicationSubCategory,
@@ -11,7 +11,7 @@ installUrl,
 memoryRequirements,
 operatingSystem,os
 permissions,
-processorRequirements,cpu / engines
+processorRequirements,cpu
 releaseNotes,
 softwareHelp,
 softwareRequirements,dependencies / bundledDependencies / bundleDependencies / peerDependencies
