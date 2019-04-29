@@ -1,56 +1,56 @@
 Property,Wikidata
-codeRepository,source code repository
-programmingLanguage,programming language
-runtimePlatform,
+codeRepository,P1324
+programmingLanguage,P277
+runtimePlatform,P400
 targetProduct,
 applicationCategory,
 applicationSubCategory,
-downloadUrl,
-fileSize,
+downloadUrl,P4945
+fileSize,P3575
 installUrl,
 memoryRequirements,
-operatingSystem,operating system
+operatingSystem,P306
 permissions,
 processorRequirements,
 releaseNotes,
 softwareHelp,
-softwareRequirements,depends on software
-softwareVersion,software version
+softwareRequirements,P1547
+softwareVersion,P348
 storageRequirements,
 supportingData,
-author,
-citation,
-contributor,
+author,P50
+citation,P2860
+contributor,P767
 copyrightHolder,
 copyrightYear,
 creator,
-dateCreated,
-dateModified,
-datePublished,publication date
-editor,editor
+dateCreated,P571
+dateModified,P5017
+datePublished,P577
+editor,P98
 encoding,
-fileFormat,
-funder,
-keywords,
-license,license
-producer,
+fileFormat,P2701
+funder,P859
+keywords,P921
+license,P275
+producer,P162
 provider,
-publisher,
+publisher,P123
 sponsor,
 version,
 isAccessibleForFree,
-isPartOf,
-hasPart,
+isPartOf,P361
+hasPart,P527
 position,
 description,
 identifier,
 name,
-sameAs,
-url,official website
+sameAs,P2888
+url,P856
 relatedLink,
-givenName,
-familyName,
-email,
+givenName,P735
+familyName,P734
+email,P968
 affiliation,
 identifier,
 name,
