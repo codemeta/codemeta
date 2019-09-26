@@ -15,7 +15,7 @@ processorRequirements,
 releaseNotes,
 softwareHelp,
 softwareRequirements,"Depends, SystemRequirements"
-softwareVersion,
+softwareVersion,Version
 storageRequirements,
 supportingData,
 author,[aut] in Author
@@ -43,8 +43,8 @@ isPartOf,
 hasPart,
 position,
 description,Description
-identifier,Package
-name,Title
+identifier,
+name,Package
 sameAs,
 url,URL
 relatedLink,
