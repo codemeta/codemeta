@@ -6,7 +6,7 @@ targetProduct,
 applicationCategory,
 applicationSubCategory,
 downloadUrl,
-fileSize,
+fileSize,size
 installUrl,
 memoryRequirements,
 operatingSystem,
@@ -20,7 +20,7 @@ storageRequirements,
 supportingData,
 author,creators
 citation,
-contributor,
+contributor,contributor
 copyrightHolder,
 copyrightYear,
 creator,
@@ -30,7 +30,7 @@ datePublished,publicationYear
 editor,
 encoding,
 fileFormat,Format
-funder,
+funder,funderName
 keywords,subject
 license,rights
 producer,
@@ -44,16 +44,16 @@ hasPart,
 position,
 description,description
 identifier,identifier
-name,
+name,title 
 sameAs,
 url,
-relatedLink,RelateIdentifier
+relatedLink,RelatedIdentifier
 givenName,givenName
 familyName,familyName
 email,
 affiliation,affiliation
 identifier,nameIdentifier
-name,
+name,creatorName 
 address,
 type,
 id,
@@ -63,7 +63,7 @@ contIntegration,
 buildInstructions,
 developmentStatus,
 embargoDate,
-funding,
+funding,awardNumber 
 issueTracker,
 referencePublication,
 readme,
