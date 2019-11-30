@@ -1,4 +1,7 @@
 {
+"@id":"https://w3id.org/okn/i/mint/TOPOFLOW",
+"@type": "http://schema.org/SoftwareApplication",
+"http://schema.org/name": "Topoflow Hydrology model",
 "http://schema.org/author": {
   "@id": "https://w3id.org/okn/i/mint/peckham_scott", 
   "@type": "http://schema.org/Person",
