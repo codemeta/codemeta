@@ -75,6 +75,7 @@
       "readme": { "@id":"codemeta:readme", "@type": "@id" },
       "issueTracker": { "@id":"codemeta:issueTracker", "@type": "@id" },
       "referencePublication": { "@id": "codemeta:referencePublication", "@type": "@id"},
-      "maintainer": { "@id": "codemeta:maintainer" }
+      "maintainer": { "@id": "codemeta:maintainer" },
+      "hasSourceCode": { "@id": "schema:SoftwareSourceCode", "@type": "@id"},
   }
 }
