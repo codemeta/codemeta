@@ -63,7 +63,6 @@
       "targetProduct": { "@id": "schema:targetProduct"},
       "url": { "@id": "schema:url", "@type": "@id"},
       "version": { "@id": "schema:version"},
-        
       "author": { "@id": "schema:author", "@container": "@list" },
       
       "softwareSuggestions": { "@id": "codemeta:softwareSuggestions", "@type": "@id"},
@@ -76,6 +75,6 @@
       "issueTracker": { "@id":"codemeta:issueTracker", "@type": "@id" },
       "referencePublication": { "@id": "codemeta:referencePublication", "@type": "@id"},
       "maintainer": { "@id": "codemeta:maintainer" },
-      "hasSourceCode": { "@id": "schema:SoftwareSourceCode", "@type": "@id"},
+      "hasSourceCode": { "@id": "codemeta:hasSourceCode", "@type": "@id"}
   }
 }
