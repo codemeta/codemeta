@@ -2,7 +2,7 @@
     "@context": ["http://schema.org", {"author": {"@id": "schema:author", "@container": "@list"} } ] ,
     "name": "Generate CodeMeta Metadata for R Packages",
     "description": "Codemeta defines a 'JSON-LD' format for describing software metadata. This package provides utilities to generate, parse, and modify codemeta.jsonld files automatically for R packages.",
-    "identifier": "http://dx.doi.org/10.5281/zenodo.XXXX",
+    "identifier": {"@id": "http://dx.doi.org/10.5281/zenodo.XXXX"},
     "@type": "SoftwareSourceCode",
     "author": [{
         "@id": "http://orcid.org/0000-0002-2192-403X",
@@ -53,6 +53,5 @@
         "name": "R",
         "URL": "https://www.r-project.org"
     },
-    "downloadUrl": "https://github.com/codemeta/codemetar/releases/",
-    "softwareRequirements": [ "https://cran.r-project.org/package=jsonlite" ]
+    "downloadUrl": "https://github.com/codemeta/codemetar/releases/"
 }
