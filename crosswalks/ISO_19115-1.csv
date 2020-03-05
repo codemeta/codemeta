@@ -17,7 +17,6 @@ citation, identificationInfo.associatedResource.name*
 contributor, identificationInfo.citation.citedResponsibleParty[not(role='author' or role='principalInvestigator' or role='originator')].party.name*
 copyrightHolder,identificationInfo.resourceConstraints.reference.citedResponsibleParty
 copyrightYear,identificationInfo.resourceConstraints.reference.date[dateType='publication'].date
-creator,identificationInfo.citation.citedResponsibleParty[role='author'].party.name or identificationInfo.citation.citedResponsibleParty[role='originator'].party.name*
 dateCreated,identificationInfo.citation.date[dateType='creation'].date*
 dateModified,identificationInfo.citation.date[dateType='revision'].date*
 datePublished,identificationInfo.citation.date[dateType='publication'].date*

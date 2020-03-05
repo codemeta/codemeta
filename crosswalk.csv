@@ -18,12 +18,11 @@ schema:SoftwareApplication,softwareRequirements,SoftwareSourceCode,Required soft
 schema:SoftwareApplication,softwareVersion,Text,Version of the software instance.,,,,,,,,,,,,,,,,,,,,,release,P348,
 schema:SoftwareApplication,storageRequirements,Text  or URL,Storage requirements (free space required).,,,,,,,,,,,,,,,,,,,,,,,
 schema:SoftwareApplication,supportingData,DataFeed,Supporting data for a SoftwareApplication.,,,,,,,,,,,,,,,,,,,,,,,
-schema:CreativeWork,author,Organization  or Person,The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangeably.,agents,creators,,creators,login,,,,,[aut] in Author,,author,Author,,,author,,,author/authors,,developer,P50,authors
+schema:CreativeWork,author,Organization  or Person,The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangeably.,agents,creators,,creators,login,,,,creator,[aut] in Author,,author,Author,,,author,,,author/authors,,developer,P50,authors
 schema:CreativeWork,citation,CreativeWork  or URL,"A citation or reference to another creative work, such as another publication, web page, scholarly article, etc.",relatedLink,,,,,,,,,,,,,,,,,,,,,P2860,
 schema:CreativeWork,contributor,Organization  or Person,A secondary contributor to the CreativeWork or Event.,,contributor,,,,,,,,[ctb] in Author,,,,,,contributors,,,,,developer,P767,
 schema:CreativeWork,copyrightHolder,Organization  or Person,The party holding the legal copyright to the CreativeWork.,agents [role=copyrightHolder],,,,,,,,,,,,,,,,,,,,,,
 schema:CreativeWork,copyrightYear,Number,The year during which the claimed copyright for the CreativeWork was first asserted.,,,,,,,,,,,,,,,,,,,,,,,
-schema:CreativeWork,creator,Organization  or Person,The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork.,agent,,,,,,,,creator,[cre] in Author,,,,,,author,,,,,,,
 schema:CreativeWork,dateCreated,Date  or DateTime,The date on which the CreativeWork was created or the item was added to a DataFeed.,dateCreated,date,,,created_at,,,,created,,Date,,,,,,,,,,,P571,
 schema:CreativeWork,dateModified,Date  or DateTime,The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed.,dateModified,date,,,updated_at,,,,,,,,,last-updated,,,,,,,,P5017,
 schema:CreativeWork,datePublished,Date,Date of first broadcast/publication.,datePublished,publicationYear,,date_published,,date_retrieved,,,date,Date,,,,,,,,Date,,,,P577,date-released
