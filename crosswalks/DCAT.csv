@@ -18,12 +18,11 @@ softwareRequirements,
 softwareVersion,
 storageRequirements,
 supportingData,
-author,prov:qualifiedAttribution
+author,dcterms:creator
 citation,
 contributor,dcterms:contributor
 copyrightHolder,
 copyrightYear,
-creator,dcterms:creator
 dateCreated,
 dateModified,dcterms:modified
 datePublished,dcterms:issued
