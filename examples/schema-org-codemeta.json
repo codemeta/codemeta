@@ -33,9 +33,6 @@
         "email": "info@ucop.edu",
         "name": "University of California, Santa Barbara"
     },
-    "creator": {
-      "@id": "http://orcid.org/0000-0002-1642-628X"
-    },
     "codeRepository": "https://github.com/codemeta/codemetar",
     "datePublished": "2014-09-06",
     "dateModified": "2014-08-15",
