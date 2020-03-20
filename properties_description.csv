@@ -50,7 +50,7 @@ schema:Thing,relatedLink,URL,"A link related to this object, e.g. related web pa
 schema:Person,givenName,Text,"Given name. In the U.S., the first name of a Person. This can be used along with familyName instead of the name property"
 schema:Person,familyName,Text,"Family name. In the U.S., the last name of an Person. This can be used along with givenName instead of the name property."
 schema:Person,email,Text,Email address
-schema:Person,affiliation,Text,"An organization that this person is affiliated with. For example, a school/university"
+schema:Person,affiliation,Organization,"An organization that this person is affiliated with. For example, a school/university"
 schema:Person,identifier,URL,"URL identifer, ideally an ORCID ID for individuals, a FundRef ID for funders"
 schema:Person,name,Text,"The name of an Organization, or if separate given and family names cannot be resolved for a Person"
 schema:Person,address,PostalAddress or Text,Physical address of the item.
