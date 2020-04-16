@@ -18,8 +18,8 @@ softwareRequirements,
 softwareVersion,
 storageRequirements,
 supportingData,
-author,
-citation,
+author,credit
+citation,bibcode
 contributor,
 copyrightHolder,
 copyrightYear,
@@ -46,7 +46,7 @@ identifier,ascl_id
 name,title
 sameAs,
 url,
-relatedLink,
+relatedLink,code site
 givenName,
 familyName,
 email,email
@@ -64,9 +64,9 @@ developmentStatus,
 embargoDate,
 funding,
 issueTracker,
-referencePublication,
+referencePublication,described in
 readme,
-,
+,used in
 ,
 ,
 ,
