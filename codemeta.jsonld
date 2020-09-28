@@ -2,7 +2,7 @@
   "@context": {
       "type": "@type",
       "id": "@id",
-      "schema":"http://schema.org/",
+      "schema":"https://schema.org/",
       "codemeta": "https://codemeta.github.io/terms/",
       "Organization": {"@id": "schema:Organization"},
       "Person": {"@id": "schema:Person"},
