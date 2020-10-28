@@ -39,6 +39,7 @@
       "isPartOf":  { "@id": "schema:isPartOf"},
       "keywords": { "@id": "schema:keywords"},
       "license": { "@id": "schema:license", "@type": "@id"},
+      "maintainer": { "@id": "schema:maintainer" }
       "memoryRequirements": { "@id": "schema:memoryRequirements", "@type": "@id"},
       "name": { "@id": "schema:name"},
       "operatingSystem": { "@id": "schema:operatingSystem"},
@@ -62,9 +63,7 @@
       "targetProduct": { "@id": "schema:targetProduct"},
       "url": { "@id": "schema:url", "@type": "@id"},
       "version": { "@id": "schema:version"},
-        
       "author": { "@id": "schema:author", "@container": "@list" },
-      
       "softwareSuggestions": { "@id": "codemeta:softwareSuggestions", "@type": "@id"},
       "contIntegration": { "@id": "codemeta:contIntegration", "@type": "@id"},
       "buildInstructions": { "@id": "codemeta:buildInstructions", "@type": "@id"},
@@ -74,6 +73,5 @@
       "readme": { "@id":"codemeta:readme", "@type": "@id" },
       "issueTracker": { "@id":"codemeta:issueTracker", "@type": "@id" },
       "referencePublication": { "@id": "codemeta:referencePublication", "@type": "@id"},
-      "maintainer": { "@id": "codemeta:maintainer" }
   }
 }
