@@ -11,14 +11,14 @@ def rm_file(filename):
     except FileNotFoundError:
         pass
 
-with open('crosswalk.csv') as fd:
+with open('../crosswalk.csv') as fd:
     reader = csv.reader(fd)
     lines = list(reader)
 cols = list(zip(*lines))
 props = cols[1]
 for col in cols[4:]:
     col_name = col[0]
-    filename = os.path.join('crosswalks', col_name + '.csv')
+    filename = os.path.join('../crosswalks', col_name + '.csv')
     rm_file(filename)
     with open(filename, 'a') as fd:
         writer = csv.writer(fd)
