@@ -1,11 +1,11 @@
 Property,Zenodo
-codeRepository,relatedIdentifier.isSupplementTo
+codeRepository,relatedIdentifiers.isSupplementTo
 programmingLanguage,
 runtimePlatform,
 targetProduct,
 applicationCategory,communities
 applicationSubCategory,
-downloadUrl,relatedIdentifier.isIdenticalTo
+downloadUrl,relatedIdentifiers.isIdenticalTo
 fileSize,
 installUrl,
 memoryRequirements,
