@@ -71,7 +71,7 @@
       "developmentStatus": { "@id": "codemeta:developmentStatus", "@type": "@id"},
       "embargoDate": { "@id":"codemeta:embargoDate", "@type": "schema:Date" },
       "funding": { "@id": "codemeta:funding" },
-      "readme": { "@id":"codemeta:readme", "@type": "@id" },
+      "documentation": { "@id":"schema:documentation", "@type": "@id" },
       "issueTracker": { "@id":"codemeta:issueTracker", "@type": "@id" },
       "referencePublication": { "@id": "codemeta:referencePublication", "@type": "@id"},
       "maintainer": { "@id": "codemeta:maintainer" }

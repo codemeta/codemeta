@@ -65,7 +65,7 @@ codemeta:SoftwareSourceCode,embargoDate,Date,"Software may be embargoed from pub
 codemeta:SoftwareSourceCode,funding,Text,Funding source (e.g. specific grant),funding,awardNumber ,fundingReference.awardTitle or fundingReference.awardNumber,,,,,,,,,,,,,,,,,,,,
 codemeta:SoftwareSourceCode,issueTracker,URL,link to software bug reporting or issue tracking system,issueTracker,,,,issues_url,,,,,BugReports,,,,,resources.bugtracker,bugs,issueManagement,Problems,,,bug-database,bug tracking system,repository
 codemeta:SoftwareSourceCode,referencePublication,ScholarlyArticle,An academic publication related to the software.,relatedPublications,,,,,,,,,,,,,,,,,,,,blog,,references
-codemeta:SoftwareSourceCode,readme,URL,link to software Readme file,readme,,,,,,,,,,,,,,,,,,,,,,
+schema,documentation,URL,link to software Readme file or other documentation,readme,,,,,,,,,,,,,,,,,,,,,,
 ,,,,relatedIdentifer,,,,,,,,,,,,,,,,,,,,,,
 ,,,,relatedIdentiferType,,,,,,,,,,,,,,,,,,,,,,
 ,,,,relationshipType,,,,,,,,,,,,,,,,,,,,,,

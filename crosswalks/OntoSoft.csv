@@ -65,7 +65,7 @@ embargoDate,
 funding,fundingReference.awardTitle or fundingReference.awardNumber
 issueTracker,
 referencePublication,
-readme,
+documentation,
 ,
 ,
 ,
