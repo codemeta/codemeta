@@ -1,11 +1,11 @@
 Property,Zenodo
-codeRepository,relatedIdentifiers.isSupplementTo
+codeRepository,related_identifiers.isSupplementTo
 programmingLanguage,
 runtimePlatform,
 targetProduct,
 applicationCategory,communities
 applicationSubCategory,
-downloadUrl,relatedIdentifiers.isIdenticalTo
+downloadUrl,related_identifiers.isIdenticalTo
 fileSize,
 installUrl,
 memoryRequirements,
@@ -63,7 +63,7 @@ buildInstructions,
 developmentStatus,
 embargoDate,
 funding,grants
-issueTracker,relatedIdentifiers.isSupplementedBy
+issueTracker,related_identifiers.isSupplementedBy
 referencePublication,
 readme,
 ,
