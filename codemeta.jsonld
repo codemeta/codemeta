@@ -69,7 +69,7 @@
       "contIntegration": { "@id": "codemeta:contIntegration", "@type": "@id"},
       "buildInstructions": { "@id": "codemeta:buildInstructions", "@type": "@id"},
       "developmentStatus": { "@id": "codemeta:developmentStatus", "@type": "@id"},
-      "embargoDate": { "@id":"codemeta:embargoDate", "@type": "schema:Date" },
+      "embargoEndDate": { "@id":"codemeta:embargoEndDate", "@type": "schema:Date" },
       "funding": { "@id": "codemeta:funding" },
       "readme": { "@id":"codemeta:readme", "@type": "@id" },
       "issueTracker": { "@id":"codemeta:issueTracker", "@type": "@id" },

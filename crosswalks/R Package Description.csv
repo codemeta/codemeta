@@ -61,7 +61,7 @@ maintainer,Maintainer
 contIntegration,
 buildInstructions,
 developmentStatus,
-embargoDate,
+embargoEndDate,
 funding,
 issueTracker,BugReports
 referencePublication,

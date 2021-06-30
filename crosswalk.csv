@@ -61,7 +61,7 @@ codemeta:SoftwareSourceCode,maintainer,Person,Individual responsible for maintai
 codemeta:SoftwareSourceCode,contIntegration,URL,link to continuous integration service,contIntegration,,,,,,,,,,,,,,,,ciManagement,,,,,,
 codemeta:SoftwareSourceCode,buildInstructions,URL,link to installation instructions/documentation,buildInstructions,,,,,,,,,,,,,,,,,,,,,,
 codemeta:SoftwareSourceCode,developmentStatus,Text,"Description of development status, e.g. Active, inactive, supsended. See repostatus.org",developmentStatus,,activeDevelopment,,,,,,,,,classifiers['Development Status'],,Development Status,release_status,,,,,,,,
-codemeta:SoftwareSourceCode,embargoDate,Date,"Software may be embargoed from public access until a specified date (e.g. pending publication, 1 year from publication)",embargoDate,,,,,embargo_date,,,,,,,,,,,,,,,,,
+codemeta:SoftwareSourceCode,embargoEndDate,Date,"Software may be embargoed from public access until a specified date (e.g. pending publication, 1 year from publication)",embargoDate,,,,,embargo_date,,,,,,,,,,,,,,,,,
 codemeta:SoftwareSourceCode,funding,Text,Funding source (e.g. specific grant),funding,awardNumber ,fundingReference.awardTitle or fundingReference.awardNumber,,,,,,,,,,,,,,,,,,,,
 codemeta:SoftwareSourceCode,issueTracker,URL,link to software bug reporting or issue tracking system,issueTracker,,,,issues_url,,,,,BugReports,,,,,resources.bugtracker,bugs,issueManagement,Problems,,,bug-database,bug tracking system,repository
 codemeta:SoftwareSourceCode,referencePublication,ScholarlyArticle,An academic publication related to the software.,relatedPublications,,,,,,,,,,,,,,,,,,,,blog,,references

@@ -61,7 +61,7 @@ maintainer,uploadedBy
 contIntegration,contIntegration
 buildInstructions,buildInstructions
 developmentStatus,developmentStatus
-embargoDate,embargoDate
+embargoEndDate,embargoDate
 funding,funding
 issueTracker,issueTracker
 referencePublication,relatedPublications

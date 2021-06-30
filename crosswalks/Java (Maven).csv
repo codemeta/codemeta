@@ -61,7 +61,7 @@ maintainer,
 contIntegration,ciManagement
 buildInstructions,
 developmentStatus,
-embargoDate,
+embargoEndDate,
 funding,
 issueTracker,issueManagement
 referencePublication,
