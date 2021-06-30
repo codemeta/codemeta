@@ -59,7 +59,6 @@ id,
 softwareSuggestions,
 maintainer,
 contIntegration,
-buildInstructions,
 developmentStatus,activeDevelopment
 embargoDate,
 funding,fundingReference.awardTitle or fundingReference.awardNumber

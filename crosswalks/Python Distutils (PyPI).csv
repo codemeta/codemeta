@@ -59,7 +59,6 @@ id,
 softwareSuggestions,
 maintainer,maintainer / maintainer_email
 contIntegration,
-buildInstructions,
 developmentStatus,classifiers['Development Status']
 embargoDate,
 funding,

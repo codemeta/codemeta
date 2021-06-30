@@ -67,7 +67,6 @@
       
       "softwareSuggestions": { "@id": "codemeta:softwareSuggestions", "@type": "@id"},
       "contIntegration": { "@id": "codemeta:contIntegration", "@type": "@id"},
-      "buildInstructions": { "@id": "codemeta:buildInstructions", "@type": "@id"},
       "developmentStatus": { "@id": "codemeta:developmentStatus", "@type": "@id"},
       "embargoDate": { "@id":"codemeta:embargoDate", "@type": "schema:Date" },
       "funding": { "@id": "codemeta:funding" },
