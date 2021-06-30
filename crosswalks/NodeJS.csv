@@ -15,7 +15,7 @@ permissions,
 processorRequirements,cpu
 releaseNotes,
 softwareHelp,
-softwareRequirements,dependencies / bundledDependencies / bundleDependencies / peerDependencies
+softwareRequirements,dependencies / bundledDependencies / bundleDependencies / peerDependencies / devDependencies / optionalDependencies
 softwareVersion,
 storageRequirements,
 supportingData,

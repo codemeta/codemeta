@@ -15,7 +15,7 @@ permissions,
 processorRequirements,
 releaseNotes,
 softwareHelp,
-softwareRequirements,"requirements, add_runtime_dependency"
+softwareRequirements,"requirements, add_runtime_dependency, add_development_dependency"
 softwareVersion,
 storageRequirements,
 supportingData,
