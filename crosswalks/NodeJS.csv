@@ -58,7 +58,7 @@ type,
 id,
 softwareSuggestions,devDependencies / optionalDependencies
 maintainer,
-contIntegration,
+continuousIntegration,
 buildInstructions,
 developmentStatus,
 embargoDate,

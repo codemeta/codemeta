@@ -58,7 +58,7 @@ type,
 id,
 softwareSuggestions,
 maintainer,
-contIntegration,ciManagement
+continuousIntegration,ciManagement
 buildInstructions,
 developmentStatus,
 embargoDate,

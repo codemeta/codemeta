@@ -58,7 +58,7 @@ type,reference.type
 id,
 softwareSuggestions,
 maintainer,
-contIntegration,
+continuousIntegration,
 buildInstructions,
 developmentStatus,
 embargoDate,
