@@ -54,8 +54,6 @@ affiliation,
 identifier,
 name,
 address,
-type,
-id,
 softwareSuggestions,Suggests
 maintainer,Maintainer
 contIntegration,
