@@ -1,11 +1,11 @@
 Property,Citation File Format (1.2.0)
-codeRepository,
+codeRepository,repository-code
 programmingLanguage,
 runtimePlatform,
 targetProduct,
 applicationCategory,
 applicationSubCategory,
-downloadUrl,
+downloadUrl,repository-artifact
 fileSize,
 installUrl,
 memoryRequirements,
@@ -14,49 +14,49 @@ permissions,
 processorRequirements,
 releaseNotes,
 softwareHelp,
-softwareRequirements,
-softwareVersion,
+softwareRequirements,(references)
+softwareVersion,version
 storageRequirements,
 supportingData,
-author,creator
-citation,
+author,person / entity
+citation,preferred-citation / references
 contributor,
 copyrightHolder,
 copyrightYear,
-dateCreated,created
+dateCreated,
 dateModified,
-datePublished,date
+datePublished,date-released
 editor,
 encoding,
 fileFormat,
 funder,
-keywords,
-license,license
+keywords,keywords
+license,license / license-url
 producer,
 provider,
-publisher,publisher
+publisher,repository
 sponsor,
-version,dcterms:hasVersion
+version,
 isAccessibleForFree,
-isPartOf,
-hasPart,
+isPartOf,identifiers
+hasPart,identifiers
 position,
-description,description
-identifier,identifier
+description,abstract
+identifier,identifiers
 name,title
 sameAs,
-url,
-relatedLink,
-givenName,
-familyName,
-email,
-affiliation,
-identifier,
-name,
-address,
-type,
-id,
-softwareSuggestions,
+url,url
+relatedLink,url
+givenName,person/given-names
+familyName,person/family-names
+email,person/email / entity/email
+affiliation,person/affiliation
+identifier,orcid
+name,entity/name
+address,person/address / entity/address
+type,type
+id,identifiers / doi
+softwareSuggestions,(references)
 maintainer,
 contIntegration,
 buildInstructions,
@@ -64,5 +64,5 @@ developmentStatus,
 embargoDate,
 funding,
 issueTracker,
-referencePublication,
+referencePublication,preferred-citation
 readme,
