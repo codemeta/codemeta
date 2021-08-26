@@ -14,12 +14,12 @@ permissions,
 processorRequirements,
 releaseNotes,
 softwareHelp,
-softwareRequirements,(references)
+softwareRequirements,references
 softwareVersion,version
 storageRequirements,
 supportingData,
-author,person / entity
-citation,preferred-citation / references
+author,authors
+citation,Metadata in the CFF root document / preferred-citation / (references)
 contributor,
 copyrightHolder,
 copyrightYear,
@@ -34,15 +34,15 @@ keywords,keywords
 license,license / license-url
 producer,
 provider,
-publisher,repository
+publisher,
 sponsor,
-version,
+version,version
 isAccessibleForFree,
-isPartOf,identifiers
-hasPart,identifiers
+isPartOf,(identifiers)
+hasPart,(identifiers)
 position,
 description,abstract
-identifier,identifiers
+identifier,identifiers / person.orcid / doi
 name,title
 sameAs,
 url,url
