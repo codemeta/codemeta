@@ -19,7 +19,7 @@ softwareVersion,version
 storageRequirements,
 supportingData,
 author,authors
-citation,Metadata in the CFF root document / preferred-citation / (references)
+citation,Metadata in the CFF root document / preferred-citation / references
 contributor,
 copyrightHolder,
 copyrightYear,
@@ -44,7 +44,7 @@ position,
 description,abstract
 identifier,identifiers / person.orcid / doi
 name,title
-sameAs,
+sameAs,identifiers.url
 url,url
 relatedLink,url
 givenName,person/given-names

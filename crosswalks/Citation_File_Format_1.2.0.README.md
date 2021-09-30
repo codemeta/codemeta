@@ -103,8 +103,11 @@ Until this is resolved, CFF `version` should probably be mapped to both.
 
 ### `isPartOf`/`hasPart` <=> `identifiers`
 
-CFF doesn't (yet? See  https://github.com/citation-file-format/citation-file-format/issues/69#issuecomment-904546233) support these qualifiers for `identifiers` in a machine-readable way.
+CFF doesn't (yet, see  https://github.com/citation-file-format/citation-file-format/issues/69#issuecomment-904546233) support these qualifiers for `identifiers` in a machine-readable way.
 `identifiers` is a list of identifiers pertaining to the software ("The identifiers of the software or dataset.").
+
+As of version 1.2.0, CFF `identifiers` may have an `identifier.description`, which may specify the relation of the identifier to another object,
+and which may be mapped to either `isPartOf` or `hasPart`.
 
 #### CodeMeta to CFF
 
@@ -118,7 +121,7 @@ The qualifying part `hasPart` and `isPartOf` can be encoded (automatically) in C
 Values in CFF `identifiers` map to either CodeMeta `hasPart` or CodeMeta `isPartOf`, 
 if the respective relationship can be determined from the CFF `identifier.description`, either manually or heuristically.
 
-#### `identifier` <=> `identifiers`/`person.orcid`/`doi`
+### `identifier` <=> `identifiers`/`person.orcid`/`doi`
 
 Mapping depends on how a CodeMeta instance uses the term, which is ambiguously documented ("URL identifer, ideally an ORCID ID for individuals, a FundRef ID for funders").
 
@@ -137,22 +140,40 @@ e.g., if there is only one identifier, and no value for CFF `doi` is supplied, o
 and has the same value as `doi` (but `doi` may override this behaviour, see next sentence).
 A CFF `doi` maps to `identifier` and should be used even in the case where there additionally are CFF `identifiers`.
 
-
-
-
+### `sameAs` <=> `identifiers.url / url`
 
 #### CodeMeta to CFF
+
+CodeMeta `sameAs` URL maps to a CFF `identifiers.url`
+
 #### CFF to CodeMeta
 
+Any given CFF `identifiers.url` maps to CodeMeta `sameAs`.
+CFF `url` may map to CodeMeta `sameAs` if the URL qualifies for such use.
 
+### `type` <=> `type`
 
 #### CodeMeta to CFF
+
+If CodeMeta `type` is `https://schema.org/SoftwareApplication` or `https://schema.org/SoftwareSourceCode`, it maps to CFF `type: software`.
+If CodeMeta `type` is `https://schema.org/Dataset`, it maps to CFF `type: dataset`.
+
 #### CFF to CodeMeta
 
+CFF `type: software` maps to CodeMeta `type` with a value of `https://schema.org/SoftwareApplication` or `https://schema.org/SoftwareSourceCode`.
+CFF `type: datraset` maps to CodeMeta `type` with a value of `https://schema.org/Dataset`.
 
+### `id` <=> `identifiers` / `doi`
+
+Mapping depends on the target of the CodeMeta `id` URL.
 
 #### CodeMeta to CFF
+
+TODO
+
 #### CFF to CodeMeta
+
+TODO
 
 
 
