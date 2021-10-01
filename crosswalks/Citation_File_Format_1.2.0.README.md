@@ -165,17 +165,19 @@ CFF `type: datraset` maps to CodeMeta `type` with a value of `https://schema.org
 
 ### `id` <=> `identifiers` / `doi`
 
-Mapping depends on the target of the CodeMeta `id` URL.
+Mapping depends on the target of the CodeMeta `id`.
 
 #### CodeMeta to CFF
 
-TODO
+If the CodeMeta `id` is the URL for a DOI resolver for the software DOI, it maps to CFF `doi` and CFF `identifiers` of type `doi`.
+If the CodeMeta `id` is a Software Heritage ID or a URL resolving that ID, it maps to CFF `identifiers` of type `swh`.
+If the CodeMeta `id` is any other URL, it maps to CFF `identifiers` of type `url`.
+If the CodeMeta `id` is a string used to refer to the node eslewhere in the same document, it maps to CFF `identifiers` of type `other`.
 
 #### CFF to CodeMeta
 
-TODO
-
-
+Any obecjts in CFF `identifiers` maps to CodeMeta `id`.
+CFF `doi` maps to CodeMeta `id`.
 
 #### CodeMeta to CFF
 #### CFF to CodeMeta
