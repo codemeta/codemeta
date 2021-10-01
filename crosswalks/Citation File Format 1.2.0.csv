@@ -47,13 +47,13 @@ name,title
 sameAs,identifiers.url
 url,url
 relatedLink,url
-givenName,person/given-names
-familyName,person/family-names
-email,person/email / entity/email
-affiliation,person/affiliation
-identifier,orcid
-name,entity/name
-address,person/address / entity/address
+givenName,person.given-names
+familyName,person.family-names
+email,person.email / entity.email
+affiliation,person.affiliation
+identifier,person.orcid
+name,entity.name
+address,person.address / entity.address
 type,type
 id,identifiers / doi
 softwareSuggestions,(references)
