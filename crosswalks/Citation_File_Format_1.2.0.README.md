@@ -10,6 +10,9 @@ Citation File Format (CFF) is a YAML format for providing citation metdaata for 
 
 ## Crosswalk specifics
 
+The following sections provide details for directional mapping 
+in cases where mapping is not bidirectionally unambiguous.
+
 ### `downloadUrl` <=> `repository-artifact`
 
 - CodeMeta `downloadUrl`: "If the file can be downloaded, URL to download the binary."
@@ -161,7 +164,7 @@ If CodeMeta `type` is `https://schema.org/Dataset`, it maps to CFF `type: datase
 #### CFF to CodeMeta
 
 CFF `type: software` maps to CodeMeta `type` with a value of `https://schema.org/SoftwareApplication` or `https://schema.org/SoftwareSourceCode`.
-CFF `type: datraset` maps to CodeMeta `type` with a value of `https://schema.org/Dataset`.
+CFF `type: dataset` maps to CodeMeta `type` with a value of `https://schema.org/Dataset`.
 
 ### `id` <=> `identifiers` / `doi`
 
@@ -176,17 +179,5 @@ If the CodeMeta `id` is a string used to refer to the node eslewhere in the same
 
 #### CFF to CodeMeta
 
-Any obecjts in CFF `identifiers` maps to CodeMeta `id`.
+Any one of the objects in CFF `identifiers` maps to CodeMeta `id`.
 CFF `doi` maps to CodeMeta `id`.
-
-#### CodeMeta to CFF
-#### CFF to CodeMeta
-
-
-
-#### CodeMeta to CFF
-#### CFF to CodeMeta
-
-
-#### CodeMeta to CFF
-#### CFF to CodeMeta
