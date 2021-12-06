@@ -115,7 +115,7 @@ If only individuals who contribute digital data to a repository are interpreted 
 
 #### CodeMeta to CFF
 
-If the CodeMeta `license` contains an SPDX identifier (or its URL) that is recognized in CFF to be a valid value of CFF `license` (list [here](https://github.com/citation-file-format/citation-file-format/blob/main/schema.json#L516-L978)),
+If the CodeMeta `license` contains an SPDX identifier (or its URL) that is recognized in CFF to be a valid value of CFF `license` (list [here](https://github.com/citation-file-format/citation-file-format/blob/1.2.0/schema.json#L516-L978)),
 it maps to `license`.
 If the CodeMeta `license` contains a URL to an license unrecognized in CFF, it maps to `license-url`.
 If the CodeMeta `license` contains a `schema:CreativeWork`, which contains a URL to the license, it maps to `license-url`.
