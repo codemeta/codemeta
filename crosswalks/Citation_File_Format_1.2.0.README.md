@@ -23,6 +23,8 @@ its main use case is discovery (e.g. for reuse and reproducibility),
 which is arguably the same as for `downloadUrl`.
 Therefore the two can be assumed to signify the same.
 
+#### CFF to CodeMeta
+
 In some cases, values for the following CFF fields could also be mappable to CodeMeta `downloadUrl`:
 
 - `url`, when the URL points to a download URL
@@ -30,6 +32,22 @@ In some cases, values for the following CFF fields could also be mappable to Cod
 - `identifiers[i].type==url`, when the identifier resolves to a downloadable artifact of the software
 
 Future versions of CFF may document this more clearly (https://github.com/citation-file-format/citation-file-format/issues/326).
+
+### `installUrl` <=> different potential mapping targets
+
+#### CodeMeta to CFF
+
+CodeMeta `downloadUrl` may be mapped to `url`.
+However, as `url` is a generic URL field ("The URL of a landing page/website for the software or dataset."), some semantics will be lost when mapping this way.
+
+#### CFF to CodeMeta
+
+In some cases, the following CFF fields may be mappable to `downloadURL`:
+
+- `url`, when the URL points to a URL where the software is installed
+- `repository`, when the repository provides an installed artifact of the software
+- `identifiers[i].type==url`, when the resolved URL is to an installed artifact of the software
+
 
 ### `softwareRequirements`/`softwareSuggestions` <=> `references`
 
