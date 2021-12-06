@@ -37,7 +37,7 @@ Future versions of CFF may document this more clearly (https://github.com/citati
 
 #### CodeMeta to CFF
 
-CodeMeta `downloadUrl` may be mapped to `url`.
+CodeMeta `downloadUrl` may map to `url`.
 However, as `url` is a generic URL field ("The URL of a landing page/website for the software or dataset."), some semantics will be lost when mapping this way.
 
 #### CFF to CodeMeta
@@ -110,7 +110,7 @@ When CodeMeta `contributors` qualify, but would only be listed summarily in a pu
 
 #### CFF to CodeMeta
 
-Some or all CFF `authors` may be CodeMeta `contributors`, depending on the interpretation of contributorship.
+Some or all CFF `authors` may be CodeMeta `contributors` (as well as CodeMeta `authors`), depending on the interpretation of contributorship.
 If contributors are interpreted as anyone contributing to a project, all CFF `authors` map to CodeMeta `contributors`.
 If only individuals who contribute digital data to a repository are interpreted as contributors, only those individuals map to CodeMeta `contributors`.
 
@@ -191,6 +191,19 @@ CodeMeta `sameAs` URL maps to a CFF `identifiers.url`
 
 Any given CFF `identifiers.url` maps to CodeMeta `sameAs`.
 CFF `url` may map to CodeMeta `sameAs` if the URL qualifies for such use.
+
+### `url` <=> `url` (and potentially others)
+
+The general case is that CodeMeta `url` maps to CFF `url` and vice versa.
+
+#### CodeMeta to CFF
+
+Depending on what the CodeMeta `url` points to, it may be mapped to one of CFF `repository`, `repository-code`, `repository-artifact` or `identifiers[i].type==url`
+if this mapping provides better semantics than mapping to CFF `url`.
+
+#### CFF to CodeMeta
+
+If no better suited option to map to CodeMeta `url` is available, CFF `repository` can map to CodeMeta `url`.
 
 ### `type` <=> `type`
 

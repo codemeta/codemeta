@@ -45,7 +45,7 @@ description,abstract
 identifier,identifiers / person.orcid / doi
 name,title
 sameAs,identifiers.url
-url,url
+url,url / (repository) / (repository-code) / (repository-artifact) / (identifiers[i].type==url)
 relatedLink,url
 givenName,person.given-names
 familyName,person.family-names
