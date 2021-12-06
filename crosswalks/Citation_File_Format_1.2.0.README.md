@@ -145,7 +145,7 @@ Until this is resolved, CFF `version` should probably be mapped to both.
 CFF doesn't (yet, see  <https://github.com/citation-file-format/citation-file-format/issues/69#issuecomment-904546233>) support these qualifiers for `identifiers` in a machine-readable way.
 `identifiers` is a list of identifiers pertaining to the software ("The identifiers of the software or dataset.").
 
-As of version 1.2.0, CFF `identifiers` may have an `identifier.description`, which may specify the relation of the identifier to another object,
+As of version 1.2.0, CFF `identifiers` may have an `identifier.description`, which may specify the relation of the identifier to another object (but only in human-readable form),
 and which may be mapped to either `isPartOf` or `hasPart`.
 
 #### CodeMeta to CFF
