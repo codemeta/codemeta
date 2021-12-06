@@ -201,6 +201,19 @@ if this mapping provides better semantics than mapping to CFF `url`.
 
 If no better suited option to map to CodeMeta `url` is available, CFF `repository` can map to CodeMeta `url`.
 
+### `relatedLink` <=> `url` (and potentially others)
+
+The general case is that CodeMeta `relatedLink` maps to CFF `url` and vice versa.
+
+#### CodeMeta to CFF
+
+Depending on what the CodeMeta `relatedLink` points to, it may be mapped to one of CFF `repository`, `repository-code`, `repository-artifact` or `identifiers[i].type==url`
+if this mapping provides better semantics than mapping to CFF `url`.
+
+#### CFF to CodeMeta
+
+If no better suited option to map to CodeMeta `relatedLink` is available, CFF `repository` can map to CodeMeta `relatedLink`.
+
 ### `type` <=> `type`
 
 #### CodeMeta to CFF
