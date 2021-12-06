@@ -13,7 +13,7 @@ Citation File Format (CFF) is a YAML format for providing citation metdaata for 
 The following sections provide details for directional mapping 
 in cases where mapping is not bidirectionally unambiguous.
 
-### `downloadUrl` <=> `repository-artifact`
+### `downloadUrl` <=> `repository-artifact` (and potentially others)
 
 - CodeMeta `downloadUrl`: "If the file can be downloaded, URL to download the binary."
 - CFF `repository-artifact`: "The URL of the work in a build artifact/binary repository."
@@ -22,6 +22,12 @@ While the scope of `repository-artifact` is documented to be somewhat narrower t
 its main use case is discovery (e.g. for reuse and reproducibility),
 which is arguably the same as for `downloadUrl`.
 Therefore the two can be assumed to signify the same.
+
+In some cases, values for the following CFF fields could also be mappable to CodeMeta `downloadUrl`:
+
+- `url`, when the URL points to a download URL
+- `repository`, when the repository is containing a downloadable artifact of the software
+- `identifiers[i].type==url`, when the identifier resolves to a downloadable artifact of the software
 
 Future versions of CFF may document this more clearly (https://github.com/citation-file-format/citation-file-format/issues/326).
 

@@ -5,7 +5,7 @@ runtimePlatform,
 targetProduct,
 applicationCategory,
 applicationSubCategory,
-downloadUrl,repository-artifact
+downloadUrl,repository-artifact / (url) / (repository) / identifiers[i].type==url
 fileSize,
 installUrl,
 memoryRequirements,
