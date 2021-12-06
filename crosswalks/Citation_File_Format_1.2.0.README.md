@@ -60,7 +60,7 @@ The scope of `references` could be documented more clearly in CFF (<https://gith
 CFF's `references` is meant to work like a references list for a paper, 
 e.g., should include prior work that the work builds on.
 Required dependencies are interpreted to clearly constitute prior work that software builds on.
-Therefore, everything that is in `softwareRequirements` should go into `references`.
+Therefore, everything that is in `softwareRequirements` should go into `references`, but not the other way round.
 
 Optional dependencies and dependencies needed for code development could be assumed 
 to build on the software (i.e., require prior existence of the software).
@@ -72,7 +72,7 @@ I.e., `softwareSuggestions` should *not* be included in `references`.
 
 Not all CFF `references` can be assumed to be `softwareRequirements`,
 as `references` can contain arbitrary other work that the software builds on.
-The same is even more clearly true for `softwareSuggestions`.
+The same is true for `softwareSuggestions`.
 `references` therefore should not be included automatically in either, 
 without further manual verification.
 
