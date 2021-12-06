@@ -48,7 +48,6 @@ In some cases, the following CFF fields may be mappable to `downloadURL`:
 - `repository`, when the repository provides an installed artifact of the software
 - `identifiers[i].type==url`, when the resolved URL is to an installed artifact of the software
 
-
 ### `softwareRequirements`/`softwareSuggestions` <=> `references`
 
 - CodeMeta `softwareRequirements`: "Required software dependencies"
@@ -99,6 +98,21 @@ Understanding `citation` in CodeMeta to be the citation for the described softwa
 #### CFF to CodeMeta
 
 The citation metadata in the root of a `CITATION.cff` file maps to CodeMeta `citation`.
+
+### `contributors` <=> potentially `authors`
+
+Mapping depends heavily on the practice of assigning authorship and interpreting cotributorship in the respective project.
+
+#### CodeMeta to CFF
+
+Entities recorded in CodeMeta `contributors` may qualify for authorship, in which case they cannot be mapped to CFF.
+When CodeMeta `contributors` qualify, but would only be listed summarily in a publication, they should be mapped to CFF `authors`.
+
+#### CFF to CodeMeta
+
+Some or all CFF `authors` may be CodeMeta `contributors`, depending on the interpretation of contributorship.
+If contributors are interpreted as anyone contributing to a project, all CFF `authors` map to CodeMeta `contributors`.
+If only individuals who contribute digital data to a repository are interpreted as contributors, only those individuals map to CodeMeta `contributors`.
 
 ### `license` <=> `license`/`license-url`
 
