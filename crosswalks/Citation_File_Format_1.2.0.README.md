@@ -85,19 +85,16 @@ CFF `authors` is an array of CFF `person` or CFF `entity` objects.
 - CodeMeta `citation`: "A citation or reference to another creative work, such as another publication, web page, scholarly article, etc."
 - CFF `preferred-citation`: "A reference to another work that should be cited instead of the software or dataset itself."
 - CFF `references`: "Reference(s) to other creative works."
-- CFF root document: The citation metadata for the software (or dataset) that the `CITATION.cff` file pertains to
 
 #### CodeMeta to CFF
 
-Understanding `citation` in CodeMeta to be the citation for the described software, the relationships are as follows:
-
-- When the `citation` is a citation of the software itself, it maps to the citation metadata provided in the root of a `CITATION.cff` file.
 - When the `citation` is a citation to another work describing the software (a "meta" work, e.g., a software paper in JOSS, a traditional paper about the software), it maps to CFF `preferred-citation`.
-- Diverging from the understanding of `citation` being the citation to the software, when the `citation` is to an unrelated work, it maps to an entry in CFF `references`
+- When the `citation` is to a work not describing the software itself, it maps to an entry in CFF `references`
 
 #### CFF to CodeMeta
 
-The citation metadata in the root of a `CITATION.cff` file maps to CodeMeta `citation`.
+CFF `preferred-citation` maps to CodeMeta `citation`.
+Any given entry in CFF `references` may map to CodeMeta `citation`, given the latter's definition as "A citation or reference to another creative work, such as another publication, web page, scholarly article, etc."
 
 ### `contributors` <=> potentially `authors`
 
