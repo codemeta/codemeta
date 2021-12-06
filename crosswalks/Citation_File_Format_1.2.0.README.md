@@ -173,11 +173,9 @@ If the CodeMeta `identifier` is the identifier for a person (e.g., an author), a
 #### CFF to CodeMeta
 
 CFF `person.orcid` maps to CodeMeta `identifier` of the respective person.
-A single CFF `identifier` maps to `identifier`.
-The respective CFF `identifier` to use for the mapping needs to be determined manually or heuristically from the list of available CFF `identifiers`, 
-e.g., if there is only one identifier, and no value for CFF `doi` is supplied, or if the single identifier is of `identifier.type` `doi` 
-and has the same value as `doi` (but `doi` may override this behaviour, see next sentence).
-A CFF `doi` maps to `identifier` and should be used even in the case where there additionally are CFF `identifiers`.
+Any single CFF `identifier` maps to `identifier`.
+The respective CFF `identifier` to use for an n:1 mapping needs to be determined manually or heuristically from the list of available CFF `identifiers`.
+A CFF `doi` maps to `identifier`.
 
 ### `sameAs` <=> `identifiers.url / url`
 
