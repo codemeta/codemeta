@@ -31,7 +31,7 @@ In some cases, values for the following CFF fields could also be mappable to Cod
 - `repository`, when the repository is containing a downloadable artifact of the software
 - `identifiers[i].type==url`, when the identifier resolves to a downloadable artifact of the software
 
-Future versions of CFF may document this more clearly (https://github.com/citation-file-format/citation-file-format/issues/326).
+Future versions of CFF may document this more clearly (<https://github.com/citation-file-format/citation-file-format/issues/326>).
 
 ### `installUrl` <=> different potential mapping targets
 
@@ -56,7 +56,7 @@ In some cases, the following CFF fields may be mappable to `downloadURL`:
 
 #### CodeMeta to CFF
 
-The scope of `references` could be documented more clearly in CFF (https://github.com/citation-file-format/citation-file-format/issues/327).
+The scope of `references` could be documented more clearly in CFF (<https://github.com/citation-file-format/citation-file-format/issues/327>).
 CFF's `references` is meant to work like a references list for a paper, 
 e.g., should include prior work that the work builds on.
 Required dependencies are interpreted to clearly constitute prior work that software builds on.
