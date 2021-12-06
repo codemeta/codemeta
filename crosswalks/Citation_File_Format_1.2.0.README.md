@@ -128,6 +128,7 @@ If the CodeMeta `license` contains a `schema:CreativeWork`, which contains a URL
 
 CFF `license-url` maps to CodeMeta `license`.
 CFF `license` maps to CodeMeta `license` following the pattern `https://spdx.org/licenses/<value of CFF license>.html`.
+In analogy, any and all items in a given list of licenses that CFF `license` accepts maps to CodeMeta `license`.
 
 ### `version`/`softwareVersion` <=> `version`
 
