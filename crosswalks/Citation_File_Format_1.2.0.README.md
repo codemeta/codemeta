@@ -5,8 +5,8 @@
 Citation File Format (CFF) is a YAML format for providing citation metdaata for software (and experimentally for datasets).
 
 - Website: <https://citation-file-format.github.io/>
-- Specifications: <https://github.com/citation-file-format/citation-file-format/blob/main/schema-guide.md>
-- Schema: <https://github.com/citation-file-format/citation-file-format/blob/main/schema.json> (JSON Schema)
+- Specifications: <https://github.com/citation-file-format/citation-file-format/blob/1.2.0/schema-guide.md>
+- Schema: <https://github.com/citation-file-format/citation-file-format/blob/1.2.0/schema.json> (JSON Schema)
 
 ## Crosswalk specifics
 
