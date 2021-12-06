@@ -151,7 +151,7 @@ and which may be mapped to either `isPartOf` or `hasPart`.
 #### CodeMeta to CFF
 
 If the `schema:CreativeWork` for CodeMeta `isPartOf` or `hasPart` contain an identifier or definitive URL, 
-these maps to a CFF `identifier`.
+these map to a CFF `identifier`.
 The target type of the CFF `identifier` could be heuristically determined based on the identifier in the CodeMeta value.
 The qualifying part `hasPart` and `isPartOf` can be encoded (automatically) in CFF `identifier.description` in plain text.
 
