@@ -32,12 +32,12 @@ Future versions of CFF may document this more clearly (<https://github.com/citat
 
 #### CodeMeta to CFF
 
-CodeMeta `downloadUrl` may map to `url`.
+CodeMeta `installUrl` may map to `url`.
 However, as `url` is a generic URL field ("The URL of a landing page/website for the software or dataset."), some semantics will be lost when mapping this way.
 
 #### CFF to CodeMeta
 
-In some cases, the following CFF fields may be mappable to `downloadURL`:
+In some cases, the following CFF fields may be mappable to `installURL`:
 
 - `url`, when the URL points to a URL where the software is installed
 - `repository`, when the repository provides an installed artifact of the software
