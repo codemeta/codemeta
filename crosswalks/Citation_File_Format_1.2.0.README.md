@@ -37,7 +37,7 @@ However, as `url` is a generic URL field ("The URL of a landing page/website for
 
 #### CFF to CodeMeta
 
-In some cases, the following CFF fields may be mappable to `downloadURL`:
+In some cases, the following CFF fields may be mappable to `installURL`:
 
 - `url`, when the URL points to a URL where the software is installed
 - `repository`, when the repository provides an installed artifact of the software
