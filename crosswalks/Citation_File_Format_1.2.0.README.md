@@ -91,21 +91,6 @@ CFF `authors` is an array of CFF `person` or CFF `entity` objects.
 CFF `preferred-citation` maps to CodeMeta `citation`.
 Any given entry in CFF `references` may map to CodeMeta `citation`, given the latter's definition as "A citation or reference to another creative work, such as another publication, web page, scholarly article, etc."
 
-### `contributors` <=> potentially `authors`
-
-Mapping depends heavily on the practice of assigning authorship and interpreting cotributorship in the respective project.
-
-#### CodeMeta to CFF
-
-Entities recorded in CodeMeta `contributors` may qualify for authorship, in which case they cannot be mapped to CFF.
-When CodeMeta `contributors` qualify, but would only be listed summarily in a publication, they should be mapped to CFF `authors`.
-
-#### CFF to CodeMeta
-
-Some or all CFF `authors` may be CodeMeta `contributors` (as well as CodeMeta `authors`), depending on the interpretation of contributorship.
-If contributors are interpreted as anyone contributing to a project, all CFF `authors` map to CodeMeta `contributors`.
-If only individuals who contribute digital data to a repository are interpreted as contributors, only those individuals map to CodeMeta `contributors`.
-
 ### `license` <=> `license`/`license-url`
 
 #### CodeMeta to CFF
