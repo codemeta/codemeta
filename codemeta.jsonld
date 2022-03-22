@@ -34,7 +34,7 @@
       "fileFormat": { "@id": "schema:fileFormat", "@type": "@id"},
       "fileSize": { "@id": "schema:fileSize"},
       "funder": { "@id": "schema:funder"},
-      "funding": { "@id": "schema:funding" },
+      "funding": { "@id": "schema:funding", "@type": "schema:Grant" },
       "givenName": { "@id": "schema:givenName"},
       "hasPart": { "@id": "schema:hasPart" },
       "identifier": { "@id": "schema:identifier", "@type": "@id"},
