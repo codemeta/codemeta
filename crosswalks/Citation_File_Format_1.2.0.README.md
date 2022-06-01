@@ -75,10 +75,9 @@ without further manual verification.
 
 CFF `authors` is an array of CFF `person` or CFF `entity` objects.
 
-### `citation` <=> `preferred-citation`/`references`/CFF root document
+### `citation` <=> `references`
 
 - CodeMeta `citation`: "A citation or reference to another creative work, such as another publication, web page, scholarly article, etc."
-- CFF `preferred-citation`: "A reference to another work that should be cited instead of the software or dataset itself."
 - CFF `references`: "Reference(s) to other creative works."
 
 #### CodeMeta to CFF
@@ -88,7 +87,6 @@ CFF `authors` is an array of CFF `person` or CFF `entity` objects.
 
 #### CFF to CodeMeta
 
-CFF `preferred-citation` maps to CodeMeta `citation`.
 Any given entry in CFF `references` may map to CodeMeta `citation`, given the latter's definition as "A citation or reference to another creative work, such as another publication, web page, scholarly article, etc."
 
 ### `license` <=> `license`/`license-url`
