@@ -7,7 +7,7 @@ applicationCategory;
 applicationSubCategory;
 downloadUrl;(repository-artifact) / (url) / (repository) / (identifiers[i].type==url)
 fileSize;
-installUrl;(url) / (repository) / (identifiers[i].type==url)
+installUrl;
 memoryRequirements;
 operatingSystem;
 permissions;

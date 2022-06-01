@@ -28,7 +28,7 @@ In some cases, values for the following CFF fields could also be mappable to Cod
 
 Future versions of CFF may document this more clearly (<https://github.com/citation-file-format/citation-file-format/issues/326>).
 
-### `installUrl` <=> different potential mapping targets
+### `installUrl` <=> different potential mapping targets (not crosswalked)
 
 #### CodeMeta to CFF
 
