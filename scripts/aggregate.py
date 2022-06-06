@@ -39,6 +39,7 @@ OLD_ORDER = [
     'DOAP.csv',
     'Wikidata.csv',
     'Citation File Format Core (CFF-Core) 1.0.2.csv',
+    'Packagist.csv',
     ]
 
 USE_OLD_ORDER = True
