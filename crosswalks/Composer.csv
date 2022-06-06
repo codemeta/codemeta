@@ -14,7 +14,7 @@ permissions,
 processorRequirements,
 releaseNotes,
 softwareHelp,
-softwareRequirements,
+softwareRequirements,require
 softwareVersion,version
 storageRequirements,
 supportingData,
