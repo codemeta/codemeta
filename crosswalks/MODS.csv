@@ -1,0 +1,68 @@
+﻿Property,MODS
+codeRepository,"<relatedItem type=""host"">"
+programmingLanguage,
+runtimePlatform,
+targetProduct,
+applicationCategory,
+applicationSubCategory,
+downloadUrl,"<location><url displayName=""Download URL"">"
+fileSize,<physicalDescription><extent>
+installUrl,"<location><url displayName=""Install URL"">"
+memoryRequirements,
+operatingSystem,
+permissions,
+processorRequirements,
+releaseNotes,<description>
+softwareHelp,<relatedItem>
+softwareRequirements,
+softwareVersion,<originInfo><edition>
+storageRequirements,
+supportingData,"<relatedItem type=""references"">"
+author,"<name><role><roleTerm type=""code"">aut"
+citation,"<relatedItem otherType=""references"">"
+contributor,"<name><role><roleTerm type=""code"">ctb"
+copyrightHolder,<accessCondition><rights.holder>
+copyrightYear,<accessCondition><creation><year.creation>
+dateCreated,<originInfo><dateCreated>
+dateModified,<originInfo><dateModifed>
+datePublished,<originInfo><dateIssued>
+editor,"<name><role><roleTerm type=""code"">edt"
+encoding,
+fileFormat,<typeOfResource>
+funder,"<name><role><roleTerm type=""code"">fnd"
+keywords,<subject>
+license,"<accessCondition type= ""use and reproduction"">"
+producer,"<name><role><roleTerm type=""code"">pro"
+provider,"<name><role><roleTerm type=""code"">prv"
+publisher,<originInfo><publisher>
+sponsor,"<name><role><roleTerm type=""code"">spn"
+version,<originInfo><edition>
+isAccessibleForFree,"<accessCondition type=""accessible for free"">"
+isPartOf,"<relatedItem type=""host"">"
+hasPart,"<relatedItem type=""constituent"">"
+position,"<part order="""">"
+description,<abstract>
+identifier,<identifier>
+name,<titleInfo><title>
+sameAs,"<location><url displayName=""Same As"">"
+url,<location><url>
+relatedLink,"<relatedItem><location><url displayName=""Related Link"">"
+givenName,"<name><namePart type=""given"">"
+familyName,"<name><namePart type=""family"">"
+email,<name><affiliation>
+affiliation,<name><affiliation>
+identifier,<name><nameIdentifier>
+name,<name><namePart>
+address,<name><affiliation>
+type,
+id,
+softwareSuggestions,
+maintainer,"<name><role><roleTerm type=""code"">crp/cur"
+contIntegration,"<relatedItem><location><url displayName=""Continuous Integration Service"">"
+buildInstructions,"<relatedItem><location><url displayName=""Build Instructions"">"
+developmentStatus,
+embargoDate,"<accessCondition type=""restriction on access"">"
+funding,
+issueTracker,"<relatedItem><location><url displayName=""Issue Tracker"">"
+referencePublication,"<relatedItem type=""isReferencedBy"">"
+readme,"<relatedItem type=""constituent"">"
