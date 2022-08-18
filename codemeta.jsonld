@@ -50,7 +50,7 @@
       "provider": { "@id": "schema:provider"},
       "publisher": { "@id": "schema:publisher"},
       "relatedLink": { "@id": "schema:relatedLink", "@type": "@id"},
-      "releaseNotes": { "@id": "schema:releaseNotes", "@type": "@id"},
+      "releaseNotes": { "@id": "schema:releaseNotes"},
       "runtimePlatform": { "@id": "schema:runtimePlatform"},
       "sameAs": { "@id": "schema:sameAs", "@type": "@id"},
       "softwareHelp": { "@id": "schema:softwareHelp"},
