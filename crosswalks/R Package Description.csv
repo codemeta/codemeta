@@ -15,7 +15,7 @@ processorRequirements,
 releaseNotes,
 softwareHelp,
 softwareRequirements,"Depends, SystemRequirements"
-softwareVersion,
+softwareVersion,Version
 storageRequirements,
 supportingData,
 author,[aut] in Author
@@ -36,7 +36,7 @@ producer,
 provider,
 publisher,
 sponsor,
-version,
+version,Version
 isAccessibleForFree,
 isPartOf,
 hasPart,
