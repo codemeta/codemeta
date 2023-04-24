@@ -54,8 +54,6 @@ affiliation,person.affiliation
 identifier,person.orcid / entity.orcid
 name,entity.name
 address,person.address + person.city + person.region + person.post-code + person.country / entity.address + entity.city + entity.region + entity.post-code + entity.country
-type,reference.type
-id,
 softwareSuggestions,
 maintainer,
 contIntegration,

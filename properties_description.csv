@@ -54,8 +54,6 @@ schema:Person,affiliation,Organization,"An organization that this person is affi
 schema:Person,identifier,URL,"URL identifier, ideally an ORCID ID for individuals, a FundRef ID for funders"
 schema:Person,name,Text,"The name of an Organization, or if separate given and family names cannot be resolved for a Person"
 schema:Person,address,PostalAddress or Text,Physical address of the item.
-schema,type,Object Type (from context or URI),"The object type (e.g. ""Person"", ""Organization"", ""ScientificArticle"", ""SoftwareApplication"", etc)."
-schema,id,URL,Primary identifier for an object. Must be a resolvable URL or a string used to refer to this node elsewhere in the same document
 codemeta:SoftwareSourceCode,softwareSuggestions,SoftwareSourceCode,"Optional dependencies , e.g. for optional features, code development, etc."
 codemeta:SoftwareSourceCode,maintainer,Person,Individual responsible for maintaining the software (usually includes an email contact address)
 codemeta:SoftwareSourceCode,contIntegration,URL,link to continuous integration service
