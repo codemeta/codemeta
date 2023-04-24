@@ -40,6 +40,7 @@ OLD_ORDER = [
     'Wikidata.csv',
     'Citation File Format Core (CFF-Core) 1.0.2.csv',
     'Pubspec.csv',
+    'NuGet.csv',
     ]
 
 USE_OLD_ORDER = True
