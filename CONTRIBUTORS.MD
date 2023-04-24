@@ -11,7 +11,7 @@ The PMC is ensuring that the CodeMeta community is an open community that operat
 | Abby Cabunoc Mayes | | Mozilla Science Lab | [acabunoc](http://github.com/acabunoc) |
 | Arfon Smith | | GitHub | [arfon](http://github.com/arfon) |
 | Morane Gruenpeter | morane@softwareheritage.org | Software Heritage | @moranegg |
-| Valentin Lorentz | valentin@softwareheritage.org | Software Heritage | @progVal |
+| Valentin Lorentz | vlorentz@softwareheritage.org | Software Heritage | @progval |
 | Thomas Morrell | tmorrell@library.caltech.edu | Caltech Library | [@tmorell](https://github.com/tmorrell) |
 | Daniel Garijo |  |  Universidad Politécnica de Madrid | [@dgarijo](https://github.com/dgarijo)  |
 
@@ -80,7 +80,7 @@ As list:
 | Matthew B. Jones | jones@nceas.ucsb.edu | NCEAS, UC Santa Barbara | [mbjones](http://github.com/mbjones) |
 | Carl Boettiger   | | UC Berkeley | [cboettig](http://github.com/cboettig) |
 | Morane Gruenpeter | morane@softwareheritage.org | Software Heritage | [@moranegg] |
-| Valentin Lorentz | valentin@softwareheritage.org | Software Heritage | [@progVal](https://github.com/progval) |
+| Valentin Lorentz | vlorentz@softwareheritage.org | Software Heritage | [@progval](https://github.com/progval) |
 Thomas Morrell | tmorrell@library.caltech.edu | Caltech Library | [@tmorell](https://github.com/tmorrell) |
 | Stephan Druskat |  | German Aerospace Center (DLR)  | [@sdruskat](https://github.com/sdruskat)  |
 Colin Smith | | Enivronmental Data Initiative | [@clnsmt](https://github.com/clnsmth)  |
