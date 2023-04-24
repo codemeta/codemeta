@@ -23,8 +23,8 @@ schema:CreativeWork,citation,CreativeWork  or URL,"A citation or reference to an
 schema:CreativeWork,contributor,Organization  or Person,A secondary contributor to the CreativeWork or Event.
 schema:CreativeWork,copyrightHolder,Organization  or Person,The party holding the legal copyright to the CreativeWork.
 schema:CreativeWork,copyrightYear,Number,The year during which the claimed copyright for the CreativeWork was first asserted.
-schema:CreativeWork,dateCreated,Date  or DateTime,The date on which the CreativeWork was created or the item was added to a DataFeed.
-schema:CreativeWork,dateModified,Date  or DateTime,The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed.
+schema:CreativeWork,dateCreated,Date,The date on which the CreativeWork was created or the item was added to a DataFeed.
+schema:CreativeWork,dateModified,Date,The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed.
 schema:CreativeWork,datePublished,Date,Date of first broadcast/publication.
 schema:CreativeWork,editor,Person,Specifies the Person who edited the CreativeWork.
 schema:CreativeWork,encoding,MediaObject,A media object that encodes this CreativeWork. This property is a synonym for associatedMedia. Supersedes encodings.
