@@ -1,5 +1,5 @@
 Parent Type,Property,Type,Description
-schema:SoftwareSourceCode,codeRepository,URL,"Link to the repository where the un-compiled, human readable code and related code is located (SVN, github, CodePlex)."
+schema:SoftwareSourceCode,codeRepository,URL,"Link to the repository where the un-compiled, human readable code and related code is located (SVN, GitHub, CodePlex, institutional GitLab instance, etc.)."
 schema:SoftwareSourceCode,programmingLanguage,ComputerLanguage  or Text,The computer programming language.
 schema:SoftwareSourceCode,runtimePlatform,Text,"Runtime platform or script interpreter dependencies (Example - Java v1, Python2.3, .Net Framework 3.0). Supersedes runtime."
 schema:SoftwareSourceCode,targetProduct,SoftwareApplication,"Target Operating System / Product to which the code applies. If applies to several versions, just the product name can be used."
@@ -51,16 +51,16 @@ schema:Person,givenName,Text,"Given name. In the U.S., the first name of a Perso
 schema:Person,familyName,Text,"Family name. In the U.S., the last name of an Person. This can be used along with givenName instead of the name property."
 schema:Person,email,Text,Email address
 schema:Person,affiliation,Organization,"An organization that this person is affiliated with. For example, a school/university"
-schema:Person,identifier,URL,"URL identifer, ideally an ORCID ID for individuals, a FundRef ID for funders"
+schema:Person,identifier,URL,"URL identifier, ideally an ORCID ID for individuals, a FundRef ID for funders"
 schema:Person,name,Text,"The name of an Organization, or if separate given and family names cannot be resolved for a Person"
 schema:Person,address,PostalAddress or Text,Physical address of the item.
 schema,type,Object Type (from context or URI),"The object type (e.g. ""Person"", ""Organization"", ""ScientificArticle"", ""SoftwareApplication"", etc)."
 schema,id,URL,Primary identifier for an object. Must be a resolvable URL or a string used to refer to this node elsewhere in the same document
-codemeta:SoftwareSourceCode,softwareSuggestions,SoftwareSourceCode,"Optional dependencies , e.g. for optional features, code development, etc"
+codemeta:SoftwareSourceCode,softwareSuggestions,SoftwareSourceCode,"Optional dependencies , e.g. for optional features, code development, etc."
 codemeta:SoftwareSourceCode,maintainer,Person,Individual responsible for maintaining the software (usually includes an email contact address)
 codemeta:SoftwareSourceCode,contIntegration,URL,link to continuous integration service
 codemeta:SoftwareSourceCode,buildInstructions,URL,link to installation instructions/documentation
-codemeta:SoftwareSourceCode,developmentStatus,Text,"Description of development status, e.g. Active, inactive, supsended. See repostatus.org"
+codemeta:SoftwareSourceCode,developmentStatus,Text,"Description of development status, e.g. Active, inactive, suspended. See repostatus.org"
 codemeta:SoftwareSourceCode,embargoDate,Date,"Software may be embargoed from public access until a specified date (e.g. pending publication, 1 year from publication)"
 codemeta:SoftwareSourceCode,funding,Text,Funding source (e.g. specific grant)
 codemeta:SoftwareSourceCode,issueTracker,URL,link to software bug reporting or issue tracking system
