@@ -6,12 +6,12 @@ The PMC is ensuring that the CodeMeta community is an open community that operat
 
 | Name             | Email                | Institution               | GitHub  |
 |------------------|----------------------|-------------------------| --------|
-| Matthew B. Jones | jones@nceas.ucsb.edu | NCEAS, UC Santa Barbara | [mbjones](http://github.com/mbjones) |
+| Matthew B. Jones | jones@nceas.ucsb.edu | NCEAS, UC Santa Barbara | [@mbjones](http://github.com/mbjones) |
 | Carl Boettiger   | | UC Berkeley | [cboettig](http://github.com/cboettig) |
-| Abby Cabunoc Mayes | | Mozilla Science Lab | [acabunoc](http://github.com/acabunoc) |
-| Arfon Smith | | GitHub | [arfon](http://github.com/arfon) |
-| Morane Gruenpeter | morane@softwareheritage.org | Software Heritage | @moranegg |
-| Valentin Lorentz | vlorentz@softwareheritage.org | Software Heritage | @progval |
+| Abby Cabunoc Mayes | | Mozilla Science Lab | [@acabunoc](http://github.com/acabunoc) |
+| Arfon Smith | | GitHub | [@arfon](http://github.com/arfon) |
+| Morane Gruenpeter | morane@softwareheritage.org | Software Heritage | [@moranegg](https://github.com/moranegg) |
+| Valentin Lorentz | vlorentz@softwareheritage.org | Software Heritage | [@progval](https://github.com/progval) |
 | Thomas Morrell | tmorrell@library.caltech.edu | Caltech Library | [@tmorell](https://github.com/tmorrell) |
 | Daniel Garijo |  |  Universidad Politécnica de Madrid | [@dgarijo](https://github.com/dgarijo)  |
 
@@ -79,10 +79,11 @@ As list:
 |------------------|----------------------|-------------------------| --------|
 | Matthew B. Jones | jones@nceas.ucsb.edu | NCEAS, UC Santa Barbara | [mbjones](http://github.com/mbjones) |
 | Carl Boettiger   | | UC Berkeley | [cboettig](http://github.com/cboettig) |
-| Morane Gruenpeter | morane@softwareheritage.org | Software Heritage | [@moranegg] |
+| Morane Gruenpeter | morane@softwareheritage.org | Software Heritage | [@moranegg](https://github.com/moranegg) |
 | Valentin Lorentz | vlorentz@softwareheritage.org | Software Heritage | [@progval](https://github.com/progval) |
-Thomas Morrell | tmorrell@library.caltech.edu | Caltech Library | [@tmorell](https://github.com/tmorrell) |
+| Thomas Morrell | tmorrell@library.caltech.edu | Caltech Library | [@tmorell](https://github.com/tmorrell) |
 | Stephan Druskat |  | German Aerospace Center (DLR)  | [@sdruskat](https://github.com/sdruskat)  |
-Colin Smith | | Enivronmental Data Initiative | [@clnsmt](https://github.com/clnsmth)  |
+| Colin Smith | | Enivronmental Data Initiative | [@clnsmt](https://github.com/clnsmth)  |
 | Jurriaan H. Spaaks |  | Netherlands eScience Center  | [@jspaaks](https://github.com/jspaaks) |
-
+| Satvik Vemuganti | | | [@VickyMerzOwn](https://github.com/VickyMerzOwn)|
+| Thomas Vuillaume | | Univ. Savoie Mont-Blanc, CNRS, LAPP | [@vuillaut](https://github.com/vuillaut) |
