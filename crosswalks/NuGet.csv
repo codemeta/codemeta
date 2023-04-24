@@ -1,6 +1,6 @@
-Property,Software Ontology
-codeRepository,
-programmingLanguage,programming language
+Property,NuGet
+codeRepository,repository.url
+programmingLanguage,
 runtimePlatform,
 targetProduct,
 applicationCategory,
@@ -12,13 +12,13 @@ memoryRequirements,
 operatingSystem,
 permissions,
 processorRequirements,
-releaseNotes,
+releaseNotes,releaseNotes
 softwareHelp,
 softwareRequirements,
 softwareVersion,
 storageRequirements,
 supportingData,
-author,
+author,authors
 citation,
 contributor,
 copyrightHolder,
@@ -30,28 +30,28 @@ editor,
 encoding,
 fileFormat,
 funder,
-keywords,
-license,software license
+keywords,tags
+license,license/licenseUrl
 producer,
 provider,
-publisher,software publisher organization
+publisher,
 sponsor,
-version,Version
+version,version
 isAccessibleForFree,
 isPartOf,
 hasPart,
 position,
-description,software
+description,description/summary
 identifier,
-name,SoftwareTitle
+name,name
 sameAs,
-url,
+url,projectUrl
 relatedLink,
 givenName,
 familyName,
 email,
 affiliation,
-identifier,
+identifier,id
 name,
 address,
 softwareSuggestions,
@@ -64,11 +64,3 @@ funding,
 issueTracker,
 referencePublication,
 readme,
-,
-,
-,
-,
-,
-,
-,
-,

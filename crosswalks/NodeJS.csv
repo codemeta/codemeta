@@ -54,8 +54,6 @@ affiliation,
 identifier,
 name,author.name
 address,
-type,
-id,
 softwareSuggestions,devDependencies / optionalDependencies
 maintainer,
 contIntegration,

@@ -38,7 +38,10 @@ OLD_ORDER = [
     'ASCL.csv',
     'DOAP.csv',
     'Wikidata.csv',
-    'Citation File Format Core (CFF-Core) 1.0.2.csv',
+    'Citation File Format 1.2.0.csv',
+    'bio.tools.csv',
+    'Pubspec.csv',
+    'NuGet.csv',
     ]
 
 USE_OLD_ORDER = True
