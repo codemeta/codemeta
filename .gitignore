@@ -1,3 +1,5 @@
 Gemfile.lock
 .Rproj.user
 codemeta.Rproj
+.DS_Store
+.Rhistory

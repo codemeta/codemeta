@@ -23,7 +23,6 @@ citation,
 contributor,contributor
 copyrightHolder,
 copyrightYear,
-creator,
 dateCreated,date
 dateModified,date
 datePublished,publicationYear
@@ -55,8 +54,6 @@ affiliation,affiliation
 identifier,nameIdentifier
 name,creatorName 
 address,
-type,
-id,
 softwareSuggestions,
 maintainer,
 contIntegration,

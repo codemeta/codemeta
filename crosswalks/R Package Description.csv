@@ -15,7 +15,7 @@ processorRequirements,
 releaseNotes,
 softwareHelp,
 softwareRequirements,"Depends, SystemRequirements"
-softwareVersion,
+softwareVersion,Version
 storageRequirements,
 supportingData,
 author,[aut] in Author
@@ -23,7 +23,6 @@ citation,
 contributor,[ctb] in Author
 copyrightHolder,
 copyrightYear,
-creator,[cre] in Author
 dateCreated,
 dateModified,
 datePublished,Date
@@ -37,7 +36,7 @@ producer,
 provider,
 publisher,
 sponsor,
-version,
+version,Version
 isAccessibleForFree,
 isPartOf,
 hasPart,
@@ -55,8 +54,6 @@ affiliation,
 identifier,
 name,
 address,
-type,
-id,
 softwareSuggestions,Suggests
 maintainer,Maintainer
 contIntegration,

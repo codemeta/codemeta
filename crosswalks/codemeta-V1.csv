@@ -23,7 +23,6 @@ citation,relatedLink
 contributor,
 copyrightHolder,agents [role=copyrightHolder]
 copyrightYear,
-creator,agent
 dateCreated,dateCreated
 dateModified,dateModified
 datePublished,datePublished
@@ -55,8 +54,6 @@ affiliation,affiliation
 identifier,identifier
 name,
 address,
-type,
-id,
 softwareSuggestions,suggests
 maintainer,uploadedBy
 contIntegration,contIntegration

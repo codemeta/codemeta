@@ -19,7 +19,6 @@
       "contributor": { "@id": "schema:contributor"},
       "copyrightHolder": { "@id": "schema:copyrightHolder"},
       "copyrightYear": { "@id": "schema:copyrightYear"},
-      "creator": { "@id": "schema:creator"},
       "dateCreated": {"@id": "schema:dateCreated", "@type": "schema:Date" },
       "dateModified":  {"@id": "schema:dateModified", "@type": "schema:Date" },
       "datePublished":  {"@id": "schema:datePublished", "@type": "schema:Date" },
