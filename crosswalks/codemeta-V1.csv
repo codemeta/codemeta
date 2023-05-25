@@ -63,7 +63,8 @@ embargoDate,embargoDate
 funding,funding
 issueTracker,issueTracker
 referencePublication,relatedPublications
-readme,readme
+readme,
+hasSourceCode,readme
 ,relatedIdentifer
 ,relatedIdentiferType
 ,relationshipType
