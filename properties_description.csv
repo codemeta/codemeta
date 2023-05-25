@@ -64,7 +64,7 @@ codemeta:SoftwareSourceCode,funding,Text,Funding source (e.g. specific grant)
 codemeta:SoftwareSourceCode,issueTracker,URL,link to software bug reporting or issue tracking system
 codemeta:SoftwareSourceCode,referencePublication,ScholarlyArticle,An academic publication related to the software.
 codemeta:SoftwareSourceCode,readme,URL,link to software Readme file
-codemeta:SoftwareApplication,hasSourceCode,SoftwareSourceCode,Link that states where the software code is for a given software. This property is the inverse of schema:targetProduct. For example a software registry may indicate that one of its software entries hasSourceCode in a GitHub repository.
+codemeta:SoftwareApplication,hasSourceCode,SoftwareSourceCode,Link that states where the software code is for a given software. For example a software registry may indicate that one of its software entries hasSourceCode in a GitHub repository.
 ,,,
 ,,,
 ,,,
