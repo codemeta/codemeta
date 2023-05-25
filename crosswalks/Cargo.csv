@@ -62,6 +62,7 @@ contIntegration,
 buildInstructions,
 developmentStatus,
 embargoDate,
+embargoEndDate,
 funding,
 issueTracker,badges.is-it-maintained-open-issues
 referencePublication,

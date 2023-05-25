@@ -62,6 +62,7 @@ contIntegration,
 buildInstructions,
 developmentStatus,stability
 embargoDate,
+embargoEndDate,
 funding,
 issueTracker,bug-reports
 referencePublication,

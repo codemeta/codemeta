@@ -60,6 +60,7 @@ contIntegration,
 buildInstructions,
 developmentStatus,Development Status
 embargoDate,
+embargoEndDate,
 funding,
 issueTracker,
 referencePublication,

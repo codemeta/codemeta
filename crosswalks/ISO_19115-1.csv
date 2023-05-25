@@ -42,7 +42,8 @@ TargetProduct,identificationInfo.associatedResource.name*
 buildInstructions,identificationInfo.additionalDocumentation*
 contIntegration,identificationInfo.additionalDocumentation*
 developmentStatus,identificationInfo.status
-embargo Date,identificationInfo.citation.date[dateType='released'].date*
+embargoDate,identificationInfo.citation.date[dateType='released'].date*
+embargoEndDate,identificationInfo.citation.date[dateType='released'].date*
 funding,identificationInfo.associatedResource*
 issueTracker,identificationInfo.resourceSpecificUsage.identifiedIssues.onlineResource.linkage
 maintainer,identificationInfo.pointOfContact
