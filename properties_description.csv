@@ -59,7 +59,8 @@ codemeta:SoftwareSourceCode,maintainer,Person,Individual responsible for maintai
 codemeta:SoftwareSourceCode,contIntegration,URL,link to continuous integration service
 codemeta:SoftwareSourceCode,buildInstructions,URL,link to installation instructions/documentation
 codemeta:SoftwareSourceCode,developmentStatus,Text,"Description of development status, e.g. Active, inactive, suspended. See repostatus.org"
-codemeta:SoftwareSourceCode,embargoDate,Date,"Software may be embargoed from public access until a specified date (e.g. pending publication, 1 year from publication)"
+codemeta:SoftwareSourceCode,embargoDate,Date,"deprecated: the embargoEndDate should be used instead"
+codemeta:SoftwareSourceCode,embargoEndDate,Date,"Software may be embargoed from public access until a specified date (e.g. pending publication, 1 year from publication)"
 codemeta:SoftwareSourceCode,funding,Text,Funding source (e.g. specific grant)
 codemeta:SoftwareSourceCode,issueTracker,URL,link to software bug reporting or issue tracking system
 codemeta:SoftwareSourceCode,referencePublication,ScholarlyArticle,An academic publication related to the software.
