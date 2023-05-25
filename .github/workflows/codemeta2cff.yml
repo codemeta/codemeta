@@ -16,12 +16,11 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Convert CFF
         uses: caltechlibrary/codemeta2cff@main
       - name: Commit CFF
-        uses: EndBug/add-and-commit@v7
+        uses: EndBug/add-and-commit@v9
         with:
           message: 'Add CITATION.cff for release'
           add: 'CITATION.cff'
-          branch: 'main'
