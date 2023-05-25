@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: CodeMeta: Minimal metadata schemas for science software and code, in JSON-LD
+authors:
+  - family-names: Boettiger
+    given-names: Carl
+    orcid: https://orcid.org/0000-0002-1642-628X
+  - family-names: Jones
+    given-names: Matthew B.
+    orcid: https://orcid.org/0000-0003-0077-4738
+abstract: CodeMeta is a concept vocabulary that can be used to standardize the exchange of software metadata across repositories and organizations.
+repository-code: "https://github.com/codemeta/codemeta"
+type: software
+version: 2.0
+license-url: "https://spdx.org/licenses/Apache-2.0"
+keywords:
+  - metadata
+  - software
+date-released: 2017-06-05
