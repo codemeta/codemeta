@@ -57,7 +57,7 @@ address,name/affiliation
 type,
 id,
 softwareSuggestions,relatedItem
-maintainer,name/role/roleTerm[@type='code']/crp
+maintainer,name/role/roleTerm[@type='code']/[.='crp']
 contIntegration,relatedItem/location/url[@displayName='Continuous Integration Service']
 buildInstructions,relatedItem/location/url[@displayName='Build Instructions']
 developmentStatus,
