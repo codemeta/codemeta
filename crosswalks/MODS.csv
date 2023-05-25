@@ -51,7 +51,7 @@ givenName,name/namePart[@type='given']
 familyName,name/namePart[@type='family']
 email,name/affiliation
 affiliation,name/affiliation
-identifier,name/nameIdentifier
+identifier,identifier / name/nameIdentifier
 name,name/namePart
 address,name/affiliation
 type,
