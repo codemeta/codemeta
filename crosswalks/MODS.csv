@@ -35,7 +35,7 @@ license,accessCondition[@type='use and reproduction']
 producer,name/role/roleTerm[@type='code']/[.='pro']
 provider,name/role/roleTerm[@type='code']/[.='prv']
 publisher,originInfo/publisher
-sponsor,name/role/roleTerm[@type='code'
+sponsor,name/role/roleTerm[@type='code']
 version,originInfo/edition
 isAccessibleForFree,accessCondition[@type='accessible for free']/yes
 isPartOf,part
