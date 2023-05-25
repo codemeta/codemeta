@@ -18,7 +18,7 @@
   "schema:downloadUrl": "https://csdms.colorado.edu/pub/models/doi-source-code/topoflow-10.1594.IEDA.100174-3.1.0.tar.gz",
   "keywords": "snowmelt;precipitation;evapotranspiration;infiltration;channel/overland flow;shallow subsurface flow;flow diversions",
   "name": "Topoflow Hydrology model",
-  "codemeta:hasSourceCode": {
+  "hasSourceCode": {
     "id": "https://w3id.org/okn/i/mint/topoflow_source",
     "type": "SoftwareSourceCode",
     "name": "Topoflow source code",
