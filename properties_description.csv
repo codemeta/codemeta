@@ -1,5 +1,5 @@
 Parent Type,Property,Type,Description
-schema:SoftwareSourceCode,codeRepository,URL,"Link to the repository where the un-compiled, human readable code and related code is located (SVN, github, CodePlex)."
+schema:SoftwareSourceCode,codeRepository,URL,"Link to the repository where the un-compiled, human readable code and related code is located (SVN, GitHub, CodePlex, institutional GitLab instance, etc.)."
 schema:SoftwareSourceCode,programmingLanguage,ComputerLanguage  or Text,The computer programming language.
 schema:SoftwareSourceCode,runtimePlatform,Text,"Runtime platform or script interpreter dependencies (Example - Java v1, Python2.3, .Net Framework 3.0). Supersedes runtime."
 schema:SoftwareSourceCode,targetProduct,SoftwareApplication,"Target Operating System / Product to which the code applies. If applies to several versions, just the product name can be used."
@@ -23,8 +23,8 @@ schema:CreativeWork,citation,CreativeWork  or URL,"A citation or reference to an
 schema:CreativeWork,contributor,Organization  or Person,A secondary contributor to the CreativeWork or Event.
 schema:CreativeWork,copyrightHolder,Organization  or Person,The party holding the legal copyright to the CreativeWork.
 schema:CreativeWork,copyrightYear,Number,The year during which the claimed copyright for the CreativeWork was first asserted.
-schema:CreativeWork,dateCreated,Date  or DateTime,The date on which the CreativeWork was created or the item was added to a DataFeed.
-schema:CreativeWork,dateModified,Date  or DateTime,The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed.
+schema:CreativeWork,dateCreated,Date,The date on which the CreativeWork was created or the item was added to a DataFeed.
+schema:CreativeWork,dateModified,Date,The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed.
 schema:CreativeWork,datePublished,Date,Date of first broadcast/publication.
 schema:CreativeWork,editor,Person,Specifies the Person who edited the CreativeWork.
 schema:CreativeWork,encoding,MediaObject,A media object that encodes this CreativeWork. This property is a synonym for associatedMedia. Supersedes encodings.
@@ -50,17 +50,15 @@ schema:Thing,relatedLink,URL,"A link related to this object, e.g. related web pa
 schema:Person,givenName,Text,"Given name. In the U.S., the first name of a Person. This can be used along with familyName instead of the name property"
 schema:Person,familyName,Text,"Family name. In the U.S., the last name of an Person. This can be used along with givenName instead of the name property."
 schema:Person,email,Text,Email address
-schema:Person,affiliation,Text,"An organization that this person is affiliated with. For example, a school/university"
-schema:Person,identifier,URL,"URL identifer, ideally an ORCID ID for individuals, a FundRef ID for funders"
+schema:Person,affiliation,Organization,"An organization that this person is affiliated with. For example, a school/university"
+schema:Person,identifier,URL,"URL identifier, ideally an ORCID ID for individuals, a FundRef ID for funders"
 schema:Person,name,Text,"The name of an Organization, or if separate given and family names cannot be resolved for a Person"
 schema:Person,address,PostalAddress or Text,Physical address of the item.
-schema,type,Object Type (from context or URI),"The object type (e.g. ""Person"", ""Organization"", ""ScientificArticle"", ""SoftwareApplication"", etc)."
-schema,id,URL,Primary identifier for an object. Must be a resolvable URL or a string used to refer to this node elsewhere in the same document
-codemeta:SoftwareSourceCode,softwareSuggestions,SoftwareSourceCode,"Optional dependencies , e.g. for optional features, code development, etc"
+codemeta:SoftwareSourceCode,softwareSuggestions,SoftwareSourceCode,"Optional dependencies , e.g. for optional features, code development, etc."
 codemeta:SoftwareSourceCode,maintainer,Person,Individual responsible for maintaining the software (usually includes an email contact address)
 codemeta:SoftwareSourceCode,continuousIntegration,URL,link to continuous integration service
 codemeta:SoftwareSourceCode,buildInstructions,URL,link to installation instructions/documentation
-codemeta:SoftwareSourceCode,developmentStatus,Text,"Description of development status, e.g. Active, inactive, supsended. See repostatus.org"
+codemeta:SoftwareSourceCode,developmentStatus,Text,"Description of development status, e.g. Active, inactive, suspended. See repostatus.org"
 codemeta:SoftwareSourceCode,embargoDate,Date,"Software may be embargoed from public access until a specified date (e.g. pending publication, 1 year from publication)"
 codemeta:SoftwareSourceCode,funding,Text,Funding source (e.g. specific grant)
 codemeta:SoftwareSourceCode,issueTracker,URL,link to software bug reporting or issue tracking system

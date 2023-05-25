@@ -54,8 +54,6 @@ affiliation,
 identifier,ORCID
 name,name
 address,
-type,
-id,
 softwareSuggestions,
 maintainer,
 continuousIntegration,

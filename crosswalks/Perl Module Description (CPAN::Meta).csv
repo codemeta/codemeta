@@ -54,8 +54,6 @@ affiliation,
 identifier,
 name,author:contact-name
 address,
-type,
-id,
 softwareSuggestions,
 maintainer,
 continuousIntegration,
