@@ -2,7 +2,7 @@
   "@context": "https://raw.githubusercontent.com/codemeta/codemeta/master/codemeta.jsonld",
   "id": "https://w3id.org/okn/i/mint/TOPOFLOW",
   "type": "SoftwareApplication",
-  "schema:author": {
+  "author": {
     "id": "https://w3id.org/okn/i/mint/peckham_scott",
     "type": "Person",
     "name": "Scott Peckham"
