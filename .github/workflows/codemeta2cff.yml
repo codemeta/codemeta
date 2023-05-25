@@ -1,0 +1,27 @@
+name: CodeMeta2CFF
+
+on:
+  push:
+    tags:
+      - v*
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Reason'
+        required: false
+        default: 'Manual trigger'
+
+jobs:
+  CodeMeta2CFF:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Convert CFF
+        uses: caltechlibrary/codemeta2cff@main
+      - name: Commit CFF
+        uses: EndBug/add-and-commit@v7
+        with:
+          message: 'Add CITATION.cff for release'
+          add: 'CITATION.cff'
+          branch: 'main'
