@@ -58,6 +58,7 @@ type,
 id,
 softwareSuggestions,
 maintainer,package.authors
+contIntegration,
 continuousIntegration,
 buildInstructions,
 developmentStatus,
