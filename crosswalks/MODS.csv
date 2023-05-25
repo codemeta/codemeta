@@ -40,7 +40,7 @@ version,originInfo/edition
 isAccessibleForFree,accessCondition[@type='accessible for free']/yes
 isPartOf,part
 hasPart,part
-position,part/[@order='']
+position,part/[@order]
 description,abstract
 identifier,identifier
 name,titleInfo/title
