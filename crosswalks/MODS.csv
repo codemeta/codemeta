@@ -49,7 +49,7 @@ url,location/url
 relatedLink,relatedItem/location/url[@displayName='Related Link']
 givenName,name/namePart[@type='given']
 familyName,name/namePart[@type='family']
-email,name/affiliation
+email,
 affiliation,name/affiliation
 identifier,identifier / name/nameIdentifier
 name,name/namePart
