@@ -63,6 +63,7 @@ buildInstructions,relatedItem/location/url[@displayName='Build Instructions']
 developmentStatus,
 embargoDate,accessCondition[@type='restriction on access']
 funding,
-issueTracker,"relatedItem/location/url[@displayName=""'Issue Tracker']"
+issueTracker,"relatedItem/location/url[@displayName='Issue Tracker']"
+
 referencePublication,relatedItem[@type='isReferencedBy']
 readme,relatedItem[@type='constituent']
