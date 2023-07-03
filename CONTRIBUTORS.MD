@@ -87,3 +87,16 @@ As list:
 | Jurriaan H. Spaaks |  | Netherlands eScience Center  | [@jspaaks](https://github.com/jspaaks) |
 | Satvik Vemuganti | | | [@VickyMerzOwn](https://github.com/VickyMerzOwn)|
 | Thomas Vuillaume | | Univ. Savoie Mont-Blanc, CNRS, LAPP | [@vuillaut](https://github.com/vuillaut) |
+
+## V3.0 contributors (3 July, 2023)
+- [@agbeltran](https://github.com/agbeltran)
+- [@arfon]([@arfon](http://github.com/arfon))
+- [@cboettig](http://github.com/cboettig)
+- [@dgarijo](https://github.com/dgarijo)
+- [@mbjones](http://github.com/mbjones) 
+- [@mfenner](https://github.com/mfenner)
+- [@moranegg](https://github.com/moranegg)
+- [@noamross](https://github.com/noamross)
+- [@progval](https://github.com/progval) 
+- [@tmorell](https://github.com/tmorrell) 
+
