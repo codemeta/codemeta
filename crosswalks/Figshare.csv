@@ -54,6 +54,9 @@ affiliation,
 identifier,ORCID
 name,name
 address,
+endDate,
+roleName,
+startDate,
 softwareSuggestions,
 maintainer,
 continuousIntegration,

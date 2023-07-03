@@ -56,6 +56,9 @@ name,
 address,
 type,dcterms:type
 id,dcterms:identifier
+endDate,
+roleName,
+startDate,
 softwareSuggestions,
 maintainer,prov:qualifiedAttribution
 continuousIntegration,
