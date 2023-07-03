@@ -1,6 +1,7 @@
 Property,ASCL
 codeRepository,site_list
 programmingLanguage,
+review,
 runtimePlatform,
 targetProduct,
 applicationCategory,
@@ -54,6 +55,8 @@ affiliation,
 identifier,
 name,
 address,
+reviewAspect,
+reviewBody,
 endDate,
 roleName,
 startDate,

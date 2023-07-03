@@ -1,6 +1,7 @@
 Property,Figshare
 codeRepository,relatedLink
 programmingLanguage,
+review,
 runtimePlatform,
 targetProduct,
 applicationCategory,categories
@@ -54,6 +55,8 @@ affiliation,
 identifier,ORCID
 name,name
 address,
+reviewAspect,
+reviewBody,
 endDate,
 roleName,
 startDate,

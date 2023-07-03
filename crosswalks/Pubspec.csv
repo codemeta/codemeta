@@ -1,6 +1,7 @@
 Property,Pubspec
 codeRepository,repository
 programmingLanguage,
+review,
 runtimePlatform,platforms
 targetProduct,
 applicationCategory,
@@ -54,6 +55,8 @@ affiliation,
 identifier,
 name,
 address,
+reviewAspect,
+reviewBody,
 endDate,
 roleName,
 startDate,

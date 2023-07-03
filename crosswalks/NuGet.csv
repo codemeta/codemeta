@@ -1,6 +1,7 @@
 Property,NuGet
 codeRepository,repository.url
 programmingLanguage,
+review,
 runtimePlatform,
 targetProduct,
 applicationCategory,
@@ -54,6 +55,8 @@ affiliation,
 identifier,id
 name,
 address,
+reviewAspect,
+reviewBody,
 endDate,
 roleName,
 startDate,

@@ -1,6 +1,7 @@
 Property,bio.tools
 codeRepository,
 programmingLanguage,labels.language
+review,
 runtimePlatform,
 targetProduct,
 applicationCategory,
@@ -54,6 +55,8 @@ affiliation,
 identifier,
 name,
 address,
+reviewAspect,
+reviewBody,
 endDate,
 roleName,
 startDate,

@@ -1,6 +1,7 @@
 Property,Trove Software Map
 codeRepository,
 programmingLanguage,Programming Language
+review,
 runtimePlatform,
 targetProduct,
 applicationCategory,Topic
@@ -54,6 +55,8 @@ affiliation,
 identifier,
 name,
 address,
+reviewAspect,
+reviewBody,
 endDate,
 roleName,
 startDate,
