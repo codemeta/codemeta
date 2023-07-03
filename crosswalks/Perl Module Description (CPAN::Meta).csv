@@ -56,7 +56,6 @@ name,author:contact-name
 address,
 softwareSuggestions,
 maintainer,
-contIntegration,
 continuousIntegration,
 buildInstructions,
 developmentStatus,release_status

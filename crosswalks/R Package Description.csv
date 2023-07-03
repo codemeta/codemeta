@@ -56,7 +56,6 @@ name,
 address,
 softwareSuggestions,Suggests
 maintainer,Maintainer
-contIntegration,
 continuousIntegration,
 buildInstructions,
 developmentStatus,

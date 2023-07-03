@@ -58,7 +58,6 @@ type,dcterms:type
 id,dcterms:identifier
 softwareSuggestions,
 maintainer,prov:qualifiedAttribution
-contIntegration,
 continuousIntegration,
 buildInstructions,
 developmentStatus,

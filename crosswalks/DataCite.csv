@@ -56,7 +56,6 @@ name,creatorName
 address,
 softwareSuggestions,
 maintainer,
-contIntegration,
 continuousIntegration,
 buildInstructions,
 developmentStatus,

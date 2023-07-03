@@ -58,7 +58,6 @@ type,
 id,
 softwareSuggestions,
 maintainer,maintainer
-contIntegration,
 continuousIntegration,
 buildInstructions,
 developmentStatus,stability

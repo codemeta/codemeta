@@ -56,7 +56,6 @@ schema:Person,name,Text,"The name of an Organization, or if separate given and f
 schema:Person,address,PostalAddress or Text,Physical address of the item.
 codemeta:SoftwareSourceCode,softwareSuggestions,SoftwareSourceCode,"Optional dependencies , e.g. for optional features, code development, etc."
 codemeta:SoftwareSourceCode,maintainer,Person,Individual responsible for maintaining the software (usually includes an email contact address)
-codemeta:SoftwareSourceCode,contIntegration,URL,"deprecated: the continuousIntegration should be used instead"
 codemeta:SoftwareSourceCode,continuousIntegration,URL,link to continuous integration service
 codemeta:SoftwareSourceCode,buildInstructions,URL,link to installation instructions/documentation
 codemeta:SoftwareSourceCode,developmentStatus,Text,"Description of development status, e.g. Active, inactive, suspended. See repostatus.org"
