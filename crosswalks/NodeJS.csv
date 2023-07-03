@@ -54,6 +54,9 @@ affiliation,
 identifier,
 name,author.name
 address,
+endDate,
+roleName,
+startDate,
 softwareSuggestions,devDependencies / optionalDependencies
 maintainer,
 continuousIntegration,

@@ -54,6 +54,9 @@ affiliation,person.affiliation
 identifier,person.orcid / identifiers / doi
 name,entity.name
 address,person.address / entity.address
+endDate,
+roleName,
+startDate,
 softwareSuggestions,(references)
 maintainer,
 continuousIntegration,

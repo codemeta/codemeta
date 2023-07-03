@@ -48,6 +48,9 @@ issueTracker,identificationInfo.resourceSpecificUsage.identifiedIssues.onlineRes
 maintainer,identificationInfo.pointOfContact
 readme,identificationInfo.additionalDocumentation*
 referencePublication,identificationInfo.additionalDocumentation*
+endDate,
+roleName,
+startDate,
 softwareSuggestions,identificationInfo.additionalDocumentation*
 applicationCategory,identificationInfo.descriptiveKeywords[type='theme'].keyword*
 applicationSubCategory,identificationInfo.descriptiveKeywords[type='theme'].keyword*
