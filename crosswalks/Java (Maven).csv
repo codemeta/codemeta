@@ -56,7 +56,7 @@ name,
 address,
 softwareSuggestions,
 maintainer,
-contIntegration,ciManagement
+continuousIntegration,ciManagement
 buildInstructions,
 developmentStatus,
 embargoDate,

@@ -56,7 +56,7 @@ name,
 address,
 softwareSuggestions,
 maintainer,maintainer / maintainer_email
-contIntegration,
+continuousIntegration,
 buildInstructions,
 developmentStatus,classifiers['Development Status']
 embargoDate,

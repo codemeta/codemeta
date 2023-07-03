@@ -56,7 +56,7 @@ name,author.name
 address,
 softwareSuggestions,devDependencies / optionalDependencies
 maintainer,
-contIntegration,
+continuousIntegration,
 buildInstructions,
 developmentStatus,
 embargoDate,

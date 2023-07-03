@@ -56,7 +56,7 @@ name,
 address,
 softwareSuggestions,
 maintainer,
-contIntegration,
+continuousIntegration,
 buildInstructions,
 developmentStatus,Development Status
 embargoDate,
