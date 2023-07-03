@@ -54,11 +54,9 @@ affiliation,affiliation
 identifier,nameIdentifier
 name,creatorName 
 address,
-type,
-id,
 softwareSuggestions,
 maintainer,
-contIntegration,
+continuousIntegration,
 buildInstructions,
 developmentStatus,
 embargoDate,

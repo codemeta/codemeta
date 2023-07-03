@@ -40,7 +40,7 @@ ProgrammingLanguage,identificationInfo.descriptiveKeywords[type='theme'].keyword
 RuntimePlatform,identificationInfo.environmentDescription*
 TargetProduct,identificationInfo.associatedResource.name*
 buildInstructions,identificationInfo.additionalDocumentation*
-contIntegration,identificationInfo.additionalDocumentation*
+continuousIntegration,identificationInfo.additionalDocumentation*
 developmentStatus,identificationInfo.status
 embargo Date,identificationInfo.citation.date[dateType='released'].date*
 funding,identificationInfo.associatedResource*

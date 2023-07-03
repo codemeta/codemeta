@@ -52,7 +52,7 @@
       "provider": { "@id": "schema:provider"},
       "publisher": { "@id": "schema:publisher"},
       "relatedLink": { "@id": "schema:relatedLink", "@type": "@id"},
-      "releaseNotes": { "@id": "schema:releaseNotes", "@type": "@id"},
+      "releaseNotes": { "@id": "schema:releaseNotes"},
       "roleName": { "@id": "schema:roleName"},
       "runtimePlatform": { "@id": "schema:runtimePlatform"},
       "sameAs": { "@id": "schema:sameAs", "@type": "@id"},
@@ -70,7 +70,7 @@
       "author": { "@id": "schema:author", "@container": "@list" },
       
       "softwareSuggestions": { "@id": "codemeta:softwareSuggestions", "@type": "@id"},
-      "contIntegration": { "@id": "codemeta:contIntegration", "@type": "@id"},
+      "continuousIntegration": { "@id": "codemeta:continuousIntegration", "@type": "@id"},
       "buildInstructions": { "@id": "codemeta:buildInstructions", "@type": "@id"},
       "developmentStatus": { "@id": "codemeta:developmentStatus", "@type": "@id"},
       "embargoDate": { "@id":"codemeta:embargoDate", "@type": "schema:Date" },
