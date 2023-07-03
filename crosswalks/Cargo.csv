@@ -65,5 +65,6 @@ embargoDate,
 funding,
 issueTracker,badges.is-it-maintained-open-issues
 referencePublication,
-readme,
-hasSourceCode,package.readme
+readme,package.readme
+hasSourceCode,
+isSourceCodeOf,

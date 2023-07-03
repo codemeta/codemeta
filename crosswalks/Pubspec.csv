@@ -65,3 +65,4 @@ issueTracker,issue_tracker
 referencePublication,
 readme,
 hasSourceCode,
+isSourceCodeOf,

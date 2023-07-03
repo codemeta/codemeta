@@ -65,6 +65,7 @@ issueTracker,bug tracking system
 referencePublication,
 readme,
 hasSourceCode,
+isSourceCodeOf,
 ,
 ,
 ,

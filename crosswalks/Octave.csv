@@ -65,6 +65,7 @@ issueTracker,Problems
 referencePublication,
 readme,
 hasSourceCode,
+isSourceCodeOf,
 ,
 ,
 ,

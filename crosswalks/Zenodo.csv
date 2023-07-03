@@ -65,6 +65,7 @@ issueTracker,related_identifiers.isSupplementedBy
 referencePublication,
 readme,
 hasSourceCode,
+isSourceCodeOf,
 ,
 ,
 ,

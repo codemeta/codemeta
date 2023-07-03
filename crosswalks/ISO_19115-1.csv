@@ -48,6 +48,7 @@ issueTracker,identificationInfo.resourceSpecificUsage.identifiedIssues.onlineRes
 maintainer,identificationInfo.pointOfContact
 readme,
 hasSourceCode,identificationInfo.additionalDocumentation*
+isSourceCodeOf,
 referencePublication,identificationInfo.additionalDocumentation*
 softwareSuggestions,identificationInfo.additionalDocumentation*
 applicationCategory,identificationInfo.descriptiveKeywords[type='theme'].keyword*

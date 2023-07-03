@@ -74,6 +74,7 @@
       "issueTracker": { "@id":"codemeta:issueTracker", "@type": "@id" },
       "referencePublication": { "@id": "codemeta:referencePublication", "@type": "@id"},
       "maintainer": { "@id": "codemeta:maintainer" },
-      "hasSourceCode": { "@id": "codemeta:hasSourceCode", "@type": "@id"}
+      "hasSourceCode": { "@id": "codemeta:hasSourceCode", "@type": "@id"},
+      "isSourceCodeOf": { "@id": "codemeta:isSourceCodeOf", "@type": "@id"}
   }
 }

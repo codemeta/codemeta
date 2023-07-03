@@ -65,6 +65,7 @@ issueTracker,
 referencePublication,described in
 readme,
 hasSourceCode,
+isSourceCodeOf,
 ,used in
 ,
 ,
