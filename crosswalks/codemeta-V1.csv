@@ -1,6 +1,7 @@
 Property,codemeta-V1
 codeRepository,codeRepository
 programmingLanguage,programmingLanguage
+review,
 runtimePlatform,
 targetProduct,
 applicationCategory,
@@ -54,6 +55,8 @@ affiliation,affiliation
 identifier,identifier
 name,
 address,
+reviewAspect,
+reviewBody,
 endDate,
 roleName,
 startDate,

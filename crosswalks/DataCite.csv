@@ -1,6 +1,7 @@
 Property,DataCite
 codeRepository,
 programmingLanguage,Format
+review,
 runtimePlatform,
 targetProduct,
 applicationCategory,
@@ -54,6 +55,8 @@ affiliation,affiliation
 identifier,nameIdentifier
 name,creatorName 
 address,
+reviewAspect,
+reviewBody,
 endDate,
 roleName,
 startDate,

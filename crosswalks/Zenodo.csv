@@ -1,6 +1,7 @@
 Property,Zenodo
 codeRepository,related_identifiers.isSupplementTo
 programmingLanguage,
+review,
 runtimePlatform,
 targetProduct,
 applicationCategory,communities
@@ -54,6 +55,8 @@ affiliation,affiliation
 identifier,ORCID
 name,name
 address,
+reviewAspect,
+reviewBody,
 endDate,
 roleName,
 startDate,

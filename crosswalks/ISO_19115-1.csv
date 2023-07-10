@@ -48,6 +48,8 @@ issueTracker,identificationInfo.resourceSpecificUsage.identifiedIssues.onlineRes
 maintainer,identificationInfo.pointOfContact
 readme,identificationInfo.additionalDocumentation*
 referencePublication,identificationInfo.additionalDocumentation*
+reviewAspect,
+reviewBody,
 endDate,
 roleName,
 startDate,

@@ -1,6 +1,7 @@
 Property,DCAT-2
 codeRepository,
 programmingLanguage,dcterms:conformsTo
+review,
 runtimePlatform,
 targetProduct,
 applicationCategory,dcat:theme
@@ -56,6 +57,8 @@ name,
 address,
 type,dcterms:type
 id,dcterms:identifier
+reviewAspect,
+reviewBody,
 endDate,
 roleName,
 startDate,

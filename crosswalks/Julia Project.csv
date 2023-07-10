@@ -1,6 +1,7 @@
 Property, Julia Project.toml
 codeRepository,
 programmingLanguage,
+review,
 runtimePlatform, compat.julia
 targetProduct,
 applicationCategory,
@@ -56,6 +57,8 @@ name,
 address,
 type,
 id,
+reviewAspect,
+reviewBody,
 endDate,
 roleName,
 startDate,
