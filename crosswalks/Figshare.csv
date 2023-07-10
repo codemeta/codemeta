@@ -54,11 +54,12 @@ affiliation,
 identifier,ORCID
 name,name
 address,
-type,
-id,
+endDate,
+roleName,
+startDate,
 softwareSuggestions,
 maintainer,
-contIntegration,
+continuousIntegration,
 buildInstructions,
 developmentStatus,
 embargoEndDate,embargo_date

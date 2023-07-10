@@ -56,12 +56,15 @@ name,package.authors
 address,
 type,
 id,
+endDate,
+roleName,
+startDate,
 softwareSuggestions,
 maintainer,package.authors
-contIntegration,
+continuousIntegration,
 buildInstructions,
 developmentStatus,
-embargoDate,
+embargoEndDate,
 funding,
 issueTracker,badges.is-it-maintained-open-issues
 referencePublication,

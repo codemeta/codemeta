@@ -56,12 +56,15 @@ name,
 address,
 type,dcterms:type
 id,dcterms:identifier
+endDate,
+roleName,
+startDate,
 softwareSuggestions,
 maintainer,prov:qualifiedAttribution
-contIntegration,
+continuousIntegration,
 buildInstructions,
 developmentStatus,
-embargoDate,
+embargoEndDate,
 funding,
 issueTracker,
 referencePublication,

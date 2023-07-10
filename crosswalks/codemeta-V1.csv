@@ -54,11 +54,12 @@ affiliation,affiliation
 identifier,identifier
 name,
 address,
-type,
-id,
+endDate,
+roleName,
+startDate,
 softwareSuggestions,suggests
 maintainer,uploadedBy
-contIntegration,contIntegration
+continuousIntegration,continuousIntegration
 buildInstructions,buildInstructions
 developmentStatus,developmentStatus
 embargoEndDate,embargoDate
