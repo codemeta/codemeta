@@ -55,8 +55,6 @@ affiliation,
 identifier,dcterms:identifier
 name,
 address,
-type,dcterms:type
-id,dcterms:identifier
 reviewAspect,
 reviewBody,
 endDate,
