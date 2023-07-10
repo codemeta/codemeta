@@ -17,6 +17,7 @@ written."""
 
 OLD_ORDER = [
     'codemeta-V1.csv',
+    'codemeta-V2.csv',
     'DataCite.csv',
     'OntoSoft.csv',
     'Zenodo.csv',
