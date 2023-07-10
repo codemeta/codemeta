@@ -1,6 +1,7 @@
 Parent Type,Property,Type,Description
 schema:SoftwareSourceCode,codeRepository,URL,"Link to the repository where the un-compiled, human readable code and related code is located (SVN, GitHub, CodePlex, institutional GitLab instance, etc.)."
 schema:SoftwareSourceCode,programmingLanguage,ComputerLanguage  or Text,The computer programming language.
+schema:SoftwareSourceCode,review,Review,A review of the source code.
 schema:SoftwareSourceCode,runtimePlatform,Text,"Runtime platform or script interpreter dependencies (Example - Java v1, Python2.3, .Net Framework 3.0). Supersedes runtime."
 schema:SoftwareSourceCode,targetProduct,SoftwareApplication,"Target Operating System / Product to which the code applies. If applies to several versions, just the product name can be used."
 schema:SoftwareApplication,applicationCategory,Text  or URL,"Type of software application, e.g. 'Game, Multimedia'."
@@ -54,6 +55,8 @@ schema:Person,affiliation,Organization,"An organization that this person is affi
 schema:Person,identifier,URL,"URL identifier, ideally an ORCID ID for individuals, a FundRef ID for funders"
 schema:Person,name,Text,"The name of an Organization, or if separate given and family names cannot be resolved for a Person"
 schema:Person,address,PostalAddress or Text,Physical address of the item.
+schema:Review,reviewAspect,Text,This Review is relevant to this part or facet of the object being review
+schema:Review,reviewBody,The actual body of the review
 schema:Role,endDate,Date or Datetime,The end date and time of the item, usually a Role. In ISO 8601 date format
 schema:Role,roleName,Text,URL,"A role played, performed, or filled by a person or organization. Suggested values: ""Design"" (algorithm), ""Architecture"", ""Debugging"", ""Maintenance"", ""Coding"", ""Documentation"", ""Testing"", ""Support"", ""Management""."
 schema:Role,startDate,Date or Datetime,The start date and time of the item, usually a Role. In ISO 8601 date format
@@ -67,6 +70,8 @@ codemeta:SoftwareSourceCode,funding,Text,Funding source (e.g. specific grant)
 codemeta:SoftwareSourceCode,issueTracker,URL,link to software bug reporting or issue tracking system
 codemeta:SoftwareSourceCode,referencePublication,ScholarlyArticle,An academic publication related to the software.
 codemeta:SoftwareSourceCode,readme,URL,link to software Readme file
+codemeta:SoftwareApplication,hasSourceCode,SoftwareSourceCode,Link that states where the software code is for a given software. For example a software registry may indicate that one of its software entries hasSourceCode in a GitHub repository.
+codemeta:SoftwareSourceCode,isSourceCodeOf,SoftwareApplication,Link that states where software application is built from a given source code. This is the reverse property of 'hasSourceCode'.
 ,,,
 ,,,
 ,,,

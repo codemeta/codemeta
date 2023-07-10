@@ -6,6 +6,7 @@
       "codemeta": "https://codemeta.github.io/terms/",
       "Organization": {"@id": "schema:Organization"},
       "Person": {"@id": "schema:Person"},
+      "Review": {"@id": "schema:Review"},
       "Role": {"@id": "schema:Role"},
       "SoftwareSourceCode": {"@id": "schema:SoftwareSourceCode"},
       "SoftwareApplication": {"@id": "schema:SoftwareApplication"},
@@ -52,6 +53,9 @@
       "provider": { "@id": "schema:provider"},
       "publisher": { "@id": "schema:publisher"},
       "relatedLink": { "@id": "schema:relatedLink", "@type": "@id"},
+      "review": { "@id": "schema:review", "@type": "@id" },
+      "reviewAspect": { "@id": "schema:reviewAspect" },
+      "reviewBody": { "@id": "schema:reviewBody" },
       "releaseNotes": { "@id": "schema:releaseNotes"},
       "roleName": { "@id": "schema:roleName"},
       "runtimePlatform": { "@id": "schema:runtimePlatform"},
@@ -66,7 +70,6 @@
       "targetProduct": { "@id": "schema:targetProduct"},
       "url": { "@id": "schema:url", "@type": "@id"},
       "version": { "@id": "schema:version"},
-        
       "author": { "@id": "schema:author", "@container": "@list" },
       
       "softwareSuggestions": { "@id": "codemeta:softwareSuggestions", "@type": "@id"},
@@ -78,6 +81,8 @@
       "readme": { "@id":"codemeta:readme", "@type": "@id" },
       "issueTracker": { "@id":"codemeta:issueTracker", "@type": "@id" },
       "referencePublication": { "@id": "codemeta:referencePublication", "@type": "@id"},
-      "maintainer": { "@id": "codemeta:maintainer" }
+      "maintainer": { "@id": "codemeta:maintainer" },
+      "hasSourceCode": { "@id": "codemeta:hasSourceCode", "@type": "@id"},
+      "isSourceCodeOf": { "@id": "codemeta:isSourceCodeOf", "@type": "@id"}
   }
 }

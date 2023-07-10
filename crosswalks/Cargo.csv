@@ -1,6 +1,7 @@
 Property,Rust Package Manager
 codeRepository,package.repository
 programmingLanguage,
+review,
 runtimePlatform,
 targetProduct,
 applicationCategory,
@@ -54,8 +55,8 @@ affiliation,
 identifier,
 name,package.authors
 address,
-type,
-id,
+reviewAspect,
+reviewBody,
 endDate,
 roleName,
 startDate,
@@ -69,3 +70,5 @@ funding,
 issueTracker,badges.is-it-maintained-open-issues
 referencePublication,
 readme,package.readme
+hasSourceCode,
+isSourceCodeOf,
