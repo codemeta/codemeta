@@ -62,7 +62,7 @@ maintainer,
 continuousIntegration,
 buildInstructions,
 developmentStatus,activeDevelopment
-embargoDate,
+embargoEndDate,
 funding,fundingReference.awardTitle or fundingReference.awardNumber
 issueTracker,
 referencePublication,

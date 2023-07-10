@@ -62,7 +62,7 @@ maintainer,maintainer / maintainer_email
 continuousIntegration,
 buildInstructions,
 developmentStatus,classifiers['Development Status']
-embargoDate,
+embargoEndDate,
 funding,
 issueTracker,
 referencePublication,

@@ -62,7 +62,7 @@ maintainer,maintainer
 continuousIntegration,
 buildInstructions,
 developmentStatus,
-embargoDate,
+embargoEndDate,
 funding,
 issueTracker,bug-database
 referencePublication,blog
