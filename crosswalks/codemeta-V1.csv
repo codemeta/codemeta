@@ -70,6 +70,8 @@ funding,funding
 issueTracker,issueTracker
 referencePublication,relatedPublications
 readme,readme
+hasSourceCode,
+isSourceCodeOf,
 ,relatedIdentifer
 ,relatedIdentiferType
 ,relationshipType

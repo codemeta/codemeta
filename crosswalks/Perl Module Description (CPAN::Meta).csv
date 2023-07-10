@@ -70,6 +70,8 @@ funding,
 issueTracker,resources.bugtracker
 referencePublication,
 readme,
+hasSourceCode,
+isSourceCodeOf,
 ,
 ,
 ,

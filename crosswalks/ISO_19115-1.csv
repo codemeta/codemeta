@@ -46,7 +46,9 @@ embargo Date,identificationInfo.citation.date[dateType='released'].date*
 funding,identificationInfo.associatedResource*
 issueTracker,identificationInfo.resourceSpecificUsage.identifiedIssues.onlineResource.linkage
 maintainer,identificationInfo.pointOfContact
-readme,identificationInfo.additionalDocumentation*
+readme,
+hasSourceCode,identificationInfo.additionalDocumentation*
+isSourceCodeOf,
 referencePublication,identificationInfo.additionalDocumentation*
 reviewAspect,
 reviewBody,

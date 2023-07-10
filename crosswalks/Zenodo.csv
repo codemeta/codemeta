@@ -70,6 +70,8 @@ funding,grants
 issueTracker,related_identifiers.isSupplementedBy
 referencePublication,
 readme,
+hasSourceCode,
+isSourceCodeOf,
 ,
 ,
 ,

@@ -1,0 +1,28 @@
+{
+  "@context": "https://raw.githubusercontent.com/codemeta/codemeta/master/codemeta.jsonld",
+  "id": "https://w3id.org/okn/i/mint/TOPOFLOW",
+  "type": "SoftwareApplication",
+  "author": {
+    "id": "https://w3id.org/okn/i/mint/peckham_scott",
+    "type": "Person",
+    "name": "Scott Peckham"
+  },
+  "citation": "Peckham; S. D. 'Geomorphometry and spatial hydrologic modelling.' Developments in Soil Science 33 (2009): 579-602.",
+  "contributor": {
+    "id": "https://w3id.org/okn/i/mint/bolton_bob",
+    "type": "Person",
+    "name": "Bob Bolton"
+  },
+  "dateCreated": "2002",
+  "description": "Topoflow is a powerful spatially-distributed hydrologic model for various physical processes in a watershed, with the goal of accurately predicting how various hydrologic variables will evolve in time in response to climatic forcings",
+  "schema:downloadUrl": "https://csdms.colorado.edu/pub/models/doi-source-code/topoflow-10.1594.IEDA.100174-3.1.0.tar.gz",
+  "keywords": "snowmelt;precipitation;evapotranspiration;infiltration;channel/overland flow;shallow subsurface flow;flow diversions",
+  "name": "Topoflow Hydrology model",
+  "hasSourceCode": {
+    "id": "https://w3id.org/okn/i/mint/topoflow_source",
+    "type": "SoftwareSourceCode",
+    "name": "Topoflow source code",
+    "codemeta:codeRepository": "https://github.com/peckhams/topoflow"
+  },
+  "referencePublication": "Peckham; S. D. 'Geomorphometry and spatial hydrologic modelling.' Developments in Soil Science 33 (2009): 579-602."
+}
