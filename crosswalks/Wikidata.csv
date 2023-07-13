@@ -1,6 +1,7 @@
 Property,Wikidata
 codeRepository,P1324
 programmingLanguage,P277
+review,
 runtimePlatform,P400
 targetProduct,
 applicationCategory,
@@ -54,16 +55,23 @@ affiliation,
 identifier,
 name,
 address,
+reviewAspect,
+reviewBody,
+endDate,
+roleName,
+startDate,
 softwareSuggestions,
 maintainer,
-contIntegration,
+continuousIntegration,
 buildInstructions,
 developmentStatus,
-embargoDate,
+embargoEndDate,
 funding,
 issueTracker,bug tracking system
 referencePublication,
 readme,
+hasSourceCode,
+isSourceCodeOf,
 ,
 ,
 ,

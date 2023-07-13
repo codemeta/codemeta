@@ -1,6 +1,7 @@
 Property,Citation File Format (1.2.0)
 codeRepository,repository-code
 programmingLanguage,
+review,
 runtimePlatform,
 targetProduct,
 applicationCategory,
@@ -54,12 +55,17 @@ affiliation,person.affiliation
 identifier,person.orcid / identifiers / doi
 name,entity.name
 address,person.address / entity.address
+reviewAspect,
+reviewBody,
+endDate,
+roleName,
+startDate,
 softwareSuggestions,(references)
 maintainer,
-contIntegration,
+continuousIntegration,
 buildInstructions,
 developmentStatus,
-embargoDate,
+embargoEndDate,
 funding,
 issueTracker,
 referencePublication,preferred-citation

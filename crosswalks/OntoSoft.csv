@@ -1,6 +1,7 @@
 Property,OntoSoft
 codeRepository,
 programmingLanguage,hasProgrammingLanguage
+review,
 runtimePlatform,
 targetProduct,
 applicationCategory,hasSoftwareCategory
@@ -54,16 +55,23 @@ affiliation,
 identifier,
 name,
 address,
+reviewAspect,
+reviewBody,
+endDate,
+roleName,
+startDate,
 softwareSuggestions,
 maintainer,
-contIntegration,
+continuousIntegration,
 buildInstructions,
 developmentStatus,activeDevelopment
-embargoDate,
+embargoEndDate,
 funding,fundingReference.awardTitle or fundingReference.awardNumber
 issueTracker,
 referencePublication,
 readme,
+hasSourceCode,
+isSourceCodeOf,
 ,
 ,
 ,

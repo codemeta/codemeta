@@ -1,6 +1,7 @@
 Property,NodeJS
 codeRepository,repository
 programmingLanguage,
+review,
 runtimePlatform,engines
 targetProduct,
 applicationCategory,
@@ -54,16 +55,23 @@ affiliation,
 identifier,
 name,author.name
 address,
+reviewAspect,
+reviewBody,
+endDate,
+roleName,
+startDate,
 softwareSuggestions,devDependencies / optionalDependencies
 maintainer,
-contIntegration,
+continuousIntegration,
 buildInstructions,
 developmentStatus,
-embargoDate,
+embargoEndDate,
 funding,
 issueTracker,bugs
 referencePublication,
 readme,
+hasSourceCode,
+isSourceCodeOf,
 ,
 ,
 ,
