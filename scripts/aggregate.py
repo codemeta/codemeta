@@ -15,6 +15,7 @@ DEST_FILENAME = os.path.join(REPO_DIR, 'crosswalk.csv')
 """The path/name of the file where the aggregate crosswalk table is
 written."""
 
+
 def check_property_names_match(filename, properties1, properties2):
     """Checks the list of properties in properties1 is the same as in
     properties2. Exits with a human-readable error if they don't."""
