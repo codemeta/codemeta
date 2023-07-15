@@ -172,7 +172,7 @@
       "version": "3.0.0"
     }
   ],
-  "contIntegration": "https://travis-ci.org/codemeta/codemetar",
+  "continuousIntegration": "https://travis-ci.org/codemeta/codemetar",
   "developmentStatus": "wip",
   "keywords": [
     "metadata",
