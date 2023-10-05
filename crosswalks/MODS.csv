@@ -13,7 +13,8 @@ operatingSystem,
 permissions,
 processorRequirements,
 releaseNotes,description
-softwareHelp,relatedItem
+softwareHelp,
+
 softwareRequirements,
 softwareVersion,originInfo/edition
 storageRequirements,
