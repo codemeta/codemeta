@@ -39,7 +39,7 @@ sponsor,name/role/roleTerm[@type='code']/[.='spn']
 version,originInfo/edition
 isAccessibleForFree,accessCondition[@type='accessible for free']/yes
 isPartOf,part
-hasPart,part
+hasPart,
 position,part/[@order]
 description,abstract
 identifier,identifier
