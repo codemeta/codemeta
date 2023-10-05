@@ -37,7 +37,7 @@ provider,name/role/roleTerm[@type='code']/[.='prv']
 publisher,originInfo/publisher
 sponsor,name/role/roleTerm[@type='code']/[.='spn']
 version,originInfo/edition
-isAccessibleForFree,accessCondition[@type='accessible for free']/yes
+isAccessibleForFree,
 isPartOf,part
 hasPart,
 position,part/[@order]
