@@ -36,7 +36,7 @@
       "funder": { "@id": "schema:funder"},
       "givenName": { "@id": "schema:givenName"},
       "hasPart": { "@id": "schema:hasPart" },
-      "identifier": { "@id": "schema:identifier", "@type": "@id"},
+      "identifier": { "@id": "schema:identifier" },
       "installUrl": { "@id": "schema:installUrl", "@type": "@id"},
       "isAccessibleForFree": { "@id": "schema:isAccessibleForFree"},
       "isPartOf":  { "@id": "schema:isPartOf"},
