@@ -6,7 +6,7 @@ applicationSubCategory,
 author,developer
 buildInstructions,
 citation,
-codeRepository,
+codeRepository,location
 continuousIntegration,
 contributor,developer
 copyrightHolder,
@@ -70,11 +70,3 @@ supportingData,
 targetProduct,
 url,homepage
 version,revision
-,
-,
-,
-,
-,
-,
-,
-,
