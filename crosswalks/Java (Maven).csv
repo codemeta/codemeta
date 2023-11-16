@@ -1,22 +1,22 @@
 Property,Java (Maven)
-codeRepository,scm
+codeRepository,scm / url
 programmingLanguage,
 review,
 runtimePlatform,
 targetProduct,
 applicationCategory,
 applicationSubCategory,
-downloadUrl,distributionManagement
+downloadUrl,distributionManagement / downloadUrl
 fileSize,
 installUrl,
 memoryRequirements,
 operatingSystem,
 permissions,
 processorRequirements,
-releaseNotes,description
+releaseNotes,
 softwareHelp,
 softwareRequirements,dependencies
-softwareVersion,
+softwareVersion,version
 storageRequirements,
 supportingData,
 author,developers
@@ -32,7 +32,7 @@ encoding,
 fileFormat,
 funder,
 keywords,
-license,license
+license,licenses / license / url
 producer,
 provider,
 publisher,
