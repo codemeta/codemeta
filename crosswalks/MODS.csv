@@ -1,6 +1,7 @@
 Property,MODS
 codeRepository,location/url[@access='object in context']
 programmingLanguage,
+review,
 runtimePlatform,
 targetProduct,
 applicationCategory,
@@ -54,14 +55,17 @@ affiliation,name/affiliation
 identifier,identifier / name/nameIdentifier
 name,name/namePart
 address,name/affiliation
-type,
-id,
+reviewAspect,
+reviewBody,
+endDate,
+roleName,
+startDate,
 softwareSuggestions,relatedItem
 maintainer,name/role/roleTerm[@type='code']/[.='crp']
-contIntegration,relatedItem/location/url[@displayName='Continuous Integration Service']
+continuousIntegration,relatedItem/location/url[@displayName='Continuous Integration Service']
 buildInstructions,relatedItem/location/url[@displayName='Build Instructions']
 developmentStatus,
-embargoDate,accessCondition[@type='restriction on access']
+embargoEndDate,accessCondition[@type='restriction on access']
 funding,
 issueTracker,"relatedItem/location/url[@displayName='Issue Tracker']"
 referencePublication,relatedItem[@type='isReferencedBy']
