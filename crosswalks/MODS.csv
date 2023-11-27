@@ -1,4 +1,5 @@
-﻿Property,MODS
+Property,MODS
+
 codeRepository,location/url[@access='object in context']
 programmingLanguage,
 runtimePlatform,
