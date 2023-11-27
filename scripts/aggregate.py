@@ -15,34 +15,6 @@ DEST_FILENAME = os.path.join(REPO_DIR, 'crosswalk.csv')
 """The path/name of the file where the aggregate crosswalk table is
 written."""
 
-OLD_ORDER = [
-    'codemeta-V1.csv',
-    'DataCite.csv',
-    'OntoSoft.csv',
-    'Zenodo.csv',
-    'GitHub.csv',
-    'Figshare.csv',
-    'Software Ontology.csv',
-    'Software Discovery Index.csv',
-    'Dublin Core.csv',
-    'R Package Description.csv',
-    'Debian Package.csv',
-    'Python Distutils (PyPI).csv',
-    'Python PKG-INFO.csv',
-    'Trove Software Map.csv',
-    'Perl Module Description (CPAN::Meta).csv',
-    'NodeJS.csv',
-    'Java (Maven).csv',
-    'Octave.csv',
-    'Ruby Gem.csv',
-    'ASCL.csv',
-    'DOAP.csv',
-    'Wikidata.csv',
-    'Citation File Format Core (CFF-Core) 1.0.2.csv',
-    ]
-
-USE_OLD_ORDER = True
-"""Set this to False to auto-discover files in the crosswalk/ directory."""
 
 def check_property_names_match(filename, properties1, properties2):
     """Checks the list of properties in properties1 is the same as in
@@ -80,13 +52,9 @@ def read_terms(prop_desc, filename):
     return crosswalk_names
 
 def list_crosswalks():
-    """Returns the list of crosswalk files. If USE_OLD_ORDER, returns
-    OLD_ORDER. Otherwise, auto-discovers them from the crosswalk/
-    directory."""
-    if USE_OLD_ORDER:
-        return OLD_ORDER
-    else:
-        return sorted(os.listdir(SOURCE_DIR))
+    """Returns the list of crosswalk files by auto-discovering them from the
+    crosswalk/ directory."""
+    return sorted(os.listdir(SOURCE_DIR))
 
 def aggregate():
     """Get all columns from properties_description.csv and files in

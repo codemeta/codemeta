@@ -1,6 +1,7 @@
 Property,Perl Module Description (CPAN::Meta)
 codeRepository,resources.repository
 programmingLanguage,
+review,
 runtimePlatform,
 targetProduct,
 applicationCategory,Categories
@@ -54,18 +55,23 @@ affiliation,
 identifier,
 name,author:contact-name
 address,
-type,
-id,
+reviewAspect,
+reviewBody,
+endDate,
+roleName,
+startDate,
 softwareSuggestions,
 maintainer,
-contIntegration,
+continuousIntegration,
 buildInstructions,
 developmentStatus,release_status
-embargoDate,
+embargoEndDate,
 funding,
 issueTracker,resources.bugtracker
 referencePublication,
 readme,
+hasSourceCode,
+isSourceCodeOf,
 ,
 ,
 ,

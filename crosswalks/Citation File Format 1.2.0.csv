@@ -1,0 +1,71 @@
+Property,Citation File Format (1.2.0)
+codeRepository,repository-code
+programmingLanguage,
+review,
+runtimePlatform,
+targetProduct,
+applicationCategory,
+applicationSubCategory,
+downloadUrl,(repository-artifact) / (url) / (repository) / (identifiers[i].type==url)
+fileSize,
+installUrl,
+memoryRequirements,
+operatingSystem,
+permissions,
+processorRequirements,
+releaseNotes,
+softwareHelp,
+softwareRequirements,references
+softwareVersion,version
+storageRequirements,
+supportingData,
+author,authors
+citation,preferred-citation / references
+contributor,
+copyrightHolder,
+copyrightYear,
+dateCreated,
+dateModified,
+datePublished,date-released
+editor,
+encoding,
+fileFormat,
+funder,
+keywords,keywords
+license,license / license-url
+producer,
+provider,
+publisher,
+sponsor,
+version,version
+isAccessibleForFree,
+isPartOf,(identifiers)
+hasPart,(identifiers)
+position,
+description,abstract
+identifier,identifiers / person.orcid / doi
+name,title
+sameAs,identifiers.url
+url,url / (repository) / (repository-code) / (repository-artifact) / (identifiers[i].type==url)
+relatedLink,url / (repository) / (repository-code) / (repository-artifact) / (identifiers[i].type==url)
+givenName,person.given-names
+familyName,person.family-names
+email,person.email / entity.email
+affiliation,person.affiliation
+identifier,person.orcid / identifiers / doi
+name,entity.name
+address,person.address / entity.address
+reviewAspect,
+reviewBody,
+endDate,
+roleName,
+startDate,
+softwareSuggestions,(references)
+maintainer,
+continuousIntegration,
+buildInstructions,
+developmentStatus,
+embargoEndDate,
+funding,
+issueTracker,
+referencePublication,preferred-citation
