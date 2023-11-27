@@ -14,7 +14,6 @@ permissions,
 processorRequirements,
 releaseNotes,
 softwareHelp,
-
 softwareRequirements,
 softwareVersion,originInfo/edition
 storageRequirements,
@@ -65,6 +64,5 @@ developmentStatus,
 embargoDate,accessCondition[@type='restriction on access']
 funding,
 issueTracker,"relatedItem/location/url[@displayName='Issue Tracker']"
-
 referencePublication,relatedItem[@type='isReferencedBy']
 readme,relatedItem[@type='constituent']
