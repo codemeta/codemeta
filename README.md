@@ -41,11 +41,9 @@ With codemeta, we want to formalize the schema used to map between the different
 
 Organizers
 ==========
-
-* Matt Jones
-* Arfon Smith
-* Abby Cabunoc Mayes
-* Carl Boettiger
+The CodeMeta project has a [governance model](https://codemeta.github.io/governance/) and 
+a [governing body](https://codemeta.github.io/governance/people/) to oversee the development and maintenance of the CodeMeta vocabulary, 
+crosswalk table, website, software and other related content. 
 
 Links
 =====
