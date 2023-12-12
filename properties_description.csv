@@ -56,7 +56,7 @@ schema:Person,identifier,URL,"URL identifier, ideally an ORCID ID for individual
 schema:Person,name,Text,"The name of an Organization, or if separate given and family names cannot be resolved for a Person"
 schema:Person,address,PostalAddress or Text,Physical address of the item.
 schema:Review,reviewAspect,Text,This Review is relevant to this part or facet of the object being review
-schema:Review,reviewBody,The actual body of the review
+schema:Review,reviewBody,Text,The actual body of the review
 schema:Role,endDate,Date or Datetime,The end date and time of the item, usually a Role. In ISO 8601 date format
 schema:Role,roleName,Text,URL,"A role played, performed, or filled by a person or organization. Suggested values: ""Design"" (algorithm), ""Architecture"", ""Debugging"", ""Maintenance"", ""Coding"", ""Documentation"", ""Testing"", ""Support"", ""Management""."
 schema:Role,startDate,Date or Datetime,The start date and time of the item, usually a Role. In ISO 8601 date format
