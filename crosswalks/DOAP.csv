@@ -70,8 +70,8 @@ funding,
 issueTracker,bug-database
 referencePublication,blog
 readme,
-hasSourceCode,repository
-isSourceCodeOf,repositoryOf
+hasSourceCode,
+isSourceCodeOf,
 ,
 ,
 ,
