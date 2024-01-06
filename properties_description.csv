@@ -73,10 +73,3 @@ codemeta:SoftwareSourceCode,readme,URL,A link to software Readme file
 codemeta:SoftwareApplication,hasSourceCode,SoftwareSourceCode,A link that states where the software code is for a given software. For example a software registry may indicate that one of its software entries hasSourceCode in a GitHub repository.
 codemeta:SoftwareSourceCode,isSourceCodeOf,SoftwareApplication,A link that states where software application is built from a given source code. This is the reverse property of 'hasSourceCode'.
 ,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
