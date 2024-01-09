@@ -72,3 +72,6 @@ referencePublication,
 readme,package.readme
 hasSourceCode,
 isSourceCodeOf,
+readme,
+hasSourceCode,
+isSourceCodeOf,
