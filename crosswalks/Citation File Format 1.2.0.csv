@@ -69,3 +69,6 @@ embargoEndDate,
 funding,
 issueTracker,
 referencePublication,preferred-citation
+readme,
+hasSourceCode,
+isSourceCodeOf,
