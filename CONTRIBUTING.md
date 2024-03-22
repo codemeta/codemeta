@@ -15,7 +15,7 @@ The repository has two major branches:
 
 - `develop`: Any contribution that will change CodeMeta vocabulary should target this branch. Adding a new property, amending or removing an existing property will change the vocabulary.
 - `master`: All other non-vocabulary changes, including mapping and crosswalk updates, should target this branch.
-  - A minor amendment to a property *decription* (not property *name* or *type* or *parent type*) can target this branch as well, as long as it does not change the semantic of the property.
+  - A minor amendment to a property *description* (not property *name* or *type* or *parent type*) can target this branch as well, as long as it does not change the semantic of the property.
 
 ## About pull requests
 
