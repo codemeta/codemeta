@@ -90,7 +90,7 @@ operates according to the rules specified in the
 | Satvik Vemuganti | | | [@VickyMerzOwn](https://github.com/VickyMerzOwn) |
 | Thomas Vuillaume | | Univ. Savoie Mont-Blanc, CNRS, LAPP | [@vuillaut](https://github.com/vuillaut) |
 
-## V3.0 contributors (July 3, 2023)
+## V3.0 contributors (Jul 3, 2023)
 
 - [@agbeltran](https://github.com/agbeltran)
 - [@arfon](https://github.com/arfon)
