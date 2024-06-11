@@ -1,0 +1,19 @@
+Start Schema,End Schema
+swMath,CodeMeta
+articles_count,collectionSize
+authors,author
+classification,inCodeSet
+dependencies,softwareRequirements
+description,description
+homepage,sameAs
+id,identifier
+keywords,keywords
+license_terms,license
+name,name
+operating_systems,operatingSystem
+orms_id,identifier
+programming_languages,programmingLanguage
+related_software,relatedLink
+source_code,codeRepository
+standard_articles,Citation
+zbmath_url,url
