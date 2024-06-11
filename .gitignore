@@ -3,3 +3,4 @@ Gemfile.lock
 codemeta.Rproj
 .DS_Store
 .Rhistory
+.idea
