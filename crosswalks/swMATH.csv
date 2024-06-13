@@ -71,5 +71,5 @@ referencePublication,
 readme,
 hasSourceCode,
 isSourceCodeOf,
-collectionSize,articles_count
-inCodeSet,classification
+,articles_count
+,classification
