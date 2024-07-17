@@ -1,0 +1,74 @@
+Property,BibTeX (@softwareversion)
+codeRepository,repository
+programmingLanguage,
+review,
+runtimePlatform,
+targetProduct,
+applicationCategory,
+applicationSubCategory,
+downloadUrl,file
+fileSize,
+installUrl,
+memoryRequirements,
+operatingSystem,
+permissions,
+processorRequirements,
+releaseNotes,
+softwareHelp,
+softwareRequirements,
+softwareVersion,version (1)
+storageRequirements,
+supportingData,
+author,author
+citation,
+contributor,
+copyrightHolder,
+copyrightYear,
+dateCreated,date (2) (year) / (month)
+dateModified,date (3) (year) / (month)
+datePublished,date (1) (year) / (month)
+editor,editor
+encoding,
+fileFormat,
+funder,
+keywords,
+license,license
+producer,
+provider,
+publisher,publisher
+sponsor,
+version,version (2)
+isAccessibleForFree,
+isPartOf,
+hasPart,
+position,
+description,abstract
+identifier,doi / hal_id
+name,title
+sameAs,
+url,url
+relatedLink,
+givenName,author
+familyName,author
+email,
+affiliation,organization
+identifier,
+name,author
+address,
+reviewAspect,
+reviewBody,
+endDate,
+roleName,
+startDate,
+softwareSuggestions,
+maintainer,
+continuousIntegration,
+buildInstructions,
+developmentStatus,
+embargoEndDate,
+funding,
+issueTracker,
+referencePublication,
+readme,
+hasSourceCode,
+isSourceCodeOf,
