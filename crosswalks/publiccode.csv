@@ -2,7 +2,7 @@ Property,publiccode
 codeRepository,url
 programmingLanguage,
 review,
-runtimePlatform,platforms
+runtimePlatform,
 targetProduct,platforms
 applicationCategory,categories / description.[lang].genericName
 applicationSubCategory,categories
@@ -71,4 +71,4 @@ issueTracker,
 referencePublication,
 readme,
 hasSourceCode,
-isSourceCodeOf,isBasedOn
+isSourceCodeOf,
