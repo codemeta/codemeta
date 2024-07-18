@@ -16,7 +16,7 @@ processorRequirements,
 releaseNotes,
 softwareHelp,
 softwareRequirements,
-softwareVersion,version (1)
+softwareVersion,version
 storageRequirements,
 supportingData,
 author,author
@@ -24,9 +24,9 @@ citation,
 contributor,
 copyrightHolder,
 copyrightYear,
-dateCreated,date (2) (year) / (month)
-dateModified,date (3) (year) / (month)
-datePublished,date (1) (year) / (month)
+dateCreated,
+dateModified,
+datePublished,date / (year) / (month)
 editor,editor
 encoding,
 fileFormat,
@@ -37,7 +37,7 @@ producer,
 provider,
 publisher,publisher
 sponsor,
-version,version (2)
+version,
 isAccessibleForFree,
 isPartOf,
 hasPart,
@@ -48,12 +48,12 @@ name,title
 sameAs,
 url,url
 relatedLink,
-givenName,author
-familyName,author
+givenName,
+familyName,
 email,
 affiliation,organization
 identifier,
-name,author
+name,
 address,
 reviewAspect,
 reviewBody,
