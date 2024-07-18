@@ -6,9 +6,9 @@ runtimePlatform,
 targetProduct,platforms
 applicationCategory,categories / description.[lang].genericName
 applicationSubCategory,categories
-downloadUrl,landingUrl
+downloadUrl,
 fileSize,
-installUrl,landingUrl
+installUrl,
 memoryRequirements,
 operatingSystem,platforms
 permissions,
@@ -46,7 +46,7 @@ description,description.[lang].shortDescription / description.[lang].longDescrip
 identifier,
 name,name / description.[lang].localisedName
 sameAs,
-url,landingUrl
+url,
 relatedLink,
 givenName,
 familyName,
