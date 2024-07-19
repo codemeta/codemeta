@@ -44,7 +44,6 @@ hasPart,
 position,
 description,description
 identifier,id
-identifier,orms_id
 name,name
 sameAs,homepage
 url,zbmath_url
@@ -53,6 +52,8 @@ givenName,
 familyName,
 email,
 affiliation,
+identifier,orms_id
+name,
 address,
 reviewAspect,
 reviewBody,
