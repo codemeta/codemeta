@@ -102,3 +102,13 @@ operates according to the rules specified in the
 - [@noamross](https://github.com/noamross)
 - [@progval](https://github.com/progval)
 - [@tmorell](https://github.com/tmorrell)
+
+## Post-V3.0 contributors
+
+| Name             | Email                | Institution             | GitHub  |
+|------------------|----------------------|-------------------------| --------|
+| Arthit Suriyawongkul | | Trinity College Dublin | [@bact](https://github.com) |
+| Daniel Garijo | | Universidad Politécnica de Madrid | [@dgarijo](https://github.com/dgarijo) |
+| Val Lorentz | | Software Heritage | [@progval](https://github.com/progval) |
+| | | | [@bandrow](https://github.com/bandrow) |
+
