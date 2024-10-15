@@ -12,7 +12,7 @@ installUrl,ExecutionEnvironment/Installer/URL
 memoryRequirements,ExecutionEnvironment/Memory
 operatingSystem,OperatingSystem
 permissions,
-processorRequirements,ExecutionEnvironment/Cores
+processorRequirements,
 releaseNotes,
 softwareHelp,
 softwareRequirements,
