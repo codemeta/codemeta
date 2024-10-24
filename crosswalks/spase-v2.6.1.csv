@@ -30,7 +30,7 @@ datePublished,ResourceHeader/ReleaseDate
 editor,
 encoding,AccessInformation/Encoding
 fileFormat,AccessInformation/Format
-funder,ResourceHeader/Funding
+funder,ResourceHeader/Funding/Agency
 keywords,
 license,
 producer,
