@@ -10,7 +10,7 @@ downloadUrl,AccessURL/URL
 fileSize,
 installUrl,ExecutionEnvironment/Installer/URL
 memoryRequirements,ExecutionEnvironment/Memory
-operatingSystem,OperatingSystem
+operatingSystem,ExecutionEnvironment/OperatingSystems
 permissions,
 processorRequirements,
 releaseNotes,
