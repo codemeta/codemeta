@@ -1,5 +1,5 @@
 Property,SPASE
-codeRepository,RepositoryID
+codeRepository, AccessInformation/RepositoryID
 programmingLanguage,codeLanguage
 review,
 runtimePlatform,
