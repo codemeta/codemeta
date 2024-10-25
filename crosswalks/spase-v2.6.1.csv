@@ -1,5 +1,5 @@
 Property,SPASE
-codeRepository, AccessInformation/RepositoryID
+codeRepository,AccessInformation/RepositoryID
 programmingLanguage,codeLanguage
 review,
 runtimePlatform,
@@ -15,7 +15,7 @@ permissions,
 processorRequirements,
 releaseNotes,
 softwareHelp,
-softwareRequirements,
+softwareRequirements,Prerequisites
 softwareVersion,SoftwareVersion
 storageRequirements,ExecutionEnvironment/Storage
 supportingData,
@@ -46,7 +46,7 @@ description,ResourceHeader/Description
 identifier,ResourceID
 name,ResourceHeader/ResourceName
 sameAs,
-url,
+url,ResourceHeader/InformationURL/URL
 relatedLink,
 givenName,
 familyName,
@@ -61,12 +61,12 @@ endDate,
 roleName,
 startDate,
 softwareSuggestions,
-maintainer,
+maintainer,ResourceHeader/Contact
 continuousIntegration,
 buildInstructions,
 developmentStatus,
 embargoEndDate,
-funding,ResourceHeader/Funding
+funding,ResourceHeader/Funding/AwardNumber or ResourceHeader/Funding/Project (if no AwardNumber)
 issueTracker,
 referencePublication,ResourceHeader/PublicationInfo
 readme,
