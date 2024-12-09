@@ -10,7 +10,7 @@ downloadUrl,
 fileSize,
 installUrl,
 memoryRequirements,
-operatingSystem,operating_systems
+operatingSystem,
 permissions,
 processorRequirements,
 releaseNotes,
@@ -18,9 +18,9 @@ softwareHelp,
 softwareRequirements,dependencies
 softwareVersion,
 storageRequirements,
-supportingData,
+supportingData,related_software
 author,authors
-citation,standard_articles
+citation,references
 contributor,
 copyrightHolder,
 copyrightYear,
@@ -32,7 +32,7 @@ encoding,
 fileFormat,
 funder,
 keywords,keywords
-license,license_terms
+license,
 producer,
 provider,
 publisher,
@@ -47,12 +47,12 @@ identifier,id
 name,name
 sameAs,homepage
 url,zbmath_url
-relatedLink,related_software
+relatedLink,orms_id
 givenName,
 familyName,
 email,
 affiliation,
-identifier,orms_id
+identifier,
 name,
 address,
 reviewAspect,
@@ -68,9 +68,7 @@ developmentStatus,
 embargoEndDate,
 funding,
 issueTracker,
-referencePublication,
+referencePublication,standard_articles
 readme,
 hasSourceCode,
 isSourceCodeOf,
-,articles_count
-,classification
