@@ -1,0 +1,74 @@
+Property,csdms
+codeRepository,Source web address
+programmingLanguage,Programming language; Other Programming language
+review,
+runtimePlatform,
+targetProduct,
+applicationCategory,module_type
+applicationSubCategory,
+downloadUrl,
+fileSize,
+installUrl,
+memoryRequirements,Memory requirements
+operatingSystem,Supported platforms; Other platform
+permissions,
+processorRequirements,Code optimized for (single/multiple processors)
+releaseNotes,
+softwareHelp,
+softwareRequirements,
+softwareVersion,
+storageRequirements,
+supportingData,
+author, First name; Last name
+citation,
+contributor,
+copyrightHolder,
+copyrightYear,
+dateCreated,Start year development
+dateModified,End year module development
+datePublished,
+editor,
+encoding,
+fileFormat,
+funder,
+keywords,Module domain; model keywords
+license,Program license type
+producer,
+provider,Contact details modeler
+publisher,
+sponsor,
+version,
+isAccessibleForFree,
+isPartOf,Indicate framework if the model is part of a larger framework:
+hasPart,
+position,
+description,one-line module description; extended module description
+identifier,DOI name model; For model version; Year version submitted; Link to DOI file
+name,Module name
+sameAs,Also known as
+url,Module website
+relatedLink,
+givenName,First name
+familyName,Last name
+email,Email address
+affiliation,Institute / Organization
+identifier,
+name,
+address,Postal address 1; Postal address 2
+reviewAspect,
+reviewBody,
+endDate,
+roleName,
+startDate,
+softwareSuggestions,
+maintainer,
+continuousIntegration,
+buildInstructions,
+developmentStatus,Status development code; Year when 'status development code' was indicated; Does module development still take place?
+embargoEndDate,
+funding,
+issueTracker,
+referencePublication,
+readme,
+hasSourceCode,Source web address
+isSourceCodeOf,
