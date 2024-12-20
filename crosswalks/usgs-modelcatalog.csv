@@ -1,5 +1,5 @@
 Property,usgs-modelcatalog
-codeRepository,software.usgs_software_gitlab_release_urls software.external_software_repository_urls
+codeRepository,software.usgs_software_gitlab_release_urls; software.external_software_repository_urls
 programmingLanguage,programming_language
 review,
 runtimePlatform,
@@ -19,7 +19,7 @@ softwareRequirements,
 softwareVersion,version
 storageRequirements,
 supportingData,
-author,person.name person_type=Author
+author,person.name when person_type=Author
 citation,publications.model_citations
 contributor,
 copyrightHolder,
@@ -31,9 +31,9 @@ editor,
 encoding,
 fileFormat,
 funder,
-keywords,science_keywords other_keywords
+keywords,science_keywords; other_keywords
 license,license
-producer,organization external_organization_name
+producer,organization; external_organization_name
 provider,
 publisher,
 sponsor,
@@ -43,10 +43,10 @@ isPartOf,related_modelcatalog_assets
 hasPart,related_modelcatalog_assets
 position,
 description,description
-identifier,identifier.name identifier.id identifier.url identifier.type
+identifier,identifier.name; identifier.id; identifier.url; identifier.type
 name,name
 sameAs,
-url,other_links.usgs_website other_links.weblinks
+url,other_links.usgs_website; other_links.weblinks
 relatedLink,other_links.weblinks
 givenName,
 familyName,
@@ -68,15 +68,8 @@ developmentStatus,
 embargoEndDate,
 funding,
 issueTracker,
-referencePublication,publications.primary_publications publications.model_citations
+referencePublication,publications.primary_publications; publications.model_citations
 readme,
-hasSourceCode, software.usgs_software_gitlab_release_urls software.external_software_repository_urls
+hasSourceCode, software.usgs_software_gitlab_release_urls; software.external_software_repository_urls
 isSourceCodeOf,
-,
-,
-,
-,
-,
-,
-,
-,
+;
