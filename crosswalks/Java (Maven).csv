@@ -1,12 +1,12 @@
 Property,Java (Maven)
-codeRepository,scm / repositories
+codeRepository,scm / url
 programmingLanguage,
 review,
 runtimePlatform,
 targetProduct,
 applicationCategory,
 applicationSubCategory,
-downloadUrl,
+downloadUrl,distributionManagement / downloadUrl
 fileSize,
 installUrl,
 memoryRequirements,
@@ -15,16 +15,16 @@ permissions,
 processorRequirements,
 releaseNotes,
 softwareHelp,
-softwareRequirements,prerequisites
-softwareVersion,
+softwareRequirements,dependencies
+softwareVersion,version
 storageRequirements,
 supportingData,
-author,
+author,developers
 citation,
-contributor,
+contributor,contributors
 copyrightHolder,
 copyrightYear,
-dateCreated,
+dateCreated,inceptionYear
 dateModified,
 datePublished,
 editor,
@@ -32,7 +32,7 @@ encoding,
 fileFormat,
 funder,
 keywords,
-license,license
+license,licenses / license / url
 producer,
 provider,
 publisher,
@@ -43,10 +43,10 @@ isPartOf,
 hasPart,
 position,
 description,description
-identifier,groupId
+identifier,groupId / artifactId
 name,name
 sameAs,
-url,
+url,url
 relatedLink,
 givenName,
 familyName,
@@ -72,11 +72,3 @@ referencePublication,
 readme,
 hasSourceCode,
 isSourceCodeOf,
-,
-,
-,
-,
-,
-,
-,
-,

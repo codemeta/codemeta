@@ -1,4 +1,4 @@
-Property,
+Property,ISO 19115-1:2014 Geographic information - Metadata
 codeRepository,
 programmingLanguage,
 review,
@@ -20,8 +20,8 @@ softwareVersion,identificationInfo.citation.edition
 storageRequirements,identificationInfo.environmentDescription*
 supportingData,identificationInfo.associatedResource.name*
 author,identificationInfo.citation.citedResponsibleParty[role='author'].party.name or identificationInfo.citation.citedResponsibleParty[role='originator'].party.name
-citation, identificationInfo.associatedResource.name*
-contributor, identificationInfo.citation.citedResponsibleParty[not(role='author' or role='principalInvestigator' or role='originator')].party.name*
+citation,identificationInfo.associatedResource.name*
+contributor,identificationInfo.citation.citedResponsibleParty[not(role='author' or role='principalInvestigator' or role='originator')].party.name*
 copyrightHolder,identificationInfo.resourceConstraints.reference.citedResponsibleParty
 copyrightYear,identificationInfo.resourceConstraints.reference.date[dateType='publication'].date
 dateCreated,identificationInfo.citation.date[dateType='creation'].date*
@@ -34,7 +34,7 @@ funder,identificationInfo.citation.citedResponsibleParty[role='funder'].party.na
 keywords,identificationInfo.descriptiveKeywords[type='theme'].keyword*
 license,identificationInfo.resourceConstraints.reference
 producer,identificationInfo.citation.citedResponsibleParty[role='creator'].party.name*
-provider,identificationInfo.pointOfContact[role=’pointOfContact’].party.name*
+provider,identificationInfo.pointOfContact[role='pointOfContact'].party.name*
 publisher,identificationInfo.citation.citedResponsibleParty[role='publisher'].party.name*
 sponsor,identificationInfo.citation.citedResponsibleParty[role='sponsor'].party.name*
 version,identificationInfo.citation.edition
@@ -72,11 +72,3 @@ referencePublication,identificationInfo.additionalDocumentation*
 readme,
 hasSourceCode,identificationInfo.additionalDocumentation*
 isSourceCodeOf,
-,
-,
-,
-,
-,
-,
-,
-,
