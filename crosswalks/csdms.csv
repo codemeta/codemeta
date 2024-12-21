@@ -1,6 +1,6 @@
 Property,csdms
 codeRepository,Source web address
-programmingLanguage,Programming language; Other Programming language
+programmingLanguage,Programming language / Other Programming language
 review,
 runtimePlatform,
 targetProduct,
@@ -10,7 +10,7 @@ downloadUrl,
 fileSize,
 installUrl,
 memoryRequirements,Memory requirements
-operatingSystem,Supported platforms; Other platform
+operatingSystem,Supported platforms / Other platform
 permissions,
 processorRequirements,Code optimized for (single/multiple processors)
 releaseNotes,
@@ -19,7 +19,7 @@ softwareRequirements,
 softwareVersion,
 storageRequirements,
 supportingData,
-author, First name; Last name
+author, First name / Last name
 citation,
 contributor,
 copyrightHolder,
@@ -31,7 +31,7 @@ editor,
 encoding,
 fileFormat,
 funder,
-keywords,Module domain; model keywords
+keywords,Module domain / model keywords
 license,Program license type
 producer,
 provider,Contact details modeler
@@ -39,11 +39,11 @@ publisher,
 sponsor,
 version,
 isAccessibleForFree,
-isPartOf,Indicate framework if the model is part of a larger framework:
+isPartOf,Indicate framework if the model is part of a larger framework
 hasPart,
 position,
-description,one-line module description; extended module description
-identifier,DOI name model; For model version; Year version submitted; Link to DOI file
+description,one-line module description / extended module description
+identifier,DOI name model / For model version / Year version submitted / Link to DOI file
 name,Module name
 sameAs,Also known as
 url,Module website
@@ -54,7 +54,7 @@ email,Email address
 affiliation,Institute / Organization
 identifier,
 name,
-address,Postal address 1; Postal address 2
+address,Postal address 1 / Postal address 2
 reviewAspect,
 reviewBody,
 endDate,
@@ -64,7 +64,7 @@ softwareSuggestions,
 maintainer,
 continuousIntegration,
 buildInstructions,
-developmentStatus,Status development code; Year when 'status development code' was indicated; Does module development still take place?
+developmentStatus,Status development code / Year when 'status development code' was indicated / Does module development still take place?
 embargoEndDate,
 funding,
 issueTracker,
