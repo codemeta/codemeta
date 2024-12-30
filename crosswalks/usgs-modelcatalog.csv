@@ -19,7 +19,7 @@ softwareRequirements,
 softwareVersion,version
 storageRequirements,
 supportingData,
-author,person.name when person_type=Author
+author,person when person_type=Author
 citation,publications.model_citations
 contributor,
 copyrightHolder,
