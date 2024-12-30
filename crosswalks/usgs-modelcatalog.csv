@@ -70,5 +70,5 @@ funding,
 issueTracker,
 referencePublication,publications.primary_publications / publications.model_citations
 readme,
-hasSourceCode, software.usgs_software_gitlab_release_urls / software.external_software_repository_urls
+hasSourceCode,
 isSourceCodeOf,
