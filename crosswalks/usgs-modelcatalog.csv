@@ -46,7 +46,7 @@ description,description
 identifier,identifier.url
 name,name
 sameAs,
-url,other_links.usgs_website / other_links.weblinks
+url,other_links.usgs_website
 relatedLink,other_links.weblinks
 givenName,
 familyName,
