@@ -43,7 +43,7 @@ isPartOf,related_modelcatalog_assets
 hasPart,related_modelcatalog_assets
 position,
 description,description
-identifier,identifier.name / identifier.id / identifier.url / identifier.type
+identifier,identifier.url
 name,name
 sameAs,
 url,other_links.usgs_website / other_links.weblinks
