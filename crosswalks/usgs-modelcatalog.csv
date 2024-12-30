@@ -39,8 +39,8 @@ publisher,
 sponsor,
 version,version
 isAccessibleForFree,
-isPartOf,related_modelcatalog_assets
-hasPart,related_modelcatalog_assets
+isPartOf,
+hasPart,
 position,
 description,description
 identifier,identifier.url
