@@ -12,7 +12,7 @@ installUrl,
 memoryRequirements,Memory requirements
 operatingSystem,Supported platforms / Supported platforms other
 permissions,
-processorRequirements,Code optimized for (single/multiple processors)
+processorRequirements,
 releaseNotes,
 softwareHelp,
 softwareRequirements,
@@ -51,10 +51,10 @@ relatedLink,
 givenName,First name
 familyName,Last name
 email,Email address
-affiliation,Institute / Organization
+affiliation,Institute
 identifier,
 name,
-address,Postal address 1 / Postal address 2
+address,Postal address1 / Postal address2
 reviewAspect,
 reviewBody,
 endDate,
@@ -64,8 +64,7 @@ softwareSuggestions,
 maintainer,
 continuousIntegration,
 buildInstructions,
-developmentStatus,Status development code / Year when 'status development code' was indicated / Does module development still take place?
-embargoEndDate,
+developmentStatus,Development still active
 funding,
 issueTracker,
 referencePublication,
