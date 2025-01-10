@@ -10,7 +10,7 @@ downloadUrl,
 fileSize,
 installUrl,
 memoryRequirements,Memory requirements
-operatingSystem,Supported platforms / Other platform
+operatingSystem,Supported platforms / Supported platforms other
 permissions,
 processorRequirements,Code optimized for (single/multiple processors)
 releaseNotes,
