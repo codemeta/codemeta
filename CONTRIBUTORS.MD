@@ -112,4 +112,5 @@ operates according to the rules specified in the
 | Baptiste Cecconi | | LESIA, Observatoire de Paris, PSL | [@BaptisteCecconi](https://github.com/BaptisteCecconi) |
 | Daniel Garijo | | Universidad Politécnica de Madrid | [@dgarijo](https://github.com/dgarijo) |
 | Hélène Jonin | | | [@hjonin](https://github.com/hjonin) |
+| Moritz Schubotz | | University of Konstanz | [@physikerwelt](https://github.com/physikerwelt) |
 | Val Lorentz | | Software Heritage | [@progval](https://github.com/progval) |
