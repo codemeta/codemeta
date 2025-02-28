@@ -107,8 +107,10 @@ operates according to the rules specified in the
 
 | Name             | Email                | Institution             | GitHub  |
 |------------------|----------------------|-------------------------| --------|
-| Arthit Suriyawongkul | | Trinity College Dublin | [@bact](https://github.com) |
+| Anita | | | [@bandrow](https://github.com/bandrow) |
+| Arthit Suriyawongkul | <suriyawa@tcd.ie> | ADAPT Centre, Trinity College Dublin | [@bact](https://github.com) |
+| Baptiste Cecconi | | LESIA, Observatoire de Paris, PSL | [@BaptisteCecconi](https://github.com/BaptisteCecconi) |
 | Daniel Garijo | | Universidad Politécnica de Madrid | [@dgarijo](https://github.com/dgarijo) |
+| Hélène Jonin | | | [@hjonin](https://github.com/hjonin) |
+| Moritz Schubotz | | University of Konstanz | [@physikerwelt](https://github.com/physikerwelt) |
 | Val Lorentz | | Software Heritage | [@progval](https://github.com/progval) |
-| | | | [@bandrow](https://github.com/bandrow) |
-
