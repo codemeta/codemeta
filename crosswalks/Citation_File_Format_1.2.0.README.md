@@ -140,7 +140,7 @@ if the respective relationship can be determined from the CFF `identifier.descri
 
 ### `identifier` <=> `identifiers`/`person.orcid`/`doi`
 
-Mapping depends on how a CodeMeta instance uses the term, which is ambiguously documented ("URL identifer, ideally an ORCID ID for individuals, a FundRef ID for funders").
+Mapping depends on how a CodeMeta instance uses the term, which is ambiguously documented ("URL identifier, ideally an ORCID ID for individuals, a FundRef ID for funders").
 
 #### CodeMeta to CFF
 
@@ -213,7 +213,7 @@ Mapping depends on the target of the CodeMeta `id`.
 If the CodeMeta `id` is the URL for a DOI resolver for the software DOI, it maps to CFF `doi` and CFF `identifiers` of type `doi`.
 If the CodeMeta `id` is a Software Heritage ID or a URL resolving that ID, it maps to CFF `identifiers` of type `swh`.
 If the CodeMeta `id` is any other URL, it maps to CFF `identifiers` of type `url`.
-If the CodeMeta `id` is a string used to refer to the node eslewhere in the same document, it maps to CFF `identifiers` of type `other`.
+If the CodeMeta `id` is a string used to refer to the node elsewhere in the same document, it maps to CFF `identifiers` of type `other`.
 
 #### CFF to CodeMeta
 
