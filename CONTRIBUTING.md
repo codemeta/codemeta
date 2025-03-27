@@ -25,18 +25,20 @@ Do not commit changes to `crosswalk.csv`, as these will very likely create confl
 
 ## Editing an existing mapping
 
-Open the CSV file in `crosswalks/` that contains your mapping.
-You may change the second column (i.e. what comes after the comma on each line) to match the terms of the platform your new mapping covers.
-
-Then, run `scripts/aggregate.py`. This will build the new `crosswalk.csv` using the updated version of your mapping; and raise an error if you made a mistake (such as editing the first column).
-
-You can now commit your changes and send a pull request. Don't forget to **exclude** `crosswalk.csv` from the commit.
+1. Follow steps 1 and 2 from the "Contributing a new mapping" section below.
+2. Open the CSV file in `crosswalks/` that contains the mapping you want to edit. You may change the second column (i.e. what comes after the comma on each line) to match the changes you want to make to the mapping.
+3. Follow steps 4 onwards from the "Contributing a new mapping" section below.
 
 ## Contributing a new mapping
 
-To add a new platform mapping to CodeMeta, you have to add a new CSV file to `crosswalks/`. The filename is free-form, but please to avoid non-ASCII characters. The name is not used to build the aggregated table.
+To add a new platform mapping to CodeMeta, you have to add a new CSV file to `crosswalks/`. Here are the instructions for doing so:
 
-You may copy any other CSV file from `crosswalks/` to write yours; then refer to the "Editing an existing mapping" section.
+1. Fork the repository. This will create a copy of the codemeta repo in your own github profile.
+2. Clone the codemeta repo that's in your github profile and continue working on it locally.
+3. Create a new CSV file with your mapping in it in the `crosswalks/` folder. You could copy any other CSV file from `crosswalks/` to help you to write yours. The filename is free-form, but please avoid non-ASCII characters. The name is not used to build the aggregated table.
+4. From the root of the repo, run `scripts/aggregate.py` using Python. This should involve something like opening a terminal, navigating to the root of the repo, and executing a command similar to the following: `python3 .\scripts\aggregate.py`. This will build an updated `crosswalk.csv` file using your new CSV file. You can open it up to check that it all looks good. This step is just to check that you haven't made any mistakes (such as editing the first column). You should not add the `crosswalk.csv` file to your commit. The real `crosswalk.csv` will be updated by a codemeta repo maintainer.
+5. Commit your new CSV file with your mapping in it to the remote codemeta repo in your own github profile.
+6. Go back to the original codemeta repo on the codemeta github profile. You should now see a yellow banner suggesting you open a "Compare & pull request". Click on this button (or navigate to Pull requests > New pull request). Add details of your new file/any changes you made and create the pull request.
 
 ## Adding a new CodeMeta property
 
