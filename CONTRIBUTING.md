@@ -33,7 +33,7 @@ Do not commit changes to `crosswalk.csv`, as these will very likely create confl
 
 To add a new platform mapping to CodeMeta, you have to add a new CSV file to `crosswalks/`. Here are the instructions for doing so:
 
-1. Fork the master branch. This will create a copy of the codemeta repo in your own github profile.
+1. Fork the repository. This will create a copy of the codemeta repo in your own github profile.
 2. Clone the codemeta repo that's in your github profile and continue working on it locally.
 3. Create a new CSV file with your mapping in it in the `crosswalks/` folder. You could copy any other CSV file from `crosswalks/` to help you to write yours. The filename is free-form, but please avoid non-ASCII characters. The name is not used to build the aggregated table.
 4. From the root of the repo, run `scripts/aggregate.py` using Python. This should involve something like opening a terminal, navigating to the root of the repo, and executing a command similar to the following: `python3 .\scripts\aggregate.py`. This will build an updated `crosswalk.csv` file using your new CSV file. You can open it up to check that it all looks good. This step is just to check that you haven't made any mistakes (such as editing the first column). You should not add the `crosswalk.csv` file to your commit. The real `crosswalk.csv` will be updated by a codemeta repo maintainer.
