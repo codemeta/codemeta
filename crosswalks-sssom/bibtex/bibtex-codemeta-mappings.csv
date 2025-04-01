@@ -9,7 +9,7 @@ datePublished,date,exact_match
 datePublished,year,part_of 
 datePublished,month,part_of
 editor,editor,exact_match
-license, license,exact_match
+license,license,exact_match
 publisher,publisher,exact_match
 description,abstract,exact_match
 identifier,doi,exact_match
