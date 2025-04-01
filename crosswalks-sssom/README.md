@@ -1,6 +1,10 @@
-# mapping-methodology
+# Mapping-methodology
 
-This repository contains a script to create a crosswalk between Codemeta and another specification or vocabulary, as well as some examples of generation.
+- **Version**: 0.0.1
+- **Authors**: Esteban Gonzalez, Daniel Garijo, Morane Gruenpeter
+- **Date**: 01-04-2025
+
+This repository contains the instructions to create new crosswalks between Codemeta and another specification or vocabulary, as well as some examples of the generation. We rely on the SSSOM standard to create a machine-readable mapping representation, with some extensions.
 
 The methodology for generating the files required to create the crosswalk is as follows:
 1. **Identify the Terms to Map**
@@ -49,4 +53,14 @@ The methodology for generating the files required to create the crosswalk is as 
    ```bash
    python ./generate_crosswalk.py examples/bibtex-codemeta-mappings.yaml examples/bibtex-codemeta-mappings.csv
    ```
+### FAQ
+Below we have collected frequently asked questions 
 
+#### How do I mint a persistent identifier for my mapping?
+Create a folder, that will be your id. No need to do something else!
+
+#### My metadata term maps to several properties in CodeMeta. How do I represent it?
+
+#### My metadata term is a composite of another term. How do I represent it?
+
+#### How do I fill in the crosswalk table? What does "more specific" and "more general" means?
