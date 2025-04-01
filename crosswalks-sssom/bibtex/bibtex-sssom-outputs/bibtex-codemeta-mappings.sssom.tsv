@@ -1,17 +1,28 @@
+# curie_map: # This contains the URLs prefixes used in the mapping file
+#   skos: http://www.w3.org/2004/02/skos/core# ### Always needed. Do not modify
+#   sssom: https://w3id.org/sssom/             ### Always needed. Do not modify
+#   target: https://w3id.org/codemeta/crosswalks/bibtex/vocab ### Default value
+#   codemeta: "https://codemeta.github.io/terms/" ### Always needed. Do not modify
+# license: https://creativecommons.org/publicdomain/zero/1.0/
+# mapping_date: '2025-01-29'
+# mapping_set_description: A description of the mapping. ### Please	 add the description of your mapping
+# mapping_provider: https://www.softwareheritage.org/. ### Please	 add a URI of the author of the mapping. Prioritize ORCIDs for persons and ROR ids for organizations
+# mapping_set_id: https://w3id.org/codemeta/crosswalks/bibtex ### Please	 add a URI of your crosswalk. You can use the w3id.org service to create it.
 subject_id	subject_label	predicate_id	object_id	object_label	match_type	subject_source	object_source	confidence
-schema:softwareVersion	softwareVersion	skos:exactMatch	target:version	version	SSSOM:HumanCurated	schema	target	1
-schema:downloadUrl	downloadUrl	skos:exactMatch	target:file	file	SSSOM:HumanCurated	schema	target	1
-schema:softwareVersion	softwareVersion	skos:exactMatch	target:version	version	SSSOM:HumanCurated	schema	target	1
-schema:releaseNotes	releaseNotes	skos:exactMatch	target:note	note	SSSOM:HumanCurated	schema	target	1
-schema:author	author	skos:exactMatch	target:author	author	SSSOM:HumanCurated	schema	target	1
-schema:datePublished	datePublished	skos:exactMatch	target:date	date	SSSOM:HumanCurated	schema	target	1
-schema:datePublished	datePublished	skos:exactMatch	target:year	year	SSSOM:HumanCurated	schema	target	1
-schema:datePublished	datePublished	skos:closeMatch	target:month	month	SSSOM:HumanCurated	schema	target	1
-schema:editor	editor	skos:exactMatch	target:editor	editor	SSSOM:HumanCurated	schema	target	1
-schema:license	license	skos:exactMatch	target: license	 license	SSSOM:HumanCurated	schema	target	1
-schema:publisher	publisher	skos:exactMatch	target:publisher	publisher	SSSOM:HumanCurated	schema	target	1
-schema:description	description	skos:exactMatch	target:abstract	abstract	SSSOM:HumanCurated	schema	target	1
-schema:identifier	identifier	skos:exactMatch	target:doi	doi	SSSOM:HumanCurated	schema	target	1
-schema:identifier	identifier	skos:exactMatch	target:hal_id	hal_id	SSSOM:HumanCurated	schema	target	1
-schema:url	url	skos:exactMatch	target:url	url	SSSOM:HumanCurated	schema	target	1
-schema:affiliation	affiliation	skos:exactMatch	target:organization	organization	SSSOM:HumanCurated	schema	target	1
+codemeta:codeRepository	codeRepository	skos:exactMatch	target:repository	repository	SSSOM:HumanCurated	schema	target	1
+codemeta:softwareVersion	softwareVersion	skos:exactMatch	target:version	version	SSSOM:HumanCurated	schema	target	1
+codemeta:downloadUrl	downloadUrl	skos:exactMatch	target:file	file	SSSOM:HumanCurated	schema	target	1
+codemeta:softwareVersion	softwareVersion	skos:exactMatch	target:version	version	SSSOM:HumanCurated	schema	target	1
+codemeta:releaseNotes	releaseNotes	skos:exactMatch	target:note	note	SSSOM:HumanCurated	schema	target	1
+codemeta:author	author	skos:exactMatch	target:author	author	SSSOM:HumanCurated	schema	target	1
+codemeta:datePublished	datePublished	skos:exactMatch	target:date	date	SSSOM:HumanCurated	schema	target	1
+codemeta:datePublished	datePublished	skos:exactMatch	target:year	year	SSSOM:HumanCurated	schema	target	1
+codemeta:datePublished	datePublished	skos:closeMatch	target:month	month	SSSOM:HumanCurated	schema	target	1
+codemeta:editor	editor	skos:exactMatch	target:editor	editor	SSSOM:HumanCurated	schema	target	1
+codemeta:license	license	skos:exactMatch	target:license	license	SSSOM:HumanCurated	schema	target	1
+codemeta:publisher	publisher	skos:exactMatch	target:publisher	publisher	SSSOM:HumanCurated	schema	target	1
+codemeta:description	description	skos:exactMatch	target:abstract	abstract	SSSOM:HumanCurated	schema	target	1
+codemeta:identifier	identifier	skos:exactMatch	target:doi	doi	SSSOM:HumanCurated	schema	target	1
+codemeta:identifier	identifier	skos:exactMatch	target:hal_id	hal_id	SSSOM:HumanCurated	schema	target	1
+codemeta:url	url	skos:exactMatch	target:url	url	SSSOM:HumanCurated	schema	target	1
+codemeta:affiliation	affiliation	skos:exactMatch	target:organization	organization	SSSOM:HumanCurated	schema	target	1
