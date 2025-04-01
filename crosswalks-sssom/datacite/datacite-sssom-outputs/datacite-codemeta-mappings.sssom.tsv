@@ -1,24 +1,34 @@
+# curie_map: # This contains the URLs prefixes used in the mapping file
+#   skos: http://www.w3.org/2004/02/skos/core# ### Always needed. Do not modify
+#   sssom: https://w3id.org/sssom/             ### Always needed. Do not modify
+#   target: https://w3id.org/codemeta/crosswalks/datacite/vocab ### Default value
+#   codemeta: "https://codemeta.github.io/terms/" ### Always needed. Do not modify
+# license: https://creativecommons.org/publicdomain/zero/1.0/
+# mapping_date: '2025-04-01'
+# mapping_set_description: 'Mapping between codemeta and datacite following out methodology' ### Please	 add the description of your mapping
+# mapping_provider: https://codemeta.github.io/ ### Please	 add a URI of the author of the mapping. Prioritize ORCIDs for persons and ROR ids for organizations
+# mapping_set_id: https://w3id.org/codemeta/crosswalks/datacite ### Please	 add a URI of your crosswalk. You can use the w3id.org service to create it.
 subject_id	subject_label	predicate_id	object_id	object_label	match_type	subject_source	object_source	confidence
-schema:programmingLanguage	programmingLanguage	skos:narrower	target:Format	Format	SSSOM:HumanCurated	schema	target	1
-schema:fileSize	fileSize	skos:exactMatch	target:size	size	SSSOM:HumanCurated	schema	target	1
-schema:author	author	skos:exactMatch	target:creators	creators	SSSOM:HumanCurated	schema	target	1
-schema:contributor	contributor	skos:exactMatch	target:contributor	contributor	SSSOM:HumanCurated	schema	target	1
-schema:dateCreated	dateCreated	skos:broader	target:date/typeInformation/Created	date/typeInformation/Created	SSSOM:HumanCurated	schema	target	1
-schema:dateModified	dateModified	skos:broader	target:date/typeInformation/Updated	date/typeInformation/Updated	SSSOM:HumanCurated	schema	target	1
-schema:datePublished	datePublished	skos:exactMatch	target:publicationYear	publicationYear	SSSOM:HumanCurated	schema	target	1
-schema:fileFormat	fileFormat	skos:exactMatch	target:Format	Format	SSSOM:HumanCurated	schema	target	1
-schema:funder	funder	skos:exactMatch	target:fundingReference/funderName	fundingReference/funderName	SSSOM:HumanCurated	schema	target	1
-schema:keywords	keywords	skos:exactMatch	target:subject	subject	SSSOM:HumanCurated	schema	target	1
-schema:license	license	skos:exactMatch	target:Rights/rightURI	Rights/rightURI	SSSOM:HumanCurated	schema	target	1
-schema:publisher	publisher	skos:exactMatch	target:Publisher/publisherIdentifier	Publisher/publisherIdentifier	SSSOM:HumanCurated	schema	target	1
-schema:version	version	skos:exactMatch	target:version	version	SSSOM:HumanCurated	schema	target	1
-schema:description	description	skos:exactMatch	target:description	description	SSSOM:HumanCurated	schema	target	1
-schema:identifier	identifier	skos:exactMatch	target:identifier	identifier	SSSOM:HumanCurated	schema	target	1
-schema:name	name	skos:exactMatch	target:title	title	SSSOM:HumanCurated	schema	target	1
-schema:relatedLink	relatedLink	skos:closeMatch	target:RelatedIdentifier.relationType	RelatedIdentifier.relationType	SSSOM:HumanCurated	schema	target	1
-schema:givenName	givenName	skos:exactMatch	target:givenName	givenName	SSSOM:HumanCurated	schema	target	1
-schema:familyName	familyName	skos:exactMatch	target:familyName	familyName	SSSOM:HumanCurated	schema	target	1
-schema:affiliation	affiliation	skos:exactMatch	target:affiliation	affiliation	SSSOM:HumanCurated	schema	target	1
-schema:identifier	identifier	skos:exactMatch	target:nameIdentifier	nameIdentifier	SSSOM:HumanCurated	schema	target	1
-schema:name	name	skos:exactMatch	target:creatorName	creatorName	SSSOM:HumanCurated	schema	target	1
-schema:funding	funding	skos:exactMatch	target:awardNumber	awardNumber	SSSOM:HumanCurated	schema	target	1
+codemeta:programmingLanguage	programmingLanguage	skos:narrower	target:Format	Format	SSSOM:HumanCurated	schema	target	1
+codemeta:fileSize	fileSize	skos:exactMatch	target:size	size	SSSOM:HumanCurated	schema	target	1
+codemeta:author	author	skos:exactMatch	target:creators	creators	SSSOM:HumanCurated	schema	target	1
+codemeta:contributor	contributor	skos:exactMatch	target:contributor	contributor	SSSOM:HumanCurated	schema	target	1
+codemeta:dateCreated	dateCreated	skos:broader	target:date/typeInformation/Created	date/typeInformation/Created	SSSOM:HumanCurated	schema	target	1
+codemeta:dateModified	dateModified	skos:broader	target:date/typeInformation/Updated	date/typeInformation/Updated	SSSOM:HumanCurated	schema	target	1
+codemeta:datePublished	datePublished	skos:exactMatch	target:publicationYear	publicationYear	SSSOM:HumanCurated	schema	target	1
+codemeta:fileFormat	fileFormat	skos:exactMatch	target:Format	Format	SSSOM:HumanCurated	schema	target	1
+codemeta:funder	funder	skos:exactMatch	target:fundingReference/funderName	fundingReference/funderName	SSSOM:HumanCurated	schema	target	1
+codemeta:keywords	keywords	skos:exactMatch	target:subject	subject	SSSOM:HumanCurated	schema	target	1
+codemeta:license	license	skos:exactMatch	target:Rights/rightURI	Rights/rightURI	SSSOM:HumanCurated	schema	target	1
+codemeta:publisher	publisher	skos:exactMatch	target:Publisher/publisherIdentifier	Publisher/publisherIdentifier	SSSOM:HumanCurated	schema	target	1
+codemeta:version	version	skos:exactMatch	target:version	version	SSSOM:HumanCurated	schema	target	1
+codemeta:description	description	skos:exactMatch	target:description	description	SSSOM:HumanCurated	schema	target	1
+codemeta:identifier	identifier	skos:exactMatch	target:identifier	identifier	SSSOM:HumanCurated	schema	target	1
+codemeta:name	name	skos:exactMatch	target:title	title	SSSOM:HumanCurated	schema	target	1
+codemeta:relatedLink	relatedLink	skos:closeMatch	target:RelatedIdentifier.relationType	RelatedIdentifier.relationType	SSSOM:HumanCurated	schema	target	1
+codemeta:givenName	givenName	skos:exactMatch	target:givenName	givenName	SSSOM:HumanCurated	schema	target	1
+codemeta:familyName	familyName	skos:exactMatch	target:familyName	familyName	SSSOM:HumanCurated	schema	target	1
+codemeta:affiliation	affiliation	skos:exactMatch	target:affiliation	affiliation	SSSOM:HumanCurated	schema	target	1
+codemeta:identifier	identifier	skos:exactMatch	target:nameIdentifier	nameIdentifier	SSSOM:HumanCurated	schema	target	1
+codemeta:name	name	skos:exactMatch	target:creatorName	creatorName	SSSOM:HumanCurated	schema	target	1
+codemeta:funding	funding	skos:exactMatch	target:awardNumber	awardNumber	SSSOM:HumanCurated	schema	target	1
