@@ -5,7 +5,7 @@ import os
 from sssom.parsers import parse_sssom_table
 from sssom.writers import write_owl
 
-header = ["subject_id","subject_label","predicate_id","object_id","object_label","match_type","subject_source","object_source","confidence"]
+header = ["subject_id","subject_label","predicate_id","object_id","object_label","match_type","confidence"]
 
 def convert_csv_to_tsv(input_metadata_file, input_file, output_file, ttl_file):
     
@@ -42,7 +42,7 @@ def convert_csv_to_tsv(input_metadata_file, input_file, output_file, ttl_file):
             predicate_id = "skos:narrower"
         elif (row["type_relation"]=="more_generic_than"):
             predicate_id = "skos:broader"
-        row = ["codemeta:"+row["source_term"],row["source_term"],predicate_id,"target:"+row["target_term"],row["target_term"],"SSSOM:HumanCurated","schema","target",1]
+        row = ["codemeta:"+row["source_term"],row["source_term"],predicate_id,"target:"+row["target_term"],row["target_term"],"SSSOM:HumanCurated",1]
         writer.writerow(row)
     
     # Close the files
