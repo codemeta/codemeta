@@ -52,6 +52,8 @@ The crosswalks indicate term relationships between two schemas. The `source_term
 The `type_relation` indicates what type of relationship exist between those terms. We support several terms, please see point 4 above.
 
 #### My metadata term maps to several properties in CodeMeta. How do I represent it?
+If you have a term that mapps to more than one term in CodeMeta (or viceversa), please add a row per mapping. For example, in the [bibtex crosswalk](https://github.com/oeg-upm/codemeta/blob/crosswalks_oeg/crosswalks-sssom/bibtex/bibtex-codemeta-mappings.csv) we have the CodeMeta term `identifier` which is mapped to `hal_id` and `doi`.
+In both cases `identifier` is more generic than `hal_id` and more generic than `doi`, since both `hal_id` and `doi` are types of identifiers, but not all identifiers are `dois` or `hal_ids`.
 
 #### What if my specification has hierarchical concepts like authors.name?
 In some cases, terms may have a structure as follows: `vocab.owner.name is an exact match to codemeta.author.name`
