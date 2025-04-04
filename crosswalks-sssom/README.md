@@ -28,11 +28,11 @@ The methodology for generating the files required to create the crosswalk is as 
        - part_of: The target concept is part of the source concept (e.g., a publication year in the target vocabulary is part of a publication date in the source vocabulary).
        - more_specific_than: The target vocabulary term is more specific than the target codemeta term. For example, "codemeta:identifier narrowerMatch hal_id" means that the hal id is a more concrete term than the "identifier" property in CodeMeta. 
        - more_generic_than:  The target vocabulary term is more generic than target codemeta term. For example, "codemeta:developmentStatus broaderMatch status" means that the status is a more generic term than the "developmentStatus" property in CodeMeta.
-       - close_match: The subject and the object are sufficiently similar that they can be used interchangeably in some information retrieval applications. We do NOT recommend using this.
-   - combined_mapping: It applies to a part-of relationship.
-     This column defines the formula used to combine terms between schemes.
-     For example, if the source vocabulary has the term date, and the target vocabulary has the terms year and month, the CSV should contain two separate lines.
-     This column will contain the formula date: `$(year) + $(month)`.
+       - close_match: The subject and the object are sufficiently similar that they can be used interchangeably in some information retrieval applications. For example, if the source and target properties refer to dates, but the format is different.
+   - combined_mapping: **It applies ONLY to a part-of relationship**.
+     This column defines the formula used to combine terms between schemas.
+     For example, if the source vocabulary has the term `date`, and the target vocabulary has the terms `year` and `month`, the combined_mapping should be as follows: $(year) + $(month)`.
+   - comments: additional (optional) annotations about the mapping itself.
      ** This is a strategy NOT supported in SSSOM. **
 
    **Considerations**
@@ -65,6 +65,7 @@ For example, for the `bibtex` mapping, the corresponding identifier is [https://
 #### My metadata term maps to several properties in CodeMeta. How do I represent it?
 
 #### My metadata term is a composite of another term. How do I represent it?
+If you have a codemeta term that can be composed as a combination of 2 or more terms in your vocabulary, you can use the `part_of` relationship for the mapping, and the `combined_mapping` column to specify how both terms are combined. See for example the [bibtex crosswalk](https://github.com/oeg-upm/codemeta/blob/crosswalks_oeg/crosswalks-sssom/bibtex/bibtex-codemeta-mappings.csv), which combines `month` and `year` into `datePublished`.
 
 #### How do I fill in the crosswalk table? What does "more specific" and "more general" means?
 
