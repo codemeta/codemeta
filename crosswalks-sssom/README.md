@@ -48,7 +48,8 @@ The corresponding identifier will be `https://w3id.org/codemeta/mappings/{YOUR_I
 
 For example, for the `bibtex` mapping, the corresponding identifier is [https://w3id.org/codemeta/mappings/bibtex](https://w3id.org/codemeta/mappings/bibtex).
 #### How do I fill in the crosswalk table? What does "more specific" and "more general" means?
-
+The crosswalks indicate term relationships between two schemas. The `source_term` is the term from CodeMeta`. The `target_term` is is the term from the mapped schema.
+The `type_relation` indicates what type of relationship exist between those terms. We support several terms, please see point 4 above.
 
 #### My metadata term maps to several properties in CodeMeta. How do I represent it?
 
