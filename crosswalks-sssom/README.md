@@ -56,11 +56,15 @@ The methodology for generating the files required to create the crosswalk is as 
 ### FAQ
 Below we have collected frequently asked questions 
 
-#### How do I mint a persistent identifier for my mapping?
-Create a folder, that will be your id. No need to do something else!
+#### How do I mint a persistent identifier for my mapping/crosswalk?
+Create a folder with a unique name. The folder name will be used to create a unique identifier. No need to anything else!
+The corresponding identifier will be `https://w3id.org/codemeta/mappings/{YOUR_ID}`, where `{YOUR_ID}` is the id of your mapping.
+
+For example, for the `bibtex` mapping, the corresponding identifier is [https://w3id.org/codemeta/mappings/bibtex](https://w3id.org/codemeta/mappings/bibtex).
 
 #### My metadata term maps to several properties in CodeMeta. How do I represent it?
 
 #### My metadata term is a composite of another term. How do I represent it?
 
 #### How do I fill in the crosswalk table? What does "more specific" and "more general" means?
+
