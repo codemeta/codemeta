@@ -25,7 +25,7 @@ codemeta:version	version	skos:exactMatch	target:version	version	SSSOM:HumanCurat
 codemeta:description	description	skos:exactMatch	target:description	description	SSSOM:HumanCurated	1
 codemeta:identifier	identifier	skos:exactMatch	target:identifier	identifier	SSSOM:HumanCurated	1
 codemeta:name	name	skos:exactMatch	target:title	title	SSSOM:HumanCurated	1
-codemeta:relatedLink	relatedLink	skos:closeMatch	target:RelatedIdentifier.relationType	RelatedIdentifier.relationType	SSSOM:HumanCurated	1
+codemeta:relatedLink	relatedLink	skos:closeMatch	target:RelatedIdentifier/relationType	RelatedIdentifier/relationType	SSSOM:HumanCurated	1
 codemeta:givenName	givenName	skos:exactMatch	target:givenName	givenName	SSSOM:HumanCurated	1
 codemeta:familyName	familyName	skos:exactMatch	target:familyName	familyName	SSSOM:HumanCurated	1
 codemeta:affiliation	affiliation	skos:exactMatch	target:affiliation	affiliation	SSSOM:HumanCurated	1
