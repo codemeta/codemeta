@@ -33,20 +33,6 @@ The methodology for generating the files required to create the crosswalk is as 
      This column defines the formula used to combine terms between schemas.
      For example, if the source vocabulary has the term `date`, and the target vocabulary has the terms `year` and `month`, the combined_mapping should be as follows: $(year) + $(month)`.
    - comments: additional (optional) annotations about the mapping itself.
-     ** This is a strategy NOT supported in SSSOM. **
-
-   **Considerations**
-
-   1. Hierarchical structures.
-      Mapping of terms can follow this structure
-      vocab.owner.name = codemeta.author.name
-      In these cases, you will need to include the parent term, excluding the reference to the semantic artifact, as it is already included in the YAML file. Hierarchy will be delimited by the character '/'. For example:
-      
-      | source_term | target_term |
-      | ----------- | ----------- |
-      | owner/name  | author/name |
-
-   **Note: This is a strategy NOT supported in SSSOM. **
 
 5. **Generate the SSSOM File**
    Execute the script (generate_crosswalk.py) to generate an .sssom.tsv file from the CSV.
@@ -61,11 +47,21 @@ Create a folder with a unique name. The folder name will be used to create a uni
 The corresponding identifier will be `https://w3id.org/codemeta/mappings/{YOUR_ID}`, where `{YOUR_ID}` is the id of your mapping.
 
 For example, for the `bibtex` mapping, the corresponding identifier is [https://w3id.org/codemeta/mappings/bibtex](https://w3id.org/codemeta/mappings/bibtex).
+#### How do I fill in the crosswalk table? What does "more specific" and "more general" means?
+
 
 #### My metadata term maps to several properties in CodeMeta. How do I represent it?
+
+#### What if my specification has hierarchical concepts like authors.name?
+In some cases, terms may have a structure as follows: `vocab.owner.name is an exact match to codemeta.author.name`
+Here you will need to include the parent term in the mapping. Hierarchy will be delimited by the character '/'. For example:
+      
+      | source_term | target_term |
+      | ----------- | ----------- |
+      | owner/name  | author/name |
 
 #### My metadata term is a composite of another term. How do I represent it?
 If you have a codemeta term that can be composed as a combination of 2 or more terms in your vocabulary, you can use the `part_of` relationship for the mapping, and the `combined_mapping` column to specify how both terms are combined. See for example the [bibtex crosswalk](https://github.com/oeg-upm/codemeta/blob/crosswalks_oeg/crosswalks-sssom/bibtex/bibtex-codemeta-mappings.csv), which combines `month` and `year` into `datePublished`.
 
-#### How do I fill in the crosswalk table? What does "more specific" and "more general" means?
-
+### Final considerations
+Some of the strategies defined in this methodology are not directly applicable in SSSOM (e.g., formula representation). However, we consider this information  key when reading a crosswalk, and therefore we propose to document it.
