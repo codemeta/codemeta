@@ -16,13 +16,13 @@ codemeta:softwareVersion	softwareVersion	skos:exactMatch	target:version	version	
 codemeta:releaseNotes	releaseNotes	skos:exactMatch	target:note	note	SSSOM:HumanCurated	1
 codemeta:author	author	skos:exactMatch	target:author	author	SSSOM:HumanCurated	1
 codemeta:datePublished	datePublished	skos:exactMatch	target:date	date	SSSOM:HumanCurated	1
-codemeta:datePublished	datePublished	skos:exactMatch	target:year	year	SSSOM:HumanCurated	1
+codemeta:datePublished	datePublished	skos:closeMatch	target:year	year	SSSOM:HumanCurated	1
 codemeta:datePublished	datePublished	skos:closeMatch	target:month	month	SSSOM:HumanCurated	1
 codemeta:editor	editor	skos:exactMatch	target:editor	editor	SSSOM:HumanCurated	1
 codemeta:license	license	skos:exactMatch	target:license	license	SSSOM:HumanCurated	1
 codemeta:publisher	publisher	skos:exactMatch	target:publisher	publisher	SSSOM:HumanCurated	1
 codemeta:description	description	skos:exactMatch	target:abstract	abstract	SSSOM:HumanCurated	1
-codemeta:identifier	identifier	skos:exactMatch	target:doi	doi	SSSOM:HumanCurated	1
-codemeta:identifier	identifier	skos:exactMatch	target:hal_id	hal_id	SSSOM:HumanCurated	1
+codemeta:identifier	identifier	skos:broader	target:doi	doi	SSSOM:HumanCurated	1
+codemeta:identifier	identifier	skos:broader	target:hal_id	hal_id	SSSOM:HumanCurated	1
 codemeta:url	url	skos:exactMatch	target:url	url	SSSOM:HumanCurated	1
 codemeta:affiliation	affiliation	skos:exactMatch	target:organization	organization	SSSOM:HumanCurated	1
