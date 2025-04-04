@@ -1,24 +1,24 @@
-source_term,target_term,type_relation
-programmingLanguage,Format,more_specific_than
-fileSize,size,exact_match
-author,creators,exact_match
-contributor,contributor,exact_match
-dateCreated,date/typeInformation/Created,more_generic_than
-dateModified,date/typeInformation/Updated,more_generic_than
-datePublished,publicationYear,exact_match
-fileFormat,Format,exact_match
-funder,fundingReference/funderName,exact_match
-keywords,subject,exact_match
-license,Rights/rightURI,exact_match
-publisher,Publisher/publisherIdentifier, part_of
-version,version,exact_match
-description,description,exact_match
-identifier,identifier,exact_match
-name,title,exact_match
-relatedLink,RelatedIdentifier.relationType,part_of
-givenName,givenName,exact_match
-familyName,familyName,exact_match
-affiliation,affiliation,exact_match
-identifier,nameIdentifier, exact_match
-name,creatorName,no relation
-funding,awardNumber,exact_match
+source_term,target_term,type_relation,combined_mappings,comments
+programmingLanguage,Format,more_specific_than,,
+fileSize,size,exact_match,,
+author,creators,exact_match,,
+contributor,contributor,exact_match,,
+dateCreated,date/typeInformation/Created,more_generic_than,,
+dateModified,date/typeInformation/Updated,more_generic_than,,
+datePublished,publicationYear,exact_match,,
+fileFormat,Format,exact_match,,
+funder,fundingReference/funderName,exact_match,,
+keywords,subject,exact_match,,
+license,Rights/rightURI,exact_match,,
+publisher,Publisher/publisherIdentifier, part_of,,
+version,version,exact_match,,
+description,description,exact_match,,
+identifier,identifier,exact_match,,
+name,title,exact_match,,
+relatedLink,RelatedIdentifier/relationType,part_of,,
+givenName,givenName,exact_match,,
+familyName,familyName,exact_match,,
+affiliation,affiliation,exact_match,,
+identifier,nameIdentifier, exact_match,,
+name,creatorName,no relation,,
+funding,awardNumber,exact_match,,
