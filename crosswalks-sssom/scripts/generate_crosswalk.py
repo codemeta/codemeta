@@ -1,13 +1,26 @@
 import csv
 import sys
 import os
+import json
 
 from sssom.parsers import parse_sssom_table
 from sssom.writers import write_owl
 
 header = ["subject_id","subject_label","predicate_id","object_id","object_label","match_type","confidence"]
 
-def convert_csv_to_tsv(input_metadata_file, input_file, output_file, ttl_file):
+#Get the prefix of a concept
+def get_prefix(concept, context):
+    if concept in context:
+        mapping = context[concept]
+        if isinstance(mapping, dict):
+            id_value = mapping.get("@id")
+            if id_value and ":" in id_value:
+                prefix = id_value.split(":")[0]
+                return prefix
+    return "codemeta"
+
+#Function to convert a csv to a tsv and turtle
+def convert_csv_to_tsv(input_metadata_file, input_file, output_file, ttl_file, context_data):
     
     input_metadata_f = open(input_metadata_file, mode='r', newline='', encoding='utf-8')
     reader_metadata = csv.reader(input_metadata_f)
@@ -42,7 +55,9 @@ def convert_csv_to_tsv(input_metadata_file, input_file, output_file, ttl_file):
             predicate_id = "skos:narrower"
         elif (row["type_relation"]=="more_generic_than"):
             predicate_id = "skos:broader"
-        row = ["codemeta:"+row["source_term"],row["source_term"],predicate_id,"target:"+row["target_term"],row["target_term"],"SSSOM:HumanCurated",1]
+        elif (row["type_relation"]=="close_match"):
+            predicate_id = "skos:closeMatch"    
+        row = [get_prefix(row["source_term"], context_data)+":"+row["source_term"],row["source_term"],predicate_id,"target:"+row["target_term"],row["target_term"],"SSSOM:HumanCurated",1]
         writer.writerow(row)
     
     # Close the files
@@ -62,4 +77,9 @@ if len(sys.argv) != 3:
     sys.exit(1)  # Exit with an error code
 output_tsv_file = os.path.splitext(sys.argv[2])[0]+".sssom.tsv"
 output_ttl_file = os.path.splitext(sys.argv[2])[0]+".sssom.ttl"
-convert_csv_to_tsv(sys.argv[1], sys.argv[2], output_tsv_file, output_ttl_file)
+# Load codemeta.jsonld JSON-LD file with the mapping of the concepts to schema.org or codemeta
+with open("../../codemeta.jsonld", "r", encoding="utf-8") as f:
+    jsonld_data = json.load(f)
+context_data = jsonld_data.get("@context", {})
+
+convert_csv_to_tsv(sys.argv[1], sys.argv[2], output_tsv_file, output_ttl_file, context_data)
