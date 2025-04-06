@@ -4,6 +4,7 @@ curie_map: # This contains the URLs prefixes used in the mapping file
   sssom: https://w3id.org/sssom/             ### Always needed. Do not modify
   target: https://w3id.org/codemeta/crosswalks/datacite/vocab ### Default value
   codemeta: "https://codemeta.github.io/terms/" ### Always needed. Do not modify
+  schema: "http://schema.org/" ### Always needed. Do not modify
 license: https://creativecommons.org/publicdomain/zero/1.0/
 mapping_date: '2025-04-01'
 mapping_set_description: 'Mapping between codemeta and datacite following out methodology' ### Please, add the description of your mapping
