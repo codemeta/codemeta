@@ -35,6 +35,10 @@ The methodology for generating the files required to create the crosswalk is as 
    - comments: additional (optional) annotations about the mapping itself.
 
 5. **Generate the SSSOM File**
+   **Note:** This script uses the library sssom. Please, install it before executing the script.
+   ```bash
+   pip install sssom
+   ```
    Execute the script (generate_crosswalk.py) to generate an .sssom.tsv file from the CSV.
    ```bash
    python ./generate_crosswalk.py examples/bibtex-codemeta-mappings.yaml examples/bibtex-codemeta-mappings.csv
