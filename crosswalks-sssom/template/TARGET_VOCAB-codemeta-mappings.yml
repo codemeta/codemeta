@@ -3,6 +3,7 @@ curie_map: # This contains the URLs prefixes used in the mapping file
   skos: http://www.w3.org/2004/02/skos/core# ### Always needed. Do not modify
   sssom: https://w3id.org/sssom/             ### Always needed. Do not modify
   target: https://w3id.org/codemeta/crosswalks/{YOUR_ID}/vocab} ### Default value
+  schema: "http://schema.org/" ### Always needed. Do not modify
 license: https://creativecommons.org/publicdomain/zero/1.0/
 mapping_date: '2025-01-29'
 mapping_set_description: A description of the mapping. ### Please, add the description of your mapping
