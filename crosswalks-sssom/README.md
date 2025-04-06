@@ -34,7 +34,7 @@ The methodology for generating the files required to create the crosswalk is as 
      For example, if the source vocabulary has the term `date`, and the target vocabulary has the terms `year` and `month`, the combined_mapping should be as follows: $(year) + $(month)`.
    - comments: additional (optional) annotations about the mapping itself.
 
-5. **Generate the SSSOM File**
+5. **Generate the SSSOM File**<br>
    **Note:** This script uses the library sssom. Please, install it before executing the script.
    ```bash
    pip install sssom
