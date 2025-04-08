@@ -1,0 +1,28 @@
+# curie_map: # This contains the URLs prefixes used in the mapping file
+#   skos: http://www.w3.org/2004/02/skos/core# ### Always needed. Do not modify
+#   sssom: https://w3id.org/sssom/             ### Always needed. Do not modify
+#   subject: https://w3id.org/codemeta/crosswalks/bibtex/vocab ### Default value
+#   codemeta: "https://codemeta.github.io/terms/" ### Always needed. Do not modify
+#   schema: "http://schema.org/" ### Always needed. Do not modify
+# license: https://creativecommons.org/publicdomain/zero/1.0/
+# mapping_date: '2025-01-29'
+# mapping_set_description: A description of the mapping. ### Please	 add the description of your mapping
+# mapping_provider: https://www.softwareheritage.org/. ### Please	 add a URI of the author of the mapping. Prioritize ORCIDs for persons and ROR ids for organizations
+# mapping_set_id: https://w3id.org/codemeta/crosswalks/bibtex ### Please	 add a URI of your crosswalk. You can use the w3id.org service to create it.
+subject_id	subject_label	predicate_id	object_id	object_label	match_type	confidence
+subject:repository	repository	skos:exactMatch	codemeta:repository	repository	SSSOM:HumanCurated	1
+subject:version	version	skos:exactMatch	schema:version	version	SSSOM:HumanCurated	1
+subject:file	file	skos:exactMatch	codemeta:file	file	SSSOM:HumanCurated	1
+subject:version	version	skos:exactMatch	schema:version	version	SSSOM:HumanCurated	1
+subject:note	note	skos:exactMatch	codemeta:note	note	SSSOM:HumanCurated	1
+subject:author	author	skos:exactMatch	schema:author	author	SSSOM:HumanCurated	1
+subject:year	year	skos:closeMatch	codemeta:year	year	SSSOM:HumanCurated	1
+subject:month	month	skos:closeMatch	codemeta:month	month	SSSOM:HumanCurated	1
+subject:editor	editor	skos:exactMatch	schema:editor	editor	SSSOM:HumanCurated	1
+subject:license	license	skos:exactMatch	schema:license	license	SSSOM:HumanCurated	1
+subject:publisher	publisher	skos:exactMatch	schema:publisher	publisher	SSSOM:HumanCurated	1
+subject:abstract	abstract	skos:exactMatch	codemeta:abstract	abstract	SSSOM:HumanCurated	1
+subject:doi	doi	skos:narrower	codemeta:doi	doi	SSSOM:HumanCurated	1
+subject:hal_id	hal_id	skos:narrower	codemeta:hal_id	hal_id	SSSOM:HumanCurated	1
+subject:url	url	skos:exactMatch	schema:url	url	SSSOM:HumanCurated	1
+subject:organization	organization	skos:exactMatch	codemeta:organization	organization	SSSOM:HumanCurated	1
