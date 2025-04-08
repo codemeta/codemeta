@@ -1,24 +1,17 @@
-source_term,target_term,type_relation
-programmingLanguage,Format,more_specific_than
-fileSize,size,exact_match
-author,creators,exact_match
-contributor,contributor,exact_match
-dateCreated,date/typeInformation/Created,more_generic_than
-dateModified,date/typeInformation/Updated,more_generic_than
-datePublished,publicationYear,exact_match
-fileFormat,Format,exact_match
-funder,fundingReference/funderName,exact_match
-keywords,subject,exact_match
-license,Rights/rightURI,exact_match
-publisher,Publisher/publisherIdentifier, part_of
-version,version,exact_match
-description,description,exact_match
-identifier,identifier,exact_match
-name,title,exact_match
-relatedLink,RelatedIdentifier.relationType,part_of
-givenName,givenName,exact_match
-familyName,familyName,exact_match
-affiliation,affiliation,exact_match
-identifier,nameIdentifier, exact_match
-name,creatorName,no relation
-funding,awardNumber,exact_match
+source_term,target_term,type_relation,combined_mappings,comments
+repository,codeRepository,exact_match,,
+version,softwareVersion,exact_match,,
+file,downloadUrl,exact_match,,
+version,softwareVersion,exact_match,,
+note,releaseNotes,exact_match,,
+author,author,exact_match,,
+year,datePublished,part_of,$(year)+$(month), 
+month,datePublished,part_of,$(year)+$(month),
+editor,editor,exact_match,,
+license,license,exact_match,,
+publisher,publisher,exact_match,,
+abstract,description,exact_match,,
+doi,identifier,more_specific_than,,
+hal_id,identifier,more_specific_than,,
+url,url,exact_match,,
+organization,affiliation,exact_match,,
