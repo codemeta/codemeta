@@ -1,3 +1,4 @@
+@prefix codemeta: <https://codemeta.github.io/terms/> .
 @prefix dc1: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix pav: <http://purl.org/pav/> .
@@ -5,7 +6,7 @@
 @prefix semapv: <https://w3id.org/semapv/vocab/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix sssom: <https://w3id.org/sssom/> .
-@prefix target: <https://w3id.org/codemeta/crosswalks/bibtex/vocab> .
+@prefix subject: <https://w3id.org/codemeta/crosswalks/bibtex/vocab> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 sssom:confidence a owl:AnnotationProperty .
@@ -16,97 +17,98 @@ sssom:object_label a owl:AnnotationProperty .
 
 sssom:subject_label a owl:AnnotationProperty .
 
-schema1:affiliation skos:exactMatch target:organization .
+subject:abstract skos:exactMatch codemeta:abstract .
 
-schema1:author skos:exactMatch target:author .
+subject:author skos:exactMatch schema1:author .
 
-schema1:codeRepository skos:exactMatch target:repository .
+subject:doi skos:narrower codemeta:doi .
 
-schema1:description skos:exactMatch target:abstract .
+subject:editor skos:exactMatch schema1:editor .
 
-schema1:downloadUrl skos:exactMatch target:file .
+subject:file skos:exactMatch codemeta:file .
 
-schema1:editor skos:exactMatch target:editor .
+subject:hal_id skos:narrower codemeta:hal_id .
 
-schema1:license skos:exactMatch target:license .
+subject:license skos:exactMatch schema1:license .
 
-schema1:publisher skos:exactMatch target:publisher .
+subject:month skos:closeMatch codemeta:month .
 
-schema1:releaseNotes skos:exactMatch target:note .
+subject:note skos:exactMatch codemeta:note .
 
-schema1:softwareVersion skos:exactMatch target:version .
+subject:organization skos:exactMatch codemeta:organization .
 
-schema1:url skos:exactMatch target:url .
+subject:publisher skos:exactMatch schema1:publisher .
 
-schema1:identifier skos:broader target:doi,
-        target:hal_id .
+subject:repository skos:exactMatch codemeta:repository .
 
-schema1:datePublished skos:closeMatch target:month,
-        target:year ;
-    skos:exactMatch target:date .
+subject:url skos:exactMatch schema1:url .
+
+subject:version skos:exactMatch schema1:version .
+
+subject:year skos:closeMatch codemeta:year .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:closeMatch ;
-    owl:annotatedSource schema1:datePublished ;
-    owl:annotatedTarget target:year ;
+    owl:annotatedSource subject:year ;
+    owl:annotatedTarget codemeta:year ;
     sssom:confidence 1e+00 ;
     sssom:mapping_justification semapv:UnspecifiedMatching ;
     sssom:object_label "year" ;
-    sssom:subject_label "datePublished" .
+    sssom:subject_label "year" .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:exactMatch ;
-    owl:annotatedSource schema1:codeRepository ;
-    owl:annotatedTarget target:repository ;
+    owl:annotatedSource subject:abstract ;
+    owl:annotatedTarget codemeta:abstract ;
     sssom:confidence 1e+00 ;
     sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "repository" ;
-    sssom:subject_label "codeRepository" .
+    sssom:object_label "abstract" ;
+    sssom:subject_label "abstract" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:closeMatch ;
+    owl:annotatedSource subject:month ;
+    owl:annotatedTarget codemeta:month ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "month" ;
+    sssom:subject_label "month" .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:exactMatch ;
-    owl:annotatedSource schema1:license ;
-    owl:annotatedTarget target:license ;
+    owl:annotatedSource subject:note ;
+    owl:annotatedTarget codemeta:note ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "note" ;
+    sssom:subject_label "note" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:license ;
+    owl:annotatedTarget schema1:license ;
     sssom:confidence 1e+00 ;
     sssom:mapping_justification semapv:UnspecifiedMatching ;
     sssom:object_label "license" ;
     sssom:subject_label "license" .
 
 [] a owl:Axiom ;
+    owl:annotatedProperty skos:narrower ;
+    owl:annotatedSource subject:doi ;
+    owl:annotatedTarget codemeta:doi ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "doi" ;
+    sssom:subject_label "doi" .
+
+[] a owl:Axiom ;
     owl:annotatedProperty skos:exactMatch ;
-    owl:annotatedSource schema1:editor ;
-    owl:annotatedTarget target:editor ;
+    owl:annotatedSource subject:editor ;
+    owl:annotatedTarget schema1:editor ;
     sssom:confidence 1e+00 ;
     sssom:mapping_justification semapv:UnspecifiedMatching ;
     sssom:object_label "editor" ;
     sssom:subject_label "editor" .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:exactMatch ;
-    owl:annotatedSource schema1:publisher ;
-    owl:annotatedTarget target:publisher ;
-    sssom:confidence 1e+00 ;
-    sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "publisher" ;
-    sssom:subject_label "publisher" .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:broader ;
-    owl:annotatedSource schema1:identifier ;
-    owl:annotatedTarget target:hal_id ;
-    sssom:confidence 1e+00 ;
-    sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "hal_id" ;
-    sssom:subject_label "identifier" .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:exactMatch ;
-    owl:annotatedSource schema1:downloadUrl ;
-    owl:annotatedTarget target:file ;
-    sssom:confidence 1e+00 ;
-    sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "file" ;
-    sssom:subject_label "downloadUrl" .
 
 [] a owl:Ontology ;
     dc1:description "A description of the mapping." ;
@@ -117,71 +119,17 @@ schema1:datePublished skos:closeMatch target:month,
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:exactMatch ;
-    owl:annotatedSource schema1:softwareVersion ;
-    owl:annotatedTarget target:version ;
+    owl:annotatedSource subject:repository ;
+    owl:annotatedTarget codemeta:repository ;
     sssom:confidence 1e+00 ;
     sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "version" ;
-    sssom:subject_label "softwareVersion" .
+    sssom:object_label "repository" ;
+    sssom:subject_label "repository" .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:exactMatch ;
-    owl:annotatedSource schema1:datePublished ;
-    owl:annotatedTarget target:date ;
-    sssom:confidence 1e+00 ;
-    sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "date" ;
-    sssom:subject_label "datePublished" .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:exactMatch ;
-    owl:annotatedSource schema1:author ;
-    owl:annotatedTarget target:author ;
-    sssom:confidence 1e+00 ;
-    sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "author" ;
-    sssom:subject_label "author" .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:broader ;
-    owl:annotatedSource schema1:identifier ;
-    owl:annotatedTarget target:doi ;
-    sssom:confidence 1e+00 ;
-    sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "doi" ;
-    sssom:subject_label "identifier" .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:exactMatch ;
-    owl:annotatedSource schema1:releaseNotes ;
-    owl:annotatedTarget target:note ;
-    sssom:confidence 1e+00 ;
-    sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "note" ;
-    sssom:subject_label "releaseNotes" .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:exactMatch ;
-    owl:annotatedSource schema1:description ;
-    owl:annotatedTarget target:abstract ;
-    sssom:confidence 1e+00 ;
-    sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "abstract" ;
-    sssom:subject_label "description" .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:closeMatch ;
-    owl:annotatedSource schema1:datePublished ;
-    owl:annotatedTarget target:month ;
-    sssom:confidence 1e+00 ;
-    sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "month" ;
-    sssom:subject_label "datePublished" .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:exactMatch ;
-    owl:annotatedSource schema1:url ;
-    owl:annotatedTarget target:url ;
+    owl:annotatedSource subject:url ;
+    owl:annotatedTarget schema1:url ;
     sssom:confidence 1e+00 ;
     sssom:mapping_justification semapv:UnspecifiedMatching ;
     sssom:object_label "url" ;
@@ -189,11 +137,56 @@ schema1:datePublished skos:closeMatch target:month,
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:exactMatch ;
-    owl:annotatedSource schema1:affiliation ;
-    owl:annotatedTarget target:organization ;
+    owl:annotatedSource subject:publisher ;
+    owl:annotatedTarget schema1:publisher ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "publisher" ;
+    sssom:subject_label "publisher" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:organization ;
+    owl:annotatedTarget codemeta:organization ;
     sssom:confidence 1e+00 ;
     sssom:mapping_justification semapv:UnspecifiedMatching ;
     sssom:object_label "organization" ;
-    sssom:subject_label "affiliation" .
+    sssom:subject_label "organization" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:author ;
+    owl:annotatedTarget schema1:author ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "author" ;
+    sssom:subject_label "author" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:file ;
+    owl:annotatedTarget codemeta:file ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "file" ;
+    sssom:subject_label "file" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:version ;
+    owl:annotatedTarget schema1:version ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "version" ;
+    sssom:subject_label "version" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:narrower ;
+    owl:annotatedSource subject:hal_id ;
+    owl:annotatedTarget codemeta:hal_id ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "hal_id" ;
+    sssom:subject_label "hal_id" .
 
 
