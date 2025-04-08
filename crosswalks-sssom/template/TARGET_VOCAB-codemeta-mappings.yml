@@ -2,7 +2,7 @@
 curie_map: # This contains the URLs prefixes used in the mapping file
   skos: http://www.w3.org/2004/02/skos/core# ### Always needed. Do not modify
   sssom: https://w3id.org/sssom/             ### Always needed. Do not modify
-  object_source: {URL of your specification / vocabulary} ### Target vocabulary URI
+  subject: https://w3id.org/codemeta/crosswalks/{VOCAB_ID}/vocab} ### Source vocabulary URI. Default value
   schema: "http://schema.org/" ### Always needed. Do not modify
   codemeta: "https://codemeta.github.io/terms/" ### Always needed. Do not modify
 license: https://creativecommons.org/publicdomain/zero/1.0/
