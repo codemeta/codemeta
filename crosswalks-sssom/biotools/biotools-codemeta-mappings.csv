@@ -5,7 +5,7 @@ file,downloadUrl,exact_match,,
 note,releaseNotes,exact_match,,
 credit.orcidid,author.id,exact_match,,"If: credit[n].typeEntity == 'Person'"
 credit/typeEntity,Person,close_match,,"If: credit[n].typeEntity == 'Person'"
-credit[n].email,author[n].email,exact_match,,"If: credit[n].typeEntity == 'Person'"
+credit/email,author/email,exact_match,,"If: credit.typeEntity == 'Person'"
 credit[n].name,author[n].mame,,"If: credit[n].typeEntity == 'Person'"
 biotoolsCURIE,identifier,more_specific_than,,
 biotoolsID,identifier,more_specific_than,,
