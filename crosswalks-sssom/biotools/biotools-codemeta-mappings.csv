@@ -12,3 +12,5 @@ biotoolsID,identifier,more_specific_than,,
 owner,editor,close_match,,"owner value is a bio.tools username, not an ORCID or similar"
 license,license,exact_match,,
 description,description,exact_match,,
+publication/doi,citation,exact_match,,
+
