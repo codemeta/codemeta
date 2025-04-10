@@ -2,6 +2,7 @@ import csv
 import json
 import os
 import sys
+from pathlib import Path
 
 from sssom.parsers import parse_sssom_table
 from sssom.writers import write_owl
@@ -103,10 +104,29 @@ if len(sys.argv) != 3:
     print("Error: This script requires exactly two arguments.")
     print("Usage: python script.py <metadata_file.yml> <input_file.csv>")
     sys.exit(1)  # Exit with an error code
-output_tsv_file = os.path.splitext(sys.argv[2])[0] + ".sssom.tsv"
-output_ttl_file = os.path.splitext(sys.argv[2])[0] + ".sssom.ttl"
+metadata_file = Path(sys.argv[1])
+input_file = Path(sys.argv[2])
+
+if not metadata_file.is_file():
+    print(f"Error: Metadata file {metadata_file} does not exist.")
+    sys.exit(1)  # Exit with an error code
+if not os.path.isfile(input_file):
+    print(f"Error: Input file {input_file} does not exist.")
+    sys.exit(1)  # Exit with an error code
+
+target_vocab = metadata_file.name.split("-")[0]
+output_dir = input_file.absolute().parent / f"{target_vocab}-sssom-outputs"
+if not output_dir.exists():
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+output_tsv_file = output_dir / input_file.with_suffix(".sssom.tsv").name
+output_ttl_file = output_dir / input_file.with_suffix(".sssom.ttl").name
+
+this_dir = Path(__file__).parent.resolve()
+codemeta_jsonld_file = this_dir / ".." / ".." / "codemeta.jsonld"
+
 # Load codemeta.jsonld JSON-LD file with the mapping of the concepts to schema.org or codemeta
-with open("../../codemeta.jsonld", "r", encoding="utf-8") as f:
+with open(codemeta_jsonld_file, encoding="utf-8") as f:
     jsonld_data = json.load(f)
 context_data = jsonld_data.get("@context", {})
 
