@@ -1,4 +1,4 @@
-source_term,target_term,type_relation,combined_mappings,comments
+source_term,codemeta_term,type_relation,combined_mappings,comments
 Format,programmingLanguage,more_generic_than,,
 size,fileSize,exact_match,,
 creators,author,exact_match,,

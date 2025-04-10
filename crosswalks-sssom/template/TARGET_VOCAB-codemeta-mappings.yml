@@ -4,8 +4,9 @@ curie_map: # This contains the URLs prefixes used in the mapping file
   sssom: https://w3id.org/sssom/             ### Always needed. Do not modify
   subject: https://w3id.org/codemeta/crosswalks/{VOCAB_ID}/vocab} ### Source vocabulary URI. Default value
   schema: "http://schema.org/" ### Always needed. Do not modify
-  codemeta: "https://codemeta.github.io/terms/" ### Always needed. Do not modify
+  codemeta: "https://w3id.org/codemeta/3.0" ### Always needed. Do not modify
 license: https://creativecommons.org/publicdomain/zero/1.0/
+subject_documentation: http://example.org/vocabulary_doc.html ### OPTIONAL: please add the link to the documentation of the source vocabulary you are mapping
 mapping_date: '2025-01-29' ### Default value
 mapping_set_description: A description of the mapping. ### Please, add the description of your mapping
 mapping_provider: https://www.softwareheritage.org/. ### Please, add a URI of the author of the mapping. Prioritize ORCIDs for persons and ROR ids for organizations
