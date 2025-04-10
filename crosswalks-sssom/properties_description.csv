@@ -25,6 +25,7 @@ schema:Person,contributor/givenName,Text,"Given name. In the U.S., the first nam
 schema:Person,contributor/identifier,URL,"URL identifier, ideally an ORCID ID for individuals, a FundRef ID for funders"
 schema:Person,contributor/name,Text,"The name of an Organization, or if separate given and family names cannot be resolved for a Person"
 schema:Person,contributor/roleName,Text,"The role played, performed, or filled by a person or organization. Suggested values: ""Design"" (algorithm), ""Architecture"", ""Debugging"", ""Maintenance"", ""Coding"", ""Documentation"", ""Testing"", ""Support"", ""Management""."
+chema:CreativeWork,copyrightHolder,Organization or Person,The party holding the legal copyright to the CreativeWork.
 schema:CreativeWork,copyrightYear,Number,The year during which the claimed copyright for the CreativeWork was first asserted.
 schema:CreativeWork,dateCreated,Date,The date on which the CreativeWork was created or the item was added to a DataFeed.
 schema:CreativeWork,dateModified,Date,The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed.
