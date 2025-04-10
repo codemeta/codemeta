@@ -1,8 +1,8 @@
-Property, Julia Project.toml
+Property,SciCrunchRegistry
 codeRepository,
 programmingLanguage,
 review,
-runtimePlatform, compat.julia
+runtimePlatform,
 targetProduct,
 applicationCategory,
 applicationSubCategory,
@@ -16,11 +16,11 @@ processorRequirements,
 releaseNotes,
 softwareHelp,
 softwareRequirements,
-softwareVersion,version
+softwareVersion,
 storageRequirements,
 supportingData,
 author,
-citation,
+citation,Proper Citation
 contributor,
 copyrightHolder,
 copyrightYear,
@@ -30,23 +30,23 @@ datePublished,
 editor,
 encoding,
 fileFormat,
-funder,
-keywords,
-license,
+funder,Funding Agency
+keywords,Keywords/Related Condition
+license,Availability
 producer,
 provider,
 publisher,
 sponsor,
 version,
 isAccessibleForFree,
-isPartOf,
-hasPart,
+isPartOf,Parent Organization
+hasPart,Resource Relationships
 position,
-description,
-identifier,uuid
-name,name
-sameAs,
-url,
+description,Description
+identifier,Resource ID/Alternate IDs
+name,Resource Name
+sameAs,Abbreviations/Synonyms
+url,Resource Website/Old URLs/Alternate URLs
 relatedLink,
 givenName,
 familyName,
@@ -68,7 +68,7 @@ developmentStatus,
 embargoEndDate,
 funding,
 issueTracker,
-referencePublication,
+referencePublication,Defining Citation
 readme,
 hasSourceCode,
 isSourceCodeOf,

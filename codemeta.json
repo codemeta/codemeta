@@ -1,5 +1,5 @@
 {
-  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@context": "https://w3id.org/codemeta/3.0",
   "@type": "SoftwareSourceCode",
   "identifier": "CodeMeta",
   "description": "CodeMeta is a concept vocabulary that can be used to standardize the exchange of software metadata across repositories and organizations.",
@@ -7,7 +7,7 @@
   "codeRepository": "https://github.com/codemeta/codemeta",
   "issueTracker": "https://github.com/codemeta/codemeta/issues",
   "license": "https://spdx.org/licenses/Apache-2.0",
-  "version": "2.0",
+  "version": "3.0",
   "author": [
     {
       "@type": "Person",
@@ -150,7 +150,7 @@
     "email": "cboettig@gmail.com",
     "@id": "http://orcid.org/0000-0002-1642-628X"
   },
-  "contIntegration": "https://travis-ci.org/codemeta/codemeta",
+  "continuousIntegration": "https://github.com/codemeta/codemeta/actions",
   "developmentStatus": "active",
   "downloadUrl": "https://github.com/codemeta/codemeta/archive/2.0.zip",
   "funder": { 
