@@ -1,14 +1,14 @@
 # Mapping-methodology
 
 - **Version**: 0.0.1
-- **Authors**: Esteban Gonzalez, Daniel Garijo, Morane Gruenpeter
+- **Authors**: Esteban Gonzalez, Daniel Garijo, Morane Gruenpeter, SciCodes working group
 - **Date**: 01-04-2025
 
 This repository contains the instructions to create new crosswalks between Codemeta and another specification or vocabulary, as well as some examples of the generation. We rely on the SSSOM standard to create a machine-readable mapping representation, with some extensions.
 
 The methodology for generating the files required to create the crosswalk is as follows:
 1. **Identify the Terms to Map**
-   Identify the terms you want to map in both semantic artifacts (source and target). Target applies to Codemeta while the source is another metadata schema.
+   Identify the terms you want to map in both semantic artifacts (source and codemeta term). 
 2. **Create a YAML Metadata File**
    Create a YAML metadata file that contains the metadata of the mapping using the provided template in the template folder: mapping-template.yml.
    Name the file appropriately, for example, codemeta-bibtext-mapping.yml.
@@ -21,17 +21,17 @@ The methodology for generating the files required to create the crosswalk is as 
 4. **Create the Data File (CSV Format)**
    Name the CSV file appropriately, for example, `codemeta-bibtext-mapping.csv`.
    The CSV file should contain the following columns:
-   - source_term: The corresponding term in the target specification or vocabulary.
-   - target_term: The term in CodeMeta.
+   - source_term: The corresponding term in the source specification or vocabulary.
+   - codemeta_term: The term in CodeMeta.
    - type_relation: The type of relation between the two terms. Possible values:
        - exact_match: The terms are equivalent concepts.
-       - part_of: The source concept is part of the target concept (e.g., a publication date in the source vocabulary is part of a publication year in the target vocabulary ).
-       - more_specific_than: The source codemeta term is more specific than the target vocabulary term. For example, "hal_id narrowerMatch codemeta:identifier" means that the hal id is a more concrete term than the "identifier" property in CodeMeta. 
-       - more_generic_than:  The source codemeta term is more generic than target vocabulary term. For example, " status broaderMatch codemeta:developmentStatus" means that the status is a more generic term than the "developmentStatus" property in CodeMeta.
-       - close_match: The subject and the object are sufficiently similar that they can be used interchangeably in some information retrieval applications. For example, if the source and target properties refer to dates, but the format is different.
+       - part_of: The source concept is part of the codemeta concept (e.g., a publication date in the source vocabulary is part of a publication year in the codemeta vocabulary ).
+       - more_specific_than: the source vocabulary term the codemeta term is more specific than the codemeta term. For example, "hal_id more_specific_than codemeta:identifier" means that the hal id is a more concrete term than the "identifier" property in CodeMeta. 
+       - more_generic_than:  The source vocabulary term is more generic than the CodeMeta term. For example, " status more_generic_than codemeta:developmentStatus" means that the status is a more generic term than the "developmentStatus" property in CodeMeta.
+       - close_match: The subject and the object are sufficiently similar that they can be used interchangeably in some information retrieval applications. For example, if the source and codemeta properties refer to dates, but the format is different.
    - combined_mapping: **It applies ONLY to a part-of relationship**.
      This column defines the formula used to combine terms between schemas.
-     For example, if the target vocabulary has the term `date`, and the source vocabulary has the terms `year` and `month`, the combined_mapping should be as follows: $(year) + $(month)`.
+     For example, if the CodeMeta vocabulary has the term `date`, and the source vocabulary has the terms `year` and `month`, the combined_mapping should be as follows: $(year) + $(month)`.
    - comments: additional (optional) annotations about the mapping itself.
 
 5. **Generate the SSSOM File**<br>
@@ -52,7 +52,7 @@ The corresponding identifier will be `https://w3id.org/codemeta/mappings/{YOUR_I
 
 For example, for the `bibtex` mapping, the corresponding identifier is [https://w3id.org/codemeta/mappings/bibtex](https://w3id.org/codemeta/mappings/bibtex).
 #### How do I fill in the crosswalk table? What does "more specific" and "more general" means?
-The crosswalks indicate term relationships between two schemas.  The `source_term` is is the term from the mapped schema. The `target_term` is the term from CodeMeta`.
+The crosswalks indicate term relationships between two schemas.  The `source_term` is is the term from the mapped schema. The `codemeta_term` is the term from CodeMeta`.
 The `type_relation` indicates what type of relationship exist between those terms. We support several terms, please see point 4 above.
 
 #### My metadata term maps to several properties in CodeMeta. How do I represent it?
@@ -63,7 +63,7 @@ In both cases `identifier` is more specific than `hal_id` and more specific than
 In some cases, terms may have a structure as follows: `vocab.owner.name is an exact match to codemeta.author.name`
 Here you will need to include the parent term in the mapping. Hierarchy will be delimited by the character '/'. For example:
       
-      | source_term | target_term |
+      | source_term | codemeta_term |
       | ----------- | ----------- |
       | owner/name  | author/name |
 

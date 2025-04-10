@@ -2,10 +2,11 @@
 curie_map: # This contains the URLs prefixes used in the mapping file
   skos: http://www.w3.org/2004/02/skos/core# ### Always needed. Do not modify
   sssom: https://w3id.org/sssom/             ### Always needed. Do not modify
-  subject: https://w3id.org/codemeta/crosswalks/datacite/vocab ### Default value
-  codemeta: "https://codemeta.github.io/terms/" ### Always needed. Do not modify
+  subject: https://schema.datacite.org/meta/kernel-4.6/metadata.xsd ### Value of the schema
+  codemeta: "https://w3id.org/codemeta/3.0" ### Always needed. Do not modify
   schema: "http://schema.org/" ### Always needed. Do not modify
 license: https://creativecommons.org/publicdomain/zero/1.0/
+subject_documentation: https://doi.org/10.14454/mzv1-5b55
 mapping_date: '2025-04-01' ### Default value
 mapping_set_description: 'Mapping between codemeta and datacite following out methodology' ### Please, add the description of your mapping
 mapping_provider: https://codemeta.github.io/ ### Please, add a URI of the author of the mapping. Prioritize ORCIDs for persons and ROR ids for organizations
