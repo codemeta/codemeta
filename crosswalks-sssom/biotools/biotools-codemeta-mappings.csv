@@ -1,0 +1,19 @@
+source_term,codemeta_term,type_relation,combined_mappings,comments
+download/url,codeRepository,close_match,,"should only map values of objects in the list where download url has a `type`==`Source code` "
+version,softwareVersion,exact_match,,"version is a list of all versions available in bio.tools"
+file,downloadUrl,exact_match,,
+note,releaseNotes,exact_match,,
+credit/orcidid,author/id,exact_match,,"When credit[n].typeRole in ['Primary contact', 'Developer']"
+credit/typeEntity,author/rdf:type,close_match,,"If: credit[n].typeEntity == 'Person'. When credit[n].typeRole in ['Primary contact', 'Developer']"
+credit/email,author/email,exact_match,,"If: credit[n].typeEntity == 'Person'. When credit[n].typeRole in ['Primary contact', 'Developer']"
+credit/name,author/name,,"If: credit[n].typeEntity == 'Person'. When credit[n].typeRole in ['Primary contact', 'Developer']"
+biotoolsCURIE,identifier,more_specific_than,,
+biotoolsID,identifier,more_specific_than,,
+owner,editor,close_match,,"owner value is a bio.tools username, not an ORCID or similar"
+license,license,exact_match,,
+description,description,exact_match,,
+publication/doi,citation,exact_match,,
+credit/orcidid,contributor/id,exact_match,,"If: credit[n].typeEntity == 'Person'. When credit[n].typeRole=='Contributor'"
+credit/typeEntity,contributor/type,close_match,,"If: credit[n].typeEntity == 'Person'. When credit[n].typeRole=='Contributor'"
+credit/email,contributor/email,exact_match,,"If: credit.typeEntity == 'Person'. When credit[n].typeRole=='Contributor'"
+credit/name,contributor/name,,"If: credit[n].typeEntity == 'Person'. When credit[n].typeRole=='Contributor'"
