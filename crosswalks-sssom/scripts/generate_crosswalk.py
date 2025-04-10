@@ -56,16 +56,26 @@ def convert_csv_to_tsv(
 
     # Write each row from CSV to TSV
     for row in reader:
-        if row["type_relation"] == "exact_match":
+        type_relation = row["type_relation"]
+        source_term = row["source_term"]
+
+        if type_relation == "exact_match":
             predicate_id = "skos:exactMatch"
-        elif row["type_relation"] == "part_of":
+        elif type_relation == "part_of":
             predicate_id = "skos:closeMatch"
-        elif row["type_relation"] == "more_specific_than":
+        elif type_relation == "more_specific_than":
             predicate_id = "skos:narrower"
-        elif row["type_relation"] == "more_generic_than":
+        elif type_relation == "more_generic_than":
             predicate_id = "skos:broader"
-        elif row["type_relation"] == "close_match":
+        elif type_relation == "close_match":
             predicate_id = "skos:closeMatch"
+        else:
+            if source_term and type_relation != "":
+                print(
+                    f"Error: Skipping row {row} with invalid relation type {type_relation}"
+                )
+            continue
+
         row = [
             "subject:" + source_term,
             source_term,
