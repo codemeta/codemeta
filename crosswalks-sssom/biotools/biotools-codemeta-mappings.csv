@@ -4,7 +4,7 @@ version,softwareVersion,exact_match,,"version is a list of all versions availabl
 file,downloadUrl,exact_match,,
 note,releaseNotes,exact_match,,
 credit.orcidid,author.id,exact_match,,"If: credit[n].typeEntity == 'Person'"
-credit/typeEntity,Person,close_match,,"If: credit[n].typeEntity == 'Person'"
+credit/typeEntity,author/type,close_match,,"If: credit[n].typeEntity == 'Person'"
 credit/email,author/email,exact_match,,"If: credit.typeEntity == 'Person'"
 credit/name,author/name,,"If: credit[n].typeEntity == 'Person'"
 biotoolsCURIE,identifier,more_specific_than,,
