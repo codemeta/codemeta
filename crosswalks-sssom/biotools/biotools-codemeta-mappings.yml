@@ -10,3 +10,4 @@ mapping_date: '2025-04-10' ### Default value
 mapping_set_description: Mapping from bio.tools JSON (as available on the API and the ELIXIR RSEc). ### Please, add the description of your mapping
 mapping_provider: https://orcid.org/0000-0002-7552-1009. ### Please, add a URI of the author of the mapping. Prioritize ORCIDs for persons and ROR ids for organizations
 mapping_set_id: https://w3id.org/codemeta/crosswalks/biotools ### Please, add a URI of your crosswalk. You can use the w3id.org service to create it.
+subject_documentation: https://biotools.readthedocs.io/en/latest/api_usage_guide.html#tool-attributes
