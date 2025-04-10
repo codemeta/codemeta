@@ -1,0 +1,85 @@
+source_term,codemeta_term,type_relation,combined_mappings,comments
+,applicationCategory,,,
+,applicationSubCategory,,,
+metadata/creators/affiliation,author/affiliation/name,exact_match,,
+,author/email,,,
+,author/familyName,,,
+,author/givenName,,,
+metadata/creators/orcid,author/identifier,more_specific_than,,
+metadata/creators/name,author/name,exact_match,,
+,author/roleName,,,
+,buildInstructions,,,
+metadata/related_identifiers/identifier,citation,more_generic_than,,"Where ""relation"" is ""cites"""
+custom/code:codeRepository,codeRepository,exact_match,,"If not available, should be under ""metadata.related_identifiers"", where ""relation"" is ""isSupplementTo"""
+,continuousIntegration,,,
+metadata/contributors/affiliation,contributor/affiliation/name,exact_match,,
+metadata/contributors/orcid,contributor/identifier,more_specific_than,,
+metadata/contributors/name,contributor/name,exact_match,,
+metadata/contributors/type,contributor/roleName,,,
+,copyrightHolder/familyName,,,
+,copyrightHolder/givenName,,,
+,copyrightHolder/identifier,,,
+,copyrightHolder/name,,,
+,copyrightYear,,,
+created,dateCreated,exact_match,,
+updated,dateModified,exact_match,,
+metadata/publication_date,datePublished,exact_match,,
+metadata/description,description,exact_match,,
+custom/code:developmentStatus,developmentStatus,,,
+links/archive,downloadUrl,exact_match,,
+metadata/contributors/affiliation,editor/affiliation/name,exact_match,,"Where ""type"" is ""Editor"""
+metadata/contributors/orcid,editor/identifier,more_specific_than,,"Where ""type"" is ""Editor"""
+metadata/contributors/name,editor/name,exact_match,,"Where ""type"" is ""Editor"""
+,encoding,,,
+,fileFormat,,,
+,fileSize,,,
+metadata/grants/funder/doi,funder/identifier,more_specific_than,,"You can find funder metadata both under the top-level ""funder"" and under ""funding/funder"""
+metadata/grants/funder/name,funder/name,exact_match,,"You can find funder metadata both under the top-level ""funder"" and under ""funding/funder"""
+metadata/grants/funder/doi,funding/funder/identifier,more_specific_than,,"You can find funder metadata both under the top-level ""funder"" and under ""funding/funder"""
+metadata/grants/funder/name,funding/funder/name,exact_match,,"You can find funder metadata both under the top-level ""funder"" and under ""funding/funder"""
+metadata/grants/code,funding/identifier,exact_match,,
+metadata/grants/title,funding/name,exact_match,,
+metadata/grants/url,funding/url,exact_match,,
+metadata/related_identifiers/identifier,hasPart,exact_match,,"Where ""relation"" is ""hasPart"""
+metadata/related_identifiers/identifier,hasSourceCode,exact_match,,"Where ""relation"" is ""hasSource"""
+metadata/doi,identifier,more_specific_than,,
+metadata/access_right,isAccessibleForFree,exact_match,,"If the value is ""open"""
+metadata/related_identifiers/identifier,isPartOf,exact_match,,"Where ""relation"" is ""isPartOf"""
+metadata/related_identifiers/identifier,isSourceCodeOf,more_generic_than,,"Where ""relation"" is ""isSourceOf"""
+,issueTracker,,,
+metadata/keywords,keywords,exact_match,,
+metadata/license/id,license,exact_match,,
+,maintainer/name,,,
+,memoryRequirements,,,
+metadata/title,name,exact_match,,
+,operatingSystem,,,
+,permissions,,,
+,position,,,
+,processorRequirements,,,
+metadata/contributors/affiliation,producer/affiliation/name,exact_match,,"Where ""type"" is ""Producer"""
+metadata/contributors/orcid,producer/identifier,more_specific_than,,"Where ""type"" is ""Producer"""
+metadata/contributors/name,producer/name,exact_match,,"Where ""type"" is ""Producer"""
+custom/code:programmingLanguage/name,programmingLanguage,exact_match,,
+,provider/name,,,
+,publisher/name,,,
+,readme,,,
+metadata/related_identifiers/identifier,referencePublication,exact_match,,"Where ""relation"" is ""isSupplementTo"" and ""resource_type"" is ""publication-article"""
+metadata/related_identifiers/identifier,relatedLink,more_generic_than,,
+metadata/description,releaseNotes,exact_match,,
+metadata/related_identifiers/identifier,review,exact_match,,"Where ""relation"" is ""isReviewedBy"""
+,reviewAspect,,,
+,reviewBody,,,
+,runtimePlatform,,,
+metadata/related_identifiers/identifier,sameAs,exact_match,,"Where ""relation"" is ""isIdenticalTo"""
+,softwareHelp,,,
+,softwareRequirements,,,
+,softwareSuggestions,,,
+metadata/version,softwareVersion,exact_match,,
+metadata/contributors/affiliation,sponsor/affiliation/name,exact_match,,"Where ""type"" is ""Sponsor"""
+metadata/contributors/orcid,sponsor/identifier,more_specific_than,,"Where ""type"" is ""Sponsor"""
+metadata/contributors/name,sponsor/name,exact_match,,"Where ""type"" is ""Sponsor"""
+,storageRequirements,,,
+metadata/related_identifiers/identifier,supportingData,exact_match,,"Where ""relation"" is ""isSupplementedBy"""
+,targetProduct,,,
+links/self_html,url,exact_match,,
+metadata/version,version,exact_match,,
