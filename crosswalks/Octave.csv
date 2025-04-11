@@ -15,7 +15,7 @@ permissions,
 processorRequirements,
 releaseNotes,
 softwareHelp,
-softwareRequirements,"Depends, SystemRequirements"
+softwareRequirements,"Depends, SystemRequirements, BuildDepends"
 softwareVersion,
 storageRequirements,
 supportingData,
