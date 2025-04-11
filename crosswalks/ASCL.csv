@@ -41,7 +41,6 @@ version,
 isAccessibleForFree,
 isPartOf,
 hasPart,
-position,
 description,abstract
 identifier,ascl_id
 name,title

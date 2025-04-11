@@ -41,7 +41,6 @@ version,
 isAccessibleForFree,
 isPartOf,Parent Organization
 hasPart,Resource Relationships
-position,
 description,Description
 identifier,Resource ID/Alternate IDs
 name,Resource Name

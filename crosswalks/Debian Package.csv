@@ -41,7 +41,6 @@ version,numeric_version
 isAccessibleForFree,
 isPartOf,
 hasPart,
-position,
 description,Description
 identifier,Package
 name,
