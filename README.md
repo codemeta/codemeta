@@ -11,8 +11,8 @@ See <https://codemeta.github.io> for a visualization of the [crosswalk table](ht
 
 The schema for released versions of CodeMeta are:
 
-- CodeMeta-3.0: [https://w3id.org/codemeta/v3.0](https://w3id.org/codemeta/v3.0)
-    - *Matthew B. Jones, Carl Boettiger, Abby Cabunoc Mayes, Arfon Smith,  Morane Gruenpeter, Valentin Lorentz, Thomas Morrell, Daniel Garijo, Peter Slaughter, Kyle Niemeyer, Yolanda Gil, Martin Fenner, Krzysztof Nowak, Mark Hahnel, Luke Coy, Alice Allen, Mercè Crosas, Ashley Sands, Neil Chue Hong, Patricia Cruse, Daniel S. Katz, Carole Goble, Bryce Mecum, Alejandra Gonzalez-Beltran, Noam Ross.* 2023. __CodeMeta: an exchange schema for software metadata. Version 3.0.__ [https://w3id.org/codemeta/v3.0](https://w3id.org/codemeta/v3.0)
+- CodeMeta-3.0: [https://w3id.org/codemeta/3.0](https://w3id.org/codemeta/3.0)
+    - *Matthew B. Jones, Carl Boettiger, Abby Cabunoc Mayes, Arfon Smith,  Morane Gruenpeter, Valentin Lorentz, Thomas Morrell, Daniel Garijo, Peter Slaughter, Kyle Niemeyer, Yolanda Gil, Martin Fenner, Krzysztof Nowak, Mark Hahnel, Luke Coy, Alice Allen, Mercè Crosas, Ashley Sands, Neil Chue Hong, Patricia Cruse, Daniel S. Katz, Carole Goble, Bryce Mecum, Alejandra Gonzalez-Beltran, Noam Ross.* 2023. __CodeMeta: an exchange schema for software metadata. Version 3.0.__ [https://w3id.org/codemeta/3.0](https://w3id.org/codemeta/3.0)
 - CodeMeta-2.0: [https://doi.org/10.5063/schema/codemeta-2.0](https://doi.org/10.5063/schema/codemeta-2.0)
     - *Matthew B. Jones, Carl Boettiger, Abby Cabunoc Mayes, Arfon Smith, Peter Slaughter, Kyle Niemeyer, Yolanda Gil, Martin Fenner, Krzysztof Nowak, Mark Hahnel, Luke Coy, Alice Allen, Mercè Crosas, Ashley Sands, Neil Chue Hong, Patricia Cruse, Daniel S. Katz, Carole Goble.* 2017. __CodeMeta: an exchange schema for software metadata. Version 2.0.__ KNB Data Repository. [doi:10.5063/schema/codemeta-2.0](https://doi.org/10.5063/schema/codemeta-2.0)
 - CodeMeta-1.0: [https://doi.org/10.5063/schema/codemeta-1.0](https://doi.org/10.5063/schema/codemeta-1.0)
@@ -22,7 +22,7 @@ The schema for released versions of CodeMeta are:
 
 CodeMeta is a community project with many contributors spanning research, education, and engineering domains.    - See our [list of Contributors](CONTRIBUTORS.MD). You can cite the CodeMeta schema and project as:
 
-> *Matthew B. Jones, Carl Boettiger, Abby Cabunoc Mayes, Arfon Smith,  Morane Gruenpeter, Valentin Lorentz, Thomas Morrell, Daniel Garijo, Peter Slaughter, Kyle Niemeyer, Yolanda Gil, Martin Fenner, Krzysztof Nowak, Mark Hahnel, Luke Coy, Alice Allen, Mercè Crosas, Ashley Sands, Neil Chue Hong, Patricia Cruse, Daniel S. Katz, Carole Goble, Bryce Mecum, Alejandra Gonzalez-Beltran, Noam Ross.* 2023. __CodeMeta: an exchange schema for software metadata. Version 3.0.__ [https://w3id.org/codemeta/v3.0](https://w3id.org/codemeta/v3.0)
+> *Matthew B. Jones, Carl Boettiger, Abby Cabunoc Mayes, Arfon Smith,  Morane Gruenpeter, Valentin Lorentz, Thomas Morrell, Daniel Garijo, Peter Slaughter, Kyle Niemeyer, Yolanda Gil, Martin Fenner, Krzysztof Nowak, Mark Hahnel, Luke Coy, Alice Allen, Mercè Crosas, Ashley Sands, Neil Chue Hong, Patricia Cruse, Daniel S. Katz, Carole Goble, Bryce Mecum, Alejandra Gonzalez-Beltran, Noam Ross.* 2023. __CodeMeta: an exchange schema for software metadata. Version 3.0.__ [https://w3id.org/codemeta/3.0](https://w3id.org/codemeta/3.0)
 
 ## How you can help
 
