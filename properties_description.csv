@@ -41,7 +41,6 @@ schema:CreativeWork,version,Number or Text,The version of the CreativeWork embod
 schema:CreativeWork,isAccessibleForFree,Boolean,A flag to signal that the publication is accessible for free.
 schema:CreativeWork,isPartOf,CreativeWork,Indicates a CreativeWork that this CreativeWork is (in some sense) part of. Reverse property hasPart
 schema:CreativeWork,hasPart,CreativeWork,Indicates a CreativeWork that is (in some sense) a part of this CreativeWork. Reverse property isPartOf
-schema:CreativeWork,position,Integer or Text,"The position of an item in a series or sequence of items. (While schema.org considers this a property of CreativeWork, it is also the way to indicate ordering in any list (e.g. the Authors list). By default arrays are unordered in JSON-LD"
 schema:Thing,description,Text,A description of the item.
 schema:Thing,identifier,PropertyValue or URL,"The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See background notes for more details."
 schema:Thing,name,Text,"The name of the item (software, Organization)"

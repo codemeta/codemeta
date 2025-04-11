@@ -41,7 +41,6 @@ version,hasSoftwareVersion
 isAccessibleForFree,
 isPartOf,
 hasPart,
-position,
 description,hasShortDescription
 identifier,hasUniqueId
 name,hasName

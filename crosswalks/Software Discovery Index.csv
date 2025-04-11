@@ -41,7 +41,6 @@ version,Software version
 isAccessibleForFree,
 isPartOf,
 hasPart,
-position,
 description,
 identifier,Persistent Identifier
 name,Software title

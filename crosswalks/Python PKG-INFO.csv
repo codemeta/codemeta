@@ -41,7 +41,6 @@ version,Version
 isAccessibleForFree,
 isPartOf,
 hasPart,
-position,
 description,Summary / Description
 identifier,
 name,Name

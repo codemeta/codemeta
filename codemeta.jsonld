@@ -46,7 +46,6 @@
       "name": { "@id": "schema:name"},
       "operatingSystem": { "@id": "schema:operatingSystem"},
       "permissions": { "@id": "schema:permissions"},
-      "position": { "@id": "schema:position"},
       "processorRequirements": { "@id": "schema:processorRequirements"},
       "producer": { "@id": "schema:producer"},
       "programmingLanguage": { "@id": "schema:programmingLanguage"},
