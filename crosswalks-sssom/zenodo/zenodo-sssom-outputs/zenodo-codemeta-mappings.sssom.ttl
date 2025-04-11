@@ -1,0 +1,322 @@
+@prefix codemeta: <https://w3id.org/codemeta/3.0> .
+@prefix dc1: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix semapv: <https://w3id.org/semapv/vocab/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sssom: <https://w3id.org/sssom/> .
+@prefix subject: <https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.json> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sssom:confidence a owl:AnnotationProperty .
+
+sssom:mapping_justification a owl:AnnotationProperty .
+
+sssom:object_label a owl:AnnotationProperty .
+
+sssom:subject_label a owl:AnnotationProperty .
+
+subject:created skos:exactMatch codemeta:created .
+
+<https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonlinks/archive> skos:exactMatch <https://w3id.org/codemeta/3.0links/archive> .
+
+<https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonlinks/self_html> skos:exactMatch <https://w3id.org/codemeta/3.0links/self_html> .
+
+<https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/access_right> skos:exactMatch <https://w3id.org/codemeta/3.0metadata/access_right> .
+
+<https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/contributors/affiliation> skos:exactMatch <https://w3id.org/codemeta/3.0metadata/contributors/affiliation> .
+
+<https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/contributors/name> skos:exactMatch <https://w3id.org/codemeta/3.0metadata/contributors/name> .
+
+<https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/contributors/orcid> skos:narrower <https://w3id.org/codemeta/3.0metadata/contributors/orcid> .
+
+<https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/creators/affiliation> skos:exactMatch <https://w3id.org/codemeta/3.0metadata/creators/affiliation> .
+
+<https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/creators/name> skos:exactMatch <https://w3id.org/codemeta/3.0metadata/creators/name> .
+
+<https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/creators/orcid> skos:narrower <https://w3id.org/codemeta/3.0metadata/creators/orcid> .
+
+<https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/description> skos:exactMatch <https://w3id.org/codemeta/3.0metadata/description> .
+
+<https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/doi> skos:narrower <https://w3id.org/codemeta/3.0metadata/doi> .
+
+<https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/grants/code> skos:exactMatch <https://w3id.org/codemeta/3.0metadata/grants/code> .
+
+<https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/grants/funder/doi> skos:narrower <https://w3id.org/codemeta/3.0metadata/grants/funder/doi> .
+
+<https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/grants/funder/name> skos:exactMatch <https://w3id.org/codemeta/3.0metadata/grants/funder/name> .
+
+<https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/grants/title> skos:exactMatch <https://w3id.org/codemeta/3.0metadata/grants/title> .
+
+<https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/grants/url> skos:exactMatch <https://w3id.org/codemeta/3.0metadata/grants/url> .
+
+<https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/keywords> skos:exactMatch <https://w3id.org/codemeta/3.0metadata/keywords> .
+
+<https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/license/id> skos:exactMatch <https://w3id.org/codemeta/3.0metadata/license/id> .
+
+<https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/publication_date> skos:exactMatch <https://w3id.org/codemeta/3.0metadata/publication_date> .
+
+<https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/title> skos:exactMatch <https://w3id.org/codemeta/3.0metadata/title> .
+
+<https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/version> skos:exactMatch <https://w3id.org/codemeta/3.0metadata/version> .
+
+subject:updated skos:exactMatch codemeta:updated .
+
+<subject:custom/code:codeRepository> skos:exactMatch <codemeta:custom/code:codeRepository> .
+
+<subject:custom/code:programmingLanguage/name> skos:exactMatch <codemeta:custom/code:programmingLanguage/name> .
+
+<https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/related_identifiers/identifier> skos:broader <https://w3id.org/codemeta/3.0metadata/related_identifiers/identifier> ;
+    skos:exactMatch <https://w3id.org/codemeta/3.0metadata/related_identifiers/identifier> .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource <https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/contributors/name> ;
+    owl:annotatedTarget <https://w3id.org/codemeta/3.0metadata/contributors/name> ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "metadata/contributors/name" ;
+    sssom:subject_label "metadata/contributors/name" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource <https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/description> ;
+    owl:annotatedTarget <https://w3id.org/codemeta/3.0metadata/description> ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "metadata/description" ;
+    sssom:subject_label "metadata/description" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:created ;
+    owl:annotatedTarget codemeta:created ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "created" ;
+    sssom:subject_label "created" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource <https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/version> ;
+    owl:annotatedTarget <https://w3id.org/codemeta/3.0metadata/version> ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "metadata/version" ;
+    sssom:subject_label "metadata/version" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:narrower ;
+    owl:annotatedSource <https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/contributors/orcid> ;
+    owl:annotatedTarget <https://w3id.org/codemeta/3.0metadata/contributors/orcid> ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "metadata/contributors/orcid" ;
+    sssom:subject_label "metadata/contributors/orcid" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:narrower ;
+    owl:annotatedSource <https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/creators/orcid> ;
+    owl:annotatedTarget <https://w3id.org/codemeta/3.0metadata/creators/orcid> ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "metadata/creators/orcid" ;
+    sssom:subject_label "metadata/creators/orcid" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:updated ;
+    owl:annotatedTarget codemeta:updated ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "updated" ;
+    sssom:subject_label "updated" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource <https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/grants/title> ;
+    owl:annotatedTarget <https://w3id.org/codemeta/3.0metadata/grants/title> ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "metadata/grants/title" ;
+    sssom:subject_label "metadata/grants/title" .
+
+[] a owl:Ontology ;
+    dc1:description "Zenodo metadata mapping to Codemeta" ;
+    dc1:license "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    pav:authoredOn "2025-04-10"^^xsd:date ;
+    sssom:mapping_provider "https://orcid.org/0000-0002-5082-6404"^^xsd:anyURI ;
+    sssom:mapping_set_id "https://w3id.org/codemeta/crosswalks/zenodo"^^xsd:anyURI .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource <https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/creators/affiliation> ;
+    owl:annotatedTarget <https://w3id.org/codemeta/3.0metadata/creators/affiliation> ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "metadata/creators/affiliation" ;
+    sssom:subject_label "metadata/creators/affiliation" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:narrower ;
+    owl:annotatedSource <https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/grants/funder/doi> ;
+    owl:annotatedTarget <https://w3id.org/codemeta/3.0metadata/grants/funder/doi> ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "metadata/grants/funder/doi" ;
+    sssom:subject_label "metadata/grants/funder/doi" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource <subject:custom/code:codeRepository> ;
+    owl:annotatedTarget <codemeta:custom/code:codeRepository> ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "custom/code:codeRepository" ;
+    sssom:subject_label "custom/code:codeRepository" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:narrower ;
+    owl:annotatedSource <https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/doi> ;
+    owl:annotatedTarget <https://w3id.org/codemeta/3.0metadata/doi> ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "metadata/doi" ;
+    sssom:subject_label "metadata/doi" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource <https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/title> ;
+    owl:annotatedTarget <https://w3id.org/codemeta/3.0metadata/title> ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "metadata/title" ;
+    sssom:subject_label "metadata/title" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource <https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/license/id> ;
+    owl:annotatedTarget <https://w3id.org/codemeta/3.0metadata/license/id> ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "metadata/license/id" ;
+    sssom:subject_label "metadata/license/id" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource <https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/grants/url> ;
+    owl:annotatedTarget <https://w3id.org/codemeta/3.0metadata/grants/url> ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "metadata/grants/url" ;
+    sssom:subject_label "metadata/grants/url" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource <https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/grants/code> ;
+    owl:annotatedTarget <https://w3id.org/codemeta/3.0metadata/grants/code> ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "metadata/grants/code" ;
+    sssom:subject_label "metadata/grants/code" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource <https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/creators/name> ;
+    owl:annotatedTarget <https://w3id.org/codemeta/3.0metadata/creators/name> ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "metadata/creators/name" ;
+    sssom:subject_label "metadata/creators/name" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource <https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/keywords> ;
+    owl:annotatedTarget <https://w3id.org/codemeta/3.0metadata/keywords> ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "metadata/keywords" ;
+    sssom:subject_label "metadata/keywords" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource <subject:custom/code:programmingLanguage/name> ;
+    owl:annotatedTarget <codemeta:custom/code:programmingLanguage/name> ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "custom/code:programmingLanguage/name" ;
+    sssom:subject_label "custom/code:programmingLanguage/name" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource <https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/access_right> ;
+    owl:annotatedTarget <https://w3id.org/codemeta/3.0metadata/access_right> ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "metadata/access_right" ;
+    sssom:subject_label "metadata/access_right" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource <https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonlinks/self_html> ;
+    owl:annotatedTarget <https://w3id.org/codemeta/3.0links/self_html> ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "links/self_html" ;
+    sssom:subject_label "links/self_html" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource <https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/grants/funder/name> ;
+    owl:annotatedTarget <https://w3id.org/codemeta/3.0metadata/grants/funder/name> ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "metadata/grants/funder/name" ;
+    sssom:subject_label "metadata/grants/funder/name" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource <https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonlinks/archive> ;
+    owl:annotatedTarget <https://w3id.org/codemeta/3.0links/archive> ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "links/archive" ;
+    sssom:subject_label "links/archive" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource <https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/publication_date> ;
+    owl:annotatedTarget <https://w3id.org/codemeta/3.0metadata/publication_date> ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "metadata/publication_date" ;
+    sssom:subject_label "metadata/publication_date" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:broader ;
+    owl:annotatedSource <https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/related_identifiers/identifier> ;
+    owl:annotatedTarget <https://w3id.org/codemeta/3.0metadata/related_identifiers/identifier> ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "metadata/related_identifiers/identifier" ;
+    sssom:subject_label "metadata/related_identifiers/identifier" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource <https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/contributors/affiliation> ;
+    owl:annotatedTarget <https://w3id.org/codemeta/3.0metadata/contributors/affiliation> ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "metadata/contributors/affiliation" ;
+    sssom:subject_label "metadata/contributors/affiliation" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource <https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.jsonmetadata/related_identifiers/identifier> ;
+    owl:annotatedTarget <https://w3id.org/codemeta/3.0metadata/related_identifiers/identifier> ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "metadata/related_identifiers/identifier" ;
+    sssom:subject_label "metadata/related_identifiers/identifier" .
+
+

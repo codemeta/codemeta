@@ -1,0 +1,62 @@
+# curie_map: # This contains the URLs prefixes used in the mapping file
+#   skos: http://www.w3.org/2004/02/skos/core# ### Always needed. Do not modify
+#   sssom: https://w3id.org/sssom/             ### Always needed. Do not modify
+#   subject: "https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.json"
+#   schema: "http://schema.org/" ### Always needed. Do not modify
+#   codemeta: "https://w3id.org/codemeta/3.0" ### Always needed. Do not modify
+# license: https://creativecommons.org/publicdomain/zero/1.0/
+# mapping_date: "2025-04-10"
+# mapping_set_description: "Zenodo metadata mapping to Codemeta"
+# mapping_provider: "https://orcid.org/0000-0002-5082-6404"
+# mapping_set_id: https://w3id.org/codemeta/crosswalks/zenodo
+# subject_documentation: "https://developers.zenodo.org/"
+# 
+subject_id	subject_label	predicate_id	object_id	object_label	match_type	confidence
+subject:metadata/creators/affiliation	metadata/creators/affiliation	skos:exactMatch	codemeta:metadata/creators/affiliation	metadata/creators/affiliation	SSSOM:HumanCurated	1
+subject:metadata/creators/orcid	metadata/creators/orcid	skos:narrower	codemeta:metadata/creators/orcid	metadata/creators/orcid	SSSOM:HumanCurated	1
+subject:metadata/creators/name	metadata/creators/name	skos:exactMatch	codemeta:metadata/creators/name	metadata/creators/name	SSSOM:HumanCurated	1
+subject:metadata/related_identifiers/identifier	metadata/related_identifiers/identifier	skos:broader	codemeta:metadata/related_identifiers/identifier	metadata/related_identifiers/identifier	SSSOM:HumanCurated	1
+subject:custom/code:codeRepository	custom/code:codeRepository	skos:exactMatch	codemeta:custom/code:codeRepository	custom/code:codeRepository	SSSOM:HumanCurated	1
+subject:metadata/contributors/affiliation	metadata/contributors/affiliation	skos:exactMatch	codemeta:metadata/contributors/affiliation	metadata/contributors/affiliation	SSSOM:HumanCurated	1
+subject:metadata/contributors/orcid	metadata/contributors/orcid	skos:narrower	codemeta:metadata/contributors/orcid	metadata/contributors/orcid	SSSOM:HumanCurated	1
+subject:metadata/contributors/name	metadata/contributors/name	skos:exactMatch	codemeta:metadata/contributors/name	metadata/contributors/name	SSSOM:HumanCurated	1
+subject:created	created	skos:exactMatch	codemeta:created	created	SSSOM:HumanCurated	1
+subject:updated	updated	skos:exactMatch	codemeta:updated	updated	SSSOM:HumanCurated	1
+subject:metadata/publication_date	metadata/publication_date	skos:exactMatch	codemeta:metadata/publication_date	metadata/publication_date	SSSOM:HumanCurated	1
+subject:metadata/description	metadata/description	skos:exactMatch	codemeta:metadata/description	metadata/description	SSSOM:HumanCurated	1
+subject:links/archive	links/archive	skos:exactMatch	codemeta:links/archive	links/archive	SSSOM:HumanCurated	1
+subject:metadata/contributors/affiliation	metadata/contributors/affiliation	skos:exactMatch	codemeta:metadata/contributors/affiliation	metadata/contributors/affiliation	SSSOM:HumanCurated	1
+subject:metadata/contributors/orcid	metadata/contributors/orcid	skos:narrower	codemeta:metadata/contributors/orcid	metadata/contributors/orcid	SSSOM:HumanCurated	1
+subject:metadata/contributors/name	metadata/contributors/name	skos:exactMatch	codemeta:metadata/contributors/name	metadata/contributors/name	SSSOM:HumanCurated	1
+subject:metadata/grants/funder/doi	metadata/grants/funder/doi	skos:narrower	codemeta:metadata/grants/funder/doi	metadata/grants/funder/doi	SSSOM:HumanCurated	1
+subject:metadata/grants/funder/name	metadata/grants/funder/name	skos:exactMatch	codemeta:metadata/grants/funder/name	metadata/grants/funder/name	SSSOM:HumanCurated	1
+subject:metadata/grants/funder/doi	metadata/grants/funder/doi	skos:narrower	codemeta:metadata/grants/funder/doi	metadata/grants/funder/doi	SSSOM:HumanCurated	1
+subject:metadata/grants/funder/name	metadata/grants/funder/name	skos:exactMatch	codemeta:metadata/grants/funder/name	metadata/grants/funder/name	SSSOM:HumanCurated	1
+subject:metadata/grants/code	metadata/grants/code	skos:exactMatch	codemeta:metadata/grants/code	metadata/grants/code	SSSOM:HumanCurated	1
+subject:metadata/grants/title	metadata/grants/title	skos:exactMatch	codemeta:metadata/grants/title	metadata/grants/title	SSSOM:HumanCurated	1
+subject:metadata/grants/url	metadata/grants/url	skos:exactMatch	codemeta:metadata/grants/url	metadata/grants/url	SSSOM:HumanCurated	1
+subject:metadata/related_identifiers/identifier	metadata/related_identifiers/identifier	skos:exactMatch	codemeta:metadata/related_identifiers/identifier	metadata/related_identifiers/identifier	SSSOM:HumanCurated	1
+subject:metadata/related_identifiers/identifier	metadata/related_identifiers/identifier	skos:exactMatch	codemeta:metadata/related_identifiers/identifier	metadata/related_identifiers/identifier	SSSOM:HumanCurated	1
+subject:metadata/doi	metadata/doi	skos:narrower	codemeta:metadata/doi	metadata/doi	SSSOM:HumanCurated	1
+subject:metadata/access_right	metadata/access_right	skos:exactMatch	codemeta:metadata/access_right	metadata/access_right	SSSOM:HumanCurated	1
+subject:metadata/related_identifiers/identifier	metadata/related_identifiers/identifier	skos:exactMatch	codemeta:metadata/related_identifiers/identifier	metadata/related_identifiers/identifier	SSSOM:HumanCurated	1
+subject:metadata/related_identifiers/identifier	metadata/related_identifiers/identifier	skos:broader	codemeta:metadata/related_identifiers/identifier	metadata/related_identifiers/identifier	SSSOM:HumanCurated	1
+subject:metadata/keywords	metadata/keywords	skos:exactMatch	codemeta:metadata/keywords	metadata/keywords	SSSOM:HumanCurated	1
+subject:metadata/license/id	metadata/license/id	skos:exactMatch	codemeta:metadata/license/id	metadata/license/id	SSSOM:HumanCurated	1
+subject:metadata/title	metadata/title	skos:exactMatch	codemeta:metadata/title	metadata/title	SSSOM:HumanCurated	1
+subject:metadata/contributors/affiliation	metadata/contributors/affiliation	skos:exactMatch	codemeta:metadata/contributors/affiliation	metadata/contributors/affiliation	SSSOM:HumanCurated	1
+subject:metadata/contributors/orcid	metadata/contributors/orcid	skos:narrower	codemeta:metadata/contributors/orcid	metadata/contributors/orcid	SSSOM:HumanCurated	1
+subject:metadata/contributors/name	metadata/contributors/name	skos:exactMatch	codemeta:metadata/contributors/name	metadata/contributors/name	SSSOM:HumanCurated	1
+subject:custom/code:programmingLanguage/name	custom/code:programmingLanguage/name	skos:exactMatch	codemeta:custom/code:programmingLanguage/name	custom/code:programmingLanguage/name	SSSOM:HumanCurated	1
+subject:metadata/related_identifiers/identifier	metadata/related_identifiers/identifier	skos:exactMatch	codemeta:metadata/related_identifiers/identifier	metadata/related_identifiers/identifier	SSSOM:HumanCurated	1
+subject:metadata/related_identifiers/identifier	metadata/related_identifiers/identifier	skos:broader	codemeta:metadata/related_identifiers/identifier	metadata/related_identifiers/identifier	SSSOM:HumanCurated	1
+subject:metadata/description	metadata/description	skos:exactMatch	codemeta:metadata/description	metadata/description	SSSOM:HumanCurated	1
+subject:metadata/related_identifiers/identifier	metadata/related_identifiers/identifier	skos:exactMatch	codemeta:metadata/related_identifiers/identifier	metadata/related_identifiers/identifier	SSSOM:HumanCurated	1
+subject:metadata/related_identifiers/identifier	metadata/related_identifiers/identifier	skos:exactMatch	codemeta:metadata/related_identifiers/identifier	metadata/related_identifiers/identifier	SSSOM:HumanCurated	1
+subject:metadata/version	metadata/version	skos:exactMatch	codemeta:metadata/version	metadata/version	SSSOM:HumanCurated	1
+subject:metadata/contributors/affiliation	metadata/contributors/affiliation	skos:exactMatch	codemeta:metadata/contributors/affiliation	metadata/contributors/affiliation	SSSOM:HumanCurated	1
+subject:metadata/contributors/orcid	metadata/contributors/orcid	skos:narrower	codemeta:metadata/contributors/orcid	metadata/contributors/orcid	SSSOM:HumanCurated	1
+subject:metadata/contributors/name	metadata/contributors/name	skos:exactMatch	codemeta:metadata/contributors/name	metadata/contributors/name	SSSOM:HumanCurated	1
+subject:metadata/related_identifiers/identifier	metadata/related_identifiers/identifier	skos:exactMatch	codemeta:metadata/related_identifiers/identifier	metadata/related_identifiers/identifier	SSSOM:HumanCurated	1
+subject:links/self_html	links/self_html	skos:exactMatch	codemeta:links/self_html	links/self_html	SSSOM:HumanCurated	1
+subject:metadata/version	metadata/version	skos:exactMatch	codemeta:metadata/version	metadata/version	SSSOM:HumanCurated	1
