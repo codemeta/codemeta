@@ -153,12 +153,15 @@
   "continuousIntegration": "https://github.com/codemeta/codemeta/actions",
   "developmentStatus": "active",
   "downloadUrl": "https://github.com/codemeta/codemeta/archive/2.0.zip",
-  "funder": { 
+  "funding": {
+      "@type": "Grant",
+      "identifier":"1549758",
+      "name":"Codemeta: A Rosetta Stone for Metadata in Scientific Software",
+      "funder": {
           "@id": "https://doi.org/10.13039/100000001",
           "@type": "Organization",
           "name": "National Science Foundation"
   },
-  "funding":"1549758; Codemeta: A Rosetta Stone for Metadata in Scientific Software",
   "keywords": [
     "metadata",
     "software"
