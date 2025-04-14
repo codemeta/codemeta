@@ -1,0 +1,73 @@
+Property,csdms
+codeRepository,Source web address
+programmingLanguage,Programming language / Program language other
+review,
+runtimePlatform,
+targetProduct,
+applicationCategory,module_type
+applicationSubCategory,
+downloadUrl,
+fileSize,
+installUrl,
+memoryRequirements,Memory requirements
+operatingSystem,Supported platforms / Supported platforms other
+permissions,
+processorRequirements,
+releaseNotes,
+softwareHelp,
+softwareRequirements,
+softwareVersion,
+storageRequirements,
+supportingData,
+author, First name / Last name
+citation,
+contributor,
+copyrightHolder,
+copyrightYear,
+dateCreated,Start year development
+dateModified,End year module development
+datePublished,
+editor,
+encoding,
+fileFormat,
+funder,
+keywords,Module domain / model keywords
+license,Program license type
+producer,
+provider,Contact details modeler
+publisher,
+sponsor,
+version,
+isAccessibleForFree,
+isPartOf,Indicate framework if the model is part of a larger framework
+hasPart,
+position,
+description,one-line module description / extended module description
+identifier,DOI name model / For model version / Year version submitted / Link to DOI file
+name,Module name
+sameAs,Also known as
+url,Module website
+relatedLink,
+givenName,First name
+familyName,Last name
+email,Email address
+affiliation,Institute
+identifier,
+name,
+address,Postal address1 / Postal address2
+reviewAspect,
+reviewBody,
+endDate,
+roleName,
+startDate,
+softwareSuggestions,
+maintainer,
+continuousIntegration,
+buildInstructions,
+developmentStatus,Development still active
+funding,
+issueTracker,
+referencePublication,
+readme,
+hasSourceCode,
+isSourceCodeOf,
