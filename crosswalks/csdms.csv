@@ -4,7 +4,7 @@ programmingLanguage,Programming language / Program language other
 review,
 runtimePlatform,
 targetProduct,
-applicationCategory,module_type
+applicationCategory,
 applicationSubCategory,
 downloadUrl,
 fileSize,
@@ -19,13 +19,13 @@ softwareRequirements,
 softwareVersion,
 storageRequirements,
 supportingData,
-author, First name / Last name
+author,
 citation,
 contributor,
 copyrightHolder,
 copyrightYear,
 dateCreated,Start year development
-dateModified,End year module development
+dateModified,
 datePublished,
 editor,
 encoding,
@@ -34,18 +34,18 @@ funder,
 keywords,ModelDomain / Model keywords
 license,Program license type / Program license type other
 producer,
-provider,Contact details modeler
+provider,
 publisher,
 sponsor,
 version,
 isAccessibleForFree,
-isPartOf,Indicate framework if the model is part of a larger framework
+isPartOf,ModelFramework
 hasPart,
 position,
 description,One-line model description / Extended description of the model
 identifier,DOI model / DOI assigned to model version / DOI-filelink
 name,Module name
-sameAs,Also known as
+sameAs,
 url,Model website
 relatedLink,
 givenName,First name
