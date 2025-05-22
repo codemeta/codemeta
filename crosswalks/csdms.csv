@@ -46,7 +46,7 @@ description,One-line model description / Extended description of the model
 identifier,DOI name model / For model version / Year version submitted / Link to DOI file
 name,Module name
 sameAs,Also known as
-url,Module website
+url,Model website
 relatedLink,
 givenName,First name
 familyName,Last name
