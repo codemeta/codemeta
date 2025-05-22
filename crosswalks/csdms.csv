@@ -43,7 +43,7 @@ isPartOf,Indicate framework if the model is part of a larger framework
 hasPart,
 position,
 description,One-line model description / Extended description of the model
-identifier,DOI name model / For model version / Year version submitted / Link to DOI file
+identifier,DOI model / DOI assigned to model version / DOI-filelink
 name,Module name
 sameAs,Also known as
 url,Model website
