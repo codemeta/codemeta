@@ -42,7 +42,7 @@ isAccessibleForFree,
 isPartOf,Indicate framework if the model is part of a larger framework
 hasPart,
 position,
-description,one-line module description / extended module description
+description,One-line model description / Extended description of the model
 identifier,DOI name model / For model version / Year version submitted / Link to DOI file
 name,Module name
 sameAs,Also known as
