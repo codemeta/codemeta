@@ -45,8 +45,8 @@ position,
 description,description
 identifier,id
 name,name
-sameAs,homepage
-url,zbmath_url
+sameAs,zbmath_url
+url,homepage
 relatedLink,orms_id
 givenName,
 familyName,
