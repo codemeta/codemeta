@@ -69,8 +69,15 @@ Here you will need to fill some extra columns with the path (parent term) in the
       | ----------- | ------------- | ---------------- | ------------------ |
       | name        | name          | owner            | author             |
 
+
 #### My metadata term is a composite of another term. How do I represent it?
 If you have a codemeta term that can be composed as a combination of 2 or more terms in your vocabulary, you can use the `part_of` relationship for the mapping, and the `combined_mapping` column to specify how both terms are combined. See for example the [bibtex crosswalk](https://github.com/oeg-upm/codemeta/blob/crosswalks_oeg/crosswalks-sssom/bibtex/bibtex-codemeta-mappings.csv), which combines `month` and `year` into `datePublished`.
+
+### What happens if the format used by the term is different? ###
+
+Apparently, we need to represent two types of relationships. Let's look at an example: Format (DataCite) and programmingLanguage (CodeMeta). Format is more generic than programmingLanguage, but the formats also differ—DataCite uses MIME types, while programmingLanguage may be expressed as plain text. How can we represent this situation?
+
+In this case, our recommendation is to include the relationship defined by this methodology (more_generic_than) in the 'type of relation' column, and to add a reference to the format in the 'comments' column.
 
 ### Final considerations
 Some of the strategies defined in this methodology are not directly applicable in SSSOM (e.g., formula representation). However, we consider this information  key when reading a crosswalk, and therefore we propose to document it.
