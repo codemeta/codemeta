@@ -19,6 +19,15 @@ def get_prefix(concept, context):
                 return prefix
     return "codemeta"
 
+#Function to process the path of the namespace
+def process_path(path):
+    new_path = path
+    if path.startswith("/"):
+        new_path = path[1:]
+    if path and not path.endswith("/"):
+        new_path = new_path+"/"
+
+    return new_path
 #Function to convert a csv to a tsv and turtle
 def convert_csv_to_tsv(input_metadata_file, input_file, output_file, ttl_file, context_data):
     
@@ -57,7 +66,7 @@ def convert_csv_to_tsv(input_metadata_file, input_file, output_file, ttl_file, c
             predicate_id = "skos:broader"
         elif (row["type_relation"]=="close_match"):
             predicate_id = "skos:closeMatch"    
-        row = ["subject:"+row["source_term"],row["source_term"],predicate_id,get_prefix(row["codemeta_term"], context_data)+":"+row["codemeta_term"],row["codemeta_term"],"SSSOM:HumanCurated",1]
+        row = ["subject:"+process_path(row["source_term_path"])+row["source_term"],row["source_term"],predicate_id,get_prefix(row["codemeta_term"], context_data)+":"+process_path(row["codemeta_term_path"])+row["codemeta_term"],row["codemeta_term"],"SSSOM:HumanCurated",1]
         writer.writerow(row)
     
     # Close the files
