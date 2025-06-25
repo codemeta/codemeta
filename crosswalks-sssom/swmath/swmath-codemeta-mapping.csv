@@ -1,0 +1,13 @@
+source_term,codemeta_term,type_relation,combined_mapping,comments
+id,codemeta:id,exact_match,,
+name,codemeta:name,exact_match,,
+description,codemeta:description,exact_match,,
+homepage,codemeta:sameAs,exact_match,,"Maps homepage URL to sameAs"
+source_code,codemeta:codeRepository,exact_match,,
+related_software/name,codemeta:supportingData/codemeta:name,exact_match,,"Related software name maps to supportingData name"
+related_software/id,codemeta:supportingData/codemeta:id,exact_match,,"Related software id mapped with full URL"
+authors/codemeta:name,codemeta:author/codemeta:name,exact_match,,"Authors name mapped directly"
+references,codemeta:citation/codemeta:id,exact_match,,"Reference IDs mapped to citation IDs with API URLs"
+references_year_alt,codemeta:citation/year,part_of,,"Year is part of citation but not directly mapped in CodeMeta"
+classification,codemeta:keywords,more_generic_than,,"Classification codes are more generic than keywords in CodeMeta"
+
