@@ -57,7 +57,7 @@ def convert_csv_to_tsv(input_metadata_file, input_file, output_file, ttl_file, c
             predicate_id = "skos:broader"
         elif (row["type_relation"]=="close_match"):
             predicate_id = "skos:closeMatch"    
-        row = ["subject:"+row["source_term"],row["source_term"],predicate_id,get_prefix(row["source_term"], context_data)+":"+row["source_term"],row["source_term"],"SSSOM:HumanCurated",1]
+        row = ["subject:"+row["source_term"],row["source_term"],predicate_id,get_prefix(row["codemeta_term"], context_data)+":"+row["codemeta_term"],row["codemeta_term"],"SSSOM:HumanCurated",1]
         writer.writerow(row)
     
     # Close the files
