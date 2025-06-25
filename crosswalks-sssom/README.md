@@ -29,6 +29,8 @@ The methodology for generating the files required to create the crosswalk is as 
        - more_specific_than: the source vocabulary term the codemeta term is more specific than the codemeta term. For example, "hal_id more_specific_than codemeta:identifier" means that the hal id is a more concrete term than the "identifier" property in CodeMeta. 
        - more_generic_than:  The source vocabulary term is more generic than the CodeMeta term. For example, " status more_generic_than codemeta:developmentStatus" means that the status is a more generic term than the "developmentStatus" property in CodeMeta.
        - close_match: The subject and the object are sufficiently similar that they can be used interchangeably in some information retrieval applications. For example, if the source and codemeta properties refer to dates, but the format is different.
+   - source_term_path: Indicates the path of the term in the source specification or vocabulary.
+   - codemeta_term_path: Indicates the path of the term in Codemeta.
    - combined_mapping: **It applies ONLY to a part-of relationship**.
      This column defines the formula used to combine terms between schemas.
      For example, if the CodeMeta vocabulary has the term `date`, and the source vocabulary has the terms `year` and `month`, the combined_mapping should be as follows: $(year) + $(month)`.
@@ -61,11 +63,11 @@ In both cases `identifier` is more specific than `hal_id` and more specific than
 
 #### What if my specification has hierarchical concepts like authors.name?
 In some cases, terms may have a structure as follows: `vocab.owner.name is an exact match to codemeta.author.name`
-Here you will need to include the parent term in the mapping. Hierarchy will be delimited by the character '/'. For example:
+Here you will need to fill some extra columns with the path (parent term) in the mapping. Hierarchy will be delimited by the character '/'. For example:
       
-      | source_term | codemeta_term |
-      | ----------- | ----------- |
-      | owner/name  | author/name |
+      | source_term | codemeta_term | source_term_path | codemeta_term_path |
+      | ----------- | ------------- | ---------------- | ------------------ |
+      | name        | name          | owner            | author             |
 
 #### My metadata term is a composite of another term. How do I represent it?
 If you have a codemeta term that can be composed as a combination of 2 or more terms in your vocabulary, you can use the `part_of` relationship for the mapping, and the `combined_mapping` column to specify how both terms are combined. See for example the [bibtex crosswalk](https://github.com/oeg-upm/codemeta/blob/crosswalks_oeg/crosswalks-sssom/bibtex/bibtex-codemeta-mappings.csv), which combines `month` and `year` into `datePublished`.
