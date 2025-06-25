@@ -1,12 +1,12 @@
-@prefix codemeta: <https://codemeta.github.io/terms/> .
-@prefix dc1: <http://purl.org/dc/terms/> .
+@prefix codemeta: <https://w3id.org/codemeta/3.0/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix schema1: <http://schema.org/> .
 @prefix semapv: <https://w3id.org/semapv/vocab/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix sssom: <https://w3id.org/sssom/> .
-@prefix subject: <https://w3id.org/codemeta/crosswalks/datacite/vocab> .
+@prefix subject: <https://schema.datacite.org/meta/kernel-4.6/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 sssom:confidence a owl:AnnotationProperty .
@@ -17,93 +17,102 @@ sssom:object_label a owl:AnnotationProperty .
 
 sssom:subject_label a owl:AnnotationProperty .
 
-subject:Date skos:broader codemeta:Date .
+subject:Format skos:broader schema1:programmingLanguage .
 
-subject:FundingReference skos:closeMatch codemeta:FundingReference .
+<https://schema.datacite.org/meta/kernel-4.6/contributor/affiliation> skos:exactMatch <https://w3id.org/codemeta/3.0/affiliation/legalName> .
 
-subject:Publisher skos:closeMatch codemeta:Publisher .
+<https://schema.datacite.org/meta/kernel-4.6/contributor/affiliation/affiliationIdentifier> skos:exactMatch <http://schema.org/affiliation/identifier> .
 
-subject:RelatedIdentifier skos:closeMatch codemeta:RelatedIdentifier .
+<https://schema.datacite.org/meta/kernel-4.6/contributor/contributorName> skos:exactMatch <http://schema.org/contributor/name> .
 
-subject:Rights skos:closeMatch codemeta:Rights .
+<https://schema.datacite.org/meta/kernel-4.6/contributor/nameIdentifier> skos:exactMatch <http://schema.org/contributor/identifier> .
 
-subject:affiliation skos:exactMatch schema1:affiliation .
+<https://schema.datacite.org/meta/kernel-4.6/creator/affiliation> skos:exactMatch <https://w3id.org/codemeta/3.0/affiliation/legalName> .
 
-subject:awardNumber skos:exactMatch codemeta:awardNumber .
+<https://schema.datacite.org/meta/kernel-4.6/creator/affiliation/affiliationIdentifier> skos:exactMatch <https://w3id.org/codemeta/3.0/affiliation/legalName> .
 
-subject:contributor skos:exactMatch schema1:contributor .
+<https://schema.datacite.org/meta/kernel-4.6/creator/creatorName> skos:exactMatch <http://schema.org/author/name> .
 
-subject:creatorName skos:closeMatch codemeta:creatorName .
-
-subject:creators skos:exactMatch codemeta:creators .
+<https://schema.datacite.org/meta/kernel-4.6/creator/nameIdentifier> skos:exactMatch <http://schema.org/author/identifier> .
 
 subject:description skos:exactMatch schema1:description .
 
-subject:familyName skos:exactMatch schema1:familyName .
+subject:format skos:exactMatch schema1:fileFormat .
 
-subject:givenName skos:exactMatch schema1:givenName .
+<https://schema.datacite.org/meta/kernel-4.6/fundingReference/awardNumber> skos:exactMatch codemeta:funding .
 
-subject:identifier skos:exactMatch schema1:identifier .
+<https://schema.datacite.org/meta/kernel-4.6/fundingReference/funderIdentifier> skos:exactMatch <http://schema.org/funder/identifier> .
 
-subject:nameIdentifier skos:exactMatch codemeta:nameIdentifier .
+<https://schema.datacite.org/meta/kernel-4.6/fundingReference/funderName> skos:exactMatch <http://schema.org/funder/name> .
 
-subject:publicationYear skos:exactMatch codemeta:publicationYear .
+subject:publisher skos:exactMatch <http://schema.org/publisher/name> .
 
-subject:size skos:exactMatch codemeta:size .
+<https://schema.datacite.org/meta/kernel-4.6/publisher/publisher> skos:exactMatch <http://schema.org/publisher/identifier> .
 
-subject:subject skos:exactMatch codemeta:subject .
+subject:relatedIdentifier skos:exactMatch schema1:relatedLink .
 
-subject:title skos:exactMatch codemeta:title .
+<https://schema.datacite.org/meta/kernel-4.6/rights/rightsURI> skos:exactMatch schema1:license .
 
-subject:version skos:exactMatch schema1:version .
+subject:size skos:exactMatch schema1:fileSize .
 
-subject:Format skos:broader codemeta:Format ;
-    skos:exactMatch codemeta:Format .
+subject:subject skos:exactMatch schema1:keywords .
+
+subject:title skos:exactMatch schema1:name .
+
+subject:identifier skos:closeMatch schema1:identifier ;
+    skos:exactMatch schema1:identifier .
+
+subject:version skos:broader schema1:softwareVersion ;
+    skos:exactMatch schema1:version .
+
+<https://schema.datacite.org/meta/kernel-4.6/date/dateType> skos:broader schema1:dateCreated,
+        schema1:dateModified,
+        codemeta:publicationYear .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:exactMatch ;
-    owl:annotatedSource subject:awardNumber ;
-    owl:annotatedTarget codemeta:awardNumber ;
+    owl:annotatedSource <https://schema.datacite.org/meta/kernel-4.6/fundingReference/funderName> ;
+    owl:annotatedTarget <http://schema.org/funder/name> ;
     sssom:confidence 1e+00 ;
     sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "awardNumber" ;
-    sssom:subject_label "awardNumber" .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:exactMatch ;
-    owl:annotatedSource subject:nameIdentifier ;
-    owl:annotatedTarget codemeta:nameIdentifier ;
-    sssom:confidence 1e+00 ;
-    sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "nameIdentifier" ;
-    sssom:subject_label "nameIdentifier" .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:closeMatch ;
-    owl:annotatedSource subject:creatorName ;
-    owl:annotatedTarget codemeta:creatorName ;
-    sssom:confidence 1e+00 ;
-    sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "creatorName" ;
-    sssom:subject_label "creatorName" .
+    sssom:object_label "name" ;
+    sssom:subject_label "funderName" .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:broader ;
-    owl:annotatedSource subject:Date ;
-    owl:annotatedTarget codemeta:Date ;
+    owl:annotatedSource <https://schema.datacite.org/meta/kernel-4.6/date/dateType> ;
+    owl:annotatedTarget codemeta:publicationYear ;
     sssom:confidence 1e+00 ;
     sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "Date" ;
-    sssom:subject_label "Date" .
+    sssom:object_label "publicationYear" ;
+    sssom:subject_label "dateType" .
 
 [] a owl:Axiom ;
-    owl:annotatedProperty skos:closeMatch ;
-    owl:annotatedSource subject:Publisher ;
-    owl:annotatedTarget codemeta:Publisher ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource <https://schema.datacite.org/meta/kernel-4.6/creator/affiliation> ;
+    owl:annotatedTarget <https://w3id.org/codemeta/3.0/affiliation/legalName> ;
     sssom:confidence 1e+00 ;
     sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "Publisher" ;
-    sssom:subject_label "Publisher" .
+    sssom:object_label "legalName" ;
+    sssom:subject_label "affiliation" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:identifier ;
+    owl:annotatedTarget schema1:identifier ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "identifier" ;
+    sssom:subject_label "identifier" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:broader ;
+    owl:annotatedSource subject:Format ;
+    owl:annotatedTarget schema1:programmingLanguage ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "programmingLanguage" ;
+    sssom:subject_label "Format" .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:exactMatch ;
@@ -115,49 +124,92 @@ subject:Format skos:broader codemeta:Format ;
     sssom:subject_label "version" .
 
 [] a owl:Axiom ;
-    owl:annotatedProperty skos:broader ;
-    owl:annotatedSource subject:Format ;
-    owl:annotatedTarget codemeta:Format ;
-    sssom:confidence 1e+00 ;
-    sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "Format" ;
-    sssom:subject_label "Format" .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:exactMatch ;
-    owl:annotatedSource subject:familyName ;
-    owl:annotatedTarget schema1:familyName ;
-    sssom:confidence 1e+00 ;
-    sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "familyName" ;
-    sssom:subject_label "familyName" .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:exactMatch ;
-    owl:annotatedSource subject:givenName ;
-    owl:annotatedTarget schema1:givenName ;
-    sssom:confidence 1e+00 ;
-    sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "givenName" ;
-    sssom:subject_label "givenName" .
-
-[] a owl:Axiom ;
     owl:annotatedProperty skos:exactMatch ;
     owl:annotatedSource subject:subject ;
-    owl:annotatedTarget codemeta:subject ;
+    owl:annotatedTarget schema1:keywords ;
     sssom:confidence 1e+00 ;
     sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "subject" ;
+    sssom:object_label "keywords" ;
     sssom:subject_label "subject" .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:exactMatch ;
-    owl:annotatedSource subject:size ;
-    owl:annotatedTarget codemeta:size ;
+    owl:annotatedSource <https://schema.datacite.org/meta/kernel-4.6/contributor/contributorName> ;
+    owl:annotatedTarget <http://schema.org/contributor/name> ;
     sssom:confidence 1e+00 ;
     sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "size" ;
-    sssom:subject_label "size" .
+    sssom:object_label "name" ;
+    sssom:subject_label "contributorName" .
+
+[] a owl:Ontology ;
+    dcterms:description "Mapping between codemeta and datacite following out methodology" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    pav:authoredOn "2025-04-01"^^xsd:date ;
+    sssom:mapping_provider "https://codemeta.github.io/"^^xsd:anyURI ;
+    sssom:mapping_set_id "https://w3id.org/codemeta/crosswalks/datacite"^^xsd:anyURI .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:relatedIdentifier ;
+    owl:annotatedTarget schema1:relatedLink ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "relatedLink" ;
+    sssom:subject_label "relatedIdentifier" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:title ;
+    owl:annotatedTarget schema1:name ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "name" ;
+    sssom:subject_label "title" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource <https://schema.datacite.org/meta/kernel-4.6/fundingReference/awardNumber> ;
+    owl:annotatedTarget codemeta:funding ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "funding" ;
+    sssom:subject_label "awardNumber" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource <https://schema.datacite.org/meta/kernel-4.6/contributor/affiliation/affiliationIdentifier> ;
+    owl:annotatedTarget <http://schema.org/affiliation/identifier> ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "identifier" ;
+    sssom:subject_label "affiliationIdentifier" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:publisher ;
+    owl:annotatedTarget <http://schema.org/publisher/name> ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "name" ;
+    sssom:subject_label "publisher" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource <https://schema.datacite.org/meta/kernel-4.6/rights/rightsURI> ;
+    owl:annotatedTarget schema1:license ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "license" ;
+    sssom:subject_label "rightsURI" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:broader ;
+    owl:annotatedSource <https://schema.datacite.org/meta/kernel-4.6/date/dateType> ;
+    owl:annotatedTarget schema1:dateCreated ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "dateCreated" ;
+    sssom:subject_label "dateType" .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:exactMatch ;
@@ -170,51 +222,51 @@ subject:Format skos:broader codemeta:Format ;
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:exactMatch ;
-    owl:annotatedSource subject:creators ;
-    owl:annotatedTarget codemeta:creators ;
+    owl:annotatedSource <https://schema.datacite.org/meta/kernel-4.6/contributor/affiliation> ;
+    owl:annotatedTarget <https://w3id.org/codemeta/3.0/affiliation/legalName> ;
     sssom:confidence 1e+00 ;
     sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "creators" ;
-    sssom:subject_label "creators" .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:closeMatch ;
-    owl:annotatedSource subject:FundingReference ;
-    owl:annotatedTarget codemeta:FundingReference ;
-    sssom:confidence 1e+00 ;
-    sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "FundingReference" ;
-    sssom:subject_label "FundingReference" .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:exactMatch ;
-    owl:annotatedSource subject:Format ;
-    owl:annotatedTarget codemeta:Format ;
-    sssom:confidence 1e+00 ;
-    sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "Format" ;
-    sssom:subject_label "Format" .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:closeMatch ;
-    owl:annotatedSource subject:RelatedIdentifier ;
-    owl:annotatedTarget codemeta:RelatedIdentifier ;
-    sssom:confidence 1e+00 ;
-    sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "RelatedIdentifier" ;
-    sssom:subject_label "RelatedIdentifier" .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:exactMatch ;
-    owl:annotatedSource subject:affiliation ;
-    owl:annotatedTarget schema1:affiliation ;
-    sssom:confidence 1e+00 ;
-    sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "affiliation" ;
+    sssom:object_label "legalName" ;
     sssom:subject_label "affiliation" .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource <https://schema.datacite.org/meta/kernel-4.6/publisher/publisher> ;
+    owl:annotatedTarget <http://schema.org/publisher/identifier> ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "identifier" ;
+    sssom:subject_label "publisher" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource <https://schema.datacite.org/meta/kernel-4.6/creator/affiliation/affiliationIdentifier> ;
+    owl:annotatedTarget <https://w3id.org/codemeta/3.0/affiliation/legalName> ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "legalName" ;
+    sssom:subject_label "affiliationIdentifier" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource <https://schema.datacite.org/meta/kernel-4.6/creator/nameIdentifier> ;
+    owl:annotatedTarget <http://schema.org/author/identifier> ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "identifier" ;
+    sssom:subject_label "nameIdentifier" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:broader ;
+    owl:annotatedSource subject:version ;
+    owl:annotatedTarget schema1:softwareVersion ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "softwareVersion" ;
+    sssom:subject_label "version" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:closeMatch ;
     owl:annotatedSource subject:identifier ;
     owl:annotatedTarget schema1:identifier ;
     sssom:confidence 1e+00 ;
@@ -222,47 +274,58 @@ subject:Format skos:broader codemeta:Format ;
     sssom:object_label "identifier" ;
     sssom:subject_label "identifier" .
 
-[] a owl:Ontology ;
-    dc1:description "Mapping between codemeta and datacite following out methodology" ;
-    dc1:license "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
-    pav:authoredOn "2025-04-01"^^xsd:date ;
-    sssom:mapping_provider "https://codemeta.github.io/"^^xsd:anyURI ;
-    sssom:mapping_set_id "https://w3id.org/codemeta/crosswalks/datacite"^^xsd:anyURI .
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:size ;
+    owl:annotatedTarget schema1:fileSize ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "fileSize" ;
+    sssom:subject_label "size" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:broader ;
+    owl:annotatedSource <https://schema.datacite.org/meta/kernel-4.6/date/dateType> ;
+    owl:annotatedTarget schema1:dateModified ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "dateModified" ;
+    sssom:subject_label "dateType" .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:exactMatch ;
-    owl:annotatedSource subject:contributor ;
-    owl:annotatedTarget schema1:contributor ;
+    owl:annotatedSource <https://schema.datacite.org/meta/kernel-4.6/contributor/nameIdentifier> ;
+    owl:annotatedTarget <http://schema.org/contributor/identifier> ;
     sssom:confidence 1e+00 ;
     sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "contributor" ;
-    sssom:subject_label "contributor" .
+    sssom:object_label "identifier" ;
+    sssom:subject_label "nameIdentifier" .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:exactMatch ;
-    owl:annotatedSource subject:publicationYear ;
-    owl:annotatedTarget codemeta:publicationYear ;
+    owl:annotatedSource subject:format ;
+    owl:annotatedTarget schema1:fileFormat ;
     sssom:confidence 1e+00 ;
     sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "publicationYear" ;
-    sssom:subject_label "publicationYear" .
+    sssom:object_label "fileFormat" ;
+    sssom:subject_label "format" .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:exactMatch ;
-    owl:annotatedSource subject:title ;
-    owl:annotatedTarget codemeta:title ;
+    owl:annotatedSource <https://schema.datacite.org/meta/kernel-4.6/fundingReference/funderIdentifier> ;
+    owl:annotatedTarget <http://schema.org/funder/identifier> ;
     sssom:confidence 1e+00 ;
     sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "title" ;
-    sssom:subject_label "title" .
+    sssom:object_label "identifier" ;
+    sssom:subject_label "funderIdentifier" .
 
 [] a owl:Axiom ;
-    owl:annotatedProperty skos:closeMatch ;
-    owl:annotatedSource subject:Rights ;
-    owl:annotatedTarget codemeta:Rights ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource <https://schema.datacite.org/meta/kernel-4.6/creator/creatorName> ;
+    owl:annotatedTarget <http://schema.org/author/name> ;
     sssom:confidence 1e+00 ;
     sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "Rights" ;
-    sssom:subject_label "Rights" .
+    sssom:object_label "name" ;
+    sssom:subject_label "creatorName" .
 
 
