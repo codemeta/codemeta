@@ -21,16 +21,14 @@ The methodology for generating the files required to create the crosswalk is as 
 4. **Create the Data File (CSV Format)**
    Name the CSV file appropriately, for example, `codemeta-bibtext-mapping.csv`.
    The CSV file should contain the following columns:
-   - source_term: The corresponding term in the source specification or vocabulary.
-   - codemeta_term: The term in CodeMeta.
+   - source_term: The corresponding term in the source specification or vocabulary. If the term is part of a parent concept, please, include it by using the entire path. For example, the term name in datacite is a property of the concep creators (use creators/name in the column)
+   - codemeta_term: The term in CodeMeta.If the term is part of a parent concept, please, include it by using the entire path. For example, the term name in codemeta belongs to the concept author (use author/name in the column)
    - type_relation: The type of relation between the two terms. Possible values:
        - exact_match: The terms are equivalent concepts.
        - part_of: The source concept is part of the codemeta concept (e.g., a publication date in the source vocabulary is part of a publication year in the codemeta vocabulary ).
        - more_specific_than: the source vocabulary term the codemeta term is more specific than the codemeta term. For example, "hal_id more_specific_than codemeta:identifier" means that the hal id is a more concrete term than the "identifier" property in CodeMeta. 
        - more_generic_than:  The source vocabulary term is more generic than the CodeMeta term. For example, " status more_generic_than codemeta:developmentStatus" means that the status is a more generic term than the "developmentStatus" property in CodeMeta.
        - close_match: The subject and the object are sufficiently similar that they can be used interchangeably in some information retrieval applications. For example, if the source and codemeta properties refer to dates, but the format is different.
-   - source_term_path: Indicates the path of the term in the source specification or vocabulary.
-   - codemeta_term_path: Indicates the path of the term in Codemeta.
    - combined_mapping: **It applies ONLY to a part-of relationship**.
      This column defines the formula used to combine terms between schemas.
      For example, if the CodeMeta vocabulary has the term `date`, and the source vocabulary has the terms `year` and `month`, the combined_mapping should be as follows: $(year) + $(month)`.
@@ -67,7 +65,7 @@ Here you will need to fill some extra columns with the path (parent term) in the
       
       | source_term | codemeta_term | source_term_path | codemeta_term_path |
       | ----------- | ------------- | ---------------- | ------------------ |
-      | name        | name          | owner            | author             |
+      | owner/name  | author/name   | owner            | author             |
 
 
 #### My metadata term is a composite of another term. How do I represent it?
@@ -78,6 +76,10 @@ If you have a codemeta term that can be composed as a combination of 2 or more t
 Apparently, we need to represent two types of relationships. Let's look at an example: Format (DataCite) and programmingLanguage (CodeMeta). Format is more generic than programmingLanguage, but the formats also differ—DataCite uses MIME types, while programmingLanguage may be expressed as plain text. How can we represent this situation?
 
 In this case, our recommendation is to include the relationship defined by this methodology (more_generic_than) in the 'type of relation' column, and to add a reference to the format in the 'comments' column.
+
+### What happens if the cardinality of the source is different than in the object? ###
+
+There are cases where the cardinality of the source term differs from that of the object term. For example, in DataCite, the term 'formats' is a list of formats, while in CodeMeta, we have the term 'fileFormat.'. In these cases, we recommend adding a row with the mapping and providing a comment to emphasize this difference. 
 
 ### Final considerations
 Some of the strategies defined in this methodology are not directly applicable in SSSOM (e.g., formula representation). However, we consider this information  key when reading a crosswalk, and therefore we propose to document it.
