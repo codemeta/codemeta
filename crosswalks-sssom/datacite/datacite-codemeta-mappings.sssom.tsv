@@ -1,0 +1,45 @@
+# curie_map: # This contains the URLs prefixes used in the mapping file
+#   skos: http://www.w3.org/2004/02/skos/core# ### Always needed. Do not modify
+#   sssom: https://w3id.org/sssom/             ### Always needed. Do not modify
+#   subject: https://schema.datacite.org/meta/kernel-4.6/ ### Value of the schema
+#   codemeta: "https://w3id.org/codemeta/3.0/" ### Always needed. Do not modify
+#   schema: "http://schema.org/" ### Always needed. Do not modify
+# license: https://creativecommons.org/publicdomain/zero/1.0/
+# subject_documentation: https://doi.org/10.14454/mzv1-5b55
+# mapping_date: '2025-04-01' ### Default value
+# mapping_set_description: 'Mapping between codemeta and datacite following out methodology' ### Please	 add the description of your mapping
+# mapping_provider: https://codemeta.github.io/ ### Please	 add a URI of the author of the mapping. Prioritize ORCIDs for persons and ROR ids for organizations
+# mapping_set_id: https://w3id.org/codemeta/crosswalks/datacite ### Please	 add a URI of your crosswalk. You can use the w3id.org service to create it.
+subject_id	subject_label	predicate_id	object_id	object_label	match_type	match_type_term	confidence	comment
+subject:format	format	skos:broader	schema:programmingLanguage	programmingLanguage	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	
+subject:size	size	skos:exactMatch	schema:fileSize	fileSize	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	
+subject:creatorName	creatorName	skos:exactMatch	schema:name	name	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	The source term has a path creators/creatorName.The codemeta term has a path author/name.
+subject:givenName	givenName	skos:exactMatch	schema:givenName	givenName	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	The source term has a path creators/givenName.The codemeta term has a path author/givenName.
+subject:familyName	familyName	skos:exactMatch	schema:familyName	familyName	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	The source term has a path creators/familyName.The codemeta term has a path author/familyName.
+subject:nameIdentifier	nameIdentifier	skos:exactMatch	schema:identifier	identifier	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	The source term has a path creators/nameIdentifier.The codemeta term has a path author/identifier.
+subject:affiliation	affiliation	skos:exactMatch	codemeta:legalName	legalName	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	The source term has a path creators/affiliation.The codemeta term has a path affiliation/legalName.
+subject:affiliationIdentifier	affiliationIdentifier	skos:exactMatch	codemeta:legalName	legalName	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	The source term has a path creators/affiliation/affiliationIdentifier.The codemeta term has a path affiliation/legalName.
+subject:creatorName	creatorName	skos:exactMatch	schema:name	name	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	The source term has a path contributors/creatorName.The codemeta term has a path author/name.
+subject:givenName	givenName	skos:exactMatch	schema:givenName	givenName	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	The source term has a path contributors/givenName.The codemeta term has a path author/givenName.
+subject:familyName	familyName	skos:exactMatch	schema:familyName	familyName	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	The source term has a path contributors/familyName.The codemeta term has a path author/familyName.
+subject:nameIdentifier	nameIdentifier	skos:exactMatch	schema:identifier	identifier	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	The source term has a path contributors/nameIdentifier.The codemeta term has a path author/identifier.
+subject:affiliation	affiliation	skos:exactMatch	codemeta:legalName	legalName	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	The source term has a path contributors/affiliation.The codemeta term has a path affiliation/legalName.
+subject:affiliationIdentifier	affiliationIdentifier	skos:exactMatch	schema:identifier	identifier	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	The source term has a path contributors/affiliationIdentifier.The codemeta term has a path affiliation/identifier.
+subject:date	date	skos:broader	schema:dateCreated	dateCreated	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	The source term has a path dates/date.
+subject:date	date	skos:broader	schema:dateModified	dateModified	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	The source term has a path dates/date.
+subject:publicationYear	publicationYear	skos:broader	codemeta:publicationYear	publicationYear	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	
+subject:formats	formats	skos:broader	schema:fileFormat	fileFormat	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	
+subject:funderName	funderName	skos:exactMatch	schema:name	name	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	The source term has a path fundingReferences/funderName.The codemeta term has a path funder/name.
+subject:funderIdentifier	funderIdentifier	skos:exactMatch	schema:identifier	identifier	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	The source term has a path fundingReferences/funderIdentifier.The codemeta term has a path funder/identifier.
+subject:awardNumber	awardNumber	skos:exactMatch	codemeta:funding	funding	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	The source term has a path fundingReferences/awardNumber.
+subject:subject	subject	skos:exactMatch	schema:keywords	keywords	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	
+subject:rightsUri	rightsUri	skos:exactMatch	schema:license	license	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	The source term has a path rightsList/rightsUri.
+subject:name	name	skos:exactMatch	schema:name	name	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	The source term has a path publisher/name.
+subject:publisherIdentifier	publisherIdentifier	skos:exactMatch	schema:identifier	identifier	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	The source term has a path publisher/publisherIdentifier.
+subject:version	version	skos:exactMatch	schema:version	version	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	
+subject:version	version	skos:broader	schema:softwareVersion	softwareVersion	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	
+subject:description	description	skos:exactMatch	schema:description	description	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	
+subject:identifier	identifier	skos:closeMatch	schema:identifier	identifier	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	
+subject:title	title	skos:exactMatch	schema:name	name	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	
+subject:relatedIdentifier	relatedIdentifier	skos:exactMatch	schema:relatedLink	relatedLink	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	
+subject:identifier	identifier	skos:exactMatch	schema:identifier	identifier	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	
