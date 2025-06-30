@@ -6,7 +6,7 @@ import json
 from sssom.parsers import parse_sssom_table
 from sssom.writers import write_owl
 
-header = ["subject_id","subject_label","predicate_id","object_id","object_label","match_type","confidence"]
+header = ["subject_id","subject_label","predicate_id","object_id","object_label","match_type","match_type_term","confidence","comment"]
 
 #Get the prefix of a concept
 def get_prefix(concept, context):
@@ -21,13 +21,30 @@ def get_prefix(concept, context):
 
 #Function to process the path of the namespace
 def process_path(path):
-    new_path = path
-    if path.startswith("/"):
-        new_path = path[1:]
-    if path and not path.endswith("/"):
-        new_path = new_path+"/"
+    # Find the position of the last "/"
+    last_slash_index = path.rfind("/")
 
-    return new_path
+    # Get the value from the last "/" onwards
+    result = path[last_slash_index + 1:]  # +1 to skip the slash itself
+
+    return result
+
+#Function to generate comment based on the path
+def generate_comment(comments,combined_mappings,source,codemeta):
+    result=""
+    if comments and not comments.endswith("."):
+        results = comments + ". "
+    elif comments:
+        results = comments
+    if combined_mappings:
+        results = comments + "These mappings is a combinnation of the following terms "+combined_mappings+". "
+    if "/" in source:
+        result = result + "The source term has a path "+source+". "
+    if "/" in codemeta:
+        result = result + "The codemeta term has a path "+codemeta+"."
+
+    return result 
+
 #Function to convert a csv to a tsv and turtle
 def convert_csv_to_tsv(input_metadata_file, input_file, output_file, ttl_file, context_data):
     
@@ -66,7 +83,7 @@ def convert_csv_to_tsv(input_metadata_file, input_file, output_file, ttl_file, c
             predicate_id = "skos:broader"
         elif (row["type_relation"]=="close_match"):
             predicate_id = "skos:closeMatch"    
-        row = ["subject:"+process_path(row["source_term_path"])+row["source_term"],row["source_term"],predicate_id,get_prefix(row["codemeta_term"], context_data)+":"+process_path(row["codemeta_term_path"])+row["codemeta_term"],row["codemeta_term"],"SSSOM:HumanCurated",1]
+        row = ["subject:"+process_path(row["source_term"]),process_path(row["source_term"]),predicate_id,get_prefix(process_path(row["codemeta_term"]), context_data)+":"+process_path(row["codemeta_term"]),process_path(row["codemeta_term"]),"SSSOM:HumanCurated","SSSOM:ObjectPropertyMatch",1,generate_comment(row["comments"],row["combined_mappings"],row["source_term"],row["codemeta_term"])]
         writer.writerow(row)
     
     # Close the files
