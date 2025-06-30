@@ -1,0 +1,388 @@
+@prefix codemeta: <https://w3id.org/codemeta/3.0/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix semapv: <https://w3id.org/semapv/vocab/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sssom: <https://w3id.org/sssom/> .
+@prefix subject: <https://schema.datacite.org/meta/kernel-4.6/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+rdfs:comment a owl:AnnotationProperty .
+
+sssom:confidence a owl:AnnotationProperty .
+
+sssom:mapping_justification a owl:AnnotationProperty .
+
+sssom:object_label a owl:AnnotationProperty .
+
+sssom:subject_label a owl:AnnotationProperty .
+
+subject:awardNumber skos:exactMatch codemeta:funding .
+
+subject:description skos:exactMatch schema1:description .
+
+subject:format skos:broader schema1:programmingLanguage .
+
+subject:formats skos:broader schema1:fileFormat .
+
+subject:funderIdentifier skos:exactMatch schema1:identifier .
+
+subject:funderName skos:exactMatch schema1:name .
+
+subject:name skos:exactMatch schema1:name .
+
+subject:publicationYear skos:broader codemeta:publicationYear .
+
+subject:publisherIdentifier skos:exactMatch schema1:identifier .
+
+subject:relatedIdentifier skos:exactMatch schema1:relatedLink .
+
+subject:rightsUri skos:exactMatch schema1:license .
+
+subject:size skos:exactMatch schema1:fileSize .
+
+subject:subject skos:exactMatch schema1:keywords .
+
+subject:title skos:exactMatch schema1:name .
+
+subject:affiliation skos:exactMatch codemeta:legalName .
+
+subject:affiliationIdentifier skos:exactMatch schema1:identifier,
+        codemeta:legalName .
+
+subject:creatorName skos:exactMatch schema1:name .
+
+subject:date skos:broader schema1:dateCreated,
+        schema1:dateModified .
+
+subject:familyName skos:exactMatch schema1:familyName .
+
+subject:givenName skos:exactMatch schema1:givenName .
+
+subject:identifier skos:closeMatch schema1:identifier ;
+    skos:exactMatch schema1:identifier .
+
+subject:nameIdentifier skos:exactMatch schema1:identifier .
+
+subject:version skos:broader schema1:softwareVersion ;
+    skos:exactMatch schema1:version .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:broader ;
+    owl:annotatedSource subject:publicationYear ;
+    owl:annotatedTarget codemeta:publicationYear ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "publicationYear" ;
+    sssom:subject_label "publicationYear" .
+
+[] a owl:Axiom ;
+    rdfs:comment "The source term has a path creators/familyName.The codemeta term has a path author/familyName." ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:familyName ;
+    owl:annotatedTarget schema1:familyName ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "familyName" ;
+    sssom:subject_label "familyName" .
+
+[] a owl:Axiom ;
+    rdfs:comment "The source term has a path fundingReferences/awardNumber." ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:awardNumber ;
+    owl:annotatedTarget codemeta:funding ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "funding" ;
+    sssom:subject_label "awardNumber" .
+
+[] a owl:Axiom ;
+    rdfs:comment "The source term has a path creators/affiliation/affiliationIdentifier.The codemeta term has a path affiliation/legalName." ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:affiliationIdentifier ;
+    owl:annotatedTarget codemeta:legalName ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "legalName" ;
+    sssom:subject_label "affiliationIdentifier" .
+
+[] a owl:Axiom ;
+    rdfs:comment "The source term has a path contributors/affiliation.The codemeta term has a path affiliation/legalName." ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:affiliation ;
+    owl:annotatedTarget codemeta:legalName ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "legalName" ;
+    sssom:subject_label "affiliation" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:broader ;
+    owl:annotatedSource subject:version ;
+    owl:annotatedTarget schema1:softwareVersion ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "softwareVersion" ;
+    sssom:subject_label "version" .
+
+[] a owl:Axiom ;
+    rdfs:comment "The source term has a path dates/date." ;
+    owl:annotatedProperty skos:broader ;
+    owl:annotatedSource subject:date ;
+    owl:annotatedTarget schema1:dateCreated ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "dateCreated" ;
+    sssom:subject_label "date" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:version ;
+    owl:annotatedTarget schema1:version ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "version" ;
+    sssom:subject_label "version" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:relatedIdentifier ;
+    owl:annotatedTarget schema1:relatedLink ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "relatedLink" ;
+    sssom:subject_label "relatedIdentifier" .
+
+[] a owl:Axiom ;
+    rdfs:comment "The source term has a path creators/nameIdentifier.The codemeta term has a path author/identifier." ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:nameIdentifier ;
+    owl:annotatedTarget schema1:identifier ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "identifier" ;
+    sssom:subject_label "nameIdentifier" .
+
+[] a owl:Axiom ;
+    rdfs:comment "The source term has a path creators/givenName.The codemeta term has a path author/givenName." ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:givenName ;
+    owl:annotatedTarget schema1:givenName ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "givenName" ;
+    sssom:subject_label "givenName" .
+
+[] a owl:Axiom ;
+    rdfs:comment "The source term has a path contributors/givenName.The codemeta term has a path author/givenName." ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:givenName ;
+    owl:annotatedTarget schema1:givenName ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "givenName" ;
+    sssom:subject_label "givenName" .
+
+[] a owl:Axiom ;
+    rdfs:comment "The source term has a path publisher/publisherIdentifier." ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:publisherIdentifier ;
+    owl:annotatedTarget schema1:identifier ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "identifier" ;
+    sssom:subject_label "publisherIdentifier" .
+
+[] a owl:Axiom ;
+    rdfs:comment "The source term has a path creators/creatorName.The codemeta term has a path author/name." ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:creatorName ;
+    owl:annotatedTarget schema1:name ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "name" ;
+    sssom:subject_label "creatorName" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:broader ;
+    owl:annotatedSource subject:format ;
+    owl:annotatedTarget schema1:programmingLanguage ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "programmingLanguage" ;
+    sssom:subject_label "format" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:closeMatch ;
+    owl:annotatedSource subject:identifier ;
+    owl:annotatedTarget schema1:identifier ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "identifier" ;
+    sssom:subject_label "identifier" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:title ;
+    owl:annotatedTarget schema1:name ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "name" ;
+    sssom:subject_label "title" .
+
+[] a owl:Axiom ;
+    rdfs:comment "The source term has a path contributors/creatorName.The codemeta term has a path author/name." ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:creatorName ;
+    owl:annotatedTarget schema1:name ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "name" ;
+    sssom:subject_label "creatorName" .
+
+[] a owl:Axiom ;
+    rdfs:comment "The source term has a path fundingReferences/funderName.The codemeta term has a path funder/name." ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:funderName ;
+    owl:annotatedTarget schema1:name ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "name" ;
+    sssom:subject_label "funderName" .
+
+[] a owl:Axiom ;
+    rdfs:comment "The source term has a path fundingReferences/funderIdentifier.The codemeta term has a path funder/identifier." ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:funderIdentifier ;
+    owl:annotatedTarget schema1:identifier ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "identifier" ;
+    sssom:subject_label "funderIdentifier" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:description ;
+    owl:annotatedTarget schema1:description ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "description" ;
+    sssom:subject_label "description" .
+
+[] a owl:Axiom ;
+    rdfs:comment "The source term has a path dates/date." ;
+    owl:annotatedProperty skos:broader ;
+    owl:annotatedSource subject:date ;
+    owl:annotatedTarget schema1:dateModified ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "dateModified" ;
+    sssom:subject_label "date" .
+
+[] a owl:Ontology ;
+    dcterms:description "Mapping between codemeta and datacite following out methodology" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    pav:authoredOn "2025-04-01"^^xsd:date ;
+    sssom:mapping_provider "https://codemeta.github.io/"^^xsd:anyURI ;
+    sssom:mapping_set_id "https://w3id.org/codemeta/crosswalks/datacite"^^xsd:anyURI .
+
+[] a owl:Axiom ;
+    rdfs:comment "The source term has a path contributors/affiliationIdentifier.The codemeta term has a path affiliation/identifier." ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:affiliationIdentifier ;
+    owl:annotatedTarget schema1:identifier ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "identifier" ;
+    sssom:subject_label "affiliationIdentifier" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:identifier ;
+    owl:annotatedTarget schema1:identifier ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "identifier" ;
+    sssom:subject_label "identifier" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:size ;
+    owl:annotatedTarget schema1:fileSize ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "fileSize" ;
+    sssom:subject_label "size" .
+
+[] a owl:Axiom ;
+    rdfs:comment "The source term has a path creators/affiliation.The codemeta term has a path affiliation/legalName." ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:affiliation ;
+    owl:annotatedTarget codemeta:legalName ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "legalName" ;
+    sssom:subject_label "affiliation" .
+
+[] a owl:Axiom ;
+    rdfs:comment "The source term has a path publisher/name." ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:name ;
+    owl:annotatedTarget schema1:name ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "name" ;
+    sssom:subject_label "name" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:broader ;
+    owl:annotatedSource subject:formats ;
+    owl:annotatedTarget schema1:fileFormat ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "fileFormat" ;
+    sssom:subject_label "formats" .
+
+[] a owl:Axiom ;
+    rdfs:comment "The source term has a path contributors/nameIdentifier.The codemeta term has a path author/identifier." ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:nameIdentifier ;
+    owl:annotatedTarget schema1:identifier ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "identifier" ;
+    sssom:subject_label "nameIdentifier" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:subject ;
+    owl:annotatedTarget schema1:keywords ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "keywords" ;
+    sssom:subject_label "subject" .
+
+[] a owl:Axiom ;
+    rdfs:comment "The source term has a path rightsList/rightsUri." ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:rightsUri ;
+    owl:annotatedTarget schema1:license ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "license" ;
+    sssom:subject_label "rightsUri" .
+
+[] a owl:Axiom ;
+    rdfs:comment "The source term has a path contributors/familyName.The codemeta term has a path author/familyName." ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:familyName ;
+    owl:annotatedTarget schema1:familyName ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "familyName" ;
+    sssom:subject_label "familyName" .
+
+
