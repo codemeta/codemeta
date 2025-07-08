@@ -71,7 +71,6 @@
       "url": { "@id": "schema:url", "@type": "@id"},
       "version": { "@id": "schema:version"},
       "author": { "@id": "schema:author", "@container": "@list" },
-      
       "softwareSuggestions": { "@id": "codemeta:softwareSuggestions", "@type": "@id"},
       "continuousIntegration": { "@id": "codemeta:continuousIntegration", "@type": "@id"},
       "buildInstructions": { "@id": "codemeta:buildInstructions", "@type": "@id"},
