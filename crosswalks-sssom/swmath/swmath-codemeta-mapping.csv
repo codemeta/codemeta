@@ -2,11 +2,11 @@ source_term,codemeta_term,type_relation,combined_mapping,comments
 id,identifier,exact_match,,
 name,name,exact_match,,
 description,description,exact_match,,
-homepage,sameAs,exact_match,,"Maps homepage URL to sameAs"
+homepage,url,exact_match,,"Maps homepage URL to sameAs"
 source_code,codeRepository,exact_match,,
-related_software/name,supportingData/codemeta:name,exact_match,,"Related software name maps to supportingData name"
-related_software/id,supportingData/codemeta:id,exact_match,,"Related software id mapped with full URL"
-authors/codemeta:name,author/codemeta:name,exact_match,,"Authors name mapped directly"
+related_software/name,RelatedLink/codemeta:name,exact_match,,"Related software name maps to supportingData name"
+related_software/id,RelatedLink/codemeta:id,exact_match,,"Related software id mapped with full URL"
+authors/name,author/name,exact_match,,"Authors name mapped directly"
 references,citation/codemeta:id,exact_match,,"Reference IDs mapped to citation IDs with API URLs"
 references_year_alt,citation/year,part_of,,"Year is part of citation but not directly mapped in CodeMeta"
 classification,keywords,more_generic_than,,"Classification codes are more generic than keywords in CodeMeta"
