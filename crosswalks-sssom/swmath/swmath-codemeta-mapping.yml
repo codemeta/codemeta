@@ -2,15 +2,15 @@
 curie_map: # This contains the URLs prefixes used in the mapping file
   skos: http://www.w3.org/2004/02/skos/core#  ### Always needed. Do not modify
   sssom: https://w3id.org/sssom/               ### Always needed. Do not modify
-  subject: https://swmath.org/vocabulary/codemeta-mapping/vocab ### Source vocabulary URI. Default value
+  subject: https://github.com/MaRDI4NFDI/swMATH4EOSC/blob/main/developer_documentation/schema_swMATH.xsd # Source vocabulary URI. Default value
   schema: "http://schema.org/"                  ### Always needed. Do not modify
   codemeta: "https://w3id.org/codemeta/3.0"    ### Always needed. Do not modify
 
 license: https://creativecommons.org/publicdomain/zero/1.0/
 
-subject_documentation: https://github.com/MaRDI4NFDI/swMATH4EOSC/tree/main/developer_documentation ### OPTIONAL: source vocabulary documentation
+subject_documentation: https://github.com/MaRDI4NFDI/swMATH4EOSC/tree/main/developer_documentation/Documentation_swMATH.md ### OPTIONAL: source vocabulary documentation
 
-mapping_date: '2025-06-10'  ### Default value
+mapping_date: '2025-07-23'  ### Default value
 
 mapping_set_description: >
   Mapping from the SWMATH software vocabulary to the CodeMeta 3.0 metadata standard,
@@ -19,5 +19,5 @@ mapping_set_description: >
 
 mapping_provider: https://orcid.org/0000-0002-8710-9548  ### Example ORCID, replace if needed
 
-mapping_set_id: https://w3id.org/codemeta/crosswalks/swMATH
+mapping_set_id: https://github.com/Mazztok45/codemeta/blob/swmath2codemeta/crosswalks/swMATH.csv
 
