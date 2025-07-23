@@ -4,10 +4,10 @@ name,name,exact_match,,
 description,description,exact_match,,
 homepage,url,exact_match,,"Maps homepage URL to sameAs"
 source_code,codeRepository,exact_match,,
-related_software/name,RelatedLink/codemeta:name,exact_match,,"Related software name maps to supportingData name"
-related_software/id,RelatedLink/codemeta:id,exact_match,,"Related software id mapped with full URL"
+related_software/name,RelatedLink/name,exact_match,,"Related software name maps to supportingData name"
+related_software/id,RelatedLink/id,exact_match,,"Related software id mapped with full URL"
 authors/name,author/name,exact_match,,"Authors name mapped directly"
-references,citation/codemeta:id,exact_match,,"Reference IDs mapped to citation IDs with API URLs"
+references,citation/id,exact_match,,"Reference IDs mapped to citation IDs with API URLs"
 references_year_alt,citation/year,part_of,,"Year is part of citation but not directly mapped in CodeMeta"
 classification,keywords,more_generic_than,,"Classification codes are more generic than keywords in CodeMeta"
 
