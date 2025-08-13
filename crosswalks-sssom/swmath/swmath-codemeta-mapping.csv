@@ -8,6 +8,6 @@ related_software/name,RelatedLink/name,exact_match,,"Related software name maps 
 related_software/id,RelatedLink/id,exact_match,,"Related software id mapped with full URL"
 authors/name,author/name,exact_match,,"Authors name mapped directly"
 references,citation/id,exact_match,,"Reference IDs mapped to citation IDs with API URLs"
-references_year_alt,citation/year,part_of,,"Year is part of citation but not directly mapped in CodeMeta"
+references_year_alt,citation/datePublished,part_of,,"Year is part of citation but not directly mapped in CodeMeta"
 classification,keywords,more_generic_than,,"Classification codes are more generic than keywords in CodeMeta"
 
