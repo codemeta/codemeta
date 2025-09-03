@@ -18,7 +18,7 @@ softwareHelp,
 softwareRequirements,dependencies
 softwareVersion,
 storageRequirements,
-supportingData,related_software
+supportingData,
 author,authors
 citation,references
 contributor,
@@ -72,3 +72,4 @@ referencePublication,standard_articles
 readme,
 hasSourceCode,
 isSourceCodeOf,
+relatedSoftware,related_software
