@@ -1,0 +1,44 @@
+# curie_map: # This contains the URLs prefixes used in the mapping file
+#   skos: http://www.w3.org/2004/02/skos/core# ### Always needed. Do not modify
+#   sssom: https://w3id.org/sssom/             ### Always needed. Do not modify
+#   subject:  https://pypi.org/ns/core-metadata# ### Value of the schema. Need to be changed.
+#   codemeta: "https://w3id.org/codemeta/3.0/" ### Always needed. Do not modify
+#   schema: "http://schema.org/" ### Always needed. Do not modify
+# license: https://creativecommons.org/publicdomain/zero/1.0/
+# subject_documentation: https://packaging.python.org/en/latest/specifications/core-metadata/
+# mapping_date: '2025-09-10' ### Default value
+# mapping_set_description: 'Mapping between codemeta and core metadata specification of the PyPa Package Distribution Metadata (https://packaging.python.org/en/latest/specifications/core-metadata/). We have followed the structure of the JSON provided by the API(e.g. https://pypi.org/pypi/somef/json)' ### Please	 add the description of your mapping
+# mapping_provider: https://codemeta.github.io/ ### Please	 add a URI of the author of the mapping. Prioritize ORCIDs for persons and ROR ids for organizations
+# mapping_set_id: https://w3id.org/codemeta/crosswalks/PyPa ### Please	 add a URI of your crosswalk. You can use the w3id.org service to create it.
+subject_id	subject_label	predicate_id	object_id	object_label	match_type	match_type_term	confidence	comment
+subject:name	name	skos:exactMatch	schema:name	name	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	
+subject:description	description	skos:exactMatch	schema:description	description	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	
+subject:description	description	skos:exactMatch	codemeta:summary	summary	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	
+subject:version	version	skos:exactMatch	schema:version	version	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	
+subject:classifiers	classifiers	skos:closeMatch	codemeta:licence	licence	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	Deprecated property. Use classifiers['License']. Example: License :: OSI Approved :: MIT License. 
+subject:license	license	skos:exactMatch	schema:license	license	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	If the license in Codemeta is a URL. 
+subject:license	license	skos:closeMatch	schema:name	name	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	If the license in Codemeta is a CreativeWork. The codemeta term has a path license/name.
+subject:license_expression	license_expression	skos:closeMatch	schema:name	name	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	Since version 2.4. It only applies to CreativeWork. Example: MIT AND (Apache-2.0 OR BSD-2-Clause). The codemeta term has a path license/name.
+subject:author	author	skos:closeMatch	schema:name	name	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	It may include the email in the string.The codemeta term has a path author/name.
+subject:author_email	author_email	skos:closeMatch	schema:email	email	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	It may include the name in the string.The codemeta term has a path author/email.
+subject:maintainer	maintainer	skos:closeMatch	schema:name	name	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	It may include the email in the string.The codemeta term has a path maintainer/name.
+subject:maintainer_email	maintainer_email	skos:closeMatch	schema:email	email	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	It may include the name in the string.The codemeta term has a path maintainer/email.
+subject:keywords	keywords	skos:exactMatch	schema:keywords	keywords	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	
+subject:softwareVersion	softwareVersion	skos:exactMatch	schema:version	version	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	
+subject:requires_dist	requires_dist	skos:closeMatch	schema:softwareRequirements	softwareRequirements	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	Example: bs4<0.0.2,>=0.0.1. 
+subject:classifiers	classifiers	skos:closeMatch	schema:softwareRequirements	softwareRequirements	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	Example: Programming Language :: Python :: 3. It appears more python version as list.Use classifiers['programming Language']. 
+subject:requires_python	requires_python	skos:closeMatch	schema:softwareRequirements	softwareRequirements	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	Example: <=3.13,>=3.9. 
+subject:project_urls	project_urls	skos:exactMatch	schema:codeRepository	codeRepository	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	"Use project_urls[""homepage""]. "
+subject:homepage	homepage	skos:exactMatch	schema:codeRepository	codeRepository	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	
+subject:bugtruck_url	bugtruck_url	skos:exactMatch	codemeta:issueTracker	issueTracker	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	
+subject:download_url	download_url	skos:exactMatch	codemeta:downloadURL	downloadURL	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	
+subject:docs_url	docs_url	skos:closeMatch	codemeta:buildInstructions	buildInstructions	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	
+subject:docs_url	docs_url	skos:closeMatch	codemeta:readme	readme	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	
+subject:homepage	homepage	skos:closeMatch	schema:identifier	identifier	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	
+subject:docs_url	docs_url	skos:closeMatch	schema:releaseNotes	releaseNotes	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	
+subject:description_content_type	description_content_type	skos:exactMatch	codemeta:encodingFormat	encodingFormat	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	The codemeta term has a path encoding/encodingFormat.
+subject:description_content_type	description_content_type	skos:exactMatch	schema:fileFormat	fileFormat	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	
+subject:classifiers	classifiers	skos:exactMatch	schema:operatingSystem	operatingSystem	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	"Use classifiers[""OperatingSystem""]. "
+subject:platform	platform	skos:exactMatch	schema:operatingSystem	operatingSystem	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	
+subject:classifiers	classifiers	skos:exactMatch	schema:programmingLanguage	programmingLanguage	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	"Use classifiers[""Programming Language""]. "
+subject:funding	funding	skos:exactMatch	codemeta:project_urls	project_urls	SSSOM:HumanCurated	SSSOM:ObjectPropertyMatch	1	"Use project_urls[""funding""]. "
