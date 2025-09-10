@@ -1,0 +1,32 @@
+source_term,codemeta_term,type_relation,combined_mappings,comments
+name,name,exact_match,,
+description,description,exact_match,,
+description,summary,more_generic_than_match,,
+version,version,exact_match,,
+classifiers,licence,close_match,,Deprecated property. Use classifiers['License']. Example: License :: OSI Approved :: MIT License
+license,license,exact_match,,If the license in Codemeta is a URL
+license,license/name,close_match,,If the license in Codemeta is a CreativeWork
+license_expression,license/name,close_match,,Since version 2.4. It only applies to CreativeWork. Example: MIT AND (Apache-2.0 OR BSD-2-Clause)
+author,author/name,close_match,,It may include the email in the string.
+author_email,author/email,close_match,,It may include the name in the string.
+maintainer,maintainer/name,close_match,,It may include the email in the string.
+maintainer_email,maintainer/email,close_match,,It may include the name in the string.
+keywords,keywords,exact_match,,
+softwareVersion,version,exact_match,,
+requires_dist,softwareRequirements,close_match,,"Example: bs4<0.0.2,>=0.0.1"
+classifiers,softwareRequirements,close_match,,"Example: Programming Language :: Python :: 3. It appears more python version as list.Use classifiers['programming Language']"
+requires_python,softwareRequirements,close_match,,"Example: <=3.13,>=3.9"
+project_urls,codeRepository,exact_match,,Use project_urls["homepage"]
+homepage,codeRepository,exact_math,,
+bugtruck_url,issueTracker,exact_match,,
+download_url,downloadURL,exact_match,,
+docs_url,buildInstructions,close_match,,
+docs_url,readme,close_match,,
+homepage,identifier,close_match,,
+docs_url,releaseNotes,close_match,,
+description_content_type,encoding/encodingFormat,exact_match,,
+description_content_type,fileFormat,exact_match,,
+classifiers,operatingSystem,exact_match,,Use classifiers["OperatingSystem"]
+platform,operatingSystem,exact_match,,
+classifiers,programmingLanguage,exact_match,,Use classifiers["Programming Language"]
+funding,project_urls,exact_match,,Use project_urls["funding"]
