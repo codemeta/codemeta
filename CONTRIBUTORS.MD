@@ -31,7 +31,7 @@ operates according to the rules specified in the
 | Peter Slaughter  | NCEAS, UC Santa Barbara | [@gothub](https://github.com/gothub) |
 | Kyle Niemeyer | | [@kyleniemeyer](https://github.com/kyleniemeyer) |
 | Yolanda Gil | USC ISI | |
-| Martin Fenner | DataCite | |
+| Martin Fenner | DataCite | [@mfenner](https://github.com/mfenner) |
 | Krzysztof Nowak | Zenodo | |
 | Mark Hahnel | figshare | |
 | Luke Coy | RIT & MSL | |
