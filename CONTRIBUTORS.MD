@@ -92,25 +92,34 @@ operates according to the rules specified in the
 
 ## V3.0 contributors (Jul 3, 2023)
 
-- [@agbeltran](https://github.com/agbeltran)
-- [@arfon](https://github.com/arfon)
-- [@cboettig](https://github.com/cboettig)
-- [@dgarijo](https://github.com/dgarijo)
-- [@mbjones](https://github.com/mbjones)
-- [@mfenner](https://github.com/mfenner)
-- [@moranegg](https://github.com/moranegg)
-- [@noamross](https://github.com/noamross)
-- [@progval](https://github.com/progval)
-- [@tmorell](https://github.com/tmorrell)
+| Name             | Email                | Institution             | GitHub  |
+|------------------|----------------------|-------------------------| --------|
+| Alejandra Gonzalez-Beltran | | Oxford e-Research Centre | [@agbeltran](https://github.com/agbeltran) |
+| Arfon Smith | | GitHub | [@arfon](https://github.com/arfon) |
+| Carl Boettiger | | UC Berkeley | [@cboettig](https://github.com/cboettig) |
+| Daniel Garijo | | Universidad Politécnica de Madrid | [@dgarijo](https://github.com/dgarijo) |
+| Martin Fenner | martin@front-matter.io | Front Matter | [@mfenner](https://github.com/mfenner)
+| Matthew B. Jones | jones@nceas.ucsb.edu | NCEAS, UC Santa Barbara | [@mbjones](https://github.com/mbjones) |
+| Morane Gruenpeter | morane@softwareheritage.org | Software Heritage | [@moranegg](https://github.com/moranegg) |
+| Noam Ross | | rOpenSci | [@noamross](https://github.com/noamross) |
+| Thomas Morrell | tmorrell@library.caltech.edu | Caltech Library | [@tmorell](https://github.com/tmorrell) |
+| Valentin Lorentz | vlorentz@softwareheritage.org | Software Heritage | [@progval](https://github.com/progval) |
 
 ## Post-V3.0 contributors
 
 | Name             | Email                | Institution             | GitHub  |
 |------------------|----------------------|-------------------------| --------|
+| Alex Ioannidis | | CERN | [@slint](https://github.com/slint) |
 | Anita | | | [@bandrow](https://github.com/bandrow) |
 | Arthit Suriyawongkul | <suriyawa@tcd.ie> | ADAPT Centre, Trinity College Dublin | [@bact](https://github.com) |
 | Baptiste Cecconi | | LESIA, Observatoire de Paris, PSL | [@BaptisteCecconi](https://github.com/BaptisteCecconi) |
 | Daniel Garijo | | Universidad Politécnica de Madrid | [@dgarijo](https://github.com/dgarijo) |
+| | | | [@esgg](https://github.com/esgg) |
+| Helen Mair Rawsthorne | | UK Centre for Ecology & Hydrology | [@hm-raws](https://github.com/hm-raws) |
 | Hélène Jonin | | | [@hjonin](https://github.com/hjonin) |
+| Hervé Ménager | | Institut Pasteur | [@hmenager](https://github.com/hmenager) |
+| Morane Gruenpeter | morane@softwareheritage.org | Software Heritage | [@moranegg](https://github.com/moranegg) |
 | Moritz Schubotz | | University of Konstanz | [@physikerwelt](https://github.com/physikerwelt) |
-| Val Lorentz | | Software Heritage | [@progval](https://github.com/progval) |
+| Thomas Morrell | tmorrell@library.caltech.edu | Caltech Library | [@tmorell](https://github.com/tmorrell) |
+| Valentin Lorentz | vlorentz@softwareheritage.org | Software Heritage | [@progval](https://github.com/progval) |
+| Yaroslav Halchenko | | Dartmouth College | [@yarikoptic](https://github.com/yarikoptic) |
