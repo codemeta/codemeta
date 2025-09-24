@@ -25,10 +25,10 @@ subject:id	id	skos:exactMatch	codemeta:id	id	SSSOM:HumanCurated	1
 subject:name	name	skos:exactMatch	schema:name	name	SSSOM:HumanCurated	1
 subject:description	description	skos:exactMatch	schema:description	description	SSSOM:HumanCurated	1
 subject:homepage	homepage	skos:exactMatch	codemeta:homepage	homepage	SSSOM:HumanCurated	1
-subject:source_code	source_code	skos:exactMatch	codemeta:source_code	source_code	SSSOM:HumanCurated	1
-subject:related_software/name	related_software/name	skos:exactMatch	codemeta:related_software/name	related_software/name	SSSOM:HumanCurated	1
-subject:related_software/id	related_software/id	skos:exactMatch	codemeta:related_software/id	related_software/id	SSSOM:HumanCurated	1
-subject:authors/codemeta:name	authors/codemeta:name	skos:exactMatch	codemeta:authors/codemeta:name	authors/codemeta:name	SSSOM:HumanCurated	1
-subject:references	references	skos:exactMatch	codemeta:references	references	SSSOM:HumanCurated	1
+subject:source_code	source_code	skos:exactMatch	codemeta:codeRepository	codeRepository	SSSOM:HumanCurated	1
+subject:related_software/name	related_software/name	skos:exactMatch	codemeta:relatedSoftware/name	relatedSoftware/name	SSSOM:HumanCurated	1
+subject:related_software/id	related_software/id	skos:exactMatch	codemeta:relatedSoftware/id	relatedSoftware/id	SSSOM:HumanCurated	1
+subject:authors/codemeta:name	authors/codemeta:name	skos:exactMatch	codemeta:author/codemeta:name	author/codemeta:name	SSSOM:HumanCurated	1
+subject:references	references	skos:exactMatch	codemeta:citation	citation	SSSOM:HumanCurated	1
 subject:references_year_alt	references_year_alt	skos:closeMatch	codemeta:references_year_alt	references_year_alt	SSSOM:HumanCurated	1
 subject:classification	classification	skos:broader	codemeta:classification	classification	SSSOM:HumanCurated	1
