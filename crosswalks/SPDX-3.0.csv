@@ -1,0 +1,74 @@
+Property,SPDX 3.0
+codeRepository,/Software/sourceInfo
+programmingLanguage,/Core/contentType
+review,/Core/Annotation
+runtimePlatform,
+targetProduct,
+applicationCategory,/Software/primaryPurpose
+applicationSubCategory,
+downloadUrl,/Software/downloadLocation
+fileSize,
+installUrl,/Software/downloadLocation
+memoryRequirements,
+operatingSystem,
+permissions,
+processorRequirements,
+releaseNotes,hasDocumentation
+softwareHelp,hasDocumentation
+softwareRequirements,dependsOn
+softwareVersion,/Software/packageVersion
+storageRequirements,
+supportingData,hasDataFile
+author,/Core/originatedBy
+citation,
+contributor,/Software/attributionText
+copyrightHolder,/Software/copyrightText
+copyrightYear,/Software/copyrightText
+dateCreated,/Core/builtTime
+dateModified,
+datePublished,/Core/releaseTime
+editor,/Core/originatedBy
+encoding,
+fileFormat,/Core/contentType
+funder,
+keywords,/Core/summary
+license,hasDeclaredLicense; hasConcludedLicense
+producer,/Core/originatedBy
+provider,/Core/suppliedBy
+publisher,/Core/suppliedBy
+sponsor,
+version,/Software/packageVersion
+isAccessibleForFree,
+isPartOf,contains (reverse direction)
+hasPart,contains
+position,
+description,/Core/description
+identifier,/Core/externalIdentifier
+name,/Core/name
+sameAs,/Software/homePage
+url,/Software/packageUrl
+relatedLink,/Core/externalRef
+givenName,/Core/name in /Core/Person
+familyName,/Core/name in /Core/Person
+email,/Core/externalIdentifier in /Core/Person
+affiliation,/Core/externalIdentifier in /Core/Person
+identifier,/Core/externalIdentifier in /Core/Person
+name,/Core/name in /Core/Person
+address,/Core/externalIdentifier in /Core/Person
+reviewAspect,Core/subject in /Core/Annotation
+reviewBody,/Core/statement in /Core/Annotation
+endDate,/Core/validUntilTime
+roleName,
+startDate,/Core/startTime
+softwareSuggestions,hasOptionalComponent
+maintainer,/Core/suppliedBy
+continuousIntegration,/Software/sourceInfo
+buildInstructions,hasDocumentation
+developmentStatus,/Core/supportLevel
+embargoEndDate,
+funding,
+issueTracker,/Software/sourceInfo
+referencePublication,hasDocumentation
+readme,hasDocumentation
+hasSourceCode,/Software/sourceInfo
+isSourceCodeOf,generates
