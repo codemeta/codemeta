@@ -65,6 +65,7 @@ maintainer,
 continuousIntegration,
 buildInstructions,
 developmentStatus,Development still active
+embargoEndDate,
 funding,
 issueTracker,
 referencePublication,
