@@ -23,26 +23,26 @@ operates according to the rules specified in the
 
 ## V1.0 contributors (Jan 6, 2017)
 
-| Name             | Email                | Institution             | GitHub  |
-|------------------|----------------------|-------------------------| --------|
-| Matthew B. Jones | jones@nceas.ucsb.edu | NCEAS, UC Santa Barbara | [@mbjones](https://github.com/mbjones) |
-| Carl Boettiger | | UC Berkeley | [@cboettig](https://github.com/cboettig) |
-| Abby Cabunoc Mayes | | Mozilla Science Lab | [@acabunoc](https://github.com/acabunoc) |
-| Peter Slaughter | slaughter@nceas.ucsb.edu | NCEAS, UC Santa Barbara | [@gothub](https://github.com/gothub) |
-| Kyle Niemeyer | | | [@kyleniemeyer](https://github.com/kyleniemeyer) |
-| Yolanda Gil | | USC ISI | |
-| Martin Fenner | | DataCite | |
-| Krzysztof Nowak | | Zenodo | |
-| Mark Hahnel | | figshare | |
-| Luke Coy | | RIT & MSL | |
-| Alice Allen | | ASCL | |
-| Mercè Crosas | | Harvard IQSS | |
-| Ashley Sands | | UCLA | |
-| Neil Chue Hong | | SSI | |
-| Patricia Cruse | | DataCite | |
-| Dan Katz | | NCSA | |
-| Carole Goble | | | |
-| Ted Habermann | ted.habermann@gmail.com | | [@tedhabermann](https://github.com/tedhabermann) |
+| Name             | Institution             | GitHub  |
+|------------------|-------------------------| --------|
+| Matthew B. Jones | NCEAS, UC Santa Barbara | [@mbjones](https://github.com/mbjones) |
+| Carl Boettiger | UC Berkeley | [@cboettig](https://github.com/cboettig) |
+| Abby Cabunoc Mayes | Mozilla Science Lab | [@acabunoc](https://github.com/acabunoc) |
+| Peter Slaughter  | NCEAS, UC Santa Barbara | [@gothub](https://github.com/gothub) |
+| Kyle Niemeyer | | [@kyleniemeyer](https://github.com/kyleniemeyer) |
+| Yolanda Gil | USC ISI | |
+| Martin Fenner | DataCite | [@mfenner](https://github.com/mfenner) |
+| Krzysztof Nowak | Zenodo | |
+| Mark Hahnel | figshare | |
+| Luke Coy | RIT & MSL | |
+| Alice Allen | ASCL | |
+| Mercè Crosas | Harvard IQSS | |
+| Ashley Sands | UCLA | |
+| Neil Chue Hong | SSI | |
+| Patricia Cruse | DataCite | |
+| Dan Katz | NCSA | |
+| Carole Goble | | |
+| Ted Habermann | | [@tedhabermann](https://github.com/tedhabermann) |
 
 ## V2.0 contributors (Sep 29, 2020)
 
@@ -77,40 +77,51 @@ operates according to the rules specified in the
 
 ## V2.1 contributors (Apr 24, 2023)
 
-| Name             | Email                | Institution             | GitHub  |
-|------------------|----------------------|-------------------------| --------|
-| Matthew B. Jones | jones@nceas.ucsb.edu | NCEAS, UC Santa Barbara | [@mbjones](https://github.com/mbjones) |
-| Carl Boettiger | | UC Berkeley | [@cboettig](https://github.com/cboettig) |
-| Morane Gruenpeter | morane@softwareheritage.org | Software Heritage | [@moranegg](https://github.com/moranegg) |
-| Valentin Lorentz | vlorentz@softwareheritage.org | Software Heritage | [@progval](https://github.com/progval) |
-| Thomas Morrell | tmorrell@library.caltech.edu | Caltech Library | [@tmorell](https://github.com/tmorrell) |
-| Stephan Druskat | | German Aerospace Center (DLR) | [@sdruskat](https://github.com/sdruskat) |
-| Colin Smith | | Enivronmental Data Initiative | [@clnsmt](https://github.com/clnsmth) |
-| Jurriaan H. Spaaks | | Netherlands eScience Center | [@jspaaks](https://github.com/jspaaks) |
-| Satvik Vemuganti | | | [@VickyMerzOwn](https://github.com/VickyMerzOwn) |
-| Thomas Vuillaume | | Univ. Savoie Mont-Blanc, CNRS, LAPP | [@vuillaut](https://github.com/vuillaut) |
+| Name             | Institution             | GitHub  |
+|------------------|-------------------------| --------|
+| Matthew B. Jones | NCEAS, UC Santa Barbara | [@mbjones](https://github.com/mbjones) |
+| Carl Boettiger | UC Berkeley | [@cboettig](https://github.com/cboettig) |
+| Morane Gruenpeter | Software Heritage | [@moranegg](https://github.com/moranegg) |
+| Valentin Lorentz | Software Heritage | [@progval](https://github.com/progval) |
+| Thomas Morrell | Caltech Library | [@tmorell](https://github.com/tmorrell) |
+| Stephan Druskat | German Aerospace Center (DLR) | [@sdruskat](https://github.com/sdruskat) |
+| Colin Smith | Enivronmental Data Initiative | [@clnsmt](https://github.com/clnsmth) |
+| Jurriaan H. Spaaks | Netherlands eScience Center | [@jspaaks](https://github.com/jspaaks) |
+| Satvik Vemuganti | | [@VickyMerzOwn](https://github.com/VickyMerzOwn) |
+| Thomas Vuillaume | Univ. Savoie Mont-Blanc, CNRS, LAPP | [@vuillaut](https://github.com/vuillaut) |
 
 ## V3.0 contributors (Jul 3, 2023)
 
-- [@agbeltran](https://github.com/agbeltran)
-- [@arfon](https://github.com/arfon)
-- [@cboettig](https://github.com/cboettig)
-- [@dgarijo](https://github.com/dgarijo)
-- [@mbjones](https://github.com/mbjones)
-- [@mfenner](https://github.com/mfenner)
-- [@moranegg](https://github.com/moranegg)
-- [@noamross](https://github.com/noamross)
-- [@progval](https://github.com/progval)
-- [@tmorell](https://github.com/tmorrell)
+| Name             | Institution             | GitHub  |
+|------------------|-------------------------| --------|
+| Alejandra Gonzalez-Beltran | Oxford e-Research Centre | [@agbeltran](https://github.com/agbeltran) |
+| Arfon Smith | GitHub | [@arfon](https://github.com/arfon) |
+| Carl Boettiger | UC Berkeley | [@cboettig](https://github.com/cboettig) |
+| Daniel Garijo | Universidad Politécnica de Madrid | [@dgarijo](https://github.com/dgarijo) |
+| Martin Fenner | Front Matter | [@mfenner](https://github.com/mfenner)
+| Matthew B. Jones | NCEAS, UC Santa Barbara | [@mbjones](https://github.com/mbjones) |
+| Morane Gruenpeter | Software Heritage | [@moranegg](https://github.com/moranegg) |
+| Noam Ross | rOpenSci | [@noamross](https://github.com/noamross) |
+| Thomas Morrell | Caltech Library | [@tmorell](https://github.com/tmorrell) |
+| Valentin Lorentz | Software Heritage | [@progval](https://github.com/progval) |
 
-## Post-V3.0 contributors
+## V3.1 contributors
 
-| Name             | Email                | Institution             | GitHub  |
-|------------------|----------------------|-------------------------| --------|
-| Anita | | | [@bandrow](https://github.com/bandrow) |
-| Arthit Suriyawongkul | <suriyawa@tcd.ie> | ADAPT Centre, Trinity College Dublin | [@bact](https://github.com) |
-| Baptiste Cecconi | | LESIA, Observatoire de Paris, PSL | [@BaptisteCecconi](https://github.com/BaptisteCecconi) |
-| Daniel Garijo | | Universidad Politécnica de Madrid | [@dgarijo](https://github.com/dgarijo) |
-| Hélène Jonin | | | [@hjonin](https://github.com/hjonin) |
-| Moritz Schubotz | | University of Konstanz | [@physikerwelt](https://github.com/physikerwelt) |
-| Val Lorentz | | Software Heritage | [@progval](https://github.com/progval) |
+| Name             | Institution             | GitHub  |
+|------------------|-------------------------| --------|
+| Alex Ioannidis | CERN | [@slint](https://github.com/slint) |
+| Anita | | [@bandrow](https://github.com/bandrow) |
+| Arthit Suriyawongkul | ADAPT Centre, Trinity College Dublin | [@bact](https://github.com) |
+| Baptiste Cecconi | LESIA, Observatoire de Paris, PSL | [@BaptisteCecconi](https://github.com/BaptisteCecconi) |
+| Daniel Garijo | Universidad Politécnica de Madrid | [@dgarijo](https://github.com/dgarijo) |
+| Dragan Ivanovic | University of Novi Sad | [@chenejac](https://github.com/chenejac) |
+| | | [@esgg](https://github.com/esgg) |
+| Helen Mair Rawsthorne | UK Centre for Ecology & Hydrology | [@hm-raws](https://github.com/hm-raws) |
+| Hélène Jonin | | [@hjonin](https://github.com/hjonin) |
+| Hervé Ménager | Institut Pasteur | [@hmenager](https://github.com/hmenager) |
+| | | [@Mazztok45](https://github.com/Mazztok45) |
+| Morane Gruenpeter | Software Heritage | [@moranegg](https://github.com/moranegg) |
+| Moritz Schubotz | University of Konstanz | [@physikerwelt](https://github.com/physikerwelt) |
+| Thomas Morrell | Caltech Library | [@tmorell](https://github.com/tmorrell) |
+| Valentin Lorentz | Software Heritage | [@progval](https://github.com/progval) |
+| Yaroslav Halchenko | Dartmouth College | [@yarikoptic](https://github.com/yarikoptic) |
