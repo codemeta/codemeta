@@ -15,7 +15,7 @@ permissions,
 processorRequirements,
 releaseNotes,
 softwareHelp,
-softwareRequirements,
+softwareRequirements,DEPENDS_ON
 softwareVersion,PackageVersion
 storageRequirements,
 supportingData,
@@ -60,7 +60,7 @@ reviewBody,AnnotationComment
 endDate,
 roleName,
 startDate,
-softwareSuggestions,
+softwareSuggestions,OPTIONAL_COMPONENT_OF
 maintainer,
 continuousIntegration,
 buildInstructions,
