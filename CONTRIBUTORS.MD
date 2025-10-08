@@ -107,7 +107,7 @@ operates according to the rules specified in the
 | Thomas Morrell | Caltech Library | [@tmorell](https://github.com/tmorrell) |
 | Valentin Lorentz | Software Heritage | [@progval](https://github.com/progval) |
 
-## V3.1 contributors (Oct 8, 2025)
+## V3.1 contributors (Oct 13, 2025)
 
 | Name             | Institution             | GitHub  |
 |------------------|-------------------------| --------|
