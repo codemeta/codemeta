@@ -119,6 +119,7 @@ operates according to the rules specified in the
 | Helen Mair Rawsthorne | UK Centre for Ecology & Hydrology | [@hm-raws](https://github.com/hm-raws) |
 | Hélène Jonin | | [@hjonin](https://github.com/hjonin) |
 | Hervé Ménager | Institut Pasteur | [@hmenager](https://github.com/hmenager) |
+| Leslie Hsu | USGS Community for Data Integration | [@hsu000001](https://github.com/hsu000001) |
 | | | [@Mazztok45](https://github.com/Mazztok45) |
 | Morane Gruenpeter | Software Heritage | [@moranegg](https://github.com/moranegg) |
 | Moritz Schubotz | University of Konstanz | [@physikerwelt](https://github.com/physikerwelt) |
