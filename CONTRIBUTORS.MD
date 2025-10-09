@@ -28,7 +28,7 @@ operates according to the rules specified in the
 | Matthew B. Jones | NCEAS, UC Santa Barbara | [@mbjones](https://github.com/mbjones) |
 | Carl Boettiger | UC Berkeley | [@cboettig](https://github.com/cboettig) |
 | Abby Cabunoc Mayes | Mozilla Science Lab | [@acabunoc](https://github.com/acabunoc) |
-| Peter Slaughter  | NCEAS, UC Santa Barbara | [@gothub](https://github.com/gothub) |
+| Peter Slaughter | NCEAS, UC Santa Barbara | [@gothub](https://github.com/gothub) |
 | Kyle Niemeyer | | [@kyleniemeyer](https://github.com/kyleniemeyer) |
 | Yolanda Gil | USC ISI | |
 | Martin Fenner | DataCite | [@mfenner](https://github.com/mfenner) |
@@ -46,34 +46,36 @@ operates according to the rules specified in the
 
 ## V2.0 contributors (Sep 29, 2020)
 
-- [@gothub](https://github.com/gothub)
-- [@cboettig](https://github.com/cboettig)
-- [@emulatingkat](https://github.com/emulatingkat)
-- [@kyleniemeyer](https://github.com/kyleniemeyer)
-- [@abbycabs](https://github.com/abbycabs)
-- [@progval](https://github.com/progval)
-- [@amoeba](https://github.com/amoeba)
-- [@sdruskat](https://github.com/sdruskat)
-- [@tmorrell](https://github.com/tmorrell)
-- [@arfon](https://github.com/arfon)
-- [@zoidy](https://github.com/zoidy)
-- [@jspaaks](https://github.com/jspaaks)
-- [@hmenager](https://github.com/hmenager)
-- [@mkuzak](https://github.com/mkuzak)
-- [@larsgw](https://github.com/larsgw)
-- [@dr-shorthair](https://github.com/dr-shorthair)
-- [@encima](https://github.com/encima)
-- [@tedhabermann](https://github.com/tedhabermann)
-- [@danielskatz](https://github.com/danielskatz)
-- [@katrinleinweber](https://github.com/katrinleinweber)
-- [@npch](https://github.com/npch)
-- [@pdurbin](https://github.com/pdurbin)
-- [@atla5](https://github.com/atla5)
-- [@moranegg](https://github.com/moranegg)
-- [@nuest](https://github.com/nuest)
-- [@lukecoy](https://github.com/lukecoy)
-- [@qb-x](https://github.com/qb-x)
-- [@hubgit](https://github.com/hubgit)
+| Name             | Institution             | GitHub  |
+|------------------|-------------------------| --------|
+| Abby Cabunoc Mayes | Mozilla Science Lab | [@abbycabs](https://github.com/abbycabs) |
+| Alf Eaton | | [@hubgit](https://github.com/hubgit) |
+| Aidan Sawyer | | [@atla5](https://github.com/atla5) |
+| Arfon Smith | GitHub | [@arfon](https://github.com/arfon) |
+| Bryce Mecum | NCEAS, UC Santa Barbara | [@amoeba](https://github.com/amoeba) |
+| Carl Boettiger | UC Berkeley | [@cboettig](https://github.com/cboettig) |
+| Chris Gwilliams | ETH Zürich | [@encima](https://github.com/encima) |
+| Daniel Nüst | University of Münster | [@nuest](https://github.com/nuest) |
+| Daniel S. Katz | University of Illinois at Urbana-Champaign | [@danielskatz](https://github.com/danielskatz) |
+| Fernando Rios | University of Arizona | [@zoidy](https://github.com/zoidy) |
+| Hervé Ménager | Institut Pasteur | [@hmenager](https://github.com/hmenager) |
+| John Kratz | California Digital Library | [@qb-x](https://github.com/qb-x) |
+| Jurriaan H. Spaaks | Netherlands eScience Center | [@jspaaks](https://github.com/jspaaks) |
+| Kat Thornton | Yale University Library | [@emulatingkat](https://github.com/emulatingkat) |
+| Katrin Leinweber | Technische Informationsbibliothek | [@katrinleinweber](https://github.com/katrinleinweber) |
+| Kyle Niemeyer | Oregon State University | [@kyleniemeyer](https://github.com/kyleniemeyer) |
+| Lars Willighagen | Radboud University Nijmegen | [@larsgw](https://github.com/larsgw) |
+| Luke Coy | | [@lukecoy](https://github.com/lukecoy) |
+| Mateusz Kuzak | Netherlands eScience Center | [@mkuzak](https://github.com/mkuzak) |
+| Morane Gruenpeter | Software Heritage | [@moranegg](https://github.com/moranegg) |
+| Neil Chue Hong | Software Sustainability Institute | [@npch](https://github.com/npch) |
+| Peter Slaughter | NCEAS, UC Santa Barbara | [@gothub](https://github.com/gothub) |
+| Philip Durbin | IQSS, Harvard University | [@pdurbin](https://github.com/pdurbin) |
+| Simon Cox | CSIRO | [@dr-shorthair](https://github.com/dr-shorthair) |
+| Stephan Druskat | German Aerospace Center (DLR) | [@sdruskat](https://github.com/sdruskat) |
+| Ted Habermann | Metadata Game Changers | [@tedhabermann](https://github.com/tedhabermann) |
+| Thomas Morrell | Caltech Library | [@tmorrell](https://github.com/tmorrell) |
+| Valentin Lorentz | Software Heritage | [@progval](https://github.com/progval) |
 
 ## V2.1 contributors (Apr 24, 2023)
 
