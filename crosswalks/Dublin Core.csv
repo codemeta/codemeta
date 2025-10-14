@@ -72,3 +72,9 @@ referencePublication,
 readme,
 hasSourceCode,
 isSourceCodeOf,
+
+# few exact matches
+# https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/publisher/
+
+
+
