@@ -1,0 +1,13 @@
+---
+curie_map: # This contains the URLs prefixes used in the mapping file
+  skos: http://www.w3.org/2004/02/skos/core# ### Always needed. Do not modify
+  sssom: https://w3id.org/sssom/             ### Always needed. Do not modify
+  subject: "..." ### Need to add
+  schema: "http://schema.org/" ### Always needed. Do not modify
+  codemeta: "https://w3id.org/codemeta/3.0" ### Always needed. Do not modify
+license: https://creativecommons.org/publicdomain/zero/1.0/
+mapping_date: "2025-04-10" ### Need to add
+mapping_set_description: "Dublin Core metadata mapping to Codemeta" ### Work in progress
+mapping_provider: "https://orcid.org/0000-0002-5082-6404" ### Work in progress
+mapping_set_id: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms ### Work in progress
+subject_documentation: "" ### Work in progress
