@@ -4,8 +4,8 @@ name,name,exact_match,,
 description,description,exact_match,,
 homepage,url,exact_match,,"Maps homepage URL to sameAs"
 source_code,codeRepository,exact_match,,
-related_software/name,relatedLink/name,exact_match,,"Related software name maps to supportingData name"
-related_software/id,relatedLink/id,exact_match,,"Related software id mapped with full URL"
+related_software/name,relatedSoftware/name,exact_match,,"Related software name maps to supportingData name"
+related_software/id,relatedSoftware/id,exact_match,,"Related software id mapped with full URL"
 authors/name,author/name,exact_match,,"Authors name mapped directly"
 references,citation/id,exact_match,,"Reference IDs mapped to citation IDs with API URLs"
 references_year_alt,citation/datePublished,part_of,,"Year is part of citation but not directly mapped in CodeMeta"
@@ -16,4 +16,3 @@ keywords,keywords,exact_match,,New mapping added.
 zbmath_url,sameAs,exact_match,,New mapping added. Maps a specific URL to the general sameAs property.
 orms_id,sameAs,exact_match,,New mapping added. Maps a specific ID to the general sameAs property.
 standard_articles,referencePublication,exact_match,,New mapping added.
-related_software,relatedLink,exact_match,,New mapping added. A more direct mapping for the entire related software object.
