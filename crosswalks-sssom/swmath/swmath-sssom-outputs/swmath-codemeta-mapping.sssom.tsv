@@ -1,0 +1,40 @@
+# curie_map: # This contains the URLs prefixes used in the mapping file
+#   skos: http://www.w3.org/2004/02/skos/core#  ### Always needed. Do not modify
+#   sssom: https://w3id.org/sssom/               ### Always needed. Do not modify
+#   subject: https://github.com/MaRDI4NFDI/swMATH4EOSC/blob/main/developer_documentation/schema_swMATH.xsd # Source vocabulary URI. Default value
+#   schema: "http://schema.org/"                  ### Always needed. Do not modify
+#   codemeta: "https://w3id.org/codemeta/3.0"    ### Always needed. Do not modify
+# 
+# license: https://creativecommons.org/publicdomain/zero/1.0/
+# 
+# subject_documentation: https://github.com/MaRDI4NFDI/swMATH4EOSC/tree/main/developer_documentation/Documentation_swMATH.md ### OPTIONAL: source vocabulary documentation
+# 
+# mapping_date: '2025-07-23'  ### Default value
+# 
+# mapping_set_description: >
+#   Mapping from the SWMATH software vocabulary to the CodeMeta 3.0 metadata standard	
+#   covering key fields such as identifiers	 names	 descriptions	 URLs	 related software	
+#   authors	 and citations to enable interoperability between the vocabularies.
+# 
+# mapping_provider: https://orcid.org/0000-0002-8710-9548  ### Example ORCID	 replace if needed
+# 
+# mapping_set_id: https://github.com/Mazztok45/codemeta/blob/swmath2codemeta/crosswalks/swMATH.csv
+# 
+subject_id	subject_label	predicate_id	object_id	object_label	match_type	confidence
+subject:id	id	skos:exactMatch	codemeta:id	id	SSSOM:HumanCurated	1
+subject:name	name	skos:exactMatch	schema:name	name	SSSOM:HumanCurated	1
+subject:description	description	skos:exactMatch	schema:description	description	SSSOM:HumanCurated	1
+subject:homepage	homepage	skos:exactMatch	codemeta:homepage	homepage	SSSOM:HumanCurated	1
+subject:source_code	source_code	skos:exactMatch	codemeta:source_code	source_code	SSSOM:HumanCurated	1
+subject:related_software/name	related_software/name	skos:exactMatch	codemeta:related_software/name	related_software/name	SSSOM:HumanCurated	1
+subject:related_software/id	related_software/id	skos:exactMatch	codemeta:related_software/id	related_software/id	SSSOM:HumanCurated	1
+subject:authors/name	authors/name	skos:exactMatch	codemeta:authors/name	authors/name	SSSOM:HumanCurated	1
+subject:references	references	skos:exactMatch	codemeta:references	references	SSSOM:HumanCurated	1
+subject:references_year_alt	references_year_alt	skos:closeMatch	codemeta:references_year_alt	references_year_alt	SSSOM:HumanCurated	1
+subject:classification	classification	skos:broader	codemeta:classification	classification	SSSOM:HumanCurated	1
+subject:programming_languages	programming_languages	skos:exactMatch	codemeta:programming_languages	programming_languages	SSSOM:HumanCurated	1
+subject:dependencies	dependencies	skos:exactMatch	codemeta:dependencies	dependencies	SSSOM:HumanCurated	1
+subject:keywords	keywords	skos:exactMatch	schema:keywords	keywords	SSSOM:HumanCurated	1
+subject:zbmath_url	zbmath_url	skos:exactMatch	codemeta:zbmath_url	zbmath_url	SSSOM:HumanCurated	1
+subject:orms_id	orms_id	skos:exactMatch	codemeta:orms_id	orms_id	SSSOM:HumanCurated	1
+subject:standard_articles	standard_articles	skos:exactMatch	codemeta:standard_articles	standard_articles	SSSOM:HumanCurated	1
