@@ -1,0 +1,13 @@
+---
+curie_map: # This contains the URLs prefixes used in the mapping file
+  skos: http://www.w3.org/2004/02/skos/core# ### Always needed. Do not modify
+  sssom: https://w3id.org/sssom/             ### Always needed. Do not modify
+  subject:  https://pypi.org/ns/core-metadata# ### Value of the schema. Need to be changed.
+  codemeta: "https://w3id.org/codemeta/3.0/" ### Always needed. Do not modify
+  schema: "http://schema.org/" ### Always needed. Do not modify
+license: https://creativecommons.org/publicdomain/zero/1.0/
+subject_documentation: https://packaging.python.org/en/latest/specifications/core-metadata/
+mapping_date: '2025-09-10' ### Default value
+mapping_set_description: 'Mapping between codemeta and core metadata specification of the PyPa Package Distribution Metadata (https://packaging.python.org/en/latest/specifications/core-metadata/). We have followed the structure of the JSON provided by the API(e.g. https://pypi.org/pypi/somef/json)' ### Please, add the description of your mapping
+mapping_provider: https://codemeta.github.io/ ### Please, add a URI of the author of the mapping. Prioritize ORCIDs for persons and ROR ids for organizations
+mapping_set_id: https://w3id.org/codemeta/crosswalks/PyPa ### Please, add a URI of your crosswalk. You can use the w3id.org service to create it.
