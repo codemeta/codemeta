@@ -5,7 +5,7 @@ review,
 runtimePlatform,
 targetProduct,
 applicationCategory,
-applicationSubCategory,
+applicationSubCategory,classification
 downloadUrl,
 fileSize,
 installUrl,
@@ -45,14 +45,14 @@ position,
 description,description
 identifier,id
 name,name
-sameAs,zbmath_url / orms_id
-url,homepage
+sameAs,""
+url,homepage / zbmath_url
 relatedLink,
 givenName,
 familyName,
 email,
 affiliation,
-identifier,
+identifier,orms_id
 name,
 address,
 reviewAspect,
