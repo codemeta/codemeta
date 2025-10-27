@@ -1,85 +1,85 @@
 source_term,codemeta_term,type_relation,combined_mappings,comments
-dcterms:subject,applicationCategory,exact_match,,
-dcterms:subject,applicationSubCategory,exact_match,,
-dcterms:creator/affiliation,author/affiliation/name,exact_match,,
+dcterms:subject,applicationCategory,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/subject/
+dcterms:subject,applicationSubCategory,superclass_of,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/subject/
+dcterms:creator/affiliation,author/affiliation/name,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/creator/
 ,author/email,,,
 ,author/familyName,,,
 ,author/givenName,,,
-dcterms:creator/identifier,author/identifier,more_specific_than,,
-dcterms:creator/name,author/name,exact_match,,
+dcterms:creator/identifier,author/identifier,more_specific_than,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/identifier/
+dcterms:creator/name,author/name,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/identifier/
 ,author/roleName,,,
 ,buildInstructions,,,
-dcterms:bibliographicCitation,citation,exact_match,,
-dcterms:source,codeRepository,exact_match,,If not available should be under related resource with relationType='IsSupplementTo'
+dcterms:bibliographicCitation,citation,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/bibliographicCitation/
+dcterms:source,codeRepository,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/source/
 ,continuousIntegration,,,
-dcterms:contributor/affiliation,contributor/affiliation/name,exact_match,,
-dcterms:contributor/identifier,contributor/identifier,more_specific_than,,
-dcterms:contributor/name,contributor/name,exact_match,,
-dcterms:contributor/type,contributor/roleName,,,
-dcterms:rightsHolder/familyName,copyrightHolder/familyName,,,
-dcterms:rightsHolder/givenName,copyrightHolder/givenName,,,
-dcterms:rightsHolder/identifier,copyrightHolder/identifier,,,
-dcterms:rightsHolder/name,copyrightHolder/name,,,
-dcterms:dateCopyrighted,copyrightYear,exact_match,,
-dcterms:created,dateCreated,exact_match,,
-dcterms:modified,dateModified,exact_match,,
-dcterms:issued,datePublished,exact_match,,
-dcterms:description,description,exact_match,,
+dcterms:contributor/affiliation,contributor/affiliation/name,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/contributor/
+dcterms:contributor/identifier,contributor/identifier,more_specific_than,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/contributor/
+dcterms:contributor/name,contributor/name,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/contributor/
+dcterms:contributor/type,contributor/roleName,broad_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/contributor/
+dcterms:rightsHolder/familyName,copyrightHolder/familyName,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/rightsHolder/
+dcterms:rightsHolder/givenName,copyrightHolder/givenName,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/rightsHolder/
+dcterms:rightsHolder/identifier,copyrightHolder/identifier,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/rightsHolder/
+dcterms:rightsHolder/name,copyrightHolder/name,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/rightsHolder/
+dcterms:dateCopyrighted,copyrightYear,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/dateCopyrighted/
+dcterms:created,dateCreated,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/created/
+dcterms:modified,dateModified,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/modified/
+dcterms:issued,datePublished,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/issued/
+dcterms:description,description,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/description/
 ,developmentStatus,,,
 dcterms:identifier,downloadUrl,exact_match,,
-dcterms:contributor/affiliation,editor/affiliation/name,exact_match,,Where type is 'Editor'
-dcterms:contributor/identifier,editor/identifier,more_specific_than,,Where type is 'Editor'
-dcterms:contributor/name,editor/name,exact_match,,Where type is 'Editor'
+dcterms:contributor/affiliation,editor/affiliation/name,broad_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/contributor/
+dcterms:contributor/identifier,editor/identifier,broad_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/contributor/
+dcterms:contributor/name,editor/name,broad_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/contributor/
 dcterms:format,encoding,exact_match,,
 dcterms:format,fileFormat,exact_match,,
 ,fileSize,,,
-dcterms:identifier,funder/identifier,more_specific_than,,Funder metadata can be found under funder or funding/funder
+dcterms:identifier,funder/identifier,more_specific_than,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/identifier/
 dcterms:creator/funder/name,funder/name,exact_match,,Funder metadata can be found under funder or funding/funder
-dcterms:identifier,funding/funder/identifier,more_specific_than,,Funder metadata can be found under funder or funding/funder
-dcterms:creator/funder/name,funding/funder/name,exact_match,,Funder metadata can be found under funder or funding/funder
-dcterms:identifier,funding/identifier,exact_match,,
-dcterms:title,funding/name,exact_match,,
-dcterms:identifier,funding/url,exact_match,,
-dcterms:hasPart,hasPart,exact_match,,Where relationType='HasPart'
-dcterms:hasPart,hasSourceCode,exact_match,,Where relationType='HasSource'
-dcterms:identifier,identifier,exact_match,,
-dcterms:accessRights,isAccessibleForFree,exact_match,,If value='open'
-dcterms:isPartOf,isPartOf,exact_match,,Where relationType='IsPartOf'
-dcterms:isPartOf,isSourceCodeOf,more_generic_than,,Where relationType='IsSourceOf'
+dcterms:identifier,funding/funder/identifier,more_specific_than,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/identifier/
+dcterms:creator/funder/name,funding/funder/name,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/creator/
+dcterms:identifier,funding/identifier,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/identifier/
+dcterms:title,funding/name,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/title
+dcterms:identifier,funding/url,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/identifier/
+dcterms:hasPart,hasPart,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/hasPart/
+dcterms:hasPart,hasSourceCode,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/hasPart/
+dcterms:identifier,identifier,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/identifier/
+dcterms:accessRights,isAccessibleForFree,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/accessRights/
+dcterms:isPartOf,isPartOf,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/isPartOf/
+dcterms:isPartOf,isSourceCodeOf,more_generic_than,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/isPartOf/
 ,issueTracker,,,
-dcterms:subject,keywords,exact_match,,
-dcterms:license,license,exact_match,,
+dcterms:subject,keywords,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/subject/
+dcterms:license,license,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/license/
 ,maintainer/name,,,
 ,memoryRequirements,,,
-dcterms:title,name,exact_match,,
+dcterms:title,name,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/title/
 ,operatingSystem,,,
 dcterms:accessRights,permissions,exact_match,,
 ,position,,,
 ,processorRequirements,,,
-dcterms:contributor/affiliation,producer/affiliation/name,exact_match,,Where type is 'Producer'
-dcterms:contributor/identifier,producer/identifier,more_specific_than,,Where type is 'Producer'
-dcterms:contributor/name,producer/name,exact_match,,Where type is 'Producer'
-dcterms:format/programmingLanguage,programmingLanguage,exact_match,,
-dcterms:publisher,provider/name,exact_match,,
-dcterms:publisher,publisher/name,exact_match,,
+dcterms:contributor/affiliation,producer/affiliation/name,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/contributor/
+dcterms:contributor/identifier,producer/identifier,more_specific_than,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/contributor/
+dcterms:contributor/name,producer/name,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/contributor/
+dcterms:format/programmingLanguage,programmingLanguage,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/format/
+dcterms:publisher,provider/name,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/publisher/
+dcterms:publisher,publisher/name,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/publisher/
 ,readme,,,
-dcterms:references,referencePublication,exact_match,,Where relationType='IsSupplementTo' and resourceType='publication-article'
-dcterms:relation,relatedLink,more_generic_than,,
-dcterms:description,releaseNotes,exact_match,,
-dcterms:relation,review,exact_match,,Where relationType='IsReviewedBy'
+dcterms:references,referencePublication,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/references/
+dcterms:relation,relatedLink,more_generic_than,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/relation/
+dcterms:description,releaseNotes,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/description/
+dcterms:relation,review,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/relation/
 ,reviewAspect,,,
 ,reviewBody,,,
 ,runtimePlatform,,,
-dcterms:relation,sameAs,exact_match,,Where relationType='IsIdenticalTo'
+dcterms:relation,sameAs,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/relation/
 ,softwareHelp,,,
 dcterms:requires,softwareRequirements,exact_match,,
 ,softwareSuggestions,,,
 dcterms:hasVersion,softwareVersion,exact_match,,
-dcterms:contributor/affiliation,sponsor/affiliation/name,exact_match,,Where type is 'Sponsor'
-dcterms:contributor/identifier,sponsor/identifier,more_specific_than,,Where type is 'Sponsor'
-dcterms:contributor/name,sponsor/name,exact_match,,Where type is 'Sponsor'
+dcterms:contributor/affiliation,sponsor/affiliation/name,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/contributor/
+dcterms:contributor/identifier,sponsor/identifier,more_specific_than,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/identifier/
+dcterms:contributor/name,sponsor/name,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/contributor/
 ,storageRequirements,,,
-dcterms:relation,supportingData,exact_match,,Where relationType='IsSupplementedBy'
+dcterms:relation,supportingData,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/relation/
 ,targetProduct,,,
-dcterms:identifier,url,exact_match,,
-dcterms:hasVersion,version,exact_match,,
+dcterms:identifier,url,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/identifier/
+dcterms:hasVersion,version,exact_match,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/hasVersion/
