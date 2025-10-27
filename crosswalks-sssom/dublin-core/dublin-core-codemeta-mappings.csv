@@ -10,7 +10,7 @@ dcterms:creator/name,author/name,exact_match,,
 ,author/roleName,,,
 ,buildInstructions,,,
 dcterms:bibliographicCitation,citation,exact_match,,
-dcterms:source,codeRepository,exact_match,,If not available, should be under related resource with relationType='IsSupplementTo'
+dcterms:source,codeRepository,exact_match,,If not available should be under related resource with relationType='IsSupplementTo'
 ,continuousIntegration,,,
 dcterms:contributor/affiliation,contributor/affiliation/name,exact_match,,
 dcterms:contributor/identifier,contributor/identifier,more_specific_than,,
