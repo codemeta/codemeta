@@ -1,4 +1,4 @@
-Property,dcterms:subject
+Property,dublinCore
 applicationCategory,dcterms:subject
 applicationSubCategory,dcterms:creator/affiliation
 author/affiliation/name,
@@ -83,4 +83,5 @@ supportingData,
 targetProduct,dcterms:identifier
 url,dcterms:hasVersion
 version,
+
 
