@@ -34,5 +34,5 @@ subject:programming_languages	programming_languages	skos:exactMatch	codemeta:pro
 subject:dependencies	dependencies	skos:exactMatch	codemeta:dependencies	dependencies	SSSOM:HumanCurated	1
 subject:keywords	keywords	skos:exactMatch	schema:keywords	keywords	SSSOM:HumanCurated	1
 subject:zbmath_url	zbmath_url	skos:exactMatch	codemeta:zbmath_url	zbmath_url	SSSOM:HumanCurated	1
-subject:orms_id	orms_id	skos:exactMatch	codemeta:orms_id	orms_id	SSSOM:HumanCurated	1
+subject:orms_id	orms_id	skos:narrower	codemeta:orms_id	orms_id	SSSOM:HumanCurated	1
 subject:standard_articles	standard_articles	skos:exactMatch	codemeta:standard_articles	standard_articles	SSSOM:HumanCurated	1

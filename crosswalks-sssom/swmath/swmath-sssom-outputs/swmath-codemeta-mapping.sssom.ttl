@@ -19,7 +19,7 @@ sssom:subject_label a owl:AnnotationProperty .
 
 <https://github.com/MaRDI4NFDI/swMATH4EOSC/blob/main/developer_documentation/schema_swMATH.xsdauthors/name> skos:exactMatch <https://w3id.org/codemeta/3.0authors/name> .
 
-subject:classification skos:broader codemeta:classification .
+subject:classification skos:exactMatch codemeta:classification .
 
 subject:dependencies skos:exactMatch codemeta:dependencies .
 
@@ -33,7 +33,7 @@ subject:keywords skos:exactMatch schema1:keywords .
 
 subject:name skos:exactMatch schema1:name .
 
-subject:orms_id skos:exactMatch codemeta:orms_id .
+subject:orms_id skos:narrower codemeta:orms_id .
 
 subject:programming_languages skos:exactMatch codemeta:programming_languages .
 
@@ -41,24 +41,11 @@ subject:references skos:exactMatch codemeta:references .
 
 subject:references_year_alt skos:closeMatch codemeta:references_year_alt .
 
-<https://github.com/MaRDI4NFDI/swMATH4EOSC/blob/main/developer_documentation/schema_swMATH.xsdrelated_software/id> skos:exactMatch <https://w3id.org/codemeta/3.0related_software/id> .
-
-<https://github.com/MaRDI4NFDI/swMATH4EOSC/blob/main/developer_documentation/schema_swMATH.xsdrelated_software/name> skos:exactMatch <https://w3id.org/codemeta/3.0related_software/name> .
-
 subject:source_code skos:exactMatch codemeta:source_code .
 
 subject:standard_articles skos:exactMatch codemeta:standard_articles .
 
 subject:zbmath_url skos:exactMatch codemeta:zbmath_url .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:exactMatch ;
-    owl:annotatedSource subject:zbmath_url ;
-    owl:annotatedTarget codemeta:zbmath_url ;
-    sssom:confidence 1e+00 ;
-    sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "zbmath_url" ;
-    sssom:subject_label "zbmath_url" .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:exactMatch ;
@@ -71,6 +58,32 @@ subject:zbmath_url skos:exactMatch codemeta:zbmath_url .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:id ;
+    owl:annotatedTarget codemeta:id ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "id" ;
+    sssom:subject_label "id" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:programming_languages ;
+    owl:annotatedTarget codemeta:programming_languages ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "programming_languages" ;
+    sssom:subject_label "programming_languages" .
+
+[] a owl:Ontology ;
+    dcterms:description """Mapping from the SWMATH software vocabulary to the CodeMeta 3.0 metadata standard covering key fields such as identifiers	 names	 descriptions	 URLs	 related software authors	 and citations to enable interoperability between the vocabularies.
+""" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    pav:authoredOn "2025-07-23"^^xsd:date ;
+    sssom:mapping_provider "https://orcid.org/0000-0002-8710-9548"^^xsd:anyURI ;
+    sssom:mapping_set_id "https://github.com/Mazztok45/codemeta/blob/swmath2codemeta/crosswalks/swMATH.csv"^^xsd:anyURI .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
     owl:annotatedSource subject:description ;
     owl:annotatedTarget schema1:description ;
     sssom:confidence 1e+00 ;
@@ -79,40 +92,22 @@ subject:zbmath_url skos:exactMatch codemeta:zbmath_url .
     sssom:subject_label "description" .
 
 [] a owl:Axiom ;
-    owl:annotatedProperty skos:broader ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:zbmath_url ;
+    owl:annotatedTarget codemeta:zbmath_url ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "zbmath_url" ;
+    sssom:subject_label "zbmath_url" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
     owl:annotatedSource subject:classification ;
     owl:annotatedTarget codemeta:classification ;
     sssom:confidence 1e+00 ;
     sssom:mapping_justification semapv:UnspecifiedMatching ;
     sssom:object_label "classification" ;
     sssom:subject_label "classification" .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:exactMatch ;
-    owl:annotatedSource subject:dependencies ;
-    owl:annotatedTarget codemeta:dependencies ;
-    sssom:confidence 1e+00 ;
-    sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "dependencies" ;
-    sssom:subject_label "dependencies" .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:exactMatch ;
-    owl:annotatedSource subject:source_code ;
-    owl:annotatedTarget codemeta:source_code ;
-    sssom:confidence 1e+00 ;
-    sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "source_code" ;
-    sssom:subject_label "source_code" .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:exactMatch ;
-    owl:annotatedSource subject:standard_articles ;
-    owl:annotatedTarget codemeta:standard_articles ;
-    sssom:confidence 1e+00 ;
-    sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "standard_articles" ;
-    sssom:subject_label "standard_articles" .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:closeMatch ;
@@ -125,6 +120,24 @@ subject:zbmath_url skos:exactMatch codemeta:zbmath_url .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:standard_articles ;
+    owl:annotatedTarget codemeta:standard_articles ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "standard_articles" ;
+    sssom:subject_label "standard_articles" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:exactMatch ;
+    owl:annotatedSource subject:source_code ;
+    owl:annotatedTarget codemeta:source_code ;
+    sssom:confidence 1e+00 ;
+    sssom:mapping_justification semapv:UnspecifiedMatching ;
+    sssom:object_label "source_code" ;
+    sssom:subject_label "source_code" .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:narrower ;
     owl:annotatedSource subject:orms_id ;
     owl:annotatedTarget codemeta:orms_id ;
     sssom:confidence 1e+00 ;
@@ -134,21 +147,21 @@ subject:zbmath_url skos:exactMatch codemeta:zbmath_url .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:exactMatch ;
-    owl:annotatedSource subject:programming_languages ;
-    owl:annotatedTarget codemeta:programming_languages ;
+    owl:annotatedSource subject:dependencies ;
+    owl:annotatedTarget codemeta:dependencies ;
     sssom:confidence 1e+00 ;
     sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "programming_languages" ;
-    sssom:subject_label "programming_languages" .
+    sssom:object_label "dependencies" ;
+    sssom:subject_label "dependencies" .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:exactMatch ;
-    owl:annotatedSource subject:keywords ;
-    owl:annotatedTarget schema1:keywords ;
+    owl:annotatedSource <https://github.com/MaRDI4NFDI/swMATH4EOSC/blob/main/developer_documentation/schema_swMATH.xsdauthors/name> ;
+    owl:annotatedTarget <https://w3id.org/codemeta/3.0authors/name> ;
     sssom:confidence 1e+00 ;
     sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "keywords" ;
-    sssom:subject_label "keywords" .
+    sssom:object_label "authors/name" ;
+    sssom:subject_label "authors/name" .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:exactMatch ;
@@ -158,32 +171,6 @@ subject:zbmath_url skos:exactMatch codemeta:zbmath_url .
     sssom:mapping_justification semapv:UnspecifiedMatching ;
     sssom:object_label "name" ;
     sssom:subject_label "name" .
-
-[] a owl:Ontology ;
-    dcterms:description """Mapping from the SWMATH software vocabulary to the CodeMeta 3.0 metadata standard covering key fields such as identifiers	 names	 descriptions	 URLs	 related software authors	 and citations to enable interoperability between the vocabularies.
-""" ;
-    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
-    pav:authoredOn "2025-07-23"^^xsd:date ;
-    sssom:mapping_provider "https://orcid.org/0000-0002-8710-9548"^^xsd:anyURI ;
-    sssom:mapping_set_id "https://github.com/Mazztok45/codemeta/blob/swmath2codemeta/crosswalks/swMATH.csv"^^xsd:anyURI .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:exactMatch ;
-    owl:annotatedSource <https://github.com/MaRDI4NFDI/swMATH4EOSC/blob/main/developer_documentation/schema_swMATH.xsdrelated_software/name> ;
-    owl:annotatedTarget <https://w3id.org/codemeta/3.0related_software/name> ;
-    sssom:confidence 1e+00 ;
-    sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "related_software/name" ;
-    sssom:subject_label "related_software/name" .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:exactMatch ;
-    owl:annotatedSource subject:id ;
-    owl:annotatedTarget codemeta:id ;
-    sssom:confidence 1e+00 ;
-    sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "id" ;
-    sssom:subject_label "id" .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:exactMatch ;
@@ -196,20 +183,11 @@ subject:zbmath_url skos:exactMatch codemeta:zbmath_url .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:exactMatch ;
-    owl:annotatedSource <https://github.com/MaRDI4NFDI/swMATH4EOSC/blob/main/developer_documentation/schema_swMATH.xsdrelated_software/id> ;
-    owl:annotatedTarget <https://w3id.org/codemeta/3.0related_software/id> ;
+    owl:annotatedSource subject:keywords ;
+    owl:annotatedTarget schema1:keywords ;
     sssom:confidence 1e+00 ;
     sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "related_software/id" ;
-    sssom:subject_label "related_software/id" .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:exactMatch ;
-    owl:annotatedSource <https://github.com/MaRDI4NFDI/swMATH4EOSC/blob/main/developer_documentation/schema_swMATH.xsdauthors/name> ;
-    owl:annotatedTarget <https://w3id.org/codemeta/3.0authors/name> ;
-    sssom:confidence 1e+00 ;
-    sssom:mapping_justification semapv:UnspecifiedMatching ;
-    sssom:object_label "authors/name" ;
-    sssom:subject_label "authors/name" .
+    sssom:object_label "keywords" ;
+    sssom:subject_label "keywords" .
 
 
