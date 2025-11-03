@@ -12,5 +12,5 @@ programming_languages,programmingLanguage,exact_match,,Programming languages map
 dependencies,softwareRequirements,exact_match,,Dependencies maps directly to softwareRequirements
 keywords,keywords,exact_match,,Keywords maps directly to keywords property
 zbmath_url,url,exact_match,,Maps zbmath_url to url
-orms_id,identifier,exact_match,,Maps orms_id to identifier
+orms_id,identifier,more_specific_than,,Maps orms_id to identifier
 standard_articles,referencePublication,exact_match,,New mapping added.
