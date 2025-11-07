@@ -20,7 +20,7 @@ softwareVersion,
 softwareSuggestions,
 supportingData,relation
 author,creator
-citation,bibliographicCitation
+citation,
 contributor,contributor
 copyrightHolder,rightsHolder
 copyrightYear,dateCopyrighted
@@ -52,12 +52,15 @@ givenName,
 familyName,
 email,
 affiliation,
+identifier,
+name,
 address,
 reviewAspect,
 reviewBody,
 endDate,
 roleName,
 startDate,
+softwareSuggestion,
 maintainer,
 continuousIntegration,
 buildInstructions,
@@ -65,7 +68,8 @@ developmentStatus,
 embargoEndDate,
 funding,
 issueTracker,
-referencePublication,
+referencePublication,bibliographicCitation
 readme,
 hasSourceCode,
 isSourceCodeOf,
+
