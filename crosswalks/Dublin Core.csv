@@ -17,7 +17,7 @@ releaseNotes,
 softwareHelp,
 softwareRequirements,
 softwareVersion,
-softwareSuggestions,
+storageRequirements,
 supportingData,relation
 author,creator
 citation,
@@ -72,3 +72,4 @@ referencePublication,bibliographicCitation
 readme,
 hasSourceCode,
 isSourceCodeOf,
+
