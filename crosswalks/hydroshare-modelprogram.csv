@@ -31,7 +31,8 @@ editor,
 encoding,
 fileFormat,
 funder,
-keywords,ModelProgramMetadata.subjects/ ResourceMetadata.subjects
+keywords,ModelProgramMetadata.subjects / ResourceMetadata.subjects
+
 license,ModelProgramMetadata.rights
 producer,
 provider,
