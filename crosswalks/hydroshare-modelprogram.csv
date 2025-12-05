@@ -40,15 +40,15 @@ publisher,
 sponsor,
 version,ModelProgramMetadata.version
 isAccessibleForFree,
-isPartOf,ResourceMetadata.relations
-hasPart,ResourceMetadata.relations
+isPartOf,ResourceMetadata.relation
+hasPart,ResourceMetadata.relation
 position,
 description,
 identifier,
 name,ResourceMetadata.title
-sameAs,ResourceMetadata.relations
+sameAs,ResourceMetadata.relation
 url,ModelProgramMetadata.website / ModelProgramMetadata.url
-relatedLink,ResourceMetadata.relations
+relatedLink,ResourceMetadata.relation
 givenName,
 familyName,
 email,
@@ -69,7 +69,8 @@ developmentStatus,
 embargoEndDate,
 funding,ResourceMetadata.awards
 issueTracker,
-referencePublication,ResourceMetadata.relations
+referencePublication,ResourceMetadata.relation
 readme,
 hasSourceCode,
 isSourceCodeOf,
+
