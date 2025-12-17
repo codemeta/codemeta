@@ -187,7 +187,8 @@
       "@type": "Person",
       "givenName": "Thomas",
       "familyName": "Morrell",
-      "email": "tmorrell@library.caltech.edu"
+      "email": "tmorrell@library.caltech.edu",
+      "@id": "https://orcid.org/0000-0001-9266-5146"
     },
     {
       "@type": "Person",
