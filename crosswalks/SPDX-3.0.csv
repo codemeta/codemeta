@@ -13,12 +13,12 @@ memoryRequirements,
 operatingSystem,
 permissions,
 processorRequirements,
-releaseNotes,hasDocumentation
-softwareHelp,hasDocumentation
-softwareRequirements,dependsOn
+releaseNotes,/Core/ExternalRefType/releaseNotes
+softwareHelp,/Core/RelationshipType/hasDocumentation
+softwareRequirements,/Core/RelationshipType/dependsOn
 softwareVersion,/Software/packageVersion
 storageRequirements,
-supportingData,hasDataFile
+supportingData,/Core/RelationshipType/hasDataFile
 author,/Core/originatedBy
 citation,
 contributor,/Software/attributionText
@@ -32,15 +32,15 @@ encoding,
 fileFormat,/Core/contentType
 funder,
 keywords,/Core/summary
-license,hasDeclaredLicense; hasConcludedLicense
+license,/Core/RelationshipType/hasDeclaredLicense; /Core/RelationshipType/hasConcludedLicense
 producer,/Core/originatedBy
 provider,/Core/suppliedBy
 publisher,/Core/suppliedBy
 sponsor,
 version,/Software/packageVersion
 isAccessibleForFree,
-isPartOf,contains (reverse direction)
-hasPart,contains
+isPartOf,/Core/RelationshipType/contains (reverse direction)
+hasPart,/Core/RelationshipType/contains
 position,
 description,/Core/description
 identifier,/Core/externalIdentifier
@@ -60,15 +60,15 @@ reviewBody,/Core/statement in /Core/Annotation
 endDate,/Core/validUntilTime
 roleName,
 startDate,/Core/startTime
-softwareSuggestions,hasOptionalComponent
+softwareSuggestions,/Core/RelationshipType/hasOptionalComponent
 maintainer,/Core/suppliedBy
 continuousIntegration,/Software/sourceInfo
-buildInstructions,hasDocumentation
+buildInstructions,/Core/RelationshipType/hasDocumentation
 developmentStatus,/Core/supportLevel
 embargoEndDate,
 funding,
-issueTracker,/Software/sourceInfo
-referencePublication,hasDocumentation
-readme,hasDocumentation
+issueTracker,/Core/ExternalRefType/issueTracker; /Software/sourceInfo
+referencePublication,/Core/RelationshipType/hasDocumentation
+readme,/Core/RelationshipType/hasDocumentation
 hasSourceCode,/Software/sourceInfo
-isSourceCodeOf,generates
+isSourceCodeOf,/Core/RelationshipType/generates
