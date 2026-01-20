@@ -3,7 +3,7 @@
       "type": "@type",
       "id": "@id",
       "schema":"http://schema.org/",
-      "codemeta": "https://w3id.org/codemeta/terms",
+      "codemeta": "https://w3id.org/codemeta/terms/",
       "Organization": {"@id": "schema:Organization"},
       "Person": {"@id": "schema:Person"},
       "Review": {"@id": "schema:Review"},
