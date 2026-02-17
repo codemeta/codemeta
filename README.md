@@ -1,7 +1,7 @@
 # CodeMeta
 
 [![Join the chat at https://gitter.im/codemeta/codemeta](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/codemeta/codemeta?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Permanent Identifier](https://img.shields.io/badge/perma--id-https%3A%2F%2Fw3id.org%2Fcodemeta%2F3.0-blue.svg)](https://w3id.org/codemeta/3.0)
+[![Permanent Identifier](https://img.shields.io/badge/perma--id-https%3A%2F%2Fw3id.org%2Fcodemeta%2F3.1-blue.svg)](https://w3id.org/codemeta/3.1)
 
 [CodeMeta](https://codemeta.github.io) [contributors](CONTRIBUTORS.MD) are creating a minimal metadata schema for science software and code, in JSON and XML. The goal of CodeMeta is to create a concept vocabulary that can be used to standardize the exchange of software metadata across repositories and organizations. CodeMeta started by comparing the software metadata used across multiple repositories, which resulted in the [CodeMeta Metadata Crosswalk](https://github.com/codemeta/codemeta/blob/master/crosswalk.csv).  That crosswalk was then used to generate a set of software metadata concepts, which were arranged into a JSON-LD context for serialization.
 
