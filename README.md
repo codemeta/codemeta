@@ -1,7 +1,7 @@
 # CodeMeta
 
 [![Join the chat at https://gitter.im/codemeta/codemeta](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/codemeta/codemeta?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Permanent Identifier](https://img.shields.io/badge/perma--id-https%3A%2F%2Fw3id.org%2Fcodemeta%2F3.0-blue.svg)](https://w3id.org/codemeta/3.0)
+[![Permanent Identifier](https://img.shields.io/badge/perma--id-https%3A%2F%2Fw3id.org%2Fcodemeta%2F3.1-blue.svg)](https://w3id.org/codemeta/3.1)
 
 [CodeMeta](https://codemeta.github.io) [contributors](CONTRIBUTORS.MD) are creating a minimal metadata schema for science software and code, in JSON and XML. The goal of CodeMeta is to create a concept vocabulary that can be used to standardize the exchange of software metadata across repositories and organizations. CodeMeta started by comparing the software metadata used across multiple repositories, which resulted in the [CodeMeta Metadata Crosswalk](https://github.com/codemeta/codemeta/blob/master/crosswalk.csv).  That crosswalk was then used to generate a set of software metadata concepts, which were arranged into a JSON-LD context for serialization.
 
@@ -11,8 +11,8 @@ See <https://codemeta.github.io> for a visualization of the [crosswalk table](ht
 
 The schema for released versions of CodeMeta are:
 
-- CodeMeta-3.0: [https://w3id.org/codemeta/v3.0](https://w3id.org/codemeta/v3.0)
-    - *Matthew B. Jones, Carl Boettiger, Abby Cabunoc Mayes, Arfon Smith,  Morane Gruenpeter, Valentin Lorentz, Thomas Morrell, Daniel Garijo, Peter Slaughter, Kyle Niemeyer, Yolanda Gil, Martin Fenner, Krzysztof Nowak, Mark Hahnel, Luke Coy, Alice Allen, Mercè Crosas, Ashley Sands, Neil Chue Hong, Patricia Cruse, Daniel S. Katz, Carole Goble, Bryce Mecum, Alejandra Gonzalez-Beltran, Noam Ross.* 2023. __CodeMeta: an exchange schema for software metadata. Version 3.0.__ [https://w3id.org/codemeta/v3.0](https://w3id.org/codemeta/v3.0)
+- CodeMeta-3.0: [https://w3id.org/codemeta/3.0](https://w3id.org/codemeta/3.0)
+    - *Matthew B. Jones, Carl Boettiger, Abby Cabunoc Mayes, Arfon Smith,  Morane Gruenpeter, Valentin Lorentz, Thomas Morrell, Daniel Garijo, Peter Slaughter, Kyle Niemeyer, Yolanda Gil, Martin Fenner, Krzysztof Nowak, Mark Hahnel, Luke Coy, Alice Allen, Mercè Crosas, Ashley Sands, Neil Chue Hong, Patricia Cruse, Daniel S. Katz, Carole Goble, Bryce Mecum, Alejandra Gonzalez-Beltran, Noam Ross.* 2023. __CodeMeta: an exchange schema for software metadata. Version 3.0.__ [https://w3id.org/codemeta/3.0](https://w3id.org/codemeta/3.0)
 - CodeMeta-2.0: [https://doi.org/10.5063/schema/codemeta-2.0](https://doi.org/10.5063/schema/codemeta-2.0)
     - *Matthew B. Jones, Carl Boettiger, Abby Cabunoc Mayes, Arfon Smith, Peter Slaughter, Kyle Niemeyer, Yolanda Gil, Martin Fenner, Krzysztof Nowak, Mark Hahnel, Luke Coy, Alice Allen, Mercè Crosas, Ashley Sands, Neil Chue Hong, Patricia Cruse, Daniel S. Katz, Carole Goble.* 2017. __CodeMeta: an exchange schema for software metadata. Version 2.0.__ KNB Data Repository. [doi:10.5063/schema/codemeta-2.0](https://doi.org/10.5063/schema/codemeta-2.0)
 - CodeMeta-1.0: [https://doi.org/10.5063/schema/codemeta-1.0](https://doi.org/10.5063/schema/codemeta-1.0)
@@ -22,7 +22,7 @@ The schema for released versions of CodeMeta are:
 
 CodeMeta is a community project with many contributors spanning research, education, and engineering domains.    - See our [list of Contributors](CONTRIBUTORS.MD). You can cite the CodeMeta schema and project as:
 
-> *Matthew B. Jones, Carl Boettiger, Abby Cabunoc Mayes, Arfon Smith,  Morane Gruenpeter, Valentin Lorentz, Thomas Morrell, Daniel Garijo, Peter Slaughter, Kyle Niemeyer, Yolanda Gil, Martin Fenner, Krzysztof Nowak, Mark Hahnel, Luke Coy, Alice Allen, Mercè Crosas, Ashley Sands, Neil Chue Hong, Patricia Cruse, Daniel S. Katz, Carole Goble, Bryce Mecum, Alejandra Gonzalez-Beltran, Noam Ross.* 2023. __CodeMeta: an exchange schema for software metadata. Version 3.0.__ [https://w3id.org/codemeta/v3.0](https://w3id.org/codemeta/v3.0)
+> *Matthew B. Jones, Carl Boettiger, Abby Cabunoc Mayes, Arfon Smith,  Morane Gruenpeter, Valentin Lorentz, Thomas Morrell, Daniel Garijo, Peter Slaughter, Kyle Niemeyer, Yolanda Gil, Martin Fenner, Krzysztof Nowak, Mark Hahnel, Luke Coy, Alice Allen, Mercè Crosas, Ashley Sands, Neil Chue Hong, Patricia Cruse, Daniel S. Katz, Carole Goble, Bryce Mecum, Alejandra Gonzalez-Beltran, Noam Ross.* 2023. __CodeMeta: an exchange schema for software metadata. Version 3.0.__ [https://w3id.org/codemeta/3.0](https://w3id.org/codemeta/3.0)
 
 ## How you can help
 
