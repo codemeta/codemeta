@@ -1,4 +1,5 @@
 Parent Type,Property,Type,Description
+schema:Thing,alternateName,Text,"An alias for the item. Can store alternative names, abbreviations, or full names. Sub-property: additionalName."
 schema:SoftwareSourceCode,codeRepository,URL,"A link to the repository where the un-compiled, human readable code and related code is located (SVN, GitHub, CodePlex, institutional GitLab instance, etc.)."
 schema:SoftwareSourceCode,programmingLanguage,ComputerLanguage or Text,The computer programming language.
 schema:SoftwareSourceCode,review,Review,A review of the source code.
