@@ -1,4 +1,5 @@
 Property,usgs-modelcatalog
+alternateName,
 codeRepository,software.usgs_software_gitlab_release_urls / software.external_software_repository_urls
 programmingLanguage,programming_language
 review,
