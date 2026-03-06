@@ -1,4 +1,8 @@
 Property,MODS
+alternateName,
+featureList,
+creditText,
+archivedAt,
 codeRepository,location/url[@access='object in context']
 programmingLanguage,
 review,

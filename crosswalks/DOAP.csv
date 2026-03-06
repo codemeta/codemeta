@@ -1,4 +1,8 @@
 Property,DOAP
+alternateName,
+featureList,
+creditText,
+archivedAt,
 codeRepository,repository/location
 programmingLanguage,programming-language
 review,

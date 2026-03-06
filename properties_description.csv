@@ -60,6 +60,10 @@ schema:Review,reviewBody,Text,The actual body of the review
 schema:Role,endDate,Date or Datetime,"The end date and time of the item, usually a Role. In ISO 8601 date format"
 schema:Role,roleName,Text or URL,"A role played, performed, or filled by a person or organization. Suggested values: ""Design"" (algorithm), ""Architecture"", ""Debugging"", ""Maintenance"", ""Coding"", ""Documentation"", ""Testing"", ""Support"", ""Management""."
 schema:Role,startDate,Date or Datetime,"The start date and time of the item, usually a Role. In ISO 8601 date format"
+schema:Thing,alternateName,Text,"An alias for the item."
+schema:SoftwareApplication,featureList,Text or URL,"Features or modules provided by this application (and possibly required by other applications)."
+schema:CreativeWork,creditText,Text,"Text that can be used to credit person(s) and/or organization(s) associated with a published Creative Work."
+schema:CreativeWork,archivedAt,URL or WebPage,"Indicates a page or other link involved in archival of a CreativeWork. In the case of MediaReview, the items in a MediaReviewItem may often become inaccessible, but be archived by archival, journalistic, activist, or law enforcement organizations. In such cases, the referenced page may not directly publish the content."c
 codemeta:SoftwareSourceCode,softwareSuggestions,SoftwareSourceCode,"Optional dependencies, e.g. for optional features, code development, etc."
 codemeta:SoftwareSourceCode,maintainer,Person,Individual responsible for maintaining the software (usually includes an email contact address)
 codemeta:SoftwareSourceCode,continuousIntegration,URL,A link to continuous integration service
