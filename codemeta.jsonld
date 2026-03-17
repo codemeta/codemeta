@@ -42,6 +42,7 @@
       "isPartOf":  { "@id": "schema:isPartOf"},
       "keywords": { "@id": "schema:keywords"},
       "license": { "@id": "schema:license", "@type": "@id"},
+      "maintainer": { "@id": "schema:maintainer" },
       "memoryRequirements": { "@id": "schema:memoryRequirements", "@type": "@id"},
       "name": { "@id": "schema:name"},
       "operatingSystem": { "@id": "schema:operatingSystem"},
@@ -81,7 +82,6 @@
       "readme": { "@id":"codemeta:readme", "@type": "@id" },
       "issueTracker": { "@id":"codemeta:issueTracker", "@type": "@id" },
       "referencePublication": { "@id": "codemeta:referencePublication", "@type": "@id"},
-      "maintainer": { "@id": "codemeta:maintainer" },
       "hasSourceCode": { "@id": "codemeta:hasSourceCode", "@type": "@id"},
       "isSourceCodeOf": { "@id": "codemeta:isSourceCodeOf", "@type": "@id"}
   }
