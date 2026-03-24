@@ -71,6 +71,10 @@
       "url": { "@id": "schema:url", "@type": "@id"},
       "version": { "@id": "schema:version"},
       "author": { "@id": "schema:author", "@container": "@list" },
+      "alternateName": { "@id": "schema:alternateName", "@type": "Text" },
+      "featureList": { "@id": "schema:featureList", "@type": ["Text","@id"] },
+      "creditText": { "@id": "schema:creditText", "@type": "Text" },
+      "archivedAt": { "@id": "schema:archivedAt", "@type": "@id" },
       
       "softwareSuggestions": { "@id": "codemeta:softwareSuggestions", "@type": "@id"},
       "continuousIntegration": { "@id": "codemeta:continuousIntegration", "@type": "@id"},
