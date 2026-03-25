@@ -1,17 +1,18 @@
-#!/usr/bin/env python3
-import os
 import csv
+from pathlib import Path
 
-REPO_DIR = os.path.join(os.path.dirname(__file__), '..')
 
-PROP_DESC_PATH = os.path.join(REPO_DIR, 'properties_description.csv')
+REPO_DIR = Path(__file__).parent.parent
+
+
+PROP_DESC_PATH = REPO_DIR / "properties_description.csv"
 """The CSV file where the leftmost columns of the aggregate crosswalk table
 are (parent type, property name, type, and description."""
 
-SOURCE_DIR = os.path.join(REPO_DIR, 'crosswalks')
+SOURCE_DIR = REPO_DIR / "crosswalks"
 """The directories where all other .csv files are."""
 
-DEST_FILENAME = os.path.join(REPO_DIR, 'crosswalk.csv')
+DEST_FILENAME = REPO_DIR / "crosswalk.csv"
 """The path/name of the file where the aggregate crosswalk table is
 written."""
 
@@ -39,7 +40,7 @@ def read_terms(prop_desc, filename):
     in properties_description.csv."""
 
     # Read rows from a translation table in crosswalks.
-    with open(os.path.join(SOURCE_DIR, filename)) as fd:
+    with open(SOURCE_DIR / filename) as fd:
         rows = list(csv.reader(fd))
 
     # Split the two rows of the translation table.
@@ -54,7 +55,7 @@ def read_terms(prop_desc, filename):
 def list_crosswalks():
     """Returns the list of crosswalk files by auto-discovering them from the
     crosswalk/ directory."""
-    return sorted(os.listdir(SOURCE_DIR))
+    return sorted(SOURCE_DIR.glob("*.csv"))
 
 def aggregate():
     """Get all columns from properties_description.csv and files in
@@ -67,22 +68,14 @@ def aggregate():
     # Get the other columns, one per .csv file in crosswalks/
     columns = []
     for filename in list_crosswalks():
-        if filename.endswith('.csv'):
-            columns.append(read_terms(prop_desc, filename))
+        columns.append(read_terms(prop_desc, filename))
 
     return prop_desc + columns
-
-def rm_file(filename):
-    """Removes a file if it exists, does nothing otherwise."""
-    try:
-        os.unlink(filename)
-    except FileNotFoundError:
-        pass
 
 def write_aggregate(aggregate_columns):
     """Writes the aggregated crosswalk table."""
     rows = rows_from_columns(aggregate_columns)
-    rm_file(DEST_FILENAME)
+    DEST_FILENAME.unlink(missing_ok=True)
     with open(DEST_FILENAME, 'a') as fd:
         writer = csv.writer(fd, lineterminator='\n')
         writer.writerows(rows)
