@@ -1,0 +1,74 @@
+Property,GitLab
+codeRepository,web_url
+programmingLanguage,/projects/:id/languages
+review,
+runtimePlatform,
+targetProduct,
+applicationCategory,
+applicationSubCategory,
+downloadUrl,http_url_to_repo
+fileSize,/projects/:id/repository/files/:file_path  (File Info)
+installUrl,projects/:id/releases/:tag_name/assets/links
+memoryRequirements,
+operatingSystem,
+permissions,permissions
+processorRequirements,
+releaseNotes,
+softwareHelp,
+softwareRequirements,
+softwareVersion,/projects/:id/releases
+storageRequirements,
+supportingData,
+author,creator_id
+citation,
+contributor,/projects/:id/members OR _links.members
+copyrightHolder,
+copyrightYear,
+dateCreated,created_at
+dateModified,last_activity_at OR updated_at
+datePublished,
+editor,
+encoding,
+fileFormat,/projects/:id/repository/files/:file_path  (File Info)
+funder,
+keywords,topics OR tag_list
+license,
+producer,
+provider,namespace.name
+publisher,
+sponsor,
+version,
+isAccessibleForFree,visibility
+isPartOf,
+hasPart,
+position,
+description,description
+identifier,id
+name,name
+sameAs,
+url,http_url_to_repo OR web_url
+relatedLink,wiki_enabled OR _links
+givenName,/projects/:id/members/ -> name
+familyName,/projects/:id/members/ -> name
+email,/projects/:id/members/ -> public_email
+affiliation,
+identifier,/projects/:id/members/ -> id
+name,/projects/:id/members/ -> username
+address,/projects/:id/members/ -> web_url
+reviewAspect,
+reviewBody,
+endDate,/projects/:id/members/ -> expires_at
+roleName,
+startDate,/projects/:id/members/ -> created_at
+softwareSuggestions,
+maintainer,projects/:id/members/all -> access level:40
+continuousIntegration,
+buildInstructions,ci_config_path
+developmentStatus,archived
+embargoEndDate,
+funding,
+issueTracker,_links.issues OR web_url/-/issues
+referencePublication,
+readme,readme_url
+hasSourceCode,
+isSourceCodeOf,
