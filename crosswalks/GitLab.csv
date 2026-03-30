@@ -16,7 +16,7 @@ processorRequirements,
 releaseNotes,
 softwareHelp,
 softwareRequirements,
-softwareVersion,/projects/:id/releases
+softwareVersion,/projects/:id/releases/:name
 storageRequirements,
 supportingData,
 author,creator_id
