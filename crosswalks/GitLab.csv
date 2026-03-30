@@ -6,7 +6,7 @@ runtimePlatform,
 targetProduct,
 applicationCategory,
 applicationSubCategory,
-downloadUrl,http_url_to_repo
+downloadUrl,
 fileSize,/projects/:id/repository/files/:file_path  (File Info)
 installUrl,projects/:id/releases/:tag_name/assets/links
 memoryRequirements,
