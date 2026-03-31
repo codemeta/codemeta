@@ -31,7 +31,7 @@ editor,
 encoding,
 fileFormat,/projects/:id/repository/files/:file_path  (File Info)
 funder,
-keywords,topics OR tag_list
+keywords,topics / tag_list
 license,
 producer,
 provider,namespace.name
@@ -67,7 +67,7 @@ buildInstructions,ci_config_path
 developmentStatus,archived
 embargoEndDate,
 funding,
-issueTracker,_links.issues OR web_url/-/issues
+issueTracker,_links.issues / web_url/-/issues
 referencePublication,
 readme,readme_url
 hasSourceCode,
