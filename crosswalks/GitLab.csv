@@ -25,7 +25,7 @@ contributor,/projects/:id/members/:id
 copyrightHolder,
 copyrightYear,
 dateCreated,created_at
-dateModified,last_activity_at OR updated_at
+dateModified,updated_at
 datePublished,
 editor,
 encoding,
