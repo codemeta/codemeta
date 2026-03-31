@@ -21,7 +21,7 @@ storageRequirements,
 supportingData,
 author,creator_id
 citation,
-contributor,/projects/:id/members OR _links.members
+contributor,/projects/:id/members/:id
 copyrightHolder,
 copyrightYear,
 dateCreated,created_at
