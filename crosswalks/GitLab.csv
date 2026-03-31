@@ -48,20 +48,20 @@ name,name
 sameAs,
 url,http_url_to_repo
 relatedLink,wiki_enabled
-givenName,/projects/:id/members/ -> name
-familyName,/projects/:id/members/ -> name
-email,/projects/:id/members/ -> public_email
+givenName,/projects/:id/members/all/:id/name
+familyName,/projects/:id/members/all/:id/name
+email,/projects/:id/members/all/:id/public_email
 affiliation,
-identifier,/projects/:id/members/ -> id
-name,/projects/:id/members/ -> username
-address,/projects/:id/members/ -> web_url
+identifier,/projects/:id/members/all/:id
+name,/projects/:id/members/all/:id/username / /projects/:id/members/all/:id/name
+address,/projects/:id/members/all/:id/web_url
 reviewAspect,
 reviewBody,
-endDate,/projects/:id/members/ -> expires_at
+endDate,/projects/:id/members/all/:id/expires_at
 roleName,
-startDate,/projects/:id/members/ -> created_at
+startDate,/projects/:id/members/all/:id/created_at
 softwareSuggestions,
-maintainer,projects/:id/members/all -> access level:40
+maintainer,projects/:id/members/all/:id/access level:40
 continuousIntegration,
 buildInstructions,ci_config_path
 developmentStatus,archived
