@@ -47,7 +47,7 @@ identifier,id
 name,name
 sameAs,
 url,http_url_to_repo
-relatedLink,wiki_enabled OR _links
+relatedLink,wiki_enabled
 givenName,/projects/:id/members/ -> name
 familyName,/projects/:id/members/ -> name
 email,/projects/:id/members/ -> public_email
