@@ -7,7 +7,7 @@ targetProduct,
 applicationCategory,
 applicationSubCategory,
 downloadUrl,
-fileSize,/projects/:id/repository/files/:file_path  (File Info)
+fileSize,
 installUrl,projects/:id/releases/:tag_name/assets/links
 memoryRequirements,
 operatingSystem,
