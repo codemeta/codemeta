@@ -2,7 +2,7 @@
   "@context": {
       "type": "@type",
       "id": "@id",
-      "schema":"http://schema.org/",
+      "schema":"https://schema.org/",
       "codemeta": "https://w3id.org/codemeta/terms/",
       "Organization": {"@id": "schema:Organization"},
       "Person": {"@id": "schema:Person"},

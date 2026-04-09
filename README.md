@@ -51,5 +51,5 @@ crosswalk table, website, software and other related content.
     - [Code as a research object: updates, prototypes, next steps](http://mozillascience.org/code-as-a-research-object-updates-prototypes-next-steps/)
     - [What else is needed for code reuse](http://mozillascience.org/what-else-is-needed-for-code-reuse/)
     - [JSON-LD for software discovery, reuse and credit](http://www.arfon.org/json-ld-for-software-discovery-reuse-and-credit)
-- [JSON-LD.org](http://json-ld.org/)
-- [Schema.org](http://schema.org/)
+- [JSON-LD.org](https://json-ld.org/)
+- [Schema.org](https://schema.org/)
