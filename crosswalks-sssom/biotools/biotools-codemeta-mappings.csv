@@ -1,4 +1,4 @@
-source_term,codemeta_term,type_relation,combined_mappings,comments
+source_term,codemeta_term,type_relation,combined_mappings,comment
 download/url,codeRepository,close_match,,"should only map values of objects in the list where download url has a `type`==`Source code` "
 version,softwareVersion,exact_match,,"version is a list of all versions available in bio.tools"
 file,downloadUrl,exact_match,,
