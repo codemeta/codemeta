@@ -8,7 +8,7 @@ applicationCategory,
 applicationSubCategory,
 downloadUrl,
 fileSize,
-installUrl,projects/:id/releases/:tag_name/assets/links
+installUrl,
 memoryRequirements,
 operatingSystem,
 permissions,permissions
