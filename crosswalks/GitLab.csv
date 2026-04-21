@@ -61,7 +61,7 @@ endDate,/projects/:id/members/all/:id/expires_at
 roleName,
 startDate,/projects/:id/members/all/:id/created_at
 softwareSuggestions,
-maintainer,projects/:id/members/all/:id/access level:40
+maintainer,
 continuousIntegration,
 buildInstructions,ci_config_path
 developmentStatus,archived
