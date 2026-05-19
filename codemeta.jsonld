@@ -89,5 +89,61 @@
       "referencePublication": { "@id": "codemeta:referencePublication", "@type": "@id"},
       "hasSourceCode": { "@id": "codemeta:hasSourceCode", "@type": "@id"},
       "isSourceCodeOf": { "@id": "codemeta:isSourceCodeOf", "@type": "@id"}
-  }
+  },
+   "@graph": [
+    {
+      "@id": "codemeta:buildInstructions",
+      "@type": "rdf:Property",
+      "rdfs:comment": "A link to installation instructions/documentation.",
+      "rdfs:label": "buildInstructions",
+      "schema:domainIncludes": [
+        {
+          "@id": "schema:SoftwareApplication"
+        },
+        {
+          "@id": "schema:SoftwareSourceCode"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "schema:URL"
+      }
+    },
+    {
+      "@id": "codemeta:contIntegration",
+      "@type": "rdf:Property",
+      "rdfs:comment": "A link to continuous integration service.",
+      "rdfs:label": "contiIntegration",
+      "schema:domainIncludes": [
+        {
+          "@id": "schema:SoftwareApplication"
+        },
+        {
+          "@id": "schema:SoftwareSourceCode"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "schema:URL"
+      },
+      "schema:supersededBy": {
+        "@id": "codemeta:continuousIntegration"
+      }
+    },
+    {
+      "@id": "codemeta:continuousIntegration",
+      "@type": "rdf:Property",
+      "rdfs:comment": "A link to continuous integration service.",
+      "rdfs:label": "continuousIntegration",
+      "schema:domainIncludes": [
+        {
+          "@id": "schema:SoftwareApplication"
+        },
+        {
+          "@id": "schema:SoftwareSourceCode"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "schema:URL"
+      }
+    },
+  ]
 }
