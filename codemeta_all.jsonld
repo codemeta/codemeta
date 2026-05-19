@@ -33,9 +33,10 @@
       "downloadUrl": { "@id": "schema:downloadUrl", "@type": "@id"},
       "email": { "@id": "schema:email"},
       "editor": { "@id": "schema:editor"},
-      "encodingFormat": { "@id": "schema:encodingFormat"},
+      "encoding": { "@id": "schema:encoding"},
       "endDate": { "@id": "schema:endDate"},
       "familyName": { "@id": "schema:familyName"},
+      "fileFormat": { "@id": "schema:fileFormat"},
       "fileSize": { "@id": "schema:fileSize"},
       "funder": { "@id": "schema:funder"},
       "funding": { "@id": "schema:funding"},
@@ -80,8 +81,8 @@
       "featureList": { "@id": "schema:featureList"},
       "creditText": { "@id": "schema:creditText" },
       "archivedAt": { "@id": "schema:archivedAt", "@type": "@id" },
-      "buildInstructions": { "@id": "codemeta:buildInstructions", "@type": "@id"},
       "continuousIntegration": { "@id": "codemeta:continuousIntegration", "@type": "@id"},
+      "buildInstructions": { "@id": "codemeta:buildInstructions", "@type": "@id"},
       "developmentStatus": { "@id": "codemeta:developmentStatus", "@type": "@id"},
       "embargoEndDate": { "@id":"codemeta:embargoEndDate", "@type": "schema:Date" },
       "readme": { "@id":"codemeta:readme", "@type": "@id" },
@@ -89,5 +90,67 @@
       "referencePublication": { "@id": "codemeta:referencePublication", "@type": "@id"},
       "hasSourceCode": { "@id": "codemeta:hasSourceCode", "@type": "@id"},
       "isSourceCodeOf": { "@id": "codemeta:isSourceCodeOf", "@type": "@id"}
-  }
+  },
+   "@graph": [
+    {
+      "@id": "codemeta:buildInstructions",
+      "@type": "rdf:Property",
+      "rdfs:comment": "A link to installation instructions or build documentation.",
+      "rdfs:label": "buildInstructions",
+      "schema:domainIncludes": [
+        {
+          "@id": "schema:SoftwareApplication"
+        },
+        {
+          "@id": "schema:SoftwareSourceCode"
+        }
+      ],
+      "schema:rangeIncludes": 
+      [
+        {
+        "@id": "schema:URL"
+        },
+        {
+        "@id": "schema:CreativeWork"
+        }
+      ]
+    },
+    {
+      "@id": "codemeta:contIntegration",
+      "@type": "rdf:Property",
+      "rdfs:comment": "A link to continuous integration service.",
+      "rdfs:label": "contiIntegration",
+      "schema:domainIncludes": [
+        {
+          "@id": "schema:SoftwareApplication"
+        },
+        {
+          "@id": "schema:SoftwareSourceCode"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "schema:URL"
+      },
+      "schema:supersededBy": {
+        "@id": "codemeta:continuousIntegration"
+      }
+    },
+    {
+      "@id": "codemeta:continuousIntegration",
+      "@type": "rdf:Property",
+      "rdfs:comment": "A link to continuous integration service.",
+      "rdfs:label": "continuousIntegration",
+      "schema:domainIncludes": [
+        {
+          "@id": "schema:SoftwareApplication"
+        },
+        {
+          "@id": "schema:SoftwareSourceCode"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "schema:URL"
+      }
+    }
+  ]
 }
