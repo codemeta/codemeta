@@ -20,7 +20,7 @@ schema:SoftwareApplication,softwareVersion,Text,Version of the software instance
 schema:SoftwareApplication,storageRequirements,Text or URL,Storage requirements (free space required).
 schema:SoftwareApplication,supportingData,DataFeed,Supporting data for a SoftwareApplication.
 schema:CreativeWork,author,Organization or Person,The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangeably.
-schema:CreativeWork,citation,CreativeWork or URL,"A citation or reference to another creative work, such as another publication, web page, scholarly article, etc."
+schema:CreativeWork,citation,CreativeWork or Text,"A citation or reference to another creative work, such as another publication, web page, scholarly article, etc."
 schema:CreativeWork,contributor,Organization or Person,A secondary contributor to the CreativeWork or Event.
 schema:CreativeWork,copyrightHolder,Organization or Person,The party holding the legal copyright to the CreativeWork.
 schema:CreativeWork,copyrightYear,Number,The year during which the claimed copyright for the CreativeWork was first asserted.
