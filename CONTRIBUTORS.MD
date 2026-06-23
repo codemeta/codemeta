@@ -133,11 +133,11 @@ operates according to the rules specified in the
 | Name             | Institution             | GitHub  |
 |------------------|-------------------------| --------|
 | Daniel Garijo | Universidad Politécnica de Madrid | [@dgarijo](https://github.com/dgarijo) |
-| Aida Jafarbigloo | Uni Oldenburg, OFFIS | [@Aidajafarbigloo](https://github.com/Aidajafarbigloo) |
-| Llinda Angulo | Software Heritage | [lindangulopez](https://github.com/lindangulopez) |
-| Maxence Azzouz| Fiz Karlsruhe University | [Mazztok45](https://github.com/Mazztok45) |
-| Allen Lee | ASU/OMF | [allenlee](https://github.com/allenlee) |
-| Jael García Castro| ZBMED | [ljgarcia](https://github.com/ljgarcia) |
+| Aida Jafarbigloo | Carl von Ossietzky Universität Oldenburg | [@Aidajafarbigloo](https://github.com/Aidajafarbigloo) |
+| Linda Angulo Lopez | Software Heritage | [@lindangulopez](https://github.com/lindangulopez) |
+| Maxence Azzouz| Fiz Karlsruhe University | [@Mazztok45](https://github.com/Mazztok45) |
+| Allen Lee | ASU/OMF | [@alee](https://github.com/alee) |
+| Jael García Castro| ZBMED | [@ljgarcia](https://github.com/ljgarcia) |
 | Jozefina Sadowska | Inria | []() |
 | Esteban Gonzalez Guardia| Universidad Politécnica de Madrid | [@esgg](https://github.com/esgg) |
 | Morane Gruenpeter | Software Heritage | [@moranegg](https://github.com/moranegg) |

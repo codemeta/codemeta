@@ -35,7 +35,7 @@
       "email": { "@id": "schema:email"},
       "editor": { "@id": "schema:editor"},
       "encodingFormat": { "@id": "schema:encodingFormat"},
-      "endDate": { "@id": "schema:endDate"},
+      "endDate": { "@id": "schema:endDate", "@type": "schema:Date"},
       "familyName": { "@id": "schema:familyName"},
       "fileSize": { "@id": "schema:fileSize"},
       "funder": { "@id": "schema:funder"},
@@ -70,7 +70,7 @@
       "softwareRequirements": { "@id": "schema:softwareRequirements"},
       "softwareVersion": { "@id": "schema:softwareVersion"},
       "sponsor": { "@id": "schema:sponsor"},
-      "startDate": { "@id": "schema:startDate"},
+      "startDate": { "@id": "schema:startDate", "@type": "schema:Date"},
       "storageRequirements": { "@id": "schema:storageRequirements"},
       "supportingData": { "@id": "schema:supportingData"},
       "targetProduct": { "@id": "schema:targetProduct"},
@@ -90,5 +90,19 @@
       "referencePublication": { "@id": "codemeta:referencePublication", "@type": "@id"},
       "hasSourceCode": { "@id": "codemeta:hasSourceCode", "@type": "@id"},
       "isSourceCodeOf": { "@id": "codemeta:isSourceCodeOf", "@type": "@id"}
-  }
+  },
+  "@graph": [
+    {
+      "@id" : "https://w3id.org/codemeta/terms/",
+      "@type" : "schema:CreativeWork" ,
+      "schema:dateCreated":"2017-01-06",
+      "schema:dateModified":"2026-06-23",
+      "schema:version":"4.0",
+      "schema:schemaVersion":"https://schema.org/docs/releases.html#v30.0",
+      "schema:name":"CodeMeta",
+      "schema:license":{"@id":"https://spdx.org/licenses/Apache-2.0", "@type":"@id"},
+      "schema:identifier": {"@id": "https://w3id.org/codemeta/terms/", "@type": "@id"},
+      "schema:description": "CodeMeta provides a shared, minimal metadata vocabulary for software, designed to support research, discovery, citation, and interoperability across platforms."
+     }
+    ]
 }
