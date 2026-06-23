@@ -94,6 +94,16 @@
   },
    "@graph": [
     {
+      "@id" : "https://w3id.org/codemeta/terms/",
+      "@type" : "schema:CrativeWork" ,
+      "schema:dateCreated":"2026-06-23T09:00:00",
+      "schema:version":"4.0",
+      "schema:schemaVersion":"https://schema.org/docs/releases.html#v30.0",
+      "schema:name":"CodeMeta",
+      "schema:license":{"@id":"https://spdx.org/licenses/Apache-2.0", "@type":"@id"},
+      "identifier": {"@id": "https://w3id.org/codemeta/terms/", "@type": "@id"}
+     },
+    {
       "@id": "codemeta:buildInstructions",
       "@type": "rdf:Property",
       "rdfs:comment": "A link to installation instructions or build documentation.",
