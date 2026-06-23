@@ -6,6 +6,7 @@
       "codemeta": "https://w3id.org/codemeta/terms/",
       "Organization": {"@id": "schema:Organization"},
       "ContactPoint": { "@id": "schema:ContactPoint" },
+      "DefinedTerm": { "@id": "schema:DefinedTerm" },
       "Person": {"@id": "schema:Person"},
       "Review": {"@id": "schema:Review"},
       "Role": {"@id": "schema:Role"},
