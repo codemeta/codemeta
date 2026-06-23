@@ -33,7 +33,7 @@
       "downloadUrl": { "@id": "schema:downloadUrl", "@type": "@id"},
       "email": { "@id": "schema:email"},
       "editor": { "@id": "schema:editor"},
-      "encoding": { "@id": "schema:encoding"},
+      "encodingFormat": { "@id": "schema:encodingFormat"},
       "endDate": { "@id": "schema:endDate"},
       "familyName": { "@id": "schema:familyName"},
       "fileFormat": { "@id": "schema:fileFormat"},
