@@ -180,6 +180,28 @@
       ]
     },
     {
+      "@id": "codemeta:embargoDate",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Software may be embargoed from public access until a specified date (e.g. pending publication, 1 year from publication)",
+      "rdfs:label": "embargoDate",
+      "schema:domainIncludes": [
+        {
+          "@id": "schema:SoftwareSourceCode"
+        },
+        {
+          "@id": "schema:SoftwareApplication"
+        }
+      ],
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:Date"
+        }
+      ],
+      "schema:supersededBy": {
+        "@id": "codemeta:embargoEndDate"
+      }
+    },
+    {
       "@id": "codemeta:embargoEndDate",
       "@type": "rdf:Property",
       "rdfs:comment": "Software may be embargoed from public access until a specified date (e.g. pending publication, 1 year from publication)",
@@ -200,6 +222,117 @@
           "@id": "schema:DateTime"
         }
       ]
+    },
+    {
+      "@id": "codemeta:funding",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Funding source (e.g. specific grant)",
+      "rdfs:label": "funding",
+      "schema:domainIncludes": [
+        {
+          "@id": "schema:SoftwareSourceCode"
+        },
+        {
+          "@id": "schema:SoftwareApplication"
+        }
+      ],
+      "schema:rangeIncludes": {
+          "@id": "schema:Text"
+      },
+       "schema:supersededBy": {
+        "@id": "schema:funding"
+      }
+    },
+    {
+      "@id": "codemeta:hasSourceCode",
+      "@type": "rdf:Property",
+      "rdfs:comment": "A link that states where the software code is for a given software. For example a software registry may indicate that one of its software entries hasSourceCode in a GitHub repository.",
+      "rdfs:label": "hasSourceCode",
+      "schema:domainIncludes": 
+      {
+        "@id": "schema:SoftwareApplication"
+      }
+      ,
+      "schema:rangeIncludes": {
+          "@id": "schema:SoftwareSourceCode"
+      }
+    },
+    {
+      "@id": "codemeta:isSourceCodeOf",
+      "@type": "rdf:Property",
+      "rdfs:comment": "A link that states where software application is built from a given source code. This is the inverse property of 'hasSourceCode'.",
+      "rdfs:label": "isSourceCodeOf",
+      "schema:domainIncludes": {
+          "@id": "schema:SoftwareSourceCode"
+      },
+      "schema:rangeIncludes": 
+      {
+        "@id": "schema:SoftwareApplication"
+      }
+    },
+    {
+      "@id": "codemeta:issueTracker",
+      "@type": "rdf:Property",
+      "rdfs:comment": "A link to software bug reporting or issue tracking system.",
+      "rdfs:label": "issueTracker",
+      "schema:domainIncludes": [
+        {
+          "@id": "schema:SoftwareSourceCode"
+        },
+        {
+          "@id": "schema:SoftwareApplication"
+        }
+      ],
+      "schema:rangeIncludes": 
+      {
+        "@id": "schema:URL"
+      }
+    },
+    {
+      "@id": "codemeta:maintainer",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Individual responsible for maintaining the software (usually includes an email contact address).",
+      "rdfs:label": "maintainer",
+      "schema:domainIncludes": [
+        {
+          "@id": "schema:SoftwareSourceCode"
+        },
+        {
+          "@id": "schema:SoftwareApplication"
+        }
+      ],
+      "schema:rangeIncludes": 
+      {
+        "@id": "schema:Person"
+      }
+    },
+    {
+      "@id": "codemeta:readme",
+      "@type": "rdf:Property",
+      "rdfs:comment": "A link to software Readme file.",
+      "rdfs:label": "readme",
+      "schema:domainIncludes": 
+      {
+        "@id": "schema:SoftwareSourceCode"
+      },
+      "schema:rangeIncludes": 
+      {
+        "@id": "schema:URL"
+      }
+    },
+    {
+      "@id": "codemeta:referencePublication",
+      "@type": "rdf:Property",
+      "rdfs:comment": "An academic publication related to the software component.",
+      "rdfs:label": "referencePublication",
+      "schema:domainIncludes": 
+      {
+        "@id": "schema:SoftwareSourceCode"
+      },
+      "schema:rangeIncludes": 
+      {
+        "@id": "schema:ScholarlyArticle"
+      }
     }
   ]
 }
