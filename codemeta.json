@@ -1,5 +1,5 @@
 {
-  "@context": "https://w3id.org/codemeta/3.0",
+  "@context": "https://w3id.org/codemeta/3.1",
   "@type": "SoftwareSourceCode",
   "identifier": "CodeMeta",
   "description": "CodeMeta is a concept vocabulary that can be used to standardize the exchange of software metadata across repositories and organizations.",
@@ -7,7 +7,7 @@
   "codeRepository": "https://github.com/codemeta/codemeta",
   "issueTracker": "https://github.com/codemeta/codemeta/issues",
   "license": "https://spdx.org/licenses/Apache-2.0",
-  "version": "3.1",
+  "version": "4",
   "author": [
     {
       "@type": "Person",
@@ -141,6 +141,63 @@
       "familyName": "Druskat",
       "email": "mail@sdruskat.net",
       "@id": "http://orcid.org/0000-0003-4925-7248"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Daniel",
+      "familyName": "Garijo",
+      "email": "daniel.garijo@upm.es",
+      "@id": "http://orcid.org/0000-0003-0454-7145"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Aida",
+      "familyName": "Jafarbigloo"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Linda",
+      "familyName": "Angulo"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Maxence",
+      "familyName": "Azzouz"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Allen",
+      "familyName": "Lee"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Jael",
+      "familyName": "García Castro"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Jozefina",
+      "familyName": "Sadowska"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Esteban",
+      "familyName": "Gonzalez Guardia"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Morane",
+      "familyName": "Gruenpeter"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Thomas",
+      "familyName": "Morrell"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Valentin",
+      "familyName": "Lorentz"
     }
   ],
   "maintainer": [
@@ -192,12 +249,14 @@
     {
       "@type": "Person",
       "givenName": "Daniel",
-      "familyName": "Garijo"
+      "familyName": "Garijo",
+      "email": "daniel.garijo@upm.es",
+      "@id": "http://orcid.org/0000-0003-0454-7145"
     }
   ],
   "continuousIntegration": "https://github.com/codemeta/codemeta/actions",
   "developmentStatus": "active",
-  "downloadUrl": "https://github.com/codemeta/codemeta/archive/3.0.zip",
+  "downloadUrl": "https://github.com/codemeta/codemeta/archive/4.0.zip",
   "funding": {
       "@type": "Grant",
       "identifier":"1549758",
@@ -206,6 +265,7 @@
           "@id": "https://doi.org/10.13039/100000001",
           "@type": "Organization",
           "name": "National Science Foundation"
+      }
   },
   "keywords": [
     "metadata",

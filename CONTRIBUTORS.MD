@@ -19,7 +19,7 @@ operates according to the rules specified in the
 | Morane Gruenpeter | morane@softwareheritage.org | Software Heritage | [@moranegg](https://github.com/moranegg) |
 | Valentin Lorentz | vlorentz@softwareheritage.org | Software Heritage | [@progval](https://github.com/progval) |
 | Thomas Morrell | tmorrell@library.caltech.edu | Caltech Library | [@tmorell](https://github.com/tmorrell) |
-| Daniel Garijo | | Universidad Politécnica de Madrid | [@dgarijo](https://github.com/dgarijo) |
+| Daniel Garijo | daniel.garijo@upm.es| Universidad Politécnica de Madrid | [@dgarijo](https://github.com/dgarijo) |
 
 ## V1.0 contributors (Jan 6, 2017)
 
@@ -122,9 +122,24 @@ operates according to the rules specified in the
 | Hélène Jonin | | [@hjonin](https://github.com/hjonin) |
 | Hervé Ménager | Institut Pasteur | [@hmenager](https://github.com/hmenager) |
 | Leslie Hsu | USGS Community for Data Integration | [@hsu000001](https://github.com/hsu000001) |
-| | | [@Mazztok45](https://github.com/Mazztok45) |
+| Maxence Azzouz| Fiz Karlsruhe University | [Mazztok45](https://github.com/Mazztok45) |
 | Morane Gruenpeter | Software Heritage | [@moranegg](https://github.com/moranegg) |
 | Moritz Schubotz | University of Konstanz | [@physikerwelt](https://github.com/physikerwelt) |
 | Thomas Morrell | Caltech Library | [@tmorell](https://github.com/tmorrell) |
 | Valentin Lorentz | Software Heritage | [@progval](https://github.com/progval) |
 | Yaroslav Halchenko | Dartmouth College | [@yarikoptic](https://github.com/yarikoptic) |
+
+## V4.0 contributors (June 30, 2026)
+| Name             | Institution             | GitHub  |
+|------------------|-------------------------| --------|
+| Daniel Garijo | Universidad Politécnica de Madrid | [@dgarijo](https://github.com/dgarijo) |
+| Aida Jafarbigloo | Uni Oldenburg, OFFIS | [@Aidajafarbigloo](https://github.com/Aidajafarbigloo) |
+| Llinda Angulo | Software Heritage | [lindangulopez](https://github.com/lindangulopez) |
+| Maxence Azzouz| Fiz Karlsruhe University | [Mazztok45](https://github.com/Mazztok45) |
+| Allen Lee | ASU/OMF | [allenlee](https://github.com/allenlee) |
+| Jael García Castro| ZBMED | [ljgarcia](https://github.com/ljgarcia) |
+| Jozefina Sadowska | Inria | []() |
+| Esteban Gonzalez Guardia| Universidad Politécnica de Madrid | [@esgg](https://github.com/esgg) |
+| Morane Gruenpeter | Software Heritage | [@moranegg](https://github.com/moranegg) |
+| Thomas Morrell | Caltech Library | [@tmorell](https://github.com/tmorrell) |
+| Valentin Lorentz | Software Heritage | [@progval](https://github.com/progval) |
