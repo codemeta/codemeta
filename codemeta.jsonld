@@ -85,11 +85,12 @@
       "continuousIntegration": { "@id": "codemeta:continuousIntegration", "@type": "@id"},
       "developmentStatus": { "@id": "codemeta:developmentStatus", "@type": "@id"},
       "embargoEndDate": { "@id":"codemeta:embargoEndDate", "@type": "schema:Date" },
-      "readme": { "@id":"codemeta:readme", "@type": "@id" },
-      "issueTracker": { "@id":"codemeta:issueTracker", "@type": "@id" },
-      "referencePublication": { "@id": "codemeta:referencePublication", "@type": "@id"},
       "hasSourceCode": { "@id": "codemeta:hasSourceCode", "@type": "@id"},
-      "isSourceCodeOf": { "@id": "codemeta:isSourceCodeOf", "@type": "@id"}
+      "issueTracker": { "@id":"codemeta:issueTracker", "@type": "@id" },
+      "isSourceCodeOf": { "@id": "codemeta:isSourceCodeOf", "@type": "@id"},
+      "readme": { "@id":"codemeta:readme", "@type": "@id" },
+      "referencePublication": { "@id": "codemeta:referencePublication", "@type": "@id"},
+      "relatedSoftware": { "@id": "codemeta:relatedSoftware", "@type": "@id"}
   },
   "@graph": [
     {

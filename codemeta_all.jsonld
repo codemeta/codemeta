@@ -345,6 +345,28 @@
       {
         "@id": "schema:ScholarlyArticle"
       }
+    },
+    {
+      "@id": "codemeta:relatedSoftware",
+      "@type": "rdf:Property",
+      "rdfs:comment": "A link to other software that is related by functionality, scientific purpose, or ecosystem context (e.g. alternative implementations, comparable tools, or complementary software). This property does not imply dependency, citation, or execution requirement. It is intended to support discovery, comparison, and interoperability mapping between software artifacts.",
+      "rdfs:label": "relatedSoftware",
+      "schema:domainIncludes": [
+        {
+          "@id": "schema:SoftwareSourceCode"
+        },
+        {
+          "@id": "schema:SoftwareApplication"
+        }
+      ],
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:SoftwareSourceCode"
+        },
+        {
+          "@id": "schema:SoftwareApplication"
+        }
+      ],
     }
   ]
 }
