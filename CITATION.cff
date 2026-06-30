@@ -1,0 +1,110 @@
+cff-version: 1.2.0
+title: >-
+  CodeMeta: Minimal metadata schemas for science software
+  and code, in JSON-LD
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Carl
+    family-names: Boettiger
+    email: cboettig@gmail.com
+    orcid: 'https://orcid.org/0000-0002-1642-628X'
+  - given-names: Matthew B.
+    family-names: Jones
+    email: jones@nceas.ucsb.edu
+    orcid: 'https://orcid.org/0000-0003-0077-4738'
+  - given-names: Abby Cabunoc
+    family-names: Mayes
+    email: abbycabs@gmail.com
+  - email: arfon.smith@gmail.com
+    orcid: 'https://orcid.org/0000-0002-3957-2474'
+    given-names: Arfon
+    family-names: Smith
+  - orcid: 'https://orcid.org/0000-0002-2192-403X'
+    email: slaughter@nceas.ucsb.edu
+    family-names: Slaughter
+    given-names: Peter
+  - email: Kyle.Niemeyer@oregonstate.edu
+    orcid: 'https://orcid.org/0000-0003-4425-7097'
+    family-names: Niemeyer
+    given-names: Kyle
+  - given-names: Yolanda
+    family-names: Gil
+    email: gil@isi.edi
+    orcid: 'https://orcid.org/0000-0001-8465-8341'
+  - given-names: Krzysztof
+    family-names: Nowak
+  - given-names: Martin
+    family-names: Fenner
+    orcid: 'https://orcid.org/0000-0003-1419-2405'
+  - given-names: Mark
+    family-names: Hahnel
+    orcid: 'https://orcid.org/0000-0003-4741-0309'
+  - given-names: Luke
+    family-names: Coy
+    email: luke.coy@rit.edu
+  - orcid: 'https://orcid.org/0000-0003-3477-2845'
+    given-names: Alice
+    family-names: Allen
+    email: aallen@ascl.net
+  - orcid: 'https://orcid.org/0000-0003-1304-1939'
+    given-names: Mercè
+    family-names: Crosas
+  - orcid: 'https://orcid.org/0000-0002-8876-7606'
+    given-names: Neil
+    family-names: Chue Hong
+    email: n.chuehong@epcc.ed.ac.uk
+  - orcid: 'https://orcid.org/0000-0002-9300-5278'
+    given-names: Patricia
+    family-names: Cruse
+  - email: dskatz@illinois.edu
+    given-names: Dan
+    family-names: Katz
+    orcid: 'https://orcid.org/0000-0003-2720-0339'
+  - email: carole.goble@manchester.ac.uk
+    given-names: Carole
+    family-names: Goble
+    orcid: 'https://orcid.org/0000-0003-1219-2137'
+  - email: morane@softwareheritage.org
+    given-names: Morane
+    family-names: Gruenpeter
+  - given-names: Valentin
+    family-names: Lorentz
+    email: vlorentz@softwareheritage.org
+  - email: tmorrell@library.caltech.edu
+    given-names: Thomas
+    family-names: Morrell
+  - given-names: Daniel
+    family-names: Garijo
+    email: daniel.garijo@upm.es
+    orcid: 'https://orcid.org/0000-0003-0454-7145'
+  - family-names: Gonzalez Guardia
+    given-names: Esteban
+  - family-names: Jafarbigloo
+    given-names: Aida
+  - given-names: Linda
+    family-names: Angulo Lopez
+  - given-names: Maxence
+    family-names: Azzouz
+  - given-names: Allen
+    family-names: Lee
+    orcid: 'https://orcid.org/0000-0002-6523-6079'
+  - given-names: Jael
+    family-names: García Castro
+  - given-names: Jozefina
+    family-names: Sadowska
+identifiers:
+  - type: url
+    value: 'https://w3id.org/codemeta/3.1'
+repository-code: 'https://github.com/codemeta/codemeta'
+url: 'https://codemeta.github.io/'
+abstract: >-
+  CodeMeta is a concept vocabulary that can be used to
+  standardize the exchange of software metadata across
+  repositories and organizations.
+keywords:
+  - metadata
+  - software
+license: Apache-2.0
