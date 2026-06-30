@@ -82,15 +82,17 @@
       "featureList": { "@id": "schema:featureList"},
       "creditText": { "@id": "schema:creditText" },
       "archivedAt": { "@id": "schema:archivedAt", "@type": "@id" },
-      "continuousIntegration": { "@id": "codemeta:continuousIntegration", "@type": "@id"},
       "buildInstructions": { "@id": "codemeta:buildInstructions", "@type": "@id"},
+      "continuousIntegration": { "@id": "codemeta:continuousIntegration", "@type": "@id"},
+      "documentation": { "@id": "codemeta:documentation"},
       "developmentStatus": { "@id": "codemeta:developmentStatus", "@type": "@id"},
       "embargoEndDate": { "@id":"codemeta:embargoEndDate", "@type": "schema:Date" },
-      "readme": { "@id":"codemeta:readme", "@type": "@id" },
-      "issueTracker": { "@id":"codemeta:issueTracker", "@type": "@id" },
-      "referencePublication": { "@id": "codemeta:referencePublication", "@type": "@id"},
       "hasSourceCode": { "@id": "codemeta:hasSourceCode", "@type": "@id"},
-      "isSourceCodeOf": { "@id": "codemeta:isSourceCodeOf", "@type": "@id"}
+      "issueTracker": { "@id":"codemeta:issueTracker", "@type": "@id" },
+      "isSourceCodeOf": { "@id": "codemeta:isSourceCodeOf", "@type": "@id"},
+      "readme": { "@id":"codemeta:readme", "@type": "@id" },
+      "referencePublication": { "@id": "codemeta:referencePublication", "@type": "@id"},
+      "relatedSoftware": { "@id": "codemeta:relatedSoftware", "@type": "@id"}
   },
    "@graph": [
     {
@@ -366,7 +368,29 @@
         {
           "@id": "schema:SoftwareApplication"
         }
+      ]
+    },
+    {
+      "@id": "codemeta:documentation",
+      "@type": "rdf:Property",
+      "rdfs:comment": "A general property for linking to any form of software documentation, including but not limited to user guides, tutorials, help pages, manuals, and reference documentation. ",
+      "rdfs:label": "relatedSoftware",
+      "schema:domainIncludes": [
+        {
+          "@id": "schema:SoftwareApplication"
+        },
+        {
+          "@id": "schema:SoftwareSourceCode"
+        }
       ],
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:CreativeWork"
+        },
+        {
+          "@id": "schema:URL"
+        }
+      ]
     }
   ]
 }

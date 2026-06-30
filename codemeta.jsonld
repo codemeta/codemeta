@@ -83,6 +83,7 @@
       "archivedAt": { "@id": "schema:archivedAt", "@type": "@id" },
       "buildInstructions": { "@id": "codemeta:buildInstructions", "@type": "@id"},
       "continuousIntegration": { "@id": "codemeta:continuousIntegration", "@type": "@id"},
+      "documentation": { "@id": "codemeta:documentation"},
       "developmentStatus": { "@id": "codemeta:developmentStatus", "@type": "@id"},
       "embargoEndDate": { "@id":"codemeta:embargoEndDate", "@type": "schema:Date" },
       "hasSourceCode": { "@id": "codemeta:hasSourceCode", "@type": "@id"},
