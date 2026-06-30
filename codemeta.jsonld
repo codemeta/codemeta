@@ -82,6 +82,8 @@
       "creditText": { "@id": "schema:creditText" },
       "archivedAt": { "@id": "schema:archivedAt", "@type": "@id" },
       "buildInstructions": { "@id": "codemeta:buildInstructions", "@type": "@id"},
+      "citeAsID": { "@id": "codemeta:citeAsID"},
+      "citeWith": { "@id": "codemeta:citeWith"},
       "continuousIntegration": { "@id": "codemeta:continuousIntegration", "@type": "@id"},
       "documentation": { "@id": "codemeta:documentation"},
       "developmentStatus": { "@id": "codemeta:developmentStatus", "@type": "@id"},
