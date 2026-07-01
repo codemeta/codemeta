@@ -320,6 +320,9 @@
       "schema:rangeIncludes": 
       {
         "@id": "schema:Person"
+      },
+      "schema:supersededBy": {
+        "@id": "schema:maintainer"
       }
     },
     {
@@ -398,7 +401,7 @@
       "@id": "codemeta:citeAsID",
       "@type": "rdf:Property",
       "rdfs:comment": "A permanent identifier to a specific citable version of the software",
-      "rdfs:label": "relatedSoftware",
+      "rdfs:label": "citeAsID",
       "schema:domainIncludes": [
         {
           "@id": "schema:SoftwareApplication"
@@ -420,7 +423,7 @@
       "@id": "codemeta:citeWith",
       "@type": "rdf:Property",
       "rdfs:comment": "Companion works that should be cited with the version of this software",
-      "rdfs:label": "relatedSoftware",
+      "rdfs:label": "citeWith",
       "schema:domainIncludes": [
         {
           "@id": "schema:SoftwareApplication"
