@@ -32,7 +32,7 @@ schema:CreativeWork,editor,Person,Specifies the Person who edited the CreativeWo
 schema:CreativeWork,encoding,MediaObject,A media object that encodes this CreativeWork. This property is a synonym for associatedMedia. Supersedes encodings.
 schema:CreativeWork,fileFormat,Text or URL,"Media type, typically MIME format (see IANA site) of the content e.g. application/zip of a SoftwareApplication binary. In cases where a CreativeWork has several media type representations, 'encoding' can be used to indicate each MediaObject alongside particular fileFormat information. Unregistered or niche file formats can be indicated instead via the most appropriate URL, e.g. defining Web page or a Wikipedia entry."
 schema:CreativeWork,funder,Organization or Person,A person or organization that supports (sponsors) something through some kind of financial contribution.
-schema:CreativeWork,funding,Grant,A Grant that directly or indirectly provide funding or sponsorship for this item
+schema:CreativeWork,funding,Grant,A Grant that directly or indirectly provides funding or sponsorship for this item
 schema:CreativeWork,keywords,Text,Keywords or tags used to describe this content. Multiple entries in a keywords list are typically delimited by commas.
 schema:CreativeWork,license,CreativeWork or URL,"A license document that applies to this content, typically indicated by URL."
 schema:CreativeWork,producer,Organization or Person,"The person or organization who produced the work (e.g. music album, movie, tv/radio series etc.)."
