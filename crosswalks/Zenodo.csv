@@ -69,6 +69,6 @@ embargoEndDate,
 funding,grants
 issueTracker,related_identifiers.isSupplementedBy
 referencePublication,
-readme,
+readme,related_identifiers.isDocumentedBy
 hasSourceCode,
 isSourceCodeOf,
