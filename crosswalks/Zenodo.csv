@@ -61,7 +61,7 @@ endDate,
 roleName,
 startDate,
 softwareSuggestions,
-maintainer,
+maintainer,contributors.ContactPerson
 continuousIntegration,
 buildInstructions,
 developmentStatus,
