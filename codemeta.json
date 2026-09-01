@@ -253,7 +253,8 @@
   "continuousIntegration": "https://github.com/codemeta/codemeta/actions",
   "developmentStatus": "active",
   "downloadUrl": "https://github.com/codemeta/codemeta/archive/4.0.zip",
-  "funding": {
+  "funding": [
+      {
       "@type": "Grant",
       "identifier":"1549758",
       "name":"Codemeta: A Rosetta Stone for Metadata in Scientific Software",
@@ -261,8 +262,38 @@
           "@id": "https://doi.org/10.13039/100000001",
           "@type": "Organization",
           "name": "National Science Foundation"
+        }
+      },
+      {
+      "@type": "Grant",
+      "identifier":"101129751",
+      "name":"OSCARS: Fostering the uptake of Open Science in Europe",
+      "funder": {
+          "@id": "https://ror.org/03sj9b840",
+          "@type": "Organization",
+          "name": "EOSC Association"
+        }
+      },
+     {
+      "@type": "Grant",
+      "identifier":"101057344",
+      "name":"FAIR-IMPACT: Expanding FAIR solutions across EOSC",
+      "funder": {
+          "@id": "https://ror.org/03sj9b840",
+          "@type": "Organization",
+          "name": "EOSC Association"
+        }
+      },
+     {
+      "@type": "Grant",
+      "name":"OSPO-RADAR",
+      "funder": {
+          "@id": "https://ror.org/052csg198",
+          "@type": "Organization",
+          "name": "Alfred P. Sloan Foundation"
+        }
       }
-  },
+  ],
   "keywords": [
     "metadata",
     "software"
