@@ -86,7 +86,7 @@
       "citeWith": { "@id": "codemeta:citeWith"},
       "continuousIntegration": { "@id": "codemeta:continuousIntegration", "@type": "@id"},
       "documentation": { "@id": "codemeta:documentation"},
-      "developmentStatus": { "@id": "codemeta:developmentStatus", "@type": "@id"},
+      "developmentStatus": { "@id": "codemeta:developmentStatus"},
       "embargoEndDate": { "@id":"codemeta:embargoEndDate", "@type": "schema:Date" },
       "hasSourceCode": { "@id": "codemeta:hasSourceCode", "@type": "@id"},
       "issueTracker": { "@id":"codemeta:issueTracker", "@type": "@id" },
