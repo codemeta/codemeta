@@ -79,6 +79,6 @@ codemeta:SoftwareSourceCode,readme,URL,A link to software Readme file
 codemeta:SoftwareApplication,hasSourceCode,SoftwareSourceCode,A link that states where the software code is for a given software. For example a software registry may indicate that one of its software entries hasSourceCode in a GitHub repository.
 codemeta:SoftwareSourceCode,isSourceCodeOf,SoftwareApplication,A link that states where software application is built from a given source code. This is the reverse property of 'hasSourceCode'.
 codemeta:SoftwareSourceCode,citeWith,CreativeWork,Companion works that should be cited with the version of this software
-codemeta:SoftwareSourceCode,citeAsID,String or URL,A permanent identifier to a specific citable version of the software
+codemeta:SoftwareSourceCode,citeAsID,Text or URL,A permanent identifier to a specific citable version of the software
 codemeta:SoftwareSourceCode,documentation,CreativeWork or URL,"A general property for linking to any form of software documentation, including but not limited to user guides, tutorials, help pages, manuals, and reference documentation."
 codemeta:SoftwareSourceCode,relatedSoftware,SoftwareSourceCode or SoftwareApplication,"A link to other software that is related by functionality, scientific purpose, or ecosystem context (e.g. alternative implementations, comparable tools, or complementary software). This property does not imply dependency, citation, or execution requirement. It is intended to support discovery, comparison, and interoperability mapping between software artifacts."
