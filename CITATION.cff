@@ -59,6 +59,9 @@ authors:
   - orcid: 'https://orcid.org/0000-0002-9300-5278'
     given-names: Patricia
     family-names: Cruse
+  - given-names: Ashley
+    family-names: Sands
+    orcid: 'http://orcid.org/0000-0001-5636-0433'
   - email: dskatz@illinois.edu
     given-names: Dan
     family-names: Katz
@@ -76,6 +79,9 @@ authors:
   - email: tmorrell@library.caltech.edu
     given-names: Thomas
     family-names: Morrell
+  - email: mail@sdruskat.net
+    given-names: Stephan
+    family-names: Druskat  
   - given-names: Daniel
     family-names: Garijo
     email: daniel.garijo@upm.es
