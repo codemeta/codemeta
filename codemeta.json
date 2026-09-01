@@ -1,7 +1,7 @@
 {
-  "@context": "https://w3id.org/codemeta/3.1",
+  "@context": "https://w3id.org/codemeta/4",
   "@type": "SoftwareSourceCode",
-  "identifier": "https://w3id.org/codemeta/3.1",
+  "identifier": "https://w3id.org/codemeta/4",
   "description": "CodeMeta is a concept vocabulary that can be used to standardize the exchange of software metadata across repositories and organizations.",
   "name": "CodeMeta: Minimal metadata schemas for science software and code, in JSON-LD",
   "codeRepository": "https://github.com/codemeta/codemeta",
@@ -97,12 +97,6 @@
     },
     {
       "@type": "Person",
-      "givenName": "Ashley",
-      "familyName": "Sands",
-      "@id": "http://orcid.org/0000-0001-5636-0433"
-    },
-    {
-      "@type": "Person",
       "givenName": "Neil",
       "familyName": "Chue Hong",
       "email": "n.chuehong@epcc.ed.ac.uk",
@@ -113,6 +107,12 @@
       "givenName": "Patricia",
       "familyName": "Cruse",
       "@id": "http://orcid.org/0000-0002-9300-5278"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Ashley",
+      "familyName": "Sands",
+      "@id": "http://orcid.org/0000-0001-5636-0433"
     },
     {
       "@type": "Person",
@@ -130,10 +130,21 @@
     },
     {
       "@type": "Person",
-      "givenName": "Carl",
-      "familyName": "Boettiger",
-      "email": "cboettig@gmail.com",
-      "@id": "http://orcid.org/0000-0002-1642-628X"
+      "givenName": "Morane",
+      "familyName": "Gruenpeter",
+      "email": "morane@softwareheritage.org"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Valentin",
+      "familyName": "Lorentz",
+      "email": "vlorentz@softwareheritage.org"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Thomas",
+      "familyName": "Morrell",
+      "email": "tmorrell@library.caltech.edu"
     },
     {
       "@type": "Person",
@@ -148,6 +159,11 @@
       "familyName": "Garijo",
       "email": "daniel.garijo@upm.es",
       "@id": "http://orcid.org/0000-0003-0454-7145"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Esteban",
+      "familyName": "Gonzalez Guardia"
     },
     {
       "@type": "Person",
@@ -178,26 +194,6 @@
       "@type": "Person",
       "givenName": "Jozefina",
       "familyName": "Sadowska"
-    },
-    {
-      "@type": "Person",
-      "givenName": "Esteban",
-      "familyName": "Gonzalez Guardia"
-    },
-    {
-      "@type": "Person",
-      "givenName": "Morane",
-      "familyName": "Gruenpeter"
-    },
-    {
-      "@type": "Person",
-      "givenName": "Thomas",
-      "familyName": "Morrell"
-    },
-    {
-      "@type": "Person",
-      "givenName": "Valentin",
-      "familyName": "Lorentz"
     }
   ],
   "maintainer": [
