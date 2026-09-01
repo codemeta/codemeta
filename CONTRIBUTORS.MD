@@ -122,7 +122,7 @@ operates according to the rules specified in the
 | Hélène Jonin | | [@hjonin](https://github.com/hjonin) |
 | Hervé Ménager | Institut Pasteur | [@hmenager](https://github.com/hmenager) |
 | Leslie Hsu | USGS Community for Data Integration | [@hsu000001](https://github.com/hsu000001) |
-| Maxence Azzouz| Fiz Karlsruhe University | [Mazztok45](https://github.com/Mazztok45) |
+| Maxence Azzouz | FIZ Karlsruhe – Leibniz Institute | [@Mazztok45](https://github.com/Mazztok45) |
 | Morane Gruenpeter | Software Heritage | [@moranegg](https://github.com/moranegg) |
 | Moritz Schubotz | University of Konstanz | [@physikerwelt](https://github.com/physikerwelt) |
 | Thomas Morrell | Caltech Library | [@tmorell](https://github.com/tmorrell) |
@@ -135,7 +135,7 @@ operates according to the rules specified in the
 | Daniel Garijo | Universidad Politécnica de Madrid | [@dgarijo](https://github.com/dgarijo) |
 | Aida Jafarbigloo | Carl von Ossietzky Universität Oldenburg | [@Aidajafarbigloo](https://github.com/Aidajafarbigloo) |
 | Linda Angulo Lopez | Software Heritage | [@lindangulopez](https://github.com/lindangulopez) |
-| Maxence Azzouz| Fiz Karlsruhe University | [@Mazztok45](https://github.com/Mazztok45) |
+| Maxence Azzouz| FIZ Karlsruhe – Leibniz Institute | [@Mazztok45](https://github.com/Mazztok45) |
 | Allen Lee | ASU/OMF | [@alee](https://github.com/alee) |
 | Jael García Castro| ZBMED | [@ljgarcia](https://github.com/ljgarcia) |
 | Jozefina Sadowska | Inria | []() |
