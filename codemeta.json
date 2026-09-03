@@ -7,7 +7,7 @@
   "codeRepository": "https://github.com/codemeta/codemeta",
   "issueTracker": "https://github.com/codemeta/codemeta/issues",
   "license": "https://spdx.org/licenses/Apache-2.0",
-  "version": "4",
+  "version": "4.0",
   "author": [
     {
       "@type": "Person",
