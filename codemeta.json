@@ -1,7 +1,7 @@
 {
-  "@context": "https://w3id.org/codemeta/4",
+  "@context": "https://w3id.org/codemeta/4.0",
   "@type": "SoftwareSourceCode",
-  "identifier": "https://w3id.org/codemeta/4",
+  "identifier": "https://w3id.org/codemeta/4.0",
   "description": "CodeMeta is a concept vocabulary that can be used to standardize the exchange of software metadata across repositories and organizations.",
   "name": "CodeMeta: Minimal metadata schemas for science software and code, in JSON-LD",
   "codeRepository": "https://github.com/codemeta/codemeta",
