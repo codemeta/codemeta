@@ -24,6 +24,7 @@ schema:CreativeWork,citation,CreativeWork or URL,"A citation or reference to ano
 schema:CreativeWork,contributor,Organization or Person,A secondary contributor to the CreativeWork or Event.
 schema:CreativeWork,copyrightHolder,Organization or Person,The party holding the legal copyright to the CreativeWork.
 schema:CreativeWork,copyrightYear,Number,The year during which the claimed copyright for the CreativeWork was first asserted.
+schema:CreativeWork,creditText,Text,Text that can be used to credit person(s) and/or organization(s) associated with a published Creative Work
 schema:CreativeWork,dateCreated,Date,The date on which the CreativeWork was created or the item was added to a DataFeed.
 schema:CreativeWork,dateModified,Date,The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed.
 schema:CreativeWork,datePublished,Date,Date of first broadcast/publication.
@@ -48,6 +49,7 @@ schema:Thing,name,Text,"The name of the item (software, Organization)"
 schema:Thing,sameAs,URL,"URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website."
 schema:Thing,url,URL,URL of the item.
 schema:Thing,relatedLink,URL,"A link related to this object, e.g. related web pages"
+schema:Thing,alternateName,Text,An alias for the item.
 schema:Person,givenName,Text,"Given name. In the U.S., the first name of a Person. This can be used along with familyName instead of the name property"
 schema:Person,familyName,Text,"Family name. In the U.S., the last name of an Person. This can be used along with givenName instead of the name property."
 schema:Person,email,Text,Email address
@@ -55,6 +57,8 @@ schema:Person,affiliation,Organization,"An organization that this person is affi
 schema:Person,identifier,URL,"URL identifier, ideally an ORCID ID for individuals, a FundRef ID for funders"
 schema:Person,name,Text,"The name of an Organization, or if separate given and family names cannot be resolved for a Person"
 schema:Person,address,PostalAddress or Text,Physical address of the item.
+schema:Person,contactPoint,ContactPoint,A contact point for a person or organization.
+schema:ContactPoint,contactType,Text,"A person or organization can have different contact points, for different purposes. For example, a sales contact point, a PR contact point and so on. This property is used to specify the kind of contact point."
 schema:Review,reviewAspect,Text,This review is relevant to this part or facet of the object being review
 schema:Review,reviewBody,Text,The actual body of the review
 schema:Role,endDate,Date or Datetime,"The end date and time of the item, usually a Role. In ISO 8601 date format"
