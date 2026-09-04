@@ -14,14 +14,14 @@
       "givenName": "Carl",
       "familyName": "Boettiger",
       "email": "cboettig@gmail.com",
-      "@id": "http://orcid.org/0000-0002-1642-628X"
+      "@id": "https://orcid.org/0000-0002-1642-628X"
     },
     {
       "@type": "Person",
       "givenName": "Matthew B.",
       "familyName": "Jones",
       "email": "jones@nceas.ucsb.edu",
-      "@id": "http://orcid.org/0000-0003-0077-4738"
+      "@id": "https://orcid.org/0000-0003-0077-4738"
     }
   ],
   "contributor": [
@@ -36,28 +36,28 @@
       "givenName": "Arfon",
       "familyName": "Smith",
       "email": "arfon.smith@gmail.com",
-      "@id": "http://orcid.org/0000-0002-3957-2474"
+      "@id": "https://orcid.org/0000-0002-3957-2474"
     },
     {
       "@type": "Person",
       "givenName": "Peter",
       "familyName": "Slaughter",
       "email": "slaughter@nceas.ucsb.edu",
-      "@id": "http://orcid.org/0000-0002-2192-403X"
+      "@id": "https://orcid.org/0000-0002-2192-403X"
     },
     {
       "@type": "Person",
       "givenName": "Kyle",
       "familyName": "Niemeyer",
       "email": "Kyle.Niemeyer@oregonstate.edu",
-      "@id": "http://orcid.org/0000-0003-4425-7097"
+      "@id": "https://orcid.org/0000-0003-4425-7097"
     },
     {
       "@type": "Person",
       "givenName": "Yolanda",
       "familyName": "Gil",
       "email": "GIL@ISI.EDU",
-      "@id": "http://orcid.org/0000-0001-8465-8341"
+      "@id": "https://orcid.org/0000-0001-8465-8341"
     },
     {
       "@type": "Person",
@@ -68,13 +68,13 @@
       "@type": "Person",
       "givenName": "Martin",
       "familyName": "Fenner",
-      "@id": "http://orcid.org/0000-0003-1419-2405"
+      "@id": "https://orcid.org/0000-0003-1419-2405"
     },
     {
       "@type": "Person",
       "givenName": "Mark",
       "familyName": "Hahnel",
-      "@id": "http://orcid.org/0000-0003-4741-0309"
+      "@id": "https://orcid.org/0000-0003-4741-0309"
     },
     {
       "@type": "Person",
@@ -87,60 +87,60 @@
       "givenName": "Alice",
       "familyName": "Allen",
       "email": "aallen@ascl.net",
-      "@id": "http://orcid.org/0000-0003-3477-2845"
+      "@id": "https://orcid.org/0000-0003-3477-2845"
     },
     {
       "@type": "Person",
       "givenName": "Mercè",
       "familyName": "Crosas",
-      "@id": "http://orcid.org/0000-0003-1304-1939"
+      "@id": "https://orcid.org/0000-0003-1304-1939"
     },
     {
       "@type": "Person",
       "givenName": "Ashley",
       "familyName": "Sands",
-      "@id": "http://orcid.org/0000-0001-5636-0433"
+      "@id": "https://orcid.org/0000-0001-5636-0433"
     },
     {
       "@type": "Person",
       "givenName": "Neil",
       "familyName": "Chue Hong",
       "email": "n.chuehong@epcc.ed.ac.uk",
-      "@id": "http://orcid.org/0000-0002-8876-7606"
+      "@id": "https://orcid.org/0000-0002-8876-7606"
     },
     {
       "@type": "Person",
       "givenName": "Patricia",
       "familyName": "Cruse",
-      "@id": "http://orcid.org/0000-0002-9300-5278"
+      "@id": "https://orcid.org/0000-0002-9300-5278"
     },
     {
       "@type": "Person",
       "givenName": "Dan",
       "familyName": "Katz",
       "email": "dskatz@illinois.edu",
-      "@id": "http://orcid.org/0000-0003-2720-0339"
+      "@id": "https://orcid.org/0000-0003-2720-0339"
     },
     {
       "@type": "Person",
       "givenName": "Carole",
       "familyName": "Goble",
       "email": "carole.goble@manchester.ac.uk",
-      "@id": "http://orcid.org/0000-0003-1219-2137"
+      "@id": "https://orcid.org/0000-0003-1219-2137"
     },
     {
       "@type": "Person",
       "givenName": "Carl",
       "familyName": "Boettiger",
       "email": "cboettig@gmail.com",
-      "@id": "http://orcid.org/0000-0002-1642-628X"
+      "@id": "https://orcid.org/0000-0002-1642-628X"
     },
     {
       "@type": "Person",
       "givenName": "Stephan",
       "familyName": "Druskat",
       "email": "mail@sdruskat.net",
-      "@id": "http://orcid.org/0000-0003-4925-7248"
+      "@id": "https://orcid.org/0000-0003-4925-7248"
     }
   ],
   "maintainer": [
@@ -149,14 +149,14 @@
       "givenName": "Matthew B.",
       "familyName": "Jones",
       "email": "jones@nceas.ucsb.edu",
-      "@id": "http://orcid.org/0000-0003-0077-4738"
+      "@id": "https://orcid.org/0000-0003-0077-4738"
     },
     {
      "@type": "Person",
      "givenName": "Carl",
      "familyName": "Boettiger",
      "email": "cboettig@gmail.com",
-     "@id": "http://orcid.org/0000-0002-1642-628X"
+     "@id": "https://orcid.org/0000-0002-1642-628X"
     },
     {
       "@type": "Person",
@@ -169,7 +169,7 @@
       "givenName": "Arfon",
       "familyName": "Smith",
       "email": "arfon.smith@gmail.com",
-      "@id": "http://orcid.org/0000-0002-3957-2474"
+      "@id": "https://orcid.org/0000-0002-3957-2474"
     },
     {
       "@type": "Person",
@@ -187,7 +187,8 @@
       "@type": "Person",
       "givenName": "Thomas",
       "familyName": "Morrell",
-      "email": "tmorrell@library.caltech.edu"
+      "email": "tmorrell@library.caltech.edu",
+      "@id": "https://orcid.org/0000-0001-9266-5146"
     },
     {
       "@type": "Person",
