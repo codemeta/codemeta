@@ -70,3 +70,5 @@ funding,
 issueTracker,"relatedItem/location/url[@displayName='Issue Tracker']"
 referencePublication,relatedItem[@type='isReferencedBy']
 readme,relatedItem[@type='constituent']
+hasSourceCode,
+isSourceCodeOf,

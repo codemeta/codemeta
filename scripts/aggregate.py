@@ -20,6 +20,12 @@ written."""
 def check_property_names_match(filename, properties1, properties2):
     """Checks the list of properties in properties1 is the same as in
     properties2. Exits with a human-readable error if they don't."""
+    if len(properties1) != len(properties2):
+        print('Error in {}: expected {} properties, found {}. The aggregate '
+              'table can only be built if every crosswalk lists exactly the '
+              'properties in properties_description.csv, in the same order.'
+              .format(filename, len(properties1) - 1, len(properties2) - 1))
+        exit(1)
     for (prop1, prop2) in zip(properties1, properties2):
         if prop1 != prop2:
             print('Error in {}: property names {} and {} should be the same'
@@ -42,6 +48,11 @@ def read_terms(prop_desc, filename):
     # Read rows from a translation table in crosswalks.
     with open(SOURCE_DIR / filename) as fd:
         rows = list(csv.reader(fd))
+
+    # Some tables end with notes about terms of the other vocabulary that have
+    # no CodeMeta equivalent. They have an empty first cell, are not part of
+    # the crosswalk, and cannot be aggregated; skip them explicitly.
+    rows = [row for row in rows if row and row[0]]
 
     # Split the two rows of the translation table.
     (codemeta_names, crosswalk_names) = columns_from_rows(rows)
