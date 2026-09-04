@@ -8,6 +8,7 @@ schema:SoftwareApplication,applicationCategory,Text or URL,"Type of software app
 schema:SoftwareApplication,applicationSubCategory,Text or URL,"Subcategory of the application, e.g. 'Arcade Game'."
 schema:SoftwareApplication,downloadUrl,URL,"If the file can be downloaded, URL to download the binary."
 schema:SoftwareApplication,fileSize,Text,"Size of the application / package (e.g. 18MB). In the absence of a unit (MB, KB etc.), KB will be assumed."
+schema:SoftwareApplication,featureList,Text or URL,Features or modules provided by this application (and possibly required by other applications).
 schema:SoftwareApplication,installUrl,URL,"URL at which the app may be installed, if different from the URL of the item."
 schema:SoftwareApplication,memoryRequirements,Text or URL,Minimum memory requirements.
 schema:SoftwareApplication,operatingSystem,Text,"Operating systems supported (Windows 7, OSX 10.6, Android 1.6)."
@@ -19,6 +20,7 @@ schema:SoftwareApplication,softwareRequirements,SoftwareSourceCode,Required soft
 schema:SoftwareApplication,softwareVersion,Text,Version of the software instance.
 schema:SoftwareApplication,storageRequirements,Text or URL,Storage requirements (free space required).
 schema:SoftwareApplication,supportingData,DataFeed,Supporting data for a SoftwareApplication.
+schema:CreativeWork,archivedAt,URL or WebPage,Indicates a page or other link involved in archival of a CreativeWork.
 schema:CreativeWork,author,Organization or Person,The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangeably.
 schema:CreativeWork,citation,CreativeWork or URL,"A citation or reference to another creative work, such as another publication, web page, scholarly article, etc."
 schema:CreativeWork,contributor,Organization or Person,A secondary contributor to the CreativeWork or Event.
