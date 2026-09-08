@@ -11,6 +11,8 @@ See <https://codemeta.github.io> for a visualization of the [crosswalk table](ht
 
 The schema for released versions of CodeMeta are:
 
+- CodeMeta-4.0: [https://w3id.org/codemeta/4.0](https://w3id.org/codemeta/4.0)
+    - *Matthew B. Jones, Carl Boettiger, Abby Cabunoc Mayes, Arfon Smith,  Morane Gruenpeter, Valentin Lorentz, Thomas Morrell, Daniel Garijo, Esteban González-Guardia, Aida Jafarbigloo, Linda Angulo Lopez, Maxence Azzouz, Allen Lee, Leyla Jael García Castro, Jozefina Sadowska, Peter Slaughter, Kyle Niemeyer, Yolanda Gil, Martin Fenner, Krzysztof Nowak, Mark Hahnel, Luke Coy, Alice Allen, Mercè Crosas, Ashley Sands, Neil Chue Hong, Patricia Cruse, Daniel S. Katz, Carole Goble, Bryce Mecum, Alejandra Gonzalez-Beltran, Noam Ross.* 2026. __CodeMeta: an exchange schema for software metadata. Version 4.0.__ [https://w3id.org/codemeta/4.0](https://w3id.org/codemeta/4.0)
 - CodeMeta-3.0: [https://w3id.org/codemeta/3.0](https://w3id.org/codemeta/3.0)
     - *Matthew B. Jones, Carl Boettiger, Abby Cabunoc Mayes, Arfon Smith,  Morane Gruenpeter, Valentin Lorentz, Thomas Morrell, Daniel Garijo, Peter Slaughter, Kyle Niemeyer, Yolanda Gil, Martin Fenner, Krzysztof Nowak, Mark Hahnel, Luke Coy, Alice Allen, Mercè Crosas, Ashley Sands, Neil Chue Hong, Patricia Cruse, Daniel S. Katz, Carole Goble, Bryce Mecum, Alejandra Gonzalez-Beltran, Noam Ross.* 2023. __CodeMeta: an exchange schema for software metadata. Version 3.0.__ [https://w3id.org/codemeta/3.0](https://w3id.org/codemeta/3.0)
 - CodeMeta-2.0: [https://doi.org/10.5063/schema/codemeta-2.0](https://doi.org/10.5063/schema/codemeta-2.0)
@@ -51,5 +53,5 @@ crosswalk table, website, software and other related content.
     - [Code as a research object: updates, prototypes, next steps](http://mozillascience.org/code-as-a-research-object-updates-prototypes-next-steps/)
     - [What else is needed for code reuse](http://mozillascience.org/what-else-is-needed-for-code-reuse/)
     - [JSON-LD for software discovery, reuse and credit](http://www.arfon.org/json-ld-for-software-discovery-reuse-and-credit)
-- [JSON-LD.org](http://json-ld.org/)
-- [Schema.org](http://schema.org/)
+- [JSON-LD.org](https://json-ld.org/)
+- [Schema.org](https://schema.org/)
