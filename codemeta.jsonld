@@ -66,6 +66,8 @@
       "roleName": { "@id": "schema:roleName"},
       "runtimePlatform": { "@id": "schema:runtimePlatform"},
       "sameAs": { "@id": "schema:sameAs", "@type": "@id"},
+      "archivedAt": { "@id": "schema:archivedAt", "@type": "@id" },
+      "featureList": { "@id": "schema:featureList"},
       "softwareHelp": { "@id": "schema:softwareHelp"},
       "softwareRequirements": { "@id": "schema:softwareRequirements"},
       "softwareVersion": { "@id": "schema:softwareVersion"},
