@@ -43,7 +43,6 @@ schema:CreativeWork,version,Number or Text,The version of the CreativeWork embod
 schema:CreativeWork,isAccessibleForFree,Boolean,A flag to signal that the publication is accessible for free.
 schema:CreativeWork,isPartOf,CreativeWork,Indicates a CreativeWork that this CreativeWork is (in some sense) part of. Reverse property hasPart
 schema:CreativeWork,hasPart,CreativeWork,Indicates a CreativeWork that is (in some sense) a part of this CreativeWork. Reverse property isPartOf
-schema:CreativeWork,position,Integer or Text,"The position of an item in a series or sequence of items. (While schema.org considers this a property of CreativeWork, it is also the way to indicate ordering in any list (e.g. the Authors list). By default arrays are unordered in JSON-LD"
 schema:CreativeWork,maintainer,Person or Organization,"A maintainer of a Dataset, software package (SoftwareApplication), or other Project. A maintainer is a Person or Organization that manages contributions to, and/or publication of, some (typically complex) artifact. It is common for distributions of software and data to be based on ""upstream"" sources. When maintainer is applied to a specific version of something e.g. a particular version or packaging of a Dataset, it is always possible that the upstream source has a different maintainer. The isBasedOn property can be used to indicate such relationships between datasets to make the different maintenance roles clear. Similarly in the case of software, a package may have dedicated maintainers working on integration into software distributions such as Ubuntu, as well as upstream maintainers of the underlying work."
 schema:Thing,description,Text,A description of the item.
 schema:Thing,identifier,PropertyValue or URL,"The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See background notes for more details."
@@ -59,8 +58,10 @@ schema:Person,affiliation,Organization,"An organization that this person is affi
 schema:Person,identifier,URL,"URL identifier, ideally an ORCID ID for individuals, a FundRef ID for funders"
 schema:Person,name,Text,"The name of an Organization, or if separate given and family names cannot be resolved for a Person"
 schema:Person,address,PostalAddress or Text,Physical address of the item.
-schema:Person,contactPoint,ContactPoint,A contact point for a person or organization.
+schema:Person,contactPoint,ContactPoint,A contact point for a person or organization. Note that the range of this property expects a schema:ContactPoint indicating the type of contact point and means of contact (e.g. email)
 schema:ContactPoint,contactType,Text,"A person or organization can have different contact points, for different purposes. For example, a sales contact point, a PR contact point and so on. This property is used to specify the kind of contact point."
+schema:ContactPoint,name,Text,The name of the contact point
+schema:ContactPoint,email,Text,Email address of the contact point
 schema:Review,reviewAspect,Text,This review is relevant to this part or facet of the object being review
 schema:Review,reviewBody,Text,The actual body of the review
 schema:Role,endDate,Date or Datetime,"The end date and time of the item, usually a Role. In ISO 8601 date format"
