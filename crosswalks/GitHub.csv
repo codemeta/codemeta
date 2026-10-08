@@ -44,7 +44,7 @@ hasPart,
 position,
 description,description
 identifier,id
-name,full_name
+name,name
 sameAs,
 url,
 relatedLink,
