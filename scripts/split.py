@@ -24,7 +24,8 @@ cols = list(zip(*lines))
 props = cols[1]
 for col in cols[4:]:
     col_name = col[0]
-    filename = SOURCE_DIR / f"{col_name}.csv"
+    # Windows does not allow ":" in file names.
+    filename = SOURCE_DIR / f"{col_name.replace(':', '-')}.csv"
     filename.unlink(missing_ok=True)
     with open(filename, 'a') as fd:
         writer = csv.writer(fd)
