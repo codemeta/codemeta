@@ -1,4 +1,5 @@
 import csv
+import re
 from pathlib import Path
 
 
@@ -24,8 +25,10 @@ cols = list(zip(*lines))
 props = cols[1]
 for col in cols[4:]:
     col_name = col[0]
-    # Windows does not allow ":" in file names.
-    filename = SOURCE_DIR / f"{col_name.replace(':', '-')}.csv"
+    # Windows does not allow these characters in file names. A run of them
+    # becomes one "-", so "CPAN::Meta" gives "CPAN-Meta".
+    safe_name = re.sub(r'[<>:"/\\|?*]+', '-', col_name)
+    filename = SOURCE_DIR / f"{safe_name}.csv"
     filename.unlink(missing_ok=True)
     with open(filename, 'a') as fd:
         writer = csv.writer(fd)
