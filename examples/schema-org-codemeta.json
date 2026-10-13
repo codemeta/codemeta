@@ -1,5 +1,15 @@
 {
-    "@context": ["http://schema.org", {"author": {"@id": "schema:author", "@container": "@list"} } ] ,
+    "@context": {
+        "@vocab": "https://schema.org/",
+        "schema": "https://schema.org/",
+        "author": {"@id": "schema:author", "@container": "@list"},
+        "codeRepository": {"@id": "schema:codeRepository", "@type": "@id"},
+        "dateCreated": {"@id": "schema:dateCreated", "@type": "schema:Date"},
+        "dateModified": {"@id": "schema:dateModified", "@type": "schema:Date"},
+        "datePublished": {"@id": "schema:datePublished", "@type": "schema:Date"},
+        "downloadUrl": {"@id": "schema:downloadUrl", "@type": "@id"},
+        "license": {"@id": "schema:license", "@type": "@id"}
+    },
     "name": "Generate CodeMeta Metadata for R Packages",
     "description": "Codemeta defines a 'JSON-LD' format for describing software metadata. This package provides utilities to generate, parse, and modify codemeta.jsonld files automatically for R packages.",
     "identifier": {"@id": "http://dx.doi.org/10.5281/zenodo.XXXX"},
