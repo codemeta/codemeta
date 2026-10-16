@@ -323,7 +323,7 @@
       ],
       "schema:rangeIncludes": [
         {
-          "@id": "schema:String"
+          "@id": "schema:Text"
         },
         {
           "@id": "schema:URL"
