@@ -19,18 +19,19 @@ softwareRequirements,softwareRequirements
 softwareVersion,softwareVersion
 storageRequirements,storageRequirements
 supportingData,supportingData
+featureList,
 author,author
 citation,citation
 contributor,contributor
 copyrightHolder,copyrightHolder
 copyrightYear,copyrightYear
+creditText,
 dateCreated,dateCreated
 dateModified,dateModified
 datePublished,datePublished
 editor,editor
-encoding,encoding
-fileFormat,fileFormat
 funder,funder
+funding,
 keywords,keywords
 license,license
 producer,producer
@@ -41,13 +42,16 @@ version,version
 isAccessibleForFree,isAccessibleForFree
 isPartOf,isPartOf
 hasPart,hasPart
-position,position
+maintainer,
+encodingFormat,fileFormat
+archivedAt,
 description,description
 identifier,identifier
 name,name
 sameAs,sameAs
 url,url
 relatedLink,relatedLink
+alternateName,
 givenName,givenName
 familyName,familyName
 email,email
@@ -55,12 +59,15 @@ affiliation,affiliation
 identifier,identifier
 name,name
 address,address
+contactPoint,
+contactType,
+name,
+email,
 reviewAspect,
 reviewBody,
 endDate,endDate
 roleName,roleName
 startDate,startDate
-softwareSuggestions,softwareSuggestions
 maintainer,maintainer
 continuousIntegration,contIntegration
 buildInstructions,buildInstructions
@@ -72,3 +79,10 @@ referencePublication,referencePublication
 readme,readme
 hasSourceCode,
 isSourceCodeOf,
+citeWith,
+citeAsID,
+documentation,
+relatedSoftware,
+,encoding (dropped in 4.0): encoding
+,position (dropped in 4.0): position
+,softwareSuggestions (dropped in 4.0): softwareSuggestions

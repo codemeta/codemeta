@@ -19,18 +19,19 @@ softwareRequirements,
 softwareVersion,version
 storageRequirements,
 supportingData,
+featureList,
 author,person when person_type=Author
 citation,publications.model_citations
 contributor,
 copyrightHolder,
 copyrightYear,
+creditText,
 dateCreated,
 dateModified,last_update
 datePublished,release_date
 editor,
-encoding,
-fileFormat,
 funder,
+funding,
 keywords,science_keywords / other_keywords
 license,license
 producer,organization / external_organization_name
@@ -41,13 +42,16 @@ version,version
 isAccessibleForFree,
 isPartOf,
 hasPart,
-position,
+maintainer,
+encodingFormat,
+archivedAt,
 description,description
 identifier,identifier.url
 name,name
 sameAs,
 url,other_links.usgs_website
 relatedLink,other_links.weblinks
+alternateName,
 givenName,
 familyName,
 email,person.email
@@ -55,12 +59,15 @@ affiliation,person.organization
 identifier,person.orcid
 name,person.name
 address,address
+contactPoint,
+contactType,
+name,
+email,
 reviewAspect,
 reviewBody,
 endDate,
 roleName,
 startDate,
-softwareSuggestions,
 maintainer,
 continuousIntegration,
 buildInstructions,
@@ -72,3 +79,7 @@ referencePublication,publications.primary_publications / publications.model_cita
 readme,
 hasSourceCode,
 isSourceCodeOf,
+citeWith,
+citeAsID,
+documentation,
+relatedSoftware,

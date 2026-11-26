@@ -19,18 +19,19 @@ softwareRequirements,identificationInfo.additionalDocumentation*
 softwareVersion,identificationInfo.citation.edition
 storageRequirements,identificationInfo.environmentDescription*
 supportingData,identificationInfo.associatedResource.name*
+featureList,
 author,identificationInfo.citation.citedResponsibleParty[role='author'].party.name or identificationInfo.citation.citedResponsibleParty[role='originator'].party.name
 citation,identificationInfo.associatedResource.name*
 contributor,identificationInfo.citation.citedResponsibleParty[not(role='author' or role='principalInvestigator' or role='originator')].party.name*
 copyrightHolder,identificationInfo.resourceConstraints.reference.citedResponsibleParty
 copyrightYear,identificationInfo.resourceConstraints.reference.date[dateType='publication'].date
+creditText,
 dateCreated,identificationInfo.citation.date[dateType='creation'].date*
 dateModified,identificationInfo.citation.date[dateType='revision'].date*
 datePublished,identificationInfo.citation.date[dateType='publication'].date*
 editor,identificationInfo.citation.citedResponsibleParty[role='editor'].party.name*
-encoding,
-fileFormat,identificationInfo.resourceFormat.formatSpecificationCitation
 funder,identificationInfo.citation.citedResponsibleParty[role='funder'].party.name*
+funding,
 keywords,identificationInfo.descriptiveKeywords[type='theme'].keyword*
 license,identificationInfo.resourceConstraints.reference
 producer,identificationInfo.citation.citedResponsibleParty[role='creator'].party.name*
@@ -41,13 +42,16 @@ version,identificationInfo.citation.edition
 isAccessibleForFree,distributionInfo.distributionFormat.formatDistributor.distributionOrderProcess.fees
 isPartOf,identificationInfo.associatedResource[associationType='LargerWorkCitation'].name*
 hasPart,identificationInfo.associatedResource[associationType='isComposedOf'].name*
-position,
+maintainer,
+encodingFormat,identificationInfo.resourceFormat.formatSpecificationCitation
+archivedAt,
 description,identificationInfo.abstract
 identifier,identificationInfo.citation.identifier.code
 name,identificationInfo.citation.title
 sameAs,identificationInfo.citation.onlineResource[function='information']*
 url,identificationInfo.citation.onlineResource[function='download']*
 relatedLink,identificationInfo.citation.onlineResource[function='information']*
+alternateName,
 givenName,party.name*
 familyName,party.name*
 email,party.contactInfo.address.electronicMailAddress
@@ -55,12 +59,15 @@ affiliation,party.name*
 identifier,identificationInfo.citation.identifier.code
 name,identificationInfo.citation.title
 address,party.contactInfo.address.deliveryPoint
+contactPoint,
+contactType,
+name,
+email,
 reviewAspect,
 reviewBody,
 endDate,
 roleName,
 startDate,
-softwareSuggestions,identificationInfo.additionalDocumentation*
 maintainer,identificationInfo.pointOfContact
 continuousIntegration,identificationInfo.additionalDocumentation*
 buildInstructions,identificationInfo.additionalDocumentation*
@@ -72,3 +79,8 @@ referencePublication,identificationInfo.additionalDocumentation*
 readme,
 hasSourceCode,identificationInfo.additionalDocumentation*
 isSourceCodeOf,
+citeWith,
+citeAsID,
+documentation,
+relatedSoftware,
+,softwareSuggestions (dropped in 4.0): identificationInfo.additionalDocumentation*

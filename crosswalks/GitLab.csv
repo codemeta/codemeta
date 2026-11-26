@@ -19,18 +19,19 @@ softwareRequirements,
 softwareVersion,/projects/:id/releases/:name
 storageRequirements,
 supportingData,
+featureList,
 author,creator_id
 citation,
 contributor,/projects/:id/members/:id
 copyrightHolder,
 copyrightYear,
+creditText,
 dateCreated,created_at
 dateModified,updated_at
 datePublished,
 editor,
-encoding,
-fileFormat,
 funder,
+funding,
 keywords,topics / tag_list
 license,
 producer,
@@ -41,13 +42,16 @@ version,
 isAccessibleForFree,visibility
 isPartOf,
 hasPart,
-position,
+maintainer,
+encodingFormat,
+archivedAt,
 description,description
 identifier,id
 name,name
 sameAs,
 url,http_url_to_repo
 relatedLink,wiki_enabled
+alternateName,
 givenName,/projects/:id/members/all/:id/name
 familyName,/projects/:id/members/all/:id/name
 email,/projects/:id/members/all/:id/public_email
@@ -55,12 +59,15 @@ affiliation,
 identifier,/projects/:id/members/all/:id
 name,/projects/:id/members/all/:id/username / /projects/:id/members/all/:id/name
 address,/projects/:id/members/all/:id/web_url
+contactPoint,
+contactType,
+name,
+email,
 reviewAspect,
 reviewBody,
 endDate,/projects/:id/members/all/:id/expires_at
 roleName,
 startDate,/projects/:id/members/all/:id/created_at
-softwareSuggestions,
 maintainer,
 continuousIntegration,
 buildInstructions,ci_config_path
@@ -72,3 +79,7 @@ referencePublication,
 readme,readme_url
 hasSourceCode,
 isSourceCodeOf,
+citeWith,
+citeAsID,
+documentation,
+relatedSoftware,

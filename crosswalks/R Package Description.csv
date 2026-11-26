@@ -19,18 +19,19 @@ softwareRequirements,"Depends, SystemRequirements"
 softwareVersion,Version
 storageRequirements,
 supportingData,
+featureList,
 author,[aut] in Author
 citation,
 contributor,[ctb] in Author
 copyrightHolder,
 copyrightYear,
+creditText,
 dateCreated,
 dateModified,
 datePublished,Date
 editor,
-encoding,
-fileFormat,
 funder,
+funding,
 keywords,
 license,License
 producer,
@@ -41,13 +42,16 @@ version,Version
 isAccessibleForFree,
 isPartOf,
 hasPart,
-position,
+maintainer,
+encodingFormat,
+archivedAt,
 description,Description
 identifier,Package
 name,Title
 sameAs,
 url,URL
 relatedLink,
+alternateName,
 givenName,givenName
 familyName,familyName
 email,email
@@ -55,12 +59,15 @@ affiliation,
 identifier,
 name,
 address,
+contactPoint,
+contactType,
+name,
+email,
 reviewAspect,
 reviewBody,
 endDate,
 roleName,
 startDate,
-softwareSuggestions,Suggests
 maintainer,Maintainer
 continuousIntegration,
 buildInstructions,
@@ -72,3 +79,8 @@ referencePublication,
 readme,
 hasSourceCode,
 isSourceCodeOf,
+citeWith,
+citeAsID,
+documentation,
+relatedSoftware,
+,softwareSuggestions (dropped in 4.0): Suggests
