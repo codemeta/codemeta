@@ -19,18 +19,19 @@ softwareRequirements,depends
 softwareVersion,
 storageRequirements,
 supportingData,
+featureList,
 author,agents
 citation,relatedLink
 contributor,
 copyrightHolder,agents [role=copyrightHolder]
 copyrightYear,
+creditText,
 dateCreated,dateCreated
 dateModified,dateModified
 datePublished,datePublished
 editor,
-encoding,
-fileFormat,
 funder,fundingReference.funderName
+funding,
 keywords,controlledTerms
 license,licenseId
 producer,
@@ -41,13 +42,16 @@ version,version
 isAccessibleForFree,
 isPartOf,
 hasPart,
-position,
+maintainer,
+encodingFormat,
+archivedAt,
 description,description
 identifier,identifier
 name,name
 sameAs,
 url,URL
 relatedLink,
+alternateName,
 givenName,
 familyName,
 email,email
@@ -55,12 +59,15 @@ affiliation,affiliation
 identifier,identifier
 name,
 address,
+contactPoint,
+contactType,
+name,
+email,
 reviewAspect,
 reviewBody,
 endDate,
 roleName,
 startDate,
-softwareSuggestions,suggests
 maintainer,uploadedBy
 continuousIntegration,continuousIntegration
 buildInstructions,buildInstructions
@@ -72,6 +79,10 @@ referencePublication,relatedPublications
 readme,readme
 hasSourceCode,
 isSourceCodeOf,
+citeWith,
+citeAsID,
+documentation,
+relatedSoftware,
 ,relatedIdentifer
 ,relatedIdentiferType
 ,relationshipType
@@ -80,3 +91,4 @@ isSourceCodeOf,
 ,role
 ,roleCode
 ,softwarePaperCitationIdenifiers
+,softwareSuggestions (dropped in 4.0): suggests

@@ -19,18 +19,19 @@ softwareRequirements,
 softwareVersion,dcat:version
 storageRequirements,
 supportingData,dcat:qualifiedRelation
+featureList,
 author,dcterms:creator
 citation,dcterms:references
 contributor,dcterms:contributor
 copyrightHolder,dcterms:rights
 copyrightYear,dcterms:rights
+creditText,
 dateCreated,dcterms:created
 dateModified,dcterms:modified
 datePublished,dcterms:issued
 editor,prov:qualifiedAttribution
-encoding,dcterms:conformsTo
-fileFormat,dcat:mediaType
 funder,prov:qualifiedAttribution
+funding,
 keywords,dcat:keyword
 license,dcterms:license
 producer,prov:qualifiedAttribution
@@ -41,13 +42,16 @@ version,dcat:version
 isAccessibleForFree,
 isPartOf,dcterms:isPartOf
 hasPart,dcterms:hasPart
-position,
+maintainer,
+encodingFormat,dcat:mediaType
+archivedAt,
 description,dcterms:description
 identifier,dcterms:identifier
 name,dcterms:title
 sameAs,dcat:qualifiedRelation
 url,dcat:landingPage
 relatedLink,dcterms:relation
+alternateName,
 givenName,
 familyName,
 email,
@@ -55,12 +59,15 @@ affiliation,
 identifier,dcterms:identifier
 name,
 address,
+contactPoint,
+contactType,
+name,
+email,
 reviewAspect,
 reviewBody,
 endDate,
 roleName,
 startDate,
-softwareSuggestions,dcat:qualifiedRelation
 maintainer,prov:qualifiedAttribution
 continuousIntegration,dcat:qualifiedRelation
 buildInstructions,dcat:qualifiedRelation
@@ -72,3 +79,9 @@ referencePublication,dcat:qualifiedRelation
 readme,dcat:qualifiedRelation
 hasSourceCode,dcat:qualifiedRelation
 isSourceCodeOf,dcat:qualifiedRelation
+citeWith,
+citeAsID,
+documentation,
+relatedSoftware,
+,encoding (dropped in 4.0): dcterms:conformsTo
+,softwareSuggestions (dropped in 4.0): dcat:qualifiedRelation

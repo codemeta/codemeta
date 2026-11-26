@@ -19,18 +19,19 @@ softwareRequirements,
 softwareVersion,
 storageRequirements,
 supportingData,
+featureList,
 author,
 citation,
 contributor,
 copyrightHolder,
 copyrightYear,
+creditText,
 dateCreated,Start year development
 dateModified,
 datePublished,
 editor,
-encoding,
-fileFormat,
 funder,
+funding,
 keywords,ModelDomain / Model keywords
 license,Program license type / Program license type other
 producer,
@@ -41,13 +42,16 @@ version,
 isAccessibleForFree,
 isPartOf,ModelFramework
 hasPart,
-position,
+maintainer,
+encodingFormat,
+archivedAt,
 description,One-line model description / Extended description of the model
 identifier,DOI model / DOI assigned to model version / DOI-filelink
 name,Module name
 sameAs,
 url,Model website
 relatedLink,
+alternateName,
 givenName,First name
 familyName,Last name
 email,Email address
@@ -55,12 +59,15 @@ affiliation,Institute
 identifier,
 name,
 address,Postal address1 / Postal address2
+contactPoint,
+contactType,
+name,
+email,
 reviewAspect,
 reviewBody,
 endDate,
 roleName,
 startDate,
-softwareSuggestions,
 maintainer,
 continuousIntegration,
 buildInstructions,
@@ -72,3 +79,7 @@ referencePublication,
 readme,
 hasSourceCode,
 isSourceCodeOf,
+citeWith,
+citeAsID,
+documentation,
+relatedSoftware,

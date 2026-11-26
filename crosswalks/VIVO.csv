@@ -19,18 +19,19 @@ softwareRequirements,
 softwareVersion,version
 storageRequirements,
 supportingData,
+featureList,
 author,relatedBy.relates
 citation,
 contributor,
 copyrightHolder,
 copyrightYear,
+creditText,
 dateCreated,
 dateModified,
 datePublished,date/time value
 editor,
-encoding,
-fileFormat,
 funder,informationResourceSupportedBy.assignedBy
+funding,
 keywords,freetextKeywords
 license,
 producer,
@@ -41,13 +42,16 @@ version,version
 isAccessibleForFree,
 isPartOf,partOf
 hasPart,hasPart
-position,
+maintainer,
+encodingFormat,
+archivedAt,
 description,abstract
 identifier,SWHID
 name,label
 sameAs,sameAs
 url,has contact info.hasUrl
 relatedLink,
+alternateName,
 givenName,
 familyName,
 email,
@@ -55,12 +59,15 @@ affiliation,
 identifier, relatedBy.relates.ORCID iD
 name, relatedBy.relates.label
 address,
+contactPoint,
+contactType,
+name,
+email,
 reviewAspect,
 reviewBody,
 endDate,
 roleName,
 startDate,
-softwareSuggestions,
 maintainer,
 continuousIntegration,
 buildInstructions,
@@ -72,3 +79,7 @@ referencePublication,
 readme,
 hasSourceCode,
 isSourceCodeOf,
+citeWith,
+citeAsID,
+documentation,
+relatedSoftware,

@@ -19,18 +19,19 @@ softwareRequirements,
 softwareVersion,originInfo/edition
 storageRequirements,
 supportingData,relatedItem[@type='references']
+featureList,
 author,name/role/roleTerm[@type='code']/[.='aut']
 citation,relatedItem[@otherType='references']
 contributor,name/role/roleTerm[@type='code']/[.='ctb']
 copyrightHolder,accessCondition/rights.holder/name
 copyrightYear,accessCondition/creation/year.creation
+creditText,
 dateCreated,originInfo/dateCreated
 dateModified,originInfo/dateModified
 datePublished,originInfo/dateIssued
 editor,name/role/roleTerm[@type='code']/[.='edt']
-encoding,
-fileFormat,typeOfResource
 funder,name/role/roleTerm[@type='code']/[.='fnd']
+funding,
 keywords,subject
 license,accessCondition[@type='use and reproduction']
 producer,name/role/roleTerm[@type='code']/[.='pro']
@@ -41,13 +42,16 @@ version,originInfo/edition
 isAccessibleForFree,
 isPartOf,part
 hasPart,
-position,part/[@order]
+maintainer,
+encodingFormat,typeOfResource
+archivedAt,
 description,abstract
 identifier,identifier
 name,titleInfo/title
 sameAs,location/url[@displayName='Same As']
 url,location/url
 relatedLink,relatedItem/location/url[@displayName='Related Link']
+alternateName,
 givenName,name/namePart[@type='given']
 familyName,name/namePart[@type='family']
 email,
@@ -55,12 +59,15 @@ affiliation,name/affiliation
 identifier,identifier / name/nameIdentifier
 name,name/namePart
 address,name/affiliation
+contactPoint,
+contactType,
+name,
+email,
 reviewAspect,
 reviewBody,
 endDate,
 roleName,
 startDate,
-softwareSuggestions,relatedItem
 maintainer,name/role/roleTerm[@type='code']/[.='crp']
 continuousIntegration,relatedItem/location/url[@displayName='Continuous Integration Service']
 buildInstructions,relatedItem/location/url[@displayName='Build Instructions']
@@ -72,3 +79,9 @@ referencePublication,relatedItem[@type='isReferencedBy']
 readme,relatedItem[@type='constituent']
 hasSourceCode,
 isSourceCodeOf,
+citeWith,
+citeAsID,
+documentation,
+relatedSoftware,
+,position (dropped in 4.0): part/[@order]
+,softwareSuggestions (dropped in 4.0): relatedItem

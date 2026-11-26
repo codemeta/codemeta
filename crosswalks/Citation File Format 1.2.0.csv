@@ -19,18 +19,19 @@ softwareRequirements,references
 softwareVersion,version
 storageRequirements,
 supportingData,
+featureList,
 author,authors
 citation,preferred-citation / references
 contributor,
 copyrightHolder,
 copyrightYear,
+creditText,
 dateCreated,
 dateModified,
 datePublished,date-released
 editor,
-encoding,
-fileFormat,
 funder,
+funding,
 keywords,keywords
 license,license / license-url
 producer,
@@ -41,13 +42,16 @@ version,version
 isAccessibleForFree,
 isPartOf,(identifiers)
 hasPart,(identifiers)
-position,
+maintainer,
+encodingFormat,
+archivedAt,
 description,abstract
 identifier,identifiers / person.orcid / doi
 name,title
 sameAs,identifiers.url
 url,url / (repository) / (repository-code) / (repository-artifact) / (identifiers[i].type==url)
 relatedLink,url / (repository) / (repository-code) / (repository-artifact) / (identifiers[i].type==url)
+alternateName,
 givenName,person.given-names
 familyName,person.family-names
 email,person.email / entity.email
@@ -55,12 +59,15 @@ affiliation,person.affiliation
 identifier,person.orcid / identifiers / doi
 name,entity.name
 address,person.address / entity.address
+contactPoint,
+contactType,
+name,
+email,
 reviewAspect,
 reviewBody,
 endDate,
 roleName,
 startDate,
-softwareSuggestions,(references)
 maintainer,
 continuousIntegration,
 buildInstructions,
@@ -72,3 +79,8 @@ referencePublication,preferred-citation
 readme,
 hasSourceCode,
 isSourceCodeOf,
+citeWith,
+citeAsID,
+documentation,
+relatedSoftware,
+,softwareSuggestions (dropped in 4.0): (references)
